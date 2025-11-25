@@ -73,25 +73,25 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
+            color: #e0e0e0;
+            background: #1a1a1a;
             padding: 20px;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: white;
+            background: #2d2d2d;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
         h1 {
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 10px;
             font-size: 2.5em;
         }
         .subtitle {
-            color: #7f8c8d;
+            color: #b0b0b0;
             margin-bottom: 30px;
             font-size: 1.2em;
         }
@@ -102,34 +102,37 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
             margin-top: 30px;
         }
         .doc-card {
-            border: 2px solid #e0e0e0;
+            border: 2px solid #404040;
             border-radius: 8px;
             padding: 20px;
             transition: all 0.3s ease;
-            background: #fafafa;
+            background: #252525;
         }
         .doc-card:hover {
-            border-color: #3498db;
-            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+            border-color: #5a9fd4;
+            box-shadow: 0 4px 12px rgba(90, 159, 212, 0.3);
             transform: translateY(-2px);
         }
         .doc-card h2 {
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 10px;
             font-size: 1.3em;
+        }
+        .doc-card p {
+            color: #b0b0b0;
         }
         .doc-card a {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background: #3498db;
+            background: #5a9fd4;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: background 0.3s;
         }
         .doc-card a:hover {
-            background: #2980b9;
+            background: #4a8fc4;
         }
         .status {
             display: inline-block;
@@ -140,11 +143,12 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         }
         .status.complete { background: #2ecc71; color: white; }
         .info {
-            background: #ecf0f1;
+            background: #353535;
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 30px;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #5a9fd4;
+            color: #e0e0e0;
         }
     </style>
 </head>
@@ -174,8 +178,8 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         html += """
         </div>
         
-        <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #e0e0e0; color: #7f8c8d; text-align: center;">
-            <p>Server running on <strong>http://localhost:7000</strong></p>
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #404040; color: #b0b0b0; text-align: center;">
+            <p>Server running on <strong style="color: #ffffff;">http://localhost:7000</strong></p>
             <p>All documents served as HTML with syntax highlighting</p>
         </div>
     </div>
@@ -200,58 +204,62 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.8;
-            color: #333;
-            background: #f5f5f5;
+            color: #e0e0e0;
+            background: #1a1a1a;
             padding: 20px;
         }}
         .container {{
             max-width: 1000px;
             margin: 0 auto;
-            background: white;
+            background: #2d2d2d;
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }}
         .back-link {{
             display: inline-block;
             margin-bottom: 20px;
             padding: 10px 20px;
-            background: #3498db;
+            background: #5a9fd4;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }}
         .back-link:hover {{
-            background: #2980b9;
+            background: #4a8fc4;
         }}
         h1, h2, h3, h4, h5, h6 {{
-            color: #2c3e50;
+            color: #ffffff;
             margin-top: 30px;
             margin-bottom: 15px;
         }}
-        h1 {{ font-size: 2.5em; border-bottom: 3px solid #3498db; padding-bottom: 10px; }}
-        h2 {{ font-size: 2em; border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; }}
+        h1 {{ font-size: 2.5em; border-bottom: 3px solid #5a9fd4; padding-bottom: 10px; }}
+        h2 {{ font-size: 2em; border-bottom: 2px solid #404040; padding-bottom: 8px; }}
         h3 {{ font-size: 1.5em; }}
-        p {{ margin-bottom: 15px; }}
+        p {{ margin-bottom: 15px; color: #e0e0e0; }}
         code {{
-            background: #f4f4f4;
+            background: #1a1a1a;
+            color: #a8d8ff;
             padding: 2px 6px;
             border-radius: 3px;
             font-family: 'Courier New', monospace;
             font-size: 0.9em;
+            border: 1px solid #404040;
         }}
         pre {{
-            background: #2c3e50;
-            color: #ecf0f1;
+            background: #1a1a1a;
+            color: #e0e0e0;
             padding: 20px;
             border-radius: 5px;
             overflow-x: auto;
             margin: 20px 0;
+            border: 1px solid #404040;
         }}
         pre code {{
             background: transparent;
             padding: 0;
             color: inherit;
+            border: none;
         }}
         table {{
             width: 100%;
@@ -259,29 +267,39 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
             margin: 20px 0;
         }}
         th, td {{
-            border: 1px solid #ddd;
+            border: 1px solid #404040;
             padding: 12px;
             text-align: left;
         }}
         th {{
-            background: #3498db;
-            color: white;
+            background: #3d3d3d;
+            color: #ffffff;
         }}
         tr:nth-child(even) {{
-            background: #f9f9f9;
+            background: #252525;
+        }}
+        tr:nth-child(odd) {{
+            background: #2d2d2d;
+        }}
+        td {{
+            color: #e0e0e0;
         }}
         blockquote {{
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #5a9fd4;
             padding-left: 20px;
             margin: 20px 0;
-            color: #555;
+            color: #b0b0b0;
             font-style: italic;
+            background: #252525;
+            padding: 15px 20px;
+            border-radius: 4px;
         }}
         a {{
-            color: #3498db;
+            color: #5a9fd4;
             text-decoration: none;
         }}
         a:hover {{
+            color: #7ab8e4;
             text-decoration: underline;
         }}
         ul, ol {{
@@ -290,9 +308,23 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         }}
         li {{
             margin-bottom: 8px;
+            color: #e0e0e0;
+        }}
+        strong {{
+            color: #ffffff;
+        }}
+        em {{
+            color: #b0b0b0;
         }}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <style>
+        /* Override highlight.js for better dark mode */
+        .hljs {{
+            background: #1a1a1a !important;
+            color: #e0e0e0 !important;
+        }}
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
@@ -300,7 +332,7 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
     <div class="container">
         <a href="/" class="back-link">← Back to Index</a>
         {html_content}
-        <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #e0e0e0;">
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #404040;">
             <a href="/" class="back-link">← Back to Index</a>
         </div>
     </div>
@@ -309,15 +341,22 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         return html
 
 if __name__ == "__main__":
+    import sys
+    # Fix Windows console encoding for emojis
+    if sys.platform == 'win32':
+        import io
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+    
     handler = DocsHandler
     
     with socketserver.TCPServer(("", PORT), handler) as httpd:
-        print(f"🚀 Documentation server running at http://localhost:{PORT}")
-        print(f"📚 Serving {len(DOCUMENTS)} documents")
-        print(f"📖 Open http://localhost:{PORT} in your browser")
-        print(f"⏹️  Press Ctrl+C to stop")
+        print(f"Documentation server running at http://localhost:{PORT}")
+        print(f"Serving {len(DOCUMENTS)} documents")
+        print(f"Open http://localhost:{PORT} in your browser")
+        print(f"Press Ctrl+C to stop")
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
-            print("\n👋 Server stopped")
+            print("\nServer stopped")
 
