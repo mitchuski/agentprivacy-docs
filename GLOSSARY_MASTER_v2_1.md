@@ -1134,6 +1134,7 @@ This glossary serves as the **single source of truth** for terminology across al
 | IIW | Internet Identity Workshop |
 | AIW | Agentic Internet Workshop |
 | DIF | Decentralized Identity Foundation |
+| Kwaai | Personal AI |
 
 ---
 

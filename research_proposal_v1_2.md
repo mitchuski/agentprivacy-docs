@@ -91,7 +91,7 @@ The key insight: if we can enforce that these agents don't share information bey
 
 **Status:** I've worked through the math in *Dual Privacy Research Paper v3.2*, but these proofs haven't been validated by information theorists yet.
 
-From information theory (Cover & Thomas, Shannon), when we enforce conditional independence $(Y_S \perp Y_M) | X$ between Swordsman and Mage observations, I believe we get:
+From information theory (Cover & Thomas, Shannon), when we enforce conditional independence `(Y_S ⊥ Y_M) | X` between Swordsman and Mage observations, I believe we get:
 
 ```
 Information leaked = I(X; Y_S) + I(X; Y_M)
@@ -102,13 +102,22 @@ Instead of synergistic combination that could be worse.
 **What I've Worked Through:**
 
 **Separation Lemma** (my Theorem 2.1): Under conditional independence, mutual information should be additive:
-$$I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)$$
 
-**Reconstruction Ceiling** (my Theorem 2.2): With budget constraints $C_S + C_M < H(X)$, I believe reconstruction efficiency satisfies:
-$$R_{max} = \frac{C_S + C_M}{H(X)} < 1$$
+```
+I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)
+```
+
+**Reconstruction Ceiling** (my Theorem 2.2): With budget constraints `C_S + C_M < H(X)`, I believe reconstruction efficiency satisfies:
+
+```
+R_max = (C_S + C_M) / H(X) < 1
+```
 
 **Error Floor** (my Theorem 2.3): Via Fano's inequality, minimum reconstruction error should be:
-$$P_e \geq 1 - \frac{I(X; Y_S, Y_M) + 1}{H(X)}$$
+
+```
+P_e ≥ 1 - (I(X; Y_S, Y_M) + 1) / H(X)
+```
 
 **What This Would Mean (If I'm Right):**
 - We could budget information separately for each agent
@@ -128,8 +137,11 @@ $$P_e \geq 1 - \frac{I(X; Y_S, Y_M) + 1}{H(X)}$$
 
 Real systems can't achieve perfect separation. I believe I've proven graceful degradation:
 
-**My Theorem 2.4 (Approximate Separation):** For small perturbations $\epsilon$ from perfect independence:
-$$I(X; Y_S, Y_M) \leq I(X; Y_S) + I(X; Y_M) + \epsilon$$
+**My Theorem 2.4 (Approximate Separation):** For small perturbations ε from perfect independence:
+
+```
+I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M) + ε
+```
 
 **What This Would Mean (If Correct):**
 - Small separation violations would cause small privacy losses
@@ -171,7 +183,7 @@ This isn't about waiting for future technology. This is about using what exists 
 
 **Status:** Mathematical hypothesis, NOT validated in real systems
 
-Theoretical analysis suggests optimal budget allocation ratios *might* naturally gravitate toward $\phi \approx 1.618$ (the golden ratio).
+Theoretical analysis suggests optimal budget allocation ratios *might* naturally gravitate toward φ ≈ 1.618 (the golden ratio).
 
 **Evidence:**
 - Appears in theoretical optimization models
@@ -251,7 +263,7 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 
 1. **Tighter Bounds:** What are the tightest possible reconstruction efficiency bounds? Can we improve beyond current theorems?
 
-2. **Golden Ratio:** Does the $\phi$ allocation emerge from optimization principles, or is it mathematical coincidence? (Needs both theory AND empirical testing)
+2. **Golden Ratio:** Does the φ allocation emerge from optimization principles, or is it mathematical coincidence? (Needs both theory AND empirical testing)
 
 3. **Implementation:** Can real-world systems achieve the theoretical guarantees, or do side-channels destroy them? (Need prototypes)
 
@@ -324,7 +336,7 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 **Applied Mathematician** (For Golden Ratio Hypothesis)
 - Investigate optimization principles
 - Model emergent properties
-- Either prove or refute the $\phi$ connection
+- Either prove or refute the φ connection
 - This is speculative but potentially profound
 
 **Game Theorist** (Important)
@@ -587,12 +599,12 @@ Theory developed, practical experience established, seeking collaborators for va
 
 For those who want the mathematical version:
 
-**Hypothesis:** Under conditional independence $(Y_S \perp Y_M)|X$ and budget constraints $C_S + C_M < H(X)$, we get $R_{max} < 1$ (reconstruction ceiling).
+**Hypothesis:** Under conditional independence `(Y_S ⊥ Y_M)|X` and budget constraints `C_S + C_M < H(X)`, we get `R_max < 1` (reconstruction ceiling).
 
 **Proven (Research Paper v3.2):**
-- Separation lemma: $I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)$
-- Reconstruction ceiling: $R_{max} = (C_S + C_M)/H(X) < 1$
-- Error floor via Fano: $P_e \geq 1 - R_{max}$
+- Separation lemma: `I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)`
+- Reconstruction ceiling: `R_max = (C_S + C_M)/H(X) < 1`
+- Error floor via Fano: `P_e ≥ 1 - R_max`
 - Graceful degradation under approximate separation
 
 **Implemented (Whitepaper v4.3):**
@@ -602,7 +614,7 @@ For those who want the mathematical version:
 - Layer 0-5 protocol stack
 
 **Speculative (Needs Validation):**
-- Optimal allocation ratio $C_S/C_M \approx \phi$ (golden ratio)
+- Optimal allocation ratio `C_S/C_M ≈ φ` (golden ratio)
 - Tetrahedral emergence in multi-agent systems
 
 **Critical Next Step:**
