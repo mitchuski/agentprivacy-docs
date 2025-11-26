@@ -170,20 +170,20 @@ Comparison:
 
 ## 2. Signal Economics & Sustainable Funding
 
-### 2.1 The 44/56 Fee Distribution (Canonical Split)
+### 2.1 The 61.8/38.2 Fee Distribution (Golden Ratio Split)
 
 **Every signal generates continuous revenue following the canonical transparent/shielded split:**
 
 ```
 Per Signal (0.01 ZEC at $500/ZEC = $5.00):
 
-44% ($2.20) → Transparent Pool
+61.8% ($3.09) → Transparent Pool
 ├─ Public blockchain inscription
 ├─ Liquidity provision
 ├─ Visible accountability
 └─ Enables price discovery
 
-56% ($2.80) → Shielded Pool
+38.2% ($1.91) → Shielded Pool
 ├─ Protocol operations
 ├─ Guardian rewards
 ├─ Development fund
@@ -192,14 +192,15 @@ Per Signal (0.01 ZEC at $500/ZEC = $5.00):
 
 Note: Internal allocation within each pool (specific % to development, 
 guardians, ecosystem treasury) may vary per ecosystem implementation.
-The 44/56 transparent/shielded split is the canonical constant.
+The 61.8/38.2 transparent/shielded split is the canonical constant,
+derived from the golden ratio (φ ≈ 1.618).
 ```
 
 **Why this split:**
 
-1. **44% Transparent** - Public accountability. Enables market function, price discovery, visible ecosystem health metrics.
+1. **61.8% Transparent** - Public accountability. Enables market function, price discovery, visible ecosystem health metrics. The golden ratio majority ensures robust public liquidity.
 
-2. **56% Shielded** - Operational privacy. Covers infrastructure costs, security audits, guardian compensation, development without surveillance.
+2. **38.2% Shielded** - Operational privacy. Covers infrastructure costs, security audits, guardian compensation, development without surveillance.
 
 ### 2.2 The Funding Mechanism at Scale
 
@@ -210,22 +211,22 @@ Monthly Signal Volumes:
 
 Scenario: 10,000 signals/month (Conservative)
 ├─ Total fees: $50,000
-├─ Transparent pool: $22,000 (44%)
-├─ Shielded pool: $28,000 (56%)
+├─ Transparent pool: $30,900 (61.8%)
+├─ Shielded pool: $19,100 (38.2%)
 ├─ Status: Core infrastructure sustainable
 └─ Runway: Approaching self-sufficient
 
 Scenario: 25,000 signals/month (Target)
 ├─ Total fees: $125,000
-├─ Transparent pool: $55,000 (44%)
-├─ Shielded pool: $70,000 (56%)
+├─ Transparent pool: $77,250 (61.8%)
+├─ Shielded pool: $47,750 (38.2%)
 ├─ Status: Full operational coverage at break-even
 └─ Runway: Self-sustaining
 
 Scenario: 50,000 signals/month (Strong)
 ├─ Total fees: $250,000
-├─ Transparent pool: $110,000 (44%)
-├─ Shielded pool: $140,000 (56%)
+├─ Transparent pool: $154,500 (61.8%)
+├─ Shielded pool: $95,500 (38.2%)
 ├─ Status: Significant surplus for expansion
 └─ Runway: Self-sustaining with reserves
 ```
@@ -241,15 +242,15 @@ Monthly Operational Costs: $125,000
 Break-Even Signals:
 ├─ Revenue needed: $125,000/month
 ├─ Revenue per signal: $5.00
-├─ Shielded pool share (56%): $2.80/signal for operations
-├─ Signals needed: ~44,643/month (from shielded pool alone)
-├─ At 3 signals/person/month: ~14,881 active First Persons
+├─ Shielded pool share (38.2%): $1.91/signal for operations
+├─ Signals needed: ~65,445/month (from shielded pool alone)
+├─ At 3 signals/person/month: ~21,815 active First Persons
 
 Alternative: Combined Revenue Model
 ├─ If 50% of transparent pool also supports operations
-├─ Available per signal: $2.80 + $1.10 = $3.90
-├─ Signals needed: ~32,051/month
-├─ At 3 signals/person/month: ~10,684 active First Persons
+├─ Available per signal: $1.91 + $1.55 = $3.46
+├─ Signals needed: ~36,127/month
+├─ At 3 signals/person/month: ~12,042 active First Persons
 ```
 
 ### 2.3 Why Zcash for Genesis Layer
@@ -1445,7 +1446,7 @@ Market Dynamics:
 
 ### 10.1 The Observation (Speculative)
 
-**Status: 🔬 SPECULATIVE (10% confidence per Research Proposal v1.0)**
+**Status: 🔬 SPECULATIVE (10% confidence per Research Proposal v1.2)**
 
 During analysis of optimal budget allocation, a curious pattern emerged:
 
@@ -1539,12 +1540,12 @@ Possible Outcomes:
 ```
 Per Signal (0.01 ZEC at $500/ZEC = $5.00):
 
-44% Transparent Pool: $2.20
+61.8% Transparent Pool: $3.09
 ├─ Public liquidity provision
 ├─ Price discovery support
 └─ Ecosystem visibility
 
-56% Shielded Pool: $2.80
+38.2% Shielded Pool: $1.91
 ├─ Protocol operations
 ├─ Guardian rewards
 ├─ Development fund
@@ -1560,10 +1561,10 @@ Per Signal (0.01 ZEC at $500/ZEC = $5.00):
 
 Break-Even Calculation:
 ├─ Revenue needed: $125,000/month
-├─ If operations funded from shielded pool (56%)
-├─ Revenue per signal to operations: ~$2.80
-├─ Signals needed: ~44,643/month
-├─ At 3 signals/person/month: ~14,881 active First Persons
+├─ If operations funded from shielded pool (38.2%)
+├─ Revenue per signal to operations: ~$1.91
+├─ Signals needed: ~65,445/month
+├─ At 3 signals/person/month: ~21,815 active First Persons
 ```
 
 **Secondary: Treasury Holdings (Long-term)**
@@ -2125,8 +2126,8 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 ```
 Per 0.01 ZEC Signal (at $500/ZEC = $5.00):
 
-Transparent Pool (44%):  0.0044 ZEC = $2.20
-Shielded Pool (56%):     0.0056 ZEC = $2.80
+Transparent Pool (61.8%):  0.00618 ZEC = $3.09
+Shielded Pool (38.2%):     0.00382 ZEC = $1.91
 ```
 
 ### Break-Even Analysis
@@ -2139,11 +2140,11 @@ Operations:     $15,000
 Total:          $125,000
 
 Revenue per Signal: $5.00
-If operations funded from shielded pool (56%): $2.80/signal
+If operations funded from shielded pool (38.2%): $1.91/signal
 
 Signals Needed for Break-Even:
-$125,000 / $2.80 = ~44,643 signals/month
-At 3 signals/person/month: ~14,881 active First Persons
+$125,000 / $1.91 = ~65,445 signals/month
+At 3 signals/person/month: ~21,815 active First Persons
 ```
 
 ### Network Value Calculations
@@ -2191,11 +2192,11 @@ This document is part of the complete 0xagentprivacy documentation suite:
 
 1. **Swordsman/Mage Whitepaper v4.3** - Dual-agent architecture, RPP protocol, separation primitives
 2. **Dual Privacy Research Paper v3.2** - Mathematical proofs, information-theoretic bounds, ZK protocols
-3. **The Spellbook v4.0.0-canonical** - Narrative compression, symbolic language, trust game, recovery architecture
+3. **The Spellbook v4.0.1-canonical** - Narrative compression, symbolic language, trust game, recovery architecture
 4. **VRC Protocol: Economic Architecture v2.0** (this document) - Tokenomics, sustainability, deployment
-5. **Visual Architecture Guide v1.0** - Diagrams, flows, conceptual maps
-6. **Research Proposal v1.0** - Collaboration invitation, validation needs
-7. **Glossary Master v2.0** - Canonical terminology reference
+5. **Visual Architecture Guide v1.1** - Diagrams, flows, conceptual maps
+6. **Research Proposal v1.2** - Collaboration invitation, validation needs
+7. **Glossary Master v2.1** - Canonical terminology reference
 
 **Prerequisites for this document:**
 - Understanding of dual-agent separation from Whitepaper
@@ -2242,6 +2243,7 @@ This document describes an economic model under active development. Token values
 | 1.0 | Nov 2025 | Initial economic architecture |
 | 1.1 | Nov 2025 | Restructured edition |
 | 2.0 | Nov 25, 2025 | **Coherence Edition**: Fixed ceremony/signal terminology, corrected math (0.01 ZEC = $5), aligned with 44/56 canonical split, updated trust tier terminology (Blade/Light/Heavy/Dragon), updated all document version references |
+| 2.1 | Nov 26, 2025 | **Golden Ratio Edition**: Updated to φ-derived 61.8/38.2 transparent/shielded split, recalculated all derived values and break-even projections |
 
 ---
 

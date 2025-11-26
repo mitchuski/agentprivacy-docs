@@ -13,22 +13,22 @@ from pathlib import Path
 
 PORT = 7000
 
-# Document files in order
+# Document files in order: (filename, title, description)
 DOCUMENTS = [
-    ("0xagentprivacy_README.md", "README - Overview"),
-    ("swordsman_mage_whitepaper_v4_3.md", "Whitepaper v4.3 - Technical Architecture"),
-    ("dualprivacy_researchpaper_v3_2.md", "Research Paper v3.2 - Mathematical Foundations"),
-    ("spellbook_v4_0_1_canonical.md", "Spellbook v4.0.1 - Narrative Framework"),
-    ("tokenomics_economic_architecture_v2.md", "Tokenomics v2.0 - Economic Architecture"),
-    ("VISUAL_ARCHITECTURE_GUIDE_v1_1.md", "Visual Guide v1.1 - Diagrams & Flows"),
-    ("research_proposal_v1_1.md", "Research Proposal v1.1 - Collaboration Invitation"),
-    ("GLOSSARY_MASTER_v2.md", "Glossary v2.0 - Canonical Terminology"),
+    ("0xagentprivacy_README_v1_1.md", "README v1.1 - Overview", "Complete introduction to the privacy-first AI agent architecture and documentation suite"),
+    ("swordsman_mage_whitepaper_v4_3.md", "Whitepaper v4.3 - Technical Architecture", "Dual agent system design: Swordsman (protect) and Mage (delegate)"),
+    ("spellbook_v4_0_1_canonical.md", "Spellbook v4.0.1 - Narrative Framework", "Symbolic language, trust game mechanics, and recovery architecture for sovereign agency"),
+    ("tokenomics_economic_architecture_v2.md", "Tokenomics v2.0 - Economic Architecture", "Economic models, incentive structures, and dignity-based tokenomics for agent ecosystems"),
+    ("VISUAL_ARCHITECTURE_GUIDE_v1_1.md", "Visual Guide v1.1 - Diagrams & Flows", "Visual diagrams, system flows, and architectural illustrations of the agent framework"),
+    ("GLOSSARY_MASTER_v2_1.md", "Glossary v2.1 - Canonical Terminology", "Comprehensive glossary of terms, concepts, and definitions used across all documentation"),
+    ("research_proposal_v1_2.md", "Research Proposal v1.2 - Collaboration Invitation", "Research collaboration framework and invitation for academic and industry partnerships"),
+    ("dualprivacy_researchpaper_v3_3.md", "Research Paper v3.3 - Mathematical Foundations", "Formal mathematical models, proofs, and theoretical foundations of dual privacy mechanisms"),
 ]
 
 class DocsHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         parsed_path = urllib.parse.urlparse(self.path)
-        path = parsed_path.path.strip('/')
+        path = urllib.parse.unquote(parsed_path.path.strip('/'))
         
         # Serve index page
         if path == '' or path == 'index.html':
@@ -38,12 +38,25 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(self.generate_index().encode('utf-8'))
             return
         
+        # Special routes for README
+        if path.lower() in ['readme', 'readme.md', '0xagentprivacy_readme', '0xagentprivacy_readme.md']:
+            filename = '0xagentprivacy_README_v1_1.md'
+            if os.path.exists(filename):
+                self.send_response(200)
+                self.send_header('Content-type', 'text/html; charset=utf-8')
+                self.end_headers()
+                with open(filename, 'r', encoding='utf-8') as f:
+                    md_content = f.read()
+                html = self.markdown_to_html(md_content, filename)
+                self.wfile.write(html.encode('utf-8'))
+                return
+        
         # Serve markdown files as HTML
-        if path.endswith('.md') or any(path == doc[0] for doc in DOCUMENTS):
+        if path.endswith('.md') or any(path == doc[0] or path.lower() == doc[0].lower() for doc in DOCUMENTS):
             # Find the actual file
             filename = path
             if not filename.endswith('.md'):
-                filename = next((doc[0] for doc in DOCUMENTS if path == doc[0]), None)
+                filename = next((doc[0] for doc in DOCUMENTS if path == doc[0] or path.lower() == doc[0].lower()), None)
             
             if filename and os.path.exists(filename):
                 self.send_response(200)
@@ -67,7 +80,7 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xagentprivacy Documentation Suite</title>
+    <title>0xagentprivacy Living Documentation</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -154,23 +167,27 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
 </head>
 <body>
     <div class="container">
-        <h1>⚔️🧙 0xagentprivacy Documentation Suite</h1>
+        <h1>(⚔️⊥🧙)🙂 0xagentprivacy Living Documentation</h1>
         <p class="subtitle">Privacy-First AI Agent Architecture for Human Sovereignty</p>
         
         <div class="info">
-            <strong>📚 Complete Documentation Suite</strong><br>
+            <strong>📚 Living Documentation</strong><br>
             All documents are available for review. Click any document to read it in full.
         </div>
         
         <div class="docs-grid">
 """
         
-        for filename, title in DOCUMENTS:
-            doc_path = filename
+        for filename, title, description in DOCUMENTS:
+            # Use simpler path for README
+            if filename == '0xagentprivacy_README_v1_1.md':
+                doc_path = 'README'
+            else:
+                doc_path = urllib.parse.quote(filename)
             html += f"""
             <div class="doc-card">
                 <h2>{title}</h2>
-                <p>Click to read the full document</p>
+                <p>{description}</p>
                 <a href="/{doc_path}">Read Document →</a>
             </div>
 """

@@ -78,7 +78,7 @@ For complete terminology and economic details, see companion documents:
 
 - `tokenomics_economic_architecture_v2.md` --- Economic architecture
 
-- `spellbook_whitepaper_v4.md` --- Narrative interpretation
+- `spellbook_v4_0_1_canonical.md` --- Narrative interpretation
 
 ---
 
@@ -1479,7 +1479,7 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Ongoing signals: 0.01 ZEC ($5) each, continuous proof-of-comprehension
 
-- Fee distribution: 44% transparent pool, 56% shielded pool (internal allocation per ecosystem)
+- Fee distribution: 61.8% transparent pool, 38.2% shielded pool (internal allocation per ecosystem)
 
 - Self-sustaining at scale through activity-based revenue
 

@@ -1,6 +1,6 @@
 # Research Proposal: Dual Agent Systems as Natural Architecture for Privacy and Sovereignty
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Author:** privacymage  
 **Contact:** mage@agentprivacy.ai  
 **Date:** November 25, 2025
@@ -9,11 +9,15 @@
 
 ## Honest Starting Point
 
-I need to be upfront: I'm not a formally trained mathematician or computer scientist. I'm someone who's been obsessed with a problem at the intersection of privacy, AI agents, and human sovereignty, and I think I've stumbled onto something important.
+I need to be upfront about my background: I'm an entrepreneur, storyteller, and systems thinker—not a formally trained mathematician. I've spent years at the intersection of privacy, decentralized identity, and human sovereignty, building practical systems and connecting communities. I think I've stumbled onto something architecturally important.
+
+**My Approach:**
+
+I work through narrative and pattern recognition—finding the story that makes complex systems legible, then pressure-testing those patterns against practical implementation. The mathematical formalization in *Dual Privacy Research Paper v3.2* emerged from this process, developed collaboratively with AI assistance to express intuitions rigorously. These proofs need expert validation.
 
 **Current Status:**
 
-I've done the mathematical work myself, applying information theory and formal methods to what I believe are rigorous proofs (documented in *Dual Privacy Research Paper v3.2*). But I haven't had these validated by experts yet. This is **stage 1** - I'm reaching out to people with real expertise to either:
+The mathematical work applies information theory and formal methods to what I believe are rigorous proofs. But I haven't had these validated by experts yet. This is **stage 1** - I'm reaching out to people with real expertise to either:
 
 1. Help me formalize and validate what I think I've proven, or
 2. Show me where the mathematical flaws are (which would also be valuable)
@@ -29,6 +33,36 @@ Multiple technologies are converging at exactly the right moment to make this ar
 This confluence means we can actually build privacy-preserving agent systems today - if the mathematical foundations hold up under expert scrutiny.
 
 This document explains what I think I've figured out, what remains highly speculative, and where I desperately need expert collaboration.
+
+---
+
+## Practical Foundation: Identity & Tokenomics Experience
+
+This isn't purely theoretical work. It emerges from years of hands-on experience building and advising decentralized identity systems:
+
+**Identity Infrastructure Projects:**
+- **bronID**: Practical implementation of decentralized identity primitives
+- **Soulbis**: Sovereign agent architecture and bilateral trust protocols
+- **BGIN IKP Working Group**: Co-Chair, contributing to blockchain governance standards for identity and key management
+- **Verida**: Collaboration on self-sovereign data infrastructure
+- **Trust Over IP Foundation**: Engagement with trust framework specifications
+
+**Tokenomics Research:**
+
+The economic architecture (*Tokenomics v2.0*) draws on practical experience with:
+- Signal-based sustainability models (proof-of-comprehension vs speculation)
+- Guardian economics and stake-weighted validation
+- Progressive trust tier systems (Blade → Light → Heavy → Dragon)
+- Guild specialization and cross-ecosystem coordination
+- Value capture mechanics that align incentives with sovereignty
+
+**What This Experience Provides:**
+- Understanding of what actually works in production identity systems
+- Pattern recognition across multiple implementation attempts
+- Network of practitioners who've built real infrastructure
+- Intuition about where theory meets deployment friction
+
+The dual-agent architecture isn't designed in isolation—it's informed by what I've seen succeed and fail across multiple identity and privacy projects.
 
 ---
 
@@ -82,7 +116,7 @@ $$P_e \geq 1 - \frac{I(X; Y_S, Y_M) + 1}{H(X)}$$
 - Guarantees would hold even against unlimited computational power
 - The architecture would provide information-theoretic security
 
-**My Confidence:** 60% that the core math is sound, but I'm **not a trained information theorist**. I could be missing subtleties.
+**My Confidence:** 60% that the core math is sound, but I developed these proofs through pattern recognition and AI collaboration rather than formal training. I could be missing subtleties that trained information theorists would catch immediately.
 
 **What I Desperately Need:** Information theorists to review these proofs, find the flaws (if they exist), or help strengthen them if the foundation is solid.
 
@@ -397,11 +431,13 @@ The Swordsman and Mage framework provides those guarantees. The math is proven. 
 - Verifiable Relationship Credentials (VRCs)
 - Implementation guidance
 
-**Tokenomics v2** (*VRC Protocol: Economic Architecture*)
-- Signal-based sustainability model
-- Guardian economics
+**Tokenomics v2.0** (*VRC Protocol: Economic Architecture*)
+- Signal-based sustainability model (0.01 ZEC proof-of-comprehension)
+- Guardian economics and stake-weighted validation
 - Guild specialization frameworks
-- Progressive trust tier system
+- Progressive trust tier system (Blade/Light/Heavy/Dragon)
+- 61.8/38.2 transparent/shielded canonical fee split (φ-derived)
+- O(n²) network effects through VRC coordination
 
 All documentation available at: https://agentprivacy.ai
 
@@ -427,9 +463,12 @@ I'm looking for researchers who:
 
 - Proven mathematical foundations (Research Paper v3.2)
 - Complete architectural framework (Whitepaper v4.3)
-- Practical implementation experience
-- Domain expertise and industry connections
-- Passion, persistence, and proven ability to deliver
+- Economic sustainability model (Tokenomics v2.0)
+- **Practical experience** with decentralized identity systems (bronID, Soulbis, Verida, Trust Over IP)
+- **Network connections** through BGIN IKP Working Group, IIW, and privacy-focused communities
+- Domain expertise from years building real infrastructure
+- Storytelling ability to make complex systems accessible
+- Passion, persistence, and proven ability to ship
 
 ---
 
@@ -442,7 +481,8 @@ I'm looking for researchers who:
 **Deep Dive:** Complete technical documentation available:
 - Research Paper v3.2 (formal proofs)
 - Whitepaper v4.3 (architecture and implementation)
-- Tokenomics v2 (economic model)
+- Tokenomics v2.0 (economic model)
+- Spellbook v4.0.1 (narrative framework)
 - All available at https://agentprivacy.ai
 
 **Critique:** Send me your concerns and criticisms. I'd rather find flaws early than waste time.
@@ -525,6 +565,13 @@ The core insight (architectural separation as privacy foundation) is proven. The
 mage@agentprivacy.ai  
 https://agentprivacy.ai
 
+**Affiliations:**
+- BGIN IKP Working Group (Co-Chair)
+- Internet Identity Workshop (IIW)
+- Agentic Internet Workshop (AIW)
+- Trust Over IP Foundation
+- First Person Network
+
 **Available For:**
 - Zoom calls / in-person meetings
 - Conference presentations  
@@ -532,7 +579,7 @@ https://agentprivacy.ai
 - Whatever it takes to build this properly
 
 **Current Status:**  
-Theory proven, seeking collaborators for implementation and validation.
+Theory developed, practical experience established, seeking collaborators for validation and scale.
 
 ---
 
@@ -566,7 +613,7 @@ For those who want the mathematical version:
 
 ---
 
-**This proposal written with transparency about what's proven vs. speculative because I believe honesty about limitations is as important as confidence about results.**
+**This proposal written with transparency about what's proven vs. speculative, and honesty about my strengths (pattern recognition, storytelling, practical experience) vs. where I need expert collaboration (formal mathematical validation).**
 
 **Privacy is Value**  
 2025 agentprivacy just another ⚔️ 🧙‍♂️ 🤖 😊

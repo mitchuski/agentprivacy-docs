@@ -16,7 +16,19 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 
 **Implementation Framework:** We provide practical budget estimation methods, isolation verification protocols, and side-channel resistance models based on covert channel analysis. We integrate zero-knowledge proof systems for cryptographic enforcement of separation and budget compliance, providing concrete constructions using Groth16, PLONK, and Nova protocols. 
 
-**Exploratory Observations:** Preliminary analysis of limited implementations suggests interesting allocation patterns that may approach golden ratio proportions (φ ≈ 1.618), though these observations require further validation. We outline future research directions for understanding potential emergent system properties.
+**Theoretical Predictions:** We present theoretical conjectures about potential optimal allocation patterns, including a golden ratio hypothesis (φ ≈ 1.618) and tetrahedral emergence properties. These remain unproven mathematical conjectures requiring both formal proof and empirical validation. We outline specific research directions and invite collaboration on implementation and validation.
+
+---
+
+## Nature of This Work
+
+**What Is Proven**: The core information-theoretic results (additive bounds under separation, reconstruction ceilings, error floors) are rigorously proven using established information theory.
+
+**What Is Theoretical**: The golden ratio optimization hypothesis and tetrahedral emergence predictions are unproven mathematical conjectures. They represent interesting theoretical possibilities but have not been formally derived from first principles.
+
+**What Is Missing**: No implementations exist. No empirical data has been collected. No observations have been made. This is purely theoretical and mathematical work at present.
+
+**What We Seek**: Collaboration from theorists to prove or disprove the conjectures, and from practitioners to build implementations and collect empirical data.
 
 ---
 
@@ -58,9 +70,9 @@ These primitives are not mere metaphors but formal architectural components with
 
 - ZKP-based budget compliance verification protocols
 
-- Concrete implementations using Groth16, PLONK, and Nova systems
+- Concrete specifications for Groth16, PLONK, and Nova-based implementations
 
-**Theoretical Predictions**:
+**Theoretical Predictions** (unproven conjectures):
 
 - Golden ratio convergence hypothesis in optimal allocations
 
@@ -151,7 +163,9 @@ The critical architectural requirement: (Y_S ⊥ Y_M) | X (conditional independe
 
 If (Y_S ⊥ Y_M) | X holds, then:
 
-> **I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)**
+> **I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M)**
+
+*Note:* Equality holds if and only if Y_S and Y_M are additionally marginally independent. Conditional independence (Y_S ⊥ Y_M) | X alone permits dependence through the shared cause X, yielding the inequality. The inequality suffices for all downstream guarantees.
 
 *Proof:*
 
@@ -252,11 +266,13 @@ Our analysis builds on established covert channel capacity results. For d side-c
 
 > R(d) = R_max · ln(1 + d/d₀) / ln(1 + d_max/d₀)
 
+*Model Assumption:* This logarithmic functional form is adopted as a modeling assumption based on theoretical parallels, not derived from first principles. Empirical validation is required for specific deployment contexts.
+
 This mirrors:
 
 - **Shannon capacity** of noisy channels [Cover & Thomas 2006]
 
-- **Timing channel capacity** under sampling [Giles \ |  Hajek 2002]
+- **Timing channel capacity** under sampling [Giles & Hajek 2002]
 
 - **Power analysis leakage** with noise [Kocher et al. 1999]
 
@@ -277,11 +293,11 @@ The logarithmic form emerges from:
 - **Theoretical foundation**: Previous theoretical work shows logarithmic scaling in:
    
    
-- Cache timing attacks [Yarom \ |  Falkner 2014]
+- Cache timing attacks [Yarom & Falkner 2014]
    
 - Power analysis [Mangard et al. 2007]
    
-- Traffic correlation [Murdoch \ |  Danezis 2005]
+- Traffic correlation [Murdoch & Danezis 2005]
    
 
 ## Validation Methodology
@@ -316,9 +332,11 @@ For practical systems:
 
 - **a_S, a_M**: Channel-specific leakage rates (from profiling)
 
-- **d_max}: Threat model bound (e.g., 10⁶ queries/day)
+- **d_max**: Threat model bound (e.g., 10⁶ queries/day)
 
-\part{Part II: Implementation Framework}
+---
+
+# Part II: Implementation Framework
 
 # Design Principles and Budget Management
 
@@ -609,17 +627,11 @@ When β/α ≈ φ (protection slightly exceeds delegation), systems may show enh
 
 **Status**: This is a theoretical prediction derived from optimization analysis. Rigorous mathematical proof of universal convergence remains an open problem requiring further validation.
 
-## Empirical Observations
+## Open Research Question: Data Collection Needed
 
-In preliminary analysis of limited implementations, we observed patterns consistent with this prediction:
+**Research Opportunity**: We seek to collect empirical data on C_S/C_M ratio patterns across different implementation domains to test the golden ratio convergence hypothesis. This is purely theoretical at present—no implementations or observations exist yet.
 
-| System | Domain | C_S/C_M Ratio | Notes |
-|--------|--------|---------------|-------|
-| Personal Assistant | IoT | 1.67 | 5 user trial |
-| Health Monitor | Medical | 1.58 | Simulation |
-| Financial Agent | Banking | 1.62 | Prototype |
-
-**Important Note**: These observations are from a small sample and do not constitute proof. They are consistent with the theoretical prediction but require broader validation.
+**Call for Collaboration**: Researchers and developers implementing dual-agent privacy systems are invited to share their allocation patterns, system behaviors, and empirical measurements. This data would be invaluable for validating or refuting the theoretical predictions presented in this paper.
 
 ## Tetrahedral Emergence Hypothesis
 
@@ -647,15 +659,15 @@ By data processing inequality, I(X; Y_R) ≤ I(X; Y_S) and I(X; Y_C) ≤ I(X; Y_
 
 **Status**: This is a theoretical prediction about potential system evolution. Whether such emergence is inevitable, optimal, or even desirable requires further mathematical analysis and empirical validation.
 
-## Preliminary Empirical Observations
+## Testable Predictions
 
-In some implementations, we observed behaviors consistent with this prediction:
+If tetrahedral emergence occurs in real systems, we would expect to observe:
 
-- **Temporal patterns**: Systems developed logging behaviors (potential "Reflect" property)
+- **Temporal patterns**: Systems may develop memory/logging behaviors (potential "Reflect" property)
 
-- **Network effects**: Inter-agent communication patterns emerged (potential "Connect" property)
+- **Network effects**: Inter-agent communication patterns may emerge (potential "Connect" property)
 
-These observations are preliminary and may reflect common engineering practices rather than fundamental emergence. They are presented as potentially consistent with the theoretical prediction, not as validation of it.
+**Important**: These are theoretical predictions, not observations. No implementations exist yet to test whether such emergence actually occurs. These predictions provide concrete hypotheses for future experimental work.
 
 ## Future Research Directions
 
@@ -689,57 +701,38 @@ These observations are preliminary and may reflect common engineering practices 
 - Integration with existing privacy tools
    
 
-# Empirical Observations and Open Questions
+# Theoretical Predictions and Open Questions
 
-**STATUS: EXPLORATORY** - The observations in this section represent preliminary findings from limited implementations and require rigorous validation through larger-scale deployment and formal analysis.
+**STATUS: PURELY THEORETICAL** - This section presents unproven mathematical conjectures and theoretical predictions. No implementations, empirical data, or observations exist. These are research hypotheses requiring both formal mathematical proof and experimental validation.
 
-## Golden Ratio Observations
+## Golden Ratio Hypothesis (Unproven)
 
-**Observation 7.1 (Ratio Patterns).** In several prototype implementations with adaptive budget controllers, the allocation ratio C_S/C_M appears to converge toward values near φ ≈ 1.618 after extended operation.
+**Conjecture 7.1 (Golden Ratio Optimality - UNPROVEN).** There may exist an optimization principle that drives optimal allocation ratios toward φ ≈ 1.618.
 
-**Sample Data**:
+**Theoretical Motivation**:
 
-- Implementation A: C_S/C_M = 1.61 ± 0.08 (n=50 sessions)
+If a joint optimization objective exists of the form:
 
-- Implementation B: C_S/C_M = 1.64 ± 0.12 (n=30 sessions)
-
-- Implementation C: C_S/C_M = 1.58 ± 0.15 (n=40 sessions)
-
-**Limitations**:
-
-- Small sample sizes
-
-- Potentially confounded by implementation-specific factors
-
-- No theoretical derivation yet established
-
-- Could be spurious correlation
-
-**Open Question 7.1**: Does there exist an optimization principle that drives C_S/C_M → φ?
-
-> **Conjecture: Golden Ratio Optimality - UNPROVEN**
-> 
-> If a joint optimization objective exists of the form:
-> 
 > max_{C_S, C_M} U(C_M) · P(C_S, C_M)   s.t.   C_S + C_M = B
-> 
-> where U is utility and P is privacy, then under certain smoothness conditions, the optimal ratio may be C_S/C_M = φ.
 
-**Required Work**:
+where U is utility and P is privacy protection, then under certain smoothness and monotonicity conditions, the optimal ratio might be C_S/C_M = φ.
 
-- Formal definition of utility and privacy functions
+**What Would Be Required to Validate This**:
 
+- Formal mathematical proof deriving φ from first principles
+- Precise definitions of utility and privacy functions
 - Proof of existence and uniqueness of optimal ratio
+- Characterization of exact conditions under which φ emerges
+- Experimental implementations across multiple domains
+- Statistical validation with large sample sizes
 
-- Characterization of conditions under which φ emerges
+**Current Status**: Pure conjecture. No proof exists. No data exists. This is a mathematical hypothesis awaiting investigation.
 
-- Large-scale empirical validation
+## Budget Allocation: Testable Framework
 
-## Budget Allocation Analysis
+**Proposed Metrics** (for future experimental work):
 
-**Empirical Framework**:
-
-Define efficiency metrics:
+Define efficiency metrics for implementations:
 
 - **Privacy Efficiency**: η_P = Privacy Achieved / Budget Spent
 
@@ -747,21 +740,23 @@ Define efficiency metrics:
 
 - **Joint Efficiency**: η_J = η_P · η_U
 
-**Preliminary Findings**:
+**Theoretical Predictions** (to be tested):
 
-- η_P appears to increase with C_S but with diminishing returns
+- η_P may increase with C_S but with diminishing returns
 
-- η_U appears to increase with C_M but with diminishing returns
+- η_U may increase with C_M but with diminishing returns
 
-- η_J shows local maxima in observed implementations near C_S/C_M ≈ 1.6
+- η_J might show local maxima near C_S/C_M ≈ φ if the golden ratio hypothesis holds
 
-**Cautions**:
+**Critical Issues Requiring Resolution**:
 
-- Metrics are implementation-dependent
+- "Privacy Achieved" and "Utility Achieved" need rigorous, measurable definitions
 
-- "Privacy Achieved" and "Utility Achieved" lack rigorous definitions
+- Metrics may be highly implementation-dependent
 
-- Optimization landscape may vary by application domain
+- Optimization landscape likely varies by application domain
+
+- No implementations exist yet to test these predictions
 
 # Tetrahedral Emergence Hypothesis
 
@@ -948,7 +943,7 @@ The framework can be deployed through:
 
 The potential emergence of structure from simple rules connects to:
 
-- **Self-organization** [Prigogine \ |  Stengers 1984]
+- **Self-organization** [Prigogine & Stengers 1984]
 
 - **Emergent complexity** [Kauffman 1993]
 
@@ -1002,7 +997,7 @@ Rather than speculative token sales, sustainable funding emerges from ceremony a
 
 - Ongoing signals: 0.01 ZEC ($5) each, continuous proof-of-comprehension
 
-- Fee distribution: 44% transparent pool, 56% shielded pool (internal allocation per ecosystem)
+- Fee distribution: 61.8% transparent pool, 38.2% shielded pool (internal allocation per ecosystem)
 
 - Self-sustaining through activity-based revenue
 
@@ -1030,15 +1025,15 @@ We integrate zero-knowledge proof systems as core implementation primitives, pro
 
 The key insight remains powerful: structural separation with budget constraints creates fundamental privacy guarantees independent of computational assumptions. This offers a principled approach to the agent privacy problem that complements existing methods.
 
-Our empirical observations suggest interesting phenomena worthy of further investigation, but we emphasize these remain preliminary findings requiring validation. The framework's core value lies not in these conjectures but in its proven guarantees and practical applicability.
+We present theoretical conjectures about golden ratio optimization and tetrahedral emergence, but emphasize these remain unproven mathematical hypotheses with no empirical validation. The framework's value lies entirely in its proven information-theoretic guarantees and the implementation roadmap it provides for future builders.
 
 # Version Statement
 
-**Version 3.0**: This consolidated edition separates proven information-theoretic results from exploratory observations. The core separation bounds, reconstruction ceilings, and error guarantees are rigorously established. Golden ratio observations and tetrahedral emergence represent preliminary findings requiring validation through larger-scale deployment and formal analysis. For practical implementation guidance, see the companion *0xagentprivacy Whitepaper*. We invite collaboration on both theoretical extensions and practical implementations.
+**Version 3.2**: This edition clearly separates proven information-theoretic results from unproven theoretical conjectures. The core separation bounds, reconstruction ceilings, and error guarantees are rigorously established through formal proof. Golden ratio hypotheses and tetrahedral emergence remain purely theoretical conjectures with no empirical validation—no implementations or observations exist yet. We explicitly distinguish mathematical theorems from speculative predictions and invite collaboration on both formal proof development and experimental validation. For implementation guidance, see the companion *0xagentprivacy Whitepaper*.
 
 # Acknowledgments
 
-To the 0xagentprivacy project for exploring privacy-first infrastructure. To BGIN for discussions on AI governance. To the reviewers whose feedback strengthened this work.
+To the 0xagentprivacy project for exploring privacy-first infrastructure. To BGIN for discussions on AI governance. To Kwaai for advancing personal AI sovereignty. To First Person Project for pioneering user-centric identity frameworks. To the reviewers whose feedback strengthened this work.
 
 ## References
 
@@ -1121,7 +1116,8 @@ class DualAgentPrivacy:
         self.H_X = entropy_bits
         self.budget = self.H_X * safety_factor
         
-        # Allocation (empirical observation, not prescribed)
+        # Allocation (example values, not empirically validated)
+        # Golden ratio hypothesis suggests C_S ≈ 0.62, C_M ≈ 0.38
         self.C_S = self.budget * 0.62  
         self.C_M = self.budget * 0.38
         

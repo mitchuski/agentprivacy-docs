@@ -785,7 +785,7 @@ Traditional recovery: Seed phrases, backup keys, trusted custodians
 
 **Signal Fee**: 0.01 ZEC (~$5 at $500/ZEC)
 
-**Canonical Split**: 44% transparent / 56% shielded
+**Canonical Split**: 61.8% transparent / 38.2% shielded (φ-derived)
 
 **Internal Allocation (reference implementation)**:
 - 50% ($2.50) → Spellbook Liquidity (token markets)
@@ -793,7 +793,7 @@ Traditional recovery: Seed phrases, backup keys, trusted custodians
 - 20% ($1.00) → Guardian Rewards (validation)
 - 10% ($0.50) → Ecosystem Treasury (local governance)
 
-*Note: The 44/56 transparent/shielded split is canonical. Internal allocation within each pool may vary per ecosystem.*
+*Note: The 61.8/38.2 transparent/shielded split is canonical (golden ratio derived). Internal allocation within each pool may vary per ecosystem.*
 
 **Rationale**:
 - Liquidity first (markets must function)
@@ -808,10 +808,10 @@ Traditional recovery: Seed phrases, backup keys, trusted custodians
 - Infrastructure: $25,000
 - Operations: $15,000
 
-**Break-Even**: ~45,000 signals/month
-- Shielded pool share (56%): ~$2.80/signal for operations
-- Required: $125,000 / $2.80 ≈ 44,643 signals
-- Active First Persons needed: ~14,881 (at 3 signals/month)
+**Break-Even**: ~65,500 signals/month
+- Shielded pool share (38.2%): ~$1.91/signal for operations
+- Required: $125,000 / $1.91 ≈ 65,445 signals
+- Active First Persons needed: ~21,815 (at 3 signals/month)
 
 ## Timeline to Sustainability
 
@@ -1113,13 +1113,13 @@ This is the inflection point. Build now. Deploy now. Coordinate now.
 
 ---
 
-# Appendix A: Canonical Spellbook JSON (v4.0.0-canonical)
+# Appendix A: Canonical Spellbook JSON (v4.0.1-canonical)
 
 The following JSON represents the complete canonical encoding of both spellbooks, enabling machine-readable spell invocation and verification.
 
 ```json
 {
-  "version": "4.0.0-canonical",
+  "version": "4.0.1-canonical",
   "created_at": "2025-11-23T00:00:00Z",
   "description": "Complete Spellbook - Canonical Edition combining First Person Spellbook and Zero Knowledge Spellbook with Relationship Proverb Protocol inscriptions",
   "meta": {

@@ -44,7 +44,7 @@
 │   MATHEMATICAL/   │  │   NARRATIVE/      │  │   ECONOMIC/       │
 │   ARCHITECTURAL   │  │   MYTHOLOGICAL    │  │   PRACTICAL       │
 │                   │  │                   │  │                   │
-│  Whitepaper v4.3  │  │  Spellbook v4.1   │  │  Tokenomics v2.0  │
+│  Whitepaper v4.3  │  │  Spellbook v4.0.1 │  │  Tokenomics v2.0  │
 └───────────────────┘  └───────────────────┘  └───────────────────┘
          │                      │                      │
          │                      │                      │
@@ -1529,7 +1529,7 @@ Growth:
 
 Documents:
 • Whitepaper v4.3 (mathematical foundations)
-• Spellbook v4.1 (narrative learning)
+• Spellbook v4.0.1-canonical (narrative learning)
 • Tokenomics v2.0 (economic mechanics)
 • This guide v1.1 (visual reference)
 

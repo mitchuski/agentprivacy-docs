@@ -1,8 +1,8 @@
-# 0xagentprivacy Documentation Suite
+# (⚔️⊥🧙‍♂️)🙂 0xagentprivacy Documentation Suite
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** November 25, 2025  
 **Status:** ✅ Coherence Review Complete
 
@@ -20,13 +20,13 @@
 
 | Document | Version | Purpose | Audience |
 |----------|---------|---------|----------|
-| **Glossary Master** | 2.0 | Canonical terminology reference | All |
+| **Glossary Master** | 2.1 | Canonical terminology reference | All |
 | **Whitepaper** | 4.3 | Technical architecture, VRCs, protocol layers | Developers, Researchers |
 | **Research Paper** | 3.2 | Mathematical proofs, information theory | Academics, Cryptographers |
-| **Spellbook** | 4.0.0-canonical | Narrative framework, symbolic compression | Community, Learners |
+| **Spellbook** | 4.0.1-canonical | Narrative framework, symbolic compression | Community, Learners |
 | **Tokenomics** | 2.0 | Economic model, sustainability | Investors, Builders |
 | **Visual Guide** | 1.1 | Diagrams, flows, quick reference | All |
-| **Research Proposal** | 1.1 | Collaboration invitation | Researchers, Partners |
+| **Research Proposal** | 1.2 | Collaboration invitation | Researchers, Partners |
 
 ---
 
@@ -86,7 +86,7 @@ AI agents need to know about you to act effectively on your behalf. But that kno
 | **Ceremony** | 1 ZEC ($500) | One-time genesis of agent pair |
 | **Signal** | 0.01 ZEC ($5) | Ongoing proof of comprehension |
 | **ZEC Price Basis** | $500 USD | Standardized for calculations |
-| **Fee Split** | 44% transparent / 56% shielded | Canonical constant |
+| **Fee Split** | 61.8% transparent / 38.2% shielded | Golden ratio constant |
 
 ### Trust Tier Progression
 
@@ -114,7 +114,7 @@ Bilateral trust objects formed when two people derive matching compressions from
 
 ### Relationship Proverb Protocol (RPP)
 
-Compression protocol where understanding is demonstrated through contextual proverb derivation. Creates Sybil resistance through comprehension rather than capital.
+Compression protocol where understanding is demonstrated through contextual proverb formation. Creates Sybil resistance through comprehension rather than capital.
 
 ### The Gap
 
@@ -220,8 +220,8 @@ This is not about competing on features. This is about establishing **foundation
 ## Project Links
 
 - **Website**: https://agentprivacy.ai
-- **Documentation**: https://sync.soulbis.com
-- **Intel**: https://intel.agentkyra.ai
+- **Public Goods Research**: https://sync.soulbis.com
+- **Private AI Intel**: https://intel.agentkyra.ai
 - **Contact**: mage@agentprivacy.ai
 
 ### Collaborators & Networks
@@ -231,6 +231,9 @@ This is not about competing on features. This is about establishing **foundation
 - First Person Network
 - Kwaai Network
 - MyTerms / Customer Commons
+- Loyal Agents
+- 8004 builders
+- zypherpunks
 
 ---
 
@@ -241,7 +244,7 @@ This documentation suite has been reviewed for terminology consistency, economic
 ### Standardizations Applied
 - **Terminology**: Ceremony (1 ZEC one-time) vs Signal (0.01 ZEC ongoing)
 - **Trust Tiers**: Blade → Light → Heavy → Dragon (no "Armor" suffix)
-- **Economic Basis**: $500/ZEC canonical, 44/56 transparent/shielded split
+- **Economic Basis**: $500/ZEC canonical, 61.8/38.2 transparent/shielded split (φ-derived)
 - **Version References**: All documents reference correct companion versions
 
 ### Citation Format

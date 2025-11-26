@@ -1,6 +1,6 @@
 # 0xagentprivacy Master Glossary
 
-**Version 2.0** | November 25, 2025  
+**Version 2.1** | November 25, 2025  
 **Status:** ✅ CANONICAL REFERENCE
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
@@ -9,15 +9,15 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 
 | Document | Version | Date | Status |
 |----------|---------|------|--------|
-| **This Glossary** | 2.0 | November 25, 2025 | ✅ CANONICAL |
+| **This Glossary** | 2.1 | November 25, 2025 | ✅ CANONICAL |
 | Swordsman-Mage Whitepaper | 4.3 | November 25, 2025 | ✅ FINAL |
 | Dual Privacy Research Paper | 3.2 | November 25, 2025 | ✅ FINAL |
-| Spellbook | 4.0.0-canonical | November 24, 2025 | ✅ FINAL |
-| Tokenomics Economic Architecture | 2.0 | November 25, 2025 | 🚧 UPDATING |
-| Visual Architecture Guide | 1.0 | November 18, 2025 | ✅ FINAL |
-| Research Proposal | 1.0 | November 2025 | ✅ FINAL |
+| Spellbook | 4.0.1-canonical | November 25, 2025 | ✅ FINAL |
+| Tokenomics Economic Architecture | 2.0 | November 25, 2025 | ✅ FINAL |
+| Visual Architecture Guide | 1.1 | November 25, 2025 | ✅ FINAL |
+| Research Proposal | 1.2 | November 25, 2025 | ✅ FINAL |
 
-**Note:** All cross-references between documents should use these version numbers. When documents reference each other, they should cite specific versions (e.g., "see Research Paper v3.1, Theorem 3.2").
+**Note:** All cross-references between documents should use these version numbers. When documents reference each other, they should cite specific versions (e.g., "see Research Paper v3.2, Theorem 3.2").
 
 ---
 
@@ -126,17 +126,17 @@ This glossary serves as the **single source of truth** for terminology across al
 | **Ceremony** | 1 ZEC | $500 | One-time (genesis) |
 | **Signal** | 0.01 ZEC | $5 | Ongoing (per proverb) |
 
-**44/56 Split** (applies to both ceremony and signal fees):
-- **44%** → Transparent Pool
+**61.8/38.2 Split** (applies to both ceremony and signal fees):
+- **61.8%** → Transparent Pool
   - Public blockchain inscription
   - Liquidity provision
   - Visible accountability
-- **56%** → Shielded Pool
+- **38.2%** → Shielded Pool
   - Protocol operations
   - Private allocation
   - Development and sustainability
 
-**Note on Internal Allocations**: The specific breakdown within each pool (e.g., % to development, % to guardians, % to ecosystem treasury) is yet to be confirmed and may naturally vary per ecosystem implementation. The 44/56 transparent/shielded split is the canonical constant.
+**Note on Internal Allocations**: The specific breakdown within each pool (e.g., % to development, % to guardians, % to ecosystem treasury) is yet to be confirmed and may naturally vary per ecosystem implementation. The 61.8/38.2 transparent/shielded split is the canonical constant, derived from the golden ratio (φ ≈ 1.618).
 
 **Compression Efficiency**: 70:1 base ratio (compression ratios are variable per context)
 
@@ -622,9 +622,9 @@ This glossary serves as the **single source of truth** for terminology across al
 5. Receive dual NFT credentials (Swordsman + Mage for that ecosystem)
 6. Agent pair now exists—ceremony complete
 
-**Fee Distribution** (44/56 Split):
-- **44%** → Transparent Pool (public blockchain inscription, liquidity)
-- **56%** → Shielded Pool (protocol operations, private)
+**Fee Distribution** (61.8/38.2 Split):
+- **61.8%** → Transparent Pool (public blockchain inscription, liquidity)
+- **38.2%** → Shielded Pool (protocol operations, private)
 
 **Note**: Internal allocation within each pool (development, guardians, ecosystem treasury) is yet to be confirmed and may vary per ecosystem implementation.
 
@@ -659,7 +659,7 @@ This glossary serves as the **single source of truth** for terminology across al
 - 150-500 signals → Heavy
 - 500+ signals → Dragon (Guardian eligible)
 
-**Fee Distribution**: Same 44/56 split as ceremony
+**Fee Distribution**: Same 61.8/38.2 split as ceremony
 
 ---
 
@@ -1162,13 +1162,13 @@ These terms should NOT be used in 0xagentprivacy documentation. Use the canonica
 
 | Document | Version | Focus | Key Terms |
 |----------|---------|-------|-----------|
-| **This Glossary** | 2.0 | Terminology standardization | All canonical definitions |
+| **This Glossary** | 2.1 | Terminology standardization | All canonical definitions |
 | **Whitepaper** | 4.3 | Architecture, RPP, practical systems | Dual Agents, Separation, VRC, Chronicles, MyTerms |
 | **Research Paper** | 3.2 | Mathematical foundations, proofs | Theorems 3.1-3.4, Reconstruction Ceiling, Error Floor |
-| **Tokenomics** | 2.0 | Economic architecture | SWORD, MAGE, Ceremony, Signal, Guardian, 44/56 Split |
-| **Spellbook** | 4.0.0-canonical | Narrative, symbolic system | Soulbis, Soulbae, Acts, Tales, Spells |
-| **Visual Guide** | 1.0 | Diagrams, flows | Status indicators, architecture diagrams |
-| **Research Proposal** | 1.0 | Collaboration invitation | Confidence levels, validation needs |
+| **Tokenomics** | 2.0 | Economic architecture | SWORD, MAGE, Ceremony, Signal, Guardian, 61.8/38.2 Split |
+| **Spellbook** | 4.0.1-canonical | Narrative, symbolic system | Soulbis, Soulbae, Acts, Tales, Spells |
+| **Visual Guide** | 1.1 | Diagrams, flows | Status indicators, architecture diagrams |
+| **Research Proposal** | 1.2 | Collaboration invitation | Confidence levels, validation needs |
 
 ### Canonical Economic Parameters
 
@@ -1181,8 +1181,8 @@ All documents should reference these standardized values:
 | ZEC Price Basis | $500 USD | Standardized |
 | Ceremony Value | $500 USD | One-time |
 | Signal Value | $5 USD | Per signal |
-| Transparent Pool | 44% | Fixed split |
-| Shielded Pool | 56% | Fixed split |
+| Transparent Pool | 61.8% | Golden ratio split |
+| Shielded Pool | 38.2% | Golden ratio split |
 | Compression Base | 70:1 | Variable per context |
 
 ### Term → Document Mapping
@@ -1190,22 +1190,22 @@ All documents should reference these standardized values:
 | Term | Primary Source | Supporting Sources |
 |------|----------------|-------------------|
 | Reconstruction Ceiling | Research Paper v3.2 §3.2 | Whitepaper v4.3, Tokenomics v2.0 |
-| VRC Formation | Whitepaper v4.3 | Spellbook v4.0, Tokenomics v2.0 |
-| 44/56 Split | Tokenomics v2.0 | This Glossary v2.0 |
+| VRC Formation | Whitepaper v4.3 | Spellbook v4.0.1, Tokenomics v2.0 |
+| 61.8/38.2 Split | Tokenomics v2.0 | This Glossary v2.1 |
 | Guardian | Tokenomics v2.0 | Whitepaper v4.3 |
-| Spells | Spellbook v4.0 | Whitepaper v4.3, Visual Guide v1.0 |
+| Spells | Spellbook v4.0.1 | Whitepaper v4.3, Visual Guide v1.1 |
 | Trust Tiers | Tokenomics v2.0 | Whitepaper v4.3 |
-| Tetrahedral | Whitepaper v4.3 | Research Proposal v1.0 |
+| Tetrahedral | Whitepaper v4.3 | Research Proposal v1.2 |
 | Golden Ratio | Research Paper v3.2 | Tokenomics v2.0 |
-| Ceremony vs Signal | This Glossary v2.0 | Tokenomics v2.0 |
+| Ceremony vs Signal | This Glossary v2.1 | Tokenomics v2.0 |
 
 ### Citation Format
 
 When referencing across documents, use:
 - `[Whitepaper v4.3, §Section]`
 - `[Research Paper v3.2, Theorem 3.2]`
-- `[Glossary v2.0, Term Name]`
-- `[Spellbook v4.0, Act N]`
+- `[Glossary v2.1, Term Name]`
+- `[Spellbook v4.0.1, Act N]`
 
 ---
 
@@ -1215,6 +1215,7 @@ When referencing across documents, use:
 |---------|------|---------|
 | 1.0 | Nov 20, 2025 | Initial comprehensive glossary |
 | 2.0 | Nov 25, 2025 | Major expansion: ZKP terms, protocol standards, status indicators, cross-references, topology section, compression ratios |
+| 2.1 | Nov 25, 2025 | Coherence update: Aligned all cross-document version references (Research Paper 3.2, Spellbook 4.0.1-canonical, Visual Guide 1.1, Research Proposal 1.2) |
 
 ---
 
