@@ -1,4 +1,4 @@
-# (⚔️⊥🧙‍♂️)🙂 0xagentprivacy Documentation Suite
+# (⚔️⊥🧙‍♂️)🙂 0xagentprivacy Living Documents
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
@@ -230,7 +230,7 @@ This is not about competing on features. This is about establishing **foundation
 - Internet Identity Workshop (IIW)
 - Agentic Internet Workshop (AIW)
 - First Person Network
-- Kwaai Network
+- Kwaai AI
 - MyTerms / Customer Commons
 - Loyal Agents
 - 8004 builders
