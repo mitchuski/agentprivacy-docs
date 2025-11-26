@@ -323,7 +323,7 @@ Alignment: Deep philosophical and technical convergence
 │ PHASE 1: COMPREHENSION (10-30 minutes)             │
 ├─────────────────────────────────────────────────────┤
 │ 1. Read Spellbook content (new Acts, Tales)        │
-│ 2. Derive proverb (contextual understanding)       │
+│ 2. Form a proverb (contextual understanding)       │
 │ 3. Complete comprehension test (80%+ score)        │
 │ 4. Generate signal inscription (JSON)              │
 │    Format: {eco, proof_hash, timestamp}            │
@@ -758,13 +758,13 @@ Person A and Person B Encounter Same Content:
 
 Person A:
 ├─ Reads Spellbook from their context (medical researcher)
-├─ Derives proverb: "Separation prevents correlation"
+├─ Forms a proverb: "Separation prevents correlation"
 ├─ Compresses to spell: ⚔️⊥🔮|🗝️
 └─ Broadcasts compression (discovery)
 
 Person B:
 ├─ Reads Spellbook from their context (privacy activist)
-├─ Derives proverb: "Privacy requires architectural constraint"
+├─ Forms a proverb: "Privacy requires architectural constraint"
 ├─ Compresses to spell: ⚔️⊥🔮|🗝️
 └─ Broadcasts compression (discovery)
 
@@ -2068,7 +2068,7 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 
 **Reconstruction Ceiling (R_max):** The maximum efficiency with which an adversary can reconstruct the secret from observations, guaranteed to be <1 under separation.
 
-**Relationship Proverb Protocol (RPP):** Compression protocol where individuals derive contextual proverbs from shared content, enabling efficient coordination.
+**Relationship Proverb Protocol (RPP):** Compression protocol where individuals form contextual proverbs from shared content, enabling efficient coordination.
 
 **Signal:** **Ongoing** 0.01 ZEC ($5) proof-of-comprehension transactions that demonstrate continued engagement and learning.
 

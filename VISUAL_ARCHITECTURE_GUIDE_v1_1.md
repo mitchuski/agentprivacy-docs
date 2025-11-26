@@ -332,7 +332,7 @@ START: First Person wants to participate in 0xagentprivacy
                  │
                  ▼
 ┌────────────────────────────────────────────┐
-│ STEP 2: Derive Proverb (RPP)              │
+│ STEP 2: Form a Proverb (RPP)             │
 │                                            │
 │ Read content → compress into proverb      │
 │ • Maps content to YOUR context            │
@@ -896,7 +896,7 @@ WORKFLOW EXAMPLE: Signal Posting
 
 1. USER ACTION (Ethereum):
    ┌─────────────────────────────────────┐
-   │ User derives proverb from spellbook │
+   │ User forms proverb from spellbook   │
    │ Posts signal via Ethereum contract  │
    │ Pays 0.01 ETH (or L2 equivalent)    │
    │ Receives MAGE tokens (ERC-20)       │
@@ -1009,7 +1009,7 @@ STEP 1: Two First Persons Learn Framework
 
 ─────────────────────────────────────────────────────
 
-STEP 2: Derive Bilateral Proverb
+STEP 2: Form Bilateral Proverb
 ┌─────────────────────────────────────────────────┐
 │ Alice and Bob co-create proverb that maps       │
 │ to THEIR shared context:                        │
@@ -1055,7 +1055,7 @@ STEP 4: VRC Becomes Recovery Mechanism
 │ How it works:                                    │
 │ 1. Alice claims: "I'm Alice, I lost my keys"    │
 │ 2. Bob asks: "What's our proverb?"              │
-│ 3. Alice derives correct proverb from context   │
+│ 3. Alice forms correct proverb from context     │
 │ 4. Bob verifies: "Yes, that's Alice"            │
 │ 5. Recovery proceeds (with multiple VRCs)       │
 │                                                  │
@@ -1486,7 +1486,7 @@ Architecture:
 • Four emergent components (protect, delegate, reflect, connect)
 
 Participation:
-• Learn spellbook → derive proverbs → post signals
+• Learn spellbook → form proverbs → post signals
 • 0.01 ZEC per signal (~$5 at $500/ZEC)
 • 500+ signals → guardian candidacy
 
@@ -1522,7 +1522,7 @@ Growth:
 
 ```
 1. READ: Spellbook (11 Acts + bookends)
-2. DERIVE: Proverbs (RPP compression)
+2. FORM: Proverbs (RPP compression)
 3. POST: Signals (0.01 ZEC each)
 4. BUILD: Trust tiers (progressive)
 5. QUALIFY: Guardian (500+ signals)

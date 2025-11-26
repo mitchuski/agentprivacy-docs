@@ -502,7 +502,7 @@ This glossary serves as the **single source of truth** for terminology across al
 
 **Formation**:
 1. Both parties engage with same content
-2. Both derive contextual proverbs
+2. Both form contextual proverbs
 3. Both compress to matching spells
 4. Matching compressions = VRC formed
 
@@ -616,7 +616,7 @@ This glossary serves as the **single source of truth** for terminology across al
 
 **Process**:
 1. Engage with Spellbook content for ecosystem
-2. Derive proverb demonstrating comprehension
+2. Form a proverb demonstrating comprehension
 3. Pass comprehension test (80%+ threshold)
 4. Submit 1 ZEC with proverb in encrypted memo
 5. Receive dual NFT credentials (Swordsman + Mage for that ecosystem)
@@ -647,7 +647,7 @@ This glossary serves as the **single source of truth** for terminology across al
 
 **Process**:
 1. Read additional Spellbook content (new Acts, Tales, updates)
-2. Derive proverb showing comprehension
+2. Form a proverb showing comprehension
 3. Submit 0.01 ZEC signal with proverb
 4. Signal recorded, contributes to trust tier progression
 
@@ -820,12 +820,12 @@ This glossary serves as the **single source of truth** for terminology across al
 ## 8. Compression & Encoding
 
 ### Relationship Proverb Protocol (RPP)
-**Definition**: Compression protocol where individuals derive contextual proverbs from shared content, proving comprehension through unique personal derivation.
+**Definition**: Compression protocol where individuals form contextual proverbs from shared content, proving comprehension through unique personal expression.
 
 **Status**: ✅ CANONICAL
 
 **Three Stages**:
-1. **Derivation**: Engage deeply, map to context, derive unique proverb
+1. **Proverb Formation**: Engage deeply, map to context, form unique proverb
 2. **Verification**: Share compression, test expansion, confirm matching
 3. **VRC Formation**: Matching compressions prove bilateral understanding
 
