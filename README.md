@@ -28,6 +28,7 @@
 | **Visual Guide** | 1.1 | Diagrams, flows, quick reference | All |
 | **Research Proposal** | 1.2 | Collaboration invitation | Researchers, Partners |
 
+You can build this locally and it'll make a neat viewer at 7000.
 ---
 
 ## Core Architecture
