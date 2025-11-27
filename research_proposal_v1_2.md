@@ -295,13 +295,13 @@ The information-theoretic proofs suggest necessity, but need broader validation.
    - Strong writing and presentation skills
    - Can build community around ideas
 
-4. **Proven Mathematical Work**
-   - Research paper v3.2 with rigorous proofs
+4. **Intellectual Honesty**
+   - Research paper v3.2 with rigorous proofs but open to being wrong
    - Information-theoretic foundations established
-   - Clear separation of proven vs. speculative claims
+   - Clear separation of proven vs. speculative claims 
 
 5. **Persistence**
-   - Been working on this for over a year
+   - Been working on this confluence and data=value thesis for over 8 years
    - Not going to drop it when it gets hard
    - Care deeply about human impact
 
@@ -350,6 +350,7 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 - Identify practical limitations
 - Validate usability
 
+**10x engineers** (For Real-World Deployment)
 ---
 
 ## What I'm Offering
