@@ -1,11 +1,11 @@
 # Understanding as Key
-## A Lite Paper on Privacy-Preserving Trust Through Demonstrated Comprehension
+## A Paper on Privacy-Preserving Trust Through Demonstrated Comprehension
 
 *From the Signal to Sanctuary implementation at Zypherpunk Hack 2025*
 
 **Version:** 1.0  
 **Date:** December 1, 2025  
-**Author:** Privacymage / 0xagentprivacy  
+**Author:** privacymage / 0xagentprivacy  
 **Status:** Living Document
 
 **Document Alignment**: 
@@ -1202,7 +1202,7 @@ The window is 2-3 years before surveillance architectures lock in [Spellbook v4.
 |----------|---------|-------------------|
 | **Swordsman/Mage Whitepaper** | v4.4 | §4.3 Private Proverb Inscription, §2 Dual-Agent Architecture |
 | **Dual Privacy Research Paper** | v3.2 | §5 Reconstruction Ceiling, §4 Key Derivation, §7 Golden Ratio Hypothesis |
-| **Zero Knowledge Spellbook** | v4.0.2 | Part VI: The Recovery, Act 12: The Forgetting/Proverbiogenesis |
+| **First Person Spellbook** | v4.0.2 | Part VI: The Recovery, Act 12: The Forgetting/Proverbiogenesis |
 | **VRC Protocol: Tokenomics** | v2.1 | §1.3 Ceremony vs Signal, §2.1 RPP Foundation, §5 Trust Tiers |
 | **Visual Architecture Guide** | v1.2 | VRC Formation Process, Information Flow Topology |
 | **Glossary** | v2.1 | VRC, RPP, First Person, Ceremony, Signal definitions |
