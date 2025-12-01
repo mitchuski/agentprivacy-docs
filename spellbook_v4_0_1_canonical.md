@@ -1,10 +1,10 @@
 # The 0xagentprivacy Spellbook: Complete System
 ## Symbolic Language, Trust Game, and Recovery Architecture for Sovereign Agency
 
-**Version 4.0.1-canonical - Coherence Edition**
+**Version 4.0.2-canonical - Coherence Edition**
 
 **Author:** privacymage  
-**Date:** November 25, 2025
+**Date:** November 29, 2025
 
 ---
 
@@ -44,7 +44,7 @@ This spellbook is a living document—part technical manual, part narrative fict
 
 **Three Ways to Read:**
 
-1. **Narrative Journey**: Read the Story Spellbook (11 Acts) sequentially to follow Soulbis (Swordsman ⚔️) and Soulbae (Mage 🧙‍♂️) through their story
+1. **Narrative Journey**: Read the Story Spellbook (12 Acts) sequentially to follow Soulbis (Swordsman ⚔️) and Soulbae (Mage 🧙‍♂️) through their story
 2. **Technical Reference**: Study the Zero Knowledge Spellbook (30 Tales) for cryptographic foundations and proof systems
 3. **Protocol Learning**: Study the RPP embedded throughout to understand how knowledge protects itself
 
@@ -156,9 +156,9 @@ The Relationship Proverb Protocol operates through three stages:
 
 ---
 
-# Part II: The Story Spellbook — Acts 1-11
+# Part II: The Story Spellbook — Acts 1-12
 
-*The journey from ceremony to sovereignty — eleven acts teaching the architecture of privacy and delegation*
+*The journey from ceremony to sovereignty — twelve acts teaching the architecture of privacy and delegation*
 
 **Opening Spell:** `😊 → 🔮 🤝 🗡️ × 🐉 → 🤖❌`
 
@@ -343,6 +343,29 @@ The Relationship Proverb Protocol operates through three stages:
 **Spell:** `⚔️ ➗ 📖 = 🌀`
 
 **Proverb:** *"The blade that becomes the spell loses both edges."*
+
+---
+
+## Act 12: The Forgetting / Proverbiogenesis
+
+**Category:** Infrastructure
+
+*The Drake reveals the Villers Archive—where language goes when it forgets its authors. Every proverb that survives passes through five phases: **induction** (the stimulus), **coinage** (the formula), **exposure** (the propagating agent), **dissemination** (mixed diffusion), and **reference loss** (the forgetting). Surveillance architectures race through the same phases. Whichever achieves proverbial status first becomes the default—the invisible infrastructure everyone assumes was always there.*
+
+**The Problem:** Network effects lock in fast—there's a narrow window before one architecture becomes inevitable
+
+**The Lesson:** Success means disappearing into the fabric of how things simply are. Forgetting is not failure—forgetting is the final phase of total success.
+
+**The Five Chambers:**
+- 🌱 **Induction:** The stimulus, the problem felt before named
+- ⚒️ **Coinage:** The formula crystallized into shareable words
+- 📡 **Exposure:** The propagating agent that boosts to many minds
+- 🌊 **Dissemination:** Mixed diffusion, emerging everywhere at once
+- 🌫️🏛️ **Reference Loss:** The forgetting, when truth becomes weather
+
+**Spell:** `🌱 → ⚒️ → 📡 → 🌊 → 🌫️🏛️ = ☁️`
+
+**Proverb:** *"We're not building monuments—we're building weather. The mage's spell, once spoken, becomes the village truth. May privacy become weather before surveillance does."*
 
 ---
 
@@ -777,6 +800,41 @@ Traditional recovery: Seed phrases, backup keys, trusted custodians
 - You choose your recovery partners
 - Relationships you build, not assigned
 
+## Private Proverb Inscriptions
+
+The standard RPP inscription commits both proverbs symmetrically. The **Private Proverb Inscription** creates asymmetric commitments for enhanced recovery.
+
+**Structure:**
+```
+Standard:  hash(P_anchor ∥ P_counterparty) → onchain
+Private:   P_anchor → onchain (visible)
+           hash(P_anchor ∥ P_counterparty) → commitment
+```
+
+**Properties:**
+
+- **Social Recovery Through Understanding:** Lost your proverb? Regenerate it through meaning, not backup files. The onchain anchor provides context; your memory of the relationship provides the key.
+
+- **Selective Disclosure:** Observers see the commitment exists but not who completed it. The counterparty controls when and to whom they reveal.
+
+- **Offline Verification:** Anchor holder doesn't need to be present. Their onchain proverb + counterparty's knowledge = proof.
+
+- **Contextual Entropy:** Proverbs aren't random strings—they're seeded by the relationship's topic, timing, and shared meaning. Attackers can't enumerate without understanding.
+
+**Verification Protocol:**
+```
+1. Verifier retrieves P_anchor from onchain
+2. Claimant provides P_counterparty
+3. Compute hash(P_anchor ∥ P_counterparty)
+4. Match → relationship verified
+```
+
+**Spell:** `🔓📝 → 🔒🗝️` (anchor reveals, counterparty recovers)
+
+**Standard:** `🔒📝 ↔ 🔒📝` (both hidden)
+
+**Proverb:** *"Your relationships become your backup; meaning becomes your key."*
+
 ---
 
 # Part VII: The Economics — Signal-Based Sustainability
@@ -1113,14 +1171,14 @@ This is the inflection point. Build now. Deploy now. Coordinate now.
 
 ---
 
-# Appendix A: Canonical Spellbook JSON (v4.0.1-canonical)
+# Appendix A: Canonical Spellbook JSON (v4.0.2-canonical)
 
 The following JSON represents the complete canonical encoding of both spellbooks, enabling machine-readable spell invocation and verification.
 
 ```json
 {
-  "version": "4.0.1-canonical",
-  "created_at": "2025-11-23T00:00:00Z",
+  "version": "4.0.2-canonical",
+  "created_at": "2025-11-29T00:00:00Z",
   "description": "Complete Spellbook - Canonical Edition combining First Person Spellbook and Zero Knowledge Spellbook with Relationship Proverb Protocol inscriptions",
   "meta": {
     "title": "Complete Spellbook",
@@ -1136,7 +1194,7 @@ The following JSON represents the complete canonical encoding of both spellbooks
   "spellbooks": {
     "story": {
       "name": "Story Spellbook",
-      "description": "The journey from ceremony to sovereignty - eleven acts teaching the architecture of privacy and delegation",
+      "description": "The journey from ceremony to sovereignty - twelve acts teaching the architecture of privacy and delegation",
       "opening": {
         "spell": "😊 → 🔮 🤝 🗡️ × 🐉 → 🤖❌",
         "proverb": "just another swordsman ⚔️🤝🧙‍♂️ just another mage"
@@ -1251,6 +1309,16 @@ The following JSON represents the complete canonical encoding of both spellbooks
           "keywords": ["golden-ratio", "phi", "spiral", "balance", "nautilus", "sovereignty"],
           "spell": "⚔️ ➗ 📖 = 🌀",
           "proverb": "The blade that becomes the spell loses both edges."
+        },
+        {
+          "id": "act-12-forgetting",
+          "act_number": 12,
+          "title": "The Forgetting / Proverbiogenesis",
+          "description": "The Drake reveals the Villers Archive—where language goes when it forgets its authors. Five phases to proverbial status.",
+          "category": "infrastructure",
+          "keywords": ["proverbiogenesis", "forgetting", "villers-archive", "network-effects", "weather", "inevitability"],
+          "spell": "🌱 → ⚒️ → 📡 → 🌊 → 🌫️🏛️ = ☁️",
+          "proverb": "We're not building monuments—we're building weather. May privacy become weather before surveillance does."
         }
       ],
       "closing": {
@@ -1385,15 +1453,23 @@ The following JSON represents the complete canonical encoding of both spellbooks
       "🌀": "spiral / phi / golden ratio / balanced sovereignty",
       "🪞": "mirror / reconstruction / observation / witness",
       "✨": "shimmer / dignity / irreducibility / the gap",
-      "💰": "7th capital / value / wealth / accumulated data"
+      "💰": "7th capital / value / wealth / accumulated data",
+      "🔓📝": "private proverb inscription / anchor visible / asymmetric commitment",
+      "🗝️": "counterparty key / recovery path / completing proverb",
+      "🌱": "induction / stimulus / problem felt",
+      "⚒️": "coinage / formula / crystallization",
+      "📡": "exposure / propagating agent / boost",
+      "🌊": "dissemination / mixed diffusion / parallel adoption",
+      "🌫️🏛️": "reference loss / forgetting / invisible infrastructure",
+      "☁️": "weather / proverbial status / inevitable default"
     }
   },
   "status": {
-    "version": "4.0.1-canonical",
+    "version": "4.0.2-canonical",
     "state": "Complete - Coherence Edition",
-    "story_acts_total": 11,
+    "story_acts_total": 12,
     "zero_tales_total": 30,
-    "total_inscriptions": 41
+    "total_inscriptions": 42
   }
 }
 ```
@@ -1403,13 +1479,13 @@ The following JSON represents the complete canonical encoding of both spellbooks
 # Appendix B: Document Metadata
 
 **Project**: 0xagentprivacy  
-**Version**: 4.0.1-canonical - Coherence Edition  
-**Date**: November 25, 2025  
+**Version**: 4.0.2-canonical - Coherence Edition  
+**Date**: November 29, 2025  
 **Author**: privacymage  
 **Website**: https://agentprivacy.ai  
 
 **Companion Documents**:
-- Whitepaper v4.3: Technical architecture
+- Whitepaper v4.4: Technical architecture
 - Research Paper v3.2: Mathematical proofs
 - Tokenomics v2.0: Economic model
 - Visual Guide v1.1: Diagrams and flows

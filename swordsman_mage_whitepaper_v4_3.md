@@ -3,8 +3,8 @@
 Protect or Delegate → Reflect and Connect (⚔️⊥🧙)😊
 
 **Author:** privacymage  
-**Date:** November 25, 2025  
-**Version:** 4.3
+**Date:** November 29, 2025  
+**Version:** 4.4
 
 ---
 
@@ -79,6 +79,8 @@ For complete terminology and economic details, see companion documents:
 - `tokenomics_economic_architecture_v2.md` --- Economic architecture
 
 - `spellbook_v4_0_1_canonical.md` --- Narrative interpretation
+
+- `UNDERSTANDING_AS_KEY_zypher_paper_v1.md` --- Private Proverb Inscription implementation and recovery mechanisms
 
 ---
 
@@ -263,6 +265,67 @@ When they discover their compressions match, they verify shared understanding ac
 Hold that question. Let it evolve as you read. By the end, your answer will be uniquely yours, shaped by your context, compressed through your lens. When you meet others who read this and discover your compressions match despite different proverbs, you'll understand how knowledge can spread while resisting extraction.
 
 This is storytelling as a privacy primitive. This is compression as unforgeable proof. This is how VRCs form from genuine understanding rather than credential presentation.
+
+---
+
+# Private Proverb Inscriptions: Hash-Locked Recovery and Selective Disclosure
+
+The standard RPP inscription commits both proverbs symmetrically: `SHA256(proverb_A ∥ proverb_B)` produces a hash where neither party's contribution is distinguishable onchain. The **Private Proverb Inscription** extends this mechanism to create asymmetric commitments enabling social recovery through demonstrated understanding.
+
+## Asymmetric Commitment Structure
+
+Where the standard bilateral inscription places the combined hash onchain, the private variant separates visibility:
+
+```
+Standard:  hash(P_anchor ∥ P_counterparty) → onchain
+Private:   P_anchor → onchain (visible)
+           hash(P_anchor ∥ P_counterparty) → commitment
+```
+
+The anchor proverb (from the relationship initiator) appears in cleartext onchain, while the counterparty's proverb remains private—known only to them. The hash commits to the complete bilateral exchange without revealing it.
+
+## Social Recovery Through Understanding
+
+When the counterparty loses local storage of their proverb, recovery does not depend on seed phrases or centralized backups. Instead, they must demonstrate understanding—the same cognitive process that generated the original proverb can regenerate it. The onchain anchor provides context; the counterparty's memory of meaning provides the key.
+
+```
+Recovery = f(anchor_visible, meaning_remembered, context_shared)
+```
+
+This transforms "what you have" (a stored secret) into "what you understand" (demonstrated comprehension). The proverb piggybacks on natural human relational memory rather than fighting against cognitive architecture.
+
+## Selective Disclosure
+
+Observers see that a commitment exists without knowing who the counterparty is. The anchor holder's relationships are enumerable (their proverbs are visible), but the network of counterparties remains private until those parties choose to reveal themselves by producing the completing proverb.
+
+The counterparty controls disclosure timing and audience:
+
+- **Private state:** Relationship exists but counterparty identity unknown
+- **Selective reveal:** Counterparty produces P_counterparty to specific verifier
+- **Public proof:** Anyone can verify hash(P_anchor ∥ P_counterparty) matches commitment
+
+## Verification Protocol
+
+```
+1. Verifier retrieves P_anchor from onchain inscription
+2. Claimant provides P_counterparty
+3. Verifier computes hash(P_anchor ∥ P_counterparty)
+4. Match against stored commitment → relationship verified
+```
+
+The anchor holder need not be present or available for verification. The onchain record serves as their persistent "receipt" of the relationship, while the counterparty holds the completing "key."
+
+## Entropy and Security
+
+Proverbs aren't random strings—they're contextually seeded. The relationship's topic, timing, interaction patterns, and shared meaning create sufficient entropy that attackers cannot enumerate without understanding the relationship itself. The attacker must not only guess words but comprehend the relationship's meaning.
+
+## Spellbook Notation
+
+**🔓📝 → 🔒🗝️** : anchor reveals, counterparty recovers
+
+Contrast with standard bilateral inscription: **🔒📝 ↔ 🔒📝** where both sides remain equally hidden.
+
+*The private proverb inscription represents the first step toward social recovery based on understanding rather than possession—where your relationships become your backup, and meaning becomes your key.*
 
 ---
 
@@ -1415,6 +1478,10 @@ Provides systems thinking and narrative architecture. Story-first, math-referenc
 
 Acts 1--12 provide symbolic system and semantic compression. Soulbis (Swordsman), Soulbae (Mage), and the balanced spiral. Each act demonstrates RPP in narrative form. Available at <https://agentprivacy.ai/story>
 
+## Understanding as Key
+
+"Understanding as Key: A Lite Paper on Privacy-Preserving Trust Through Demonstrated Comprehension" expands on the Private Proverb Inscription mechanism introduced in this whitepaper (§4.3). Describes three inscription paths (symmetric, asymmetric, interleaved) for VRC formation, social recovery through understanding, and the Signal to Sanctuary implementation. Transforms "what you have" (stored secrets) into "what you understand" (demonstrated comprehension), aligning cryptographic security with human cognitive architecture.
+
 ## Collaborative Development
 
 This document is forever incomplete, always evolving, perpetually discovering. That's not a bug, it's the nature of building infrastructure before the extraction systems lock in.
@@ -1553,9 +1620,9 @@ This architecture is being developed now. This is the inflection point.
 
 - **Project:** 0xagentprivacy
 
-- **Version:** 4.2
+- **Version:** 4.4
 
-- **Date:** November 20, 2025
+- **Date:** November 29, 2025
 
 - **Website:** <https://agentprivacy.ai>
 
