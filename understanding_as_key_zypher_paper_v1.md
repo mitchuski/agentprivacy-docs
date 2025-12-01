@@ -906,6 +906,8 @@ The portfolio of inscription types itself becomes a trust signal.
 
 **Zypherpunk Hack 2025** produced the first production implementation of these primitives on Zcash.
 
+**Repository:** [github.com/mitchuski/agentprivacy-zypher](https://github.com/mitchuski/agentprivacy-zypher) — Complete implementation with Zcash integration, Nillion TEE, NEAR Cloud AI, and IPFS spellbook storage.
+
 ### Architecture
 
 ```
@@ -1209,6 +1211,8 @@ The window is 2-3 years before surveillance architectures lock in [Spellbook v4.
 
 ### Signal to Sanctuary Implementation
 
+**Repository:** [github.com/mitchuski/agentprivacy-zypher](https://github.com/mitchuski/agentprivacy-zypher)
+
 | Document | Purpose |
 |----------|---------|
 | **PROJECT_OVERVIEW.md** | Architecture & bounty alignment |
@@ -1229,6 +1233,7 @@ The window is 2-3 years before surveillance architectures lock in [Spellbook v4.
 
 ### Living Documentation
 
+- [github.com/mitchuski/agentprivacy-zypher](https://github.com/mitchuski/agentprivacy-zypher) — Signal to Sanctuary implementation repository
 - [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs) — Documentation repository
 - [agentprivacy.ai/story](https://agentprivacy.ai/story) — The Spellbook (narrative framework)
 - [agentprivacy.ai](https://agentprivacy.ai) — Project home
@@ -1314,7 +1319,8 @@ Adoption = f(alignment_with_cognitive_architecture)
 **License:** CC BY-SA 4.0  
 **Author:** Privacymage / 0xagentprivacy  
 **Implementation:** Signal to Sanctuary (Zypherpunk Hack 2025)  
-**Repository:** [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Implementation Repository:** [github.com/mitchuski/agentprivacy-zypher](https://github.com/mitchuski/agentprivacy-zypher)  
+**Documentation Repository:** [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
 
 ---
 
