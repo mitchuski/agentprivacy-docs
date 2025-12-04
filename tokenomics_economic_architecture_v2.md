@@ -1,4 +1,4 @@
-# VRC Protocol: Economic Architecture
+# agentprivacy: Economic Architecture
 ## Privacy-First AI Agent Economics
 
 **Version 2.0 - Coherence Edition**  
@@ -9,7 +9,7 @@
 
 ## Abstract
 
-The VRC Protocol establishes **tokenomic infrastructure for privacy-first AI agent economies** through a signal-based funding model where comprehension signals generate sustainable revenue, collective Swordsman commitments protect shared standards, and growing network effects enable dual-token economics that enforce architectural separation.
+The agentprivacy Protocol establishes **tokenomic infrastructure for privacy-first AI agent economies** through a signal-based funding model where comprehension signals generate sustainable revenue, collective Swordsman commitments protect shared standards, and growing network effects enable dual-token economics that enforce architectural separation.
 
 **The Natural Progression:**
 1. **Spellbook engagement** → Relationship Proverb Protocol (RPP) compression
@@ -60,7 +60,7 @@ This document describes how sustainable funding enables the economic implementat
 
 ### 1.1 Starting Point: The Engagement Problem
 
-Most blockchain protocols begin with token economics, forcing users to speculate before understanding. The VRC Protocol inverts this:
+Most blockchain protocols begin with token economics, forcing users to speculate before understanding. The agentprivacy protocol inverts this:
 
 ```
 Traditional Web3 Onboarding:
@@ -69,7 +69,7 @@ Traditional Web3 Onboarding:
 ├─ Understand protocol (hopefully)
 └─ Use features (if you haven't left)
 
-VRC Protocol Onboarding:
+agentprivacy protocol Onboarding:
 ├─ Read Spellbook (narrative engagement)
 ├─ Understand protocol (through story)
 ├─ Prove comprehension (signal)
@@ -292,7 +292,7 @@ Zcash Mission:
 ├─ User sovereignty
 └─ Open-source infrastructure
 
-VRC Protocol Mission:
+agentprivacy protocol Mission:
 ├─ Privacy as architectural primitive
 ├─ Mathematical separation over policy compliance
 ├─ First Person sovereignty
@@ -443,7 +443,7 @@ Token Sale Model:
 └─ Result: Liquidity without utility
 ```
 
-**VRC Protocol approach (signal-based):**
+**agentprivacy protocol approach (signal-based):**
 
 ```
 Signal-Based Model:
@@ -483,7 +483,7 @@ Phase 3: Network Effects (10,000+ First Persons)
 
 **The beautiful inversion:**
 
-Most protocols need tokens to fund operations. VRC Protocol funds operations BEFORE issuing tokens.
+Most protocols need tokens to fund operations. agentprivacy protocol funds operations BEFORE issuing tokens.
 
 ```
 Traditional Sequence:
@@ -492,7 +492,7 @@ Traditional Sequence:
 3. Launch network (pray for adoption)
 4. Sustain operations (hope tokens maintain value)
 
-VRC Protocol Sequence:
+agentprivacy protocol Sequence:
 1. Deploy Spellbook (educational content)
 2. Signals generate revenue (activity-based funding)
 3. Build pool of persons (network effects)
@@ -695,7 +695,7 @@ Individual Privacy Tools (Traditional):
 ├─ Zero-sum (your privacy vs. platform profit)
 └─ Creates privacy inequality (tech-savvy vs. not)
 
-Collective Privacy Infrastructure (VRC Protocol):
+Collective Privacy Infrastructure (agentprivacy protocol):
 ├─ Contribute chronicles (earn SWORD tokens)
 ├─ Comprehension required, not technical expertise
 ├─ Protects everyone (anonymity set grows)
@@ -827,7 +827,7 @@ Traditional AI Token Costs:
 ├─ 240 working days/year = $48,000/year
 └─ Value extracted by AI platforms
 
-VRC Protocol Costs:
+agentprivacy protocol Costs:
 ├─ VRC formation: $35/relationship (one-time)
 ├─ 10 working relationships = $350 upfront
 ├─ 20 coordinations × $0.14 = $2.80/day
@@ -1985,7 +1985,7 @@ Traditional AI Economy:
 ├─ Value flows upward to shareholders
 └─ Surveillance capitalism
 
-VRC Protocol Economy:
+agentprivacy protocol Economy:
 ├─ First Persons → Comprehension → Signals → Value Creation
 ├─ Privacy as value creation
 ├─ Coordination through bilateral trust
@@ -2050,7 +2050,7 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 
 **Chronicle:** A verified activity (privacy protection or delegation coordination) that earns token rewards.
 
-**Compression Efficiency:** The ratio of verbose to compressed coordination costs, base 70:1 through VRC protocol (variable per context).
+**Compression Efficiency:** The ratio of verbose to compressed coordination costs, base 70:1 through agentprivacy protocol (variable per context).
 
 **First Person:** The human sovereign whose dual agents (Swordsman and Mage) operate on their behalf.
 
@@ -2193,7 +2193,7 @@ This document is part of the complete 0xagentprivacy documentation suite:
 1. **Swordsman/Mage Whitepaper v4.3** - Dual-agent architecture, RPP protocol, separation primitives
 2. **Dual Privacy Research Paper v3.2** - Mathematical proofs, information-theoretic bounds, ZK protocols
 3. **The Spellbook v4.0.1-canonical** - Narrative compression, symbolic language, trust game, recovery architecture
-4. **VRC Protocol: Economic Architecture v2.0** (this document) - Tokenomics, sustainability, deployment
+4. **agentprivacy protocol: Economic Architecture v2.0** (this document) - Tokenomics, sustainability, deployment
 5. **Visual Architecture Guide v1.1** - Diagrams, flows, conceptual maps
 6. **Research Proposal v1.2** - Collaboration invitation, validation needs
 7. **Glossary Master v2.1** - Canonical terminology reference
