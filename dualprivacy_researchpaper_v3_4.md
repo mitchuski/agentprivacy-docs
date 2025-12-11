@@ -4,13 +4,13 @@
 
 **Author:** privacymage  
 **Date:** December 11, 2025  
-**Version:** 3.3
+**Version:** 3.4
 
 ---
 
 ## Abstract
 
-We introduce the Swordsman and Mage as fundamental privacy primitives for dual-agent architectures, establishing rigorous information-theoretic bounds when conditional independence (Y_S ⊥ Y_M) | X is enforced between these agents' observations. The Swordsman (S) controls privacy boundaries through selective measurement, while the Mage (M) projects delegated agency using only S-authorized observations. 
+We introduce the Swordsman and Mage as fundamental privacy primitives for dual-agent architectures, establishing rigorous information-theoretic bounds when conditional independence (Y_S ⊥⊥ Y_M) | X is enforced between these agents' observations. The Swordsman (S) controls privacy boundaries through selective measurement, while the Mage (M) projects delegated agency using only S-authorized observations. 
 
 **Formal Semantic Foundation:** We ground this architecture in Promise Theory (Bergstra & Burgess, 2019), which provides established semantics for autonomous agent coordination. The autonomy axiom—that agents can only promise their own behavior—formally explains why single-agent architectures cannot resolve the privacy-delegation paradox. The First Person + Swordsman + Mage system forms a *superagent* with *interior promises* between components, and The Gap (the reconstruction ceiling) is formally an *irreducible promise*—a property that emerges from component cooperation but cannot be attributed to any single agent.
 
@@ -18,7 +18,7 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 
 **Implementation Framework:** We provide practical budget estimation methods, isolation verification protocols, and side-channel resistance models based on covert channel analysis. We integrate zero-knowledge proof systems for cryptographic enforcement of separation and budget compliance, providing concrete constructions using Groth16, PLONK, and Nova protocols. 
 
-**Theoretical Predictions:** We present theoretical conjectures about potential optimal allocation patterns, including a golden ratio hypothesis (φ ≈ 1.618) and tetrahedral emergence properties. These remain unproven mathematical conjectures requiring both formal proof and empirical validation. We outline specific research directions and invite collaboration on implementation and validation.
+**Theoretical Predictions:** We present theoretical conjectures about potential optimal allocation patterns, including a golden ratio hypothesis (φ ≈ 1.618) and tetrahedral emergence properties. These remain unproven mathematical conjectures requiring both formal proof and empirical validation.
 
 ---
 
@@ -56,13 +56,13 @@ These primitives are not mere metaphors but formal architectural components with
 
 **Proven Results**:
 
-- **Separation Lemma (Theorem 3.1)**: Under (Y_S ⊥ Y_M) | X, mutual information becomes additive
+- **Separation Lemma (Theorem 5.1)**: Under (Y_S ⊥⊥ Y_M) | X, mutual information becomes additive
 
-- **Reconstruction Ceiling (Corollary 3.2)**: With C_S + C_M < H(X), reconstruction efficiency R_max < 1
+- **Reconstruction Ceiling (Corollary 5.2)**: With C_S + C_M < H(X), reconstruction efficiency R_max < 1
 
-- **Error Floor (Theorem 3.3)**: Fano's inequality establishes minimum error P_e ≥ 1 - (I(X;Y) + 1)/H(X)
+- **Error Floor (Theorem 5.3)**: Fano's inequality establishes minimum error P_e ≥ 1 - (I(X;Y) + 1)/H(X)
 
-- **Robustness Analysis (Theorem 3.4)**: ε-approximate separation degrades bounds gracefully
+- **Robustness Analysis (Theorem 5.4)**: ε-approximate separation degrades bounds gracefully
 
 **Semantic Foundation**:
 
@@ -185,15 +185,17 @@ The First Person + Swordsman + Mage system forms a superagent:
 
 > **Definition (Irreducible Promise)**: A promise of a superagent that cannot be attributed to any single component agent, but requires their cooperation.
 
-**Theorem (Informal):** The reconstruction ceiling R_max < 1 is an *irreducible promise* of the First Person superagent.
+**Proposition 5.5 (Irreducibility of The Gap):** The reconstruction ceiling R_max < 1 is an irreducible property of the First Person superagent in the sense of Promise Theory.
 
-**Argument:**
+**Informal Argument:**
 
 1. The Swordsman alone cannot achieve R_max < 1 (needs information budget limit from total system)
 2. The Mage alone cannot achieve R_max < 1 (has no privacy enforcement capability)
 3. The First Person alone cannot achieve R_max < 1 (needs operational agents)
 4. Only the cooperation of all three—with maintained separation—achieves R_max < 1
 5. Therefore, R_max < 1 is an irreducible promise of the superagent
+
+**Formal Status:** A rigorous proof would require demonstrating that no promise-respecting decomposition of the superagent can achieve R_max < 1 through component promises alone. This formalization is left as future work; the intuitive argument suffices for architectural motivation.
 
 **Why This Matters:**
 
@@ -214,7 +216,7 @@ Promise Theory distinguishes promise types:
 | Mage | Delegation, coordination | Authorized information from Swordsman, Instructions from First Person |
 | First Person | Authorization, sovereignty decisions | Protection from Swordsman, Delegation from Mage |
 
-The separation condition (Y_S ⊥ Y_M) | X is enforced by the *absence* of certain promises:
+The separation condition (Y_S ⊥⊥ Y_M) | X is enforced by the *absence* of certain promises:
 
 - S does NOT promise to share observations with M
 - M does NOT promise to share actions with S
@@ -222,7 +224,7 @@ The separation condition (Y_S ⊥ Y_M) | X is enforced by the *absence* of certa
 
 ## Conditional Independence as Promise Scope
 
-The conditional independence requirement (Y_S ⊥ Y_M) | X maps to Promise Theory's concept of **scope**:
+The conditional independence requirement (Y_S ⊥⊥ Y_M) | X maps to Promise Theory's concept of **scope**:
 
 > **Scope**: The domain within which an agent's promises are valid.
 
@@ -266,16 +268,23 @@ Promise Theory defines **assessment α(π)** as determination whether a promise 
 | Heavy | 0.5-0.8 | 150+ signals, sustained performance |
 | Dragon | 0.8-1.0 | 500+ signals, elite coordination |
 
+**Threshold Rationale:** These tier thresholds are initial design parameters based on expected engagement patterns:
+- **Blade→Light (50 signals):** ~2 months at moderate activity, sufficient to distinguish genuine engagement
+- **Light→Heavy (150 signals):** ~6 months sustained commitment
+- **Heavy→Dragon (500 signals):** ~12+ months extended track record
+
+These should be calibrated through empirical observation.
+
 ## Implications for Proven Results
 
 The Promise Theory framework provides semantic grounding for our information-theoretic results:
 
 | Proven Result | PT Grounding |
 |---------------|--------------|
-| Separation Lemma (Thm 3.1) | Scope non-overlap enforced by promise structure |
-| Reconstruction Ceiling (Cor 3.2) | System valency constraint limits total revelation |
-| Error Floor (Thm 3.3) | Irreducible promise property—cannot be captured by component compromise |
-| Robustness (Thm 3.4) | Graceful degradation from approximate scope overlap |
+| Separation Lemma (Thm 5.1) | Scope non-overlap enforced by promise structure |
+| Reconstruction Ceiling (Cor 5.2) | System valency constraint limits total revelation |
+| Error Floor (Thm 5.3) | Irreducible promise property—cannot be captured by component compromise |
+| Robustness (Thm 5.4) | Graceful degradation from approximate scope overlap |
 
 This grounding elevates the results from "clever engineering" to "rigorous implementation of established autonomous systems theory."
 
@@ -295,7 +304,7 @@ where N_S, N_M are independent local randomness sources.
 
 ## The Swordsman and Mage Primitives
 
-> **Definition: Swordsman Primitive**
+> **Definition 4.1: Swordsman Primitive**
 > 
 > The Swordsman S is a privacy-enforcement agent characterized by:
 > - Measurement function E_S that implements selective disclosure
@@ -304,7 +313,7 @@ where N_S, N_M are independent local randomness sources.
 > 
 > **Promise Theory Role**: Makes (+) give promises of protection. Its observation scope is the private ledger. Valency bounded by C_S.
 
-> **Definition: Mage Primitive**
+> **Definition 4.2: Mage Primitive**
 > 
 > The Mage M is a delegation agent characterized by:
 > - Projection function E_M operating on S-authorized information
@@ -313,23 +322,23 @@ where N_S, N_M are independent local randomness sources.
 >
 > **Promise Theory Role**: Makes (+) give promises of delegation. Makes (-) accept promises of authorized information from S. Scope is coordination with external agents. Valency bounded by C_M.
 
-The critical architectural requirement: (Y_S ⊥ Y_M) | X (conditional independence).
+The critical architectural requirement: (Y_S ⊥⊥ Y_M) | X (conditional independence).
 
 **Promise Theory Interpretation**: This separation is enforced by promise structure—neither agent promises to share its observations with the other. The separation is a *kept promise*, not merely a constraint.
 
 ## Formal Definitions
 
-> **Definition: Separation Condition**
-> The architecture enforces (Y_S ⊥ Y_M) | X.
+> **Definition 4.3: Separation Condition**
+> The architecture enforces (Y_S ⊥⊥ Y_M) | X.
 > 
 > **PT Grounding**: Non-overlapping observation scopes; absence of inter-agent observation promises.
 
-> **Definition: Information Budgets**
+> **Definition 4.4: Information Budgets**
 > I(X; Y_S) ≤ C_S, I(X; Y_M) ≤ C_M.
 >
 > **PT Grounding**: Agent valency constraints on information revelation promises.
 
-> **Definition: Reconstruction Efficiency**
+> **Definition 4.5: Reconstruction Efficiency**
 > R ≜ I(X; Y)/H(X) ∈ [0, 1].
 >
 > **PT Grounding**: Fraction of total system capacity consumed by information revelation.
@@ -344,13 +353,15 @@ The critical architectural requirement: (Y_S ⊥ Y_M) | X (conditional independe
 
 - Known distributions P(X), encoding functions E_S, E_M
 
-**Explicitly Out of Scope**:
+**Explicitly Out of Scope (with justification):**
 
-- Active attacks modifying agent behavior
+- **Active attacks modifying agent behavior:** The ZKP constructions in §7.4 provide cryptographic enforcement that resists some active attacks. However, attacks that compromise the execution environment entirely (e.g., malicious hardware) remain out of scope. Future work should integrate TEE-based attestation.
 
-- Side-channels on separation mechanism itself
+- **Side-channels on separation mechanism itself:** Timing attacks on the separation boundary could leak information about which agent processed which query. Mitigation requires constant-time separation protocols. §6 addresses covert channel capacity bounds but does not fully model this threat.
 
-- Temporal correlation across sessions
+- **Temporal correlation across sessions:** Adversaries observing patterns across sessions may extract additional information. The current analysis treats each session independently. Extending to session-correlated adversaries requires analyzing mutual information across time: I(X; Y_{1:T}) rather than single-session I(X; Y).
+
+**Applicability Statement:** The proven guarantees hold for passive adversaries in single-session contexts with cryptographically enforced separation. Real deployments should evaluate which excluded threats apply to their context and implement additional mitigations.
 
 **Promise Theory Note**: This threat model assumes agents *keep* their promises. Active attacks that cause promise violation (e.g., forcing M to observe S's outputs) would break the architecture. The ZKP constructions in Part II address cryptographic enforcement of promise-keeping.
 
@@ -362,13 +373,13 @@ The critical architectural requirement: (Y_S ⊥ Y_M) | X (conditional independe
 
 ## The Separation Lemma
 
-**Theorem 3.1: Additive Bound Under Separation**
+**Theorem 5.1: Additive Bound Under Separation**
 
-If (Y_S ⊥ Y_M) | X holds, then:
+If (Y_S ⊥⊥ Y_M) | X holds, then:
 
 > **I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M)**
 
-*Note:* Equality holds if and only if Y_S and Y_M are additionally marginally independent. Conditional independence (Y_S ⊥ Y_M) | X alone permits dependence through the shared cause X, yielding the inequality. The inequality suffices for all downstream guarantees.
+*Note:* Equality holds if and only if Y_S and Y_M are additionally marginally independent. Conditional independence (Y_S ⊥⊥ Y_M) | X alone permits dependence through the shared cause X, yielding the inequality. The inequality suffices for all downstream guarantees.
 
 **Promise Theory Interpretation**: The additive bound is a *consequence* of maintained scope separation. When agents keep their promise not to share observations, information leakage cannot multiply—only add.
 
@@ -378,7 +389,7 @@ By the chain rule for mutual information:
 
 > I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M | Y_S)
 
-Under conditional independence (Y_S ⊥ Y_M) | X, we have I(Y_M; Y_S | X) = 0, which implies:
+Under conditional independence (Y_S ⊥⊥ Y_M) | X, we have I(Y_M; Y_S | X) = 0, which implies:
 
 > H(Y_M | X, Y_S) = H(Y_M | X)
 
@@ -391,19 +402,19 @@ Therefore:
 
 This completes the proof. □
 
-**Corollary 3.2: Reconstruction Ceiling**
+**Corollary 5.2: Reconstruction Ceiling**
 
 If C_S + C_M < H(X), then R_max = (C_S + C_M)/H(X) < 1.
 
 **Promise Theory Interpretation**: The reconstruction ceiling is an *irreducible promise* of the superagent—it emerges from the cooperation of separated components but cannot be attributed to either alone. This is why it cannot be captured by compromising any single agent.
 
-**Critical Clarification**: Separation alone is insufficient. Consider X binary with Y_S = X and Y_M independent noise. Then (Y_S ⊥ Y_M) | X holds but R = 1. The ceiling requires **BOTH** separation (for additivity) **AND** budget constraints (for the bound).
+**Critical Clarification**: Separation alone is insufficient. Consider X binary with Y_S = X and Y_M independent noise. Then (Y_S ⊥⊥ Y_M) | X holds but R = 1. The ceiling requires **BOTH** separation (for additivity) **AND** budget constraints (for the bound).
 
 **Promise Theory Note**: This corresponds to requiring both *scope separation* (the separation condition) AND *valency limits* (the budget constraints). Autonomy axiom compliance without resource constraints doesn't guarantee privacy.
 
 ## Error Lower Bound
 
-**Theorem 3.3: Fano-Based Error Floor**
+**Theorem 5.3: Fano-Based Error Floor**
 
 For any estimator X̂(Y) and finite alphabet 𝒳:
 
@@ -439,13 +450,13 @@ Using I(X; Y) = H(X) - H(X|Y) and R = I(X; Y)/H(X):
 >    ≥ 1 - (I(X; Y) + 1)/H(X)  [for large alphabets]
 >    = 1 - R - 1/H(X)
 
-Therefore, when R_max < 1, there exists a fundamental error floor that no estimator can overcome. □
+Therefore, when R_max < 1 (due to our budget constraints), any adversary must have error probability at least P_e ≥ 1 - R_max - O(1/H(X)). □
 
-**Interpretation**: This establishes that when reconstruction efficiency R_max < 1 (due to our budget constraints), any adversary must have error probability at least P_e ≥ 1 - R_max - O(1/H(X)). For example, if R_max = 0.7, then P_e ≥ 0.3 - O(1/H(X)) ≈ 0.3 for large entropy.
+**Interpretation**: For example, if R_max = 0.7, then P_e ≥ 0.3 - O(1/H(X)) ≈ 0.3 for large entropy.
 
 ## Robustness to Approximate Separation
 
-**Theorem 3.4: ε-Approximate Separation**
+**Theorem 5.4: ε-Approximate Separation**
 
 If I(Y_S; Y_M | X) ≤ ε (approximate separation), then:
 
@@ -471,6 +482,8 @@ Combining with I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M | Y_S) completes the proof.
 
 This shows graceful degradation: small violations of separation cause proportionally small increases in leakage.
 
+---
+
 # Side-Channel Analysis and Robustness
 
 ## Connection to Covert Channel Theory
@@ -479,7 +492,14 @@ Our analysis builds on established covert channel capacity results. For d side-c
 
 > R(d) = R_max · ln(1 + d/d₀) / ln(1 + d_max/d₀)
 
-*Model Assumption:* This logarithmic functional form is adopted as a modeling assumption based on theoretical parallels, not derived from first principles. Empirical validation is required for specific deployment contexts.
+**Model Assumption:** This logarithmic functional form is a **modeling assumption** adopted by analogy to established covert channel results (Shannon capacity, timing channel capacity, power analysis leakage). It is NOT derived from the specific properties of dual-agent architectures.
+
+**Validation Required:** Before relying on this model for security claims, implementers should:
+1. Characterize actual side-channel capacity in their deployment
+2. Measure R(d) empirically for representative d values
+3. Fit an appropriate functional form to observations
+
+The logarithmic form provides a reasonable starting hypothesis but should not be treated as a proven bound.
 
 This mirrors:
 
@@ -553,6 +573,177 @@ For practical systems:
 
 # Part II: Implementation Framework
 
+# Entropy Estimation for Behavioral Data
+
+Budget constraints require estimating H(X), the entropy of the private state. For behavioral data, this is notoriously difficult.
+
+## Recommended Estimators
+
+**k-NN Estimators (KSG):** For continuous variables, the Kozachenko-Leonenko / Kraskov-Stögbauer-Grassberger estimator provides consistent estimates:
+
+```python
+def estimate_entropy_ksg(samples, k=3):
+    """
+    k-NN entropy estimator (Kraskov et al., 2004).
+    
+    Args:
+        samples: Array of shape (n_samples, dim)
+        k: Number of neighbors (default: 3)
+    
+    Returns:
+        Estimated H(X) in bits
+    """
+    from scipy.spatial import KDTree
+    from scipy.special import digamma
+    import numpy as np
+    
+    n, d = samples.shape
+    tree = KDTree(samples)
+    
+    # Find k-th neighbor distances
+    distances, _ = tree.query(samples, k=k+1)
+    eps = distances[:, -1]  # k-th neighbor distance
+    
+    # KSG estimator
+    H = digamma(n) - digamma(k) + d * np.mean(np.log(2 * eps))
+    return H / np.log(2)  # Convert to bits
+```
+
+**Histogram-based:** For discrete behavioral categories:
+
+```python
+def estimate_entropy_histogram(action_history, num_categories=100):
+    """
+    Histogram-based entropy estimator for discrete data.
+    
+    Warning: Underestimates true entropy if rare behaviors not observed.
+    Add safety margin: use H_estimate * 1.2 for budget calculations.
+    """
+    from scipy.stats import entropy
+    import numpy as np
+    
+    counts, _ = np.histogram(action_history, bins=num_categories)
+    probs = counts / counts.sum()
+    probs = probs[probs > 0]  # Remove zeros
+    return entropy(probs, base=2)
+```
+
+**MINE/InfoNCE:** Neural estimators for high-dimensional data when other methods fail.
+
+## Practical Guidance
+
+**Limitations:** All estimators provide lower bounds on true entropy. For privacy guarantees, use conservative (higher) estimates with safety margins.
+
+**Recommended Practice:**
+1. Estimate H(X) using multiple methods
+2. Take the maximum estimate
+3. Add 20% safety margin: H_budget = 1.2 × max(estimates)
+4. Re-estimate periodically as behavioral patterns change
+
+---
+
+# Mutual Information Estimation
+
+The implementation requires estimating I(X; Y) for budget monitoring.
+
+## Recommended Approaches
+
+**1. KSG Estimator (Non-parametric):**
+
+Best for moderate-dimensional data. No training required.
+
+```python
+def estimate_mutual_info_ksg(X, Y, k=3):
+    """
+    K-nearest neighbor MI estimator (Kraskov et al., 2004).
+    
+    Args:
+        X: Private state samples, shape (n_samples, dim_X)
+        Y: Observation samples, shape (n_samples, dim_Y)
+        k: Number of neighbors (default: 3)
+    
+    Returns:
+        Estimated I(X; Y) in bits, with confidence interval
+    """
+    from sklearn.feature_selection import mutual_info_regression
+    import numpy as np
+    
+    # For discrete X, use mutual_info_classif
+    # For continuous X, use mutual_info_regression
+    mi = mutual_info_regression(Y, X.ravel(), n_neighbors=k)
+    
+    # Bootstrap for confidence interval
+    n_bootstrap = 100
+    mi_samples = []
+    n = len(X)
+    for _ in range(n_bootstrap):
+        idx = np.random.choice(n, n, replace=True)
+        mi_boot = mutual_info_regression(Y[idx], X[idx].ravel(), n_neighbors=k)
+        mi_samples.append(mi_boot.mean())
+    
+    ci_low, ci_high = np.percentile(mi_samples, [5, 95])
+    return mi.mean(), (ci_low, ci_high)
+```
+
+**2. MINE (Neural Estimation):**
+
+Best for high-dimensional continuous data. Requires training.
+
+```python
+# Requires: pip install pytorch-mine
+def estimate_mutual_info_mine(X, Y, hidden_dim=100, epochs=100):
+    """
+    Mutual Information Neural Estimation.
+    
+    Use for high-dimensional data where KSG fails.
+    """
+    # Implementation uses neural network to estimate MI lower bound
+    # See Belghazi et al., 2018 for details
+    pass
+```
+
+**3. Binned Estimator (Fast, Approximate):**
+
+Simplest and fastest. Use for quick runtime checks.
+
+```python
+def estimate_mutual_info_binned(X, Y, bins=20):
+    """
+    Binned MI estimator. Fast but loses precision.
+    """
+    import numpy as np
+    from scipy.stats import entropy
+    
+    # Discretize continuous variables
+    X_binned = np.digitize(X, np.linspace(X.min(), X.max(), bins))
+    Y_binned = np.digitize(Y, np.linspace(Y.min(), Y.max(), bins))
+    
+    # Compute joint and marginal distributions
+    joint, _, _ = np.histogram2d(X_binned, Y_binned, bins=bins)
+    joint = joint / joint.sum()
+    
+    px = joint.sum(axis=1)
+    py = joint.sum(axis=0)
+    
+    # MI = H(X) + H(Y) - H(X,Y)
+    H_x = entropy(px[px > 0], base=2)
+    H_y = entropy(py[py > 0], base=2)
+    H_xy = entropy(joint.ravel()[joint.ravel() > 0], base=2)
+    
+    return H_x + H_y - H_xy
+```
+
+## Confidence Bounds
+
+All estimators have variance. For budget enforcement:
+
+1. Compute point estimate and confidence interval
+2. Use **upper confidence bound** for budget tracking
+3. Alert when upper bound approaches budget limit
+4. Refuse disclosure when upper bound exceeds limit
+
+---
+
 # Design Principles and Budget Management
 
 ## The Allocation Problem
@@ -566,11 +757,18 @@ Given total budget C_T = C_S + C_M < H(X), how should we allocate between privac
 **Monte Carlo Estimation**:
 
 ```python
-# Budget estimation
-def estimate_mutual_info(samples_X, samples_Y):
-    # Use MINE or InfoNCE estimators
-    # Return confidence interval
-    return I_estimate, confidence_bounds
+# Budget estimation using KSG
+def estimate_budget_usage(samples_X, samples_Y):
+    """
+    Estimate current budget consumption with confidence bounds.
+    """
+    mi, (ci_low, ci_high) = estimate_mutual_info_ksg(samples_X, samples_Y)
+    return {
+        'estimate': mi,
+        'lower_bound': ci_low,
+        'upper_bound': ci_high,
+        'for_budget_check': ci_high  # Use upper bound for safety
+    }
 ```
 
 **Runtime Monitoring**:
@@ -589,11 +787,25 @@ class AdaptiveBudgetController:
     def __init__(self, C_S_max, C_M_max):
         self.budget_S = C_S_max
         self.budget_M = C_M_max
+        self.cumulative_S = 0
+        self.cumulative_M = 0
+        
+    def check_and_update(self, new_disclosure_S, new_disclosure_M):
+        """Check if disclosure is within budget, update if so."""
+        if self.cumulative_S + new_disclosure_S > self.budget_S:
+            return False, "Swordsman budget exceeded"
+        if self.cumulative_M + new_disclosure_M > self.budget_M:
+            return False, "Mage budget exceeded"
+        
+        self.cumulative_S += new_disclosure_S
+        self.cumulative_M += new_disclosure_M
+        return True, "OK"
         
     def adjust_granularity(self, current_usage):
         if current_usage > 0.8 * self.budget_S:
             # Reduce disclosure precision
-            return reduced_precision_mode
+            return 'reduced_precision_mode'
+        return 'normal_mode'
 ```
 
 ## Deployment Considerations
@@ -615,6 +827,8 @@ class AdaptiveBudgetController:
 - Cryptographic commitments to prevent manipulation
 
 **Promise Theory Note**: These mitigations ensure agents can *keep* their promises even under adversarial pressure. Rate limiting prevents promise exhaustion; anomaly detection identifies potential promise-violation attacks.
+
+---
 
 # Architectural Implementation
 
@@ -707,7 +921,7 @@ where f is a public predicate (e.g., "age ≥ 18") and the proof reveals nothing
 
 Rather than relying solely on trusted isolation, we can prove separation cryptographically:
 
-> π_sep = ZKP{(Y_S ⊥ Y_M) | X}
+> π_sep = ZKP{(Y_S ⊥⊥ Y_M) | X}
 
 Using techniques from zero-knowledge proof systems:
 
@@ -716,6 +930,8 @@ Using techniques from zero-knowledge proof systems:
 - Prove conditional independence via joint distribution commitments
 
 - Enable third-party verification of architectural compliance
+
+**Implementation Note:** The formula π_sep = ZKP{(Y_S ⊥⊥ Y_M) | X} is aspirational notation. A full specification requires defining joint distribution commitments and the circuit for verifying conditional independence, which is non-trivial. Current implementations use simpler proxy checks (e.g., proving observations derive from disjoint data partitions).
 
 This approach enables:
 
@@ -802,154 +1018,62 @@ Using Nova for recursive composition:
 
 ## Implementation Checklist
 
-**Pre-deployment**:
+**Pre-deployment:**
 
-- [ ] Estimate H(X) for target domain
+☐ Estimate H(X) for target domain (use multiple methods, add safety margin)
 
-- [ ] Set C_S + C_M ≤ 0.7 · H(X) (safety margin)
+☐ Set C_S + C_M ≤ 0.7 · H(X) (safety margin)
 
-- [ ] Implement separation enforcement
+☐ Implement separation enforcement (TEE, containers, or ZKP)
 
-- [ ] Verify isolation properties
+☐ Verify isolation properties
 
-- [ ] Deploy monitoring infrastructure
+☐ Deploy monitoring infrastructure
 
-**Runtime**:
+☐ Select and configure MI estimator (KSG recommended)
 
-- [ ] Track actual I(X; Y_S) and I(X; Y_M)
+**Runtime:**
 
-- [ ] Monitor separation violations
+☐ Track actual I(X; Y_S) and I(X; Y_M) with confidence bounds
 
-- [ ] Log reconstruction attempts
+☐ Monitor separation violations (I(Y_S; Y_M | X))
 
-- [ ] Adjust budgets adaptively
+☐ Log reconstruction attempts
+
+☐ Adjust budgets adaptively
+
+☐ Re-estimate H(X) periodically
 
 ---
 
-# Part III: Theoretical Predictions and Exploratory Analysis
-
-# Theoretical Predictions
-
-## Golden Ratio Convergence Hypothesis
-
-**Theoretical Prediction**: Under certain optimization conditions, dual-agent systems may converge to allocation ratios near the golden ratio φ ≈ 1.618.
-
-**Theoretical Foundation**: Consider value functions of the form V(C_S, C_M) = U(C_M) · P(C_S) · Ψ(R_max) where:
-
-- U(C_M): Delegation utility (e.g., power-law: U(x) = x^α)
-
-- P(C_S): Privacy protection value (e.g., P(x) = x^β)
-
-- Ψ(R_max): Reconstruction penalty
-
-For Lagrangian optimization with power-law utilities, the optimal ratio satisfies:
-
-> (∂V/∂C_S) / (∂V/∂C_M) = β/α
-
-When β/α ≈ φ (protection slightly exceeds delegation), systems may show enhanced stability. This theoretical prediction suggests φ as a potential optimization attractor under symmetric importance of privacy and utility.
-
-**Promise Theory Perspective**: If the golden ratio emerges, it would represent an optimal *valency allocation* between protection and delegation promises—the balance at which the superagent maximizes its total promise-keeping capability.
-
-**Status**: This is a theoretical prediction derived from optimization analysis. Rigorous mathematical proof of universal convergence remains an open problem requiring further validation.
-
-## Open Research Question: Data Collection Needed
-
-**Research Opportunity**: We seek to collect empirical data on C_S/C_M ratio patterns across different implementation domains to test the golden ratio convergence hypothesis. This is purely theoretical at present—no implementations or observations exist yet.
-
-**Call for Collaboration**: Researchers and developers implementing dual-agent privacy systems are invited to share their allocation patterns, system behaviors, and empirical measurements. This data would be invaluable for validating or refuting the theoretical predictions presented in this paper.
-
-## Tetrahedral Emergence Hypothesis
-
-**Theoretical Prediction**: Sustained S-M separation may naturally generate two additional measurement properties, forming a tetrahedral system architecture:
-
-- **Reflect (R)**: Temporal accumulation of S's boundary decisions, creating memory properties
-
-- **Connect (C)**: Network effects from M's delegation patterns, creating relational properties
-
-**Mathematical Formulation**: If (Y_S ⊥ Y_M) | X is maintained over time, the system may generate:
-
-> Y_R = R(Y_S^{1:t}, τ) [Memory from S history]
-> 
-> Y_C = C(Y_M^{1:t}, G) [Network from M interactions]
-
-By data processing inequality, I(X; Y_R) ≤ I(X; Y_S) and I(X; Y_C) ≤ I(X; Y_M), suggesting bounded additional leakage if these properties emerge.
-
-**Promise Theory Consideration**: N=4 agents would require O(16) interior promises. This complexity is only justified if the emergent properties provide sufficient additional capability. Promise Theory suggests preferring minimal agent counts—tetrahedral emergence would need to demonstrate clear value beyond the N=2 baseline.
-
-**Theoretical Rationale**: 
-
-- **Minimum for sovereignty**: Two agents create separation, two properties enable persistence
-
-- **Natural dimensions**: Temporal (R) and spatial (C) emerge from operational (S, M)
-
-- **Information conservation**: Additional properties would be bounded by primary agent budgets
-
-**Status**: This is a theoretical prediction about potential system evolution. Whether such emergence is inevitable, optimal, or even desirable requires further mathematical analysis and empirical validation.
-
-## Testable Predictions
-
-If tetrahedral emergence occurs in real systems, we would expect to observe:
-
-- **Temporal patterns**: Systems may develop memory/logging behaviors (potential "Reflect" property)
-
-- **Network effects**: Inter-agent communication patterns may emerge (potential "Connect" property)
-
-**Important**: These are theoretical predictions, not observations. No implementations exist yet to test whether such emergence actually occurs. These predictions provide concrete hypotheses for future experimental work.
-
-## Future Research Directions
-
-- **Statistical Validation**:
-   
-   
-- Large-scale experiments across domains
-   
-- Hypothesis testing for allocation patterns
-   
-- Control for confounding variables
-   
-
-- **Theoretical Investigation**:
-   
-   
-- Derive optimal allocation from first principles
-   
-- Characterize conditions for specific ratio convergence
-   
-- Prove or disprove emergence hypotheses
-   
-- Extend Promise Theory analysis to multi-agent cases
-   
-
-- **Practical Extensions**:
-   
-   
-- Multi-agent generalizations (beyond two)
-   
-- Dynamic budget adjustment algorithms
-   
-- Integration with existing privacy tools
-   
-
-# Theoretical Predictions and Open Questions
+# Part III: Theoretical Predictions (Unproven)
 
 **STATUS: PURELY THEORETICAL** - This section presents unproven mathematical conjectures and theoretical predictions. No implementations, empirical data, or observations exist. These are research hypotheses requiring both formal mathematical proof and experimental validation.
 
 ## Golden Ratio Hypothesis (Unproven)
 
-**Conjecture 7.1 (Golden Ratio Optimality - UNPROVEN).** There may exist an optimization principle that drives optimal allocation ratios toward φ ≈ 1.618.
+**Conjecture 8.1 (Golden Ratio Optimality - UNPROVEN).** There may exist an optimization principle that drives optimal allocation ratios toward φ ≈ 1.618.
 
-**Theoretical Motivation**:
+**Theoretical Motivation:**
 
-If a joint optimization objective exists of the form:
+Consider the optimization problem:
 
-> max_{C_S, C_M} U(C_M) · P(C_S, C_M)   s.t.   C_S + C_M = B
+> max_{C_S, C_M} U(C_M) · P(C_S)   s.t.   C_S + C_M = B
 
-where U is utility and P is privacy protection, then under certain smoothness and monotonicity conditions, the optimal ratio might be C_S/C_M = φ.
+where U is utility (concave, increasing in delegation budget) and P is privacy protection (concave, increasing in protection budget).
+
+**Specific Conjecture:** If U and P are both logarithmic:
+- U(x) = log(1 + x)
+- P(x) = log(1 + x)
+
+Then the optimal ratio C_M/C_S → φ ≈ 1.618.
+
+**Rationale:** The golden ratio appears in optimization problems with logarithmic objectives in other contexts (e.g., Kelly criterion variations). This provides some theoretical plausibility but is not a proof.
 
 **What Would Be Required to Validate This**:
 
-- Formal mathematical proof deriving φ from first principles
-- Precise definitions of utility and privacy functions
+- Formal mathematical proof deriving φ from the specific optimization structure
+- Precise, measurable definitions of "utility" and "privacy protection"
 - Proof of existence and uniqueness of optimal ratio
 - Characterization of exact conditions under which φ emerges
 - Experimental implementations across multiple domains
@@ -957,106 +1081,47 @@ where U is utility and P is privacy protection, then under certain smoothness an
 
 **Current Status**: Pure conjecture. No proof exists. No data exists. This is a mathematical hypothesis awaiting investigation.
 
-## Budget Allocation: Testable Framework
+**Promise Theory Perspective**: If the golden ratio emerges, it would represent an optimal *valency allocation* between protection and delegation promises—the balance at which the superagent maximizes its total promise-keeping capability.
 
-**Proposed Metrics** (for future experimental work):
-
-Define efficiency metrics for implementations:
-
-- **Privacy Efficiency**: η_P = Privacy Achieved / Budget Spent
-
-- **Utility Efficiency**: η_U = Utility Achieved / Budget Spent
-
-- **Joint Efficiency**: η_J = η_P · η_U
-
-**Theoretical Predictions** (to be tested):
-
-- η_P may increase with C_S but with diminishing returns
-
-- η_U may increase with C_M but with diminishing returns
-
-- η_J might show local maxima near C_S/C_M ≈ φ if the golden ratio hypothesis holds
-
-**Critical Issues Requiring Resolution**:
-
-- "Privacy Achieved" and "Utility Achieved" need rigorous, measurable definitions
-
-- Metrics may be highly implementation-dependent
-
-- Optimization landscape likely varies by application domain
-
-- No implementations exist yet to test these predictions
-
-# Tetrahedral Emergence Hypothesis
+## Tetrahedral Emergence Hypothesis
 
 **STATUS: HIGHLY SPECULATIVE** - This section presents a geometric interpretation that has not been mathematically validated.
 
-## Four-Force Model
+**Conjecture 8.2 (Tetrahedral Structure - HIGHLY SPECULATIVE).** Sustained S-M separation may naturally generate two additional measurement properties:
 
-> **Conjecture: Tetrahedral Structure**
+- **Reflect (R)**: Temporal accumulation of S's boundary decisions
+- **Connect (C)**: Network effects from M's delegation patterns
+
+**Mathematical Formulation**: If (Y_S ⊥⊥ Y_M) | X is maintained over time:
+
+> Y_R = R(Y_S^{1:t}, τ) [Memory from S history]
 > 
-> The dual-agent system, when operating over time, may exhibit four distinct information flows:
-> 
-> - **Swordsman (S)**: Privacy enforcement (boundary-making)
-> - **Mage (M)**: Delegation (capability projection)
-> - **Reflect (R)**: Temporal integration (memory formation)
-> - **Connect (C)**: Network coordination (relationship building)
+> Y_C = C(Y_M^{1:t}, G) [Network from M interactions]
 
-**Geometric Interpretation**:
+By data processing inequality: I(X; Y_R) ≤ I(X; Y_S) and I(X; Y_C) ≤ I(X; Y_M).
 
-If these four forces exist and maintain pairwise relationships, they may form a tetrahedral structure where:
-
-- Each vertex represents one force
-
-- Each edge represents an information channel
-
-- The structure is minimal (no redundant channels)
-
-- Stability requires specific geometric relationships
-
-**Mathematical Formulation (Tentative)**:
-
-Let I_ij denote mutual information between forces i and j. The tetrahedron hypothesis suggests:
-
-> I_SM = 0 (proven separation)
-> 
-> I_SR ≈ φ · I_MR (conjectured)
-> 
-> I_SC ≈ φ · I_MC (conjectured)
-> 
-> I_RC ≈ φ² (highly speculative)
-
-## Emergence from Dual-Agent Core
-
-**Claim 8.1 (UNPROVEN):** Reflect and Connect are not separate agents but emergent properties of sustained S-M separation over time.
-
-**Proposed Mechanism**:
-
-- **Reflect emerges** when Swordsman maintains consistent boundaries across sessions, creating temporal correlation structure
-
-- **Connect emerges** when Mage builds relationships with other agents, creating network correlation structure
+**Promise Theory Consideration**: N=4 agents would require O(16) interior promises. This complexity is only justified if the emergent properties provide sufficient additional capability.
 
 **Required Validation**:
 
 - Formal definition of "emergence" in this context
-
 - Proof that R and C are inevitable given S-M separation
-
 - Demonstration that R and C cannot be reduced to S and M
-
 - Empirical observation in deployed systems
 
-## Golden Ratio in Tetrahedral Context
-
-**Speculation 8.1**: If the four-force tetrahedron exists and maintains stability, the golden ratio may govern relationships:
-
-> I_S/I_M = φ, I_S/I_R = φ², I_S/I_C = φ³
-
-**Geometric Justification (Informal)**:
-
-The golden ratio appears in regular geometric structures (pentagons, Fibonacci spirals). If information flows in the tetrahedron seek geometric efficiency, φ-based relationships might provide optimal packing or stability properties.
-
 **Critical Acknowledgment**: This geometric interpretation is highly speculative and serves primarily as a framework for future investigation. No rigorous derivation exists, and the hypothesis may ultimately prove incorrect.
+
+## Testable Predictions
+
+If these hypotheses hold in real systems, we would expect to observe:
+
+- **Allocation ratios**: Systems that empirically optimize for privacy-utility tradeoff should exhibit allocation ratios clustering near φ if the golden ratio hypothesis holds
+
+- **Temporal patterns**: Systems may develop memory/logging behaviors (potential "Reflect" property)
+
+- **Network effects**: Inter-agent communication patterns may emerge (potential "Connect" property)
+
+**Important**: These are theoretical predictions, not observations. No implementations exist yet to test whether such patterns actually occur.
 
 ---
 
@@ -1068,13 +1133,13 @@ The golden ratio appears in regular geometric structures (pentagons, Fibonacci s
 
 We have rigorously established:
 
-- Separation enables additive mutual information bounds
+- Separation enables additive mutual information bounds (Theorem 5.1)
 
-- Combined with budgets, guarantees R_max < 1
+- Combined with budgets, guarantees R_max < 1 (Corollary 5.2)
 
-- Fano's inequality ensures minimum error rates
+- Fano's inequality ensures minimum error rates (Theorem 5.3)
 
-- Approximate separation degrades gracefully
+- Approximate separation degrades gracefully (Theorem 5.4)
 
 - ZKP constructions enable cryptographic enforcement
 
@@ -1093,16 +1158,6 @@ We have demonstrated that these results are not merely clever engineering but ri
 
 This elevates the dual-agent architecture from "novel proposal" to "principled application of established theory."
 
-## Practical Implementation Pathways
-
-The framework can be deployed through:
-
-- **Hybrid Approaches**: Combine with differential privacy for additional protection
-
-- **Layered Architecture**: Use TEEs for hardware isolation, containers for software
-
-- **Gradual Adoption**: Start with low-sensitivity applications, expand as confidence grows
-
 ## Relationship to Existing Privacy Frameworks
 
 | Framework | Focus | Our Approach | Synergy |
@@ -1112,233 +1167,136 @@ The framework can be deployed through:
 | Information Flow Control | Taint tracking | Quantitative bounds | Enhanced metrics |
 | Promise Theory | Agent semantics | Privacy architecture | Formal foundation |
 
-## Open Questions and Theoretical Predictions
-
-**Unresolved Questions**:
-
-- Is two-agent separation optimal for privacy-utility trade-offs?
-
-- Can the golden ratio convergence be proven from first principles?
-
-- Does tetrahedral emergence occur naturally or require explicit design?
-
-- How do these bounds compose in multi-agent systems?
-
-- How does Promise Theory extend to systems with more than two operational agents?
-
-**Theoretical Predictions Requiring Validation**:
-
-- Golden ratio proportions as optimization attractors in allocation strategies
-
-- Tetrahedral structure as natural consequence of sustained dual-agent separation
-
-- Emergent properties R and C as inevitable system evolution
-
-- Four-force structure as minimal complete sovereignty architecture
-
 ## Limitations and Assumptions
 
 **Key Limitations**:
 
-- **Conditional Independence**: Hard to enforce perfectly in practice
+- **Conditional Independence**: Hard to enforce perfectly in practice. Side-channels, timing attacks, and shared resources can leak information. The guarantees hold to the degree separation is achieved.
 
-- **Passive Adversary**: Active attacks not fully addressed
+- **Passive Adversary**: Active attacks that modify agent behavior, compromise execution environments, or exploit temporal correlations are not fully addressed.
 
-- **Known Distributions**: Uncertainty in P(X) affects budgets
+- **Known Distributions**: Uncertainty in P(X) affects budget calculations. Entropy estimation has inherent error.
 
-- **Static Budgets**: Dynamic environments may require adaptation
+- **Static Budgets**: Dynamic environments may require adaptive budget adjustment, which introduces additional complexity.
 
-**Critical Assumptions**:
-
-- Architectural isolation is maintainable (promise-keeping is possible)
-
-- Side channels are bounded and detectable
-
-- Budget estimation is sufficiently accurate
+- **Entropy Estimation**: All H(X) estimators provide lower bounds. Safety margins help but don't eliminate this limitation.
 
 ## Experimental Roadmap
 
-**Immediate Next Steps**:
+**Immediate**: 
+- Implement reference architecture
+- Develop test suite with known H(X) distributions
+- Create monitoring tools with MI estimation
+- Validate separation enforcement mechanisms
 
-- Implement reference architecture with common privacy benchmarks
+**Medium-term**: 
+- Deploy in controlled applications
+- Validate guarantees across domains
+- Establish best practices for entropy estimation
+- Measure actual side-channel capacity
 
-- Develop standardized test suite for separation verification
+**Long-term**: 
+- Prove or refute golden ratio hypothesis
+- Test tetrahedral emergence predictions
+- Extend to multi-agent settings
+- Integrate with existing privacy tools at scale
 
-- Create open-source monitoring tools
-
-**Medium-term Goals**:
-
-- Deploy in real applications with user studies
-
-- Validate across diverse domains
-
-- Establish best practices for budget setting
-
-**Long-term Research**:
-
-- Prove or refute optimal allocation theorems
-
-- Extend to multi-agent and distributed settings
-
-- Integrate with emerging privacy technologies
-
-- Develop Promise Theory extensions for complex multi-agent privacy systems
+---
 
 # Related Extended Work
-
-## Connections to Complex Systems
-
-The potential emergence of structure from simple rules connects to:
-
-- **Self-organization** [Prigogine & Stengers 1984]
-
-- **Emergent complexity** [Kauffman 1993]
-
-- **Scale-free networks** [Barabási 2002]
-
-- **Allometric scaling** [West 2017]
 
 ## Privacy Technology Integration
 
 Our framework complements:
 
-- **Zero-knowledge proofs**: Can implement S's selective disclosure with cryptographic guarantees (Groth16, PLONK, Nova)
+- **Zero-knowledge proofs**: Implement S's selective disclosure (Groth16, PLONK, Nova)
 
-- **Secure enclaves**: Hardware enforcement of separation
+- **Secure enclaves**: Hardware enforcement of separation (SGX, TrustZone)
 
 - **Homomorphic encryption**: Computation within M's bounds
 
 - **Privacy pools**: Network effects without individual exposure
 
-## Economic and Game Theory
+- **Differential privacy**: Additional protection within Swordsman operations
 
-If golden ratios emerge naturally:
+## Economic Enforcement of Separation
 
-- **Nash equilibria** might converge to φ-proportions
+The architectural separation can be economically enforced through dual-token markets:
 
-- **Market mechanisms** could discover optimal allocations
-
-- **Evolutionary pressure** might select for tetrahedral structures
-
-**Economic Enforcement of Separation:**
-
-The architectural separation (Y_S ⊥ Y_M) | X can be economically enforced through dual-token markets:
-
-- SWORD tokens earned exclusively through Swordsman chronicles (privacy domain)
-
-- MAGE tokens earned exclusively through Mage chronicles (delegation domain)  
-
+- SWORD tokens earned exclusively through Swordsman chronicles
+- MAGE tokens earned exclusively through Mage chronicles
 - Market separation creates economic pressure against agent merger
-
-- Budget tracking C_S and C_M verifiable on-chain
-
-- Guardian staking (10,000 SWORD) maintains collective compression standards
-
-If a First Person attempts to merge agents (violating (Y_S ⊥ Y_M) | X), they lose earning capability in both domains—creating self-enforcing separation through incentive alignment.
-
-**Promise Theory Note**: Economic enforcement creates *incentive compatibility* for promise-keeping. Agents don't just *want* to keep promises—they face economic penalties for violation.
+- Guardian staking (10,000 SWORD) maintains collective standards
 
 **Signal-Based Sustainability:**
 
-Rather than speculative token sales, sustainable funding emerges from ceremony and signal fees:
+- Genesis ceremony: 1 ZEC creates agent pair
+- Ongoing signals: 0.01 ZEC each, continuous proof-of-comprehension
+- Fee distribution: 61.8% transparent pool, 38.2% shielded pool
 
-- Genesis ceremony: 1 ZEC ($500 at $500/ZEC) creates agent pair once per ecosystem
-
-- Ongoing signals: 0.01 ZEC ($5) each, continuous proof-of-comprehension
-
-- Fee distribution: 61.8% transparent pool, 38.2% shielded pool (internal allocation per ecosystem)
-
-- Self-sustaining through activity-based revenue
-
-**Relationship to Proven Results:**
-
-The economic model described above is *one possible implementation*—the mathematical guarantees established in Sections 3-6 hold independent of tokenomic choices. The reconstruction ceiling, error floor, and separation bounds are proven theorems that remain valid regardless of:
-
-- Token model (dual, single, or no tokens)
-
-- Funding mechanism (ceremonies, grants, or other)  
-
-- Reward structure (progressive, fixed, or algorithmic)
-
-- Network effects (VRCs optional, not required)
-
-What the proven mathematics *enables* is sustainable tokenomics grounded in information theory rather than speculation. The budget constraint C_S + C_M < H(X) provides a scarcity bound; how that bound is implemented economically is a design choice.
-
-**For complete economic architecture, see companion document:** "VRC Protocol: Economic Architecture"
+---
 
 # Conclusion
 
 We have established rigorous information-theoretic bounds for dual-agent privacy architectures with enforced separation. The proven results—additive mutual information under separation, reconstruction ceilings below unity, and guaranteed error floors—provide solid foundations for privacy-preserving agent systems.
 
-**Promise Theory Foundation**: We have grounded these results in Promise Theory (Bergstra & Burgess, 2019), demonstrating that the dual-agent structure is not merely an implementation choice but a formal requirement given the autonomy axiom. Single-agent architectures fail because they attempt to promise in domains they cannot independently control. The Swordsman-Mage separation respects the autonomy axiom, and The Gap (R_max < 1) emerges as an irreducible promise of the resulting superagent.
+**Promise Theory Foundation**: We have grounded these results in Promise Theory (Bergstra & Burgess, 2019), demonstrating that the dual-agent structure is not merely an implementation choice but a formal requirement given the autonomy axiom. The Swordsman-Mage separation respects the autonomy axiom, and The Gap (R_max < 1) emerges as an irreducible promise of the resulting superagent.
 
-We integrate zero-knowledge proof systems as core implementation primitives, providing concrete constructions using Groth16, PLONK, and Nova protocols. This enables cryptographic rather than merely architectural enforcement of separation and budget constraints, offering stronger guarantees in adversarial settings.
+We integrate zero-knowledge proof systems as core implementation primitives, providing concrete constructions using Groth16, PLONK, and Nova protocols. This enables cryptographic rather than merely architectural enforcement of separation and budget constraints.
 
-The key insight remains powerful: structural separation with budget constraints creates fundamental privacy guarantees independent of computational assumptions. This offers a principled approach to the agent privacy problem that complements existing methods.
+**The key insight remains powerful: structural separation with budget constraints creates fundamental privacy guarantees independent of computational assumptions.**
 
-We present theoretical conjectures about golden ratio optimization and tetrahedral emergence, but emphasize these remain unproven mathematical hypotheses with no empirical validation. The framework's value lies entirely in its proven information-theoretic guarantees, its Promise Theory foundations, and the implementation roadmap it provides for future builders.
+We present theoretical conjectures about golden ratio optimization and tetrahedral emergence, but emphasize these remain unproven mathematical hypotheses requiring validation.
+
+**Open Problems:**
+
+1. Achieving conditional independence in practice with minimal side-channel leakage
+2. Robust entropy estimation for behavioral data
+3. Extending threat model to active adversaries and temporal correlation
+4. Proving or refuting golden ratio convergence
+5. Empirical validation across diverse deployment contexts
+
+---
 
 # Version Statement
 
-**Version 3.3**: This edition adds Promise Theory foundations (Bergstra & Burgess, 2019) as formal semantic grounding for the dual-agent architecture. The autonomy axiom explains why single-agent approaches fail; superagent structure describes the First Person system; irreducible promises characterize The Gap; scope separation and valency constraints ground the technical requirements. Core information-theoretic results remain rigorous and unchanged from v3.2. Golden ratio hypotheses and tetrahedral emergence remain purely theoretical conjectures with no empirical validation. For implementation guidance, see the companion *0xagentprivacy Whitepaper v4.5* and *Promise Theory Reference v1.0*.
+**Version 3.4**: This edition adds Promise Theory foundations (Bergstra & Burgess, 2019) as formal semantic grounding, entropy and mutual information estimation methodology, strengthened threat model discussion, and clarified speculative vs. proven content. Core information-theoretic results remain rigorous. Golden ratio hypotheses and tetrahedral emergence remain purely theoretical conjectures.
 
 # Acknowledgments
 
-To the 0xagentprivacy project for exploring privacy-first infrastructure. To BGIN for discussions on AI governance. To Kwaai for advancing personal AI sovereignty. To First Person Project for pioneering user-centric identity frameworks. To Bergstra & Burgess for the Promise Theory foundations. To the reviewers whose feedback strengthened this work.
+To the 0xagentprivacy project, BGIN, Kwaai, First Person Project, and Bergstra & Burgess for Promise Theory foundations.
 
-## References
+---
 
-1. Dwork, C. & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. *Foundations and Trends in Theoretical Computer Science*.
+# References
 
-2. Goldreich, O. (2004). Foundations of Cryptography: Volume 2, Basic Applications. Cambridge University Press.
+1. Bergstra, J.A. & Burgess, M. (2019). Promise Theory: Principles and Applications. O'Reilly Media.
 
-3. Sabelfeld, A. & Myers, A. C. (2003). Language-based information-flow security. *IEEE Journal on Selected Areas in Communications*, 21(1), 5-19.
+2. Cover, T.M. & Thomas, J.A. (2006). Elements of Information Theory. Wiley.
 
-4. Kairouz, P., Oh, S., & Viswanath, P. (2017). The Composition Theorem for Differential Privacy. *IEEE Transactions on Information Theory*, 63(6), 4037-4039.
+3. Dwork, C. & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. Foundations and Trends in TCS.
 
-5. Shannon, C. E. (1948). A Mathematical Theory of Communication. *Bell System Technical Journal*.
+4. Goldreich, O. (2004). Foundations of Cryptography. Cambridge University Press.
 
-6. Cover, T. & Thomas, J. (2006). Elements of Information Theory. Wiley.
+5. Groth, J. (2016). On the Size of Pairing-based Non-interactive Arguments. EUROCRYPT 2016.
 
-7. Fano, R. M. (1961). Transmission of Information. MIT Press.
+6. Gabizon, A., Williamson, Z.J., & Ciobotaru, O. (2019). PLONK. ePrint 2019/953.
 
-8. Millen, J. K. (1987). Covert Channel Capacity. *IEEE Symposium on Security and Privacy*.
+7. Kothapalli, A., Setty, S., & Tzialla, I. (2021). Nova. ePrint 2021/370.
 
-9. Gray III, J. W. (1993). On Analyzing the Bus-Contention Channel. *IEEE Computer Security Foundations Workshop*.
+8. Millen, J.K. (1987). Covert Channel Capacity. IEEE S&P.
 
-10. Giles, J. & Hajek, B. (2002). An Information-Theoretic and Game-Theoretic Study of Timing Channels. *IEEE Transactions on Information Theory*, 48(9), 2455-2477.
+9. Sabelfeld, A. & Myers, A.C. (2003). Language-based Information-flow Security. IEEE JSAC.
 
-11. Kocher, P., Jaffe, J., & Jun, B. (1999). Differential Power Analysis. *CRYPTO '99*.
+10. Fano, R.M. (1961). Transmission of Information. MIT Press.
 
-12. Yarom, Y. & Falkner, K. (2014). FLUSH+RELOAD: A High Resolution, Low Noise, L3 Cache Side-Channel Attack. *USENIX Security*.
+11. Shannon, C.E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal.
 
-13. Mangard, S., Oswald, E., & Popp, T. (2007). Power Analysis Attacks: Revealing the Secrets of Smart Cards. Springer.
+12. Kraskov, A., Stögbauer, H., & Grassberger, P. (2004). Estimating mutual information. Physical Review E, 69(6), 066138.
 
-14. Murdoch, S. J. & Danezis, G. (2005). Low-Cost Traffic Analysis of Tor. *IEEE Symposium on Security and Privacy*.
+13. Belghazi, M.I., et al. (2018). Mutual Information Neural Estimation. ICML 2018.
 
-15. Dwork, C., Rothblum, G. N., & Vadhan, S. (2010). Boosting and Differential Privacy. *FOCS 2010*.
-
-16. Mironov, I. (2017). Rényi Differential Privacy. *IEEE Computer Security Foundations Symposium*.
-
-17. Prigogine, I. & Stengers, I. (1984). Order Out of Chaos. Bantam Books.
-
-18. Kauffman, S. (1993). The Origins of Order: Self-Organization and Selection in Evolution. Oxford University Press.
-
-19. Barabási, A. L. (2002). Linked: The New Science of Networks. Perseus Books.
-
-20. West, G. (2017). Scale: The Universal Laws of Life and Death in Organisms, Cities and Companies. Penguin.
-
-21. Ball, P. (2009). Nature's Patterns: A Tapestry in Three Parts. Oxford University Press.
-
-22. Livio, M. (2002). The Golden Ratio: The Story of Phi. Broadway Books.
-
-23. Groth, J. (2016). On the Size of Pairing-based Non-interactive Arguments. *EUROCRYPT 2016*. ePrint Archive 2016/260.
-
-24. Gabizon, A., Williamson, Z. J., & Ciobotaru, O. (2019). PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge. ePrint Archive 2019/953.
-
-25. Kothapalli, A., Setty, S., & Tzialla, I. (2021). Nova: Recursive Zero-Knowledge Arguments from Folding Schemes. ePrint Archive 2021/370.
-
-26. **Bergstra, J. A. & Burgess, M. (2019). Promise Theory: Principles and Applications. O'Reilly Media.**
+14. The First Person Project. (2025). Building a Trust Layer for the Internet—One Person and One Community at a Time. White Paper v1.1.
 
 ---
 
@@ -1390,9 +1348,12 @@ class DualAgentPrivacy:
         self.budget = self.H_X * safety_factor
         
         # Valency allocation (example values, not empirically validated)
-        # Golden ratio hypothesis suggests C_S ≈ 0.62, C_M ≈ 0.38
-        self.C_S = self.budget * 0.62  # Swordsman valency
-        self.C_M = self.budget * 0.38  # Mage valency
+        # Golden ratio hypothesis suggests C_M ≈ 0.62, C_S ≈ 0.38
+        self.C_S = self.budget * 0.38  # Swordsman valency
+        self.C_M = self.budget * 0.62  # Mage valency
+        
+        self.cumulative_S = 0
+        self.cumulative_M = 0
         
     def enforce_separation(self):
         """
@@ -1404,9 +1365,10 @@ class DualAgentPrivacy:
         
     def measure_leakage(self):
         """Assessment of separation promise compliance."""
-        I_S = self.estimate_mutual_info(self.Y_S, self.X)
-        I_M = self.estimate_mutual_info(self.Y_M, self.X)
-        I_joint = self.estimate_mutual_info((self.Y_S, self.Y_M), self.X)
+        I_S, _ = estimate_mutual_info_ksg(self.X, self.Y_S)
+        I_M, _ = estimate_mutual_info_ksg(self.X, self.Y_M)
+        I_joint, _ = estimate_mutual_info_ksg(self.X, 
+                                              np.hstack([self.Y_S, self.Y_M]))
         
         # Verify separation (promise kept if violation ≈ 0)
         separation_violation = I_joint - I_S - I_M
@@ -1422,26 +1384,26 @@ class AdaptiveBudgetController:
     Manages valency allocation between Swordsman and Mage.
     Adjusts based on observed utility and privacy outcomes.
     """
-    def __init__(self, total_budget, initial_ratio=1.5):
+    def __init__(self, total_budget, initial_ratio=1.618):
         self.total = total_budget  # Total system valency
-        self.ratio = initial_ratio
+        self.ratio = initial_ratio  # C_M / C_S ratio
         self.history = []  # Assessment history
         
-    def update(self, utility_score, privacy_score):
+    def update(self, utility_score, privacy_score, threshold=0.5):
         """Adjust allocation based on performance assessments."""
         self.history.append((utility_score, privacy_score))
         
         if len(self.history) > 100:
             # Analyze trends, adjust ratio
             if utility_score < threshold:
-                self.ratio *= 0.9  # Increase Mage valency
+                self.ratio *= 1.1  # Increase Mage valency
             elif privacy_score < threshold:
-                self.ratio *= 1.1  # Increase Swordsman valency
+                self.ratio *= 0.9  # Increase Swordsman valency
                 
     def get_budgets(self):
         """Return current valency allocation."""
-        C_S = self.total * (self.ratio / (1 + self.ratio))
-        C_M = self.total * (1 / (1 + self.ratio))
+        C_M = self.total * (self.ratio / (1 + self.ratio))
+        C_S = self.total * (1 / (1 + self.ratio))
         return C_S, C_M
 ```
 
@@ -1449,7 +1411,7 @@ class AdaptiveBudgetController:
 
 ```python
 # Separation promise verification
-def test_separation_violation(system, num_samples=10000):
+def test_separation_violation(system, num_samples=10000, epsilon=0.01):
     """
     Assess whether separation promise is being kept.
     This is the assessment mechanism α(π_separation).
@@ -1460,8 +1422,13 @@ def test_separation_violation(system, num_samples=10000):
         y_s, y_m = system.observe(x)
         samples.append((x, y_s, y_m))
     
+    X = np.array([s[0] for s in samples])
+    Y_S = np.array([s[1] for s in samples])
+    Y_M = np.array([s[2] for s in samples])
+    
     # Compute I(Y_S; Y_M | X) - should be ≈ 0 if promise kept
-    violation = estimate_conditional_mi(samples)
+    # Approximate via I(Y_S; Y_M) - I(Y_S; Y_M; X) 
+    violation = estimate_conditional_mi(X, Y_S, Y_M)
     
     # Assessment decision
     if violation > epsilon:
@@ -1478,17 +1445,42 @@ def monitor_budget_compliance(agent, budget, window=1000):
     Real-time valency monitoring.
     Ensures agent doesn't exceed its promise capacity.
     """
+    from collections import deque
+    
     cumulative_info = 0
     measurements = deque(maxlen=window)
     
     while True:
         x, y = agent.get_next_observation()
-        instant_mi = estimate_instant_mi(x, y)
-        measurements.append(instant_mi)
+        instant_mi, (_, upper_bound) = estimate_mutual_info_ksg(
+            x.reshape(-1, 1), y.reshape(-1, 1)
+        )
+        measurements.append(upper_bound)  # Use upper bound for safety
         
         cumulative_info = sum(measurements)
         if cumulative_info > budget:
             # Valency exceeded - trigger remediation
             agent.trigger_throttling()
-            log_budget_violation()
+            log_budget_violation(cumulative_info, budget)
+        
+        yield cumulative_info, budget
 ```
+
+---
+
+# Document Metadata
+
+- **Project:** 0xagentprivacy
+- **Version:** 3.4
+- **Date:** December 11, 2025
+- **Companion Documents:** 
+  - Whitepaper v4.6
+  - Promise Theory Reference v1.0
+  - Glossary v2.2
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 3.3 | Dec 2025 | Previous release |
+| **3.4** | **Dec 11, 2025** | **Promise Theory integration, entropy/MI estimation methodology, strengthened threat model, clarified speculative content, added KSG reference, relabeled irreducible promise as Proposition** |

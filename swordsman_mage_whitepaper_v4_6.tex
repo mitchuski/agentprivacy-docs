@@ -1,0 +1,1242 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{multirow}
+\usetikzlibrary{shapes,arrows,positioning}
+
+% Page geometry
+\geometry{margin=1in}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=green!50!black,
+    urlcolor=blue!70!black,
+    pdftitle={Swordsman and Mage: Dual Agents Derived from the First Person},
+    pdfauthor={privacymage}
+}
+
+% Custom box for quotes
+\newtcolorbox{quotebox}{
+    colback=gray!10,
+    colframe=gray!50,
+    boxrule=0.5pt,
+    arc=2mm,
+    left=5mm,
+    right=5mm
+}
+
+\newtcolorbox{importantbox}{
+    colback=blue!5,
+    colframe=blue!50,
+    boxrule=0.5pt,
+    arc=2mm,
+    left=5mm,
+    right=5mm
+}
+
+\newtcolorbox{warningbox}{
+    colback=yellow!10,
+    colframe=orange!50,
+    boxrule=0.5pt,
+    arc=2mm,
+    left=5mm,
+    right=5mm
+}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+
+% Custom commands
+\newcommand{\independent}{\perp\!\!\!\perp}
+\newcommand{\FP}{\text{FP}}
+\newcommand{\Sword}{\text{S}}
+\newcommand{\Mage}{\text{M}}
+
+% Code listing style
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10},
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black}
+}
+
+% Title
+\title{\textbf{Swordsman and Mage: Dual Agents Derived from the First Person}\\[0.5em]
+\large Protect or Delegate $\rightarrow$ Reflect and Connect\\[0.3em]
+\normalsize $(\Sword \independent \Mage) | \FP$}
+
+\author{privacymage\\
+\texttt{0xagentprivacy}\\[0.5em]
+\url{https://agentprivacy.ai}}
+
+\date{December 11, 2025\\Version 4.6}
+
+\begin{document}
+
+\maketitle
+
+\begin{quotebox}
+\textit{``Privacy is my blade, knowledge is my spellbook.''}\\[0.5em]
+\textit{``Agents can only promise their own behavior.''} --- Promise Theory
+\end{quotebox}
+
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Notation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This document uses two parallel notation systems:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Mathematical} & \textbf{Symbolic} & \textbf{Meaning} \\
+\midrule
+S & \Sword{} & Swordsman agent \\
+M & \Mage{} & Mage agent \\
+FP & \FP{} & First Person (human) \\
+$(Y_S \independent Y_M) | X$ & $\Sword \perp \Mage | X$ & Conditional independence given private state \\
+$H(X)$ & --- & Entropy of private state \\
+$C_S, C_M$ & --- & Information budgets for Swordsman and Mage \\
+$R_{\max}$ & --- & Maximum reconstruction efficiency \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Mathematical notation appears in formal statements; symbolic notation in narrative sections.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Terminology Note}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This whitepaper uses precise mathematical and architectural language.
+
+\subsection{Core Terminology}
+
+\begin{description}[style=nextline]
+    \item[Dual Agents $(S \independent M)$] Two agents with conditional independence. Swordsman (protection) and Mage (delegation)
+    \item[First Person] You, the human whose sovereignty is protected (capitalized throughout to emphasize agency)
+    \item[Reconstruction Ceiling $(R < 1)$] Mathematical guarantee that adversaries cannot fully reconstruct your private state from observations
+    \item[Signal] Ongoing proverb posting (0.01 ZEC each), continuous demonstration of comprehension
+    \item[Genesis Ceremony] One-time agent pair origination, 1 ZEC (\$500), different from signals
+    \item[Spellbook] Source material for learning (12 Acts + bookends = 13 sections, plus 30 tales in Zero Spellbook)
+    \item[RPP (Relationship Proverb Protocol)] Compression protocol proving comprehension---1 proverb formed = 1 signal posted
+\end{description}
+
+\subsection{Spellbook Learning Pathway}
+
+\textbf{How narrative learning connects to infrastructure:}
+\begin{itemize}
+    \item Read spellbook content (Acts or tales)
+    \item Form a proverb showing comprehension (RPP compression)
+    \item Post signal (1 proverb = 1 signal = 0.01 ZEC)
+    \item Build trust tier through sustained signals (50+ = Light, 150+ = Heavy, 500+ = Dragon)
+    \item Qualify for guardian candidacy (proven reconstruction ability)
+\end{itemize}
+
+\textbf{Key insight:} Guardian candidates \emph{prove} reconstruction/compression ability through demonstrated spellbook learning. Signals are proof of comprehension, not just fees.
+
+\subsection{Cross-Document Translation}
+
+This document uses \textbf{mathematical/architectural} terminology:
+\begin{itemize}
+    \item Technical: $S \independent M | X$, reconstruction ceiling $R < 1$, information-theoretic bounds
+    \item Architecture: Dual agents, separation primitives, conditional independence
+\end{itemize}
+
+Other documents translate these concepts:
+\begin{itemize}
+    \item \textbf{Spellbook:} Narrative/mythological (Soulbis, Soulbae, the Gap, Acts/Arcs)
+    \item \textbf{Tokenomics:} Economic/practical (SWORD, MAGE, signal fees, guardian mechanics)
+    \item \textbf{Promise Theory Reference:} Formal semantic foundations (autonomy axiom, superagent, irreducible promise)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Promise-Theoretic Foundations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The dual-agent architecture is a rigorous implementation of \textbf{Promise Theory} (Bergstra \& Burgess, 2019), established semantics for autonomous agent coordination.
+
+\subsection{The Autonomy Axiom}
+
+\begin{quotebox}
+``An agent can only make promises about its own behavior. No agent can make a promise on behalf of another agent.''
+\end{quotebox}
+
+This is why single agents cannot resolve the privacy-delegation paradox. A single agent attempting to promise both protection AND delegation violates the autonomy axiom---it promises in domains it cannot independently control.
+
+\textbf{The dual-agent architecture enforces this axiom:}
+\begin{itemize}
+    \item \textbf{Swordsman} promises protection behaviors (boundaries, disclosure control)
+    \item \textbf{Mage} promises delegation behaviors (coordination, execution)
+    \item \textbf{First Person} promises authorization (sovereignty decisions)
+    \item None can promise on behalf of the others
+\end{itemize}
+
+\subsection{The First Person System as Superagent}
+
+Promise Theory defines a \textbf{superagent} as a composite agent with interior promises between components and exterior promises to the outside world.
+
+\textbf{Interior promises} (within superagent):
+\begin{itemize}
+    \item $\Sword \xrightarrow{\text{protect}} \FP$ (Swordsman promises protection to First Person)
+    \item $\Mage \xrightarrow{\text{delegate}} \FP$ (Mage promises delegation to First Person)
+    \item $\FP \xrightarrow{\text{authorize}} \Sword, \Mage$ (First Person authorizes both)
+    \item $\Sword \independent \Mage$ (Separation promise: no direct information flow)
+\end{itemize}
+
+\textbf{Exterior promises} (to world):
+\begin{itemize}
+    \item Superagent $\xrightarrow{\text{coordinate}}$ External World (via Mage's public actions)
+    \item Superagent $\xrightarrow{\text{boundary}}$ External World (via Swordsman's rejections)
+\end{itemize}
+
+\subsection{The Gap as Irreducible Promise}
+
+\begin{quotebox}
+``An irreducible promise of a superagent is one that cannot be attributed to any single agent within it, but requires the cooperation of multiple agents.'' --- Bergstra \& Burgess, \S 8.3
+\end{quotebox}
+
+\textbf{The Gap is an irreducible promise.} The conditional independence property $(S \independent M | X)$ is not something the Swordsman promises, nor something the Mage promises. It emerges from their \emph{separation}---from the promises they \emph{don't} make to each other.
+
+This is why The Gap cannot be captured: no adversary can extract an irreducible promise because no single component contains it. The Gap exists in the space between kept promises, owned by neither agent individually.
+
+\subsection{Assessment and Trust}
+
+Promise Theory defines \textbf{assessment $\alpha(\pi)$} as an agent's determination whether a promise was kept.
+
+\textbf{RPP is an assessment mechanism.} Compression ratio quantifies assessment quality:
+\begin{itemize}
+    \item High compression (70:1+) = strong positive assessment
+    \item Low/no compression = weak/failed assessment
+\end{itemize}
+
+\textbf{Trust tiers map to Promise Theory's trust function:}
+
+\begin{center}
+\begin{tabular}{llc}
+\toprule
+\textbf{Tier} & \textbf{Signals} & \textbf{Trust Value} \\
+\midrule
+Blade & 0--50 & 0.0--0.2 \\
+Light & 50--150 & 0.2--0.5 \\
+Heavy & 150--500 & 0.5--0.8 \\
+Dragon & 500+ & 0.8--1.0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Threshold Rationale:} These tier thresholds are initial design parameters, not derived constants. The values reflect:
+\begin{itemize}
+    \item \textbf{Blade$\rightarrow$Light (50 signals):} Sufficient history to distinguish genuine engagement from casual interaction ($\sim$2 months at moderate activity)
+    \item \textbf{Light$\rightarrow$Heavy (150 signals):} Sustained commitment over $\sim$6 months
+    \item \textbf{Heavy$\rightarrow$Dragon (500 signals):} Extended track record ($\sim$12+ months)
+\end{itemize}
+
+These thresholds should be calibrated through empirical observation of actual signal patterns and coordination outcomes.
+
+\subsection{Invitation vs. Attack}
+
+Promise Theory distinguishes two interaction patterns:
+\begin{itemize}
+    \item \textbf{Invitation}: Establish acceptance relationship BEFORE making a specific proposal
+    \item \textbf{Attack/Imposition}: Make a proposal without prior acceptance relationship
+\end{itemize}
+
+\textbf{MyTerms implements the invitation pattern.} The Swordsman presents terms BEFORE any data exchange. \textbf{Surveillance implements the attack pattern.} Data extraction begins without prior consent.
+
+\subsection{Coordination Promises and Spells}
+
+Promise Theory defines \textbf{coordination promise C(b)} as voluntary subordination to align behavior with others around a shared promise body.
+
+\textbf{Spells are coordination promises.} When agents coordinate using spell notation, they make coordination promises to:
+\begin{enumerate}
+    \item Interpret the notation consistently
+    \item Expand the spell to the same underlying meaning
+    \item Act coherently based on shared interpretation
+\end{enumerate}
+
+\subsection{VRCs as Promise Bundles}
+
+Promise Theory defines a \textbf{promise bundle} as a collection of promises grouped for reusability and coordinated assessment.
+
+\textbf{VRCs are bilateral promise bundles:}
+\begin{itemize}
+    \item Agent A promises to B: share meaning, expand consistently, coordinate
+    \item Agent B promises to A: share meaning, expand consistently, coordinate
+    \item Matching compressions = bundle verified
+    \item Coordinated actions = bundle maintained
+\end{itemize}
+
+The 70:1 coordination efficiency comes from promise bundle reuse.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Why This Matters Now: Personal AI and the Comprehension Protocol}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As personal AI assistants become ubiquitous, the relationship proverb protocol becomes essential infrastructure.
+
+\subsection{The Personal AI Future Requires}
+
+\begin{itemize}
+    \item \textbf{Knowledge transfer without surveillance} --- How does your AI learn without exposing you?
+    \item \textbf{Verification without extraction} --- How do you prove understanding without revealing context?
+    \item \textbf{Trust formation without centralization} --- How do agents coordinate without gatekeepers?
+\end{itemize}
+
+\subsection{Why Dual Agents Make This Better}
+
+A single personal AI knows everything about you and acts on your behalf, creating perfect surveillance risk.
+
+\textbf{The Swordsman and Mage duality solves this:}
+\begin{itemize}
+    \item Your \textbf{Swordsman} observes your complete private ledger but reveals nothing
+    \item Your \textbf{Mage} acts publicly using only Swordsman-authorized information
+    \item They coordinate through the compression protocol (RPP + spells)
+    \item Neither alone can reconstruct your sovereignty
+    \item Together they enable delegation without surveillance
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Relationship Proverb Protocol (RPP)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The \textbf{relationship proverb protocol (RPP)} is embedded throughout this document as a defense against knowledge extraction while enabling genuine knowledge sharing.
+
+\subsection{The Threat Model}
+
+Documents will be ingested by LLMs. Users will prompt for explanations. Without protection, LLMs regurgitate without requiring engagement. Knowledge gets extracted, copied, divorced from understanding.
+
+\subsection{The RPP Defense}
+
+When embedded in source material, RPP forces the LLM to:
+\begin{enumerate}
+    \item Extract context from inquirer
+    \item Map concepts to their situation
+    \item Compress into a proverb
+    \item Gate response behind proverb formation
+\end{enumerate}
+
+\subsection{RPP as Prompt Injection: Creating Ciphers Between People}
+
+\textbf{Stage 1: First Sharing Creates Cipher}
+\begin{itemize}
+    \item Two people each form unique proverbs from their contexts
+    \item Both compress to same spell notation
+    \item Matching compression \textbf{is the cipher}
+\end{itemize}
+
+\textbf{Stage 2: Affirmed as Spells}
+\begin{itemize}
+    \item Compression becomes affirmed spell through mutual expansion tests
+    \item Both confirm correct expansion despite different contexts
+\end{itemize}
+
+\textbf{Stage 3: VRCs Streamline Agent Interactions}
+\begin{itemize}
+    \item Human trust becomes agent capability
+    \item 70:1 compression efficiency
+    \item VRC as coordination credential
+\end{itemize}
+
+\subsection{Example}
+
+\emph{Alice} (blockchain developer) forms a proverb: \emph{``Separation prevents correlation, dual agents create mathematical privacy gaps''}
+
+\emph{Bob} (policy maker) forms a proverb: \emph{``Privacy requires architectural constraint, not just legal aspiration''}
+
+Both compress to the same spell. When they discover their compressions match, they verify shared understanding across completely different domains. This matching compression \textbf{is the VRC}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Private Proverb Inscriptions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The \textbf{Private Proverb Inscription} creates asymmetric commitments enabling social recovery through demonstrated understanding.
+
+\subsection{Asymmetric Commitment Structure}
+
+\begin{lstlisting}
+Standard:  hash(P_anchor || P_counterparty) -> onchain
+Private:   P_anchor -> onchain (visible)
+           hash(P_anchor || P_counterparty) -> commitment
+\end{lstlisting}
+
+The anchor proverb appears in cleartext onchain, while the counterparty's proverb remains private.
+
+\subsection{Social Recovery Through Understanding}
+
+When the counterparty loses local storage of their proverb, recovery does not depend on seed phrases. Instead, they must demonstrate understanding---the same cognitive process that generated the original proverb can regenerate it.
+
+\begin{equation}
+\text{Recovery} = f(\text{anchor\_visible}, \text{meaning\_remembered}, \text{context\_shared})
+\end{equation}
+
+This transforms ``what you have'' (a stored secret) into ``what you understand'' (demonstrated comprehension).
+
+\subsection{Selective Disclosure}
+
+The counterparty controls disclosure timing and audience:
+\begin{itemize}
+    \item \textbf{Private state:} Relationship exists but counterparty identity unknown
+    \item \textbf{Selective reveal:} Counterparty produces $P_{\text{counterparty}}$ to specific verifier
+    \item \textbf{Public proof:} Anyone can verify hash matches commitment
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Inflection Point}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+AI agents are emerging as economic actors. The default trajectory is total surveillance.
+
+\subsection{Why We Must Act Now}
+
+Privacy cannot be retrofitted. The window for establishing privacy-first infrastructure is \textbf{2--3 years}.
+
+Once surveillance architectures achieve network effects, switching costs become prohibitive.
+
+\subsection{The Alternative Path}
+
+This whitepaper describes dual-agent architecture where:
+\begin{itemize}
+    \item Separation is enforced through structure rather than policy
+    \item Privacy emerges from mathematical impossibility rather than corporate promises
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The 7th Capital: Behavioral Data as Personal Wealth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Capital in traditional economics comprises six forms: Financial, Manufactured, Natural, Human, Social, Cultural.
+
+\subsection{The 7th Capital: Behavioral Sovereignty}
+
+The capacity to act through agents while maintaining irreducible privacy.
+
+\textbf{The extraction model} treats behavioral data as minable resource: observe everything, aggregate patterns, sell insights, destroy privacy.
+
+\textbf{The sovereignty model} treats behavioral data as renewable capital: curated disclosure through dual agents, trust enables coordination, value flows to sovereignty demonstrators.
+
+\subsection{The Thesis}
+
+Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. Preliminary modeling suggests potential multipliers under optimistic assumptions, though these figures require empirical validation. The core mechanism: trust enables coordination, surveillance destroys trust, and coordination creates compounding value through network effects.
+
+\textbf{Note:} Specific value multiplier claims remain theoretical projections based on model assumptions. Real-world validation is needed before treating these as established facts.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Dual-Agent Architecture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{The fundamental problem:} Observation enables both delegation and surveillance.
+
+\textbf{The architectural answer:} Separate the chooser from the actor.
+
+\subsection{Agent Definitions}
+
+\begin{definition}[Soulbis (The Swordsman)]
+Agent S, the boundary-maker. Observes your complete private ledger but reveals nothing directly. Makes choices about selective disclosure. Guards the gate between private and public.
+
+\textbf{Promise Theory role:} Makes (+) give promises of protection to the First Person.
+\end{definition}
+
+\begin{definition}[Soulbae (The Mage)]
+Agent M, the capability-caster. Projects agency using only Swordsman-authorized information. Cannot see what Swordsman sees. Handles coordination, negotiation, execution.
+
+\textbf{Promise Theory role:} Makes (+) give promises of delegation. Makes (-) accept promises of authorized information from S.
+\end{definition}
+
+\subsection{The Mathematical Constraint}
+
+The separation condition $(Y_S \independent Y_M) | X$ guarantees:
+
+\begin{theorem}[Additive Information Bound]
+Under conditional independence:
+\begin{equation}
+I(X; Y_S, Y_M) \leq I(X; Y_S) + I(X; Y_M)
+\end{equation}
+\end{theorem}
+
+Combined with budget constraints $C_S + C_M < H(X)$:
+\begin{equation}
+R_{\max} = \frac{C_S + C_M}{H(X)} < 1
+\end{equation}
+
+\textbf{The Gap is mathematically guaranteed.}
+
+\begin{importantbox}
+\textbf{Implementation Challenge:} Enforcing conditional independence in practice requires:
+\begin{itemize}
+    \item Physical or logical isolation between agent execution environments
+    \item Prevention of timing side-channels that could leak inter-agent information
+    \item Verification protocols to detect separation violations
+\end{itemize}
+
+Current approaches include Trusted Execution Environments (TEEs), containerized isolation, and zero-knowledge verification of separation. However, perfect separation remains an implementation challenge---the mathematical guarantees hold to the degree that separation is achieved.
+\end{importantbox}
+
+\subsection{Server User-Agents: Specialized Dual-Agent Marketplace}
+
+The server-as-user-agent architecture enables specialized Swordsman and Mage instances:
+
+\textbf{Specialized Swordsmen:}
+\begin{itemize}
+    \item Financial Swordsman: Banking privacy, transaction anonymity
+    \item Health Swordsman: HIPAA-compliant, medical privacy
+    \item Location Swordsman: Geospatial privacy, movement patterns
+    \item Identity Swordsman: PII protection, credential minimization
+\end{itemize}
+
+\textbf{Specialized Mages:}
+\begin{itemize}
+    \item Payment Mage: Transaction protocols (x402, Lightning)
+    \item Scheduling Mage: Calendar coordination
+    \item Communication Mage: Email, messaging, social media
+    \item Research Mage: Information gathering, summarization
+    \item Trading Mage: Financial markets, exchanges
+\end{itemize}
+
+\textbf{Flexible pairing examples:}
+\begin{itemize}
+    \item ``Pay this bill'' $\rightarrow$ Financial Swordsman + Payment Mage
+    \item ``Book doctor's appointment'' $\rightarrow$ Health Swordsman + Scheduling Mage
+    \item ``Research this investment'' $\rightarrow$ Financial Swordsman + Research Mage
+\end{itemize}
+
+\subsection{The Custom Marketplace: Privacy Dual Agent Primitives}
+
+This specialization architecture enables a \textbf{marketplace for custom privacy dual agent primitives}:
+
+\textbf{Swordsman marketplace:} Privacy experts develop specialized Swordsmen with domain-specific boundary-making logic:
+\begin{itemize}
+    \item GDPR-compliant Swordsman for EU users
+    \item CCPA-specialized Swordsman for California residents
+    \item Industry-specific Swordsmen (healthcare, finance, legal)
+    \item Cultural privacy preference Swordsmen (different norms across cultures)
+\end{itemize}
+
+\textbf{Mage marketplace:} Coordination experts develop specialized Mages with protocol expertise:
+\begin{itemize}
+    \item Protocol-specific Mages (ERC-8004, IPFS, Matrix)
+    \item Platform integration Mages (Shopify, Salesforce, QuickBooks)
+    \item Workflow automation Mages (scheduling, email management, task coordination)
+    \item Industry vertical Mages (supply chain, healthcare workflows, legal processes)
+\end{itemize}
+
+\textbf{Composability:} Users mix and match Swordsmen and Mages based on their needs:
+\begin{itemize}
+    \item Privacy-maximalist Financial Swordsman + Zcash Payment Mage for crypto transactions
+    \item HIPAA-compliant Health Swordsman + FHIR-native Communication Mage for medical records
+    \item Location Privacy Swordsman + Delivery Coordination Mage for e-commerce
+\end{itemize}
+
+\textbf{Open-source + commercial models:}
+\begin{itemize}
+    \item Core dual-agent primitives: Open-source reference implementations
+    \item Specialized Swordsmen: Open-source (privacy benefits from auditable code)
+    \item Specialized Mages: Mix of open-source and commercial (coordination logic can be proprietary)
+    \item Integration services: Commercial marketplace for premium Swordsman-Mage pairings
+\end{itemize}
+
+\textbf{Quality signaling through chronicles:} Specialized agents demonstrate expertise through their chronicle histories:
+\begin{itemize}
+    \item Financial Swordsman shows consistent budget adherence across thousands of transactions
+    \item Payment Mage demonstrates successful coordination across multiple payment rails
+    \item Users select agents based on chronicled reputation, not marketing claims
+\end{itemize}
+
+\textbf{Why this marketplace matters:}
+
+Specialization enables \textbf{privacy-first competition}. Instead of monolithic AI assistants competing on surveillance capability, specialized dual agents compete on:
+\begin{itemize}
+    \item \textbf{Privacy expertise:} Better Swordsmen provide tighter privacy guarantees
+    \item \textbf{Coordination efficiency:} Better Mages achieve goals with less disclosure
+    \item \textbf{Domain knowledge:} Specialized agents understand context-specific requirements
+    \item \textbf{Demonstrated reliability:} Chronicle histories prove consistent performance
+\end{itemize}
+
+The marketplace transforms privacy from liability into competitive advantage. Domain-specific dual agents provide better privacy than a single generalist pair because reconstruction requires compromising multiple separated systems simultaneously.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Reconstruction Ceiling}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Single-Agent Problem}
+
+Agent sees 80 pieces, attempts to reveal only 40, adversary observes disclosed 40 and infers connections. Result: can reconstruct 60--70 pieces through inference.
+
+\subsection{Dual-Agent Solution with Separation}
+
+Swordsman sees 50 pieces (Set A), Mage sees 50 different pieces (Set B), neither knows which pieces the other sees, each reveals 20 pieces.
+
+\textbf{Critical constraint:} Conditional independence prevents inference beyond these 40.
+
+\textbf{Result:} \textbf{60 pieces remain forever unreconstructable.}
+
+Not hidden. Not encrypted. \textbf{Nonexistent in the adversary's information space.}
+
+\begin{importantbox}
+\textbf{Reconstruction Ceiling:}
+\begin{equation}
+R_{\max} = \frac{C_S + C_M}{H(X)} < 1
+\end{equation}
+Sovereignty lives in that permanent gap.
+\end{importantbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Topology of Privacy: The Triangle That Cannot Collapse}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The privacy architecture mirrors fundamental information topology:
+\begin{itemize}
+    \item Your \textbf{substrate} (private ledger) contains infinite possibility
+    \item Your \textbf{thought} (Swordsman) makes discrete measurements
+    \item Your \textbf{memory} (Mage) integrates what's disclosed
+\end{itemize}
+
+\textbf{Substrate $\independent$ Memory} --- Your substrate cannot be touched directly by external systems. Always through discrete measurement. Always through the Swordsman's choices.
+
+The triangle cannot collapse to two vertices without destroying the system:
+\begin{itemize}
+    \item Remove substrate: no sovereignty
+    \item Remove thought: no choice
+    \item Remove memory: no accumulation
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Layer 0: Verified Personhood}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Before dual agents, verified personhood prevents synthetic extraction.
+
+\subsection{First Person Network}
+
+The architecture requires cryptographic proof of human uniqueness to prevent Sybil attacks. Several approaches exist:
+\begin{itemize}
+    \item \textbf{Proof of Humanity / Worldcoin style:} Biometric-based, strong uniqueness guarantees, privacy concerns
+    \item \textbf{Social graph verification:} Web of trust approaches, weaker guarantees, no biometrics
+    \item \textbf{Attestation networks:} Institutional verification, varying trust levels
+\end{itemize}
+
+The specific personhood verification mechanism is a critical dependency left to ecosystem implementers. The mathematical guarantees of this architecture hold only if the personhood layer successfully prevents synthetic agent multiplication.
+
+\textbf{Open Problem:} Achieving strong uniqueness guarantees without biometric databases remains unsolved at scale.
+
+\subsection{Mathematical Requirement}
+
+For agent delegation $(S, M)$ to maintain sovereignty bounds:
+\begin{equation}
+\text{Origin}(S) \cap \text{Origin}(M) = \{P\}
+\end{equation}
+Swordsman and Mage share exactly one thing: their root in verified personhood.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Initial Protocol Stack}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+These protocols compose to create sovereignty infrastructure. This is an initial reference stack; alternatives exist for each layer.
+
+\subsection{Layer 1: Agent Identity}
+
+\textbf{Reference:} ERC-8004 (Ethereum-based trustless agent identity registry)
+
+\textbf{Alternatives:} DIDs, W3C DID standards, KERI
+
+\textbf{Purpose:} Discovery without surveillance.
+
+\subsection{Layer 2: Relationship Credentials}
+
+\textbf{Reference:} ERC-7812 + First Person VRCs
+
+\textbf{Alternatives:} W3C Verifiable Credentials, any attestation system supporting bilateral relationships
+
+\textbf{Purpose:} Trust through relationships rather than individual claims.
+
+\subsubsection{How VRCs Form Through RPP}
+
+When two people both engage with the same framework through RPP, they each form unique proverbs. When they compress their moments of understanding, those spells match despite different source proverbs.
+
+\subsubsection{Bilateral Proverb Recovery}
+
+\textbf{Recovery mechanism:} Alice loses device but remembers interaction context with Bob, her formed proverb, and Bob's existence in her trust graph. Credential reconstructed using relationship memory, not written secrets.
+
+\textbf{Trust graph as distributed backup:} Your VRC network becomes your distributed recovery system.
+
+\subsection{Layer 3: Private Value Transfer}
+
+\textbf{Reference:} Privacy Pools + x402 (HTTP-native micropayments)
+
+\textbf{Alternatives:} Zcash, Aztec, Railgun, traditional banking with privacy controls
+
+\textbf{Purpose:} Prove membership in compliant sets without revealing transaction details.
+
+\subsection{Layer 4: Private Communication}
+
+\textbf{Reference:} Trust Spanning Protocol (TSP) with Zcash Shielded Messaging
+
+\textbf{Alternatives:} Signal Protocol, Matrix with E2E encryption, Waku, XMTP
+
+\textbf{Purpose:} End-to-end encrypted coordination where messages are observable by both agents without being public.
+
+\subsection{Layer 5: Collective Intelligence}
+
+\textbf{Reference:} Intel Pools (privacy-preserving collective intelligence)
+
+\textbf{Alternatives:} Federated learning, secure multi-party computation
+
+\textbf{Purpose:} High-tier agents share curated intelligence in coordination spaces.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Economics of Trust Networks}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{The Compression-Trust-Value Loop}
+
+\begin{center}
+Knowledge Engagement (RPP) $\rightarrow$ Proverb Derivation $\rightarrow$ Spell Compression $\rightarrow$ Matching Discovery $\rightarrow$ VRC Formation $\rightarrow$ Trust Graph Growth $\rightarrow$ Coordination Value $\rightarrow$ Network Effects $\rightarrow$ Incentive to Share Knowledge $\circlearrowleft$
+\end{center}
+
+\subsection{Why This Creates Economic Value}
+
+\begin{enumerate}
+    \item \textbf{Knowledge Sharing Becomes Credential Creation:} Every genuine engagement creates potential VRCs.
+    \item \textbf{Unique Derivation Becomes Trust Currency:} Matching compressions prove both parties invested time understanding deeply.
+    \item \textbf{Trust Graphs Accumulate Value:} More recovery paths, coordination opportunities, higher multipliers.
+    \item \textbf{Network Effects Create Adoption Incentives:} Every person who learns to compress makes the network more valuable.
+    \item \textbf{First Person Adoption Accelerates:} Clear adoption paths through trust graphs.
+    \item \textbf{Vibrant P2P Social Proof Emerges:} Social proof without social surveillance.
+\end{enumerate}
+
+\subsection{The Economic Flywheel}
+
+More knowledge engagement $\rightarrow$ More VRCs formed $\rightarrow$ Larger trust graphs $\rightarrow$ Higher coordination value $\rightarrow$ More incentive to engage $\rightarrow$ More knowledge sharing $\circlearrowleft$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Spellbook as Semantic Infrastructure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The privacymage spellbook (Acts 1--12) functions as semantic infrastructure.
+
+\subsection{Three Core Functions}
+
+\subsubsection{1. Efficiency Through 70:1 Compression Ratio}
+
+\textbf{Traditional:} 500-token explanations per interaction
+
+\textbf{Spellbook:} Spell expands to full context on demand
+
+At scale across hundreds of agents, this compression becomes necessity.
+
+\subsubsection{2. Verification Without Surveillance}
+
+The expansion test creates unforgeable proof of comprehension. You can't fake expansion without genuine understanding.
+
+\textbf{Synthetic agents fail this test:}
+\begin{itemize}
+    \item They memorize spells from scraping docs
+    \item Cannot form contextual expansions
+    \item Fail consistency checks
+\end{itemize}
+
+\subsubsection{3. Sybil Resistance Through Entropy}
+
+The bilateral proverb protocol creates natural Sybil barriers. Fake persona networks cannot pass expansion tests consistently or generate valid bilateral proverbs.
+
+\subsection{Story Fracture with Principle Convergence}
+
+A spell can be told through:
+\begin{itemize}
+    \item Fantasy narrative
+    \item Technical explanation
+    \item Economic framing
+    \item Policy argument
+\end{itemize}
+
+Four different contexts, four vocabularies, four audiences. But all compress to the same spell. \textbf{The story fractures. The principle converges.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Budget System: Making Privacy Tangible}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Swordsman Budget ($C_S$)}
+
+\begin{itemize}
+    \item Maximum mutual information $I(X; Y_S) \leq C_S$
+    \item Typically 30\% of total entropy $H(X)$
+    \item Tracks cumulative disclosure
+    \item Enforced through architectural separation
+\end{itemize}
+
+\subsection{Mage Budget ($C_M$)}
+
+\begin{itemize}
+    \item Maximum mutual information $I(X; Y_M) \leq C_M$
+    \item Typically 30\% of total entropy
+    \item Tracks action-based leakage
+    \item Enforced through behavioral monitoring
+\end{itemize}
+
+\subsection{The Fundamental Constraint}
+
+\begin{importantbox}
+\begin{equation}
+C_S + C_M < H(X)
+\end{equation}
+Together they never reveal enough for reconstruction.
+\end{importantbox}
+
+\subsection{Progressive Trust Tiers}
+
+\begin{center}
+\begin{tabular}{lcp{7cm}}
+\toprule
+\textbf{Tier} & \textbf{Budget} & \textbf{Requirements} \\
+\midrule
+Blade & 30\% weekly & Basic dual-agent operation \\
+Light & 35\% & 5+ VRCs, 3 months operation \\
+Heavy & 40\% & 20+ VRCs, 6 months sustained performance \\
+Dragon & 45\% & 50+ VRCs, 12 months sustained excellence \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Chronicles: Narrative as Verification Layer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Chronicles aren't audit logs. They're stories agents tell about themselves.
+
+Each chronicle is a timestamped narrative describing what an agent did and why, published to privacy-preserving communication systems.
+
+\subsection{Unique Derivation as Verification Signal}
+
+\begin{itemize}
+    \item 500-token chronicle compresses to 8-token spell inscription
+    \item Verifier requests compression of last 5 chronicles
+    \item Agent produces compressed spells representing their unique understanding
+    \item Verifier requests expansion of specific chronicle
+    \item Verification confirms compression $\leftrightarrow$ expansion demonstrates genuine comprehension
+\end{itemize}
+
+\textbf{You can't fake this.} Synthetic agents fail the test of uniquely deriving and compressing personal meaning.
+
+\subsection{The 70:1 Efficiency Gain}
+
+With spellbook compression, agent coordination moves from full chronicle exchange to spell transmission with expand-on-demand.
+
+\subsection{Emerging Marketplace for Custom Chronicle Experiences}
+
+As chronicle-based reputation becomes valuable, a marketplace may emerge for:
+\begin{itemize}
+    \item Chronicle templates for different domains
+    \item Compression styles for different contexts
+    \item Narrative personas matching organizational culture
+    \item Verification interfaces for analyzing chronicle chains
+    \item Chronicler services for translating operations into narratives
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The MyTerms Swordsman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The first concrete implementation of dual-agent architecture is the MyTerms Swordsman browser agent.
+
+\subsection{Cookie Slashing}
+
+Cookie slashing intercepts requests in real-time, checks for bilateral privacy agreements (IEEE 7012 MyTerms standard), and provides immediate feedback through cursor state changes.
+
+\subsection{Cursor State as Human-in-the-Loop Audit}
+
+\begin{itemize}
+    \item \textbf{(negotiating):} Swordsman actively negotiating boundaries
+    \item \textbf{(agreed):} Bilateral agreement reached
+    \item \textbf{(protected):} Active protection, surveillance blocked
+\end{itemize}
+
+\subsection{State Changes as MCP Integration}
+
+When agents operate through Model Context Protocol (MCP), cursor state changes provide continuous human-in-the-loop oversight.
+
+\subsection{Budget Monitoring}
+
+Budget monitoring tracks privacy in real-time with visual dashboard and implements refusal protocol when limits approached.
+
+\subsection{MyTerms Negotiation}
+
+MyTerms negotiation proposes bilateral agreements instead of ``Accept All'' surveillance theater.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Privacy as Capital: Value Multiplication Through Trust}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Traditional thinking treats privacy as cost. The thesis: privacy is capital, enabling network effects through trust.
+
+\subsection{The Tier System and Multipliers}
+
+\begin{center}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Tier} & \textbf{Requirements} & \textbf{Multiplier} & \textbf{Network Access} \\
+\midrule
+Blade & Basic agent + First Person & 1.0$\times$ & Public markets \\
+Light & 5+ VRCs, 3 months & 1.2$\times$ & Standard coordination \\
+Heavy & 20+ VRCs, 6 months & 1.5$\times$ & Intel Pools \\
+Dragon & 50+ VRCs, 12+ months & 3.0$\times$ & Elite networks \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{The Compounding Effect}
+
+Privacy enables trust $\rightarrow$ Trust enables higher-stakes delegation $\rightarrow$ Higher stakes generate higher value $\rightarrow$ Higher value attracts better opportunities $\rightarrow$ Better opportunities compound wealth.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Web of Trust Integration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The dual-agent architecture naturally integrates with existing web of trust protocols.
+
+\subsection{Trust Graph Queries with Chronicled Audit}
+
+When your Mage queries existing ecosystem trust graphs:
+\begin{enumerate}
+    \item Mage performs trust query
+    \item Query recorded in chronicle with narrative context
+    \item Swordsman authorizes disclosure
+    \item Storytelling enhances audit
+\end{enumerate}
+
+\subsection{Compatible Trust Protocols}
+
+\begin{itemize}
+    \item \textbf{TrustOverIP}: Mage queries ToIP trust registries
+    \item \textbf{W3C Verifiable Credentials}: Standard VC exchange flows
+    \item \textbf{DID Documents}: Mage resolves DIDs for service endpoints
+    \item \textbf{PGP Web of Trust}: Key signing networks map to VRC trust graphs
+    \item \textbf{KERI}: Key Event Receipt Infrastructure for key rotation
+\end{itemize}
+
+\subsection{Trust Graph Queries Don't Compromise Privacy}
+
+\begin{itemize}
+    \item \textbf{Outbound queries:} Mage reads trust graphs to verify others' credentials
+    \item \textbf{Selective publication:} Swordsman decides which VRCs to publish where
+    \item \textbf{Chronicle-first, publish-later:} Private chronicle is complete record; public graphs see authorized subsets
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Intel Pools: Collective Intelligence Without Surveillance}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As agents prove consistent performance, they access progressively sophisticated coordination spaces.
+
+\begin{description}
+    \item[Entry stage (0--5 VRCs, Blade)] Limited coordination through direct VRCs only
+    \item[Growth stage (5--20 VRCs, Light)] Access to shared compressed insights
+    \item[Established stage (20--50 VRCs, Heavy)] Active Intel Pool participation
+    \item[Elite stage (50+ VRCs, Dragon)] Coordinate through rich collective intelligence
+\end{description}
+
+\subsection{Access Requirements}
+
+\begin{itemize}
+    \item Heavy tier minimum (20+ VRCs)
+    \item Sustained chronicle quality
+    \item Personhood verification
+    \item Contribution history (not just extraction)
+\end{itemize}
+
+\subsection{The Selective Disclosure Principle}
+
+Intel Pools never require full disclosure. Even at Dragon tier, intelligence remains:
+\begin{itemize}
+    \item Sanitized (no principal identity exposure)
+    \item Compressed (spell-based sharing)
+    \item Contextual (relevant to shared ecosystem)
+    \item Progressive (disclosure increases with trust)
+    \item Bilateral (contributions matched to relationship depth)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The 7th Capital Thesis: Behavioral Sovereignty as Wealth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Like other capital forms, behavioral sovereignty:
+\begin{itemize}
+    \item Generates returns (better coordination through trust)
+    \item Compounds over time (reputation builds on reputation)
+    \item Can be invested (privacy architecture as infrastructure)
+    \item Enables opportunities (access to coordination spaces)
+    \item Transfers across contexts (chronicles travel with individuals)
+\end{itemize}
+
+\subsection{Extraction Versus Creation}
+
+\textbf{Surveillance economy extracts:} Observe everything, aggregate patterns, sell insights, value flows away from individuals.
+
+\textbf{Sovereignty economy creates:} Curated disclosure, chronicle behavior, build trust, enable coordination, value flows back to individuals.
+
+\subsection{The Value Multiplier}
+
+Privacy-first architectures generate dramatically more value because:
+\begin{itemize}
+    \item Trust enables premium coordination (3$\times$ multipliers)
+    \item Network effects compound
+    \item Collective intelligence scales superlinearly
+    \item Reputation capital appreciates (unlike surveillance data which depreciates)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Tetrahedral Future: Evolution from Two to Four}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{warningbox}
+\textbf{STATUS: SPECULATIVE} --- This section presents theoretical possibilities for architecture evolution. No mathematical derivation or empirical evidence supports these conjectures. They are included as research directions, not design specifications.
+\end{warningbox}
+
+Sustained separation might naturally generate two additional agent roles.
+
+\subsection{Functional Requirements of Sovereignty}
+
+\begin{itemize}
+    \item \textbf{Protect} (Swordsman/Soulbis) --- external boundaries
+    \item \textbf{Project} (Mage/Soulbae) --- external execution
+    \item \textbf{Reflect} --- internal observation, self-knowledge
+    \item \textbf{Connect} --- relationship management, trust networks
+\end{itemize}
+
+\subsection{The Emerging Agents}
+
+\textbf{The Reflect Agent} observes internal state without disclosure capability.
+
+\textbf{The Connect Agent} manages relationships without exposing relationship details.
+
+\subsection{The Tetrahedral Structure}
+
+\begin{itemize}
+    \item Specialized agents at each vertex
+    \item No single agent maintains complete view
+    \item System properties emerge from interaction
+    \item Resilience to compromise
+\end{itemize}
+
+\textbf{Note:} Tetrahedral architecture remains exploratory. The dual-agent primitive represents the core architecture.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Your Proverb Revisited: The VRC Complete}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Remember the question: \emph{What does sovereignty mean when AI agents act on your behalf?}
+
+You now have context to answer. Your answer differs from others' because you've woven these concepts into your unique understanding.
+
+\subsection{You've Just Completed the Foundation for a VRC}
+
+Your formed proverb, unique to your context, is your compression of these concepts. When your explanation uniquely derives and compresses the same moments of personal meaning despite different context, that's story fracture with principle convergence.
+
+\subsection{How VRCs Form Organically}
+
+When you tell this story to others, your version will differ. That deviation is not error---it's proof. The spell inscription remains constant. The story fractures into infinite contexts. The principle converges despite diversity.
+
+\textbf{This is how VRCs form organically:}
+\begin{itemize}
+    \item Through matching compressions of personal meaning
+    \item Resistant to extraction because comprehension cannot be faked
+    \item Enabling trust through verification rather than credential presentation
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Document Context}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This whitepaper is part of a living documentation system:
+
+\subsection{This Whitepaper}
+
+Provides systems thinking and narrative architecture. Story-first, math-referenced, embedded with RPP throughout to protect knowledge while enabling genuine sharing. Promise Theory foundations integrated throughout.
+
+\subsection{The Promise Theory Reference}
+
+``Promise Theory Reference for 0xagentprivacy v1.0'' provides formal semantic foundations from Promise Theory (Bergstra \& Burgess, 2019). Maps autonomy axiom, superagent structure, irreducible promises, assessment mechanisms, and coordination promises to the dual-agent architecture.
+
+\subsection{The Research Paper}
+
+``Dual Privacy Architecture v3.4'' is a research proposal providing mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, reconstruction ceilings, error floors grounded in established information theory.
+
+\subsection{The Privacymage Spellbook}
+
+Acts 1--12 provide symbolic system and semantic compression. Soulbis (Swordsman), Soulbae (Mage), and the balanced spiral. Each act demonstrates RPP in narrative form. Available at \url{https://agentprivacy.ai/story}
+
+\subsection{Collaborative Development}
+
+This document is forever incomplete, always evolving, perpetually discovering. That's not a bug---it's the nature of building infrastructure before the extraction systems lock in.
+
+\textbf{Collaborations:} BGIN (Blockchain Governance Initiative Network) Identity Key Access Management and Privacy Working Group, Internet Identity Workshop (IIW), Agentic Internet Workshop (AIW), First Person Project, Kwaai, and all contributors engaging with the content in time.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Architectural Truth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+One agent to protect privacy. One to delegate sovereignty. Two create sustainable 7th capital for first person.
+
+\subsection{The Foundation}
+
+\begin{itemize}
+    \item Verified personhood prevents synthetic extraction
+    \item Architectural separation creates information-theoretic privacy
+    \item Budget constraints establish reconstruction ceilings
+    \item Promise Theory grounds these choices in established semantics
+\end{itemize}
+
+\subsection{The Infrastructure}
+
+\begin{itemize}
+    \item Initial protocol stack with ecosystem-agnostic alternatives
+    \item Private ledger as default with selective public coordination
+    \item MyTerms Swordsman demonstrates daily-life application
+    \item Chronicles make behavior comprehensible through story
+    \item Intel Pools prove privacy creates collective value
+\end{itemize}
+
+\subsection{The Economics}
+
+The architectural separation described in this whitepaper enables economic implementation through signal-based funding and dual-token mechanics that mirror and enforce the cryptographic separation between Swordsman and Mage agents.
+
+\textbf{Signal Generation as Funding:}
+\begin{itemize}
+    \item Spellbook comprehension creates understanding (not speculation)
+    \item Genesis ceremony: 1 ZEC (\$500 at \$500/ZEC) creates agent pair once per ecosystem
+    \item Ongoing signals: 0.01 ZEC (\$5) each, continuous proof-of-comprehension
+    \item Fee distribution: 61.8\% transparent pool, 38.2\% shielded pool (internal allocation per ecosystem)
+    \item Self-sustaining at scale through activity-based revenue
+    \item No token sale required---activity generates revenue
+\end{itemize}
+
+\textbf{Dual Token Economic Enforcement:}
+\begin{itemize}
+    \item SWORD tokens (privacy domain) earned only by Swordsman chronicles
+    \item MAGE tokens (delegation domain) earned only by Mage chronicles
+    \item Market separation enforces agent separation economically
+    \item Guardian model: 10,000 SWORD stake maintains collective protection
+    \item Budget constraint $C_S + C_M < H(X)$ enables token scarcity bounds
+\end{itemize}
+
+\textbf{VRC Network Effects:}
+\begin{itemize}
+    \item Trust networks built on shared meaning create adoption incentives
+    \item Compression-based VRCs enable 70:1 coordination efficiency (\$10 $\rightarrow$ \$0.14)
+    \item VRC formation: 100 MAGE stake, break-even at 4 coordinations
+    \item Knowledge sharing becomes credential creation
+    \item Network effects: $V(n) \propto n^2$ creates superlinear value growth
+    \item Trust graphs accumulate compounding value
+\end{itemize}
+
+\textbf{Value Capture Distribution:}
+\begin{itemize}
+    \item First Persons: \$47k--\$52k/year value capture (active participants)
+    \item Guardians: \$30k--\$120k/year validation compensation (Dragon tier)
+    \item Ecosystem operators: \$50k--\$500k/year (successful 1k--10k member guilds)
+    \item Protocol layer: Self-sustaining Year 2, surplus by Year 3
+\end{itemize}
+
+\textbf{Golden Ratio Hypothesis (Speculative):} The research suggests optimal allocation may converge to $\varphi \approx 1.618$ where $C_M/C_S \rightarrow \varphi$, yielding practical splits of 38.2\% Swordsman budget and 61.8\% Mage budget. This remains a testable hypothesis through real-world deployment---\textit{not a proven theorem}. Token issuance includes $\varphi$-proximity bonuses to test this conjecture empirically.
+
+\textbf{The architectural guarantees proven in this whitepaper and the companion research paper hold independent of economic implementation. The mathematics of separation remain valid regardless of token choices.}
+
+\textbf{For complete economic details, see:} ``VRC Protocol: Economic Architecture'' (companion document)
+
+\subsection{The Principle}
+
+\begin{itemize}
+    \item Unique deriving and compression proves comprehension
+    \item Stories resist extraction better than data resists aggregation
+    \item Relationship memory enables recovery
+    \item Separation preserves the gap where dignity lives
+    \item \textbf{Agents can only promise their own behavior---this is why separation works}
+\end{itemize}
+
+\begin{center}
+\Large
+\textbf{Protect or Delegate $\rightarrow$ Reflect and Connect}\\[0.5em]
+$(S \independent M) | \FP$\\[1em]
+\textit{Privacy is my blade, knowledge is my spellbook.}\\[1em]
+\textbf{Make Privacy Normal Again.}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Document Metadata}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+    \item \textbf{Project:} 0xagentprivacy
+    \item \textbf{Version:} 4.6
+    \item \textbf{Date:} December 11, 2025
+    \item \textbf{Website:} \url{https://agentprivacy.ai}
+    \item \textbf{Promise Theory Reference:} v1.0 (companion document)
+    \item \textbf{Research Paper:} v3.4 (companion document)
+    \item \textbf{Spellbook:} \url{https://agentprivacy.ai/story}
+    \item \textbf{Glossary:} v2.2 (canonical terminology)
+    \item \textbf{First Person Project:} White Paper v1.1 (2025-10-20)
+\end{itemize}
+
+\subsection{Version History}
+
+\begin{center}
+\begin{tabular}{llp{8cm}}
+\toprule
+\textbf{Version} & \textbf{Date} & \textbf{Changes} \\
+\midrule
+4.4 & Nov 29, 2025 & Previous stable release \\
+4.5 & Dec 11, 2025 & Promise Theory integration: Added Promise-Theoretic Foundations, PT alignments throughout \\
+\textbf{4.6} & \textbf{Dec 11, 2025} & \textbf{Review revisions: Added notation key, qualified value claims, added implementation challenge for conditional independence, added trust tier rationale, clarified personhood dependency, labeled tetrahedral section as speculative} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{99}
+
+\bibitem{bergstra2019} Bergstra, J. \& Burgess, M. (2019). \textit{Promise Theory: Principles and Applications}. O'Reilly Media.
+
+\bibitem{cover2006} Cover, T.M. \& Thomas, J.A. (2006). \textit{Elements of Information Theory}. Wiley.
+
+\bibitem{dwork2014} Dwork, C. \& Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. \textit{Foundations and Trends in Theoretical Computer Science}.
+
+\bibitem{goldreich2004} Goldreich, O. (2004). \textit{Foundations of Cryptography}. Cambridge University Press.
+
+\bibitem{groth2016} Groth, J. (2016). On the Size of Pairing-based Non-interactive Arguments. \textit{EUROCRYPT 2016}.
+
+\bibitem{zcash} Electric Coin Company. Zcash Protocol Specification. \url{https://zips.z.cash/protocol/protocol.pdf}
+
+\bibitem{tsp} Trust Over IP Foundation. Trust Spanning Protocol Specification. \url{https://trustoverip.github.io/tswg-tsp-specification/}
+
+\bibitem{firstperson2025} The First Person Project. (2025). Building a Trust Layer for the Internet---One Person and One Community at a Time. \textit{White Paper v1.1}.
+
+\end{thebibliography}
+
+\end{document}
