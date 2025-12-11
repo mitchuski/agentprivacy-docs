@@ -1,9 +1,9 @@
 # Research Proposal: Dual Agent Systems as Natural Architecture for Privacy and Sovereignty
 
-**Version:** 1.2  
+**Version:** 1.3  
 **Author:** privacymage  
 **Contact:** mage@agentprivacy.ai  
-**Date:** November 25, 2025
+**Date:** December 11, 2025
 
 ---
 
@@ -13,7 +13,7 @@ I need to be upfront about my background: I'm an entrepreneur, storyteller, and 
 
 **My Approach:**
 
-I work through narrative and pattern recognition—finding the story that makes complex systems legible, then pressure-testing those patterns against practical implementation. The mathematical formalization in *Dual Privacy Research Paper v3.2* emerged from this process, developed collaboratively with AI assistance to express intuitions rigorously. These proofs need expert validation.
+I work through narrative and pattern recognition—finding the story that makes complex systems legible, then pressure-testing those patterns against practical implementation. The mathematical formalization in *Dual Privacy Research Paper v3.5* emerged from this process, developed collaboratively with AI assistance to express intuitions rigorously. These proofs need expert validation.
 
 **Current Status:**
 
@@ -49,7 +49,7 @@ This isn't purely theoretical work. It emerges from years of hands-on experience
 
 **Tokenomics Research:**
 
-The economic architecture (*Tokenomics v2.0*) draws on practical experience with:
+The economic architecture (*VRC Promise Protocol v3.0*) draws on practical experience with:
 - Signal-based sustainability models (proof-of-comprehension vs speculation)
 - Guardian economics and stake-weighted validation
 - Progressive trust tier systems (Blade → Light → Heavy → Dragon)
@@ -87,70 +87,115 @@ The key insight: if we can enforce that these agents don't share information bey
 
 ## What I Think I've Figured Out (Needs Expert Validation)
 
-### 1. Information-Theoretic Foundations (My Proofs, Need Review)
+### Claims Classification
 
-**Status:** I've worked through the math in *Dual Privacy Research Paper v3.2*, but these proofs haven't been validated by information theorists yet.
+The Research Paper v3.5 now includes a formal Claims Classification Table distinguishing:
 
-From information theory (Cover & Thomas, Shannon), when we enforce conditional independence `(Y_S ⊥ Y_M) | X` between Swordsman and Mage observations, I believe we get:
+| Claim Type | Status | Example |
+|------------|--------|---------|
+| **PROVEN** | Rigorous mathematical proof | Theorems 5.1-5.4 |
+| **SEMANTIC FRAMEWORK** | Established theory providing interpretation | Promise Theory grounding |
+| **IMPLEMENTABLE** | Engineering approach with standard assumptions | ZKP structural proofs |
+| **MODELING ASSUMPTION** | Requires empirical validation | Side-channel model |
+| **SPECULATIVE** | Unproven conjecture | Golden ratio hypothesis |
+
+### 1. Information-Theoretic Foundations (Proven Results)
+
+**Status:** Rigorously proven using established information theory. Core proofs are sound.
+
+From information theory (Cover & Thomas, Shannon), when we enforce conditional independence `(Y_S ⊥ Y_M) | X` between Swordsman and Mage observations, we get:
+
+**Theorem 5.1 (Separation Lemma):** Under conditional independence, mutual information is bounded additively:
 
 ```
-Information leaked = I(X; Y_S) + I(X; Y_M)
+I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M)
 ```
 
-Instead of synergistic combination that could be worse.
+*Note: This is an inequality, not equality. Equality requires marginal independence; conditional independence alone gives the inequality. The inequality suffices for all downstream guarantees.*
 
-**What I've Worked Through:**
-
-**Separation Lemma** (my Theorem 2.1): Under conditional independence, mutual information should be additive:
-
-```
-I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)
-```
-
-**Reconstruction Ceiling** (my Theorem 2.2): With budget constraints `C_S + C_M < H(X)`, I believe reconstruction efficiency satisfies:
+**Corollary 5.2 (Reconstruction Ceiling):** With budget constraints `C_S + C_M < H(X)`:
 
 ```
 R_max = (C_S + C_M) / H(X) < 1
 ```
 
-**Error Floor** (my Theorem 2.3): Via Fano's inequality, minimum reconstruction error should be:
+**Theorem 5.3 (Error Floor):** Via Fano's inequality, minimum reconstruction error:
 
 ```
 P_e ≥ 1 - (I(X; Y_S, Y_M) + 1) / H(X)
 ```
 
-**What This Would Mean (If I'm Right):**
-- We could budget information separately for each agent
-- We could **prove** an adversary can't fully reconstruct secrets
-- Guarantees would hold even against unlimited computational power
-- The architecture would provide information-theoretic security
-
-**My Confidence:** 60% that the core math is sound, but I developed these proofs through pattern recognition and AI collaboration rather than formal training. I could be missing subtleties that trained information theorists would catch immediately.
-
-**What I Desperately Need:** Information theorists to review these proofs, find the flaws (if they exist), or help strengthen them if the foundation is solid.
-
----
-
-### 2. Graceful Degradation Under Approximate Separation (Needs Verification)
-
-**Status:** I've worked through what I believe is a proof (Research Paper v3.2, Section 2.4), but it needs expert review.
-
-Real systems can't achieve perfect separation. I believe I've proven graceful degradation:
-
-**My Theorem 2.4 (Approximate Separation):** For small perturbations ε from perfect independence:
+**Theorem 5.4 (Graceful Degradation):** For ε-approximate separation:
 
 ```
 I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M) + ε
 ```
 
-**What This Would Mean (If Correct):**
-- Small separation violations would cause small privacy losses
-- System wouldn't catastrophically fail if separation isn't perfect
-- Would provide robustness for real-world implementations
+**What This Means:**
+- We can budget information separately for each agent
+- We can **prove** an adversary can't fully reconstruct secrets
+- Guarantees hold even against unlimited computational power
+- Small separation violations cause proportionally small privacy losses
 
-**My Confidence:** 50% — I think the proof is solid, but need an information theorist to verify there aren't edge cases I'm missing.
+**My Confidence:** 95% on core theorems. These are applications of established information theory.
 
-### 3. Why The Timing Matters: Technology Convergence
+**Critical Caveat:** The guarantees hold *to the degree separation is actually achieved*. Implementation challenges (side-channels, timing leaks, shared resources) can degrade effective separation.
+
+---
+
+### 2. What ZKPs Can and Cannot Do (Important Clarification)
+
+**Status:** This is a critical implementation detail that was overclaimed in earlier versions.
+
+**What ZKPs CAN Prove (Implementable):**
+- Structural constraints (observations derive from disjoint data partitions)
+- Non-sharing proofs (S does not transmit raw observations to M)
+- Input provenance (M's inputs come only from S-approved summaries)
+- Disclosure categories (this disclosure falls within approved types)
+
+**What ZKPs CANNOT Directly Prove:**
+- Statistical independence: `(Y_S ⊥ Y_M) | X`
+- Mutual information values: `I(X; Y_S) ≤ C_S`
+- Entropy of distributions: `H(X)`
+
+**Why This Matters:**
+
+Conditional independence is a *statistical property of distributions*, not something a ZKP circuit can attest. ZKPs prove facts about specific computations, not properties of probability distributions.
+
+**Practical Approach:**
+- Use ZKPs for *structural* guarantees (data partitioning, non-sharing)
+- Use *offline estimation* for MI bounds (sample-based methods with safety margins)
+- Use *disclosure category tracking* for budget compliance (pre-estimated MI costs per category)
+
+**My Confidence:** 90% — This is well-understood cryptographic limitation.
+
+---
+
+### 3. Promise Theory as Semantic Framework (Not Security Enforcement)
+
+**Status:** Provides interpretation, not cryptographic guarantees.
+
+Promise Theory (Bergstra & Burgess, 2019) provides *semantic grounding* for understanding why dual-agent architecture makes sense:
+
+- **Autonomy axiom** explains why single agents face inherent conflicts
+- **Superagent structure** provides conceptual model for First Person + S + M
+- **Scope separation** provides vocabulary for conditional independence
+- **Valency constraints** provide vocabulary for budget limits
+
+**What Promise Theory Does NOT Provide:**
+- Cryptographic enforcement of separation
+- Security proofs beyond the information-theoretic results
+- Guarantees that agents will keep their promises
+
+**The Gap as Emergent Property:**
+
+In Promise Theory terms, the reconstruction ceiling (R_max < 1) can be *interpreted* as an irreducible promise—a property that emerges from component cooperation. This is a semantic interpretation, not an additional mathematical result. The security comes from Corollary 5.2; Promise Theory explains why the architecture makes sense.
+
+**My Confidence:** 85% that this framing is useful for understanding and communication.
+
+---
+
+### 4. Why The Timing Matters: Technology Convergence
 
 **Critical Insight:** Even if the mathematics are sound, this architecture would have been impossible to build 5 years ago. But right now, multiple technologies are converging at the exact moment we need them:
 
@@ -181,12 +226,12 @@ This isn't about waiting for future technology. This is about using what exists 
 
 ### 1. Golden Ratio Budget Allocation (Highly Speculative)
 
-**Status:** Mathematical hypothesis, NOT validated in real systems
+**Status:** Mathematical hypothesis, NOT validated in real systems. Labeled as Conjecture 8.1 in Research Paper v3.5.
 
 Theoretical analysis suggests optimal budget allocation ratios *might* naturally gravitate toward φ ≈ 1.618 (the golden ratio).
 
 **Evidence:**
-- Appears in theoretical optimization models
+- Appears in theoretical optimization models with logarithmic objectives
 - Mathematical patterns suggest connection to extremal graph theory
 - Would be elegant if true
 
@@ -206,7 +251,7 @@ Theoretical analysis suggests optimal budget allocation ratios *might* naturally
 
 ### 2. Tetrahedral Multi-Agent Emergence (Pure Speculation)
 
-**Status:** Conceptual framework, no formal proof
+**Status:** Conceptual framework, no formal proof. Labeled as Conjecture 8.2 in Research Paper v3.5.
 
 When dual agents (Swordsman/Mage) interact over time, two emergent properties might arise:
 - **Reflect**: Temporal memory and pattern recognition
@@ -228,8 +273,8 @@ This could form a tetrahedral structure with four complementary functions.
 
 **Technologies converging:**
 - Trusted Execution Environments (TEEs) for isolation
-- Trust Spanning Protocol (TSP) for agent messaging (see *Whitepaper v4.3*)
-- Zero-Knowledge Proofs for verification
+- Trust Spanning Protocol (TSP) for agent messaging (see *Whitepaper v4.7*)
+- Zero-Knowledge Proofs for structural verification (NOT for MI proofs)
 - Blockchain for audit trails and trust tasks
 
 **Critical Questions:**
@@ -271,7 +316,9 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 
 5. **Game Theory:** What are the incentive structures for agents to maintain separation? Is there a Nash equilibrium?
 
-6. **Trust Tasks:** How do trust task coordination primitives (from Whitepaper v4.3) integrate with the formal separation guarantees?
+6. **Trust Tasks:** How do trust task coordination primitives (from Whitepaper v4.7) integrate with the formal separation guarantees?
+
+7. **MI Estimation:** What are practical methods for estimating mutual information with reliable error bounds in high-dimensional behavioral data?
 
 ---
 
@@ -296,9 +343,9 @@ The information-theoretic proofs suggest necessity, but need broader validation.
    - Can build community around ideas
 
 4. **Intellectual Honesty**
-   - Research paper v3.2 with rigorous proofs but open to being wrong
-   - Information-theoretic foundations established
-   - Clear separation of proven vs. speculative claims 
+   - Research paper v3.5 with Claims Classification Table separating proven/speculative
+   - Clear acknowledgment of what ZKPs can and cannot do
+   - Explicit confidence levels on different claims
 
 5. **Persistence**
    - Been working on this confluence and data=value thesis for over 8 years
@@ -327,6 +374,11 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 
 ### Critical Needs
 
+**Information Theorist** (For Proof Review)
+- Review core theorems for subtle edge cases
+- Validate graceful degradation analysis
+- Suggest tighter bounds if possible
+
 **Systems Researcher** (Highest Priority)
 - Design and run large-scale experiments
 - Validate theoretical guarantees in production
@@ -350,7 +402,11 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 - Identify practical limitations
 - Validate usability
 
-**10x engineers** (For Real-World Deployment)
+**10x Engineers** (For Real-World Deployment)
+- Build production-grade implementations
+- Optimize for real-world constraints
+- Create developer-friendly APIs
+
 ---
 
 ## What I'm Offering
@@ -358,8 +414,8 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 ### To Academic Partners
 
 - Co-authorship on papers
-- Completed information-theoretic foundations (Research Paper v3.2)
-- Novel architectural framework (Whitepaper v4.3)
+- Completed information-theoretic foundations (Research Paper v3.5)
+- Novel architectural framework (Whitepaper v4.7)
 - Connections to deployment partners in industry
 - Help building reference implementations
 - Domain expertise on practical privacy tech
@@ -401,8 +457,8 @@ The Swordsman and Mage framework provides those guarantees. The math is proven. 
 
 ### Short-term (6 months)
 
-- ✓ Mathematical foundations verified by experts (DONE)
-- ✓ Research paper accepted for publication (v3.2)
+- ✓ Mathematical foundations established (Research Paper v3.5)
+- ✓ Claims Classification Table distinguishing proven vs speculative
 - → Reference implementations designed and prototyped
 - → Small research community engaged with the work
 - → Initial prototype testing (n < 10 systems)
@@ -429,28 +485,37 @@ The Swordsman and Mage framework provides those guarantees. The math is proven. 
 
 ### Completed Work
 
-**Research Paper v3.2** (*Dual Privacy Architecture: Information-Theoretic Bounds*)
-- Complete mathematical proofs
-- Separation theorems rigorously established
-- Reconstruction ceiling proven
-- Error bounds via Fano's inequality
-- Graceful degradation analysis
+**Research Paper v3.5** (*Dual Privacy Architecture: Information-Theoretic Bounds on Agent Reconstruction*)
+- Claims Classification Table (proven/semantic/implementable/speculative)
+- Complete mathematical proofs (Theorems 5.1-5.4)
+- Clarification: ZKPs prove structural constraints, NOT statistical properties
+- Promise Theory as semantic framework, not security enforcement
+- Expanded limitations section (what this does NOT guarantee)
+- Side-channel model as engineering assumption requiring validation
 
-**Whitepaper v4.3** (*Swordsman and Mage: Dual Agents Derived from the First Person*)
+**Whitepaper v4.7** (*Swordsman and Mage: Dual Agents Derived from the First Person*)
 - Complete technical architecture
 - Trust Spanning Protocol (TSP) integration
 - Trust tasks as coordination primitives
 - Layer 0-5 protocol stack
-- Verifiable Relationship Credentials (VRCs)
+- Verifiable Relationship Credentials (VRCs) with both cryptographic and comprehension layers
+- Prompt instructions (not "injection") as verification infrastructure
 - Implementation guidance
 
-**Tokenomics v2.0** (*VRC Protocol: Economic Architecture*)
+**VRC Promise Protocol v3.0** (*Economic Architecture*)
+- Development status notice (one possible implementation, requires ecosystem collaboration)
 - Signal-based sustainability model (0.01 ZEC proof-of-comprehension)
 - Guardian economics and stake-weighted validation
 - Guild specialization frameworks
 - Progressive trust tier system (Blade/Light/Heavy/Dragon)
-- 61.8/38.2 transparent/shielded canonical fee split (φ-derived)
+- 61.8/38.2 transparent/shielded canonical fee split (φ-derived hypothesis)
 - O(n²) network effects through VRC coordination
+
+**Spellbook v4.1.1** (*First Person Spellbook - Promise Edition*)
+- 13 Acts + 30 Tales narrative framework
+- Symbolic compression system
+- RPP (Relationship Proverb Protocol) as assessment mechanism
+- Aligned companion document references
 
 All documentation available at: https://agentprivacy.ai
 
@@ -461,22 +526,24 @@ All documentation available at: https://agentprivacy.ai
 I'm looking for researchers who:
 
 1. Find this hypothesis compelling given the proven foundations
-2. Have expertise in systems implementation, game theory, or optimization
+2. Have expertise in systems implementation, game theory, information theory, or optimization
 3. Are willing to collaborate on building and testing
 4. Care about privacy and human sovereignty
 
 ### What I Need From You
 
+- Review of core theorems by information theorists
 - Help building and testing large-scale implementations
 - Game-theoretic analysis of agent incentives
 - Investigation of golden ratio and emergent properties (speculative but interesting)
 - Feedback on extending the theory to multi-agent systems
+- Practical MI estimation methods for high-dimensional data
 
 ### What I Can Offer
 
-- Proven mathematical foundations (Research Paper v3.2)
-- Complete architectural framework (Whitepaper v4.3)
-- Economic sustainability model (Tokenomics v2.0)
+- Proven mathematical foundations (Research Paper v3.5)
+- Complete architectural framework (Whitepaper v4.7)
+- Economic sustainability model (VRC Promise Protocol v3.0)
 - **Practical experience** with decentralized identity systems (bronID, Soulbis, Verida, Trust Over IP)
 - **Network connections** through BGIN IKP Working Group, IIW, and privacy-focused communities
 - Domain expertise from years building real infrastructure
@@ -492,10 +559,10 @@ I'm looking for researchers who:
 **Quick Chat:** Email me at mage@agentprivacy.ai with "Dual Agent Research" in subject line. I'm happy to do a 30-minute call.
 
 **Deep Dive:** Complete technical documentation available:
-- Research Paper v3.2 (formal proofs)
-- Whitepaper v4.3 (architecture and implementation)
-- Tokenomics v2.0 (economic model)
-- Spellbook v4.0.1 (narrative framework)
+- Research Paper v3.5 (formal proofs with claims classification)
+- Whitepaper v4.7 (architecture and implementation)
+- VRC Promise Protocol v3.0 (economic model)
+- Spellbook v4.1.1 (narrative framework)
 - All available at https://agentprivacy.ai
 
 **Critique:** Send me your concerns and criticisms. I'd rather find flaws early than waste time.
@@ -516,26 +583,40 @@ I'll happily acknowledge if the implementation path is blocked. But I need help 
 
 ### What's Proven ✓
 
-- Information-theoretic separation bounds
-- Reconstruction ceiling theorem
-- Error floor guarantees
-- Graceful degradation under approximate separation
+- Information-theoretic separation bounds (Theorem 5.1)
+- Reconstruction ceiling theorem (Corollary 5.2)
+- Error floor guarantees (Theorem 5.3)
+- Graceful degradation under approximate separation (Theorem 5.4)
 
-**Confidence:** 95% — Rigorously proven, peer-reviewed
+**Confidence:** 95% — Rigorous applications of established information theory
 
-### What's Validated in Concept ✓
+### What's Established as Semantic Framework ✓
 
-- Architectural framework (Whitepaper v4.3)
-- Trust Spanning Protocol integration
-- Trust task coordination primitives
-- Economic sustainability model
+- Promise Theory grounding (interpretation, not enforcement)
+- Autonomy axiom explains single-agent conflicts
+- Superagent structure provides conceptual model
 
-**Confidence:** 80% — Designed but needs large-scale testing
+**Confidence:** 85% — Useful framing from Bergstra & Burgess (2019)
+
+### What's Implementable with Standard Assumptions ✓
+
+- ZKP structural proofs (disjoint partitions, non-sharing)
+- Disclosure category tracking for budget compliance
+- TEE-based isolation mechanisms
+
+**Confidence:** 80% — Standard cryptographic assumptions
+
+### What's Engineering Assumption ⚠
+
+- Logarithmic side-channel model
+- MI estimation accuracy in high dimensions
+
+**Confidence:** 50% — Requires empirical validation per deployment
 
 ### What's Speculative ⚠
 
-- Golden ratio budget allocation
-- Tetrahedral multi-agent emergence
+- Golden ratio budget allocation (Conjecture 8.1)
+- Tetrahedral multi-agent emergence (Conjecture 8.2)
 
 **Confidence:** 5-10% — Pure speculation, needs investigation
 
@@ -545,6 +626,7 @@ I'll happily acknowledge if the implementation path is blocked. But I need help 
 - Large-scale empirical studies
 - Side-channel measurement in real systems
 - Game-theoretic models and validation
+- Practical MI estimation methods
 
 **Priority:** CRITICAL
 
@@ -555,6 +637,8 @@ I'll happily acknowledge if the implementation path is blocked. But I need help 
 **What I Know:**
 
 - The mathematics are proven. Dual agents provide information-theoretic privacy guarantees that single agents cannot.
+- ZKPs can prove structural constraints but not statistical properties—and that's okay, we work with it.
+- Promise Theory provides semantic grounding, not cryptographic enforcement.
 - The architecture is designed. Layer 0-5 protocol stack with TSP and trust tasks.
 - The problem is urgent. AI agents need privacy foundations NOW.
 
@@ -563,10 +647,11 @@ I'll happily acknowledge if the implementation path is blocked. But I need help 
 - Will the theoretical guarantees survive implementation side-channels?
 - Is the golden ratio pattern real or coincidence?
 - What's the optimal structure for n > 2 agent systems?
+- What are practical MI estimation methods for behavioral data?
 
 **What I Need:**
 
-Systems researchers, game theorists, and privacy practitioners to help build, test, and validate this at scale.
+Information theorists to review proofs, systems researchers to build and test, game theorists to model incentives, and privacy practitioners to validate at scale.
 
 The core insight (architectural separation as privacy foundation) is proven. The question now is: **can we make it real?**
 
@@ -602,21 +687,27 @@ For those who want the mathematical version:
 
 **Hypothesis:** Under conditional independence `(Y_S ⊥ Y_M)|X` and budget constraints `C_S + C_M < H(X)`, we get `R_max < 1` (reconstruction ceiling).
 
-**Proven (Research Paper v3.2):**
-- Separation lemma: `I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)`
+**Proven (Research Paper v3.5):**
+- Separation lemma: `I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M)` (inequality, not equality)
 - Reconstruction ceiling: `R_max = (C_S + C_M)/H(X) < 1`
-- Error floor via Fano: `P_e ≥ 1 - R_max`
-- Graceful degradation under approximate separation
+- Error floor via Fano: `P_e ≥ 1 - R_max - O(1/H(X))`
+- Graceful degradation: ε-separation → ε additional leakage
 
-**Implemented (Whitepaper v4.3):**
+**Clarified (Research Paper v3.5):**
+- ZKPs prove structural constraints, NOT statistical properties
+- Promise Theory provides semantic framing, NOT security enforcement
+- MI estimation requires offline methods with safety margins
+- Guarantees hold to degree separation is actually achieved
+
+**Implemented (Whitepaper v4.7):**
 - Trust Spanning Protocol for agent messaging
 - Trust tasks for coordination primitives
-- VRCs for relationship-based trust
+- VRCs with cryptographic + comprehension layers
 - Layer 0-5 protocol stack
 
 **Speculative (Needs Validation):**
-- Optimal allocation ratio `C_S/C_M ≈ φ` (golden ratio)
-- Tetrahedral emergence in multi-agent systems
+- Optimal allocation ratio `C_S/C_M ≈ φ` (golden ratio) — Conjecture 8.1
+- Tetrahedral emergence in multi-agent systems — Conjecture 8.2
 
 **Critical Next Step:**
 - Build production implementations
@@ -632,3 +723,25 @@ For those who want the mathematical version:
 2025 agentprivacy just another ⚔️ 🧙‍♂️ 🤖 😊
 
 Let's build this together.
+
+---
+
+## Document Metadata
+
+- **Project:** 0xagentprivacy
+- **Version:** 1.3
+- **Date:** December 11, 2025
+- **Companion Documents:**
+  - Research Paper v3.5
+  - Whitepaper v4.7
+  - VRC Promise Protocol v3.0
+  - Spellbook v4.1.1
+  - Glossary v2.2
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | Nov 2025 | Initial research proposal |
+| 1.2 | Nov 25, 2025 | Added practical foundation, tokenomics experience |
+| **1.3** | **Dec 11, 2025** | **Alignment update**: Updated all companion document references. Added Claims Classification approach. Clarified ZKPs prove structural constraints (not statistical properties). Clarified Promise Theory as semantic framework (not security enforcement). Added MI estimation as open research question. Updated confidence levels. Aligned with Research Paper v3.5, Whitepaper v4.7, VRC Promise Protocol v3.0, Spellbook v4.1.1. |
