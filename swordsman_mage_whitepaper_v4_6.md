@@ -53,7 +53,7 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 **Genesis Ceremony**: One-time agent pair origination, 1 ZEC ($500), different from signals
 
-**Spellbook**: Source material for learning (12 Acts + bookends = 13 sections, plus 30 tales in Zero Spellbook)
+**Spellbook**: Source material for learning (13 Acts, plus 30 tales in Zero Spellbook)
 
 **RPP (Relationship Proverb Protocol)**: Compression protocol proving comprehension---1 proverb formed = 1 signal posted
 
@@ -995,7 +995,7 @@ More knowledge engagement → More VRCs formed → Larger trust graphs → Highe
 
 # The Spellbook as Semantic Infrastructure
 
-The privacymage spellbook (Acts 1–12) functions as semantic infrastructure for the 0xagentprivacy protocol.
+The privacymage spellbook (Acts 1–13) functions as semantic infrastructure for the 0xagentprivacy protocol.
 
 ## Three Core Functions
 
@@ -1516,7 +1516,7 @@ Provides systems thinking and narrative architecture. Story-first, math-referenc
 
 ## The Privacymage Spellbook
 
-Acts 1--12 provide symbolic system and semantic compression. Soulbis (Swordsman), Soulbae (Mage), and the balanced spiral. Each act demonstrates RPP in narrative form. Available at <https://agentprivacy.ai/story>
+Acts 1–13 provide symbolic system and semantic compression. Soulbis (Swordsman), Soulbae (Mage), and the balanced spiral. Each act demonstrates RPP in narrative form. Act 13 (The Book of Promise) integrates Promise Theory foundations. Available at <https://agentprivacy.ai/story>
 
 ## Collaborative Development
 
