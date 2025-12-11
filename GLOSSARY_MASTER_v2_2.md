@@ -861,15 +861,14 @@ This glossary serves as the **single source of truth** for terminology across al
 ## 10. Spellbook & Narrative
 
 ### Spellbook
-**Definition**: Source material for learning, structured as 12 Acts plus bookends (13 sections total), plus 30 tales in Zero Spellbook.
+**Definition**: Source material for learning, structured as 13 Acts, plus 30 tales in Zero Spellbook.
 
 **Status**: ✅ CANONICAL
 
 **Promise Theory Alignment**: The spellbook is a promise body—content being offered. RPP assessment determines if the promise (knowledge transfer) was kept.
 
 **Structure**:
-- Acts 1-12: Progressive narrative
-- Bookends: Opening and closing frames
+- Acts 1-13: Progressive narrative (Act 13: The Book of Promise integrates Promise Theory)
 - Zero Spellbook: 30 foundational tales
 
 ---

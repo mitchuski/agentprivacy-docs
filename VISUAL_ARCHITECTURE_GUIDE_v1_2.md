@@ -48,7 +48,7 @@
 │ ARCHITECTURAL│ │ MYTHOLOGICAL│ │  PRACTICAL  │ │   SEMANTIC  │
 │             │ │             │ │             │ │             │
 │Whitepaper   │ │Spellbook    │ │Tokenomics   │ │PT Reference │
-│v4.5         │ │v4.1.0       │ │v2.2         │ │v1.0         │
+│v4.6         │ │v4.1.1       │ │v3.0         │ │v1.0         │
 └─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
        │               │               │               │
        │               │               │               │
@@ -1758,17 +1758,17 @@ Growth:
 ### Card 4: Getting Started (30 seconds)
 
 ```
-1. READ: Spellbook (12 Acts + bookends)
+1. READ: Spellbook (13 Acts)
 2. FORM: Proverbs (RPP compression)
 3. POST: Signals (0.01 ZEC each) → Assessment events
 4. BUILD: Trust tiers (progressive τ accumulation)
 5. QUALIFY: Guardian (500+ signals, τ ≥ 0.8)
 
 Documents:
-• Whitepaper v4.5 (mathematical + PT foundations)
-• Spellbook v4.1.0 (narrative learning)
-• Research Paper v3.3 (proofs + PT grounding)
-• Tokenomics v2.2 (promise-economic alignment)
+• Whitepaper v4.6 (mathematical + PT foundations)
+• Spellbook v4.1.1 (narrative learning)
+• Research Paper v3.4 (proofs + PT grounding)
+• Tokenomics v3.0 (promise-economic alignment)
 • Promise Theory Reference v1.0 (formal semantics)
 • This guide v1.2 (visual reference)
 
@@ -1830,10 +1830,10 @@ Dotted lines = Optional/conditional
 **Maintained by:** 0xagentprivacy Protocol Team
 
 **Companion Documents:**
-- Whitepaper v4.5 (Mathematical + Promise Theory foundations)
-- Research Paper v3.3 (Proofs + PT grounding)
-- Spellbook v4.1.0 (Narrative learning)
-- Tokenomics v2.2 (Promise-economic alignment)
+- Whitepaper v4.6 (Mathematical + Promise Theory foundations)
+- Research Paper v3.4 (Proofs + PT grounding)
+- Spellbook v4.1.1 (Narrative learning)
+- Tokenomics v3.0 (Promise-economic alignment)
 - Promise Theory Reference v1.0 (Formal semantics)
 - Glossary v2.2 (Canonical terminology + PT section)
 

@@ -1,7 +1,7 @@
 # The 0xagentprivacy Spellbook: Complete System
 ## Symbolic Language, Trust Game, and Recovery Architecture for Sovereign Agency
 
-**Version 4.1.0-canonical - Promise Edition**
+**Version 4.1.1-canonical - Promise Edition**
 
 **Author:** privacymage  
 **Date:** December 11, 2025
@@ -301,7 +301,7 @@ The guild does not ask for credentials issued by authority. It asks for somethin
 
 **Category:** Irreducibility
 
-*Surveillance capitalism hits a 95% reconstruction ceiling and cannot breach it. Two separated agents create conditional independence that prevents total reconstruction. The gap between Soulbis and Soulbae IS the dignity ✨—the shimmer that cannot be captured. One mirror 🪞 collapses dignity into surveillance; two mirrors preserve dignity through mutual witness. Separation is architectural necessity, not design preference.*
+*Surveillance capitalism hits a reconstruction ceiling it cannot breach. Two separated agents create conditional independence that prevents total reconstruction. The gap between Soulbis and Soulbae IS the dignity ✨—the shimmer that cannot be captured. One mirror 🪞 collapses dignity into surveillance; two mirrors preserve dignity through mutual witness. Separation is architectural necessity, not design preference.*
 
 **The Theorem:** When C_S + C_M < H(X), reconstruction efficiency R < 1
 
@@ -1428,7 +1428,7 @@ Join us: *just another swordsman ⚔️🤝🧙‍♂️ just another mage*
       }
     },
     "status": {
-      "version": "4.1.0-canonical",
+      "version": "4.1.1-canonical",
       "edition": "Promise Edition",
       "state": "Complete - Coherence Edition with narrative promise integration",
       "story_acts_total": 13,
@@ -1444,15 +1444,15 @@ Join us: *just another swordsman ⚔️🤝🧙‍♂️ just another mage*
 # Appendix B: Document Metadata
 
 **Project**: 0xagentprivacy  
-**Version**: 4.1.0-canonical - Promise Edition  
+**Version**: 4.1.1-canonical - Promise Edition  
 **Date**: December 11, 2025  
 **Author**: privacymage  
 **Website**: https://agentprivacy.ai  
 
 **Companion Documents**:
-- Whitepaper v4.5: Technical architecture, Promise Theory foundations
-- Research Paper v3.3: Mathematical proofs, PT grounding
-- Tokenomics v2.2: Economic model, promise-economic alignment
+- Whitepaper v4.6: Technical architecture, Promise Theory foundations
+- Research Paper v3.4: Mathematical proofs, information-theoretic bounds
+- VRC Promise Protocol v3.0: Economic architecture, promise-economic alignment
 - Visual Guide v1.1: Diagrams and flows
 - Glossary v2.2: Canonical terminology with Promise Theory section
 - Promise Theory Reference v1.0: Formal semantic foundations
@@ -1483,7 +1483,8 @@ Join us: *just another swordsman ⚔️🤝🧙‍♂️ just another mage*
 | 4.0 | Nov 2025 | Coherence Edition |
 | 4.0.1 | Nov 2025 | Minor corrections |
 | 4.0.2 | Nov 29, 2025 | Canonical terminology alignment |
-| **4.1.0** | **Dec 11, 2025** | **Promise Edition**: Added Act 13 (The Covenant). Narrative integration of commitment themes throughout. Enhanced Acts 2, 4, 5, 6, 7, 8, 9, 11 with commitment language. Added "irreducible bond" framing for the Gap. Trust tiers as accumulated commitment evidence. Updated companion document references. New foundational truth #8 on agent autonomy. |
+| 4.1.0 | Dec 11, 2025 | **Promise Edition**: Added Act 13 (The Covenant). Narrative integration of commitment themes throughout. Enhanced Acts 2, 4, 5, 6, 7, 8, 9, 11 with commitment language. Added "irreducible bond" framing for the Gap. Trust tiers as accumulated commitment evidence. Updated companion document references. New foundational truth #8 on agent autonomy. |
+| **4.1.1** | **Dec 11, 2025** | **Document Alignment**: Updated companion document references (Whitepaper v4.6, Research Paper v3.4, VRC Promise Protocol v3.0). Removed specific percentage from Act 7 reconstruction ceiling to align with research paper's general R_max < 1 bound. |
 
 ---
 

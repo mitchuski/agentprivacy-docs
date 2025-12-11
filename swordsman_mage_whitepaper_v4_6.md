@@ -97,9 +97,9 @@ For complete terminology and economic details, see companion documents:
 
 - `promise_theory_reference_v1_0.md` --- Promise Theory foundations
 
-- `tokenomics_economic_architecture_v2.md` --- Economic architecture
+- `vrc_promise_protocol_economic_architecture_v3_0.md` --- Economic architecture
 
-- `spellbook_v4_0_1_canonical.md` --- Narrative interpretation
+- `spellbook_v4_1_1_canonical.md` --- Narrative interpretation
 
 ---
 
