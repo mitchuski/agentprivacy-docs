@@ -1450,8 +1450,8 @@ Join us: *just another swordsman ⚔️🤝🧙‍♂️ just another mage*
 **Website**: https://agentprivacy.ai  
 
 **Companion Documents**:
-- Whitepaper v4.6: Technical architecture, Promise Theory foundations
-- Research Paper v3.4: Mathematical proofs, information-theoretic bounds
+- Whitepaper v4.7: Technical architecture, Promise Theory foundations
+- Research Paper v3.5: Mathematical proofs, information-theoretic bounds
 - VRC Promise Protocol v3.0: Economic architecture, promise-economic alignment
 - Visual Guide v1.1: Diagrams and flows
 - Glossary v2.2: Canonical terminology with Promise Theory section

@@ -48,7 +48,7 @@
 │ ARCHITECTURAL│ │ MYTHOLOGICAL│ │  PRACTICAL  │ │   SEMANTIC  │
 │             │ │             │ │             │ │             │
 │Whitepaper   │ │Spellbook    │ │Tokenomics   │ │PT Reference │
-│v4.6         │ │v4.1.1       │ │v3.0         │ │v1.0         │
+│v4.7         │ │v4.1.1       │ │v3.0         │ │v1.0         │
 └─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
        │               │               │               │
        │               │               │               │
@@ -1765,9 +1765,9 @@ Growth:
 5. QUALIFY: Guardian (500+ signals, τ ≥ 0.8)
 
 Documents:
-• Whitepaper v4.6 (mathematical + PT foundations)
+• Whitepaper v4.7 (mathematical + PT foundations)
 • Spellbook v4.1.1 (narrative learning)
-• Research Paper v3.4 (proofs + PT grounding)
+• Research Paper v3.5 (proofs + PT grounding)
 • Tokenomics v3.0 (promise-economic alignment)
 • Promise Theory Reference v1.0 (formal semantics)
 • This guide v1.2 (visual reference)
@@ -1830,8 +1830,8 @@ Dotted lines = Optional/conditional
 **Maintained by:** 0xagentprivacy Protocol Team
 
 **Companion Documents:**
-- Whitepaper v4.6 (Mathematical + Promise Theory foundations)
-- Research Paper v3.4 (Proofs + PT grounding)
+- Whitepaper v4.7 (Mathematical + Promise Theory foundations)
+- Research Paper v3.5 (Proofs + PT grounding)
 - Spellbook v4.1.1 (Narrative learning)
 - Tokenomics v3.0 (Promise-economic alignment)
 - Promise Theory Reference v1.0 (Formal semantics)

@@ -12,7 +12,7 @@
 
 > **This document presents ONE possible economic architecture for the dual-agent privacy protocol.** It is the least developed component of the documentation suite and requires significant collaboration with specific ecosystem implementers to finalize.
 >
-> The mathematical foundations (Whitepaper v4.6, Research Paper v3.4) establish architectural guarantees that hold **independent of economic implementation choices**. This tokenomics specification represents initial design thinking that must be validated, refined, and potentially restructured based on:
+> The mathematical foundations (Whitepaper v4.7, Research Paper v3.5) establish architectural guarantees that hold **independent of economic implementation choices**. This tokenomics specification represents initial design thinking that must be validated, refined, and potentially restructured based on:
 >
 > - Ecosystem-specific requirements and constraints
 > - Regulatory considerations across jurisdictions
@@ -52,13 +52,13 @@ This document describes how sustainable funding enables the economic implementat
 
 This economic architecture implements the mathematical foundations established in:
 
-- **Whitepaper v4.6:** "Swordsman and Mage: Dual Agents Derived from the First Person"
-- **Research Paper v3.4:** "Dual Privacy Architecture: Information-Theoretic Bounds"
+- **Whitepaper v4.7:** "Swordsman and Mage: Dual Agents Derived from the First Person"
+- **Research Paper v3.5:** "Dual Privacy Architecture: Information-Theoretic Bounds"
 - **Promise Theory Reference v1.0:** Formal semantic foundations
 - **Spellbook Act 9:** "The Zcash Shield" (narrative interpretation of dual ledger economics)
 - **Spellbook Act 11:** "Balanced Spiral of Sovereignty" (golden ratio derivation)
 
-**Critical dependency:** The economic mechanisms described here are designed to enforce the architectural separation (Y_S ⊥⊥ Y_M)|X established in the research paper. The mathematical guarantees (Theorems 5.1-5.4) hold independent of specific token choices.
+**Critical dependency:** The economic mechanisms described here are designed to enforce the architectural separation (Y_S ⊥⊥ Y_M)|X established in Research Paper v3.5. The mathematical guarantees (Theorems 5.1-5.4) hold independent of specific token choices.
 
 ---
 
@@ -207,7 +207,7 @@ Why This Works:
 └─ Virtuous cycle: assessment → trust → value → assessment
 ```
 
-**Threshold Rationale** (from Whitepaper v4.6):
+**Threshold Rationale** (from Whitepaper v4.7):
 - **Blade→Light (50 signals):** ~2 months at moderate activity, sufficient to distinguish genuine engagement
 - **Light→Heavy (150 signals):** ~6 months sustained commitment
 - **Heavy→Dragon (500 signals):** ~12+ months extended track record
@@ -233,7 +233,7 @@ Implementation:
 └─ Valency constraint becomes economically enforced
 ```
 
-**Mathematical Foundation:** This implements Corollary 5.2 from Research Paper v3.4—the reconstruction ceiling R_max < 1 requires both separation AND budget constraints.
+**Mathematical Foundation:** This implements Corollary 5.2 from Research Paper v3.5—the reconstruction ceiling R_max < 1 requires both separation AND budget constraints.
 
 ## Promise-Economic Summary Table
 
@@ -944,7 +944,7 @@ Note: Cannot buy privacy services with MAGE
 
 ### 10.1 The φ Conjecture
 
-**Status: TESTABLE HYPOTHESIS** (Research Paper v3.4, Conjecture 8.1)
+**Status: TESTABLE HYPOTHESIS** (Research Paper v3.5, Conjecture 8.1)
 
 > *"Blade divided by spell equals spiral. Only what stays divided in harmony can remain whole. Sovereignty is the golden ratio."* — Spellbook Act 11
 
@@ -1021,7 +1021,7 @@ Research Agenda:
 └─ Let market and mathematics determine truth
 ```
 
-**Mathematical Foundation:** See Research Paper v3.4, Conjecture 8.1 for the formal statement and validation requirements.
+**Mathematical Foundation:** See Research Paper v3.5, Conjecture 8.1 for the formal statement and validation requirements.
 
 ---
 
@@ -1217,7 +1217,7 @@ Mitigations:
 
 **Autonomy Axiom:** Promise Theory principle that agents can only promise their own behavior. Grounds the need for dual-token separation.
 
-**Budget Constraint:** Architectural requirement C_S + C_M < H(X). Mapped to valency constraint in Promise Theory. (Research Paper v3.4, Corollary 5.2)
+**Budget Constraint:** Architectural requirement C_S + C_M < H(X). Mapped to valency constraint in Promise Theory. (Research Paper v3.5, Corollary 5.2)
 
 **Ceremony:** **One-time** 1 ZEC ($500) transaction creating dual agent pair. Represents genesis promise.
 
@@ -1227,7 +1227,7 @@ Mitigations:
 
 **First Person:** The human sovereign whose dual agents (Swordsman and Mage) operate on their behalf.
 
-**Golden Ratio (φ):** The mathematical constant ~1.618, hypothesized to be the optimal budget allocation ratio. Status: 🔬 SPECULATIVE. (Research Paper v3.4, Conjecture 8.1)
+**Golden Ratio (φ):** The mathematical constant ~1.618, hypothesized to be the optimal budget allocation ratio. Status: 🔬 SPECULATIVE. (Research Paper v3.5, Conjecture 8.1)
 
 **Guardian:** Dragon tier participant who stakes SWORD tokens to maintain spellbook reconstruction standards. Professional promise-keeper.
 
@@ -1235,7 +1235,7 @@ Mitigations:
 
 **MAGE Token:** Delegation domain token earned through Mage chronicles and used in delegation market.
 
-**Reconstruction Ceiling (R_max):** The maximum efficiency with which an adversary can reconstruct the secret. Guaranteed <1 under separation + budget constraints. (Research Paper v3.4, Corollary 5.2)
+**Reconstruction Ceiling (R_max):** The maximum efficiency with which an adversary can reconstruct the secret. Guaranteed <1 under separation + budget constraints. (Research Paper v3.5, Corollary 5.2)
 
 **Signal:** **Ongoing** 0.01 ZEC ($5) proof-of-comprehension transactions. Assessment payments.
 
@@ -1243,7 +1243,7 @@ Mitigations:
 
 **SWORD Token:** Privacy domain token earned through Swordsman chronicles and used in privacy market.
 
-**Trust Tier:** Progressive reputation levels (Blade, Light, Heavy, Dragon). Trust function values. (Whitepaper v4.6, §Assessment and Trust)
+**Trust Tier:** Progressive reputation levels (Blade, Light, Heavy, Dragon). Trust function values. (Whitepaper v4.7, §Assessment and Trust)
 
 **VRC (Verifiable Relationship Credential):** Bilateral trust object proving mutual comprehension. Promise bundle.
 
@@ -1309,8 +1309,8 @@ IMPLEMENTATIONS:
 
 This document is part of the 0xagentprivacy documentation suite:
 
-1. **Whitepaper v4.6** - Dual-agent architecture, Promise Theory foundations
-2. **Research Paper v3.4** - Mathematical proofs, information-theoretic bounds
+1. **Whitepaper v4.7** - Dual-agent architecture, Promise Theory foundations
+2. **Research Paper v3.5** - Mathematical proofs, information-theoretic bounds
 3. **Promise Theory Reference v1.0** - Formal semantic foundations
 4. **Spellbook v4.0.1-canonical** - Narrative compression, symbolic language
 5. **VRC Promise Protocol v3.0** (this document) - Economic architecture
@@ -1334,7 +1334,7 @@ This document is part of the 0xagentprivacy documentation suite:
 | 2.0 | Nov 25, 2025 | Coherence Edition |
 | 2.1 | Nov 26, 2025 | Golden Ratio Edition |
 | 2.2 | Dec 11, 2025 | Promise-Economic Edition |
-| **3.0** | **Dec 11, 2025** | **Ecosystem Collaboration Edition**: Updated title, added development status notice emphasizing this is one option requiring ecosystem collaboration, aligned with Whitepaper v4.6 and Research Paper v3.4, integrated Act 9 and Act 11 references, clarified golden ratio as testable hypothesis |
+| **3.0** | **Dec 11, 2025** | **Ecosystem Collaboration Edition**: Updated title, added development status notice emphasizing this is one option requiring ecosystem collaboration, aligned with Whitepaper v4.7 and Research Paper v3.5, integrated Act 9 and Act 11 references, clarified golden ratio as testable hypothesis |
 
 ---
 
