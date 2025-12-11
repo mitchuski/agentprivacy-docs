@@ -378,4 +378,4 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 
 ---
 
-![Golden Spiral: Soul to Soul](goldenspiralsoulbaesoulbiszkp.jpg)
+![Soulbis & Soulbae: Agent Privacy](soulbisoulbae_agentprivacy.jpg)
