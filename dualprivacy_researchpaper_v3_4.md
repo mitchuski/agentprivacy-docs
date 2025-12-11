@@ -3,8 +3,8 @@
 **Mathematical Framework for Swordsman-Mage Separation**
 
 **Author:** privacymage  
-**Date:** November 25, 2025  
-**Version:** 3.2
+**Date:** December 11, 2025  
+**Version:** 3.3
 
 ---
 
@@ -12,7 +12,9 @@
 
 We introduce the Swordsman and Mage as fundamental privacy primitives for dual-agent architectures, establishing rigorous information-theoretic bounds when conditional independence (Y_S ⊥ Y_M) | X is enforced between these agents' observations. The Swordsman (S) controls privacy boundaries through selective measurement, while the Mage (M) projects delegated agency using only S-authorized observations. 
 
-**Proven Results:** We prove that this separation enables an additive bound on mutual information: I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M). Combined with budget constraints C_S + C_M < H(X), this establishes a reconstruction ceiling R_max < 1 that no adversary can exceed regardless of computational resources. Via Fano's inequality, we establish a fundamental error floor: P_e ≥ 1 - (I(X; Y) + 1)/H(X), guaranteeing minimum reconstruction error when R_max < 1. We further prove graceful degradation under approximate separation.
+**Formal Semantic Foundation:** We ground this architecture in Promise Theory (Bergstra & Burgess, 2019), which provides established semantics for autonomous agent coordination. The autonomy axiom—that agents can only promise their own behavior—formally explains why single-agent architectures cannot resolve the privacy-delegation paradox. The First Person + Swordsman + Mage system forms a *superagent* with *interior promises* between components, and The Gap (the reconstruction ceiling) is formally an *irreducible promise*—a property that emerges from component cooperation but cannot be attributed to any single agent.
+
+**Proven Results:** We prove that this separation enables an additive bound on mutual information: I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M). Combined with budget constraints C_S + C_M < H(X), this establishes a reconstruction ceiling R_max < 1 that no adversary can exceed regardless of computational resources. Via Fano's inequality, we establish a fundamental error floor: P_e ≥ 1 - (I(X;Y) + 1)/H(X), guaranteeing minimum reconstruction error when R_max < 1. We further prove graceful degradation under approximate separation.
 
 **Implementation Framework:** We provide practical budget estimation methods, isolation verification protocols, and side-channel resistance models based on covert channel analysis. We integrate zero-knowledge proof systems for cryptographic enforcement of separation and budget compliance, providing concrete constructions using Groth16, PLONK, and Nova protocols. 
 
@@ -23,6 +25,8 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 ## Nature of This Work
 
 **What Is Proven**: The core information-theoretic results (additive bounds under separation, reconstruction ceilings, error floors) are rigorously proven using established information theory.
+
+**What Is Grounded in Established Theory**: The Promise Theory foundations draw from peer-reviewed work by Bergstra & Burgess (2019), providing formal semantics for the dual-agent architecture without requiring novel theoretical claims.
 
 **What Is Theoretical**: The golden ratio optimization hypothesis and tetrahedral emergence predictions are unproven mathematical conjectures. They represent interesting theoretical possibilities but have not been formally derived from first principles.
 
@@ -37,6 +41,8 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 ## Motivation
 
 The deployment of autonomous AI agents acting on behalf of humans creates a fundamental tension: agents require information about their principals to act effectively (delegation), yet this same information enables reconstruction of sensitive behavioral patterns (privacy loss). Traditional single-agent architectures cannot resolve this tension—the same system handling both functions creates an inherent conflict of interest.
+
+**Promise Theory Insight:** This conflict is not merely architectural but semantic. Promise Theory's autonomy axiom states that *an agent can only make promises about its own behavior*. A single agent attempting to promise both perfect protection AND full delegation violates this axiom—it promises in domains it cannot independently control. The privacy-delegation paradox is thus a *formal* consequence of the autonomy axiom, not merely an engineering challenge.
 
 We propose the Swordsman and Mage as dual privacy primitives that resolve this tension through architectural separation:
 
@@ -57,6 +63,16 @@ These primitives are not mere metaphors but formal architectural components with
 - **Error Floor (Theorem 3.3)**: Fano's inequality establishes minimum error P_e ≥ 1 - (I(X;Y) + 1)/H(X)
 
 - **Robustness Analysis (Theorem 3.4)**: ε-approximate separation degrades bounds gracefully
+
+**Semantic Foundation**:
+
+- **Promise Theory Grounding**: Formal semantic framework from Bergstra & Burgess (2019)
+
+- **Autonomy Axiom Application**: Single-agent failure as formal consequence
+
+- **Superagent Architecture**: First Person + S + M as composite agent with interior promises
+
+- **Irreducible Promise**: The Gap (R_max < 1) as emergent property of separation
 
 **Implementation Framework**:
 
@@ -92,6 +108,179 @@ This work differs from existing privacy frameworks:
 
 - **Zero-Knowledge Proofs** [Groth 2016, Gabizon et al. 2019]: Verifiable computation; we apply to privacy budget enforcement
 
+- **Promise Theory** [Bergstra & Burgess 2019]: Established semantics for autonomous agent coordination; we apply to privacy architecture
+
+**Promise Theory distinction**: Unlike other frameworks that focus on *what* guarantees are achieved, Promise Theory provides semantics for *why* certain architectural patterns are necessary. The dual-agent structure is not merely an implementation choice but a formal requirement given the autonomy axiom.
+
+---
+
+# Promise-Theoretic Foundations
+
+## Overview
+
+Promise Theory, as developed by Bergstra & Burgess (2019), provides formal semantics for autonomous agent systems. We apply these semantics to ground the dual-agent privacy architecture, demonstrating that the Swordsman-Mage separation is not merely an implementation choice but a formal requirement for privacy-preserving delegation.
+
+## The Autonomy Axiom
+
+> **Autonomy Axiom (Promise Theory)**: An agent can only make promises about its own behavior. No agent can make a promise on behalf of another agent.
+
+**Application to Privacy Architecture:**
+
+This axiom formally explains why single-agent architectures fail:
+
+- A single agent attempting to promise both "I will protect all your data" (privacy) AND "I will effectively delegate on your behalf" (utility) must promise outcomes that depend on external responses
+- The delegation promise requires coordination with external agents whose behavior the single agent cannot control
+- The privacy promise requires withholding information that the delegation promise requires revealing
+- These conflicting promises cannot be kept simultaneously by a single agent
+
+**The dual-agent architecture resolves this:**
+
+- Swordsman promises: "I will enforce boundaries" (its own behavior)
+- Mage promises: "I will coordinate using only authorized information" (its own behavior)
+- Neither promises on behalf of the other
+- Neither promises outcomes requiring external cooperation
+
+## Superagent Structure
+
+> **Definition (Superagent)**: A composite agent with interior promises between components and exterior promises to the outside world.
+
+The First Person + Swordsman + Mage system forms a superagent:
+
+```
+┌─────────────────────────────────────────────┐
+│         SUPERAGENT (😊 + ⚔️ + 🧙)            │
+│                                             │
+│  ┌─────┐  interior promises  ┌─────┐        │
+│  │ ⚔️ S │◄───────────────────►│ M 🧙│        │
+│  └──┬──┘                     └──┬──┘        │
+│     │     ⚔️ --⊥--> 🧙           │           │
+│     │   (separation promise)    │           │
+│     └───────────┬───────────────┘           │
+│                 │                           │
+│           ┌─────┴─────┐                     │
+│           │ 😊 First   │                     │
+│           │  Person   │                     │
+│           └───────────┘                     │
+└─────────────────┬───────────────────────────┘
+                  │
+          exterior promises
+                  │
+                  ▼
+            🌍 External World
+```
+
+**Interior Promises (within superagent):**
+
+- ⚔️ --protect--> 😊 : Swordsman promises protection to First Person
+- 🧙 --delegate--> 😊 : Mage promises delegation to First Person  
+- 😊 --authorize--> ⚔️,🧙 : First Person authorizes both agents
+- ⚔️ --⊥--> 🧙 : Separation promise—no direct information flow
+
+**Exterior Promises (to world):**
+
+- Superagent --coordinate--> 🌍 (via Mage's public actions)
+- Superagent --boundary--> 🌍 (via Swordsman's rejections)
+
+## The Gap as Irreducible Promise
+
+> **Definition (Irreducible Promise)**: A promise of a superagent that cannot be attributed to any single component agent, but requires their cooperation.
+
+**Theorem (Informal):** The reconstruction ceiling R_max < 1 is an *irreducible promise* of the First Person superagent.
+
+**Argument:**
+
+1. The Swordsman alone cannot achieve R_max < 1 (needs information budget limit from total system)
+2. The Mage alone cannot achieve R_max < 1 (has no privacy enforcement capability)
+3. The First Person alone cannot achieve R_max < 1 (needs operational agents)
+4. Only the cooperation of all three—with maintained separation—achieves R_max < 1
+5. Therefore, R_max < 1 is an irreducible promise of the superagent
+
+**Why This Matters:**
+
+Irreducible promises cannot be captured by compromising any single component. An adversary who fully compromises the Swordsman learns only C_S bits. An adversary who fully compromises the Mage learns only C_M bits. Neither captures the irreducible promise—it exists in the *relationship* between components, not in any component itself.
+
+## Promise Types and Agent Roles
+
+Promise Theory distinguishes promise types:
+
+- **(+) give promise**: Agent promises to provide something (behavior, information, capability)
+- **(-) use/accept promise**: Agent promises to use what another provides appropriately
+
+**Agent Promise Profiles:**
+
+| Agent | (+) Give Promises | (-) Accept Promises |
+|-------|-------------------|---------------------|
+| Swordsman | Protection, boundary enforcement | Authorization from First Person |
+| Mage | Delegation, coordination | Authorized information from Swordsman, Instructions from First Person |
+| First Person | Authorization, sovereignty decisions | Protection from Swordsman, Delegation from Mage |
+
+The separation condition (Y_S ⊥ Y_M) | X is enforced by the *absence* of certain promises:
+
+- S does NOT promise to share observations with M
+- M does NOT promise to share actions with S
+- Neither promises on behalf of the other
+
+## Conditional Independence as Promise Scope
+
+The conditional independence requirement (Y_S ⊥ Y_M) | X maps to Promise Theory's concept of **scope**:
+
+> **Scope**: The domain within which an agent's promises are valid.
+
+- Swordsman's scope: privacy boundary decisions, observation of private ledger
+- Mage's scope: delegation actions, coordination with external agents
+- First Person's scope: authorization, sovereignty decisions
+
+**Scopes do not overlap in the observation domain.** The conditional independence condition is the formal expression of non-overlapping observation scopes.
+
+## Budget Constraints as Valency
+
+Promise Theory defines **valency** as the exclusive attention capacity an agent can dedicate to promises:
+
+> **Valency**: An agent has limited capacity; some promises are exclusive (cannot be made to multiple parties simultaneously).
+
+**Application:**
+
+- C_S is Swordsman's information valency—maximum mutual information it can reveal
+- C_M is Mage's information valency—maximum mutual information its actions can leak
+- C_S + C_M < H(X) is the *system valency constraint*—total information revelation bounded
+
+The budget constraint is thus not arbitrary but reflects fundamental capacity limits on what agents can promise without self-contradiction.
+
+## Assessment and Trust
+
+Promise Theory defines **assessment α(π)** as determination whether a promise was kept.
+
+**Application to Dual-Agent Systems:**
+
+- Chronicle verification is assessment of agent promises
+- VRC formation is bilateral assessment of shared understanding
+- Trust tiers represent accumulated assessment evidence
+- The RPP compression ratio quantifies assessment quality
+
+**Trust Function Mapping:**
+
+| Tier | Trust Value | Assessment Evidence |
+|------|-------------|---------------------|
+| Blade | 0.0-0.2 | Basic operation, minimal history |
+| Light | 0.2-0.5 | 50+ signals, established VRCs |
+| Heavy | 0.5-0.8 | 150+ signals, sustained performance |
+| Dragon | 0.8-1.0 | 500+ signals, elite coordination |
+
+## Implications for Proven Results
+
+The Promise Theory framework provides semantic grounding for our information-theoretic results:
+
+| Proven Result | PT Grounding |
+|---------------|--------------|
+| Separation Lemma (Thm 3.1) | Scope non-overlap enforced by promise structure |
+| Reconstruction Ceiling (Cor 3.2) | System valency constraint limits total revelation |
+| Error Floor (Thm 3.3) | Irreducible promise property—cannot be captured by component compromise |
+| Robustness (Thm 3.4) | Graceful degradation from approximate scope overlap |
+
+This grounding elevates the results from "clever engineering" to "rigorous implementation of established autonomous systems theory."
+
+---
+
 # Model and Preliminaries
 
 ## Basic Framework
@@ -112,6 +301,8 @@ where N_S, N_M are independent local randomness sources.
 > - Measurement function E_S that implements selective disclosure
 > - Information budget C_S controlling maximum leakage: I(X; Y_S) ≤ C_S
 > - Primary objective: minimize reconstruction while enabling necessary delegation
+> 
+> **Promise Theory Role**: Makes (+) give promises of protection. Its observation scope is the private ledger. Valency bounded by C_S.
 
 > **Definition: Mage Primitive**
 > 
@@ -119,19 +310,29 @@ where N_S, N_M are independent local randomness sources.
 > - Projection function E_M operating on S-authorized information
 > - Information budget C_M for capability execution: I(X; Y_M) ≤ C_M
 > - Primary objective: maximize utility under privacy constraints
+>
+> **Promise Theory Role**: Makes (+) give promises of delegation. Makes (-) accept promises of authorized information from S. Scope is coordination with external agents. Valency bounded by C_M.
 
 The critical architectural requirement: (Y_S ⊥ Y_M) | X (conditional independence).
+
+**Promise Theory Interpretation**: This separation is enforced by promise structure—neither agent promises to share its observations with the other. The separation is a *kept promise*, not merely a constraint.
 
 ## Formal Definitions
 
 > **Definition: Separation Condition**
 > The architecture enforces (Y_S ⊥ Y_M) | X.
+> 
+> **PT Grounding**: Non-overlapping observation scopes; absence of inter-agent observation promises.
 
 > **Definition: Information Budgets**
 > I(X; Y_S) ≤ C_S, I(X; Y_M) ≤ C_M.
+>
+> **PT Grounding**: Agent valency constraints on information revelation promises.
 
 > **Definition: Reconstruction Efficiency**
 > R ≜ I(X; Y)/H(X) ∈ [0, 1].
+>
+> **PT Grounding**: Fraction of total system capacity consumed by information revelation.
 
 ## Threat Model
 
@@ -151,6 +352,8 @@ The critical architectural requirement: (Y_S ⊥ Y_M) | X (conditional independe
 
 - Temporal correlation across sessions
 
+**Promise Theory Note**: This threat model assumes agents *keep* their promises. Active attacks that cause promise violation (e.g., forcing M to observe S's outputs) would break the architecture. The ZKP constructions in Part II address cryptographic enforcement of promise-keeping.
+
 ---
 
 # Part I: Core Theory and Proven Results
@@ -166,6 +369,8 @@ If (Y_S ⊥ Y_M) | X holds, then:
 > **I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M)**
 
 *Note:* Equality holds if and only if Y_S and Y_M are additionally marginally independent. Conditional independence (Y_S ⊥ Y_M) | X alone permits dependence through the shared cause X, yielding the inequality. The inequality suffices for all downstream guarantees.
+
+**Promise Theory Interpretation**: The additive bound is a *consequence* of maintained scope separation. When agents keep their promise not to share observations, information leakage cannot multiply—only add.
 
 *Proof:*
 
@@ -190,7 +395,11 @@ This completes the proof. □
 
 If C_S + C_M < H(X), then R_max = (C_S + C_M)/H(X) < 1.
 
+**Promise Theory Interpretation**: The reconstruction ceiling is an *irreducible promise* of the superagent—it emerges from the cooperation of separated components but cannot be attributed to either alone. This is why it cannot be captured by compromising any single agent.
+
 **Critical Clarification**: Separation alone is insufficient. Consider X binary with Y_S = X and Y_M independent noise. Then (Y_S ⊥ Y_M) | X holds but R = 1. The ceiling requires **BOTH** separation (for additivity) **AND** budget constraints (for the bound).
+
+**Promise Theory Note**: This corresponds to requiring both *scope separation* (the separation condition) AND *valency limits* (the budget constraints). Autonomy axiom compliance without resource constraints doesn't guarantee privacy.
 
 ## Error Lower Bound
 
@@ -207,6 +416,8 @@ Which can be rewritten using I(X; Y) = H(X) - H(X|Y) as:
 For large alphabets where log(|𝒳| - 1) ≈ H(X):
 
 > P_e ≳ 1 - (I(X; Y) + 1)/H(X) = 1 - R - 1/H(X)
+
+**Promise Theory Interpretation**: The error floor is the *observable consequence* of the irreducible promise. Because the reconstruction ceiling is an emergent property of component cooperation, adversaries necessarily encounter this error floor—it cannot be circumvented by any analysis technique.
 
 *Proof:*
 
@@ -239,6 +450,8 @@ Therefore, when R_max < 1, there exists a fundamental error floor that no estima
 If I(Y_S; Y_M | X) ≤ ε (approximate separation), then:
 
 > I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M) + ε
+
+**Promise Theory Interpretation**: Approximate separation corresponds to *almost* keeping the non-sharing promise. Small promise violations (bounded by ε) cause proportionally small leakage increases. This reflects Promise Theory's principle that trust degrades gracefully with occasional small violations.
 
 *Proof:*
 
@@ -324,6 +537,8 @@ To verify theoretical guarantees in practice:
 - Trigger corrective isolation measures
    
 
+**Promise Theory Note**: Violation detection corresponds to *assessment* of the separation promise. Detecting I(Y_S; Y_M | X) > ε is evidence of promise violation, triggering trust degradation and corrective action.
+
 ## Parameter Estimation
 
 For practical systems:
@@ -343,6 +558,8 @@ For practical systems:
 ## The Allocation Problem
 
 Given total budget C_T = C_S + C_M < H(X), how should we allocate between privacy protection and delegation capacity?
+
+**Promise Theory Framing**: This is the *valency allocation problem*—how to distribute the superagent's total information-revelation capacity between its component agents.
 
 ## Practical Budget Estimation
 
@@ -396,6 +613,8 @@ class AdaptiveBudgetController:
 - Anomaly detection for unusual patterns
 
 - Cryptographic commitments to prevent manipulation
+
+**Promise Theory Note**: These mitigations ensure agents can *keep* their promises even under adversarial pressure. Rate limiting prevents promise exhaustion; anomaly detection identifies potential promise-violation attacks.
 
 # Architectural Implementation
 
@@ -451,6 +670,8 @@ The Swordsman's selective disclosure can be implemented using modern zero-knowle
 
 where f is a public predicate (e.g., "age ≥ 18") and the proof reveals nothing beyond the predicate's truth value.
 
+**Promise Theory Note**: ZKP constructions enable *verifiable* promise-keeping. The Swordsman doesn't just claim to enforce boundaries—it proves cryptographically that boundaries are enforced.
+
 **For Delegation Agent (M)**:
 
 - Minimize observation precision
@@ -503,6 +724,8 @@ This approach enables:
 - **Composability**: Proofs can be recursively composed for multi-agent systems
 
 - **Trustless Enforcement**: No need for trusted hardware or monitors
+
+**Promise Theory Note**: This transforms promise-keeping from "trust me" to "verify me"—the cryptographic analogue of Promise Theory's assessment mechanisms.
 
 ## Isolation Verification
 
@@ -625,6 +848,8 @@ For Lagrangian optimization with power-law utilities, the optimal ratio satisfie
 
 When β/α ≈ φ (protection slightly exceeds delegation), systems may show enhanced stability. This theoretical prediction suggests φ as a potential optimization attractor under symmetric importance of privacy and utility.
 
+**Promise Theory Perspective**: If the golden ratio emerges, it would represent an optimal *valency allocation* between protection and delegation promises—the balance at which the superagent maximizes its total promise-keeping capability.
+
 **Status**: This is a theoretical prediction derived from optimization analysis. Rigorous mathematical proof of universal convergence remains an open problem requiring further validation.
 
 ## Open Research Question: Data Collection Needed
@@ -648,6 +873,8 @@ When β/α ≈ φ (protection slightly exceeds delegation), systems may show enh
 > Y_C = C(Y_M^{1:t}, G) [Network from M interactions]
 
 By data processing inequality, I(X; Y_R) ≤ I(X; Y_S) and I(X; Y_C) ≤ I(X; Y_M), suggesting bounded additional leakage if these properties emerge.
+
+**Promise Theory Consideration**: N=4 agents would require O(16) interior promises. This complexity is only justified if the emergent properties provide sufficient additional capability. Promise Theory suggests preferring minimal agent counts—tetrahedral emergence would need to demonstrate clear value beyond the N=2 baseline.
 
 **Theoretical Rationale**: 
 
@@ -689,6 +916,8 @@ If tetrahedral emergence occurs in real systems, we would expect to observe:
 - Characterize conditions for specific ratio convergence
    
 - Prove or disprove emergence hypotheses
+   
+- Extend Promise Theory analysis to multi-agent cases
    
 
 - **Practical Extensions**:
@@ -851,6 +1080,19 @@ We have rigorously established:
 
 These results hold unconditionally, independent of computational assumptions (except for ZKP implementations which require standard cryptographic hardness).
 
+## Promise Theory Grounding
+
+We have demonstrated that these results are not merely clever engineering but rigorous implementations of established autonomous systems theory:
+
+- **Autonomy axiom** explains why single agents fail
+- **Superagent structure** describes the First Person system
+- **Irreducible promises** characterize The Gap
+- **Scope separation** grounds the conditional independence requirement
+- **Valency constraints** ground the budget limits
+- **Assessment mechanisms** ground trust formation
+
+This elevates the dual-agent architecture from "novel proposal" to "principled application of established theory."
+
 ## Practical Implementation Pathways
 
 The framework can be deployed through:
@@ -868,6 +1110,7 @@ The framework can be deployed through:
 | Differential Privacy | Statistical noise | Structural separation | Use DP within S |
 | Secure MPC | Distributed computation | Distributed observation | Complementary |
 | Information Flow Control | Taint tracking | Quantitative bounds | Enhanced metrics |
+| Promise Theory | Agent semantics | Privacy architecture | Formal foundation |
 
 ## Open Questions and Theoretical Predictions
 
@@ -880,6 +1123,8 @@ The framework can be deployed through:
 - Does tetrahedral emergence occur naturally or require explicit design?
 
 - How do these bounds compose in multi-agent systems?
+
+- How does Promise Theory extend to systems with more than two operational agents?
 
 **Theoretical Predictions Requiring Validation**:
 
@@ -905,7 +1150,7 @@ The framework can be deployed through:
 
 **Critical Assumptions**:
 
-- Architectural isolation is maintainable
+- Architectural isolation is maintainable (promise-keeping is possible)
 
 - Side channels are bounded and detectable
 
@@ -936,6 +1181,8 @@ The framework can be deployed through:
 - Extend to multi-agent and distributed settings
 
 - Integrate with emerging privacy technologies
+
+- Develop Promise Theory extensions for complex multi-agent privacy systems
 
 # Related Extended Work
 
@@ -989,6 +1236,8 @@ The architectural separation (Y_S ⊥ Y_M) | X can be economically enforced thro
 
 If a First Person attempts to merge agents (violating (Y_S ⊥ Y_M) | X), they lose earning capability in both domains—creating self-enforcing separation through incentive alignment.
 
+**Promise Theory Note**: Economic enforcement creates *incentive compatibility* for promise-keeping. Agents don't just *want* to keep promises—they face economic penalties for violation.
+
 **Signal-Based Sustainability:**
 
 Rather than speculative token sales, sustainable funding emerges from ceremony and signal fees:
@@ -1021,19 +1270,21 @@ What the proven mathematics *enables* is sustainable tokenomics grounded in info
 
 We have established rigorous information-theoretic bounds for dual-agent privacy architectures with enforced separation. The proven results—additive mutual information under separation, reconstruction ceilings below unity, and guaranteed error floors—provide solid foundations for privacy-preserving agent systems.
 
+**Promise Theory Foundation**: We have grounded these results in Promise Theory (Bergstra & Burgess, 2019), demonstrating that the dual-agent structure is not merely an implementation choice but a formal requirement given the autonomy axiom. Single-agent architectures fail because they attempt to promise in domains they cannot independently control. The Swordsman-Mage separation respects the autonomy axiom, and The Gap (R_max < 1) emerges as an irreducible promise of the resulting superagent.
+
 We integrate zero-knowledge proof systems as core implementation primitives, providing concrete constructions using Groth16, PLONK, and Nova protocols. This enables cryptographic rather than merely architectural enforcement of separation and budget constraints, offering stronger guarantees in adversarial settings.
 
 The key insight remains powerful: structural separation with budget constraints creates fundamental privacy guarantees independent of computational assumptions. This offers a principled approach to the agent privacy problem that complements existing methods.
 
-We present theoretical conjectures about golden ratio optimization and tetrahedral emergence, but emphasize these remain unproven mathematical hypotheses with no empirical validation. The framework's value lies entirely in its proven information-theoretic guarantees and the implementation roadmap it provides for future builders.
+We present theoretical conjectures about golden ratio optimization and tetrahedral emergence, but emphasize these remain unproven mathematical hypotheses with no empirical validation. The framework's value lies entirely in its proven information-theoretic guarantees, its Promise Theory foundations, and the implementation roadmap it provides for future builders.
 
 # Version Statement
 
-**Version 3.2**: This edition clearly separates proven information-theoretic results from unproven theoretical conjectures. The core separation bounds, reconstruction ceilings, and error guarantees are rigorously established through formal proof. Golden ratio hypotheses and tetrahedral emergence remain purely theoretical conjectures with no empirical validation—no implementations or observations exist yet. We explicitly distinguish mathematical theorems from speculative predictions and invite collaboration on both formal proof development and experimental validation. For implementation guidance, see the companion *0xagentprivacy Whitepaper*.
+**Version 3.3**: This edition adds Promise Theory foundations (Bergstra & Burgess, 2019) as formal semantic grounding for the dual-agent architecture. The autonomy axiom explains why single-agent approaches fail; superagent structure describes the First Person system; irreducible promises characterize The Gap; scope separation and valency constraints ground the technical requirements. Core information-theoretic results remain rigorous and unchanged from v3.2. Golden ratio hypotheses and tetrahedral emergence remain purely theoretical conjectures with no empirical validation. For implementation guidance, see the companion *0xagentprivacy Whitepaper v4.5* and *Promise Theory Reference v1.0*.
 
 # Acknowledgments
 
-To the 0xagentprivacy project for exploring privacy-first infrastructure. To BGIN for discussions on AI governance. To Kwaai for advancing personal AI sovereignty. To First Person Project for pioneering user-centric identity frameworks. To the reviewers whose feedback strengthened this work.
+To the 0xagentprivacy project for exploring privacy-first infrastructure. To BGIN for discussions on AI governance. To Kwaai for advancing personal AI sovereignty. To First Person Project for pioneering user-centric identity frameworks. To Bergstra & Burgess for the Promise Theory foundations. To the reviewers whose feedback strengthened this work.
 
 ## References
 
@@ -1087,6 +1338,8 @@ To the 0xagentprivacy project for exploring privacy-first infrastructure. To BGI
 
 25. Kothapalli, A., Setty, S., & Tzialla, I. (2021). Nova: Recursive Zero-Knowledge Arguments from Folding Schemes. ePrint Archive 2021/370.
 
+26. **Bergstra, J. A. & Burgess, M. (2019). Promise Theory: Principles and Applications. O'Reilly Media.**
+
 ---
 
 # Appendix
@@ -1105,33 +1358,57 @@ Each conditional term is bounded by the unconditional under independence assumpt
 
 For binary classification with symmetric channels, Fano's bound is nearly tight. For larger alphabets, the bound loosens but remains non-trivial for practical entropy values.
 
+# Promise Theory Notation Summary
+
+| PT Concept | Symbol | 0xagentprivacy Mapping |
+|------------|--------|------------------------|
+| Promise | A --b--> B | Agent A promises behavior b to B |
+| (+) give promise | +b | Swordsman/Mage promises to provide |
+| (-) use promise | -b | Agent promises to use appropriately |
+| Scope | σ(A) | Domain of A's valid promises |
+| Valency | v(A) | A's exclusive promise capacity |
+| Assessment | α(π) | Chronicle verification, RPP compression |
+| Superagent | 𝒜 | First Person + Swordsman + Mage |
+| Irreducible promise | π̄ | R_max < 1 (The Gap) |
+| Coordination promise | C(b) | Spell as shared semantic commitment |
+
 # Implementation Pseudocode
 
 ## Basic Dual-Agent System
 
 ```python
-# Basic dual-agent system
+# Basic dual-agent system with Promise Theory annotations
 class DualAgentPrivacy:
+    """
+    Superagent implementation with interior promises:
+    - S promises protection to First Person
+    - M promises delegation to First Person
+    - S and M promise separation to each other (by not sharing)
+    """
     def __init__(self, entropy_bits, safety_factor=0.7):
         self.H_X = entropy_bits
         self.budget = self.H_X * safety_factor
         
-        # Allocation (example values, not empirically validated)
+        # Valency allocation (example values, not empirically validated)
         # Golden ratio hypothesis suggests C_S ≈ 0.62, C_M ≈ 0.38
-        self.C_S = self.budget * 0.62  
-        self.C_M = self.budget * 0.38
+        self.C_S = self.budget * 0.62  # Swordsman valency
+        self.C_M = self.budget * 0.38  # Mage valency
         
     def enforce_separation(self):
-        """Implementation-specific isolation"""
+        """
+        Enforce scope separation - agents keep promise not to share.
+        Implementation-specific isolation mechanism.
+        """
         # Use TEEs, containers, or formal verification
         pass
         
     def measure_leakage(self):
+        """Assessment of separation promise compliance."""
         I_S = self.estimate_mutual_info(self.Y_S, self.X)
         I_M = self.estimate_mutual_info(self.Y_M, self.X)
         I_joint = self.estimate_mutual_info((self.Y_S, self.Y_M), self.X)
         
-        # Verify separation
+        # Verify separation (promise kept if violation ≈ 0)
         separation_violation = I_joint - I_S - I_M
         return I_S, I_M, separation_violation
 ```
@@ -1139,25 +1416,30 @@ class DualAgentPrivacy:
 ## Adaptive Budget Controller
 
 ```python
-# Adaptive budget controller
+# Adaptive valency controller
 class AdaptiveBudgetController:
+    """
+    Manages valency allocation between Swordsman and Mage.
+    Adjusts based on observed utility and privacy outcomes.
+    """
     def __init__(self, total_budget, initial_ratio=1.5):
-        self.total = total_budget
+        self.total = total_budget  # Total system valency
         self.ratio = initial_ratio
-        self.history = []
+        self.history = []  # Assessment history
         
     def update(self, utility_score, privacy_score):
-        """Adjust allocation based on performance"""
+        """Adjust allocation based on performance assessments."""
         self.history.append((utility_score, privacy_score))
         
         if len(self.history) > 100:
             # Analyze trends, adjust ratio
             if utility_score < threshold:
-                self.ratio *= 0.9  # Give more to Mage
+                self.ratio *= 0.9  # Increase Mage valency
             elif privacy_score < threshold:
-                self.ratio *= 1.1  # Give more to Swordsman
+                self.ratio *= 1.1  # Increase Swordsman valency
                 
     def get_budgets(self):
+        """Return current valency allocation."""
         C_S = self.total * (self.ratio / (1 + self.ratio))
         C_M = self.total * (1 / (1 + self.ratio))
         return C_S, C_M
@@ -1166,30 +1448,36 @@ class AdaptiveBudgetController:
 ## Testing Separation Violations
 
 ```python
-# Separation violation testing
+# Separation promise verification
 def test_separation_violation(system, num_samples=10000):
-    """Empirically verify conditional independence"""
+    """
+    Assess whether separation promise is being kept.
+    This is the assessment mechanism α(π_separation).
+    """
     samples = []
     for _ in range(num_samples):
         x = sample_secret()
         y_s, y_m = system.observe(x)
         samples.append((x, y_s, y_m))
     
-    # Compute I(Y_S; Y_M | X)
+    # Compute I(Y_S; Y_M | X) - should be ≈ 0 if promise kept
     violation = estimate_conditional_mi(samples)
     
-    # Check against threshold
+    # Assessment decision
     if violation > epsilon:
-        return "VIOLATION DETECTED", violation
-    return "SEPARATION MAINTAINED", violation
+        return "PROMISE VIOLATION DETECTED", violation
+    return "SEPARATION PROMISE MAINTAINED", violation
 ```
 
 ## Budget Compliance Monitoring
 
 ```python
-# Budget compliance monitoring
+# Valency compliance monitoring
 def monitor_budget_compliance(agent, budget, window=1000):
-    """Real-time budget monitoring"""
+    """
+    Real-time valency monitoring.
+    Ensures agent doesn't exceed its promise capacity.
+    """
     cumulative_info = 0
     measurements = deque(maxlen=window)
     
@@ -1200,6 +1488,7 @@ def monitor_budget_compliance(agent, budget, window=1000):
         
         cumulative_info = sum(measurements)
         if cumulative_info > budget:
+            # Valency exceeded - trigger remediation
             agent.trigger_throttling()
             log_budget_violation()
 ```

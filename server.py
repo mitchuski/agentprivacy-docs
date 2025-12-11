@@ -13,16 +13,19 @@ from pathlib import Path
 
 PORT = 7000
 
-# Document files in order: (filename, title, description)
+# Document files in order: (filename, title, description, file_type)
+# file_type: 'md' for markdown, 'pdf' for PDF
 DOCUMENTS = [
-    ("0xagentprivacy_README_v1_1.md", "README v1.1 - Overview", "Complete introduction to the privacy-first AI agent architecture and documentation suite"),
-    ("swordsman_mage_whitepaper_v4_3.md", "Whitepaper v4.3 - Technical Architecture", "Dual agent system design: Swordsman (protect) and Mage (delegate)"),
-    ("spellbook_v4_0_1_canonical.md", "Spellbook v4.0.1 - Narrative Framework", "Symbolic language, trust game mechanics, and recovery architecture for sovereign agency"),
-    ("tokenomics_economic_architecture_v2.md", "Tokenomics v2.0 - Economic Architecture", "Economic models, incentive structures, and dignity-based tokenomics for agent ecosystems"),
-    ("VISUAL_ARCHITECTURE_GUIDE_v1_1.md", "Visual Guide v1.1 - Diagrams & Flows", "Visual diagrams, system flows, and architectural illustrations of the agent framework"),
-    ("GLOSSARY_MASTER_v2_1.md", "Glossary v2.1 - Canonical Terminology", "Comprehensive glossary of terms, concepts, and definitions used across all documentation"),
-    ("research_proposal_v1_2.md", "Research Proposal v1.2 - Collaboration Invitation", "Research collaboration framework and invitation for academic and industry partnerships"),
-    ("dualprivacy_researchpaper_v3_3.md", "Research Paper v3.3 - Mathematical Foundations", "Formal mathematical models, proofs, and theoretical foundations of dual privacy mechanisms"),
+    ("0xagentprivacy_README_v1_1.md", "README v1.1 - Overview", "Complete introduction to the privacy-first AI agent architecture and documentation suite", "md"),
+    ("swordsman_mage_whitepaper_v4_4.pdf", "Whitepaper v4.4 - Technical Architecture (PDF)", "Dual agent system design: Swordsman (protect) and Mage (delegate) - LaTeX PDF version", "pdf"),
+    ("swordsman_mage_whitepaper_v4_4.md", "Whitepaper v4.4 - Technical Architecture", "Dual agent system design: Swordsman (protect) and Mage (delegate) - Markdown version", "md"),
+    ("swordsman_mage_whitepaper_v4_3.md", "Whitepaper v4.3 - Technical Architecture", "Dual agent system design: Swordsman (protect) and Mage (delegate)", "md"),
+    ("spellbook_v4_0_1_canonical.md", "Spellbook v4.0.1 - Narrative Framework", "Symbolic language, trust game mechanics, and recovery architecture for sovereign agency", "md"),
+    ("tokenomics_economic_architecture_v2.md", "Tokenomics v2.0 - Economic Architecture", "Economic models, incentive structures, and dignity-based tokenomics for agent ecosystems", "md"),
+    ("VISUAL_ARCHITECTURE_GUIDE_v1_1.md", "Visual Guide v1.1 - Diagrams & Flows", "Visual diagrams, system flows, and architectural illustrations of the agent framework", "md"),
+    ("GLOSSARY_MASTER_v2_1.md", "Glossary v2.1 - Canonical Terminology", "Comprehensive glossary of terms, concepts, and definitions used across all documentation", "md"),
+    ("research_proposal_v1_2.md", "Research Proposal v1.2 - Collaboration Invitation", "Research collaboration framework and invitation for academic and industry partnerships", "md"),
+    ("dualprivacy_researchpaper_v3_3.md", "Research Paper v3.3 - Mathematical Foundations", "Formal mathematical models, proofs, and theoretical foundations of dual privacy mechanisms", "md"),
 ]
 
 class DocsHandler(http.server.SimpleHTTPRequestHandler):
@@ -51,12 +54,37 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(html.encode('utf-8'))
                 return
         
-        # Serve markdown files as HTML
-        if path.endswith('.md') or any(path == doc[0] or path.lower() == doc[0].lower() for doc in DOCUMENTS):
-            # Find the actual file
+        # Serve PDF files
+        if path.endswith('.pdf') or any((path == doc[0] or path.lower() == doc[0].lower()) and doc[3] == 'pdf' for doc in DOCUMENTS):
             filename = path
-            if not filename.endswith('.md'):
-                filename = next((doc[0] for doc in DOCUMENTS if path == doc[0] or path.lower() == doc[0].lower()), None)
+            if not filename.endswith('.pdf'):
+                filename = next((doc[0] for doc in DOCUMENTS if (path == doc[0] or path.lower() == doc[0].lower()) and doc[3] == 'pdf'), None)
+            
+            if filename and os.path.exists(filename):
+                self.send_response(200)
+                self.send_header('Content-type', 'application/pdf')
+                self.send_header('Content-Disposition', f'inline; filename="{filename}"')
+                self.end_headers()
+                
+                # Read and serve PDF file
+                with open(filename, 'rb') as f:
+                    self.wfile.write(f.read())
+                return
+        
+        # Serve markdown files as HTML
+        # Check if path matches any markdown document (handle URL encoding)
+        decoded_path = urllib.parse.unquote(path)
+        if decoded_path.endswith('.md') or any((decoded_path == doc[0] or decoded_path.lower() == doc[0].lower() or path == urllib.parse.quote(doc[0])) and doc[3] == 'md' for doc in DOCUMENTS):
+            # Find the actual file
+            filename = decoded_path
+            if not filename.endswith('.md') or not os.path.exists(filename):
+                # Try to find by matching against DOCUMENTS list
+                for doc in DOCUMENTS:
+                    if doc[3] == 'md' and (decoded_path == doc[0] or decoded_path.lower() == doc[0].lower() or path == urllib.parse.quote(doc[0])):
+                        filename = doc[0]
+                        break
+                else:
+                    filename = None
             
             if filename and os.path.exists(filename):
                 self.send_response(200)
@@ -178,17 +206,25 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
         <div class="docs-grid">
 """
         
-        for filename, title, description in DOCUMENTS:
+        for filename, title, description, file_type in DOCUMENTS:
+            # Only show files that exist
+            if not os.path.exists(filename):
+                continue
+                
             # Use simpler path for README
             if filename == '0xagentprivacy_README_v1_1.md':
                 doc_path = 'README'
             else:
                 doc_path = urllib.parse.quote(filename)
+            
+            # Different link text for PDFs
+            link_text = "View PDF →" if file_type == 'pdf' else "Read Document →"
+            
             html += f"""
             <div class="doc-card">
                 <h2>{title}</h2>
                 <p>{description}</p>
-                <a href="/{doc_path}">Read Document →</a>
+                <a href="/{doc_path}">{link_text}</a>
             </div>
 """
         

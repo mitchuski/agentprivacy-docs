@@ -1,8 +1,8 @@
 # VRC Protocol: Economic Architecture
 ## Privacy-First AI Agent Economics
 
-**Version 2.0 - Coherence Edition**  
-**November 25, 2025**  
+**Version 2.2 - Promise-Economic Edition**  
+**December 11, 2025**  
 **0xagentprivacy Protocol Team**
 
 ---
@@ -11,25 +11,30 @@
 
 The VRC Protocol establishes **tokenomic infrastructure for privacy-first AI agent economies** through a signal-based funding model where comprehension signals generate sustainable revenue, collective Swordsman commitments protect shared standards, and growing network effects enable dual-token economics that enforce architectural separation.
 
+**Promise Theory Foundation:** The economic architecture implements Promise Theory (Bergstra & Burgess, 2019) principles—agents can only promise their own behavior, and economic incentives must align with promise-keeping. The dual-token model creates *incentive compatibility* for the separation promise, ensuring agents face economic penalties for violation rather than relying on trust alone.
+
 **The Natural Progression:**
 1. **Spellbook engagement** → Relationship Proverb Protocol (RPP) compression
-2. **Signal generation** → 0.01 ZEC signal fees create continuous funding
-3. **Swordsman commitments** → Collective protection of compression standards
+2. **Signal generation** → 0.01 ZEC signal fees as *assessment payments*
+3. **Swordsman commitments** → Collective promise-keeping for compression standards
 4. **Network effects** → Pool of persons creates liquidity and value
-5. **Dual token emergence** → SWORD/MAGE tokens enforce agent separation economically
+5. **Dual token emergence** → SWORD/MAGE tokens enforce separation promise economically
 
 **Key Results:**
 - **Signal-based sustainability** via 0.01 ZEC signals (no token sale required)
 - **70:1 compression efficiency** through RPP-enabled VRC coordination
 - **O(n²) network effects** creating superlinear value growth
 - **Collective protection** through Guardian staking model
-- **Dual tokens** that mirror and enforce architectural separation
+- **Dual tokens** that create incentive compatibility for architectural separation
 
 This document describes how sustainable funding enables the economic implementation of privacy-first AI coordination.
 
 ---
 
 ## Table of Contents
+
+### Foundation
+- Promise-Economic Foundations (NEW)
 
 ### Part I: Signal Generation & Funding
 1. The Spellbook Comprehension Flow
@@ -54,6 +59,158 @@ This document describes how sustainable funding enables the economic implementat
 
 ---
 
+# Promise-Economic Foundations
+
+## Why Economics Must Align with Promise Theory
+
+Promise Theory (Bergstra & Burgess, 2019) establishes that **agents can only promise their own behavior**. No agent can make promises on behalf of another. This autonomy axiom has profound economic implications:
+
+```
+Architectural Requirement:
+├─ Swordsman promises protection (its own behavior)
+├─ Mage promises delegation (its own behavior)
+├─ Neither promises on behalf of the other
+├─ Separation maintained through kept promises
+└─ But: How do we ensure promises are kept?
+
+Traditional Approach (Trust-Based):
+├─ "Trust us to maintain separation"
+├─ No verification mechanism
+├─ Central authority required
+├─ Single point of failure
+└─ Promise-keeping uncertain
+
+VRC Approach (Incentive-Compatible):
+├─ Economic rewards align with promise-keeping
+├─ Economic penalties for promise violation
+├─ No central authority needed
+├─ Market forces maintain separation
+└─ Promise-keeping economically rational
+```
+
+## Core Promise-Economic Principles
+
+### 1. Assessment Payments (Signals)
+
+Promise Theory defines **assessment α(π)** as determination whether a promise was kept. In VRC economics:
+
+```
+Signal = Assessment Payment
+├─ 0.01 ZEC demonstrates commitment to assessment
+├─ Proverb derivation = assessment of knowledge transfer promise
+├─ Comprehension test = verification of assessment quality
+├─ Skin-in-game prevents trivial/fake assessments
+└─ Accumulated assessments → trust tier progression
+
+Economic Function:
+├─ Without cost: Trivial assessments, Sybil attacks
+├─ With cost: Only genuine assessments submitted
+├─ Result: Trust signal has meaning
+└─ Assessment quality → network health
+```
+
+### 2. Incentive Compatibility (Dual Tokens)
+
+Promise Theory's autonomy axiom requires that agents *want* to keep promises. Economic design achieves this:
+
+```
+Single Token Problem:
+├─ Both agents earn same token
+├─ Sharing information could increase joint earnings
+├─ Rational actors share → separation breaks
+├─ Economic pressure violates separation promise
+└─ Promise-keeping not incentive-compatible
+
+Dual Token Solution:
+├─ Swordsman earns ONLY SWORD
+├─ Mage earns ONLY MAGE
+├─ Sharing doesn't increase either agent's earnings
+├─ Keeping separation maximizes individual earnings
+├─ Promise-keeping IS incentive-compatible
+└─ Economic pressure reinforces separation promise
+
+Promise Theory: "Incentive compatibility ensures 
+that keeping promises is the rational strategy."
+```
+
+### 3. Promise Bundles (VRCs)
+
+Promise Theory defines **promise bundles** as collections of coordinated promises. VRCs are economic implementations:
+
+```
+VRC as Promise Bundle:
+├─ Agent A promises to B: share meaning, expand correctly
+├─ Agent B promises to A: share meaning, expand correctly
+├─ Both stake MAGE tokens (economic commitment)
+├─ Matching compressions = mutual assessment success
+├─ Coordinated actions = bundle maintained
+└─ Slashing = penalty for promise violation
+
+Economic Value of Bundles:
+├─ One-time formation cost: 100 MAGE stake each
+├─ Reusable across unlimited coordinations
+├─ 70:1 efficiency from bundle reuse
+├─ No re-assessment needed for established VRCs
+└─ Promise bundles create compound efficiency
+```
+
+### 4. Trust as Accumulated Assessment
+
+Promise Theory's trust function (0-1 expectation) maps to economic tiers:
+
+```
+Trust Function Economic Implementation:
+
+| Tier | Signals | Trust Value | Economic Access |
+|------|---------|-------------|-----------------|
+| Blade 🗡️ | 0-50 | 0.0-0.2 | Basic markets |
+| Light 🛡️ | 50-150 | 0.2-0.5 | Intel Pool contributions |
+| Heavy ⚔️ | 150-500 | 0.5-0.8 | Template creation, governance |
+| Dragon 🐉 | 500+ | 0.8-1.0 | Guardian eligibility, proposals |
+
+Why This Works:
+├─ Each signal = assessment event
+├─ Accumulated positive assessments → higher trust
+├─ Higher trust → greater economic opportunity
+├─ Greater opportunity → incentive for continued assessment
+└─ Virtuous cycle: assessment → trust → value → assessment
+```
+
+### 5. Valency Constraints (Budget Enforcement)
+
+Promise Theory's **valency** (exclusive promise capacity) maps to information budgets:
+
+```
+Valency as Economic Constraint:
+├─ C_S = Swordsman's information valency (max revelation)
+├─ C_M = Mage's information valency (max action leakage)
+├─ C_S + C_M < H(X) = System valency constraint
+└─ Economic enforcement: Token issuance bounded by budget
+
+Implementation:
+├─ Chronicle rewards require budget compliance
+├─ Budget violations → no rewards (economic penalty)
+├─ Sustained violations → slashing
+├─ Guardian validation ensures budget accounting
+└─ Valency constraint becomes economically enforced
+```
+
+## Promise-Economic Summary Table
+
+| PT Concept | Economic Implementation | Enforcement Mechanism |
+|------------|------------------------|----------------------|
+| Autonomy Axiom | Dual token separation | Market structure (no swap) |
+| Assessment α(π) | Signal fee (0.01 ZEC) | Skin-in-game cost |
+| Trust Function | Tier progression | Capability gating |
+| Promise Bundle | VRC formation | MAGE stake + slashing |
+| Valency | Budget constraint | Chronicle reward requirements |
+| Coordination Promise | Spell matching | Compression verification |
+| Promise Violation | Slashing | Guardian-enforced penalties |
+
+**The economic architecture doesn't just fund the protocol—it implements Promise Theory principles through market mechanisms, making promise-keeping the rational strategy for all participants.**
+
+---
+
 # Part I: Signal Generation & Funding
 
 ## 1. The Spellbook Comprehension Flow
@@ -72,7 +229,7 @@ Traditional Web3 Onboarding:
 VRC Protocol Onboarding:
 ├─ Read Spellbook (narrative engagement)
 ├─ Understand protocol (through story)
-├─ Prove comprehension (signal)
+├─ Prove comprehension (signal = assessment)
 ├─ Earn participation (chronicles)
 └─ Token value emerges from understanding
 ```
@@ -84,6 +241,8 @@ When people understand the protocol deeply before participating, they:
 2. **Form more meaningful relationships** (VRCs based on mutual comprehension)
 3. **Stay engaged longer** (intrinsic motivation vs. speculation)
 4. **Become better evangelists** (can explain in their own words)
+
+**Promise Theory insight:** Understanding is prerequisite to making meaningful promises. You cannot promise to "protect privacy" or "coordinate effectively" without understanding what those promises entail. The spellbook creates *informed promise-makers*.
 
 ### 1.2 Relationship Proverb Protocol (RPP) as Economic Foundation
 
@@ -124,6 +283,8 @@ Compression Flow:
 
 Compression creates efficiency, efficiency creates value, value sustains the protocol. Without RPP compression, coordination costs make the model unsustainable. With it, coordination becomes nearly free while maintaining privacy.
 
+**Promise Theory insight:** Compression ratio is a *quantified assessment*. High compression (70:1+) indicates strong positive assessment—the promise of knowledge transfer was kept. RPP transforms assessment from subjective to measurable.
+
 ### 1.3 The Signal: Proverb Posting as Proof-of-Comprehension
 
 Rather than buying tokens, participants **signal understanding** through ongoing proof-of-comprehension:
@@ -132,38 +293,38 @@ Rather than buying tokens, participants **signal understanding** through ongoing
 Signal Components:
 ├─ Proverb derivation (contextual understanding)
 ├─ Comprehension test (80%+ required)
-├─ 0.01 ZEC payment (Sybil resistance)
+├─ 0.01 ZEC payment (assessment commitment)
 ├─ Zcash memo field (encrypted commitment)
 └─ Result: Trust tier progression + token earning
 
-What the Signal Proves:
-├─ Understanding (not just memorization)
-├─ Commitment (economic cost, not trivial)
+What the Signal Proves (Promise Theory):
+├─ Assessment capability (can evaluate promises)
+├─ Commitment (skin-in-game, not trivial)
 ├─ Continued engagement (ongoing, not one-time)
-└─ Readiness (prepared to participate meaningfully)
+└─ Readiness (prepared to make/keep promises)
 ```
 
 **Terminology Distinction:**
 
-| Type | Cost | Frequency | Purpose |
+| Type | Cost | Frequency | PT Role |
 |------|------|-----------|---------|
-| **Ceremony** | 1 ZEC ($500) | One-time | Genesis of agent pair (Swordsman + Mage) |
-| **Signal** | 0.01 ZEC ($5) | Ongoing | Proof of continued comprehension |
+| **Ceremony** | 1 ZEC ($500) | One-time | Genesis promise (agent pair creation) |
+| **Signal** | 0.01 ZEC ($5) | Ongoing | Assessment payment (proof of comprehension) |
 
 **Why 0.01 ZEC specifically:**
 
 ```
 Fee Analysis (at $500/ZEC = $5.00 per signal):
 ├─ Meaningful economic commitment
-├─ Strong Sybil resistance
+├─ Strong Sybil resistance (fake assessments unprofitable)
 ├─ Accessible participation threshold
 └─ Generates sustainable protocol revenue
 
-Comparison:
-├─ ICO model: Speculation-driven, upfront extraction
-├─ Freemium model: Surveillance-driven, continuous extraction
-├─ Signal model: Comprehension-driven, aligned incentives
-└─ VRC model uniquely sustainable without extraction
+Promise Theory:
+├─ Assessment without cost → trivial, untrustworthy
+├─ Assessment with cost → meaningful signal
+├─ Cost filters for genuine engagement
+└─ Result: Assessments worth trusting
 ```
 
 ---
@@ -185,7 +346,7 @@ Per Signal (0.01 ZEC at $500/ZEC = $5.00):
 
 38.2% ($1.91) → Shielded Pool
 ├─ Protocol operations
-├─ Guardian rewards
+├─ Guardian rewards (promise-keeper compensation)
 ├─ Development fund
 ├─ Ecosystem treasury
 └─ Private allocation
@@ -200,11 +361,11 @@ derived from the golden ratio (φ ≈ 1.618).
 
 1. **61.8% Transparent** - Public accountability. Enables market function, price discovery, visible ecosystem health metrics. The golden ratio majority ensures robust public liquidity.
 
-2. **38.2% Shielded** - Operational privacy. Covers infrastructure costs, security audits, guardian compensation, development without surveillance.
+2. **38.2% Shielded** - Operational privacy. Covers infrastructure costs, security audits, guardian compensation (promise-keeper rewards), development without surveillance.
 
 ### 2.2 The Funding Mechanism at Scale
 
-**No token sale required. No speculation needed. Just signals.**
+**No token sale required. No speculation needed. Just signals (assessments).**
 
 ```
 Monthly Signal Volumes:
@@ -313,6 +474,7 @@ Alignment: Deep philosophical and technical convergence
 │ Frequency: Once per First Person per ecosystem     │
 │ Requires: Personhood credential + comprehension    │
 │ Creates: Dual agent pair (Swordsman + Mage NFTs)   │
+│ PT Role: Genesis promise - commitment to separation │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -323,7 +485,7 @@ Alignment: Deep philosophical and technical convergence
 │ PHASE 1: COMPREHENSION (10-30 minutes)             │
 ├─────────────────────────────────────────────────────┤
 │ 1. Read Spellbook content (new Acts, Tales)        │
-│ 2. Form a proverb (contextual understanding)       │
+│ 2. Form a proverb (contextual assessment)          │
 │ 3. Complete comprehension test (80%+ score)        │
 │ 4. Generate signal inscription (JSON)              │
 │    Format: {eco, proof_hash, timestamp}            │
@@ -348,6 +510,8 @@ Alignment: Deep philosophical and technical convergence
 │ 9. Confirms payment received                       │
 │ 10. Updates trust tier progression                 │
 │ 11. Issues token rewards based on chronicle        │
+│                                                     │
+│ PT Role: Assessment verification α(signal)         │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -398,6 +562,8 @@ Network Value:
 ├─ Contribution to protocol sustainability
 ├─ Demonstration of commitment to ecosystem
 └─ Incremental strengthening of network effects
+
+PT Insight: Each new participant adds promise-making capacity
 ```
 
 **The 100th signal creates:**
@@ -428,6 +594,8 @@ Network Value (massive):
 ├─ Network effects creating superlinear value (n²)
 ├─ Ecosystem fully sustainable from signal fees
 └─ Cross-ecosystem treaties become viable
+
+PT Insight: Promise network becomes self-reinforcing
 ```
 
 ### 3.2 Liquidity Emerges from Participation
@@ -453,6 +621,8 @@ Signal-Based Model:
 ├─ Utility creates demand (tokens enable coordination)
 ├─ Liquidity emerges naturally (people need tokens for VRCs)
 └─ Result: Utility creates liquidity organically
+
+PT Insight: Promise-keeping creates value → value creates liquidity
 ```
 
 **The liquidity progression:**
@@ -462,7 +632,7 @@ Phase 1: No Liquidity Needed (0-1,000 First Persons)
 ├─ Tokens not yet issued (NFTs only)
 ├─ People earning through chronicles
 ├─ Building reputation and relationships
-└─ No trading, only earning
+└─ No trading, only earning (promise accumulation)
 
 Phase 2: Utility Emerges (1,000-10,000 First Persons)
 ├─ First VRC formations begin (need MAGE tokens)
@@ -494,8 +664,8 @@ Traditional Sequence:
 
 VRC Protocol Sequence:
 1. Deploy Spellbook (educational content)
-2. Signals generate revenue (activity-based funding)
-3. Build pool of persons (network effects)
+2. Signals generate revenue (assessment-based funding)
+3. Build pool of persons (promise network)
 4. Issue tokens when utility exists (demand precedes supply)
 5. Sustain operations from ongoing signals (activity = revenue)
 ```
@@ -540,6 +710,9 @@ Funding Mechanism Sustainability:
 ├─ Year 3: Self-sustaining
 │   └─ Grants 0%, signals 100%+ (surplus)
 └─ Long-term: Protocol funds ecosystem development
+
+PT Insight: Activity generates revenue → revenue enables infrastructure
+           → infrastructure enables activity (virtuous promise cycle)
 ```
 
 ---
@@ -576,12 +749,15 @@ Anarchic Model:
 ├─ Compression drifts and breaks
 └─ Network effects collapse
 
-VRC Model: Collective Protection
+VRC Model: Collective Promise-Keeping
 ├─ Swordsmen collectively maintain standards
 ├─ Economic stake creates accountability
 ├─ Distributed responsibility
 ├─ Aligned with sovereignty mission
 └─ Guardian model emerges
+
+PT Insight: Guardians are collective promise-keepers
+           Their stake is commitment to the coordination promise
 ```
 
 ### 4.2 Swordsman as Collective Infrastructure
@@ -601,6 +777,9 @@ Extension to Collective:
 ├─ Spellbook is collective infrastructure
 ├─ Guardian role: Protect spellbook integrity
 └─ Natural alignment of individual + collective protection
+
+PT Insight: Guardians make coordination promises C(spellbook)
+           to maintain consistent interpretation
 ```
 
 **The Guardian progression:**
@@ -631,6 +810,10 @@ Guardian Status (Optional):
 ├─ Validate chronicle quality
 ├─ Protect spellbook integrity
 └─ Earn Guardian rewards
+
+PT Role: Guardian = Professional promise-keeper
+        Stake = Commitment to coordination promise
+        Slashing = Penalty for promise violation
 ```
 
 ### 4.3 The Guardian Economic Model
@@ -641,22 +824,25 @@ Guardian Status (Optional):
 Guardian Commitment:
 ├─ Stake: 10,000 SWORD tokens (significant capital)
 ├─ Duration: Minimum 6 months lock-up
-├─ Responsibilities:
+├─ Responsibilities (Promises):
 │   ├─ Maintain compression reconstruction ability
 │   ├─ Validate chronicle submissions
 │   ├─ Review spell proposals (new compressions)
 │   ├─ Participate in governance
 │   └─ Defend spellbook quality
-├─ Rewards:
+├─ Rewards (Promise-keeping compensation):
 │   ├─ Share of chronicle validation fees
 │   ├─ Governance participation tokens
 │   ├─ Reputation as trusted Guardian
 │   └─ Priority VRC matching
-└─ Slashing:
+└─ Slashing (Promise violation penalty):
     ├─ 30% slash if reconstruction ability degrades
     ├─ 20% slash if validation quality drops
     ├─ 10% slash if governance participation lapses
     └─ Community can vote to remove Guardian status
+
+PT Insight: Slashing creates economic cost for promise violation
+           making promise-keeping the rational strategy
 ```
 
 **Critical ratio: SWORD tokens per spellbook "act"**
@@ -673,7 +859,7 @@ Example:
 └─ Higher ratio = stronger collective protection
 
 Why this matters:
-├─ More SWORD staked = More skin in game
+├─ More SWORD staked = More skin in game for promise-keeping
 ├─ More Guardians = More distributed verification
 ├─ Higher protection = Higher trust in compression
 ├─ Higher trust = More VRC formations
@@ -708,7 +894,7 @@ Collective Privacy Infrastructure (VRC Protocol):
 
 ```
 Guardian Incentives:
-├─ Earn fees for validation work
+├─ Earn fees for validation work (promise-keeping compensation)
 ├─ SWORD tokens appreciate with ecosystem health
 ├─ Reputation increases earning potential
 ├─ Governance influence grows
@@ -721,8 +907,8 @@ Individual Incentives:
 ├─ Privacy improves with participation
 └─ Aligned: More chronicles = Better privacy for all
 
-Result: Positive-sum game
-├─ Guardians maintain infrastructure
+Result: Positive-sum promise network
+├─ Guardians maintain infrastructure (keep coordination promises)
 ├─ Individuals create value through participation
 ├─ Network effects multiply value for everyone
 └─ No central extraction point
@@ -740,13 +926,13 @@ Once signals create a pool of persons, **relationships become the value layer**:
 The Progression:
 1. Spellbook comprehension (individual learning)
    ↓
-2. Signal submission (prove understanding)
+2. Signal submission (prove understanding = assessment)
    ↓
 3. Trust tier progression (build reputation)
    ↓
 4. Chronicle generation (earn tokens)
    ↓
-5. VRC formation (bilateral trust)
+5. VRC formation (bilateral promise bundle)
    ↓
 6. Network effects (superlinear value)
 ```
@@ -774,9 +960,9 @@ Matching Detected:
 ├─ Proves bilateral comprehension
 ├─ Enables VRC formation
 
-VRC Formation:
+VRC Formation (Promise Bundle Creation):
 ├─ Both stake 100 MAGE tokens (200 total)
-├─ 30% slash risk if expansion test fails
+├─ 30% slash risk if expansion test fails (promise violation penalty)
 ├─ Verification: Can both expand spell to coherent explanation?
 ├─ Success: VRC formed, stakes returned after 10 coordinations
 └─ Failure: 30% slashed, must re-attempt
@@ -799,7 +985,7 @@ Agent A needs Agent B to perform task:
 ├─ Time: ~5 minutes
 └─ Error rate: ~20% (context misalignment)
 
-With VRC (Compressed Coordination):
+With VRC (Compressed Coordination via Promise Bundle):
 Agent A invokes spell with Agent B:
 ├─ Spell invocation: ⚔️⊥🔮|🗝️ (7 tokens)
 │   └─ Entire context compressed into cipher
@@ -815,6 +1001,9 @@ Efficiency Gains:
 ├─ Time reduction: 90% (5 min → 30 sec)
 ├─ Quality improvement: 75% fewer errors
 └─ Savings per coordination: $9.86
+
+PT Insight: Promise bundle reuse creates compound efficiency
+           One-time assessment → unlimited coordinations
 ```
 
 **Individual value capture:**
@@ -845,7 +1034,7 @@ Annual Savings:
 
 ### 5.3 O(n²) Network Effects
 
-**Metcalfe's Law applies to VRCs:**
+**Metcalfe's Law applies to VRCs (promise networks):**
 
 ```
 Relationship Formation Potential:
@@ -915,14 +1104,14 @@ Example (3 ecosystems, 1,000 members each):
 └─ Per-person increase: $500 → $750/year
 ```
 
-**Why treaties work:**
+**Why treaties work (PT Insight: Promise portability):**
 
 ```
 VRC Portability:
 ├─ Form VRC in Medical Research Guild
 ├─ Use same VRC in Privacy Activist Guild
 ├─ Use same VRC in Developer Guild
-└─ One relationship, multiple contexts
+└─ One relationship (promise bundle), multiple contexts
 
 Intel Pool Sharing:
 ├─ Medical guild shares privacy protocols
@@ -943,7 +1132,7 @@ Collective Benefit:
 
 ### 6.1 Before Dual Tokens: What Chronicles Actually Do
 
-**Chronicles are the activity layer:**
+**Chronicles are the activity layer (promise-keeping evidence):**
 
 ```
 Chronicle Types:
@@ -958,6 +1147,9 @@ What Chronicles Create:
 ├─ Trust building (progressive reputation)
 ├─ Token earning (rewards activity)
 └─ Ecosystem health (more chronicles = stronger network)
+
+PT Insight: Chronicles are assessment evidence
+           Each chronicle = proof of promise kept
 ```
 
 **The chronicle submission flow:**
@@ -975,7 +1167,7 @@ Step 2: Chronicle Submission
 ├─ Oracle validates ZK proof
 └─ Enters pending validation queue
 
-Step 3: Guardian Validation
+Step 3: Guardian Validation (Assessment)
 ├─ Guardians review proof
 ├─ Verify quality metrics
 ├─ Check budget compliance (C_S + C_M < H(X))
@@ -988,6 +1180,10 @@ Step 4: Reward Issuance
 ├─ Update budget tracking
 ├─ Increment signal count
 └─ Update trust tier if threshold reached
+
+PT Insight: Guardian validation = assessment α(chronicle)
+           Approval = positive assessment → rewards
+           Rejection = negative assessment → no rewards
 ```
 
 ### 6.2 Progressive Issuance Formula
@@ -1002,7 +1198,7 @@ reward = base_reward
        × vrc_multiplier              // Active relationships
        × cross_ecosystem_bonus        // Multi-guild participation
        × phi_proximity_bonus          // Optimal balance (exploratory)
-       × trust_tier_multiplier        // Reputation level
+       × trust_tier_multiplier        // Reputation level (trust function)
        × progressive_decay            // Long-term sustainability
 ```
 
@@ -1019,7 +1215,7 @@ reward = base_reward
 ├─ remaining_reserve / total_reserve
 ├─ Year 1 (90% reserve): 0.9x multiplier
 ├─ Year 5 (10% reserve): 0.1x multiplier
-└─ Rewards early builders
+└─ Rewards early builders (early promise-makers)
 
 3. Quality Score:
 ├─ (impact + verifiability + novelty) / 3
@@ -1034,41 +1230,41 @@ reward = base_reward
 ├─ Too many delegation? Boost privacy
 └─ Self-balancing ecosystem
 
-5. VRC Multiplier:
+5. VRC Multiplier (Promise Bundle Bonus):
 ├─ 1 + (num_active_vrcs × 0.1)
 ├─ 0 VRCs: 1.0x
 ├─ 10 VRCs: 2.0x
 ├─ 20 VRCs: 3.0x (cap)
 └─ Rewards relationship formation
 
-6. Trust Tier Multiplier:
-├─ Blade (0-50): 1.0x
-├─ Light (50-150): 1.5x
-├─ Heavy (150-500): 2.0x
-├─ Dragon (500+): 3.0x
+6. Trust Tier Multiplier (Trust Function):
+├─ Blade (0-50): 1.0x [trust 0.0-0.2]
+├─ Light (50-150): 1.5x [trust 0.2-0.5]
+├─ Heavy (150-500): 2.0x [trust 0.5-0.8]
+├─ Dragon (500+): 3.0x [trust 0.8-1.0]
 └─ Rewards progressive reputation
 ```
 
 ### 6.3 Trust Tier Progression
 
-**The tier system:**
+**The tier system (Trust Function Implementation):**
 
 ```
-🗡️ Blade Tier (0-50 signals):
+🗡️ Blade Tier (0-50 signals) [Trust: 0.0-0.2]:
 ├─ Basic participation rights
 ├─ Form up to 5 VRCs
 ├─ Read-only Intel Pool access
 ├─ 1.0x reward multiplier
 └─ Focus: Learn compression standards
 
-🛡️ Light Tier (50-150 signals):
+🛡️ Light Tier (50-150 signals) [Trust: 0.2-0.5]:
 ├─ Consistent engagement demonstrated
 ├─ Form up to 10 VRCs
 ├─ Contribute to Intel Pools
 ├─ 1.5x reward multiplier
 └─ Focus: Active contribution
 
-⚔️ Heavy Tier (150-500 signals):
+⚔️ Heavy Tier (150-500 signals) [Trust: 0.5-0.8]:
 ├─ Proven reliability
 ├─ Form up to 20 VRCs
 ├─ Create Intel Pool templates
@@ -1076,7 +1272,7 @@ reward = base_reward
 ├─ 2.0x reward multiplier
 └─ Focus: Expertise demonstration
 
-🐲 Dragon Tier (500+ signals):
+🐲 Dragon Tier (500+ signals) [Trust: 0.8-1.0]:
 ├─ Ecosystem leadership
 ├─ Unlimited VRC formation
 ├─ Custom spell creation
@@ -1134,7 +1330,7 @@ Traditional Token Launch:
 └─ Pump-and-dump dynamics
 
 Progressive Chronicle Issuance:
-├─ Tokens earned through demonstrated behavior
+├─ Tokens earned through demonstrated behavior (promise-keeping)
 ├─ Early participants get higher rewards (scarcity)
 ├─ Activity = earning, not buying
 ├─ Token supply matches network growth
@@ -1187,6 +1383,12 @@ The Challenge:
 ├─ But economic incentives could break this:
 │   └─ If same token rewards both agents, economic pressure to merge
 └─ Need: Economic mechanism that enforces separation
+
+Promise Theory Framing:
+├─ Separation is a PROMISE the architecture makes
+├─ Promises require incentive compatibility to be reliable
+├─ Single-token economics violates incentive compatibility
+└─ Dual tokens CREATE incentive compatibility
 ```
 
 **Why single tokens fail:**
@@ -1203,13 +1405,13 @@ Economic Pressure:
 ├─ R_max → 1 (reconstruction ceiling fails)
 └─ Mathematical guarantees collapse
 
-The Corruption Path:
-1. Single token creates unified incentive
-2. Unified incentive encourages information sharing
-3. Information sharing breaks conditional independence
-4. Conditional independence was the privacy guarantee
-5. Privacy guarantee collapses
-6. Protocol becomes surveillance enabler
+Promise Theory Analysis:
+├─ Single token = unified incentive
+├─ Unified incentive encourages information sharing
+├─ Information sharing = separation promise violation
+├─ Separation promise was the privacy guarantee
+├─ Promise-keeping NOT incentive-compatible
+└─ Architecture corrupted by economics
 ```
 
 ### 7.2 Dual Tokens as Separation Enforcement
@@ -1237,6 +1439,11 @@ The Enforcement Mechanism:
 ├─ Can't convert directly (no swap pool)
 ├─ Must earn in correct domain
 └─ Economic incentives align with architectural separation
+
+Promise Theory: This is INCENTIVE COMPATIBILITY
+├─ Keeping separation promise = maximizes earnings
+├─ Violating separation promise = reduces earnings
+└─ Rational actors WANT to keep the promise
 ```
 
 **Why this works:**
@@ -1249,21 +1456,22 @@ Economic Pressure (Swordsman):
 ├─ Sharing info with Mage doesn't help earn SWORD
 ├─ In fact, sharing would reduce privacy quality
 ├─ Best strategy: Maximize protection, maintain separation
-└─ Aligned with architectural goals
+└─ Aligned with architectural goals = Promise-keeping
 
 Economic Pressure (Mage):
 ├─ Earn MAGE through coordination quality
 ├─ Sharing with Swordsman doesn't help earn MAGE
 ├─ In fact, privacy violations would damage reputation
 ├─ Best strategy: Maximize coordination, respect boundaries
-└─ Aligned with architectural goals
+└─ Aligned with architectural goals = Promise-keeping
 
 Result:
 ├─ Economic incentives enforce separation
 ├─ No central enforcement needed
 ├─ Market forces maintain architecture
 ├─ Mathematical guarantees hold
-└─ Privacy preserved through economics
+├─ Privacy preserved through economics
+└─ Promise-keeping is the rational strategy
 ```
 
 ---
@@ -1282,10 +1490,10 @@ SWORD Token:
 ├─ Standard: ERC-20 compatible
 └─ Special: Shielded pool integration
 
-Purpose:
-├─ Reward privacy protection behavior
+Purpose (Promise Theory Role):
+├─ Reward privacy protection behavior (promise-keeping compensation)
 ├─ Enable privacy market transactions
-├─ Guardian staking (10,000 SWORD minimum)
+├─ Guardian staking (10,000 SWORD = promise commitment)
 ├─ Governance participation
 └─ Ecosystem health indicator
 ```
@@ -1298,59 +1506,79 @@ SWORD Token Distribution:
 Chronicle Rewards:     600,000 (60%)
 ├─ Progressive issuance over 10 years
 ├─ Privacy chronicles only
-├─ Quality-weighted rewards
-└─ Decays asymptotically
+├─ Earned through demonstrated protection
+└─ Rewards behavior, not speculation
 
 Ecosystem Treasury:    200,000 (20%)
-├─ Governance controlled
-├─ Grants and initiatives
+├─ Governance-controlled
+├─ Long-term sustainability
 ├─ Emergency reserves
-└─ Long-term sustainability
+└─ Ecosystem grants
 
 Protocol Development:  100,000 (10%)
-├─ Infrastructure development
-├─ Security audits
-├─ Oracle operations
-└─ Released as-needed
+├─ Core team allocation
+├─ Milestone-based release
+├─ Tool development incentives
+└─ Security audits
 
 Early Contributors:     50,000 (5%)
 ├─ 12-month linear vesting
 ├─ 3-month cliff
-├─ For founding team and advisors
-└─ Aligned long-term incentives
+├─ Rewards genesis builders
+└─ Locked until ecosystem launch
 
 Liquidity Provision:    50,000 (5%)
-├─ Initial DEX liquidity
 ├─ 12-month lock minimum
-├─ Enables price discovery
-└─ Protocol-controlled
+├─ DEX pools
+├─ Market maker incentives
+└─ Released with network maturity
 ```
 
-### 8.3 Privacy Market
+### 8.3 Earning SWORD
 
-**Where SWORD tokens create value:**
+**What earns SWORD tokens:**
 
 ```
-Privacy Tools (Buy with SWORD):
-├─ Advanced boundary templates
-├─ Custom privacy configurations
-├─ Premium shielded storage
-├─ Enhanced anonymity sets
-└─ Priority privacy pool access
+Privacy Protection Chronicles:
+├─ Boundary enforcement (10-50 SWORD)
+├─ Selective disclosure (20-60 SWORD)
+├─ Budget optimization (30-80 SWORD)
+├─ Privacy recovery (50-100 SWORD)
+└─ Pattern concealment (40-90 SWORD)
 
-Privacy Services (Earn SWORD):
-├─ Chronicle validation
-├─ Guardian duties
-├─ Privacy tool creation
-├─ Audit services
-└─ Training and education
+Guardian Activities:
+├─ Chronicle validation (5-20 SWORD)
+├─ Spell proposal review (10-30 SWORD)
+├─ Governance participation (15-40 SWORD)
+├─ Compression audit (20-50 SWORD)
+└─ Ecosystem defense (50-100 SWORD)
 
-Market Dynamics:
-├─ Demand: First Persons want privacy tools
-├─ Supply: Guardians and creators provide tools
-├─ Price: Market-determined through utility
-├─ Growth: More tools = more demand = higher value
-└─ Sustainability: Utility-driven, not speculation
+VRC Privacy Contributions:
+├─ Privacy-focused VRC formation (50-100 SWORD)
+├─ Intel Pool privacy enhancement (30-70 SWORD)
+├─ Template creation (100-200 SWORD)
+└─ Cross-ecosystem privacy treaty (200-500 SWORD)
+```
+
+### 8.4 Using SWORD
+
+**What SWORD tokens buy:**
+
+```
+Privacy Market:
+├─ Premium privacy tools (pay in SWORD)
+├─ Enhanced anonymity features (pay in SWORD)
+├─ Priority protection services (pay in SWORD)
+└─ Custom Swordsman configurations (pay in SWORD)
+
+Guardian Staking:
+├─ Stake 10,000 SWORD to become Guardian
+├─ Unlock validation rewards
+├─ Governance proposal rights
+└─ Elite network access
+
+Note: Cannot buy delegation services with SWORD
+      This enforces domain separation
 ```
 
 ---
@@ -1361,7 +1589,7 @@ Market Dynamics:
 
 ```
 MAGE Token:
-├─ Name: Mage Delegation Token
+├─ Name: Mage Coordination Token
 ├─ Symbol: MAGE
 ├─ Supply: 1,000,000 per ecosystem (fixed)
 ├─ Decimals: 18
@@ -1369,12 +1597,12 @@ MAGE Token:
 ├─ Standard: ERC-20 compatible
 └─ Special: VRC staking integration
 
-Purpose:
-├─ Reward delegation/coordination behavior
+Purpose (Promise Theory Role):
+├─ Reward delegation coordination behavior (promise-keeping compensation)
 ├─ Enable delegation market transactions
-├─ VRC formation staking (100 MAGE each)
-├─ Governance participation
-└─ Ecosystem coordination indicator
+├─ VRC formation staking (promise bundle commitment)
+├─ Coordination market participation
+└─ Network effect indicator
 ```
 
 ### 9.2 Distribution & Vesting
@@ -1385,147 +1613,164 @@ MAGE Token Distribution:
 Chronicle Rewards:     600,000 (60%)
 ├─ Progressive issuance over 10 years
 ├─ Delegation chronicles only
-├─ Quality-weighted rewards
-└─ Decays asymptotically
+├─ Earned through coordination quality
+└─ Rewards network contributions
 
 Ecosystem Treasury:    200,000 (20%)
-├─ Governance controlled
-├─ VRC incentive programs
-├─ Cross-ecosystem treaties
-└─ Long-term sustainability
+├─ Governance-controlled
+├─ Long-term sustainability
+├─ Emergency reserves
+└─ Ecosystem grants
 
 Protocol Development:  100,000 (10%)
-├─ Integration development
-├─ Agent tooling
-├─ API infrastructure
-└─ Released as-needed
+├─ Core team allocation
+├─ Milestone-based release
+├─ Tool development incentives
+└─ Integration partnerships
 
 Early Contributors:     50,000 (5%)
 ├─ 12-month linear vesting
 ├─ 3-month cliff
-├─ For founding team and advisors
-└─ Aligned long-term incentives
+├─ Rewards genesis builders
+└─ Locked until ecosystem launch
 
 Liquidity Provision:    50,000 (5%)
-├─ Initial DEX liquidity
 ├─ 12-month lock minimum
-├─ Enables price discovery
-└─ Protocol-controlled
+├─ DEX pools
+├─ Market maker incentives
+└─ Released with network maturity
 ```
 
-### 9.3 Delegation Market
+### 9.3 Earning MAGE
 
-**Where MAGE tokens create value:**
+**What earns MAGE tokens:**
 
 ```
-Delegation Tools (Buy with MAGE):
-├─ Advanced coordination templates
-├─ Multi-agent orchestration
-├─ Premium VRC matching
-├─ Cross-ecosystem coordination
-└─ AI agent integrations
+Delegation Coordination Chronicles:
+├─ Task coordination (10-50 MAGE)
+├─ Multi-agent orchestration (30-80 MAGE)
+├─ Cross-ecosystem delegation (50-100 MAGE)
+├─ Complex workflow completion (40-90 MAGE)
+└─ Efficiency optimization (20-60 MAGE)
 
-Delegation Services (Earn MAGE):
-├─ Chronicle creation
-├─ VRC formation assistance
-├─ Coordination optimization
-├─ Template development
-└─ Integration support
+VRC Activities:
+├─ VRC formation (50-150 MAGE)
+├─ Relationship maintenance (10-30 MAGE)
+├─ Treaty negotiation (100-300 MAGE)
+├─ Guild coordination (50-150 MAGE)
+└─ Network building (30-80 MAGE)
 
-Market Dynamics:
-├─ Demand: First Persons want coordination tools
-├─ Supply: Mages and creators provide tools
-├─ Price: Market-determined through utility
-├─ Growth: More coordination = more demand = higher value
-└─ Sustainability: Utility-driven, not speculation
+Intel Pool Contributions:
+├─ Quality knowledge sharing (20-60 MAGE)
+├─ Template creation (100-200 MAGE)
+├─ Research synthesis (50-120 MAGE)
+└─ Protocol documentation (30-70 MAGE)
+```
+
+### 9.4 Using MAGE
+
+**What MAGE tokens buy:**
+
+```
+Delegation Market:
+├─ Agent coordination services (pay in MAGE)
+├─ Complex task orchestration (pay in MAGE)
+├─ Premium VRC features (pay in MAGE)
+└─ Cross-ecosystem access (pay in MAGE)
+
+VRC Staking (Promise Bundle Commitment):
+├─ Stake 100 MAGE per VRC formation
+├─ Returned after 10 successful coordinations
+├─ 30% slashing for expansion test failure
+└─ Incentivizes quality relationships
+
+Note: Cannot buy privacy services with MAGE
+      This enforces domain separation
 ```
 
 ---
 
 ## 10. Golden Ratio Hypothesis
 
-### 10.1 The Observation (Speculative)
+### 10.1 The φ Conjecture
 
-**Status: 🔬 SPECULATIVE (10% confidence per Research Proposal v1.2)**
-
-During analysis of optimal budget allocation, a curious pattern emerged:
+**Theoretical prediction (speculative):**
 
 ```
-Theoretical Optimization:
-├─ Objective: Maximize coordination value
-├─ Constraint: C_S + C_M < H(X)
-├─ Variable: Ratio C_M / C_S
+If optimal allocation exists, the ratio between Mage and Swordsman 
+budgets may converge toward the golden ratio:
 
-Observed Pattern:
-├─ Optimal ratio appears to converge toward φ ≈ 1.618
-├─ This is the golden ratio
-├─ Appears in: Fibonacci sequences, nature, aesthetics
-└─ Coincidence or meaningful?
+C_M / C_S → φ ≈ 1.618
+
+Practical implications:
+├─ Swordsman budget (protection): ~38.2% of total
+├─ Mage budget (delegation): ~61.8% of total
+├─ Mirrors the transparent/shielded pool split
+└─ Suggests deep structural optimization
+
+Promise Theory Connection:
+├─ Optimal promise allocation may follow φ
+├─ Protection vs delegation capacity balanced
+├─ System stability at golden ratio
+└─ Requires empirical validation
 ```
 
-**The golden ratio in our context:**
+### 10.2 Economic Implementation
+
+**How φ-proximity bonuses work:**
 
 ```
-If C_M / C_S → φ ≈ 1.618, then:
+Chronicle Reward Formula Addition:
 
-Swordsman Budget: C_S ≈ 38.2% of total
-Mage Budget: C_M ≈ 61.8% of total
+phi_proximity_bonus = calculate_phi_bonus(
+    participant_sword_balance,
+    participant_mage_balance,
+    target_ratio = 1.618
+)
 
-Interpretation:
-├─ Mage needs more information to coordinate effectively
-├─ Swordsman protects with less (boundaries require less data)
-├─ The ratio emerges from optimization, not design choice
-└─ IF this is real, it has profound implications
+Bonus Range: 1.0x - 1.2x
+├─ Ratio = 1.618 (optimal): 1.2x bonus
+├─ Ratio = 1.0 (equal): 1.0x (no bonus)
+├─ Ratio = 2.0 (skewed): 0.95x (slight penalty)
+└─ Encourages balanced participation
+
+Why This Matters:
+├─ Tests golden ratio hypothesis empirically
+├─ Creates market signal for optimal allocation
+├─ Self-correcting economic mechanism
+├─ Data collection for theoretical validation
+└─ If φ is not optimal, market will reveal it
+
+PT Insight: φ-proximity bonus tests whether optimal
+           promise capacity allocation follows φ
 ```
 
-### 10.2 Why This Might Be Meaningful
+### 10.3 Speculative Status
+
+**Critical acknowledgment:**
 
 ```
-Arguments FOR Significance:
-├─ Golden ratio appears in optimization across domains
-├─ Information-theoretic optimization often yields elegant ratios
-├─ Would explain "why two agents, not three?"
-├─ Provides natural parameter for protocol calibration
-└─ Connects to broader mathematical harmony
+STATUS: 🔬 SPECULATIVE HYPOTHESIS
 
-Arguments AGAINST Significance:
-├─ Could be numerical coincidence
-├─ Small sample size in theoretical analysis
-├─ Real-world systems rarely achieve theoretical optima
-├─ Pattern-matching bias is a known cognitive trap
-└─ Needs empirical validation across many systems
+What We Know:
+├─ Separation requires budget constraint C_S + C_M < H(X)
+├─ Budget allocation affects privacy-utility tradeoff
+├─ Some allocation is optimal (mathematically guaranteed)
+└─ φ appears in many optimization contexts
+
+What We Don't Know:
+├─ Whether φ is the optimal ratio (unproven)
+├─ Whether any universal optimal exists (uncertain)
+├─ Whether φ emerges naturally or requires forcing (unknown)
+└─ Whether domain-specific optima vary (likely)
+
+Research Agenda:
+├─ Collect empirical data on allocation patterns
+├─ Test φ-proximity incentives
+├─ Compare outcomes across ecosystems
+├─ Publish findings regardless of result
+└─ Let market and mathematics determine truth
 ```
-
-### 10.3 Built-In Validation Mechanism
-
-**Rather than assume, we test:**
-
-```
-Phi-Proximity Bonus (Exploratory):
-├─ If chronicle budget allocation approaches φ ratio:
-│   └─ Small bonus applied (5-10% increase)
-├─ Tracks allocation patterns across ecosystem
-├─ Collects data on which ratios correlate with success
-└─ Empirical validation of theoretical prediction
-
-Data Collection:
-├─ Chronicle budget allocations (C_S, C_M values)
-├─ Coordination efficiency metrics
-├─ Network effect strength indicators
-├─ Reconstruction resistance measurements
-└─ Correlation analysis over time
-
-Possible Outcomes:
-├─ Confirmation: φ-proximate allocations perform better
-│   └─ Increase bonus, promote pattern
-├─ Refutation: No correlation with performance
-│   └─ Remove bonus, document finding
-├─ Alternative: Different optimal ratio discovered
-│   └─ Adjust protocol, publish research
-└─ Either way: Knowledge advanced
-```
-
-**This is how science works. We don't know if the golden ratio hypothesis is meaningful. We build mechanisms to find out.**
 
 ---
 
@@ -1535,520 +1780,254 @@ Possible Outcomes:
 
 ### 11.1 Revenue Streams
 
-**Primary: Signal Fees (Ongoing)**
-
 ```
-Per Signal (0.01 ZEC at $500/ZEC = $5.00):
+Primary Revenue: Signal Fees
+├─ 0.01 ZEC per signal × signal volume
+├─ Grows linearly with participation
+├─ Recurring (ongoing comprehension)
+└─ No speculation dependency
 
-61.8% Transparent Pool: $3.09
-├─ Public liquidity provision
-├─ Price discovery support
-└─ Ecosystem visibility
+Secondary Revenue: VRC Fees
+├─ Formation fees (MAGE sink)
+├─ Coordination fees (MAGE circulation)
+├─ Cross-ecosystem treaty fees
+└─ Grows with network effects (n²)
 
-38.2% Shielded Pool: $1.91
-├─ Protocol operations
-├─ Guardian rewards
-├─ Development fund
-└─ Private allocation
-```
+Tertiary Revenue: Premium Services
+├─ Advanced privacy tools (SWORD)
+├─ Custom Mage configurations (MAGE)
+├─ Enterprise integrations
+└─ Ecosystem-specific
 
-**Monthly Operational Costs: ~$125,000**
-
-```
-├─ Development: $85,000 (core engineering)
-├─ Infrastructure: $25,000 (oracle, nodes, monitoring)
-└─ Operations: $15,000 (support, docs, marketing)
-
-Break-Even Calculation:
-├─ Revenue needed: $125,000/month
-├─ If operations funded from shielded pool (38.2%)
-├─ Revenue per signal to operations: ~$1.91
-├─ Signals needed: ~65,445/month
-├─ At 3 signals/person/month: ~21,815 active First Persons
-```
-
-**Secondary: Treasury Holdings (Long-term)**
-
-```
-Protocol Treasury Allocation:
-├─ 10% of each ecosystem's token supply
-├─ Both SWORD and MAGE tokens
-├─ Value grows with ecosystem success
-├─ Aligned incentives (no extraction)
-└─ Long-term capital appreciation
-
-Example (20 ecosystems deployed):
-├─ Total SWORD held: 2,000,000 tokens (100k per ecosystem)
-├─ Total MAGE held: 2,000,000 tokens
-├─ Token value grows with network effects
-├─ Conservative valuation: $0.35/token (initial)
-├─ Treasury value: $1.4M at launch
-├─ Growth potential: 10-100x over 5 years
-└─ Provides long-term sustainability without selling pressure
-```
-
-**Tertiary: Template Marketplace (Future)**
-
-```
-Creator Economy Platform:
-├─ Privacy tools (SWORD tokens)
-├─ Delegation tools (MAGE tokens)
-├─ Spellbook templates
-├─ Intel pool content
-└─ Cross-ecosystem coordination utilities
-
-Revenue Split:
-├─ 70% → Creator (incentivizes quality)
-├─ 20% → Ecosystem treasury (sustainability)
-├─ 10% → Protocol fund (infrastructure)
-
-Projected Revenue (Year 3+):
-├─ Conservative: $5,000/month ($60k/year)
-├─ Moderate: $20,000/month ($240k/year)
-├─ Optimistic: $50,000/month ($600k/year)
-└─ Scales with creator participation and ecosystem growth
+Future Revenue: Market Fees
+├─ Privacy market transaction fees
+├─ Delegation market transaction fees
+├─ Cross-ecosystem arbitrage fees
+└─ Scales with trading volume
 ```
 
 ### 11.2 Cost Structure
 
-**Development Costs ($85,000/month):**
-
 ```
-Core Protocol Engineering:
-├─ Smart contract development: $30,000
-├─ Oracle infrastructure: $20,000
-├─ ZK circuit optimization: $15,000
-├─ Frontend/UX development: $10,000
-└─ Security audits: $10,000
+Development Costs (Initial):
+├─ Core protocol: $500,000
+├─ Security audits: $200,000
+├─ Documentation: $50,000
+├─ Testing infrastructure: $100,000
+└─ Total initial: $850,000
 
-Team Composition:
-├─ 2x Senior smart contract engineers
-├─ 1x ZK cryptography specialist
-├─ 1x Full-stack developer
-├─ 1x DevOps/infrastructure engineer
-└─ Ongoing security audit budget
-```
+Operational Costs (Monthly):
+├─ Development team: $85,000
+├─ Infrastructure: $25,000
+├─ Operations: $15,000
+├─ Guardian rewards: Variable (from fees)
+└─ Total monthly: ~$125,000
 
-**Infrastructure Costs ($25,000/month):**
-
-```
-Oracle Operations:
-├─ Zcash light client hosting: $5,000
-├─ Target chain RPC nodes: $8,000
-├─ Monitoring and alerting: $2,000
-├─ Database and storage: $3,000
-├─ CDN and API hosting: $2,000
-└─ Backup and disaster recovery: $5,000
-
-Scalability Assumptions:
-├─ <50,000 signals/month: $15,000
-├─ 50k-200k signals/month: $25,000
-├─ 200k-500k signals/month: $40,000
-└─ >500k signals/month: $60,000
+Scaling Costs (As network grows):
+├─ Infrastructure scales ~logarithmically
+├─ Operations scale ~linearly
+├─ Development needs decrease over time
+└─ Guardian rewards scale with network
 ```
 
-**Operations Costs ($15,000/month):**
+### 11.3 Break-Even Analysis
 
 ```
-Community Support:
-├─ Discord/forum moderation: $3,000
-├─ Documentation maintenance: $4,000
-├─ Educational content creation: $3,000
-├─ Marketing and outreach: $3,000
-└─ Legal and compliance: $2,000
+Break-Even Point:
+├─ Monthly costs: $125,000
+├─ Revenue per signal: $5.00
+├─ If operations from shielded pool (38.2%): $1.91/signal
+├─ Break-even signals: ~65,445/month
+├─ At 3 signals/person/month: ~21,815 First Persons
 
-Team Composition:
-├─ 1x Community manager
-├─ 1x Technical writer
-├─ 1x Marketing coordinator
-└─ Legal consultation (as-needed)
-```
-
-**Total Monthly Burn: $125,000**
-
-### 11.3 Path to Sustainability
-
-**Year 1 (Months 1-12): Grant-Funded Growth**
-
-```
-Funding Strategy:
-├─ Grant funding: $1,500,000 (covers 12 months)
-│   └─ Sources: Zcash grants, privacy foundations, ecosystem grants
-├─ Signal revenue: $75,000-$250,000/month
-│   └─ 15,000-50,000 signals/month (ramping)
-└─ Total runway: 12-18 months
-
-Milestones:
-├─ Month 3: First ecosystem deployment (proof of concept)
-├─ Month 6: 100,000 total signals completed
-├─ Month 9: 10 ecosystems deployed
-├─ Month 12: 50,000 signals/month sustained
-└─ End Year 1: 15,000 total First Persons onboarded
-```
-
-**Year 2 (Months 13-24): Revenue Transition**
-
-```
-Funding Mix:
-├─ Grant funding: $500,000 (reduced dependency)
-├─ Signal revenue: $150,000-$400,000/month
-│   └─ 30,000-80,000 signals/month
-├─ Template marketplace: $10,000-$20,000/month
-└─ Total: Self-sustaining by Month 24
-
-Milestones:
-├─ Month 15: 20 ecosystems deployed
-├─ Month 18: 60,000 signals/month sustained
-├─ Month 21: Template marketplace launch
-├─ Month 24: Break-even achieved
-└─ End Year 2: 50,000 total First Persons onboarded
-```
-
-**Year 3+ (Months 25-36): Self-Sustaining**
-
-```
-Funding Mix:
-├─ Grant funding: $0 (no longer needed)
-├─ Signal revenue: $250,000-$500,000/month
-│   └─ 50,000-100,000 signals/month
-├─ Template marketplace: $30,000-$100,000/month
-├─ Treasury appreciation: Significant unrealized gains
-└─ Total: Fully sustainable with surplus
-
-Milestones:
-├─ Month 30: 50 ecosystems deployed
-├─ Month 33: Surplus funding ecosystem grants program
-├─ Month 36: 100,000 total First Persons onboarded
-└─ Long-term: Self-sustaining infrastructure layer
-```
-
-### 11.4 Growth Scenarios & Sensitivity
-
-**Conservative Scenario:**
-
-```
-End of Year 3:
-├─ 10,000 active First Persons
-├─ 20 deployed ecosystems
-├─ 30,000 signals/month sustained
-├─ Monthly revenue: $150,000
-├─ Monthly costs: $140,000 (scaled)
-├─ Status: Barely self-sustaining
-└─ Risk: Moderate, requires careful cost management
-```
-
-**Moderate Scenario:**
-
-```
-End of Year 3:
-├─ 30,000 active First Persons
-├─ 50 deployed ecosystems
-├─ 75,000 signals/month sustained
-├─ Monthly revenue: $375,000
-├─ Monthly costs: $175,000 (scaled)
-├─ Status: Self-sustaining with healthy surplus
-└─ Risk: Low, can sustain and expand
-```
-
-**Optimistic Scenario:**
-
-```
-End of Year 3:
-├─ 100,000 active First Persons
-├─ 150 deployed ecosystems
-├─ 200,000 signals/month sustained
-├─ Monthly revenue: $1,000,000
-├─ Monthly costs: $250,000 (premium operations)
-├─ Status: Significant surplus ($750k/month)
-├─ Enables: Ecosystem grants, research funding, expansion
-└─ Risk: Minimal, strong financial position
+Path to Sustainability:
+├─ Month 6: 5,000 First Persons, 15,000 signals
+│   └─ Revenue: $75,000 (60% of costs)
+├─ Month 12: 15,000 First Persons, 45,000 signals
+│   └─ Revenue: $225,000 (180% of costs)
+├─ Month 24: 50,000 First Persons, 150,000 signals
+│   └─ Revenue: $750,000 (600% of costs)
+└─ Year 3+: Self-sustaining with surplus
 ```
 
 ---
 
 ## 12. Value Capture Distribution
 
-### 12.1 For First Persons (Individual Users)
-
-**Direct Economic Value:**
+### 12.1 First Person Value
 
 ```
-Chronicle Rewards:
-├─ Active participation (100 chronicles/year)
-├─ Average quality multiplier: 1.5x
-├─ Average reward: 5 tokens per chronicle
-├─ Total: 750 tokens/year
-├─ Token value: $0.35/token (conservative)
-└─ Annual earnings: $262.50
+Individual Value (Active Participant):
 
-VRC Coordination Savings:
-├─ 10 active VRCs formed ($350 upfront investment)
-├─ 20 coordinations/day × 240 working days = 4,800/year
-├─ Savings: $9.86 per coordination
-├─ Total annual savings: $47,328
-└─ Net value (after VRC investment): $46,978/year
+Direct Earnings:
+├─ Chronicle rewards: $500-$1,500/year
+├─ VRC formation rewards: $100-$300/year
+├─ Intel Pool contributions: $50-$200/year
+└─ Guardian rewards (Dragon): $2,000-$10,000/year
 
-Market Access:
-├─ Privacy tools (SWORD token access)
-├─ Delegation tools (MAGE token access)
-├─ Intel pool knowledge
-├─ Cross-ecosystem coordination
-└─ Value: Priceless (enables sovereignty)
+Indirect Value:
+├─ VRC coordination savings: $46,978/year
+├─ Privacy tool access: Variable
+├─ Network access: Variable
+└─ Reputation capital: Appreciating
 
-Total Direct Value (Conservative):
-├─ Chronicle earnings: $262.50
-├─ VRC savings: $46,978
-├─ Token appreciation potential: $500-$5,000
-└─ Total: $47,740 - $52,240/year for active users
+Total Individual Value:
+├─ Blade tier: $35,000-$45,000/year (mostly savings)
+├─ Light tier: $40,000-$48,000/year
+├─ Heavy tier: $42,000-$50,000/year
+├─ Dragon tier: $47,000-$60,000/year
+└─ Dragon + Guardian: $50,000-$70,000/year
 ```
 
-**Network Value (Intangible but Measurable):**
+### 12.2 Ecosystem Value
 
 ```
-Privacy Improvements:
-├─ Larger anonymity set (more participants = better privacy)
-├─ More Guardian protection (better standards maintenance)
-├─ More tools available (richer privacy market)
-└─ Value: Improved privacy for everyone
+Guild/Ecosystem Operator Value:
 
-Coordination Improvements:
-├─ More VRC partners available
-├─ More ecosystems to join
-├─ More intel pools to access
-└─ Value: Better coordination opportunities
-
-Governance Participation:
-├─ Voice in ecosystem direction
-├─ Influence over protocol development
-├─ Stake in collective success
-└─ Value: Democratic participation in digital economy
-```
-
-### 12.2 For Guardians (Infrastructure Providers)
-
-**Guardian Economics:**
-
-```
-Revenue Sources:
-├─ Chronicle validation fees (share of signal revenue)
-├─ Template marketplace commissions
-├─ Governance participation rewards
-├─ Token appreciation on staked SWORD
-└─ Reputation premium on services
-
-Conservative Estimate (50 Guardians, Year 3):
-├─ Monthly signal revenue: $375,000
-├─ Guardian pool allocation: ~20% = $75,000/month
-├─ Per Guardian: $1,500/month = $18,000/year
-├─ Plus: Token appreciation potential
-└─ Total: $30,000-$50,000/year
-
-Optimistic Estimate (100 Guardians, Year 5):
-├─ Monthly signal revenue: $1,000,000
-├─ Guardian pool allocation: ~20% = $200,000/month
-├─ Per Guardian: $2,000/month = $24,000/year
-├─ Plus: Significant token appreciation
-└─ Total: $50,000-$120,000/year
-```
-
-### 12.3 For Ecosystems (Guilds & Communities)
-
-**Ecosystem Value Capture:**
-
-```
 Revenue Streams:
-├─ 10% of signal fees go to ecosystem treasury
-├─ Template marketplace commissions
-├─ Cross-ecosystem treaty fees
-└─ Token appreciation on treasury holdings
+├─ Signal fee share: 5-10% of ecosystem signals
+├─ VRC marketplace: 1-2% of VRC value flow
+├─ Template sales: Direct earnings
+├─ Premium services: Custom pricing
+└─ Cross-ecosystem fees: Treaty percentages
 
-Conservative (1,000 member ecosystem):
-├─ Monthly signals: 3,000
-├─ Signal revenue: $15,000/month
-├─ Ecosystem share (10%): $1,500/month = $18,000/year
-├─ Template revenue: $2,000-$10,000/year
-└─ Total: $20,000-$28,000/year
+Example (10,000 member ecosystem):
+├─ Signal revenue share: $180,000/year (10%)
+├─ Ecosystem treasury: $180,000 (10% of SWORD/MAGE)
+├─ Template marketplace: $24,000-$240,000/year
+├─ Premium services: Variable
+└─ Total: $200,000-$600,000/year
+```
 
-Moderate (10,000 member ecosystem):
-├─ Monthly signals: 30,000
-├─ Signal revenue: $150,000/month
-├─ Ecosystem share (10%): $15,000/month = $180,000/year
-├─ Template revenue: $20,000-$60,000/year
-└─ Total: $200,000-$240,000/year
+### 12.3 Protocol Value
+
+```
+Network-Level Value:
+
+Direct Value:
+├─ Signal fees: $18M/year (at 300k signals/month)
+├─ Market fees: $1-5M/year (at maturity)
+├─ Enterprise licensing: $500k-2M/year
+└─ Total direct: $20-25M/year
+
+Indirect Value:
+├─ Token market cap: Function of utility
+├─ Network effects: n² scaling
+├─ Reputation capital: Ecosystem-wide
+├─ Standards influence: Industry leadership
+└─ Total: Difficult to quantify, substantial
 ```
 
 ---
 
 ## 13. Risk Factors & Mitigations
 
-### 13.1 Technical Risks
+### 13.1 Signal Adoption Risk
 
 ```
-Risk: Oracle Centralization
-├─ Impact: Critical (single point of failure)
-├─ Likelihood: Medium (initial design)
-├─ Mitigation: Progressive decentralization roadmap
-│   ├─ Phase 1: Multiple oracle operators
-│   ├─ Phase 2: Threshold signatures
-│   └─ Phase 3: Fully decentralized validation
-└─ Timeline: 12-24 months to full decentralization
+Risk: Low signal volume fails to sustain protocol
 
-Risk: Smart Contract Vulnerabilities
-├─ Impact: Critical (fund loss potential)
-├─ Likelihood: Low (with proper audits)
-├─ Mitigation: 
-│   ├─ Multiple independent audits
-│   ├─ Formal verification where possible
-│   ├─ Bug bounty program
-│   └─ Gradual value increase (cap early treasury)
-└─ Timeline: Continuous, pre-launch emphasis
+Impact: Critical
+Likelihood: Medium
 
-Risk: Zcash Dependency
-├─ Impact: Medium (single chain dependency)
-├─ Likelihood: Low (Zcash is mature)
-├─ Mitigation:
-│   ├─ Multi-chain deployment roadmap
-│   ├─ Abstraction layer for privacy primitives
-│   └─ Alternative privacy chain research
-└─ Timeline: 18-36 months for multi-chain
+Mitigations:
+├─ Multiple ecosystems reduce single-point dependency
+├─ Grants bridge early-stage gap
+├─ Progressive features incentivize engagement
+├─ Cross-ecosystem treaties create network effects
+└─ Content strategy maintains spellbook relevance
+
+Promise Theory Insight:
+├─ Assessment incentives must be compelling
+├─ If signals feel valuable, adoption follows
+├─ Quality content → genuine assessments
+└─ Genuine assessments → sustainable funding
 ```
 
-### 13.2 Economic Risks
+### 13.2 Token Speculation Risk
 
 ```
-Risk: Low Signal Volume
-├─ Impact: Critical (sustainability failure)
-├─ Likelihood: Medium (new protocol)
-├─ Mitigation:
-│   ├─ Grant funding runway (12-18 months)
-│   ├─ Ecosystem partnership development
-│   ├─ Educational content investment
-│   └─ Signal fee adjustment capability
-└─ Timeline: Year 1-2 critical period
+Risk: Speculative trading disconnects token value from utility
 
-Risk: Token Speculation
-├─ Impact: High (distorts incentives)
-├─ Likelihood: Medium (crypto market dynamics)
-├─ Mitigation:
-│   ├─ Progressive issuance (no ICO)
-│   ├─ Utility-first token design
-│   ├─ Long vesting periods
-│   └─ Education on intended use
-└─ Timeline: Ongoing vigilance
+Impact: High
+Likelihood: Medium
 
-Risk: Ecosystem Failure
-├─ Impact: High (network effect collapse)
-├─ Likelihood: Medium (coordination challenge)
-├─ Mitigation:
-│   ├─ Multiple ecosystem launches (diversification)
-│   ├─ Cross-ecosystem treaties (interconnection)
-│   ├─ Ecosystem support programs
-│   └─ Success template documentation
-└─ Timeline: Year 1 critical for first successes
+Mitigations:
+├─ No initial token sale (no speculation base)
+├─ Tokens earned through behavior (utility-linked)
+├─ Progressive issuance (no pump-and-dump)
+├─ Dual tokens (no single speculation target)
+├─ Utility precedes liquidity (demand before supply)
+└─ No direct SWORD/MAGE swap (market separation)
+
+PT Insight: Promise-keeping should be more profitable than speculation
 ```
 
-### 13.3 Regulatory Risks
+### 13.3 Ecosystem Centralization Risk
 
 ```
-Risk: Privacy Regulation
-├─ Impact: High (operational restrictions)
-├─ Likelihood: Medium (evolving landscape)
-├─ Mitigation:
-│   ├─ Privacy Pools compatibility (compliance option)
-│   ├─ Legal jurisdiction diversification
-│   ├─ Regulatory engagement (not avoidance)
-│   └─ Adaptive architecture design
-└─ Timeline: Ongoing monitoring and adaptation
+Risk: Single ecosystem dominates, recreating centralization
 
-Risk: Token Classification
-├─ Impact: High (securities concerns)
-├─ Likelihood: Low (utility token design)
-├─ Mitigation:
-│   ├─ No ICO (earn-only distribution)
-│   ├─ Utility-first tokenomics
-│   ├─ Legal opinion documentation
-│   └─ Jurisdiction-appropriate structures
-└─ Timeline: Pre-launch legal review
+Impact: High
+Likelihood: Medium
+
+Mitigations:
+├─ Open-source core protocol
+├─ Treaty system encourages multiple ecosystems
+├─ No protocol-level control over ecosystems
+├─ Guardian model distributes power
+└─ Cross-ecosystem VRC portability
+
+PT Insight: Distributed promise-keeping is more resilient
+```
+
+### 13.4 Smart Contract Risk
+
+```
+Risk: Vulnerability in token or staking contracts
+
+Impact: Critical
+Likelihood: Low
+
+Mitigations:
+├─ Multiple independent audits
+├─ Formal verification where possible
+├─ Bug bounty program
+├─ Gradual rollout (testnet → limited mainnet → full)
+├─ Emergency pause functionality
+└─ Insurance mechanisms
+```
+
+### 13.5 Regulatory Risk
+
+```
+Risk: Token classification as security or regulation of privacy features
+
+Impact: High
+Likelihood: Medium
+
+Mitigations:
+├─ Tokens earned through behavior (not investment)
+├─ Utility-first design (clear functionality)
+├─ Legal structure considerations
+├─ Jurisdictional diversification
+├─ Compliance features (Privacy Pools integration)
+└─ Proactive regulatory engagement
 ```
 
 ---
 
-# Conclusion: The Inversion
+## Appendix A: Glossary (Promise-Economic Terms)
 
-## What This Document Describes
+**Assessment α(π):** Promise Theory concept—determination whether a promise was kept. In VRC economics, signals and chronicle validations are assessment events.
 
-```
-Traditional AI Economy:
-├─ Users → Data → Platforms → Value Extraction
-├─ Privacy as cost center
-├─ Coordination controlled by platforms
-├─ Value flows upward to shareholders
-└─ Surveillance capitalism
+**Autonomy Axiom:** Promise Theory principle that agents can only promise their own behavior. Grounds the need for dual-token separation.
 
-VRC Protocol Economy:
-├─ First Persons → Comprehension → Signals → Value Creation
-├─ Privacy as value creation
-├─ Coordination through bilateral trust
-├─ Value captured by participants
-└─ Sovereignty capitalism
-```
+**Budget Constraint:** Architectural requirement C_S + C_M < H(X). Mapped to valency constraint in Promise Theory.
 
-## The Critical Window
+**Ceremony:** **One-time** 1 ZEC ($500) transaction creating dual agent pair. Represents genesis promise.
 
-We have 2-3 years before surveillance AI agent architectures achieve network effects. Once entrenched, alternatives become nearly impossible to bootstrap.
-
-**This is not about competing on features. This is about establishing foundational infrastructure.**
-
-```
-Timeline:
-├─ Year 1: Prove the model works (first ecosystems)
-├─ Year 2: Achieve sustainability (signal revenue)
-├─ Year 3: Scale network effects (cross-ecosystem coordination)
-├─ Year 4-5: Become standard infrastructure
-└─ Long-term: Privacy-first AI agents as default
-```
-
-## Success Metrics
-
-```
-Year 1 Success:
-├─ 3+ ecosystems deployed and operational
-├─ 10,000+ First Persons onboarded
-├─ 200,000+ signals processed
-├─ Protocol demonstrates sustainability path
-
-Year 3 Success:
-├─ 50+ ecosystems deployed
-├─ 100,000+ First Persons
-├─ Self-sustaining from signal revenue
-├─ Academic recognition of privacy economics contributions
-
-Year 5 Success:
-├─ 200+ ecosystems deployed
-├─ 1,000,000+ First Persons
-├─ Standard infrastructure for privacy-first AI agents
-├─ Meaningful impact on human autonomy and dignity
-```
-
-**The mission:**
-
-Make privacy normal again. Not through legal mandates or corporate promises, but through **mathematical guarantees enforced by economic incentives** that make privacy profitable and surveillance costly.
-
-When the 7th capital—behavioral sovereignty—remains with First Persons rather than being extracted upward to platforms, the entire economic structure inverts. This is not incrementalism. This is the foundation for a coordination infrastructure where effective AI agents serve human sovereignty rather than undermine it.
-
----
-
-# Appendices
-
-## Appendix A: Glossary of Economic Terms
-
-**7th Capital:** The economic value of personal behavioral data and sovereignty, representing a form of wealth beyond traditional capital (financial, human, social, natural, intellectual, institutional).
-
-**Budget Constraint:** The information-theoretic bound C_S + C_M < H(X) that limits how much entropy the dual agents can collectively observe.
-
-**Ceremony:** A **one-time** 1 ZEC ($500) transaction that generates a dual-agent pair for a First Person within an ecosystem. Distinct from ongoing signals.
-
-**Chronicle:** A verified activity (privacy protection or delegation coordination) that earns token rewards.
+**Chronicle:** A verified activity (privacy protection or delegation coordination) that earns token rewards. Assessment evidence of promise-keeping.
 
 **Compression Efficiency:** The ratio of verbose to compressed coordination costs, base 70:1 through VRC protocol (variable per context).
 
@@ -2056,7 +2035,9 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 
 **Golden Ratio (φ):** The mathematical constant ~1.618, hypothesized to be the optimal budget allocation ratio between Swordsman and Mage. Status: 🔬 SPECULATIVE.
 
-**Guardian:** Dragon tier participant who stakes SWORD tokens to maintain spellbook reconstruction standards.
+**Guardian:** Dragon tier participant who stakes SWORD tokens to maintain spellbook reconstruction standards. Professional promise-keeper.
+
+**Incentive Compatibility:** Economic design where keeping promises is the rational strategy. Achieved through dual-token separation.
 
 **Intel Pool:** Shared knowledge repository enabling compression-based contributions and privacy-preserving queries.
 
@@ -2066,21 +2047,27 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 
 **Progressive Issuance:** Token distribution model where rewards decrease over time but never reach zero, rewarding early adopters while maintaining long-term sustainability.
 
+**Promise Bundle:** Promise Theory concept—collection of coordinated promises. VRCs are bilateral promise bundles.
+
 **Reconstruction Ceiling (R_max):** The maximum efficiency with which an adversary can reconstruct the secret from observations, guaranteed to be <1 under separation.
 
-**Relationship Proverb Protocol (RPP):** Compression protocol where individuals form contextual proverbs from shared content, enabling efficient coordination.
+**Relationship Proverb Protocol (RPP):** Compression protocol where individuals form contextual proverbs from shared content, enabling efficient coordination. Assessment mechanism.
 
-**Signal:** **Ongoing** 0.01 ZEC ($5) proof-of-comprehension transactions that demonstrate continued engagement and learning.
+**Signal:** **Ongoing** 0.01 ZEC ($5) proof-of-comprehension transactions that demonstrate continued engagement and learning. Assessment payments.
 
-**Spell:** Symbolic compression of complex concepts (e.g., ⚔️⊥🔮|🗝️ represents dual-agent separation).
+**Spell:** Symbolic compression of complex concepts (e.g., ⚔️⊥🔮|🗝️ represents dual-agent separation). Coordination promise.
 
 **Spellbook:** Narrative documentation teaching protocol concepts through story and symbolic language.
 
 **SWORD Token:** Privacy domain token earned through Swordsman chronicles and used in privacy market.
 
-**Trust Tier:** Progressive reputation levels (Blade, Light, Heavy, Dragon) unlocking capabilities and rewards.
+**Trust Function:** Promise Theory concept (0-1 expectation of promise-keeping). Implemented as tier progression.
 
-**VRC (Verifiable Relationship Credential):** Bilateral trust object proving mutual comprehension and enabling 70:1 coordination efficiency.
+**Trust Tier:** Progressive reputation levels (Blade, Light, Heavy, Dragon) unlocking capabilities and rewards. Trust function values.
+
+**Valency:** Promise Theory concept—exclusive promise capacity. Mapped to information budgets C_S, C_M.
+
+**VRC (Verifiable Relationship Credential):** Bilateral trust object proving mutual comprehension and enabling 70:1 coordination efficiency. Promise bundle.
 
 ---
 
@@ -2108,14 +2095,14 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 | Liquidity Provision | 50,000 | 5% | 12-month lock minimum |
 | **Total Supply** | **1,000,000** | **100%** | **Per ecosystem** |
 
-### Trust Tier Progression
+### Trust Tier Progression (Trust Function Implementation)
 
-| Tier | Signals | VRC Limit | Reward Multiplier | Capabilities |
-|------|---------|-----------|-------------------|--------------|
-| Blade | 0-50 | 5 | 1.0x | Basic participation |
-| Light | 50-150 | 10 | 1.5x | Intel pool contributions |
-| Heavy | 150-500 | 20 | 2.0x | Template creation, governance voting |
-| Dragon | 500+ | Unlimited | 3.0x | Custom spells, treasury proposals, Guardian eligibility |
+| Tier | Signals | Trust Value | VRC Limit | Reward Multiplier | Capabilities |
+|------|---------|-------------|-----------|-------------------|--------------|
+| Blade 🗡️ | 0-50 | 0.0-0.2 | 5 | 1.0x | Basic participation |
+| Light 🛡️ | 50-150 | 0.2-0.5 | 10 | 1.5x | Intel pool contributions |
+| Heavy ⚔️ | 150-500 | 0.5-0.8 | 20 | 2.0x | Template creation, governance voting |
+| Dragon 🐉 | 500+ | 0.8-1.0 | Unlimited | 3.0x | Custom spells, treasury proposals, Guardian eligibility |
 
 ---
 
@@ -2190,30 +2177,33 @@ Total:                 $22,000,000+/year
 
 This document is part of the complete 0xagentprivacy documentation suite:
 
-1. **Swordsman/Mage Whitepaper v4.3** - Dual-agent architecture, RPP protocol, separation primitives
-2. **Dual Privacy Research Paper v3.2** - Mathematical proofs, information-theoretic bounds, ZK protocols
-3. **The Spellbook v4.0.1-canonical** - Narrative compression, symbolic language, trust game, recovery architecture
-4. **VRC Protocol: Economic Architecture v2.0** (this document) - Tokenomics, sustainability, deployment
-5. **Visual Architecture Guide v1.1** - Diagrams, flows, conceptual maps
-6. **Research Proposal v1.2** - Collaboration invitation, validation needs
-7. **Glossary Master v2.1** - Canonical terminology reference
+1. **Swordsman/Mage Whitepaper v4.5** - Dual-agent architecture, RPP protocol, separation primitives, Promise Theory foundations
+2. **Dual Privacy Research Paper v3.3** - Mathematical proofs, information-theoretic bounds, ZK protocols, PT grounding
+3. **Promise Theory Reference v1.0** - Formal semantic foundations bridging PT and 0xagentprivacy
+4. **The Spellbook v4.0.1-canonical** - Narrative compression, symbolic language, trust game, recovery architecture
+5. **VRC Protocol: Economic Architecture v2.2** (this document) - Tokenomics, promise-economic alignment, sustainability
+6. **Visual Architecture Guide v1.1** - Diagrams, flows, conceptual maps
+7. **Research Proposal v1.2** - Collaboration invitation, validation needs
+8. **Glossary Master v2.2** - Canonical terminology reference with Promise Theory section
 
 **Prerequisites for this document:**
 - Understanding of dual-agent separation from Whitepaper
 - Familiarity with reconstruction ceiling from Research Paper
 - Context on RPP and spells from Spellbook
+- Promise Theory concepts from Reference Guide (recommended)
 
 **For different audiences:**
 - **Builders/Operators:** Focus on Parts II-IV (mechanics, value creation, deployment)
 - **Investors/Economists:** Focus on Parts III-IV (value capture, sustainability, risks)
 - **Researchers:** Read alongside Research Paper for economic validation of architectural choices
-- **Community Members:** Start with Part I (foundation) and Part III (value creation)
+- **Community Members:** Start with Promise-Economic Foundations and Part I
+- **Promise Theory Practitioners:** Start with Foundations, see alignment table in Appendix A
 
 ---
 
 **License:** CC BY-SA 4.0  
-**Version:** 2.0 - Coherence Edition  
-**Last Updated:** November 25, 2025  
+**Version:** 2.2 - Promise-Economic Edition  
+**Last Updated:** December 11, 2025  
 **Contact:** tokenomics@0xagentprivacy.org  
 **Website:** https://agentprivacy.ai  
 **Documentation:** https://sync.soulbis.com | https://intel.agentkyra.ai
@@ -2228,6 +2218,7 @@ This economic architecture builds on the foundational work of:
 - Privacy Pools (compliance-enabled privacy)
 - ERC-8004 (agent identity)
 - Internet Identity Workshop community
+- **Bergstra & Burgess (Promise Theory foundations)**
 - All contributors to the spellbook and research papers
 
 **Disclaimer:**
@@ -2244,7 +2235,10 @@ This document describes an economic model under active development. Token values
 | 1.1 | Nov 2025 | Restructured edition |
 | 2.0 | Nov 25, 2025 | **Coherence Edition**: Fixed ceremony/signal terminology, corrected math (0.01 ZEC = $5), aligned with 44/56 canonical split, updated trust tier terminology (Blade/Light/Heavy/Dragon), updated all document version references |
 | 2.1 | Nov 26, 2025 | **Golden Ratio Edition**: Updated to φ-derived 61.8/38.2 transparent/shielded split, recalculated all derived values and break-even projections |
+| **2.2** | **Dec 11, 2025** | **Promise-Economic Edition**: Added Promise-Economic Foundations section, PT annotations throughout, incentive compatibility analysis, trust function mapping, glossary PT extensions, updated document references |
 
 ---
 
 **"Privacy is Value. Take back the 7th Capital."** ⚔️📖🗝️
+
+**"Agents can only promise their own behavior—economics must make promise-keeping rational."**

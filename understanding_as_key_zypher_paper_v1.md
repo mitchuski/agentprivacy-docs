@@ -938,6 +938,7 @@ The portfolio of inscription types itself becomes a trust signal.
 │                                         │
 │ • Decrypts memo (views proverb)         │
 │ • Fetches canonical from IPFS           │
+│   ipfs://bafkreigopjrfwjsz56oft7nmv26q2oddq6j4fexj27zjirzgkdeogm2myq │
 │ • AI verifies semantic match            │
 │ • NEVER sees amount/address/timing      │
 │ • Triggers golden split on verification │

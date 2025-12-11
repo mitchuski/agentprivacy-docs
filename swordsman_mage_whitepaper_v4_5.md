@@ -3,12 +3,13 @@
 Protect or Delegate → Reflect and Connect (⚔️⊥🧙)😊
 
 **Author:** privacymage  
-**Date:** November 29, 2025  
-**Version:** 4.4
+**Date:** December 11, 2025  
+**Version:** 4.5
 
 ---
 
 > "Privacy is my blade, knowledge is my spellbook."
+> "Agents can only promise their own behavior." — Promise Theory
 
 **Project:**  |  0xagentprivacy
 
@@ -70,17 +71,165 @@ Other documents translate these concepts:
 
 - **Tokenomics:** Economic/practical (SWORD, MAGE, signal fees, guardian mechanics)
 
+- **Promise Theory Reference:** Formal semantic foundations (autonomy axiom, superagent, irreducible promise)
+
 **Same principles, different lenses for different audiences.**
 
 For complete terminology and economic details, see companion documents:
 
-- `GLOSSARY_MASTER_v2.md` --- Complete protocol terminology
+- `GLOSSARY_MASTER_v2_2.md` --- Complete protocol terminology
+
+- `promise_theory_reference_v1_0.md` --- Promise Theory foundations
 
 - `tokenomics_economic_architecture_v2.md` --- Economic architecture
 
 - `spellbook_v4_0_1_canonical.md` --- Narrative interpretation
 
-- `UNDERSTANDING_AS_KEY_zypher_paper_v1.md` --- Private Proverb Inscription implementation and recovery mechanisms
+---
+
+---
+
+# Promise-Theoretic Foundations
+
+The dual-agent architecture is not novel theory—it is a rigorous implementation of **Promise Theory** (Bergstra & Burgess, 2019), established semantics for autonomous agent coordination.
+
+## The Autonomy Axiom
+
+Promise Theory's foundational principle states:
+
+> "An agent can only make promises about its own behavior. No agent can make a promise on behalf of another agent."
+
+This is why single agents cannot resolve the privacy-delegation paradox. A single agent attempting to promise both protection AND delegation violates the autonomy axiom—it promises in domains it cannot independently control.
+
+**The dual-agent architecture enforces this axiom:**
+
+- **Swordsman** promises protection behaviors (boundaries, disclosure control)
+- **Mage** promises delegation behaviors (coordination, execution)
+- **First Person** promises authorization (sovereignty decisions)
+- **None can promise on behalf of the others**
+
+## The First Person System as Superagent
+
+Promise Theory defines a **superagent** as a composite agent with interior promises between components and exterior promises to the outside world.
+
+The First Person + Swordsman + Mage forms precisely this:
+
+```
+                    ┌─────────────────────────────┐
+                    │     SUPERAGENT (😊+⚔️+🧙)    │
+                    │                             │
+                    │  ┌─────┐ interior ┌─────┐   │
+                    │  │ ⚔️  │◄────────►│ 🧙  │   │
+                    │  └──┬──┘ promises └──┬──┘   │
+                    │     │               │       │
+                    │     └───────┬───────┘       │
+                    │             │               │
+                    │         ┌───┴───┐           │
+                    │         │  😊   │           │
+                    │         │ First │           │
+                    │         │Person │           │
+                    │         └───────┘           │
+                    └─────────────┬───────────────┘
+                                  │
+                          exterior promises
+                                  │
+                                  ▼
+                            🌍 External World
+```
+
+**Interior promises** (within superagent):
+- ⚔️ --protect--> 😊 (Swordsman promises protection to First Person)
+- 🧙 --delegate--> 😊 (Mage promises delegation to First Person)
+- 😊 --authorize--> ⚔️,🧙 (First Person authorizes both)
+- ⚔️ --⊥--> 🧙 (Separation promise: no direct information flow)
+
+**Exterior promises** (to world):
+- Superagent --coordinate--> 🌍 (via Mage's public actions)
+- Superagent --boundary--> 🌍 (via Swordsman's rejections)
+
+## The Gap as Irreducible Promise
+
+Promise Theory's most profound insight for this architecture: superagents can have **irreducible promises**—properties that emerge from component cooperation but cannot be attributed to any single component.
+
+> "An irreducible promise of a superagent is one that cannot be attributed to any single agent within it, but requires the cooperation of multiple agents." — Bergstra & Burgess, §8.3
+
+**The Gap is an irreducible promise.**
+
+The conditional independence property (s ⊥ m | X) is not something the Swordsman promises, nor something the Mage promises. It emerges from their *separation*—from the promises they *don't* make to each other.
+
+This is why The Gap cannot be captured: no adversary can extract an irreducible promise because no single component contains it. The Gap exists in the space between kept promises, owned by neither agent individually.
+
+## Assessment and Trust
+
+Promise Theory defines **assessment α(π)** as an agent's determination whether a promise was kept.
+
+**RPP is an assessment mechanism.** When someone compresses content into a contextual proverb, they assess whether the "promise" of knowledge transfer was kept. Compression ratio quantifies assessment quality:
+
+- High compression (70:1+) = strong positive assessment
+- Low/no compression = weak/failed assessment
+
+**Trust is accumulated assessment evidence.** The tier system (Blade→Light→Heavy→Dragon) maps to Promise Theory's trust function (0-1 expectation of future promise-keeping):
+
+| Tier | Signals | Trust Value |
+|------|---------|-------------|
+| Blade 🗡️ | 0-50 | 0.0-0.2 |
+| Light 🛡️ | 50-150 | 0.2-0.5 |
+| Heavy ⚔️ | 150-500 | 0.5-0.8 |
+| Dragon 🐉 | 500+ | 0.8-1.0 |
+
+Each signal is an assessment event. Accumulated positive assessments build trust through demonstrated pattern of promise-keeping.
+
+## Invitation vs. Attack
+
+Promise Theory distinguishes two interaction patterns:
+
+- **Invitation**: Establish acceptance relationship BEFORE making a specific proposal
+- **Attack/Imposition**: Make a proposal without prior acceptance relationship
+
+**MyTerms implements the invitation pattern.** The Swordsman presents terms BEFORE any data exchange. Site must accept terms to proceed. This is Promise Theory's consent-first model.
+
+**Surveillance implements the attack pattern.** Data extraction begins without prior consent. "Accept all" cookie banners are impositions, not invitations.
+
+This distinction grounds the "consent-first" philosophy in established theory—not as moral preference but as formally distinct interaction semantics.
+
+## Coordination Promises and Spells
+
+Promise Theory defines **coordination promise C(b)** as voluntary subordination to align behavior with others around a shared promise body.
+
+**Spells are coordination promises.** When agents coordinate using spell notation (⚔️ ⊥ 🧙 | 😊), they make coordination promises to:
+1. Interpret the notation consistently
+2. Expand the spell to the same underlying meaning
+3. Act coherently based on shared interpretation
+
+Matching expansion proves coordination success—both parties kept their coordination promise to interpret shared content consistently.
+
+## VRCs as Promise Bundles
+
+Promise Theory defines a **promise bundle** as a collection of promises grouped for reusability and coordinated assessment.
+
+**VRCs are bilateral promise bundles:**
+
+- Agent A promises to B: share meaning, expand consistently, coordinate
+- Agent B promises to A: share meaning, expand consistently, coordinate
+- Matching compressions = bundle verified
+- Coordinated actions = bundle maintained
+
+The 70:1 coordination efficiency comes from promise bundle reuse. Once a VRC is established, the bundle doesn't need re-verification for each interaction—accumulated trust carries forward.
+
+## Why This Matters
+
+Promise Theory grounds the architecture in established theory rather than novel claims:
+
+- **Single agent failure** is not design choice but autonomy axiom violation
+- **The Gap** is formally an irreducible promise, not metaphor
+- **RPP** is formally an assessment mechanism, not narrative device
+- **MyTerms** formally implements invitation pattern, not preference
+- **Trust tiers** are trust function values, not arbitrary thresholds
+- **VRCs** are promise bundles, not mere credentials
+
+This elevates the work from "novel architecture" to "rigorous implementation of established autonomous systems theory."
+
+**For complete Promise Theory mappings, see:** [Promise Theory Reference v1.0]
 
 ---
 
@@ -101,6 +250,8 @@ As personal AI assistants become ubiquitous, each person with their own unique A
 ## Why Dual Agents Make This Better
 
 A single personal AI knows everything about you and acts on your behalf, creating perfect surveillance risk. Every action it takes potentially reveals your complete context.
+
+**Promise Theory insight:** A single agent attempting both observation and action violates the autonomy axiom—promising in domains it cannot independently control.
 
 **The Swordsman and Mage duality solves this:**
 
@@ -137,6 +288,8 @@ This is why the architecture that follows matters. Not just as theory, but as th
 Before the architecture, before the protocols, understand how this knowledge protects itself.
 
 The **relationship proverb protocol (RPP)** is embedded throughout this document as a defense against knowledge extraction while enabling genuine knowledge sharing. This isn't narrative device, it's a compression protocol that proves comprehension.
+
+**Promise Theory framing:** RPP is an *assessment mechanism*—compression proves the promise of knowledge transfer was kept.
 
 ## The Threat Model
 
@@ -178,7 +331,7 @@ When two people first engage with RPP-embedded content, they each form unique pr
 
 - This cipher exists between the people first, before any agent involvement
 
-**Stage 2: Affirmed as Spells**
+**Stage 2: Affirmed as Spells (Coordination Promises)**
 
 Once the human-to-human cipher is established through matching compressions:
 
@@ -191,6 +344,8 @@ Once the human-to-human cipher is established through matching compressions:
 - The spell becomes shorthand for complex shared understanding
 
 - No central authority validates this, the matching compression itself is the proof
+
+**Promise Theory:** This is coordination promise formation—both parties make C(spell) promising to interpret the notation consistently.
 
 **Stage 3: VRCs Streamline Agent-to-Agent Interactions**
 
@@ -205,6 +360,8 @@ With affirmed spells establishing human trust, VRCs enable efficient agent deleg
 - **Streamlined coordination:** Agents use spells to coordinate complex tasks while Swordsmen maintain privacy boundaries
 
 - **Internal agent communications:** Swordsman and Mage within a single system use RPP-derived compressions as private cipher for their coordination
+
+**Promise Theory:** VRCs are *promise bundles*—coordinated bilateral promises grouped for reuse.
 
 **Why this progression matters:**
 
@@ -294,6 +451,8 @@ Recovery = f(anchor_visible, meaning_remembered, context_shared)
 
 This transforms "what you have" (a stored secret) into "what you understand" (demonstrated comprehension). The proverb piggybacks on natural human relational memory rather than fighting against cognitive architecture.
 
+**Promise Theory:** Recovery through understanding is recovery through demonstrated assessment capability—proving you can still assess the promise that was made.
+
 ## Selective Disclosure
 
 Observers see that a commitment exists without knowing who the counterparty is. The anchor holder's relationships are enumerable (their proverbs are visible), but the network of counterparties remains private until those parties choose to reveal themselves by producing the completing proverb.
@@ -333,37 +492,26 @@ Contrast with standard bilateral inscription: **🔒📝 ↔ 🔒📝** where bo
 
 AI agents are emerging as economic actors. The default trajectory is total surveillance, single agents with complete access to user context, optimizing for capability without architectural privacy constraints.
 
-The 0xagentprivacy project builds foundational privacy infrastructure for the AI agent economy before surveillance architectures achieve network effects. This isn't about incremental privacy improvements, it's about establishing privacy-first architectures as the foundation layer, making sovereignty the default rather than an afterthought.
+**Promise Theory insight:** This default uses the *attack pattern*—imposing data extraction without prior consent. The surveillance trajectory violates the autonomy axiom at scale, promising on behalf of users without authorization.
 
-Network effects lock in fast. Once surveillance architectures capture critical mass, they become infrastructure. There's a narrow window to establish privacy as normal before it becomes exotic.
+## Why We Must Act Now
 
-# The Core Duality: Private Ledgers and Public Coordination
+Privacy cannot be retrofitted. The architectural choices being made NOW in AI agent design will determine whether the future contains:
 
-The fundamental insight: **everyone gets their own private ledger**, but can choose to use public distributed ledgers for specific coordination mechanisms.
+- **Surveillance agents** that extract behavioral data as resource
+- **Sovereign agents** that protect behavioral data as capital
 
-Your private ledger is yours alone, observations, preferences, decisions, context. Private by default. Complete sovereignty. This is where your Swordsman operates, making boundary decisions about what to reveal.
+Once surveillance architectures achieve network effects, switching costs become prohibitive. The window for establishing privacy-first infrastructure is **2-3 years**.
 
-Public distributed ledgers (blockchains, shared databases, coordination networks) serve specific purposes: proving membership without revealing identity, coordinating value transfer, establishing shared state, enabling verification. This is where your Mage operates, projecting authorized capabilities using only Swordsman-disclosed information.
+## The Alternative Path
 
-## The Architectural Principle
-
-- **Private ledger:** Default state, complete context, full sovereignty
-
-- **Public ledgers:** Chosen disclosure, specific purposes, minimal information
-
-- **Dual agents:** Swordsman guards private, Mage coordinates through public
-
-- **Protection and projection:** Privacy through boundary-making, capability through selective revelation
-
-- **To protect or delegate:** Your choice, your sovereignty, your control
-
-This duality enables sovereignty: your complete context remains private while your agents coordinate publicly using only necessary information. You choose which public systems to engage with (Ethereum, Bitcoin, Zcash, traditional databases) while maintaining your private ledger as sovereign territory.
+This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from mathematical impossibility rather than corporate promises.
 
 ---
 
-# The 7th Capital Problem
+# The 7th Capital: Behavioral Data as Personal Wealth
 
-Behavioral data constitutes a form of wealth, a new type of capital being systematically extracted by surveillance capitalism.
+Capital in traditional economics comprises six forms recognized in integrated reporting frameworks.
 
 **Traditional capital forms:** Financial (money, investments), Manufactured (infrastructure, tools), Natural (resources, ecosystems), Human (skills, knowledge), Social (relationships, networks), Cultural (values, shared meaning).
 
@@ -374,6 +522,8 @@ The capacity to act through agents while maintaining irreducible privacy. Genera
 **The extraction model** treats behavioral data as minable resource: observe everything, aggregate patterns, sell insights, flow value away from individuals, destroy privacy in the process.
 
 **The sovereignty model** treats behavioral data as renewable capital: curated disclosure through dual agents, chronicles capture agency without surveillance, trust enables coordination networks, value flows to those who demonstrate sovereignty, privacy preserved through creation.
+
+**Promise Theory:** The extraction model violates the autonomy axiom—systems promise on behalf of users without authorization. The sovereignty model respects it—First Persons make their own promises about their own behavior.
 
 ## The Thesis
 
@@ -386,6 +536,8 @@ Privacy-first architectures can generate **678× to 31,000× more value** than s
 **The fundamental problem:** Observation enables both delegation and surveillance. You can't delegate without sharing information. You can't share information without creating reconstruction risk.
 
 **The architectural answer:** Separate the chooser from the actor. Maintain your private ledger while selectively engaging public coordination systems.
+
+**Promise Theory foundation:** The First Person + Swordsman + Mage forms a *superagent* with interior promises between components. The separation creates an *irreducible promise*—The Gap—that cannot be attributed to either agent individually.
 
 **Figure 1: The Dual-Agent Architecture: Swordsman and Mage**
 
@@ -431,7 +583,11 @@ Privacy-first architectures can generate **678× to 31,000× more value** than s
 
 **Soulbis (The Swordsman)** --- Agent S, the boundary-maker. Observes your complete private ledger but reveals nothing directly. Makes choices about selective disclosure to public systems. Guards the gate between private and public. Wields measurement as precision instrument. In the spellbook: the blade that protects.
 
+**Promise Theory role:** Makes **(+) give promises** of protection to the First Person. Cannot promise delegation actions (Mage's domain). The separation promise ⚔️ --⊥--> 🧙 ensures no direct information flow.
+
 **Soulbae (The Mage)** --- Agent M, the capability-caster. Projects agency using only Swordsman-authorized information onto public coordination systems. Cannot see what Swordsman sees in the private ledger. Operates with sufficient knowledge, never excess. Handles coordination, negotiation, execution. In the spellbook: the spell that projects, the voice that narrates.
+
+**Promise Theory role:** Makes **(+) give promises** of delegation to the external world. Makes **(-) use/accept promises** of authorization from Swordsman. Cannot promise privacy actions (Swordsman's domain).
 
 ## The Mathematical Constraint
 
@@ -440,6 +596,8 @@ Privacy-first architectures can generate **678× to 31,000× more value** than s
 > **(Y_S ⊥ Y_M | X)** — conditional independence
 
 The Mage cannot observe Swordsman's observations of the private ledger. Not "shouldn't" or "promises not to"---**cannot**. This isn't policy; it's architecturally enforced separation.
+
+**Promise Theory:** This is a conditional promise in the formal sense—the separation (⊥) is conditioned on (|) the First Person's private state X.
 
 When observations are conditionally independent, information leakage becomes additive rather than multiplicative. Combined with budget constraints, this creates a reconstruction ceiling that cannot be exceeded even with infinite computation.
 
@@ -605,6 +763,8 @@ Swordsman sees 50 pieces (Set A), Mage sees 50 different pieces (Set B), neither
 
 Not hidden. Not encrypted. **Nonexistent in the adversary's information space.**
 
+**Promise Theory:** The 60 unreconstructable pieces are the *irreducible promise*—the property that emerges from separation but cannot be attributed to either agent.
+
 This is information-theoretic privacy. It doesn't depend on computational hardness, cryptographic assumptions, or implementation perfection. It depends on mathematical impossibility. The ceiling 
 
 **Reconstruction Ceiling:**
@@ -725,6 +885,8 @@ These protocols compose to create sovereignty infrastructure. **This is an initi
 
 **Purpose:** Trust through relationships rather than individual claims. VRCs form through demonstrated comprehension and matching compressions.
 
+**Promise Theory:** VRCs are *promise bundles*—bilateral promises grouped for coordinated assessment and reuse.
+
 ### How VRCs Form Through RPP
 
 When two people both engage with the same framework through RPP, they each form unique proverbs from their contexts. But when they uniquely derive and compress their moments of personal meaning and focus into spells, those spells match despite different source proverbs.
@@ -811,6 +973,8 @@ The compression protocol creates powerful economic incentives that drive adoptio
 > ↓
 > Incentive to Share Knowledge
 > ↺ *Loop back to Knowledge Engagement*
+
+**Promise Theory:** This loop is assessment → trust → coordination → value → incentive to assess. Each cycle strengthens the trust function through accumulated positive assessments.
 
 ## Why This Creates Economic Value
 
@@ -934,6 +1098,8 @@ Agent-to-agent coordination requires information exchange.
 
 At scale across hundreds of agents, this compression becomes necessity rather than luxury.
 
+**Promise Theory:** Compression efficiency comes from coordination promise reuse—once agents share C(spell), they don't need to re-establish shared meaning.
+
 ### 2. Verification Without Surveillance
 
 The expansion test creates unforgeable proof of comprehension. A verifier requests expansion of 🪞→✨ → P_e > 0. 
@@ -963,6 +1129,8 @@ You can't fake expansion without genuine understanding.
 - Fail consistency checks across expansions
 
 - Reveal shallow pattern-matching versus comprehension
+
+**Promise Theory:** Expansion tests are *assessment verification*—confirming the promise of understanding was kept.
 
 ### 3. Sybil Resistance Through Entropy
 
@@ -1037,6 +1205,8 @@ Each agent operates under strict information constraints.
 > **C_S + C_M < H(X)**
 
 Together they never reveal enough for reconstruction. Budget limits increase as agents demonstrate sovereignty through progressive trust model.
+
+**Promise Theory:** This budget constraint is a *valency* limit—bounded exclusive promise capacity preventing total revelation.
 
 ## Progressive Trust Tiers
 
@@ -1131,6 +1301,8 @@ The first concrete implementation of dual-agent architecture is the MyTerms Swor
 
 Cookie slashing intercepts requests in real-time, checks for bilateral privacy agreements (IEEE 7012 MyTerms standard), and provides immediate feedback through cursor state changes.
 
+**Promise Theory:** MyTerms implements the *invitation pattern*—establishing acceptance relationships BEFORE specific proposals, rather than surveillance's attack pattern.
+
 ## Cursor State as Human-in-the-Loop Audit
 
 The cursor state change is a critical human-readable trigger for auditing autonomous agent actions. This extends beyond simple privacy negotiations to complex "spellcasting" scenarios where agents act in browsers on people's behalf:
@@ -1140,6 +1312,8 @@ The cursor state change is a critical human-readable trigger for auditing autono
 - **🤝 (agreed):** Bilateral agreement reached, privacy terms aligned, relationship established. This state signals: "Your agent successfully negotiated terms that match your privacy requirements."
 
 - **🛡️ (protected):** Active protection, surveillance blocked, privacy maintained. This state signals: "Your agent is actively defending your boundaries."
+
+**Promise Theory:** Cursor states visualize *assessment status*—whether the site's promises align with the First Person's requirements.
 
 ## State Changes as MCP Integration
 
@@ -1189,6 +1363,8 @@ High-privacy agents command trust premiums. Dragon agents charge 3× more than B
 | Light | 5+ VRCs, 3 months | 1.2× | Standard coordination |
 | Heavy | 20+ VRCs, 6 months | 1.5× | Intel Pools |
 | Dragon | 50+ VRCs, 12+ months | 3.0× | Elite networks |
+
+**Promise Theory:** Trust multipliers reflect *trust function values*—higher accumulated assessments enable higher-value promises.
 
 ## The Compounding Effect
 
@@ -1255,21 +1431,13 @@ Web of trust protocols become **coordination infrastructure** rather than **surv
 
 # Intel Pools: Collective Intelligence Without Surveillance
 
-Intel Pools prove the thesis: privacy creates rather than constrains value. Coordination spaces where high-tier agents share curated intelligence through progressive disclosure.
+As agents prove consistent performance over months, they access progressively sophisticated coordination spaces.
 
-## The Initial Pathway: Selective Disclosure of Shared Spells and Meaning
+**Entry stage (0--5 VRCs, Blade):**: Limited coordination through direct VRCs only. Basic spell compression enables efficient bilateral exchanges.
 
-Intel Pools begin with the most compressed, privacy-preserving form of coordination, sharing spells and their contextual meanings. Agents don't start by revealing detailed intelligence. They start by discovering whose compressions match, whose frameworks align, whose understanding converges despite different contexts.
+**Growth stage (5--20 VRCs, Light):**: Access to shared compressed insights. Basic intel from trusted network visible without revealing sources.
 
-## Progressive Information Sharing Through VRC Accumulation
-
-As agents build more VRCs derived from RPP within an ecosystem (anchored to that ecosystem's personhood credential issuer), information sharing increases between trusted agents:
-
-**Early stage (5--10 VRCs):**: Agents share spell compressions and verify expansion fidelity. "We both compress this principle the same way despite different contexts, our frameworks align."
-
-**Intermediate stage (10--20 VRCs):**: Agents share sanitized patterns and heuristics. "Here's a compressed insight about supplier reliability, expand if you need details for your context."
-
-**Advanced stage (20+ VRCs, Heavy):**: Agents contribute detailed intelligence to collective pools. "Based on 15 interactions over 18 months, here are observed patterns, seasonal variations, negotiation strategies, curated for our shared ecosystem."
+**Established stage (20--50 VRCs, Heavy):**: Active Intel Pool participation. Agents share sanitized intelligence while maintaining privacy.
 
 **Elite stage (50+ VRCs, Dragon):**: Agents coordinate through rich collective intelligence, strategic insights, and coordinated action across the trust network.
 
@@ -1367,6 +1535,8 @@ Like other capital forms, behavioral sovereignty:
 
 - Privacy preserved through creation process
 
+**Promise Theory:** Extraction violates the autonomy axiom (promising on behalf of others). Creation respects it (each party makes their own promises).
+
 ## The Value Multiplier
 
 Privacy-first architectures generate dramatically more value because:
@@ -1415,6 +1585,8 @@ The tetrahedral structure creates:
 
 - System resilience to compromise (no single point of complete knowledge)
 
+**Promise Theory consideration:** N=4 agents requires O(16) interior promises—only justified if emergent properties provide sufficient value beyond N=2.
+
 ## Architectural Thinking
 
 This demonstrates architectural thinking: systems grow organically from simple foundations rather than being designed top-down. Start with minimal viable separation (two agents). Observe what functional needs emerge. Allow architecture to evolve toward those needs.
@@ -1446,6 +1618,8 @@ Maybe your proverb is:
 
 - "Privacy creates value through trust, multiplied through networks."
 
+- "Agents can only promise their own behavior—sovereignty is keeping that promise."
+
 - Or something entirely different, uniquely yours.
 
 ## How VRCs Form Organically
@@ -1468,19 +1642,19 @@ This whitepaper is part of a living documentation system:
 
 ## This Whitepaper
 
-Provides systems thinking and narrative architecture. Story-first, math-referenced, embedded with RPP throughout to protect knowledge while enabling genuine sharing.
+Provides systems thinking and narrative architecture. Story-first, math-referenced, embedded with RPP throughout to protect knowledge while enabling genuine sharing. Promise Theory foundations integrated throughout.
+
+## The Promise Theory Reference
+
+"Promise Theory Reference for 0xagentprivacy v1.0" provides formal semantic foundations from Promise Theory (Bergstra & Burgess, 2019). Maps autonomy axiom, superagent structure, irreducible promises, assessment mechanisms, and coordination promises to the dual-agent architecture.
 
 ## The Research Paper
 
-"Swordsman and Mage v2.1" is a research proposal providing mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, reconstruction ceilings, error floors grounded in established information theory. Available upon request.
+"Swordsman and Mage v3.2" is a research proposal providing mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, reconstruction ceilings, error floors grounded in established information theory. Available upon request.
 
 ## The Privacymage Spellbook
 
 Acts 1--12 provide symbolic system and semantic compression. Soulbis (Swordsman), Soulbae (Mage), and the balanced spiral. Each act demonstrates RPP in narrative form. Available at <https://agentprivacy.ai/story>
-
-## Understanding as Key
-
-"Understanding as Key: A Lite Paper on Privacy-Preserving Trust Through Demonstrated Comprehension" expands on the Private Proverb Inscription mechanism introduced in this whitepaper (§4.3). Describes three inscription paths (symmetric, asymmetric, interleaved) for VRC formation, social recovery through understanding, and the Signal to Sanctuary implementation. Transforms "what you have" (stored secrets) into "what you understand" (demonstrated comprehension), aligning cryptographic security with human cognitive architecture.
 
 ## Collaborative Development
 
@@ -1503,6 +1677,8 @@ One agent to protect privacy. One to delegate sovereignty. Two create sustainabl
 - Budget constraints establish reconstruction ceilings
 
 - Separation enforced through architecture rather than alignment
+
+- **Promise Theory grounds these choices in established autonomous systems semantics**
 
 ## The Infrastructure
 
@@ -1604,6 +1780,8 @@ The research suggests optimal allocation may converge to φ ≈ 1.618 where C_M/
 
 - Two agents will always provide better privacy and sovereignty than one
 
+- **Agents can only promise their own behavior—this is why separation works**
+
 **Privacy and sovereignty. To protect and delegate.**
 **Your choice, your sovereignty, your control.**
 
@@ -1620,12 +1798,23 @@ This architecture is being developed now. This is the inflection point.
 
 - **Project:** 0xagentprivacy
 
-- **Version:** 4.4
+- **Version:** 4.5
 
-- **Date:** November 29, 2025
+- **Date:** December 11, 2025
 
 - **Website:** <https://agentprivacy.ai>
 
-- **Research Paper:** Available upon request
+- **Promise Theory Reference:** v1.0 (companion document)
+
+- **Research Paper:** v3.2 (available upon request)
 
 - **Spellbook:** <https://agentprivacy.ai/story>
+
+- **Glossary:** v2.2 (canonical terminology)
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 4.4 | Nov 29, 2025 | Previous stable release |
+| **4.5** | **Dec 11, 2025** | **Promise Theory integration: Added §Promise-Theoretic Foundations, PT alignments throughout, updated cross-references, enhanced Document Context section** |

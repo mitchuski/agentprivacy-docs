@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+yep#!/usr/bin/env python3
 """Quick test to verify server can start"""
 import http.server
 import socketserver
