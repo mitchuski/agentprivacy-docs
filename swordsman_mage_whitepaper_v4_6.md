@@ -599,7 +599,7 @@ Privacy-first architectures may generate significantly more value than surveilla
                 └──────────┬──────────┘
                            │
               Conditional Independence
-                  (Y_S ⊥ Y_M | X)
+                  (Y_S ⊥⊥ Y_M | X)
 ```
 
 ## Agent Definitions
@@ -616,7 +616,7 @@ Privacy-first architectures may generate significantly more value than surveilla
 
 **Mathematical Constraint:**
 
-> **(Y_S ⊥ Y_M | X)** — conditional independence
+> **(Y_S ⊥⊥ Y_M | X)** — conditional independence
 
 The Mage cannot observe Swordsman's observations of the private ledger. Not "shouldn't" or "promises not to"---**cannot**. This isn't policy; it's architecturally enforced separation.
 
