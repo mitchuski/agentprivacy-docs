@@ -1,0 +1,25 @@
+finding the dragons tail
+
+Final State:
+- 2.9 MB total (down from ~7.7 MB)
+- 43 markdown files - all latest versions
+- 6 JSON files - current grimoire entries
+- README.md updated to v1.5 (Feb 20, 2026)
+- what-agentprivacy-is.pdf/.tex retained as intro doc
+
+Latest versions retained:
+| Document              | Version |
+|-----------------------|---------|
+| Whitepaper            | v5.0    |
+| Research Paper        | v3.8    |
+| VRC Protocol          | v3.2    |
+| Glossary              | v2.5    |
+| README                | v1.5    |
+| Promise Theory Ref    | v1.2    |
+| Visual Guide          | v1.5    |
+| Research Proposal     | v1.6    |
+| First Person Grimoire | v2.0    |
+| Plurality Grimoire    | v1.1    |
+| ZK Grimoire           | v3.0    |
+
+Good to push. 🗡️🤝🧙

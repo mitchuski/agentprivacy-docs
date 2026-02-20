@@ -1,0 +1,554 @@
+{
+  "zero-knowledge": {
+    "id": "zero-knowledge",
+    "name": "Zero Knowledge Spellbook",
+    "question": "HOW are we building?",
+    "focus": "Zero knowledge proofs, cryptographic primitives, privacy technology, mathematical foundations",
+    "core_symbol": "🔐🧙‍♂️³",
+    "description": "Thirty tales teaching the mathematics of proving truth without revealing secrets — from monastery foundations to eternal sovereignty",
+    "version": "3.0",
+    "source": "Original creation by privacymage for 0xagentprivacy",
+    "opening": {
+      "spell": "🏛️📜 → 🔺⚖️🔒 → 📊➗ → 🌉🔗 → 🔄🪞 → ⚙️💻 → 🌪️💰 → 🌉🔮 → 🤖🧠 → 💤⚔️",
+      "proverb": "From monastery scrolls to eternal sovereignty, each tale teaches one face of the crystal that proves without revealing."
+    },
+    "parts": [
+      {
+        "number": 1,
+        "title": "Formation — The First Star Tetrahedra",
+        "symbol": "🔺",
+        "tales": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "number": 2,
+        "title": "Propagation — The Arithmetization Sagas",
+        "symbol": "🔷",
+        "tales": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Backend Harmonics — Commitment and Verification",
+        "symbol": "✦",
+        "tales": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Resonance — Advanced Architectures",
+        "symbol": "💠",
+        "tales": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Navigation — The Virtual Machine Realms",
+        "symbol": "🔷🔷",
+        "tales": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Transcendence — Applications and Warnings",
+        "symbol": "⬢",
+        "tales": [
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      {
+        "number": 7,
+        "title": "The Infinite Grid",
+        "symbol": "🌌",
+        "tales": [
+          28,
+          29,
+          30
+        ]
+      }
+    ],
+    "tales": [
+      {
+        "number": 1,
+        "title": "The Monastery of Hidden Knowledge",
+        "vertex_coordinates": "1,0,0,0,1,0",
+        "vertex_description": "Protection + Computation",
+        "category": "foundation",
+        "part": 1,
+        "concepts": [
+          "ZKP Definition",
+          "NIZK",
+          "Core Properties",
+          "Interactive vs Non-Interactive"
+        ],
+        "file": "01-tale-01.md"
+      },
+      {
+        "number": 2,
+        "title": "The Three Trials of Truth",
+        "vertex_coordinates": "1,0,0,0,1,1",
+        "vertex_description": "",
+        "category": "foundation",
+        "part": 1,
+        "concepts": [
+          "Adaptive vs Non-Adaptive Security",
+          "Common Reference String",
+          "Setup Ceremony"
+        ],
+        "file": "02-tale-02.md"
+      },
+      {
+        "number": 3,
+        "title": "The Silent Messenger",
+        "vertex_coordinates": "1,0,0,1,1,0",
+        "vertex_description": "",
+        "category": "foundation",
+        "part": 1,
+        "concepts": [
+          "Fiat-Shamir Transformation",
+          "Random Oracle Model",
+          "Non-Interactivity"
+        ],
+        "file": "03-tale-03.md"
+      },
+      {
+        "number": 4,
+        "title": "The Fields of Finite Wisdom",
+        "vertex_coordinates": "0,0,0,0,1,1",
+        "vertex_description": "Computation + Value",
+        "category": "foundation",
+        "part": 1,
+        "concepts": [
+          "Finite Fields",
+          "Elliptic Curves",
+          "Group Theory",
+          "Pairing-Friendly Curves"
+        ],
+        "file": "04-tale-04.md"
+      },
+      {
+        "number": 5,
+        "title": "The Constraint Forge",
+        "vertex_coordinates": "1,0,0,0,1,0",
+        "vertex_description": "",
+        "category": "arithmetization",
+        "part": 2,
+        "concepts": [
+          "Arithmetic Circuits",
+          "R1CS",
+          "Gates",
+          "Constraints",
+          "Witnesses"
+        ],
+        "file": "05-tale-05.md"
+      },
+      {
+        "number": 6,
+        "title": "The Polynomial Riddle",
+        "vertex_coordinates": "1,0,0,0,1,1",
+        "vertex_description": "",
+        "category": "arithmetization",
+        "part": 2,
+        "concepts": [
+          "QAP (Quadratic Arithmetic Programs)",
+          "Polynomial Conversion",
+          "Vanishing Polynomial"
+        ],
+        "file": "06-tale-06.md"
+      },
+      {
+        "number": 7,
+        "title": "The Witness and the Instance",
+        "vertex_coordinates": "1,0,0,0,1,1",
+        "vertex_description": "",
+        "category": "arithmetization",
+        "part": 2,
+        "concepts": [
+          "Public vs Private Inputs",
+          "Proof Structure",
+          "Knowledge Soundness"
+        ],
+        "file": "07-tale-07.md"
+      },
+      {
+        "number": 8,
+        "title": "The Plonkish Revolution",
+        "vertex_coordinates": "1,1,0,0,1,0",
+        "vertex_description": "Protection + Delegation + Computation",
+        "category": "commitment",
+        "part": 3,
+        "concepts": [
+          "PlonK",
+          "Custom Gates",
+          "Lookup Tables",
+          "Copy Constraints",
+          "Permutation Arguments"
+        ],
+        "file": "08-tale-08.md"
+      },
+      {
+        "number": 9,
+        "title": "The Pairing Dance",
+        "vertex_coordinates": "1,1,0,1,1,0",
+        "vertex_description": "",
+        "category": "commitment",
+        "part": 3,
+        "concepts": [
+          "Bilinear Pairings",
+          "Groth16",
+          "KZG Commitments",
+          "Pairing-Based SNARKs"
+        ],
+        "file": "09-tale-09.md"
+      },
+      {
+        "number": 10,
+        "title": "The Commitment Ceremony",
+        "vertex_coordinates": "1,1,0,0,1,1",
+        "vertex_description": "",
+        "category": "commitment",
+        "part": 3,
+        "concepts": [
+          "Polynomial Commitment Schemes",
+          "Hiding vs Binding",
+          "PCS Properties"
+        ],
+        "file": "10-tale-10.md"
+      },
+      {
+        "number": 11,
+        "title": "The FRI Oracle",
+        "vertex_coordinates": "1,0,0,0,1,1",
+        "vertex_description": "Protection + Computation + Value (Quantum-Safe Transparency)",
+        "category": "advanced",
+        "part": 4,
+        "concepts": [
+          "Fast Reed-Solomon IOP",
+          "Low-Degree Testing",
+          "Proximity Proofs",
+          "STARKs"
+        ],
+        "file": "11-tale-11.md"
+      },
+      {
+        "number": 12,
+        "title": "The Folding Path",
+        "vertex_coordinates": "1,1,1,0,1,0",
+        "vertex_description": "Protection + Delegation + Memory + Computation",
+        "category": "advanced",
+        "part": 4,
+        "concepts": [
+          "Nova",
+          "IVC (Incrementally Verifiable Computation)",
+          "Folding Schemes",
+          "Relaxed R1CS"
+        ],
+        "file": "12-tale-12.md"
+      },
+      {
+        "number": 13,
+        "title": "The Sumcheck Riddle",
+        "vertex_coordinates": "0,0,0,0,1,0",
+        "vertex_description": "",
+        "category": "advanced",
+        "part": 4,
+        "concepts": [
+          "Sumcheck Protocol",
+          "Interactive Proofs",
+          "GKR Protocol",
+          "Multilinear Extensions"
+        ],
+        "file": "13-tale-13.md"
+      },
+      {
+        "number": 14,
+        "title": "The IPA Chronicle",
+        "vertex_coordinates": "1,1,0,0,1,0",
+        "vertex_description": "",
+        "category": "advanced",
+        "part": 4,
+        "concepts": [
+          "Inner Product Arguments",
+          "Bulletproofs",
+          "Halo2",
+          "Transparent Setups"
+        ],
+        "file": "14-tale-14.md"
+      },
+      {
+        "number": 15,
+        "title": "The Mirror Within Mirrors",
+        "vertex_coordinates": "1,1,1,1,1,0",
+        "vertex_description": "All Dimensions Except Value Active",
+        "category": "advanced",
+        "part": 4,
+        "concepts": [
+          "Recursive ZKP",
+          "Proof Composition",
+          "Pasta Curves",
+          "SSSA Attack",
+          "Proof Carrying Data"
+        ],
+        "file": "15-tale-15.md"
+      },
+      {
+        "number": 16,
+        "title": "The Cyclic Ceremony",
+        "vertex_coordinates": "",
+        "vertex_description": "",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "Cyclic Recursive ZKP",
+          "Self-Referential Circuits",
+          "Circuit Identity Verification"
+        ],
+        "file": "16-tale-16.md"
+      },
+      {
+        "number": 17,
+        "title": "The Universal Setup",
+        "vertex_coordinates": "1,0,0,1,1,1",
+        "vertex_description": "",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "Universal vs Circuit-Specific Setup",
+          "Trusted Setup Ceremonies",
+          "Powers of Tau",
+          "MPC"
+        ],
+        "file": "17-tale-17.md"
+      },
+      {
+        "number": 18,
+        "title": "The Toxic Waste Dragon",
+        "vertex_coordinates": "1,1,1,1,1,1",
+        "vertex_description": "",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "Security Vulnerabilities",
+          "Trusted Setup Failures",
+          "Circuit Bugs",
+          "Audit Practices"
+        ],
+        "file": "18-tale-18.md"
+      },
+      {
+        "number": 19,
+        "title": "The zkVM Kingdom",
+        "vertex_coordinates": "1,1,0,0,1,0",
+        "vertex_description": "Protection + Delegation + Computation (Universal Proving)",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "Zero-Knowledge Virtual Machines",
+          "Instruction Set Architecture",
+          "Execution Traces",
+          "Universal Verification"
+        ],
+        "file": "19-tale-19.md"
+      },
+      {
+        "number": 20,
+        "title": "The Cairo Scribes",
+        "vertex_coordinates": "1,1,0,0,1,1",
+        "vertex_description": "",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "Cairo Language",
+          "AIR Programming",
+          "StarkNet",
+          "Memory Model",
+          "Field Operations"
+        ],
+        "file": "20-tale-20.md"
+      },
+      {
+        "number": 21,
+        "title": "The Circom Workshops",
+        "vertex_coordinates": "1,0,0,0,1,1",
+        "vertex_description": "",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "Circom Language",
+          "R1CS Compilation",
+          "Signal Types",
+          "Templates",
+          "Circuit Composition"
+        ],
+        "file": "21-tale-21.md"
+      },
+      {
+        "number": 22,
+        "title": "The zkEVM Empire",
+        "vertex_coordinates": "1,1,0,1,1,1",
+        "vertex_description": "",
+        "category": "virtual-machine",
+        "part": 5,
+        "concepts": [
+          "zkEVM",
+          "EVM Equivalence",
+          "Type 1-4 zkEVMs",
+          "Bytecode Proving",
+          "State Diffs"
+        ],
+        "file": "22-tale-22.md"
+      },
+      {
+        "number": 23,
+        "title": "The Private Coin of ZCash",
+        "vertex_coordinates": "1,0,0,1,1,1",
+        "vertex_description": "",
+        "category": "application",
+        "part": 6,
+        "concepts": [
+          "Shielded Transactions",
+          "JoinSplit",
+          "Sapling",
+          "Orchard",
+          "Privacy Pools"
+        ],
+        "file": "23-tale-23.md"
+      },
+      {
+        "number": 24,
+        "title": "The Tornado's Eye",
+        "vertex_coordinates": "1,0,0,1,1,1",
+        "vertex_description": "Protection + Connection + Computation + Value",
+        "category": "application",
+        "part": 6,
+        "concepts": [
+          "Mixing Services",
+          "Anonymity Sets",
+          "Deposit/Withdraw",
+          "Sanctions",
+          "Decentralized Privacy"
+        ],
+        "file": "24-tale-24.md"
+      },
+      {
+        "number": 25,
+        "title": "The Rollup Realms",
+        "vertex_coordinates": "1,1,0,1,1,1",
+        "vertex_description": "",
+        "category": "application",
+        "part": 6,
+        "concepts": [
+          "zkRollup Classification",
+          "Data Availability",
+          "Sequencer Decentralization",
+          "Security Models"
+        ],
+        "file": "25-tale-25.md"
+      },
+      {
+        "number": 26,
+        "title": "The Vulnerability Codex",
+        "vertex_coordinates": "1,1,1,1,1,1",
+        "vertex_description": "All Dimensions Active (Security Awareness)",
+        "category": "application",
+        "part": 6,
+        "concepts": [
+          "Security Audits",
+          "Bug Bounties",
+          "Formal Verification",
+          "Circuit Review",
+          "Production Hardening"
+        ],
+        "file": "26-tale-26.md"
+      },
+      {
+        "number": 27,
+        "title": "The Data Availability Prophecy",
+        "vertex_coordinates": "1,1,1,1,1,1",
+        "vertex_description": "",
+        "category": "application",
+        "part": 6,
+        "concepts": [
+          "Data Availability Sampling",
+          "Proto-Danksharding",
+          "EIP-4844",
+          "Blob Transactions",
+          "Celestia"
+        ],
+        "file": "27-tale-27.md"
+      },
+      {
+        "number": 28,
+        "title": "The Bridge Between Worlds",
+        "vertex_coordinates": "1,1,0,1,1,1",
+        "vertex_description": "Protection + Delegation + Connection + Computation + Value",
+        "category": "synthesis",
+        "part": 7,
+        "concepts": [
+          "Cross-Chain ZK Bridges",
+          "Light Client Proofs",
+          "Consensus Verification",
+          "Trust Assumptions"
+        ],
+        "file": "28-tale-28.md"
+      },
+      {
+        "number": 29,
+        "title": "The Intelligence Proof",
+        "vertex_coordinates": "1,1,0,0,1,1",
+        "vertex_description": "Protection + Delegation + Computation + Value",
+        "category": "synthesis",
+        "part": 7,
+        "concepts": [
+          "zkML",
+          "Verifiable Inference",
+          "Model Commitments",
+          "Data Privacy",
+          "AI Sovereignty"
+        ],
+        "file": "29-tale-29.md"
+      },
+      {
+        "number": 30,
+        "title": "The Eternal Sovereignty",
+        "vertex_coordinates": "1,1,1,1,1,1",
+        "vertex_description": "All Dimensions Active (Complete System Synthesis)",
+        "category": "synthesis",
+        "part": 7,
+        "concepts": [
+          "Agent Privacy",
+          "Proof-Carrying Agents",
+          "Verifiable Delegation",
+          "Sovereign AI Systems"
+        ],
+        "file": "30-tale-30.md"
+      }
+    ]
+  }
+}
