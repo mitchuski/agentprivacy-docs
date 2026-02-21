@@ -31,6 +31,7 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 | **What Agentprivacy Is** | — | Mission, thesis, and orientation | All, New joiners |
 | **Glossary Master** | 2.5 | Canonical terminology reference (118 entries) | All |
 | **Privacy is Value V4** | 4.0 | The equation evolves — from lattice to manifold | All, Researchers |
+| **Privacy Value Model V4 Formal Spec** | 1.0 | PVM equation, definitions, §7 falsifiability; mathematics only | Researchers, Academics |
 | **Promise Theory Reference** | 1.2 | Formal semantic foundations, three graphs as PT types | Researchers, Architects |
 | **IEEE 7012 Quick Reference** | 1.0 | MyTerms standard foundation | Developers, Implementers |
 | **Whitepaper** | 5.0 | Technical architecture, three graphs, secret language | Developers, Researchers |
@@ -261,7 +262,7 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 ### For Researchers / Academics
 1. Promise Theory Reference v1.2 (formal foundations)
 2. Research Paper v3.8 (mathematical proofs, PVM V4 formal)
-3. Privacy is Value v4.0 (the equation evolves)
+3. Privacy is Value v4.0 (the equation evolves) / [PVM V4 Formal Spec v1.0](privacy_value_v4_formal_specification.md) (mathematics only)
 4. UOR × 64-Tetrahedra × ZK Mapping v1.0 (convergence details)
 5. Whitepaper v5.0 (architecture, three graphs, secret language)
 6. Research Proposal v1.6 (collaboration opportunities)
@@ -366,7 +367,7 @@ This documentation suite has been reviewed for terminology consistency, economic
 - **Version References**: All documents reference correct companion versions
 
 ### V4 Convergence Integration (v1.5)
-- Privacy is Value V4 and UOR Mapping v1.0 added to document suite
+- Privacy is Value V4, PVM V4 Formal Specification v1.0 (and agent peer review appendix), and UOR Mapping v1.0 added to document suite
 - Five grimoire markdown files replace monolithic spellbook reference
 - Tetrahedral hypothesis upgraded: SPECULATIVE (5%) → CONVERGENT PRELIMINARY (25-40%)
 - Three graphs model (Knowledge × Promise × Trust) integrated across suite
@@ -382,6 +383,7 @@ This documentation suite has been reviewed for terminology consistency, economic
 When referencing across documents:
 - `[Whitepaper v5.0, §Section]`
 - `[Research Paper v3.8, Theorem 3.2]`
+- `[PVM V4 Formal Spec v1.0, §Section]`
 - `[Glossary v2.5, Term Name]`
 - `[Privacy is Value v4, §Section]`
 - `[UOR Mapping v1.0, §Section]`

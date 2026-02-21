@@ -217,6 +217,7 @@ Or in the spellbook's language: *"The lattice doesn't care how you arrived. It o
 | Document | Version | Relevance |
 |----------|---------|-----------|
 | [Privacy is Value V4](privacy_is_value_v4.md) | v4.0 | Parent document — the equation this mapping informs |
+| [PVM V4 Formal Specification](privacy_value_v4_formal_specification.md) | v1.0 | Equation, definitions, §7 open questions & falsifiability |
 | [Research Paper](dualprivacy_researchpaper_v3_6.md) | v3.6→v3.7 | Formal mathematical framework |
 | [Whitepaper](swordsman_mage_whitepaper_v4_8.md) | v4.8→v4.9 | Tetrahedral sovereignty section |
 | [Glossary](GLOSSARY_MASTER_v2_3.md) | v2.3→v2.4 | UOR and lattice terminology |

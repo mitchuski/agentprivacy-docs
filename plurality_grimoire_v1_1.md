@@ -143,7 +143,8 @@ The grimoire is organized into seven parts spanning 30 acts:
 
 - Whitepaper v4.9 — Technical architecture
 - Research Paper v3.7 — Mathematical proofs
-- Privacy is Value V4 — Economic model
+- Privacy is Value V4 — Economic model (narrative)
+- Privacy Value Model V4 Formal Specification v1.0 — PVM equation, §7 falsifiability
 - Glossary v2.4 — Canonical terminology
 
 ---

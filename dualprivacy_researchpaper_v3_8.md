@@ -1808,6 +1808,7 @@ def monitor_budget_compliance(agent, budget, window=1000):
 - **Companion Documents:** 
   - Whitepaper v5.0
   - Privacy is Value v4.0
+  - Privacy Value Model V4 Formal Specification v1.0
   - UOR × 64-Tetrahedra × ZK Mapping v1.0
   - Five Grimoires (113 inscriptions)
   - VRC Promise Protocol v3.1

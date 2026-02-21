@@ -4,7 +4,7 @@
 **Date:** February 2026  
 **Author:** Mitchell Travers (privacymage)  
 **Status:** Working paper — peer review invited  
-**Companion to:** "Privacy is Value: From the Lattice Drake to the Manifold Dragon" (narrative version)
+**Companion to:** "Privacy is Value: From the Lattice Drake to the Manifold Dragon" (narrative version). An invited [agent peer review](privacy_value_v4_formal_spec_agent_peer_review.md) is available as an appendix.
 
 ---
 

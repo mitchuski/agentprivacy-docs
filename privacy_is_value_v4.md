@@ -5,7 +5,8 @@
 **Date:** February 19, 2026  
 **Version:** 4.0  
 **Status:** 🚧 STAGE 1 — Convergent discovery, pre-peer review  
-**Companion:** [UOR × 64-Tetrahedra × ZK Mapping v1.0](uor_tetrahedra_zk_mapping_v1_0.md)
+**Companion:** [UOR × 64-Tetrahedra × ZK Mapping v1.0](uor_tetrahedra_zk_mapping_v1_0.md)  
+**Formal specification:** [Privacy Value Model V4: Formal Specification](privacy_value_v4_formal_specification.md) (mathematics only; includes [agent peer review](privacy_value_v4_formal_spec_agent_peer_review.md) appendix).
 
 ---
 

@@ -31,6 +31,7 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 | **What Agentprivacy Is** | — | Mission, thesis, and orientation | All, New joiners |
 | **Glossary Master** | 2.5 | Canonical terminology reference (118 entries) | All |
 | **Privacy is Value V4** | 4.0 | The equation evolves — from lattice to manifold | All, Researchers |
+| **Privacy Value Model V4 Formal Spec** | 1.0 | PVM equation, definitions, §7 falsifiability; mathematics only | Researchers, Academics |
 | **Promise Theory Reference** | 1.2 | Formal semantic foundations, three graphs as PT types | Researchers, Architects |
 | **IEEE 7012 Quick Reference** | 1.0 | MyTerms standard foundation | Developers, Implementers |
 | **Whitepaper** | 5.0 | Technical architecture, three graphs, secret language | Developers, Researchers |
@@ -382,6 +383,7 @@ This documentation suite has been reviewed for terminology consistency, economic
 When referencing across documents:
 - `[Whitepaper v5.0, §Section]`
 - `[Research Paper v3.8, Theorem 3.2]`
+- `[PVM V4 Formal Spec v1.0, §Section]`
 - `[Glossary v2.5, Term Name]`
 - `[Privacy is Value v4, §Section]`
 - `[UOR Mapping v1.0, §Section]`

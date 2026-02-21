@@ -1322,11 +1322,12 @@ This document is part of the 0xagentprivacy documentation suite:
 1. **Whitepaper v5.0** - Dual-agent architecture, Promise Theory foundations, three graphs, secret language
 2. **Research Paper v3.8** - Mathematical proofs, information-theoretic bounds, PVM V4 formal presentation
 3. **Privacy is Value v4.0** - The equation evolves — from lattice to manifold
-4. **Promise Theory Reference v1.1** - Formal semantic foundations
-5. **Five Grimoires** - 113 inscriptions across five spellbooks (28,898 lines)
-6. **VRC Promise Protocol v3.2** (this document) - Economic architecture
-7. **Glossary Master v2.5** - Canonical terminology reference
-8. **UOR × 64-Tetrahedra × ZK Mapping v1.0** - Three frameworks converge on 2⁶=64
+4. **Privacy Value Model V4 Formal Spec v1.0** - PVM equation, definitions, §7 falsifiability (mathematics only)
+5. **Promise Theory Reference v1.1** - Formal semantic foundations
+6. **Five Grimoires** - 113 inscriptions across five spellbooks (28,898 lines)
+7. **VRC Promise Protocol v3.2** (this document) - Economic architecture
+8. **Glossary Master v2.5** - Canonical terminology reference
+9. **UOR × 64-Tetrahedra × ZK Mapping v1.0** - Three frameworks converge on 2⁶=64
 
 ---
 

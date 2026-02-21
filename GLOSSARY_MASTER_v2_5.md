@@ -20,6 +20,7 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 | Promise Theory Reference | 1.1 → 1.2 | February 2026 | 🔄 UPDATE PENDING |
 | IEEE 7012 Quick Reference | 1.0 | January 29, 2026 | ✅ FINAL |
 | **Privacy is Value v4** | 4.0 | February 19, 2026 | ✅ STAGE 1 — NEW |
+| **Privacy Value Model V4 Formal Specification** | 1.0 | February 2026 | ✅ STAGE 1 — NEW |
 | **UOR × 64-Tetrahedra × ZK Mapping** | 1.0 | February 19, 2026 | 🔬 PRELIMINARY — NEW |
 
 **Note:** All cross-references between documents should use these version numbers. When documents reference each other, they should cite specific versions (e.g., "see Research Paper v3.6, Theorem 3.2").
@@ -1719,6 +1720,7 @@ These terms should NOT be used in 0xagentprivacy documentation. Use the canonica
 |----------|---------|-------|-----------|
 | **This Glossary** | 2.5 | Terminology standardization | All canonical definitions |
 | **Privacy is Value v4** | 4.0 | PVM V4, manifold transition, three graphs | Separation Matrix, Edge Value, Temporal Memory, Secret Language |
+| **PVM V4 Formal Specification** | 1.0 | PVM equation, definitions, §7 open questions & falsifiability | Equation, Σ, A(τ), T(π), Φ(Σ), Conjectures C1–C5 |
 | **UOR Mapping** | 1.0 | UOR × 64-Tetrahedra × ZK convergence | Stratum, Content-Addressing, Derivation Chain, Toroidal Topology |
 | **Promise Theory Reference** | 1.1 | PT foundations, three graphs as promise types | Autonomy, Assessment, Superagent, Irreducible |
 | **Whitepaper** | 4.9 | Architecture, three graphs, secret language | Dual Agents, Separation, VRC, Chronicles, MyTerms |
@@ -1779,6 +1781,7 @@ When referencing across documents, use:
 - `[Spellbook v5.1, Act N]`
 - `[Promise Theory Ref v1.1, §Section]`
 - `[Privacy is Value v4, §Section]`
+- `[PVM V4 Formal Spec v1.0, §Section]`
 - `[UOR Mapping v1.0, §Section]`
 - `[Bergstra & Burgess (2019), §Chapter.Section]`
 

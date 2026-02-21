@@ -1816,6 +1816,8 @@ This architecture is being developed now. This is the inflection point.
 
 - **Privacy is Value v4:** v4.0 (companion document — the equation evolves)
 
+- **Privacy Value Model V4 Formal Specification:** v1.0 (companion document — PVM equation, definitions, §7 falsifiability)
+
 - **UOR × 64-Tetrahedra × ZK Mapping:** v1.0 (companion document — convergence details)
 
 - **Promise Theory Reference:** v1.1 (companion document)

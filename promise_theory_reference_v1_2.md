@@ -5,7 +5,7 @@
 **Version:** 1.2  
 **Date:** February 20, 2026  
 **Status:** ✅ V4 Integration  
-**Companion to:** Whitepaper v5.0, Research Paper v3.8, Glossary v2.5, Privacy is Value v4.0
+**Companion to:** Whitepaper v5.0, Research Paper v3.8, Glossary v2.5, Privacy is Value v4.0, Privacy Value Model V4 Formal Spec v1.0
 
 ---
 
@@ -662,6 +662,7 @@ English:           Swordsman promises protection to First Person,
 - Whitepaper v5.0 — Three graphs, secret language, four forces
 - Research Paper v3.8 — PVM V4 formal presentation, claims table
 - Privacy is Value v4.0 — The equation evolves
+- Privacy Value Model V4 Formal Spec v1.0 — PVM equation, §7 open questions
 - UOR × 64-Tetrahedra × ZK Mapping v1.0 — Triple convergence
 - Glossary v2.5 — Canonical terminology
 - VRC Promise Protocol v3.2 — Economic architecture with edge value
