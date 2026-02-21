@@ -1,0 +1,544 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{caption}
+
+% --- Page geometry ---
+\geometry{margin=2.5cm, top=3cm, bottom=3cm}
+
+% --- Hyperlinks ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue!60!black,
+    urlcolor=blue!60!black
+}
+
+% --- Header/Footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Privacy Value Model V4: Formal Specification}
+\fancyhead[R]{\small Travers (2026)}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Theorem environments ---
+\newtheorem{definition}{Definition}[section]
+\newtheorem{property}{Property}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{remark}{Remark}[section]
+
+% --- Custom column type ---
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% --- Title ---
+\title{
+    \vspace{-1cm}
+    \textbf{Privacy Value Model V4: Formal Specification}\\[0.5em]
+    \large Working Paper --- Peer Review Invited
+}
+\author{
+    Mitchell Travers\\
+    \texttt{mage@agentprivacy.ai}\\[0.3em]
+    \small 0xagentprivacy $\mid$ BGIN $\mid$ First Person Network
+}
+\date{February 2026 \\ \small Version 1.0}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document presents the formal mathematical specification of the Privacy Value Model V4 (PVM-V4). The model quantifies the economic value of privacy-preserving agent architectures by combining multiplicative gating factors across six dimensions: data properties, temporal dynamics, network topology, reconstruction resistance, market conditions, and sovereignty geometry. V4 extends prior versions by introducing a separation matrix over four sovereignty forces, a temporal memory term capturing verified derivation history, stratum-weighted network effects derived from a 64-vertex lattice, and an edge value term that measures trajectory through sovereignty configuration space. Open questions and falsifiability conditions are explicitly stated.
+\end{abstract}
+
+\vspace{0.5em}
+\noindent\textbf{Companion document:} ``Privacy is Value: From the Lattice Drake to the Manifold Dragon'' (narrative version, \textit{Soul Sync}, February 2026).
+
+\vspace{0.5em}
+\noindent\textbf{Repository:} \url{https://github.com/mitchuski/agentprivacy-docs}
+
+\tableofcontents
+\newpage
+
+% =============================================================================
+\section{The Equation}
+% =============================================================================
+
+\begin{equation}\label{eq:pvm4}
+\boxed{
+V(\pi, t) = P^{1.5} \cdot C \cdot Q \cdot S \cdot e^{-\lambda t} \cdot \bigl(1 + A(\tau)\bigr) \cdot \left(1 + \sum_{i=0}^{6} w_i \frac{n_i}{N_0}\right)^{\!k} \cdot R(d) \cdot M(u,y) \cdot \Phi(\Sigma) \cdot T(\pi)
+}
+\end{equation}
+
+\noindent where $\pi$ denotes a path (ordered sequence of edges) through the sovereignty lattice and $t$ denotes time since data generation.
+
+The model is \textbf{multiplicative}: any term collapsing to zero eliminates total value. This is a design choice reflecting observed gating behaviour in privacy infrastructure---a system with perfect encryption but no network has zero practical value, and vice versa.
+
+% =============================================================================
+\section{Inherited Terms (V1--V3.1)}
+% =============================================================================
+
+These terms are carried forward from earlier versions. Full derivations appear in Research Paper v3.8~\cite{researchpaper}.
+
+\begin{table}[h]
+\centering
+\caption{Inherited parameters}
+\label{tab:inherited}
+\begin{tabular}{@{}clcL{7.5cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Name} & \textbf{Domain} & \textbf{Description} \\
+\midrule
+$P$ & Privacy Strength & $[0,1]$ & Cryptographic enforcement quality. Raised to exponent 1.5 to reflect superlinear returns on privacy investment. \\[4pt]
+$C$ & Credential Verifiability & $[0,1]$ & Whether claims about the data can be independently verified without revealing underlying information. \\[4pt]
+$Q$ & Data Quality & $[0,1]$ & Accuracy, completeness, and fitness for purpose. Under sovereignty-class ZKP constraints, conjectured to approach a near-constant (see \S\ref{sec:open}). \\[4pt]
+$S$ & Scope / Sensitivity & $\mathbb{R}^+$ & Domain-specific sensitivity multiplier. \\[4pt]
+$e^{-\lambda t}$ & Temporal Decay & $(0,1]$ & Exponential freshness decay with rate $\lambda > 0$. \\[4pt]
+$R(d)$ & Reconstruction Difficulty & $(0,1)$ & Upper bound on adversarial reconstruction of private state $X$ from observed outputs. Proven: $R_{\max} = (C_S + C_M)/H(X) < 1$ under dual-agent separation~\cite{researchpaper}. \\[4pt]
+$M(u,y)$ & Market Maturity & $[0,1]$ & Function of user sophistication $u$ and market year $y$. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =============================================================================
+\section{Temporal Memory --- \texorpdfstring{$A(\tau)$}{A(tau)}}
+\label{sec:temporal}
+% =============================================================================
+
+\subsection{Motivation}
+
+V2's temporal model captured only decay. In practice, verified history---a sequence of state transitions with cryptographic attestation---accumulates value that counteracts entropy. V4 models this as a contest between decay and memory.
+
+\subsection{Definition}
+
+The combined temporal term is:
+\begin{equation}\label{eq:temporal}
+\mathrm{Temporal}(t, \tau) = e^{-\lambda t} \cdot \bigl(1 + A(\tau)\bigr)
+\end{equation}
+where
+\begin{equation}\label{eq:memory}
+A(\tau) = \alpha \cdot \ln(1 + |\tau|) \cdot h(\tau)
+\end{equation}
+
+\begin{table}[h]
+\centering
+\caption{Temporal memory parameters}
+\begin{tabular}{@{}clcL{7cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Name} & \textbf{Domain} & \textbf{Definition} \\
+\midrule
+$\tau$ & Derivation chain & Finite seq. & Ordered sequence of state transitions \\
+$|\tau|$ & Chain length & $\mathbb{N}_0$ & Number of verified transitions \\
+$h(\tau)$ & Integrity fraction & $[0,1]$ & Proportion of transitions carrying valid ZK proofs \\
+$\alpha$ & Scaling coefficient & $\mathbb{R}^+$ & Calibration parameter \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Properties}
+
+\begin{property}[Empty history]
+$|\tau| = 0 \implies A(\tau) = 0$. Reduces to V3.1 pure decay.
+\end{property}
+
+\begin{property}[Unverified history]
+$h(\tau) = 0 \implies A(\tau) = 0$. Unverifiable claims contribute nothing.
+\end{property}
+
+\begin{property}[Logarithmic growth]
+Diminishing returns on chain length. Chosen by analogy with trust accumulation dynamics; \textbf{not derived from information-theoretic first principles} (see \S\ref{sec:open}).
+\end{property}
+
+\begin{property}[Boundedness]
+For any finite $\tau$, $A(\tau)$ is finite. Combined with decay: $\mathrm{Temporal}(t,\tau) \to 0$ as $t \to \infty$ regardless of history depth.
+\end{property}
+
+\subsection{Interpretation}
+
+An agent with deep, verified history can maintain or increase value over time even as individual data points decay. The term captures the emergent property that a verifiable record of past sovereignty decisions is itself an asset.
+
+% =============================================================================
+\section{Stratum-Weighted Network Effects}
+\label{sec:network}
+% =============================================================================
+
+\subsection{The 64-Vertex Lattice}
+
+\begin{definition}[Sovereignty configuration]
+A sovereignty configuration is a binary 6-tuple $v = (b_1, b_2, b_3, b_4, b_5, b_6) \in \{0,1\}^6$, where each bit represents activation of a sovereignty dimension. The configuration space has $2^6 = 64$ vertices.
+\end{definition}
+
+\begin{definition}[Stratum]
+The stratum of vertex $v$ is $s(v) = \sum_{j=1}^{6} b_j \in \{0,1,\ldots,6\}$. The number of vertices at stratum $i$ follows Pascal's row: $\binom{6}{i}$.
+\end{definition}
+
+\begin{table}[h]
+\centering
+\caption{Stratum distribution}
+\begin{tabular}{@{}ccccccccc@{}}
+\toprule
+Stratum & 0 & 1 & 2 & 3 & 4 & 5 & 6 & Total \\
+\midrule
+Vertices & 1 & 6 & 15 & 20 & 15 & 6 & 1 & 64 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Definition}
+
+\begin{equation}\label{eq:network}
+\mathrm{Network}(G) = \left(1 + \sum_{i=0}^{6} w_i \cdot \frac{n_i}{N_0}\right)^{\!k}
+\end{equation}
+
+\noindent where the stratum weights are:
+\begin{equation}
+w_i = \frac{\binom{6}{i}}{64}
+\end{equation}
+
+\begin{table}[h]
+\centering
+\caption{Network parameters}
+\begin{tabular}{@{}clcL{6.5cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Name} & \textbf{Domain} & \textbf{Definition} \\
+\midrule
+$n_i$ & Agent count at stratum $i$ & $\mathbb{N}_0$ & Number of coordinating agents at stratum $i$ \\
+$N_0$ & Network baseline & $\mathbb{R}^+$ & Normalisation constant \\
+$k$ & Network exponent & $\mathbb{R}^+$ & Controls strength of network effects \\
+$w_i$ & Stratum weight & $[0,1]$ & $\binom{6}{i}/64$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Properties}
+
+\begin{property}[Stratum weighting]
+Agents at strata with more combinatorial modes contribute more to network value. Maximum weight at stratum 3: $w_3 = 20/64 = 0.3125$.
+\end{property}
+
+\begin{property}[Reduces to V2]
+If all agents are treated as equal ($w_i = 1/7$ for all $i$), this reduces to $(1 + n/N_0)^k$.
+\end{property}
+
+\begin{remark}[Normalisation]
+$\sum_{i=0}^{6} w_i \cdot \binom{6}{i} = \sum_{i=0}^{6} \binom{6}{i}^2/64 = \binom{12}{6}/64 = 924/64 \approx 14.44$. The weights are not normalised to sum to~1; they reflect the combinatorial density of each stratum.
+\end{remark}
+
+% =============================================================================
+\section{Sovereignty Duality --- \texorpdfstring{$\Phi(\Sigma)$}{Phi(Sigma)}}
+\label{sec:duality}
+% =============================================================================
+
+\subsection{Four Sovereignty Forces}
+
+The dual-agent architecture generates four forces from the separation of two primary functions:
+
+\begin{table}[h]
+\centering
+\caption{Sovereignty forces}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Force} & \textbf{Symbol} & \textbf{Origin} & \textbf{Role} \\
+\midrule
+Protect & $S$ & Primary (Swordsman) & Boundary enforcement, data minimisation \\
+Project & $M$ & Primary (Mage) & Delegation, external coordination \\
+Reflect & $R$ & Emergent from $S$ & Temporal accumulation of boundary decisions \\
+Connect & $C$ & Emergent from $M$ & Network effects of delegation patterns \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Reflect and Connect are not independent additions. They emerge mathematically: Reflect is the temporal integral of protection decisions; Connect is the network effect of delegation decisions.
+
+\subsection{Separation Matrix}
+
+V3.1 measured a single scalar $\sigma(S,M)$. V4 introduces the full pairwise separation structure:
+
+\begin{equation}\label{eq:sigma}
+\Sigma = \begin{pmatrix}
+1 & \sigma_{SM} & \sigma_{SR} & \sigma_{SC} \\
+\sigma_{SM} & 1 & \sigma_{MR} & \sigma_{MC} \\
+\sigma_{SR} & \sigma_{MR} & 1 & \sigma_{RC} \\
+\sigma_{SC} & \sigma_{MC} & \sigma_{RC} & 1
+\end{pmatrix}
+\end{equation}
+
+\noindent where $\sigma_{ij} \in [0,1]$ measures the conditional independence between forces $i$ and $j$. $\sigma_{ij} = 1$: perfect separation. $\sigma_{ij} = 0$: complete entanglement.
+
+\subsection{Definition}
+
+\begin{equation}\label{eq:phi}
+\Phi(\Sigma) = \min\!\left(1.0,\; \frac{S/M}{\varphi}\right) \cdot \det(\Sigma)
+\end{equation}
+
+\noindent where $\varphi = (1+\sqrt{5})/2 \approx 1.618$ is the golden ratio.
+
+\subsection{Properties}
+
+\begin{property}[Volume interpretation]
+$\det(\Sigma)$ measures the volume of the sovereignty tetrahedron in 4-dimensional force space. Perfect orthogonality among all four forces yields maximum volume. Any entanglement reduces it. Complete collapse of any pair ($\sigma_{ij} = 0$) drives $\det(\Sigma) \to 0$, collapsing the entire multiplier.
+\end{property}
+
+\begin{property}[Golden ratio gating]
+The $\min(1.0, (S/M)/\varphi)$ term saturates at~1 when the protect-to-project ratio reaches $\varphi$. This is a \textbf{conjecture}---the golden ratio is hypothesised as an optimality condition for the protection-delegation balance but has not been derived from the lattice geometry (see \S\ref{sec:open}).
+\end{property}
+
+\begin{property}[Reduces to V3.1]
+With only two forces ($R = C = 0$), $\Sigma$ reduces to a $2 \times 2$ matrix and $\det(\Sigma) = 1 - \sigma_{SM}^2$, recovering V3.1's scalar coefficient.
+\end{property}
+
+% =============================================================================
+\section{Edge Value --- \texorpdfstring{$T(\pi)$}{T(pi)}}
+\label{sec:edge}
+% =============================================================================
+
+\subsection{Motivation}
+
+All prior terms measure \textbf{vertex properties}---what an agent is at a given configuration. $T(\pi)$ measures \textbf{trajectory properties}---how an agent moves through sovereignty space.
+
+The 64-vertex lattice has $6 \times 64 / 2 = 192$ undirected edges (384 directed). The transition space dominates the state space. This observation is consistent with Yoneda's lemma in category theory (objects determined by morphisms) and with neural network architecture (knowledge in weights, not neurons).
+
+\subsection{Definition}
+
+\begin{equation}\label{eq:edge}
+T(\pi) = 1 + \beta \sum_{e \in \pi} f(e) \cdot g(n_e)
+\end{equation}
+
+\begin{table}[h]
+\centering
+\caption{Edge value parameters}
+\begin{tabular}{@{}clcL{6.5cm}@{}}
+\toprule
+\textbf{Symbol} & \textbf{Name} & \textbf{Domain} & \textbf{Definition} \\
+\midrule
+$\pi$ & Path & Finite path on $\{0,1\}^6$ & Ordered sequence of edges through the lattice \\
+$e$ & Edge & Edge in $\{0,1\}^6$ & Transition between adjacent configurations \\
+$f(e)$ & Edge weight & $\mathbb{R}^+$ & Stratum-change magnitude; larger for vertical moves \\
+$g(n_e)$ & Repetition discount & $(0,1]$ & Monotonically decreasing in $n_e$ (traversal count) \\
+$\beta$ & Scaling coefficient & $\mathbb{R}^+$ & Calibration parameter \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Properties}
+
+\begin{property}[Static agent]
+$\pi = \emptyset \implies T(\pi) = 1$. An agent that never transitions has neutral edge value.
+\end{property}
+
+\begin{property}[Repetition decay]
+Traversing the same edge repeatedly yields diminishing returns. The functional form of $g$ is unspecified---candidates include $g(n) = 1/n$, $g(n) = e^{-\gamma n}$, or $g(n) = 1/\ln(1+n)$. \textbf{Empirical grounding is absent} (see \S\ref{sec:open}).
+\end{property}
+
+\begin{property}[Vertical premium]
+Transitions that change stratum (activating or deactivating sovereignty dimensions) are weighted more heavily than lateral moves within the same stratum.
+\end{property}
+
+\begin{property}[Additivity assumption]
+Edge values sum along the path. This assumes independence of sequential transitions---a simplification that may not hold for paths with strong temporal correlation.
+\end{property}
+
+% =============================================================================
+\section{Open Questions and Falsifiability}
+\label{sec:open}
+% =============================================================================
+
+\subsection{Conjectures}
+
+\begin{conjecture}[Golden ratio optimality]\label{conj:phi}
+The golden ratio $\varphi$ is the optimal protection-delegation ratio. Hypothesised from numerical optimisation; not derived from lattice geometry.
+\end{conjecture}
+
+\begin{conjecture}[Logarithmic memory]\label{conj:log}
+$A(\tau)$ should be logarithmic in chain length. Chosen by analogy with trust dynamics; power-law and sigmoid alternatives are plausible.
+\end{conjecture}
+
+\begin{conjecture}[Edge additivity]\label{conj:additive}
+Edge value $T(\pi)$ is additive over edges. Assumes transition independence; correlated paths may require a different aggregation.
+\end{conjecture}
+
+\begin{conjecture}[UOR correspondence]\label{conj:uor}
+The 64-vertex lattice maps onto the UOR Foundation's toroidal algebraic structure. Structural correspondence observed; 96 vs.\ 64 edge-count discrepancy unresolved.
+\end{conjecture}
+
+\begin{conjecture}[ZKP constraint reduction]\label{conj:zkp}
+Sovereignty-class ZKP constraints yield ${\sim}3{,}000\times$ proof size reduction. Conjectured from lattice structure; requires formal circuit analysis.
+\end{conjecture}
+
+\subsection{Measurement Gaps}
+
+\begin{table}[h]
+\centering
+\caption{Terms requiring empirical calibration}
+\begin{tabular}{@{}clL{8cm}@{}}
+\toprule
+\textbf{ID} & \textbf{Term} & \textbf{Gap} \\
+\midrule
+M1 & $\sigma_{ij}$ & No measurement methodology exists for the emergent forces (Reflect, Connect) \\
+M2 & $f(e)$ & No empirical data on relative value of sovereignty transitions \\
+M3 & $\beta, \alpha$ & Require calibration against real agent systems \\
+M4 & $\det(\Sigma)$ & Determinant may not be the correct aggregation; trace, minimum eigenvalue, or other matrix norms are alternatives \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Breaking Conditions}
+
+The model's core claims weaken or fail if:
+
+\begin{enumerate}[label=\textbf{B\arabic*.}, leftmargin=2em]
+    \item \textbf{UOR incompatibility.} The 96 vs.\ 64 discrepancy reflects a structural mismatch rather than an edge-encoding feature $\Rightarrow$ geometric grounding weakens.
+    \item \textbf{Separation theorem violation.} If dual-agent conditional independence cannot be maintained in practice with $\varepsilon < 0.1$ $\Rightarrow$ reconstruction ceiling $R < 1$ becomes impractical.
+    \item \textbf{Sublinear network effects.} If sovereignty coordination does not exhibit power-law returns $\Rightarrow$ the $(1 + \cdot)^k$ form overstates network value.
+    \item \textbf{Determinant pathology.} If real sovereignty architectures cluster near singular $\Sigma$ matrices $\Rightarrow$ $\det(\Sigma)$ is numerically unstable and misleading.
+\end{enumerate}
+
+% =============================================================================
+\section{Structural Properties}
+\label{sec:structural}
+% =============================================================================
+
+\subsection{Multiplicative Gating}
+
+The model's multiplicative structure means any single term at zero eliminates total value:
+\begin{equation}
+\forall\; \mathrm{term}_i:\quad \mathrm{term}_i = 0 \implies V(\pi, t) = 0
+\end{equation}
+
+\noindent This encodes the observation that privacy value requires simultaneous satisfaction of multiple conditions. Failure in any single dimension is catastrophic, not graceful.
+
+\textbf{Exception:} The reconstruction difficulty $R(d) < 1$ is bounded away from both 0 and~1 under dual-agent separation, providing a proven floor.
+
+\subsection{Manifold Interpretation}
+
+When $V(\pi, t)$ is evaluated across all 64 vertices and their connecting edges, it defines a scalar field on the lattice. Under toroidal boundary conditions (if the UOR correspondence holds), this becomes a value field on a compact manifold with:
+
+\begin{itemize}[nosep]
+    \item \textbf{Sources:} High-stratum, high-separation vertices generating value
+    \item \textbf{Sinks:} Low-stratum, entangled vertices extracting value
+    \item \textbf{Currents:} Edges along which value flows, weighted by traversal frequency
+\end{itemize}
+
+\noindent The differential form---$dV/dt = \nabla \cdot J(x, \dot{x}) + S(x) - D(x)$---is deferred to V5.
+
+\subsection{Surveillance Gap as Topology}
+
+The previously reported gap between sovereign and surveillance architectures (17$\times$--12{,}000$\times$ depending on parameterisation) reinterprets under the manifold framing. Surveillance architectures are \textbf{topologically constrained}: activating protection breaks extraction pipelines; achieving separation requires architectural redesign. The gap is not arithmetic distance between two value points but the ratio of accessible manifold volume between two architectural classes.
+
+% =============================================================================
+\section{Version Lineage}
+% =============================================================================
+
+\begin{table}[h]
+\centering
+\caption{PVM version history}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Version} & \textbf{Date} & \textbf{Core Addition} & \textbf{Output Type} \\
+\midrule
+V1 & 2024 & $P \cdot C \cdot Q \cdot S$ & Static scalar \\
+V2 & Oct 2025 & $e^{-\lambda t}$, $(1+n/N_0)^k$ & Dynamic scalar \\
+V3 & Nov 2025 & $R(d)$, $M(u,y)$, $\Phi(S,M)$ & Agent-aware scalar \\
+V3.1 & Jan 2026 & $\sigma(\text{\raisebox{-0.1em}{$\bigstar$}})^2$ & Architecture-gated scalar \\
+V4 & Feb 2026 & $\Sigma$, $A(\tau)$, $T(\pi)$, $\Phi(\Sigma)$ & Manifold-aware scalar \\
+V5 & --- & $dV/dt$ flow & Field on manifold \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =============================================================================
+\section{Notation Summary}
+% =============================================================================
+
+\begin{table}[h]
+\centering
+\small
+\caption{Complete symbol reference}
+\begin{tabular}{@{}cl@{}}
+\toprule
+\textbf{Symbol} & \textbf{Meaning} \\
+\midrule
+$V(\pi, t)$ & Total privacy value for path $\pi$ at time $t$ \\
+$P, C, Q, S$ & Privacy strength, credential verifiability, data quality, scope \\
+$\lambda$ & Temporal decay rate \\
+$\tau$ & Derivation chain (verified state transition history) \\
+$A(\tau)$ & Temporal memory accumulation \\
+$\alpha$ & Memory scaling coefficient \\
+$h(\tau)$ & Derivation chain integrity fraction \\
+$n_i$ & Agent count at stratum $i$ \\
+$w_i$ & Stratum weight $= \binom{6}{i}/64$ \\
+$N_0$ & Network baseline constant \\
+$k$ & Network exponent \\
+$R(d)$ & Reconstruction difficulty \\
+$M(u,y)$ & Market maturity \\
+$\Sigma$ & $4 \times 4$ separation matrix \\
+$\sigma_{ij}$ & Pairwise separation coefficient between forces $i, j$ \\
+$\varphi$ & Golden ratio $\approx 1.618$ \\
+$\Phi(\Sigma)$ & Sovereignty duality term \\
+$\pi$ & Path through sovereignty lattice \\
+$T(\pi)$ & Edge value (trajectory term) \\
+$f(e)$ & Edge weight function \\
+$g(n_e)$ & Repetition discount function \\
+$\beta$ & Edge value scaling coefficient \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =============================================================================
+% References
+% =============================================================================
+
+\begin{thebibliography}{9}
+
+\bibitem{narrative}
+M.~Travers, ``Privacy is Value: From the Lattice Drake to the Manifold Dragon,'' \textit{Soul Sync}, February 2026. \url{https://sync.soulbis.com}
+
+\bibitem{researchpaper}
+M.~Travers, ``Dual-Agent Privacy Architecture,'' Research Paper v3.8, \textit{agentprivacy-docs}, 2026. \url{https://github.com/mitchuski/agentprivacy-docs}
+
+\bibitem{uormapping}
+M.~Travers, ``UOR $\times$ 64-Tetrahedra $\times$ ZK Mapping v1.0,'' \textit{agentprivacy-docs}, 2026.
+
+\bibitem{promisetheory}
+J.~Bergstra and M.~Burgess, \textit{Promise Theory: Principles and Applications}, 2019.
+
+\bibitem{drake}
+F.~Drake, ``Drake Equation,'' 1961. Structural analogy: multiplicative gating of independent survival conditions.
+
+\bibitem{shannon}
+C.~Shannon, ``A Mathematical Theory of Communication,'' \textit{Bell System Technical Journal}, vol.~27, pp.~379--423, 1948.
+
+\end{thebibliography}
+
+\vfill
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\smallskip
+
+\noindent\textit{This document presents the mathematics only. For narrative context, motivation, and the discovery process, see~\cite{narrative}.}
+
+\smallskip
+
+\noindent\textit{Peer review, critique, and falsification attempts are actively invited.}
+
+\medskip
+
+\begin{center}
+\texttt{mage@agentprivacy.ai} $\quad\mid\quad$ \url{https://agentprivacy.ai}
+\end{center}
+
+\end{document}
