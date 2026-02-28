@@ -2,8 +2,8 @@
 
 **One Implementation Option for Privacy-First AI Agent Economics**
 
-**Version 3.2 - V4 Integration Edition**  
-**February 20, 2026**  
+**Version 3.3 - V5 Integration Edition**
+**February 27, 2026**
 **0xagentprivacy Protocol Team**
 
 ---
@@ -52,17 +52,20 @@ This document describes how sustainable funding enables the economic implementat
 
 This economic architecture implements the mathematical foundations established in:
 
-- **Whitepaper v5.0:** "Swordsman and Mage: Dual Agents Derived from the First Person"
-- **Research Paper v3.8:** "Dual Privacy Architecture: Information-Theoretic Bounds"
-- **Privacy is Value v4.0:** "The Equation Evolves — From the Lattice Drake to the Manifold Dragon"
-- **Glossary v2.5:** Canonical terminology reference
-- **Promise Theory Reference v1.1:** Formal semantic foundations
+- **Whitepaper v6.0:** "Swordsman and Mage: Dual Agents Derived from the First Person"
+- **Research Paper v4.0:** "Dual Privacy Architecture: Information-Theoretic Bounds"
+- **Privacy is Value v5.0:** "The Equation Evolves — From the Manifold Dragon to the Holographic Bound"
+- **Glossary v3.0:** Canonical V5 terminology reference
+- **Promise Theory Reference v1.3:** Formal semantic foundations
 - **Spellbook Act 9:** "The Zcash Shield" (narrative interpretation of dual ledger economics)
 - **Spellbook Act 11:** "Balanced Spiral of Sovereignty" (golden ratio derivation)
+- **Spellbook Act XXIV:** "The Holographic Bound" (V5 discovery narrative)
 
-**Critical dependency:** The economic mechanisms described here are designed to enforce the architectural separation (Y_S ⊥⊥ Y_M)|X established in Research Paper v3.8. The mathematical guarantees (Theorems 5.1-5.4) hold independent of specific token choices.
+**Critical dependency:** The economic mechanisms described here are designed to enforce the architectural separation (Y_S ⊥⊥ Y_M)|X established in Research Paper v4.0. The mathematical guarantees (Theorems 5.1-5.4) hold independent of specific token choices.
 
-**V4 Context (February 2026):** The Privacy Value Model V4 introduces edge value T(π) — the principle that value resides in the trajectory through sovereignty space, not in static configurations. VRCs are edges on the Promise Graph: each formation is a traversal between sovereignty configurations, contributing to T(π). The three-graphs model (Knowledge × Promise × Trust) gives VRCs their geometric home — they operate on the Promise Graph layer, where bilateral commitments become edges between lattice vertices. The 31,000× gap between sovereign and surveillance architectures is now understood as topological volume on the sovereignty manifold, not arithmetic distance.
+**V5 Context (February 2026):** The Privacy Value Model V5 adds **guild efficiency G(guilds)** to the network term — agents sharing a reasoning library from the same Generator coordinate at O(1) cost per guild member instead of O(N²). This directly impacts VRC economics: guilds enable scalable coordination without quadratic overhead.
+
+VRCs are edges on the Promise Graph: each formation is a traversal between sovereignty configurations, contributing to T_∫(π) — the **path integral** that replaces the additive edge value from V4. The three-graphs model (Knowledge × Promise × Trust) gives VRCs their geometric home. The 31,000× gap between sovereign and surveillance architectures is now understood as **boundary expressiveness** — the holographic bound (96 edges encoding 64 vertices).
 
 ---
 
@@ -1245,7 +1248,13 @@ Mitigations:
 
 **MAGE Token:** Delegation domain token earned through Mage chronicles and used in delegation market.
 
-**Reconstruction Ceiling (R_max):** The maximum efficiency with which an adversary can reconstruct the secret. Guaranteed <1 under separation + budget constraints. (Research Paper v3.8, Corollary 5.2)
+**Reconstruction Ceiling (R_max):** The maximum efficiency with which an adversary can reconstruct the secret. Guaranteed <1 under separation + budget constraints. (Research Paper v4.0, Corollary 5.2)
+
+**Guild Efficiency G(guilds):** V5 addition. Agents sharing a reasoning library from the same Generator coordinate at O(1) cost per guild member, not O(N²). Enables scalable coordination. (PVM V5, Whitepaper v6.0)
+
+**Three-Axis Separation:** V5 concept. Privacy requires separation on three axes: agent (Swordsman ⊥ Mage), data (Provider₁ ⊥ Provider₂), inference (Generator ⊥ Solver). Product: Φ_v5 = Φ_agent · Φ_data · Φ_inference.
+
+**Holographic Bound:** V5 discovery. The 96-edge surface encodes the 64-vertex bulk. Ratio 96/64 = 1.5 = P^1.5. The boundary is always enough. (Act XXIV, UOR Mapping v2.0)
 
 **Signal:** **Ongoing** 0.01 ZEC ($5) proof-of-comprehension transactions. Assessment payments.
 
@@ -1319,22 +1328,22 @@ IMPLEMENTATIONS:
 
 This document is part of the 0xagentprivacy documentation suite:
 
-1. **Whitepaper v5.0** - Dual-agent architecture, Promise Theory foundations, three graphs, secret language
-2. **Research Paper v3.8** - Mathematical proofs, information-theoretic bounds, PVM V4 formal presentation
-3. **Privacy is Value v4.0** - The equation evolves — from lattice to manifold
-4. **Privacy Value Model V4 Formal Spec v1.0** - PVM equation, definitions, §7 falsifiability (mathematics only)
-5. **Promise Theory Reference v1.1** - Formal semantic foundations
-6. **Five Grimoires** - 113 inscriptions across five spellbooks (28,898 lines)
-7. **VRC Promise Protocol v3.2** (this document) - Economic architecture
-8. **Glossary Master v2.5** - Canonical terminology reference
-9. **UOR × 64-Tetrahedra × ZK Mapping v1.0** - Three frameworks converge on 2⁶=64
+1. **Whitepaper v6.0** - Dual-agent architecture, three-axis separation, BRAID integration
+2. **Research Paper v4.0** - Mathematical proofs, PVM V5, holographic bound, C4 resolved
+3. **Privacy is Value v5.0** - The equation evolves — holographic bound, three-axis separation
+4. **Privacy Value Model V5 Formal Spec v1.0** - PVM V5 equation, differential form, holographic field output
+5. **Promise Theory Reference v1.3** - Formal semantic foundations, Generator/Solver as promises
+6. **Five Grimoires + Act XXIV** - 114 inscriptions across five spellbooks (29K+ lines)
+7. **VRC Promise Protocol v3.3** (this document) - Economic architecture with guild efficiency
+8. **Glossary Master v3.0** - Canonical V5 terminology reference (~140 entries)
+9. **UOR × 64-Tetrahedra × ZK Mapping v2.0** - C4 resolved via holographic principle
 
 ---
 
-**License:** CC BY-SA 4.0  
-**Version:** 3.2 - V4 Integration Edition  
-**Last Updated:** February 20, 2026  
-**Website:** https://agentprivacy.ai  
+**License:** CC BY-SA 4.0
+**Version:** 3.3 - V5 Integration Edition
+**Last Updated:** February 27, 2026
+**Website:** https://agentprivacy.ai
 **Documentation:** https://sync.soulbis.com | https://intel.agentkyra.ai
 
 ---
@@ -1349,6 +1358,7 @@ This document is part of the 0xagentprivacy documentation suite:
 | 2.2 | Dec 11, 2025 | Promise-Economic Edition |
 | **3.0** | **Dec 11, 2025** | **Ecosystem Collaboration Edition**: Updated title, added development status notice emphasizing this is one option requiring ecosystem collaboration, aligned with Whitepaper v5.0 and Research Paper v3.8, integrated Act 9 and Act 11 references, clarified golden ratio as testable hypothesis |
 | **3.2** | **Feb 20, 2026** | **V4 Integration Edition**: Added edge value economics — VRCs as Promise Graph edges contributing to T(π). Added three-graphs framing (VRCs on Promise Graph layer). Added V4 context to golden ratio (Φ(Σ) matrix formalism). Updated topological gap framing (31,000× as manifold volume). Updated all companion document references to current versions. Added Privacy is Value v4.0 and UOR Mapping v1.0 to document series. |
+| **3.3** | **Feb 27, 2026** | **V5 Integration Edition**: Added guild efficiency economics G(guilds) for O(1) per-guild coordination. Added holographic bound context (96-edge boundary). Updated path integral T_∫(π) from additive T(π). Added Act XXIV (Holographic Bound) reference. Updated all companion document references to V5 versions. |
 
 ---
 

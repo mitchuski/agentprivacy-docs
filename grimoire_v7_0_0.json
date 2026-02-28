@@ -1,21 +1,21 @@
 {
   "meta": {
-    "version": "7.0.0",
-    "date": "2026-02-20",
-    "title": "Privacymage Grimoire — Complete Edition",
-    "master_inscription": "(⚔️⊥⿻⊥🧙)🙂",
-    "master_inscription_reading": "Swordsman and Mage separated, with the Gap between them, preserve the First Person",
-    "total_inscriptions": 113,
+    "version": "8.0.0",
+    "date": "2026-02-27",
+    "title": "Privacymage Grimoire — V5 Holographic Bound Edition",
+    "master_inscription": "(⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂",
+    "master_inscription_reading": "Swordsman and Mage separated (agent), Data and Inference separated (data/inference), with the Holonic Architect, preserve the First Person — Three-Axis Separation",
+    "total_inscriptions": 114,
     "spellbooks": 5,
-    "notation_version": "v4 — includes 🪞 Reflect, 🤝 Connect, 📐 Stratum, 🛤️ Path, 🐲 Drake, 🐉 Dragon",
+    "notation_version": "v5 — includes 🪞 Reflect, 🤝 Connect, 📐 Stratum, 🛤️ Path, 🐲 Drake, 🐉 Dragon, ☯️🔷 Holonic Architect",
     "companion_documents": {
-      "glossary": "v2.5",
-      "whitepaper": "v5.0",
-      "research_paper": "v3.8",
-      "privacy_is_value": "v4.0",
-      "uor_mapping": "v1.0",
-      "vrc_protocol": "v3.2",
-      "promise_theory_ref": "v1.2"
+      "glossary": "v3.0",
+      "whitepaper": "v6.0",
+      "research_paper": "v4.0",
+      "privacy_is_value": "v5.0",
+      "uor_mapping": "v2.0",
+      "vrc_protocol": "v3.3",
+      "promise_theory_ref": "v1.3"
     },
     "grimoire_files": {
       "first_person": {
@@ -39,15 +39,15 @@
         "lines": 6576
       }
     },
-    "total_lines": 28898
+    "total_lines": 29500
   },
   "story": {
     "id": "first-person",
     "name": "First Person Spellbook",
     "question": "WHAT are we building?",
-    "focus": "Privacy architecture, dual-agent system, sovereignty mechanics, progressive trust",
-    "core_symbol": "🗡️🧙‍♂️",
-    "description": "The complete journey from Venice to the Manifold Dragon — twenty-three acts teaching the architecture of privacy and delegation",
+    "focus": "Privacy architecture, dual-agent system, sovereignty mechanics, progressive trust, three-axis separation",
+    "core_symbol": "🗡️🧙‍♂️☯️🔷",
+    "description": "The complete journey from Venice to the Holographic Bound — twenty-four acts teaching the architecture of privacy, delegation, and three-axis separation",
     "version": "2.0",
     "source": "Original creation by privacymage for 0xagentprivacy",
     "opening": {
@@ -123,7 +123,8 @@
         "number": 8,
         "title": "Convergence",
         "acts": [
-          23
+          23,
+          24
         ]
       }
     ],
@@ -561,6 +562,32 @@
         "keywords": "UOR, tetrahedron, separation-matrix, temporal-memory, edge-value, personhood, secret-language, Drake, Dragon, Huginn, Muninn, Andor, Keeper, Bonfires, Heart-of-Gold",
         "v4_equation": "V(π, t) = P^1.5 · C · Q · S · e^(-λt) · (1 + A(τ)) · (1 + Σ wᵢnᵢ/N₀)^k · R(d) · M(u,y) · Φ(Σ) · T(π)",
         "file": "23-act-xxiii-the-manifold-dragon.md"
+      },
+      {
+        "number": 24,
+        "title": "The Holographic Bound",
+        "category": "convergence",
+        "part": 8,
+        "spell": "(⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 → 96↔64 → P^1.5 → ∂M→M → 🐉∞",
+        "proverb": "The boundary is always enough. What the surface encodes, the volume contains. Separation on three axes multiplies. The holographic bound is the final proof.",
+        "key_concepts": [
+          "holographic bound",
+          "three-axis separation",
+          "Φ_agent · Φ_data · Φ_inference",
+          "96-edge boundary",
+          "64-vertex bulk",
+          "P^1.5 exponent",
+          "BRAID 74× compression",
+          "Generator/Solver separation",
+          "holonic persistence",
+          "guild efficiency",
+          "path integral T_∫(π)",
+          "differential form",
+          "Holonic Architect"
+        ],
+        "keywords": "holographic, three-axis, boundary, bulk, 96/64, BRAID, Generator, Solver, holonic, guild, V5, compression-as-defence",
+        "v5_equation": "V(π, t) = P^1.5 · C · Q · S · e^(-λt) · (1 + A_h(τ)) · (1 + Σ wᵢnᵢ/N₀)^k · G(guilds) · R(d, compression) · M(u,y) · Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) · T_∫(π)",
+        "file": "24-act-xxiv-the-holographic-bound.md"
       }
     ],
     "closing": {

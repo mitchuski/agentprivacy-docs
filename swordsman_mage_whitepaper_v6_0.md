@@ -1,10 +1,10 @@
 # Swordsman and Mage: Dual Agents Derived from the First Person
 
-Protect or Delegate → Reflect and Connect (⚔️⊥⿻⊥🧙)🙂
+Protect or Delegate → Reflect and Connect → Three-Axis Separation (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂
 
-**Author:** privacymage  
-**Date:** February 20, 2026  
-**Version:** 5.0
+**Author:** privacymage
+**Date:** February 27, 2026
+**Version:** 6.0 (V5 PVM Integration)
 
 ---
 
@@ -32,10 +32,15 @@ This document uses two parallel notation systems:
 | FP | 😊 | First Person (human) |
 | ⿻ | ⿻ | The Gap: overlap, relationship between Swordsman and Mage |
 | (Y_S ⊥⊥ Y_M) given X | (⚔️⊥⿻⊥🧙)🙂 | Conditional independence and the Gap, given private state |
-| Σ | ⚖️(⚔️⊥⿻⊥🧙⊥🪞⊥🤝) | Separation matrix — 4×4 pairwise sovereignty force independence |
-| A(τ) | ⏳·🪞 | Temporal memory — verified derivation chain value |
-| T(π) | 🛤️ | Edge value — trajectory through sovereignty space |
-| Φ(Σ) | ⚖️ | Duality function — balance × architectural volume |
+| Φ_agent(Σ) | ⚔️⊥🧙 | Agent-layer separation — Swordsman-Mage independence (V5) |
+| Φ_data(Δ) | 📊⊥🔮 | Data-layer separation — provider fragmentation (V5) |
+| Φ_inference(Γ) | 🧠⊥⚙️ | Inference-layer separation — Generator/Solver split (V5) |
+| A_h(τ) | ⏳·🪞_h | Holonic temporal memory — persistence-independent history (V5) |
+| T_∫(π) | ∮🛤️ | Path integral edge value — correlated trajectory (V5) |
+| G(guilds) | 🏛️ | Guild efficiency — shared-parent coordination (V5) |
+| R(d, compression) | 🎯(📉) | Compression-modified reconstruction difficulty (V5) |
+| ☯️🔷 | ☯️🔷 | Holonic Architect — infrastructure-independent substrate builder (V5) |
+| ∂M | 🔷 | Holographic boundary — 96-edge surface encoding 64-vertex bulk (V5) |
 | wᵢ | 📐 | Stratum weight — lattice position (Pascal's row) |
 | H(X) | — | Entropy of private state |
 | C_S, C_M | — | Information budgets for Swordsman and Mage |
@@ -562,17 +567,39 @@ The capacity to act through agents while maintaining irreducible privacy. Genera
 
 ## The Thesis
 
-Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. The Privacy Value Model (see Privacy is Value v4) formalises this through a manifold-aware equation where each term is a gating condition — any zero collapses total value. The 31,000× gap between sovereign and surveillance architectures is not arithmetic but topological: surveillance systems are constrained to a subset of the sovereignty manifold, unable to activate protection without breaking extraction or achieve separation without redesigning everything.
+Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The 31,000× gap between sovereign and surveillance architectures is now understood as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
 
-**The V4 equation:**
+**The V5 equation:**
 
 ```
-V(π, t) = P^1.5 · C · Q · S · e^(-λt) · (1 + A(τ)) · (1 + Σ wᵢnᵢ/N₀)^k · R(d) · M(u,y) · Φ(Σ) · T(π)
+V(π, t) = P^1.5 · C · Q · S ·
+          e^(-λt) · (1 + A_h(τ)) ·
+          (1 + Σᵢ wᵢ · nᵢ/N₀)^k · G(guilds) ·
+          R(d, compression) ·
+          M(u, y) ·
+          Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) ·
+          T_∫(π)
 ```
 
-Three structural additions distinguish V4 from prior versions: the separation matrix Σ (measuring architectural volume across four sovereignty forces, not just Swordsman-Mage balance), temporal memory A(τ) (verified derivation chains contesting pure data decay), and edge value T(π) (the trajectory through sovereignty space — "the equation rewards the dance, not the stance"). See Privacy is Value v4 for full derivation and honest assessment of uncertainties.
+**Six structural additions distinguish V5 from V4:**
 
-**Note:** Specific value multiplier claims remain theoretical projections. The topological framing strengthens the structural argument but real-world validation is still needed. The core mechanism stands: trust enables coordination, surveillance destroys trust, and coordination creates compounding value through network effects.
+1. **Three-axis separation** — Φ splits into Φ_agent · Φ_data · Φ_inference measuring agent, data-provider, and inference-layer independence. Collapse on ANY axis collapses total value.
+
+2. **Holographic bound** — The 96-edge torus boundary encodes the 64-vertex bulk (C4 RESOLVED). The ratio 96/64 = 1.5 = P^1.5 (C6: speculative).
+
+3. **Path integral** — T_∫(π) replaces additive T(π) to capture edge correlations in structured reasoning graphs.
+
+4. **Compression-as-defence** — R(d, compression) includes BRAID-style inference compression (74×). Fewer tokens = smaller attack surface.
+
+5. **Holonic persistence** — A_h(τ) includes infrastructure-independent GUID-based history. Data survives provider failure.
+
+6. **Guild efficiency** — G(guilds) models O(1) shared-parent coordination vs O(N²) pairwise.
+
+See Privacy is Value v5 for full derivation and honest assessment of V5 conjectures (C6–C10).
+
+**V5 Axiom:** *"The boundary is always enough."*
+
+**Note:** Specific value multiplier claims remain theoretical projections. The holographic framing strengthens the structural argument but real-world validation is still needed. The core mechanism stands: trust enables coordination, surveillance destroys trust, and coordination creates compounding value through network effects.
 
 ---
 
@@ -1808,27 +1835,27 @@ This architecture is being developed now. This is the inflection point.
 
 - **Project:** 0xagentprivacy
 
-- **Version:** 4.8
+- **Version:** 6.0
 
-- **Date:** January 29, 2026
+- **Date:** February 27, 2026
 
 - **Website:** <https://agentprivacy.ai>
 
-- **Privacy is Value v4:** v4.0 (companion document — the equation evolves)
+- **Privacy is Value v5:** v5.0 (companion document — holographic bound, three-axis separation)
 
-- **Privacy Value Model V4 Formal Specification:** v1.0 (companion document — PVM equation, definitions, §7 falsifiability)
+- **Privacy Value Model V5 Formal Specification:** v1.0 (companion document — holographic field output, C6–C10)
 
-- **UOR × 64-Tetrahedra × ZK Mapping:** v1.0 (companion document — convergence details)
+- **UOR × 64-Tetrahedra × ZK Mapping:** v2.0 (companion document — C4 RESOLVED, holographic bound)
 
-- **Promise Theory Reference:** v1.1 (companion document)
+- **Promise Theory Reference:** v1.3 (companion document — Generator/Solver as promises)
 
-- **Research Paper:** v3.7 (companion document)
+- **Research Paper:** v4.0 (companion document — V5 integration)
 
-- **Five Grimoires:** 113 inscriptions across five spellbooks (companion documents)
+- **Five Grimoires + Act XXIV:** 114 inscriptions across five spellbooks (companion documents)
 
-- **VRC Promise Protocol:** v3.1 (companion document)
+- **VRC Promise Protocol:** v3.3 (companion document — guild efficiency)
 
-- **Glossary:** v2.5 (canonical terminology)
+- **Glossary:** v3.0 (canonical V5 terminology)
 
 - **IEEE 7012 Quick Reference:** v1.0 (companion document)
 

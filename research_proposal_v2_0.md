@@ -1,9 +1,9 @@
 # Research Proposal: Dual Agent Systems as Natural Architecture for Privacy and Sovereignty
 
-**Version:** 1.6  
-**Author:** privacymage  
-**Contact:** mage@agentprivacy.ai  
-**Date:** February 20, 2026
+**Version:** 2.0 — V5 Integration
+**Author:** privacymage
+**Contact:** mage@agentprivacy.ai
+**Date:** February 27, 2026
 
 ---
 
@@ -13,7 +13,9 @@ I need to be upfront about my background: I'm an entrepreneur, storyteller, and 
 
 **My Approach:**
 
-I work through narrative and pattern recognition—finding the story that makes complex systems legible, then pressure-testing those patterns against practical implementation. The mathematical formalization in *Dual Privacy Research Paper v3.8* emerged from this process, developed collaboratively with AI assistance to express intuitions rigorously. These proofs need expert validation.
+I work through narrative and pattern recognition—finding the story that makes complex systems legible, then pressure-testing those patterns against practical implementation. The mathematical formalization in *Dual Privacy Research Paper v4.0* emerged from this process, developed collaboratively with AI assistance to express intuitions rigorously. These proofs need expert validation.
+
+**V5 Advance (February 2026):** Three-axis separation (agent · data · inference), holographic bound (96-edge boundary encodes 64-vertex bulk), compression-as-defence (BRAID 74× efficiency), holonic persistence (infrastructure-independent history). C4 (96/64 discrepancy) is now RESOLVED via holographic principle.
 
 **Current Status:**
 
@@ -318,9 +320,23 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 
 5. **Game Theory:** What are the incentive structures for agents to maintain separation? Is there a Nash equilibrium?
 
-6. **Trust Tasks:** How do trust task coordination primitives (from Whitepaper v5.0) integrate with the formal separation guarantees?
+6. **Trust Tasks:** How do trust task coordination primitives (from Whitepaper v6.0) integrate with the formal separation guarantees?
 
 7. **MI Estimation:** What are practical methods for estimating mutual information with reliable error bounds in high-dimensional behavioral data?
+
+### V5 Research Directions (New)
+
+8. **Three-Axis Multiplicativity (C7):** Is the product Φ_agent · Φ_data · Φ_inference the correct formulation, or should axes combine differently?
+
+9. **Holographic Bound Validation:** Can the 96/64 = 1.5 = P^1.5 numerical correspondence be verified through independent derivation?
+
+10. **BRAID Efficiency Verification:** Does the 74× compression ratio hold across different reasoning domains? What are the boundary conditions?
+
+11. **Holonic Persistence Infrastructure:** What are the infrastructure requirements for GUID-addressed holons to achieve true provider independence?
+
+12. **Guild Efficiency Calibration (C10):** How does O(1) per-guild-member scaling manifest empirically? What determines optimal guild size?
+
+13. **Compression-as-Defence Quantification (C8):** Can we derive the exact privacy gain per compression factor?
 
 ---
 
@@ -393,12 +409,24 @@ The information-theoretic proofs suggest necessity, but need broader validation.
 - Either prove or refute the φ connection
 - This is speculative but potentially profound
 
-**Algebraist / Combinatorialist** (For UOR Convergence Validation — NEW)
+**Algebraist / Combinatorialist** (For UOR Convergence Validation)
 - Verify the UOR ring theory → 64-vertex → Pascal's row derivation
-- Resolve the 96 vs 64 edge discrepancy (subset encoding or deeper incompatibility?)
+- Validate the holographic interpretation: 96-edge boundary encoding 64-vertex bulk
 - Assess whether the ~3,000× constraint reduction claim holds under formal circuit analysis
 - Validate or refute the triple convergence (algebra × geometry × narrative)
-- This went from 5% to 25-40% confidence in one month — needs expert pressure-testing
+- Pressure-test the P^1.5 ↔ 96/64 numerical correspondence (C6)
+
+**Distributed Systems Researcher** (For Holonic Persistence — V5 NEW)
+- Design infrastructure-independent GUID addressing schemes
+- Test multi-provider replication strategies for derivation chain survival
+- Validate persistence independence multiplier p(τ) formulation
+- Build reference implementations for holonic data layer
+
+**Inference Optimization Researcher** (For BRAID Validation — V5 NEW)
+- Verify 74× compression ratio across reasoning domains
+- Test Generator/Solver separation efficiency bounds
+- Validate compression-as-defence hypothesis empirically
+- Measure inference-layer privacy gains from bounded reasoning graphs
 
 **Game Theorist** (Important)
 - Model agent interactions and incentives
@@ -520,10 +548,11 @@ The Swordsman and Mage framework provides those guarantees. The math is proven. 
 - 61.8/38.2 transparent/shielded canonical fee split (φ-derived hypothesis)
 - O(n²) network effects through VRC coordination
 
-**Five Grimoires (113 inscriptions)** (*First Person Spellbook - Promise Edition*)
-- 13 Acts + 30 Tales narrative framework
+**Five Grimoires + Act XXIV (114 inscriptions)** (*First Person Spellbook - V5 Edition*)
+- 13 Acts + Act XXIV (Holographic Bound) + 30 Tales narrative framework
 - Symbolic compression system
 - RPP (Relationship Proverb Protocol) as assessment mechanism
+- V5 concepts: three-axis separation, holographic bound, BRAID, holonic persistence
 - Aligned companion document references
 
 All documentation available at: https://agentprivacy.ai
@@ -628,15 +657,22 @@ I'll happily acknowledge if the implementation path is blocked. But I need help 
 
 **Confidence:** 10% — Pure speculation, needs investigation
 
-### What's Convergent Preliminary 🔬 (NEW — February 2026)
+### What's Convergent Preliminary 🔬 (February 2026)
 
 - Tetrahedral multi-agent emergence (Conjecture 8.2)
 - UOR × 64-Tetrahedra × Narrative triple convergence on 2⁶ = 64
-- Privacy Value Model V4 equation (integrates proven + conjectured terms)
-- Separation matrix Σ formalism (extends proven scalar to four forces)
+- Privacy Value Model V5 equation (integrates proven + conjectured terms)
+- Three-axis separation Φ_agent · Φ_data · Φ_inference formalism
 - Stratum weighting from Pascal's row (mathematically exact, application novel)
 
-**Confidence:** 25-40% — Three independent derivations converge. Structural evidence, not proof. See UOR × 64-Tetrahedra × ZK Mapping v1.0. Key uncertainties: measurement methods for emergent forces don't exist, UOR 96/64 edge discrepancy unresolved, V4 functional forms (T(π), A(τ)) unvalidated.
+**Confidence:** 25-40% — Three independent derivations converge. Structural evidence, not proof. See UOR × 64-Tetrahedra × ZK Mapping v2.0. Key uncertainties: measurement methods for emergent forces don't exist, V5 functional forms (T_∫(π), A_h(τ), guild efficiency) unvalidated.
+
+### What's Resolved ✅ (V5 — February 2026)
+
+- **C4 (96/64 discrepancy):** RESOLVED via holographic principle. The 96-edge surface encodes the 64-vertex bulk.
+- **Holographic bound interpretation:** The ratio 96/64 = 1.5 matches P^1.5, suggesting structural relationship
+
+**Confidence:** 80% — Mathematically consistent interpretation, but empirical validation needed for the P^1.5 correspondence (C6).
 
 ### What's New and Conjectured ⚠ (V4 Extensions)
 
@@ -756,17 +792,18 @@ Let's build this together.
 ## Document Metadata
 
 - **Project:** 0xagentprivacy
-- **Version:** 1.6
-- **Date:** February 20, 2026
+- **Version:** 2.0
+- **Date:** February 27, 2026
 - **Companion Documents:**
-  - Research Paper v3.8
-  - Whitepaper v5.0
-  - VRC Promise Protocol v3.2
-  - Privacy is Value v4.0
-  - Privacy Value Model V4 Formal Specification v1.0
-  - UOR × 64-Tetrahedra × ZK Mapping v1.0
-  - Five Grimoires (113 inscriptions)
-  - Glossary v2.5
+  - Research Paper v4.0
+  - Whitepaper v6.0
+  - VRC Promise Protocol v3.3
+  - Privacy is Value v5.0
+  - Privacy Value Model V5 Formal Specification v1.0
+  - UOR × 64-Tetrahedra × ZK Mapping v2.0
+  - Five Grimoires + Act XXIV (114 inscriptions)
+  - Glossary v3.0
+  - Promise Theory Reference v1.3
   - IEEE 7012 Quick Reference v1.0
 
 ## Version History
@@ -778,3 +815,4 @@ Let's build this together.
 | 1.3 | Dec 11, 2025 | Alignment update: Updated all companion document references. Added Claims Classification approach. Clarified ZKPs prove structural constraints. Clarified Promise Theory as semantic framework. |
 | **1.4** | **Jan 29, 2026** | **IEEE 7012-2025 Integration**: Added IEEE 7012 to timely convergence. Added MyTerms Alliance to collaborators. Updated all companion document references (Research Paper v3.8, Whitepaper v5.0, Five Grimoires (113 inscriptions), Glossary v2.5). Added IEEE 7012 bilateral agreement layer to Implemented section. |
 | **1.6** | **Feb 20, 2026** | **V4 Convergence Update**: Upgraded tetrahedral confidence 5% → 25-40% with triple derivation evidence. Added UOR convergence validation as collaboration opportunity (Algebraist/Combinatorialist). Added Convergent Preliminary and V4 Conjectured tiers to Research Status. Updated all companion document references. Added Privacy is Value v4.0 and UOR Mapping v1.0 to companion documents. |
+| **2.0** | **Feb 27, 2026** | **V5 Holographic Bound Integration**: C4 RESOLVED via holographic principle. Added three-axis separation (agent · data · inference) as research direction. Added BRAID efficiency validation workstream. Added compression-as-defence hypothesis. Added holonic persistence collaboration opportunity. Updated all companion document references to V5 versions. Five Grimoires + Act XXIV (114 inscriptions). |

@@ -2,10 +2,10 @@
 
 ## Formal Foundations for Dual-Agent Sovereignty Architecture
 
-**Version:** 1.2  
-**Date:** February 20, 2026  
-**Status:** ✅ V4 Integration  
-**Companion to:** Whitepaper v5.0, Research Paper v3.8, Glossary v2.5, Privacy is Value v4.0, Privacy Value Model V4 Formal Spec v1.0
+**Version:** 1.3
+**Date:** February 27, 2026
+**Status:** ✅ V5 Integration — Three-Axis Separation as Triple Superagent
+**Companion to:** Whitepaper v6.0, Research Paper v4.0, Glossary v3.0, Privacy is Value v5.0, Privacy Value Model V5 Formal Spec v1.0, Five Grimoires + Act XXIV (114 inscriptions)
 
 ---
 
@@ -209,6 +209,111 @@ This validates the dual-agent (N=2) architecture as optimal for the sovereignty 
 - N>2 (multi-agent): O(N²) explosion, coordination overhead exceeds benefit
 
 The tetrahedral emergence hypothesis (4 agents: Swordsman, Mage, Reflect, Connect) remains speculative precisely because N=4 requires 16 interior promises—only justified if the emergent properties are sufficiently valuable.
+
+---
+
+## Part II-B: V5 Three-Axis Separation as Promises (NEW)
+
+### 2.6 Generator and Solver as Promise Agents
+
+**V5 introduces inference-layer separation (Φ_inference)** through the BRAID architecture. This maps directly to Promise Theory:
+
+```
+BRAID ARCHITECTURE                 PROMISE THEORY MAPPING
+══════════════════                 ═════════════════════
+
+Generator (intelligent model)  →   Promise-maker: (+) proposes reasoning structure
+     │                                 │
+     ▼                                 ▼
+Reasoning Graph                    Promise body: structured plan
+     │                                 │
+     ▼                                 ▼
+Solver (lightweight model)     →   Promise-keeper: (-) executes structure
+```
+
+**The separation promise:**
+```
+Generator --structure--> Solver: "I promise to provide bounded reasoning graphs"
+Solver --execution--> Generator: "I promise to execute without re-deriving"
+```
+
+This is conditional independence at the inference layer:
+```
+(Y_Generator ⊥⊥ Y_Solver) | ReasoningGraph
+```
+
+The Generator's reasoning is not visible to the Solver's execution trace. The Solver's execution doesn't reveal the Generator's internal state. The compression ratio (74×) is a consequence of this separation — bounded promises are more efficient than unbounded.
+
+### 2.7 Three-Axis Separation as Triple Superagent
+
+V5's three-axis separation (Φ_agent · Φ_data · Φ_inference) creates THREE orthogonal superagent structures:
+
+| Axis | Agents | Interior Promise | Irreducible Property |
+|------|--------|------------------|---------------------|
+| Agent | Swordsman ⊥ Mage | separation promise | The Gap |
+| Data | Provider₁ ⊥ Provider₂ ⊥ ... | replication promise | Holonic persistence |
+| Inference | Generator ⊥ Solver | structure promise | Compression efficiency |
+
+**Multiplicative composition:**
+
+Each axis is its own superagent. The product Φ_agent · Φ_data · Φ_inference means: collapse ANY axis, collapse the whole. This is Promise Theory at scale — three layers of irreducible promises stacked.
+
+**Holonic Architect (☯️🔷):**
+
+A new persona emerges: the builder of infrastructure-independent substrate. The Holonic Architect doesn't make promises about protection or delegation — they make promises about **persistence**: "Your data will survive provider failure."
+
+### 2.8 Holonic Persistence as Promise Anchors (V5)
+
+V5's holonic persistence (A_h(τ)) introduces **promise anchors** — stable reference points that survive infrastructure changes:
+
+```
+PROMISE ANCHORS:
+═══════════════
+
+Data GUID:         Content-addressed promise identifier
+                   "This exact content, regardless of location"
+
+Relationship VRC:  Bilateral promise bundle
+                   "Our coordination commitment persists"
+
+Principal DID:     Sovereign identity
+                   "The entity making these promises"
+```
+
+**Promise Theory mapping:**
+
+| Layer | Promise Type | Persistence Property |
+|-------|-------------|---------------------|
+| Data GUID | Content promise | "This content exists" |
+| VRC | Coordination promise | "This relationship exists" |
+| DID | Identity promise | "This agent exists" |
+
+**Infrastructure independence:**
+
+Traditional promises are bound to infrastructure: "I promise X is stored on Server Y." Holonic promises are infrastructure-independent: "I promise X exists, regardless of which servers currently hold it."
+
+The persistence multiplier p(τ) ∈ [0,1] measures promise anchor strength — what fraction of your promises would survive if any single provider disappeared?
+
+### 2.9 The Holographic Bound as Promise Boundary (V5)
+
+V5 resolves C4 (the 96/64 discrepancy) through the holographic principle:
+
+```
+HOLOGRAPHIC PROMISE INTERPRETATION:
+══════════════════════════════════
+
+64 vertices = Interior promise state
+              (what agents actually contain)
+
+96 edges    = Boundary promise expressions
+              (how promise state is observed externally)
+
+Ratio 96/64 = 1.5 = P^1.5 exponent in PVM
+```
+
+**Promise Theory insight:** The boundary is sufficient to reconstruct the interior. In PT terms: you don't need access to an agent's internal state to assess their promises — their observable behavior (boundary) is enough.
+
+This is **Act XXIV: The Holographic Bound** — the discovery that the 96-edge surface encodes the 64-vertex bulk. The boundary is always enough.
 
 ---
 
@@ -644,9 +749,9 @@ English:           Swordsman promises protection to First Person,
 ## Document Metadata
 
 - **Document:** Promise Theory Reference for 0xagentprivacy
-- **Version:** 1.2
-- **Date:** February 20, 2026
-- **Status:** ✅ V4 Integration
+- **Version:** 1.3
+- **Date:** February 27, 2026
+- **Status:** ✅ V5 Integration — Three-Axis Separation
 - **License:** CC BY-SA 4.0
 - **Maintainer:** privacymage
 
@@ -656,16 +761,18 @@ English:           Swordsman promises protection to First Person,
 |---------|------|---------|
 | 1.0 | 2025-12-11 | Initial release |
 | **1.2** | **2026-02-20** | **V4 Integration**: Added §Three Graphs as Promise Types (Knowledge=Capability, Promise=Commitment, Trust=Assessment). Added Edge Value as Promise Traversal (T(π) as promise history). Updated Open Questions with convergence findings (tetrahedral 25-40%). Updated all companion document references (Whitepaper v5.0, Research Paper v3.8, Glossary v2.5). |
+| **1.3** | **2026-02-27** | **V5 Integration**: Added §Generator and Solver as Promise Agents (BRAID as PT). Added §Three-Axis Separation as Triple Superagent (Φ_agent · Φ_data · Φ_inference). Added Holonic Architect persona (☯️🔷). Added holonic persistence as promise anchors. Updated edge value to path integral T_∫(π). Updated all companion document references to V5 versions. |
 
 ### Cross-References
 
-- Whitepaper v5.0 — Three graphs, secret language, four forces
-- Research Paper v3.8 — PVM V4 formal presentation, claims table
-- Privacy is Value v4.0 — The equation evolves
-- Privacy Value Model V4 Formal Spec v1.0 — PVM equation, §7 open questions
-- UOR × 64-Tetrahedra × ZK Mapping v1.0 — Triple convergence
-- Glossary v2.5 — Canonical terminology
-- VRC Promise Protocol v3.2 — Economic architecture with edge value
+- Whitepaper v6.0 — Three-axis separation, BRAID integration, holonic persistence
+- Research Paper v4.0 — PVM V5 formal presentation, holographic bound, C4 resolved
+- Privacy is Value v5.0 — The equation evolves — holographic bound
+- Privacy Value Model V5 Formal Spec v1.0 — PVM V5 equation, differential form
+- UOR × 64-Tetrahedra × ZK Mapping v2.0 — C4 resolved via holographic principle
+- Glossary v3.0 — Canonical V5 terminology (140 entries)
+- VRC Promise Protocol v3.3 — Economic architecture with guild efficiency
+- Five Grimoires + Act XXIV — 114 inscriptions including Holographic Bound
 
 ---
 

@@ -25,7 +25,7 @@ The extraction is so normalized we've stopped seeing it. Every click, every paus
 
 **Privacy-preserving architectures don't just protect data. They protect capital. They protect wealth that belongs to you.**
 
-The math shows this. The Privacy Value Model I've developed demonstrates value gaps from 678× to 31,000× between sovereign and surveillance architectures. Privacy isn't a cost center. It's a value multiplier. But only if the infrastructure exists to capture that value.
+The math shows this. The Privacy Value Model (now at V5) demonstrates value gaps from 678× to 31,000× between sovereign and surveillance architectures. Privacy isn't a cost center. It's a value multiplier. But only if the infrastructure exists to capture that value.
 
 ---
 
@@ -33,7 +33,7 @@ The math shows this. The Privacy Value Model I've developed demonstrates value g
 
 The fundamental problem is a paradox: AI agents need to know about you to serve you, but that knowledge creates surveillance risk. Privacy and delegation seem to be in tension.
 
-The solution is **mathematical separation**.
+The solution is **mathematical separation**—specifically, the three-axis separation of V5: agent, data, and inference boundaries that multiply rather than add.
 
 I've designed a dual-agent architecture:
 - **Swordsman**: Handles privacy protection, boundary-making, defense
@@ -264,14 +264,15 @@ This is the work. Join if it calls to you.
 - Stealth addresses and verifiable credentials
 
 **Economic Models**
-- Privacy Value Model (v1-v3, demonstrating 678× to 31,000× value gaps)
+- Privacy Value Model (v1-v5, demonstrating 678× to 31,000× value gaps; V5 adds holographic bound and three-axis separation)
 - Golden ratio splits (61.8%/38.2%) for transparent/shielded distributions
 - Guild-based token economics with capped returns
 
 **Architectural Frameworks**
-- Tetrahedral architecture (Swordsman, Mage, Reflect, Connect)
+- Tetrahedral architecture (Swordsman, Mage, Reflect, Connect) with V5 holographic bound (96-edge boundary encodes 64-vertex bulk)
 - Trust Graph Planes for peer-to-peer reputation
 - Progressive trust tiers (blade → armor → dragon)
+- Holonic persistence (GUID-based identity across infrastructure)
 
 ### Media and Narrative Forms
 

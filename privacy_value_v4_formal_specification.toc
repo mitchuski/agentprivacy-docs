@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}The Equation}{3}{section.1}%
+\contentsline {section}{\numberline {2}Inherited Terms (V1--V3.1)}{3}{section.2}%
+\contentsline {section}{\numberline {3}Temporal Memory --- $A(\tau )$}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Motivation}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Definition}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Properties}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Interpretation}{4}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Stratum-Weighted Network Effects}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The 64-Vertex Lattice}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Definition}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Properties}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Sovereignty Duality --- $\Phi (\Sigma )$}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Four Sovereignty Forces}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Separation Matrix}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Definition}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Properties}{6}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Edge Value --- $T(\pi )$}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Motivation}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Definition}{6}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Properties}{7}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Open Questions and Falsifiability}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conjectures}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Measurement Gaps}{8}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Breaking Conditions}{8}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Structural Properties}{8}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Multiplicative Gating}{8}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Manifold Interpretation}{8}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Surveillance Gap as Topology}{9}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Version Lineage}{9}{section.9}%
+\contentsline {section}{\numberline {10}Notation Summary}{9}{section.10}%

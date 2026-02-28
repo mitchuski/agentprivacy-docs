@@ -1,10 +1,10 @@
-# (⚔️⊥⿻⊥🧙)🙂 0xagentprivacy Living Documents
+# (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂 0xagentprivacy Living Documents
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 1.5  
-**Date:** February 20, 2026  
-**Status:** ✅ V4 Convergence + Five Grimoires Complete
+**Version:** 2.0
+**Date:** February 27, 2026
+**Status:** ✅ V5 Holographic Bound Integration — Three-Axis Separation Complete
 
 ---
 
@@ -12,7 +12,9 @@
 
 **0xagentprivacy** solves the privacy-delegation paradox in AI systems through mathematically-proven dual-agent architecture. When AI agents need information to act on your behalf, that same information enables surveillance. Our solution: split the function into two conditionally-independent agents—**Swordsman** (privacy/boundaries) and **Mage** (delegation/action)—creating mathematical guarantees that no adversary can fully reconstruct your private state.
 
-**Core Thesis:** Privacy is value. Behavioral data is the 7th capital. Architecture, not policy, protects sovereignty.
+**Core Thesis:** Privacy is value. Behavioral data is the 7th capital. Architecture, not policy, protects sovereignty. *The boundary is always enough.*
+
+**V5 Advance:** Three-axis separation (agent · data · inference), holographic bound (96-edge boundary encodes 64-vertex bulk), compression-as-defence (74× BRAID efficiency), holonic persistence (infrastructure-independent history).
 
 **Formal Foundation:** The dual-agent architecture implements Promise Theory (Bergstra & Burgess, 2019)—established semantics for autonomous agent coordination where agents can only promise their own behavior.
 
@@ -29,18 +31,18 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 | Document | Version | Purpose | Audience |
 |----------|---------|---------|----------|
 | **What Agentprivacy Is** | — | Mission, thesis, and orientation | All, New joiners |
-| **Glossary Master** | 2.5 | Canonical terminology reference (118 entries) | All |
-| **Privacy is Value V4** | 4.0 | The equation evolves — from lattice to manifold | All, Researchers |
-| **Privacy Value Model V4 Formal Spec** | 1.0 | PVM equation, definitions, §7 falsifiability; mathematics only | Researchers, Academics |
-| **Promise Theory Reference** | 1.2 | Formal semantic foundations, three graphs as PT types | Researchers, Architects |
+| **Glossary Master** | 3.0 | Canonical terminology reference (~140 entries, V5) | All |
+| **Privacy is Value V5** | 5.0 | The equation evolves — holographic bound, three-axis separation | All, Researchers |
+| **Privacy Value Model V5 Formal Spec** | 1.0 | PVM V5 equation, holographic field output | Researchers, Academics |
+| **Promise Theory Reference** | 1.3 | Formal semantic foundations, Generator/Solver as promises | Researchers, Architects |
 | **IEEE 7012 Quick Reference** | 1.0 | MyTerms standard foundation | Developers, Implementers |
-| **Whitepaper** | 5.0 | Technical architecture, three graphs, secret language | Developers, Researchers |
-| **Research Paper** | 3.8 | Mathematical proofs, PVM V4 formal, UOR correspondence | Academics, Cryptographers |
-| **Five Grimoires** | v1.0–v3.0 | 113 inscriptions across five spellbooks (28,898 lines) | Community, Learners |
-| **UOR × 64-Tetrahedra × ZK Mapping** | 1.0 | Triple convergence on 2⁶=64 | Researchers, Mathematicians |
-| **VRC Promise Protocol** | 3.2 | Economic architecture, edge value economics | Investors, Builders |
-| **Visual Guide** | 1.3 | Diagrams, flows, quick reference | All |
-| **Research Proposal** | 1.6 | Collaboration invitation, UOR validation needs | Researchers, Partners |
+| **Whitepaper** | 6.0 | Technical architecture, three-axis separation, BRAID integration | Developers, Researchers |
+| **Research Paper** | 4.0 | Mathematical proofs, V5 conjectures C6–C10, C4 resolved | Academics, Cryptographers |
+| **Five Grimoires + Act XXIV** | v1.0–v3.0 | 114 inscriptions including Holographic Bound (29K+ lines) | Community, Learners |
+| **UOR × 64-Tetrahedra × ZK Mapping** | 2.0 | C4 RESOLVED — holographic bound interpretation | Researchers, Mathematicians |
+| **VRC Promise Protocol** | 3.3 | Economic architecture, guild efficiency | Investors, Builders |
+| **Visual Guide** | 2.0 | Diagrams including three-axis, holographic visualisations | All |
+| **Research Proposal** | 2.0 | Collaboration invitation, BRAID validation needs | Researchers, Partners |
 
 You can build this locally and it'll make a neat viewer at 7000.
 
@@ -196,13 +198,25 @@ The irreducible space between what Swordsman observes and what Mage observes—t
 
 Behavioral data as personal wealth. Currently extracted by surveillance capitalism; 0xagentprivacy keeps it under First Person control while enabling value-creating coordination.
 
-### Three Graphs Model (V4)
+### Three Graphs Model (V5)
 
-Three independently derivable graph structures whose intersection defines the person: **Knowledge Graph** (substrate — what you can promise), **Promise Graph** (bilateral commitments — what you do promise), **Trust Graph** (emergent outcome — which promises were kept). VRCs live on the Promise Graph layer. The overlap IS the person — no single community owns that intersection.
+Three independently derivable graph structures whose intersection defines the person: **Knowledge Graph** (substrate — what you can promise), **Promise Graph** (bilateral commitments — what you do promise), **Trust Graph** (emergent outcome — which promises were kept). VRCs live on the Promise Graph layer. The overlap IS the person — no single community owns that intersection. V5 adds the **holographic interpretation**: flows along the 96-edge boundary encode the 64-vertex bulk. The boundary is always enough.
 
-### Path Value (V4)
+### Path Integral (V5)
 
-"The equation rewards the dance, not the stance." Value resides in the trajectory through sovereignty space, not in static configurations. An agent permanently at full sovereignty with no promises made has zero edge value. Your path through the lattice — the promises made, boundaries set, delegations executed — is the 7th capital.
+V5 replaces additive edge value T(π) with path integral T_∫(π) — "The equation rewards the dance, not the stance." Value resides in the trajectory through sovereignty space, not in static configurations. An agent permanently at full sovereignty with no promises made has zero edge value. Your path through the lattice — the promises made, boundaries set, delegations executed — is the 7th capital.
+
+### Three-Axis Separation (V5)
+
+Privacy requires separation on three orthogonal axes:
+
+| Axis | Agents | What It Separates |
+|------|--------|-------------------|
+| **Agent** Φ_agent | Swordsman ⊥ Mage | Protection from delegation |
+| **Data** Φ_data | Provider₁ ⊥ Provider₂ | Storage fragmentation |
+| **Inference** Φ_inference | Generator ⊥ Solver | Reasoning from execution |
+
+Collapse any axis and the entire separation term collapses: Φ_v5 = Φ_agent · Φ_data · Φ_inference. This is why systems with good agent separation but centralised data still fail.
 
 ---
 
@@ -245,49 +259,50 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 | 📋 PLANNED | Designed but not yet built |
 | 🔬 SPECULATIVE | Hypothesis requiring validation |
 
-### Confidence Levels (per Research Proposal v1.6)
+### Confidence Levels (per Research Proposal v2.0)
 
-- **95%**: Core mathematical proofs (separation, reconstruction ceiling)
+- **95%**: Core mathematical proofs (separation, reconstruction ceiling, error floor)
+- **RESOLVED**: C4 (96/64 discrepancy) — holographic principle interpretation
 - **85%**: Promise Theory semantic framework (Bergstra & Burgess, 2019)
-- **80%**: Architectural framework, TSP integration
+- **80%**: Architectural framework, TSP integration, BRAID parity effect
 - **60%**: Implementation viability
-- **25-40%**: Tetrahedral convergence (upgraded from 5%, Feb 2026 — triple derivation)
-- **15-25%**: V4 conjectured terms (T(π), A(τ), Φ(Σ) functional forms)
-- **10%**: Golden ratio budget allocation
+- **25-40%**: Tetrahedral convergence (triple derivation evidence)
+- **15-25%**: V5 conjectured terms (T_∫(π), Φ_v5, guild efficiency)
+- **SPECULATIVE**: C6 (P^1.5 ↔ 96/64 numerical coincidence), C7-C10 (three-axis multiplicativity, compression modifier, boundary sufficiency, guild scalability)
 
 ---
 
 ## Reading Order by Audience
 
 ### For Researchers / Academics
-1. Promise Theory Reference v1.2 (formal foundations)
-2. Research Paper v3.8 (mathematical proofs, PVM V4 formal)
-3. Privacy is Value v4.0 (the equation evolves) / [PVM V4 Formal Spec v1.0](privacy_value_v4_formal_specification.md) (mathematics only)
-4. UOR × 64-Tetrahedra × ZK Mapping v1.0 (convergence details)
-5. Whitepaper v5.0 (architecture, three graphs, secret language)
-6. Research Proposal v1.6 (collaboration opportunities)
+1. Promise Theory Reference v1.3 (formal foundations, V5 three-axis as promises)
+2. Research Paper v4.0 (mathematical proofs, PVM V5, holographic bound)
+3. Privacy is Value v5.0 (the equation evolves) / [PVM V5 Formal Spec v1.0](privacy_value_v5_formal_specification.md) (mathematics only)
+4. UOR × 64-Tetrahedra × ZK Mapping v2.0 (C4 resolved, holographic principle)
+5. Whitepaper v6.0 (architecture, three-axis separation, BRAID integration)
+6. Research Proposal v2.0 (collaboration opportunities, BRAID validation)
 
 ### For Developers / Builders
-1. Visual Guide v1.3 (quick orientation)
+1. Visual Guide v2.0 (quick orientation, V5 diagrams)
 2. IEEE 7012 Quick Reference v1.0 (MyTerms standard)
-3. Whitepaper v5.0 (technical details)
-4. Glossary v2.5 (terminology)
+3. Whitepaper v6.0 (technical details)
+4. Glossary v3.0 (terminology)
 
 ### For Investors / Advisors
 1. This README (summary)
-2. VRC Promise Protocol v3.2 (economics)
-3. Research Proposal v1.6 (roadmap)
+2. VRC Promise Protocol v3.3 (economics, guild efficiency)
+3. Research Proposal v2.0 (roadmap)
 
 ### For Community / Learners
 1. What Agentprivacy Is (mission and orientation)
-2. Five Grimoires (113 inscriptions, narrative framework)
-3. Visual Guide v1.3 (diagrams)
-4. Glossary v2.5 (terminology reference)
+2. Five Grimoires + Act XXIV (114 inscriptions, narrative framework)
+3. Visual Guide v2.0 (diagrams)
+4. Glossary v3.0 (terminology reference)
 
 ### For Promise Theory Practitioners
-1. Promise Theory Reference v1.2 (concept mappings, three graphs as PT types)
-2. Whitepaper v5.0 (implementation details)
-3. Research Paper v3.8 (formal proofs)
+1. Promise Theory Reference v1.3 (concept mappings, Generator/Solver as promises)
+2. Whitepaper v6.0 (implementation details)
+3. Research Paper v4.0 (formal proofs, V5 structural extensions)
 
 ---
 
@@ -317,6 +332,12 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 - **Trust Spanning Protocol (TSP)**: Agent-to-agent messaging
 - **x402**: HTTP-native micropayments
 - **VRCs**: Bilateral trust credentials (promise bundles)
+
+### Holonic Persistence Layer (V5)
+- **GUID-addressed holons**: Content-addressed data fragments
+- **Multi-provider replication**: Infrastructure-independent history
+- **Three identity tiers**: Data GUID → Relationship VRC → Principal DID
+- **Derivation chains**: Temporal memory surviving provider failure
 
 ---
 
@@ -351,9 +372,9 @@ This is not about competing on features. This is about establishing **foundation
 
 ---
 
-## Document Coherence (February 20, 2026)
+## Document Coherence (February 27, 2026)
 
-This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V4 Privacy Value Model integration, five grimoire compilation, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v1_0.md` for the systematic update guide.
+This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Act XXIV, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
 
 ### Standardizations Applied
 - **Terminology**: Ceremony (1 ZEC one-time) vs Signal (0.01 ZEC ongoing)
@@ -361,10 +382,19 @@ This documentation suite has been reviewed for terminology consistency, economic
 - **Economic Basis**: $500/ZEC canonical, 61.8/38.2 transparent/shielded split (φ-derived)
 - **Promise Theory**: Formal foundations integrated throughout documentation
 - **IEEE 7012-2025**: MyTerms standard integration, published January 20, 2026
-- **PVM V4**: Separation matrix Σ, temporal memory A(τ), edge value T(π), duality Φ(Σ)
+- **PVM V5**: Three-axis separation, holographic bound, path integral T_∫(π), guild efficiency G(guilds)
 - **Four Forces**: Protect ⚔️, Project 🧙, Reflect 🪞, Connect 🤝
-- **Five Grimoires**: 113 inscriptions across 28,898 lines (Story, ZK, Canon, Parallel, Plurality)
+- **Five Grimoires + Act XXIV**: 114 inscriptions across 29K+ lines (Story, ZK, Canon, Parallel, Plurality)
 - **Version References**: All documents reference correct companion versions
+
+### V5 Holographic Bound Integration (v2.0)
+- Privacy is Value V5, PVM V5 Formal Specification v1.0 added to document suite
+- Act XXIV (The Holographic Bound) added to grimoire collection
+- C4 (96/64 discrepancy) RESOLVED via holographic principle
+- Three-axis separation (agent · data · inference) integrated across suite
+- Compression-as-defence via BRAID Parity Effect documented
+- Holonic persistence layer added to Technology Stack
+- Guild efficiency economics added to VRC Protocol
 
 ### V4 Convergence Integration (v1.5)
 - Privacy is Value V4, PVM V4 Formal Specification v1.0 (and agent peer review appendix), and UOR Mapping v1.0 added to document suite
@@ -381,14 +411,15 @@ This documentation suite has been reviewed for terminology consistency, economic
 
 ### Citation Format
 When referencing across documents:
-- `[Whitepaper v5.0, §Section]`
-- `[Research Paper v3.8, Theorem 3.2]`
-- `[PVM V4 Formal Spec v1.0, §Section]`
-- `[Glossary v2.5, Term Name]`
-- `[Privacy is Value v4, §Section]`
-- `[UOR Mapping v1.0, §Section]`
-- `[Promise Theory Ref v1.2, §Section]`
+- `[Whitepaper v6.0, §Section]`
+- `[Research Paper v4.0, Theorem 3.2]`
+- `[PVM V5 Formal Spec v1.0, §Section]`
+- `[Glossary v3.0, Term Name]`
+- `[Privacy is Value v5.0, §Section]`
+- `[UOR Mapping v2.0, §Section]`
+- `[Promise Theory Ref v1.3, §Section]`
 - `[IEEE 7012 Quick Ref v1.0, §Section]`
+- `[VRC Protocol v3.3, §Section]`
 - `[Bergstra & Burgess (2019), §Chapter]`
 
 ---

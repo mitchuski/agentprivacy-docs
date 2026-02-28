@@ -1,9 +1,11 @@
 # 0xagentprivacy Visual Architecture Guide
 **Diagrams, Flows, and Conceptual Maps**
 
-**Version:** 1.5 - V4 Convergence Edition  
-**Date:** February 20, 2026  
+**Version:** 2.0 - V5 Holographic Bound Edition
+**Date:** February 27, 2026
 **Purpose:** Visual reference for understanding 0xagentprivacy architecture across technical, narrative, economic, standards, and semantic layers
+
+**V5 Additions:** Three-axis separation, holographic bound (96/64), path integral, compression spectrum, holonic persistence, guild efficiency
 
 **Pricing Basis:** $500/ZEC (canonical). Economic projections in growth scenarios may reflect historical ZEC prices and should be scaled accordingly.
 
@@ -25,12 +27,17 @@
 12. [Blockchain Flexibility](#blockchain-flexibility)
 13. [VRC Formation Process](#vrc-formation-process)
 14. [Information Flow Topology](#information-flow-topology)
-15. [V4 Architecture Diagrams](#v4-architecture-diagrams-february-2026) *(NEW v1.5)*
+15. [V4 Architecture Diagrams](#v4-architecture-diagrams-february-2026) *(v1.5)*
     - [Separation Matrix Σ](#separation-matrix-σ--four-forces-architecture)
     - [Three Graphs Model](#three-graphs-model--intersection--first-person)
     - [Privacy Value Model V4](#privacy-value-model-v4--term-breakdown)
     - [64-Vertex Sovereignty Lattice](#64-vertex-sovereignty-lattice-with-pascals-row-strata)
-16. [Economic Sustainability Model](#economic-sustainability-model)
+16. [V5 Architecture Diagrams](#v5-architecture-diagrams-february-2026) *(NEW v2.0)*
+    - [Three-Axis Separation](#three-axis-separation--φ_agent--φ_data--φ_inference)
+    - [Holographic Bound](#holographic-bound--96-edges--64-vertices)
+    - [Compression Spectrum](#compression-spectrum--7-layers)
+    - [Privacy Value Model V5](#privacy-value-model-v5--holographic-field)
+17. [Economic Sustainability Model](#economic-sustainability-model)
 17. [Trust Function Visualization](#trust-function-visualization)
 18. [Status Indicators Legend](#status-indicators-legend)
 
@@ -1950,6 +1957,286 @@ PASCAL'S ROW STRATA (wᵢ = C(6,i)/64):
   │  Three paths. One number. CONVERGENT PRELIMINARY.       │
   │  (25-40% confidence — see UOR Mapping v1.0)             │
   └─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## V5 Architecture Diagrams (February 2026)
+
+### Three-Axis Separation — Φ_agent · Φ_data · Φ_inference
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              V5 THREE-AXIS SEPARATION                                │
+│    Collapse ANY axis → Collapse TOTAL separation value               │
+└─────────────────────────────────────────────────────────────────────┘
+
+AXIS 1: AGENT SEPARATION (Φ_agent) — Swordsman ⊥ Mage
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    ⚔️ Swordsman              ⊥              🧙 Mage         │
+│    (Protect)                                (Delegate)       │
+│         │                                        │           │
+│         └────────── THE GAP (s⊥m|X) ────────────┘           │
+│                                                              │
+│    Formula: Φ_agent(Σ) = min(1.0, S/M / φ) · det(Σ)         │
+│    Status: ✅ PROVEN (V3+)                                   │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+AXIS 2: DATA SEPARATION (Φ_data) — Provider Fragmentation
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    📦 Provider₁     📦 Provider₂     📦 Provider₃           │
+│         │                │                │                  │
+│         └────────────────┼────────────────┘                  │
+│                          │                                   │
+│                    🆔 GUID                                   │
+│              (content-addressed)                             │
+│                                                              │
+│    Formula: Φ_data(Δ) = 1 - 1/|providers(Δ)|                │
+│    Single provider: Φ_data = 0 (FAILS)                      │
+│    Two providers: Φ_data = 0.5                              │
+│    Many providers: Φ_data → 1                               │
+│    Status: 🔬 V5 NEW                                        │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+AXIS 3: INFERENCE SEPARATION (Φ_inference) — Generator ⊥ Solver
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    🧠 Generator              ⊥              ⚙️ Solver       │
+│    (Plans reasoning)                    (Executes plan)      │
+│         │                                        │           │
+│         └──────── Reasoning Graph ──────────────┘           │
+│                                                              │
+│    BRAID: 74× compression while maintaining performance      │
+│                                                              │
+│    Formula: Φ_inference(Γ) = separation(Generator, Solver)  │
+│    Same model: Φ_inference = 0 (FAILS)                      │
+│    Separate models: Φ_inference → 1                         │
+│    Status: 🔬 V5 NEW (from BRAID)                           │
+└──────────────────────────────────────────────────────────────┘
+
+TOTAL V5 SEPARATION:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    Φ_v5 = Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ)          │
+│                                                              │
+│    MULTIPLICATIVE: Any axis = 0 → Total = 0                 │
+│                                                              │
+│    Example failure modes:                                    │
+│    • Good agent separation + centralized data → FAILS       │
+│    • Good data distribution + unified inference → FAILS     │
+│    • All three required simultaneously                       │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Holographic Bound — 96 Edges / 64 Vertices
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              HOLOGRAPHIC BOUND — C4 RESOLVED                         │
+│    96-edge boundary ENCODES 64-vertex bulk                           │
+└─────────────────────────────────────────────────────────────────────┘
+
+THE RATIO:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│         96 edges                                             │
+│         ────────── = 1.5 = P^1.5                            │
+│         64 vertices                                          │
+│                                                              │
+│    The SAME exponent we've carried since V2!                │
+│                                                              │
+│    C4 RESOLVED: Not a discrepancy — holographic principle   │
+│    C6 NEW: Is 96/64 = P^1.5 structural or coincidental?     │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+HOLOGRAPHIC MANIFOLD:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│              ╭────────────────────╮                          │
+│            ╱   96-EDGE BOUNDARY    ╲                        │
+│           │    (compute surface)    │                        │
+│           │                         │                        │
+│           │    ┌─────────────┐     │                        │
+│           │    │  64-VERTEX  │     │                        │
+│           │    │    BULK     │     │                        │
+│           │    │  (encoded)  │     │                        │
+│           │    └─────────────┘     │                        │
+│           │                         │                        │
+│            ╲   BOUNDARY ENCODES    ╱                        │
+│              ╰────────────────────╯                          │
+│                                                              │
+│    V5 Differential Form:                                     │
+│    dV/dt = ∇_∂M · J_∂M + S(x) - D(x)                        │
+│                                                              │
+│    Where ∂M = 96-edge holographic boundary                  │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+IMPLICATION FOR PRIVACY:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    Privacy value computable ENTIRELY from boundary          │
+│    The bulk (interior) is ENCODED, not directly observed    │
+│                                                              │
+│    This IS what zero-knowledge proofs do:                   │
+│    • Proof (boundary) encodes computation (bulk)            │
+│    • Verifier never sees inside                             │
+│                                                              │
+│    V5 AXIOM: "The boundary is always enough."               │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Compression Spectrum — 7 Layers
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              COMPRESSION SPECTRUM (V5)                               │
+│    How knowledge transforms through compression                      │
+└─────────────────────────────────────────────────────────────────────┘
+
+LAYER    FORM              COMPRESSION    PRIVACY PROPERTY
+──────   ────              ───────────    ────────────────
+  7      Skill File        Variable       ⬆️ Most defensible
+         (executable)                      │ (shareable without
+                                          │  revealing path)
+  6      Reasoning Graph   Variable       │
+         (BRAID structure)                 │ Bounded, structured
+                                          │
+  5      Wisdom            ~10,000:1      │ Contextual principles
+                                          │
+  4      Understanding     ~1,000:1       │ Relational models
+                                          │
+  3      Knowledge         ~100:1         │ Structured facts
+                                          │
+  2      Memory            ~10:1          │ Encoded episodes
+                                          │
+  1      Experience        1:1            ⬇️ Most surveilable
+         (raw input)                       (more tokens, more surface)
+
+COMPRESSION-AS-DEFENCE:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    Every token NOT sent is a token that CANNOT be:          │
+│    • Intercepted                                            │
+│    • Reconstructed                                          │
+│    • Analysed                                               │
+│                                                              │
+│    BRAID: 74× compression = ~98.6% attack surface reduction │
+│                                                              │
+│    V5 Term: R(d, compression) = R_base(d) · (1 - 1/ratio)   │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Privacy Value Model V5 — Holographic Field
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              PRIVACY VALUE MODEL V5                                  │
+│    Output Type: HOLOGRAPHIC FIELD                                    │
+└─────────────────────────────────────────────────────────────────────┘
+
+V5 EQUATION:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  V(π, t) = P^1.5 · C · Q · S ·                              │
+│            e^(-λt) · (1 + A_h(τ)) ·                         │
+│            (1 + Σᵢ wᵢ · nᵢ/N₀)^k · G(guilds) ·             │
+│            R(d, compression) ·                               │
+│            M(u, y) ·                                         │
+│            Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) ·        │
+│            T_∫(π)                                            │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+V5 TERM BREAKDOWN:
+┌────────────────────┬────────────────────────────────────────┐
+│ TERM               │ V5 CHANGE                              │
+├────────────────────┼────────────────────────────────────────┤
+│ P^1.5              │ Now connected to 96/64 ratio (C6)      │
+│ A_h(τ)             │ Holonic persistence p(τ) added         │
+│ G(guilds)          │ NEW — shared-parent efficiency         │
+│ R(d, compression)  │ Compression modifier added             │
+│ Φ_agent·Φ_data·Φ_inf│ Three-axis split                      │
+│ T_∫(π)             │ Path integral (not additive)           │
+└────────────────────┴────────────────────────────────────────┘
+
+DIFFERENTIAL FORM:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    dV/dt = ∇_∂M · J_∂M + S(x) - D(x)                        │
+│                                                              │
+│    Computed on 96-edge BOUNDARY, not 64-vertex bulk         │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+SYMBOLIC NOTATION (V5):
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  🔐^✨ · 🔑 · ✅ · 🌐 · ⏳·🪞_h · 🕸️^🌱(📐)·🏛️ ·            │
+│  🎯(📉) · 💰 · (⚔️⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️) · ∮🛤️ 🙂            │
+│                                                              │
+│  New V5 symbols:                                             │
+│  🔷 = Holographic     🏛️ = Guild      ∮ = Path integral     │
+│  📊⊥🔮 = Φ_data       🧠⊥⚙️ = Φ_inference                   │
+│  ☯️🔷 = Holonic Architect                                    │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+VERSION HISTORY:
+┌────────┬──────────────────────────────────────────────────────┐
+│ V1     │ Static scalar                                        │
+│ V2     │ Dynamic scalar (decay + network)                     │
+│ V3     │ Agent-aware scalar (R, M, Φ)                         │
+│ V3.1   │ Architecture-gated scalar (σ(⿻)²)                   │
+│ V4     │ Manifold-aware scalar (Σ, A(τ), T(π))               │
+│ V5     │ HOLOGRAPHIC FIELD (three-axis, ∂M, T_∫, G, A_h)     │
+└────────┴──────────────────────────────────────────────────────┘
+```
+
+### Holonic Architect — New V5 Persona
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              HOLONIC ARCHITECT (☯️🔷)                                │
+│    Builder of infrastructure-independent substrate                   │
+└─────────────────────────────────────────────────────────────────────┘
+
+THREE PERSONAS:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    ⚔️ SWORDSMAN           🧙 MAGE           ☯️🔷 HOLONIC    │
+│    (Protect)              (Delegate)        ARCHITECT       │
+│                                             (Persist)        │
+│         │                      │                │           │
+│         │                      │                │           │
+│         └──────────┬───────────┘                │           │
+│                    │                            │           │
+│              THE GAP                     SUBSTRATE          │
+│         (where sovereignty                (where data       │
+│          persists)                        survives)         │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+HOLONIC ARCHITECT PROMISES:
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│    "Your data will survive provider failure."                │
+│    "Your identity will survive infrastructure migration."   │
+│    "Your history will survive time."                        │
+│                                                              │
+│    NOT protection (Swordsman's domain)                      │
+│    NOT delegation (Mage's domain)                           │
+│    PERSISTENCE (new domain)                                  │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
 ```
 
 ---

@@ -1,7 +1,7 @@
 # 0xagentprivacy Master Glossary
 
-**Version 2.5** | February 20, 2026  
-**Status:** ✅ CANONICAL REFERENCE
+**Version 3.0** | February 27, 2026
+**Status:** ✅ CANONICAL REFERENCE — V5 UPDATE
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
@@ -9,19 +9,21 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 
 | Document | Version | Date | Status |
 |----------|---------|------|--------|
-| **This Glossary** | 2.5 | February 20, 2026 | ✅ CANONICAL |
-| Swordsman-Mage Whitepaper | 4.9 → 5.0 | February 2026 | 🔄 UPDATE PENDING |
-| Dual Privacy Research Paper | 3.7 → 3.8 | February 2026 | 🔄 UPDATE PENDING |
-| Spellbook / Grimoire JSON | 4.1.0 → 7.0.0 | February 2026 | 🔄 REBUILD PENDING |
-| Five Grimoire Markdown Files | v1.0–v3.0 | February 20, 2026 | ✅ COMPLETE |
-| VRC Promise Protocol | 3.1 → 3.2 | February 2026 | 🔄 UPDATE PENDING |
-| Visual Architecture Guide | 1.4 → 1.5 | February 2026 | 🔄 UPDATE PENDING |
-| Research Proposal | 1.5 → 1.6 | February 2026 | 🔄 UPDATE PENDING |
-| Promise Theory Reference | 1.1 → 1.2 | February 2026 | 🔄 UPDATE PENDING |
+| **This Glossary** | 3.0 | February 27, 2026 | ✅ CANONICAL — V5 |
+| **Privacy is Value v5** | 5.0 | February 27, 2026 | ✅ STAGE 1 — V5 NEW |
+| **Privacy Value Model V5 Formal Specification** | 1.0 | February 2026 | ✅ STAGE 1 — V5 NEW |
+| Swordsman-Mage Whitepaper | 5.0 → 6.0 | February 2026 | 🔄 UPDATE PENDING |
+| Dual Privacy Research Paper | 3.8 → 4.0 | February 2026 | 🔄 UPDATE PENDING |
+| Spellbook / Grimoire JSON | 7.0.0 → 7.1.0 | February 2026 | 🔄 REBUILD PENDING |
+| Five Grimoire Markdown Files | v1.0–v3.0 | February 20, 2026 | 🔄 ACT XXIV PENDING |
+| VRC Promise Protocol | 3.2 → 3.3 | February 2026 | 🔄 UPDATE PENDING |
+| Visual Architecture Guide | 1.5 → 2.0 | February 2026 | 🔄 UPDATE PENDING |
+| Research Proposal | 1.6 → 2.0 | February 2026 | 🔄 UPDATE PENDING |
+| Promise Theory Reference | 1.2 → 1.3 | February 2026 | 🔄 UPDATE PENDING |
 | IEEE 7012 Quick Reference | 1.0 | January 29, 2026 | ✅ FINAL |
-| **Privacy is Value v4** | 4.0 | February 19, 2026 | ✅ STAGE 1 — NEW |
-| **Privacy Value Model V4 Formal Specification** | 1.0 | February 2026 | ✅ STAGE 1 — NEW |
-| **UOR × 64-Tetrahedra × ZK Mapping** | 1.0 | February 19, 2026 | 🔬 PRELIMINARY — NEW |
+| **UOR × 64-Tetrahedra × ZK Mapping** | 1.0 → 2.0 | February 2026 | 🔄 96/64 RESOLVED |
+| Privacy is Value v4 | 4.0 | February 19, 2026 | 📁 ARCHIVED — superseded by v5 |
+| Privacy Value Model V4 Formal Specification | 1.0 | February 2026 | 📁 ARCHIVED — superseded by v5 |
 
 **Note:** All cross-references between documents should use these version numbers. When documents reference each other, they should cite specific versions (e.g., "see Research Paper v3.6, Theorem 3.2").
 
@@ -1294,13 +1296,28 @@ This section provides canonical definitions from the IEEE 7012-2025 standard as 
 ## 13. Privacy Value Model
 
 ### Privacy Value Model (PVM)
-**Definition**: Multiplicative equation measuring the value of privacy-preserving agent architectures. Each term is a gating condition — any zero collapses total value.
+**Definition**: Multiplicative equation measuring the value of privacy-preserving agent architectures. Each term is a gating condition — any zero collapses total value. V5 output type is **holographic field** (boundary encodes volume).
 
-**Status**: 🚧 STAGE 1 — V4 convergent discovery, pre-peer review
+**Status**: 🚧 STAGE 1 — V5 convergent discovery, pre-peer review
 
-**V4 Equation**: V(π, t) = P^1.5 · C · Q · S · e^(-λt) · (1 + A(τ)) · (1 + Σ wᵢnᵢ/N₀)^k · R(d) · M(u,y) · Φ(Σ) · T(π)
+**V5 Equation**:
+```
+V(π, t) = P^1.5 · C · Q · S ·
+          e^(-λt) · (1 + A_h(τ)) ·
+          (1 + Σᵢ wᵢ · nᵢ/N₀)^k · G(guilds) ·
+          R(d, compression) ·
+          M(u, y) ·
+          Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) ·
+          T_∫(π)
+```
 
-**Symbolic**: 🔐^✨ · 🔑 · ✅ · 🌐 · ⏳·🪞 · 🕸️^🌱(📐) · 🎯 · 💰 · ⚖️(⚔️⊥⿻⊥🧙⊥🪞⊥🤝) · 🛤️ 🙂
+**Differential Form (V5)**:
+```
+dV/dt = ∇_∂M · J_∂M + S(x) - D(x)
+```
+Where ∂M is the 96-edge holographic boundary encoding the 64-vertex bulk.
+
+**V5 Symbolic**: 🔐^✨ · 🔑 · ✅ · 🌐 · ⏳·🪞_h · 🕸️^🌱(📐)·🏛️ · 🎯(📉) · 💰 · (⚔️⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️) · ∮🛤️ 🙂
 
 **Version History**:
 - V1 (2024): Static scalar — P · C · Q · S
@@ -1308,16 +1325,16 @@ This section provides canonical definitions from the IEEE 7012-2025 standard as 
 - V3 (Nov 2025): Agent-aware — added R(d), M(u,y), Φ(S,M)
 - V3.1 (Jan 2026): Architecturally-gated — added σ(⿻)² separation scalar
 - V4 (Feb 2026): Manifold-aware — separation matrix Σ, temporal memory A(τ), stratum-weighted networks, edge value T(π)
-- V5 (future): Field on manifold — differential form dV/dt = ∇·J(x, ẋ) + S(x) - D(x)
+- **V5 (Feb 2026)**: **Holographic field** — three-axis separation, holographic bound, path integral, compression-as-defence, holonic persistence, guild efficiency
 
-**Source**: [Privacy is Value v4], [Research Paper v3.7]
+**Source**: [Privacy is Value v5], [Research Paper v4.0]
 
 ---
 
-### Separation Matrix (Σ)
-**Definition**: 4×4 symmetric matrix measuring pairwise separation between four sovereignty forces (Protect, Project, Reflect, Connect). Replaces the V3.1 scalar σ(⿻)².
+### Separation Matrix (Σ) — Agent Layer
+**Definition**: 4×4 symmetric matrix measuring pairwise separation between four sovereignty forces (Protect, Project, Reflect, Connect). In V5, this becomes the agent-layer component Φ_agent(Σ) of three-axis separation.
 
-**Status**: 🔬 CONJECTURED (measurement methods don't yet exist for emergent forces)
+**Status**: 🔬 CONJECTURED (measurement methods improving via BRAID data)
 
 **Structure**:
 ```
@@ -1330,45 +1347,136 @@ This section provides canonical definitions from the IEEE 7012-2025 standard as 
 
 **Key Property**: det(Σ) measures the architectural volume of the sovereignty tetrahedron. Perfect orthogonality → maximum volume. Any entanglement → volume shrinks. Total collapse on any pair → det(Σ) → 0 → entire multiplier collapses.
 
-**Relationship to V3.1**: V3.1's σ(⿻)² was measuring one edge of a tetrahedron and calling it structural integrity. V4 measures the whole shape.
+**V5 Extension**: The separation matrix is now one of THREE orthogonal axes. See [Three-Axis Separation](#three-axis-separation-v5).
 
-**Source**: [Privacy is Value v4, §What Changed], [Research Paper v3.7]
+**Source**: [Privacy is Value v5, §Three-Axis Separation], [Research Paper v4.0]
 
 ---
 
-### Duality Function Φ(Σ)
-**Definition**: The evolved golden duality multiplier. Combines Swordsman-Mage balance with the full architectural volume of the sovereignty tetrahedron.
+### Three-Axis Separation (V5)
+**Definition**: V5 recognises separation operates on three orthogonal architectural axes: agent, data, and inference. Replaces single-matrix approach with multiplicative product.
 
-**Status**: 🔬 CONJECTURED (φ ratio not yet derived from lattice geometry)
+**Status**: 🔬 CONJECTURED (C7: multiplicativity needs empirical confirmation)
 
-**Formula**: `Φ(Σ) = min(1.0, (S/M) / φ) · det(Σ)`
+**Formula**: `Φ_v5 = Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ)`
 
 **Components**:
-- `min(1.0, (S/M) / φ)` — balance term, inherited from V3's golden duality
-- `det(Σ)` — volume term, measures architectural separation across all four forces
+- **Φ_agent(Σ)** — Swordsman-Mage separation (V4's matrix, retained)
+- **Φ_data(Δ)** — Provider fragmentation (how distributed is your data?)
+- **Φ_inference(Γ)** — Generator-Solver split (BRAID bounded reasoning)
 
-**Evolution**: V3 had `Φ(S,M) = min(1.0, (S/M) / φ)` (balance only). V3.1 added `σ(⿻)²` (one-axis separation). V4 replaces both with matrix formalism capturing six pairwise separation requirements simultaneously.
+**Key Property**: Multiplicative — collapse on ANY axis collapses total separation. This explains why good agent separation with centralised data still fails.
 
-**Key Property**: If any two forces become fully entangled, det(Σ) → 0 and the entire duality term collapses regardless of balance. Separation is prerequisite to allocation.
+**Three-Graphs Mapping**:
+- Knowledge Graph → Φ_data (substrate separation)
+- Promise Graph → Φ_agent (bilateral separation)
+- Trust Graph → emerges at intersection of all three
 
-**Source**: [Privacy is Value v4, §What Changed], [Research Paper v3.7]
+**Source**: [Privacy is Value v5, §Three-Axis Separation]
 
 ---
 
-### Edge Value T(π)
-**Definition**: Value of an agent's trajectory through sovereignty space. Measures what the agent *does* — how it moves — rather than what it *is*.
+### Φ_agent (Agent-Layer Separation)
+**Definition**: The Swordsman-Mage separation axis. Measures how well protection agent is separated from delegation agent.
 
-**Status**: 🔬 CONJECTURED (functional form lacks empirical grounding — no sovereignty traversal markets exist)
+**Status**: 🔬 CONJECTURED
 
-**Formula**: T(π) = 1 + β · Σ_e∈π f(e) · g(n_e)
+**Formula**: `Φ_agent(Σ) = min(1.0, (S/M) / φ) · det(Σ)`
 
-Where f(e) weights each edge by stratum change (capability activation > lateral move), and g(n_e) diminishes with repetition (first traversal most informative).
+This is V4's duality term, now understood as one axis of three.
 
-**Key Insight**: "Every discipline that matures discovers this: meaning lives between the edges." Category theory (Yoneda's lemma), neural networks (weights > neurons), Promise Theory (agents defined by promises, not contents), UOR (derivation chains are first-class objects). T(π) brings this insight into the PVM.
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §4]
 
-**Implication**: An agent permanently at ⟨1,1,1,1,1,1⟩ (full sovereignty, static) has zero edge value. Adaptive sovereignty — navigating fluidly, activating privacy when needed, delegating when appropriate — demonstrates real sovereignty.
+---
 
-**Source**: [Privacy is Value v4, §Edge Value]
+### Φ_data (Data-Layer Separation)
+**Definition**: Provider fragmentation axis. Measures how distributed data is across independent storage infrastructure.
+
+**Status**: 🔬 CONJECTURED (needs operational measurement)
+
+**Formula**: `Φ_data(Δ) = 1 - 1/|providers(Δ)|`
+
+**Values**:
+- Single provider: Φ_data = 0 (collapses total value)
+- Two providers: Φ_data = 0.5
+- Many providers: Φ_data → 1
+
+**Implication**: Centralised data storage is a privacy failure regardless of agent separation quality.
+
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §4]
+
+---
+
+### Φ_inference (Inference-Layer Separation)
+**Definition**: Generator-Solver split axis. Measures separation between reasoning model and execution model.
+
+**Status**: 🔬 CONJECTURED (BRAID provides operational framework)
+
+**Formula**: `Φ_inference(Γ) = separation(Generator, Solver)`
+
+**Values**:
+- Same model for both: Φ_inference = 0
+- Separate models, shared weights: Φ_inference ∈ (0, 1)
+- Independent models: Φ_inference → 1
+
+**BRAID Connection**: Generator produces reasoning graphs; Solver executes them. This is inference-layer separation in practice.
+
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §4]
+
+---
+
+### Duality Function Φ(Σ) — See Φ_agent
+**Definition**: V4's duality function. In V5, renamed to Φ_agent and understood as one of three separation axes.
+
+**Status**: 🔬 CONJECTURED (φ ratio not yet derived from lattice geometry; BRAID provides empirical pathway)
+
+**V5 Evolution**: V4's single Φ(Σ) becomes Φ_agent(Σ) — the agent-layer axis of three-axis separation. The formula is unchanged; the interpretation is clarified.
+
+**See**: [Three-Axis Separation](#three-axis-separation-v5), [Φ_agent](#φ_agent-agent-layer-separation)
+
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §4]
+
+---
+
+### Edge Value T(π) → Path Integral T_∫(π) (V5)
+**Definition**: Value of an agent's trajectory through sovereignty space. V5 replaces additive sum with path integral to capture edge correlations.
+
+**Status**: 🔬 CONJECTURED (BRAID reasoning graphs provide first empirical grounding)
+
+**V4 Formula**: `T(π) = 1 + β · Σ_e∈π f(e) · g(n_e)` (additive — assumes edge independence)
+
+**V5 Formula**: `T_∫(π) = 1 + β · ∫_π F(γ) dγ` (path integral — captures correlations)
+
+The path integral form handles:
+- **Verification checkpoints** — some edges gate later traversal
+- **Feedback loops** — revisiting vertices with changed meaning
+- **Non-local correlations** — early choices affecting later value
+
+**Key Insight**: "Every discipline that matures discovers this: meaning lives between the edges." Category theory (Yoneda's lemma), neural networks (weights > neurons), Promise Theory (agents defined by promises, not contents), UOR (derivation chains are first-class objects).
+
+**V5 Conjecture Update**: C3 (edge additivity) is **challenged** — BRAID shows edges are not independent. Path integral replaces additive sum.
+
+**Source**: [Privacy is Value v5, §Path Integral], [PVM V5 Formal Spec §7]
+
+---
+
+### Path Integral T_∫(π) (V5)
+**Definition**: V5's replacement for additive edge value. Integrates over path with density function F(γ) capturing edge correlations.
+
+**Status**: 🔬 CONJECTURED (C3 challenged)
+
+**Formula**: `T_∫(π) = 1 + β · ∫_π F(γ) dγ`
+
+**Density Function F(γ)** captures:
+- Non-local correlations (choice at step 3 affects value at step 7)
+- Verification checkpoints (gate-keeper edges)
+- Feedback loops (paths can revisit vertices)
+
+**BRAID Connection**: Generator proposes traversal plan; Solver executes; integral measures actual path value including correlations.
+
+**V4 Reduction**: When edges are independent, the integral reduces to the additive sum.
+
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §7]
 
 ---
 
@@ -1387,20 +1495,30 @@ Where f(e) weights each edge by stratum change (capability activation > lateral 
 
 ---
 
-### Temporal Memory A(τ)
-**Definition**: Value accumulated through verified derivation chains over time. Creates a contest between entropy (data decay) and memory (verified history).
+### Temporal Memory A(τ) → Holonic Temporal Memory A_h(τ) (V5)
+**Definition**: Value accumulated through verified derivation chains over time. V5 adds **holonic persistence** — infrastructure-independent history via GUID addressing.
 
-**Status**: 🔬 CONJECTURED (logarithmic form chosen by analogy, not proven from information theory)
+**Status**: 🔬 CONJECTURED (C2 strengthened by holonic persistence guarantees)
 
-**Formula**: A(τ) = α · ln(1 + |τ|) · h(τ)
+**V4 Formula**: `A(τ) = α · ln(1 + |τ|) · h(τ)`
 
-Where |τ| is derivation chain length, h(τ) ∈ [0,1] measures verifiable integrity (fraction of transitions with valid ZK proofs). Unverifiable history contributes nothing.
+**V5 Formula**: `A_h(τ) = α · ln(1 + |τ|) · h(τ) · p(τ)`
 
-**Behaviour**: For agents with no history → reduces to V3.1's pure decay. For agents with deep verified history → value can increase over time even as individual data points decay.
+Where:
+- |τ| = derivation chain length
+- h(τ) ∈ [0,1] = verifiable integrity (fraction with valid ZK proofs)
+- **p(τ) ∈ [0,1]** = **persistence independence** (fraction surviving single-provider failure) — **V5 NEW**
 
-**This is Reflect entering the equation.** The emergent witness, now measured.
+**V5 Change**: The ∫₀^∞ integral now has meaning. Under V4, infinite time meant eventual decay (infrastructure fails). Under V5, holonically-persistent history can survive indefinitely.
 
-**Source**: [Privacy is Value v4, §Time Acquires Memory]
+**Behaviour**:
+- No history → reduces to pure decay
+- Infrastructure-dependent history → p(τ) < 1 dampens value
+- Holonically-persistent history → p(τ) = 1, full logarithmic accumulation
+
+**This is Reflect + Holonic Architect entering the equation.**
+
+**Source**: [Privacy is Value v5, §Holonic Persistence], [PVM V5 Formal Spec §3]
 
 ---
 
@@ -1437,16 +1555,90 @@ Where |τ| is derivation chain length, h(τ) ∈ [0,1] measures verifiable integ
 
 ---
 
-### Manifold
-**Definition**: The 64-tetrahedron with toroidal boundary conditions as a compact mathematical space. The V4 equation defines a value field on this manifold with sources, sinks, and currents.
+### Manifold → Holographic Manifold (V5)
+**Definition**: The 64-vertex lattice with 96-edge toroidal boundary. V5 recognises this as a **holographic manifold** where the boundary (96 edges) encodes the bulk (64 vertices).
 
-**Status**: 🔬 CONVERGENT PRELIMINARY
+**Status**: 🔬 CONVERGENT — C4 RESOLVED
 
-**Properties**: Sources = high-stratum, high-separation vertices generating value. Sinks = low-stratum, entangled vertices extracting value. Currents = edges along which value flows.
+**V4 Understanding**: Value field on manifold with sources, sinks, currents computed on bulk.
 
-**Reframing**: The 31,000× gap between sovereign and surveillance architectures is not arithmetic distance — it's the difference in accessible volume on the same manifold. Surveillance is topologically constrained. Sovereign systems access the full manifold. The gap is topology, not arithmetic.
+**V5 Understanding**: Value computed on the **boundary**. The 96-edge surface IS the holographic encoding of the 64-vertex bulk. Differential form `dV/dt = ∇_∂M · J_∂M + S(x) - D(x)` computes on ∂M (boundary), not M (bulk).
 
-**Source**: [Privacy is Value v4, §Manifold Transition]
+**C4 Resolution**: The 96/64 "discrepancy" is the holographic principle — boundary encodes volume. This is now RESOLVED, not an open question.
+
+**C6 Connection**: 96/64 = 1.5 = P's superlinear exponent. Numerically coincident; derivation unproven.
+
+**Gap Reframing**: V5 understands the surveillance gap as boundary expressiveness, not bulk volume. Sovereignty architectures have expressive boundaries; surveillance has constrained boundaries.
+
+**Source**: [Privacy is Value v5, §Holographic Bound], [PVM V5 Formal Spec §8]
+
+---
+
+### Holographic Bound (V5)
+**Definition**: The principle that the 96-edge boundary of the sovereignty manifold encodes the 64-vertex bulk. Privacy value can be computed entirely from boundary operations.
+
+**Status**: 🔬 CONJECTURED (C9: boundary sufficiency needs discrete lattice verification)
+
+**Ratio**: 96/64 = 1.5
+
+**Implications**:
+1. **Boundary computation** — differential form computes on edges, not vertices
+2. **Value flows along edges** — boundary IS the compute surface
+3. **Boundary sufficiency** — the surface is enough; bulk is encoded
+
+**C6 Speculation**: 96/64 = 1.5 = P^1.5 exponent. If structural (not coincidence), entire equation is holographic principle applied to sovereignty.
+
+**Axiom**: *"The boundary is always enough."*
+
+**Source**: [Privacy is Value v5, §Holographic Bound], [PVM V5 Formal Spec §8]
+
+---
+
+### Holographic Field (V5)
+**Definition**: The output type of PVM-V5. A scalar field computed on the holographic boundary ∂M, encoding the value structure of the bulk manifold M.
+
+**Status**: 🚧 V5 OUTPUT TYPE
+
+**Evolution**:
+- V1–V3: Static/dynamic/agent-aware **scalar**
+- V4: Manifold-aware **scalar** (value on bulk vertices)
+- V5: **Holographic field** (value on boundary edges, encoding bulk)
+
+**Computation**: `dV/dt = ∇_∂M · J_∂M + S(x) - D(x)`
+
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §1]
+
+---
+
+### Compression-as-Defence (V5)
+**Definition**: The principle that inference compression reduces attack surface. Every token not sent cannot be intercepted, reconstructed, or analysed.
+
+**Status**: 🔬 CONJECTURED (C8: needs formal proof)
+
+**V5 Term**: R(d, compression) = R_base(d) · (1 - 1/compression_ratio)
+
+**BRAID Data**: 74× compression while maintaining performance. At 74×, factor ≈ 0.986.
+
+**Insight**: The same techniques making inference efficient also make it more private. Bounded reasoning is harder to surveil.
+
+**Source**: [Privacy is Value v5, §Compression-as-Defence], [PVM V5 Formal Spec §5]
+
+---
+
+### Guild Efficiency G(guilds) (V5)
+**Definition**: Network scaling benefit from shared-parent coordination structures. Agents sharing a reasoning library coordinate at O(1) cost per member, not O(N²).
+
+**Status**: 🔬 CONJECTURED (C10: needs calibration)
+
+**Formula**: `G(guilds) = 1 + guild_efficiency`
+
+Where guild_efficiency ∈ [0,1] measures fraction of network using shared-parent patterns.
+
+**Network Term (V5)**: `(1 + Σᵢ wᵢ · nᵢ/N₀)^k · G(guilds)`
+
+**Insight**: Why some networks scale gracefully while others collapse — it's the parent structure, not the agent count.
+
+**Source**: [Privacy is Value v5, §Guild Efficiency], [PVM V5 Formal Spec §6]
 
 ---
 
@@ -1455,7 +1647,7 @@ Where |τ| is derivation chain length, h(τ) ∈ [0,1] measures verifiable integ
 ### UOR (Universal Object Reference)
 **Definition**: Algebraic framework based on modular ring Z/(2^bits)Z with five primitive operations (neg, bnot, xor, and, or) and content-addressing. Independently converges with the 64-tetrahedra geometry.
 
-**Status**: 🔬 PRELIMINARY (external framework — requires external validation)
+**Status**: 🔬 PRELIMINARY — C4 RESOLVED (96/64 = holographic bound)
 
 **Core Properties**:
 - **Algebra**: Z/(2^bits)Z modular ring
@@ -1464,7 +1656,187 @@ Where |τ| is derivation chain length, h(τ) ∈ [0,1] measures verifiable integ
 - **Content addressing**: Same bytes → same identifier. Always. Deterministic
 - **Derivations**: Content-addressed certificates binding canonical form to evaluation
 
-**Source**: UOR Foundation, [UOR Mapping v1.0]
+**V5 Update**: The 96 vs 64 discrepancy (C4) is RESOLVED. The torus surface IS the holographic bound of the lattice volume. UOR correspondence is explained BY the holographic principle.
+
+**Source**: UOR Foundation, [UOR Mapping v2.0]
+
+---
+
+### BRAID (V5)
+**Definition**: Bounded Reasoning for Autonomous Inference and Decisions. Framework demonstrating that structured reasoning graphs compress inference while maintaining performance.
+
+**Status**: 🔬 EMPIRICAL FRAMEWORK (external — provides V5 validation data)
+
+**Key Finding**: Nano-model with bounded structured reasoning matches or exceeds medium model with unbounded context. Compression ratio: 74×.
+
+**Privacy Implication**: Same techniques making inference efficient also make it private. Compression reduces attack surface (compression-as-defence).
+
+**V5 Terms Derived From BRAID**:
+- Φ_inference (Generator-Solver separation)
+- R(d, compression) (compression modifier)
+- G(guilds) (shared-parent efficiency)
+- T_∫(π) (path integral for correlated edges)
+
+**Source**: BRAID Framework, [Privacy is Value v5]
+
+---
+
+### BRAID Parity Effect (V5)
+**Definition**: The empirical finding that nano-model + structure ≥ medium-model + unbounded. Structured reasoning compensates for reduced parameter count.
+
+**Status**: 🔬 EMPIRICAL
+
+**Compression**: ~74× token reduction
+
+**C6 Connection**: The compression ratio relates to the holographic bound. If nano can match medium through structure, the structure IS the privacy architecture.
+
+**Source**: BRAID Framework, [Privacy is Value v5, §BRAID Parity Effect]
+
+---
+
+### Generator (BRAID) (V5)
+**Definition**: In BRAID architecture, the intelligent model that produces reasoning graphs. The planner that determines traversal structure.
+
+**Status**: 🔬 EMPIRICAL FRAMEWORK
+
+**Role**: Creates structured reasoning plans that Solvers execute. The Generator-Solver split is Φ_inference.
+
+**Promise Theory**: Generator makes (+) promises of reasoning structure to Solver.
+
+**Source**: BRAID Framework, [PVM V5 Formal Spec §4]
+
+---
+
+### Solver (BRAID) (V5)
+**Definition**: In BRAID architecture, the lightweight model that executes reasoning graphs. The executor that follows Generator's plan.
+
+**Status**: 🔬 EMPIRICAL FRAMEWORK
+
+**Role**: Executes structured reasoning plans without re-deriving them. Separated from Generator to achieve Φ_inference > 0.
+
+**Promise Theory**: Solver makes (+) promises of execution to Generator's structure.
+
+**Source**: BRAID Framework, [PVM V5 Formal Spec §4]
+
+---
+
+### Holon / Holonic (V5)
+**Definition**: A data object with a GUID that is independent of its storage location. Holons persist across infrastructure changes because their identity is content-addressed, not provider-addressed.
+
+**Status**: 🔬 ARCHITECTURAL CONCEPT
+
+**Key Property**: GUID = hash(content). The identifier doesn't change when the storage provider changes.
+
+**Persistence**: Holons can survive:
+- Provider migration
+- Storage format changes
+- Infrastructure failures (if replicated)
+
+**V5 Connection**: A_h(τ) includes persistence independence p(τ) — fraction of history that is holonically persistent.
+
+**Source**: [Privacy is Value v5, §Holonic Persistence], [PVM V5 Formal Spec §3]
+
+---
+
+### Holonic Architect (☯️🔷) (V5)
+**Definition**: New persona emerging from V5. Builder of infrastructure-independent substrate. Designs systems where data manages itself through GUID persistence.
+
+**Status**: 🔬 PERSONA
+
+**Symbol**: ☯️🔷 (balance + holographic)
+
+**Concern**:
+- Data survives provider failure
+- Identity survives infrastructure migration
+- History survives time
+
+**Relationship to S/M**: Where Swordsman protects and Mage delegates, Holonic Architect builds the substrate on which they dance.
+
+**Source**: [Privacy is Value v5, §Holonic Architect]
+
+---
+
+### GUID (Holonic Context) (V5)
+**Definition**: Global Unique Identifier that is content-addressed and infrastructure-independent. In holonic context, the identifier that persists across storage changes.
+
+**Status**: ✅ ESTABLISHED (CS primitive, V5 application)
+
+**Formula**: `GUID(content) = hash(content)`
+
+**Key Property**: Same content → same GUID, regardless of where it's stored.
+
+**V5 Role**: GUIDs anchor derivation chains for holonic temporal memory A_h(τ).
+
+**Source**: [Privacy is Value v5], [PVM V5 Formal Spec §3]
+
+---
+
+### Three Identity Layers (V5)
+**Definition**: V5 formalises three orthogonal identity layers: Data (GUID), Relationship (VRC), Principal (DID).
+
+**Status**: 🔬 ARCHITECTURAL FRAMEWORK
+
+**Layers**:
+| Layer | Identifier | Scope | Persistence |
+|-------|-----------|-------|-------------|
+| Data | GUID | Content-addressed holon | Infrastructure-independent |
+| Relationship | VRC | Bilateral commitment | Relationship-scoped |
+| Principal | DID | Sovereign identity | Self-sovereign |
+
+**Orthogonality**: A single principal (DID) can control multiple relationships (VRCs) across multiple data objects (GUIDs).
+
+**Source**: [Privacy is Value v5, §Three Identity Layers], [PVM V5 Formal Spec §14]
+
+---
+
+### Spellweb (V5)
+**Definition**: Navigable graph structure for the grimoire at scale (114+ inscriptions). Acts as nodes, proverbs as waypoints, conceptual connections as edges.
+
+**Status**: 🔬 ARCHITECTURAL CONCEPT
+
+**Structure**:
+- **Nodes**: Acts/inscriptions
+- **Waypoints**: Proverbs (compressed wisdom markers)
+- **Edges**: Conceptual boundaries between inscriptions
+
+**Holographic Property**: Any subset of inscriptions (boundary) encodes the full philosophy (volume). The whole is accessible from any fragment.
+
+**Source**: [Privacy is Value v5, §Spellweb Architecture]
+
+---
+
+### Compression Spectrum (V5)
+**Definition**: Seven-layer model of how knowledge transforms through compression.
+
+**Status**: 🔬 ARCHITECTURAL CONCEPT
+
+**Layers**:
+| Layer | Form | Compression | Example |
+|-------|------|-------------|---------|
+| 1 | Experience | 1:1 | Raw sensory input |
+| 2 | Memory | ~10:1 | Encoded episodes |
+| 3 | Knowledge | ~100:1 | Structured facts |
+| 4 | Understanding | ~1,000:1 | Relational models |
+| 5 | Wisdom | ~10,000:1 | Contextual principles |
+| 6 | Reasoning Graph | Variable | BRAID structure |
+| 7 | Skill File | Variable | Executable compression |
+
+**Privacy Property**: Higher layers are more defensible (compressed, bounded). Lower layers more surveilable (more tokens).
+
+**Source**: [Privacy is Value v5, §Compression Spectrum]
+
+---
+
+### Shared-Parent Pattern (V5)
+**Definition**: Network coordination pattern where agents share a reasoning library from the same Generator, achieving O(1) coordination cost per guild member instead of O(N²).
+
+**Status**: 🔬 ARCHITECTURAL PATTERN
+
+**V5 Connection**: G(guilds) term measures shared-parent coverage.
+
+**Insight**: Guild members don't need pairwise coordination — they share a parent. This explains graceful vs. collapsed network scaling.
+
+**Source**: [Privacy is Value v5, §Guild Efficiency], [PVM V5 Formal Spec §6]
 
 ---
 
@@ -1586,11 +1958,26 @@ Where |τ| is derivation chain length, h(τ) ∈ [0,1] measures verifiable integ
 |--------|---------|
 | 🌀 | Spiral, golden ratio, balanced sovereignty |
 | 🪞 | Reflect — temporal memory, emergent witness (V4) |
+| 🪞_h | Holonic Reflect — persistence-aware temporal memory (V5) |
 | 💰 | 7th capital, behavioral value |
 | 🐲 | Drake — intimate, personal pattern-space intelligence (V4 distinction) |
 | 🐉 | Dragon — cosmic, containing, manifold holder / Dragon tier |
 | 🤝 | Connect — network sovereignty, emergent force (V4) / also VRC |
 | 🛤️ | Path, trajectory, edge value — the lived journey (V4) |
+| ∮🛤️ | Path integral — non-additive trajectory, correlation-aware (V5) |
+
+### V5 Symbols (New)
+| Symbol | Meaning |
+|--------|---------|
+| 🔷 | Holographic — boundary encodes volume (V5) |
+| ☯️🔷 | Holonic Architect — builder of infrastructure-independent substrate (V5) |
+| 📊⊥🔮 | Data-layer separation Φ_data — provider fragmentation (V5) |
+| 🧠⊥⚙️ | Inference-layer separation Φ_inference — Generator/Solver split (V5) |
+| 🏛️ | Guild — shared-parent coordination structure (V5) |
+| ∮ | Path integral — non-additive, correlation-aware edge value (V5) |
+| GUID | Global unique identifier — content-addressed, infrastructure-independent (V5) |
+| _h | Holonic subscript — persistence-aware (V5) |
+| ∂M | Holographic boundary — 96-edge surface encoding 64-vertex bulk (V5) |
 | 🍪 | Cookie, surveillance tracker (what we prevent) |
 | ⚡ | Trust tier, capability, activation |
 
