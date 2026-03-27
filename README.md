@@ -39,7 +39,8 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 | **Whitepaper** | 6.0 | Technical architecture, three-axis separation, BRAID integration | Developers, Researchers |
 | **Research Paper** | 4.0 | Mathematical proofs, V5 conjectures C6–C10, C4 resolved | Academics, Cryptographers |
 | **Five Grimoires + Act XXIV** | v1.0–v3.0 | 114 inscriptions including Holographic Bound (29K+ lines) | Community, Learners |
-| **UOR × 64-Tetrahedra × ZK Mapping** | 2.0 | C4 RESOLVED — holographic bound interpretation | Researchers, Mathematicians |
+| **ZK Swordsman Blade Forge** | 3.0 | Forge metaphor: UOR × 64-Tetrahedra × ZK unified; V5 integration | Researchers, Mathematicians |
+| **UOR × 64-Tetrahedra × ZK Mapping** | 2.0 | Foundational mapping; C4 RESOLVED — holographic bound | Researchers |
 | **VRC Promise Protocol** | 3.3 | Economic architecture, guild efficiency | Investors, Builders |
 | **Visual Guide** | 2.0 | Diagrams including three-axis, holographic visualisations | All |
 | **Research Proposal** | 2.0 | Collaboration invitation, BRAID validation needs | Researchers, Partners |
@@ -278,9 +279,10 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 1. Promise Theory Reference v1.3 (formal foundations, V5 three-axis as promises)
 2. Research Paper v4.0 (mathematical proofs, PVM V5, holographic bound)
 3. Privacy is Value v5.0 (the equation evolves) / [PVM V5 Formal Spec v1.0](privacy_value_v5_formal_specification.md) (mathematics only)
-4. UOR × 64-Tetrahedra × ZK Mapping v2.0 (C4 resolved, holographic principle)
-5. Whitepaper v6.0 (architecture, three-axis separation, BRAID integration)
-6. Research Proposal v2.0 (collaboration opportunities, BRAID validation)
+4. ZK Swordsman Blade Forge v3.0 (forge metaphor, V5 full integration)
+5. UOR × 64-Tetrahedra × ZK Mapping v2.0 (foundational C4 resolution)
+6. Whitepaper v6.0 (architecture, three-axis separation, BRAID integration)
+7. Research Proposal v2.0 (collaboration opportunities, BRAID validation)
 
 ### For Developers / Builders
 1. Visual Guide v2.0 (quick orientation, V5 diagrams)
@@ -372,7 +374,7 @@ This is not about competing on features. This is about establishing **foundation
 
 ---
 
-## Document Coherence (February 27, 2026)
+## Document Coherence (March 27, 2026)
 
 This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Act XXIV, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
 

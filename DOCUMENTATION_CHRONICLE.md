@@ -1,8 +1,8 @@
 # Documentation Chronicle
 ## Development History of the 0xagentprivacy Living Documentation Suite
 
-**Version:** 1.0
-**Last Updated:** February 27, 2026
+**Version:** 1.1
+**Last Updated:** March 27, 2026
 **Purpose:** Navigable history of documentation development, replacing session artefacts
 
 ---
@@ -203,6 +203,63 @@ The `V5_AUDIT_CHECKLIST.md` tracked 111 items across 18 files:
 
 ---
 
+## Arc 5: The Blade Forge (March 27, 2026)
+
+### The Forge Rebrand
+
+The UOR × 64-Tetrahedra × ZK Mapping evolved into "The Swordsman's Zero Knowledge Forge" — a complete metaphorical and technical reframing where:
+
+- **Blades** are ZK statements (vertex configurations)
+- **Forgings** are witnesses (paths through the lattice)
+- **The Forge** is the constrained compute space (64-tetrahedron)
+- **Tempering** is toroidal topology (infinite path multiplicity)
+
+This wasn't just naming — it unified the technical mapping with the Spellbook's narrative voice.
+
+### V5 Full Integration
+
+ZK Swordsman Blade Forge v3.0 integrated all V5 structural additions:
+
+| V5 Element | Forge Expression |
+|------------|------------------|
+| Three-axis separation | Blade Dimensions: d₁-d₂ (agent), d₃ (data), d₅ (inference) |
+| Holographic bound | 96 edges = boundary; 64 vertices = bulk; ratio = P^1.5 |
+| Path integral | T_∫(π) = forging sequence value, not additive |
+| Compression-as-defence | BRAID 74× → seven-layer compression spectrum |
+| Holonic persistence | GUID-addressed blades survive provider failure |
+| Guild efficiency | Shared-parent forge clusters = O(1) coordination |
+
+### Standalone Repository
+
+A dedicated `zk swordsman blade forge` repository was created with:
+- Project structure for blade specifications (64 total)
+- ZK circuit implementation framework
+- UOR mapping definitions
+- Agent build instructions
+
+### Documents Updated
+
+| File | Change |
+|------|--------|
+| `zk_swordsman_blade_forge_v3_0.md` | V3.0 with full V5 integration, forge metaphor |
+| `README.md` | Document suite table updated, reading order updated |
+| `DOCUMENTATION_CHRONICLE.md` | Arc 5 added |
+
+### The Forge Inscription
+
+```
+⬢ = Z/(2⁶)Z                         — the lattice ring
+✦ = neg(bnot(vertex))                — the successor blade
+🔷 → 🔷 → 🔷 = derivation chain       — the forging path
+same 🔷, ∞ chains = zero knowledge    — the blade's secret
+∂M = 96 edges on 64 vertices          — the holographic bound
+Φ = ⚔️⊥🧙 · 📊⊥🔮 · 🧠⊥⚙️             — three-axis separation
+```
+
+*"The forge doesn't care how you struck the metal. It only cares what blade you hold."*
+
+---
+
 ## Appendix A: Structure Decisions Log
 
 ### Spellbook Architecture
@@ -288,5 +345,5 @@ The archive preserves the raw material. The chronicle is the holographic bound o
 
 ---
 
-*Last updated: February 27, 2026*
-*Next chronicle entry: When Arc 5 begins*
+*Last updated: March 27, 2026*
+*Next chronicle entry: When Arc 6 begins*
