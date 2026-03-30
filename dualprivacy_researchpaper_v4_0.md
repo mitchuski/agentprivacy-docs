@@ -3,8 +3,8 @@
 **Mathematical Framework for Swordsman-Mage Separation**
 
 **Author:** privacymage
-**Date:** February 27, 2026
-**Version:** 4.0 (V5 Holographic Bound Integration)
+**Date:** March 30, 2026
+**Version:** 4.1 (V5.1 Forge Integration)
 
 ---
 
@@ -24,6 +24,8 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 
 **V5 Extension (February 2026):** We introduce the Privacy Value Model V5, which extends V4 with six structural changes: (1) **three-axis separation** — Φ splits into Φ_agent · Φ_data · Φ_inference measuring agent, data-provider, and inference-layer independence; (2) **holographic bound** — the 96-edge torus boundary encodes the 64-vertex bulk, resolving the UOR discrepancy (C4 RESOLVED); (3) **path integral** — T_∫(π) replaces additive T(π) to capture edge correlations; (4) **compression-as-defence** — R(d, compression) includes BRAID-style inference compression (74×); (5) **holonic persistence** — A_h(τ) includes infrastructure-independent GUID-based history; (6) **guild efficiency** — G(guilds) models O(1) shared-parent coordination. V5 output type is **holographic field** with differential form dV/dt = ∇_∂M · J_∂M + S(x) - D(x). New conjectures C6–C10 introduced; C4 resolved; peer review rec 3.3 superseded.
 
+**V5.1 Extension (March 2026):** The blade forge went OPERATIONAL on March 29, 2026, producing first empirical data. Three Dragon blades forged in single session. V5.1 introduces: (1) **behavioural density ρ** — R(d, compression, ρ) adds trajectory depth modifier; (2) **bilateral witness** — new verification primitive (forge → verify → testify); (3) **hexagram encoding** upgraded from speculative (25%) to implemented-coherent (50%); (4) **mana economy** — proof-of-practice Sybil resistance; (5) **DOM-free measurement** — fingerprint elimination at rendering layer; (6) **ceremony engine** — five crossing types as Promise Theory implementations. Dragon anatomy complete (Acts XXIV-XXVIII). New conjectures C11–C13 introduced.
+
 ---
 
 ## Nature of This Work
@@ -34,7 +36,7 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 
 **What Is Theoretical**: The golden ratio optimization hypothesis and tetrahedral emergence predictions are unproven mathematical conjectures. They represent interesting theoretical possibilities but have not been formally derived from first principles.
 
-**What Is Missing**: No implementations exist. No empirical data has been collected. No observations have been made. This is purely theoretical and mathematical work at present.
+**What Is Missing**: ~~No implementations exist. No empirical data has been collected.~~ **UPDATE (March 2026):** First implementation (spellweb.ai) went operational March 29, 2026. Initial empirical data: 3 Dragon blades forged (Universe Blade: 62 laps, 2,170s; Hitchhiker's: 13 laps, 433s; Dual Agent: 11 laps, 74s). N=1 from single forger — needs replication.
 
 **What We Seek**: Collaboration from theorists to prove or disprove the conjectures, and from practitioners to build implementations and collect empirical data.
 
@@ -64,6 +66,9 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 | BRAID compression reduces R (C8) | **CONJECTURED — V5 NEW** | Theoretically grounded | 74× compression → reduced attack surface |
 | Holographic boundary sufficiency (C9) | **CONJECTURED — V5 NEW** | Discrete lattice verification needed | Boundary computation suffices for value |
 | O(1) shared-parent (C10) | **CONJECTURED — V5 NEW** | Calibration needed | Guild efficiency modifies network exponent k |
+| Behavioural density (C11) | **CONJECTURED — V5.1 NEW** | 45% confidence | Universe vs Hitchhiker's blades demonstrate trajectory effect |
+| Hexagram encoding (C12) | **UPGRADED — V5.1** | 50% confidence | Running code produces coherent hexagram states |
+| Bilateral Witness (C13) | **CONJECTURED — V5.1 NEW** | 60% confidence | Demonstrated ceremony March 29, 2026 |
 | P^1.5 ↔ 96/64 (C6) | **SPECULATIVE — V5 NEW** | Numerically coincident | No derivation; if structural, equation is holographic |
 | PVM V5 equation | **STAGE 1 — PRE-PEER REVIEW** | Combines proven + conjectured terms | Holographic field output; six structural changes from V4 |
 
@@ -1451,7 +1456,7 @@ If these hypotheses hold in real systems, we would expect to observe:
 
 - **Network effects**: Inter-agent communication patterns may emerge (potential "Connect" property)
 
-**Important**: These are theoretical predictions, not observations. No implementations exist yet to test whether such patterns actually occur.
+**Important**: These were theoretical predictions until March 2026. First implementation (spellweb.ai) now provides initial data points. N=1 requires replication before statistical validity claims.
 
 **V4-Specific Validation Needs:**
 
@@ -1946,4 +1951,5 @@ IEEE 7012 does not affect the information-theoretic bounds proven in this paper�
 | 3.5 | Dec 11, 2025 | Critical Revision: Claims Classification Table, ZKP scope clarification, separation difficulty section, MI estimation warnings |
 | **3.6** | **Jan 29, 2026** | **Standards Integration**: Added Standards Foundation Note referencing IEEE 7012-2025. Updated companion document references (Whitepaper v4.8, Spellbook v5.0, Glossary v2.3). Added IEEE 7012 Quick Reference v1.0 to companion documents. |
 | **3.8** | **Feb 20, 2026** | **V4 PVM + Convergence Integration**: Added §Privacy Value Model V4 formal presentation with uncertainty table. Added §UOR Correspondence summary with exact/divergent correspondence table. Updated Claims Classification Table with 8 new V4 entries. Upgraded Tetrahedral Emergence from HIGHLY SPECULATIVE (5%) to CONVERGENT PRELIMINARY (25-40%) with triple derivation evidence. Added V4 context to Golden Ratio section (now embedded in Φ(Σ)). Added §V4 Extension Limitations with 6 permanent uncertainty flags. Added V4 validation items to Experimental Roadmap. Aligned with Whitepaper v5.0, Glossary v2.5, Privacy is Value v4.0, five grimoires (113 inscriptions). |
+| **4.1** | **Mar 30, 2026** | **V5.1 Forge Integration**: First empirical data from spellweb.ai (3 Dragon blades). Added C11-C13. Updated "What Is Missing" — implementations now exist. Hexagram upgraded to 50%. Dragon anatomy complete (XXIV-XXVIII). |
 | **4.0** | **Feb 27, 2026** | **V5 Holographic Bound Integration**: PVM upgraded to V5. Added §V5 Structural Extensions (Three-Axis Separation, Holographic Bound, Compression-as-Defence, Holonic Persistence, Guild Efficiency). Added BRAID Parity Effect. C4 marked RESOLVED (holographic principle). New conjectures C6-C10 integrated. Updated Claims Classification Table. Updated to Privacy is Value v5.0, Glossary v3.0, five grimoires (114 inscriptions including Act XXIV). |

@@ -1,15 +1,15 @@
 # Documentation Chronicle
 ## Development History of the 0xagentprivacy Living Documentation Suite
 
-**Version:** 1.1
-**Last Updated:** March 27, 2026
+**Version:** 1.2
+**Last Updated:** March 30, 2026
 **Purpose:** Navigable history of documentation development, replacing session artefacts
 
 ---
 
 ## Overview
 
-This chronicle traces the evolution of the agentprivacy documentation suite from initial gap analysis through V5 Holographic Bound integration. It consolidates 22 session artefacts into a single navigable history.
+This chronicle traces the evolution of the agentprivacy documentation suite from initial gap analysis through V5.1 Forge Integration. It consolidates session artefacts into a single navigable history.
 
 **Principle:** *"The fragment holds the whole. By choosing to be bounded, we become immeasurable."*
 

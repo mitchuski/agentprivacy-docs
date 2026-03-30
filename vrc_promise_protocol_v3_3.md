@@ -2,8 +2,8 @@
 
 **One Implementation Option for Privacy-First AI Agent Economics**
 
-**Version 3.3 - V5 Integration Edition**
-**February 27, 2026**
+**Version 3.4 - V5.1 Forge Integration Edition**
+**March 30, 2026**
 **0xagentprivacy Protocol Team**
 
 ---
@@ -364,6 +364,36 @@ What the Signal Proves (Promise Theory):
 Fee Analysis (at $500/ZEC = $5.00 per signal):
 ├─ Meaningful economic commitment
 ├─ Strong Sybil resistance (fake assessments unprofitable)
+├─ Mana economy (V5.1) — proof-of-practice resource
+
+### Mana Economy (V5.1 Addition)
+
+**Definition:** Mana is a non-transferable, non-purchasable resource earned through sovereignty practice and spent on knowledge graph inscriptions.
+
+**Properties:**
+| Property | Description |
+|----------|-------------|
+| **Non-transferable** | Cannot be sent to other accounts |
+| **Non-purchasable** | Cannot be bought with tokens |
+| **Earned** | Accumulated through blade forging and traversal |
+| **Spent** | Used to inscribe spells into knowledge graph |
+| **Logarithmic** | Accumulates slowly to prevent hoarding |
+
+**Sybil Resistance:** Mana cannot be Sybil-attacked because:
+- Cannot create fake mana through accounts
+- Cannot buy mana to bypass practice requirement
+- Cannot transfer mana from legitimate accounts
+- Only earned through demonstrated sovereignty practice
+
+**Integration with Trust Tiers:**
+| Tier | Mana Earning Rate | Inscription Allowance |
+|------|-------------------|----------------------|
+| Blade | 1x | Basic inscriptions |
+| Light | 2x | Community inscriptions |
+| Heavy | 3x | Template inscriptions |
+| Dragon | 5x | Unlimited inscriptions |
+
+See [Act XXVIII: The Ceremony Engine](archive/act-xxviii-the-ceremony-engine.md) for full specification
 ├─ Accessible participation threshold
 └─ Generates sustainable protocol revenue
 

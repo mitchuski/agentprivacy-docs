@@ -1,9 +1,9 @@
 # Research Proposal: Dual Agent Systems as Natural Architecture for Privacy and Sovereignty
 
-**Version:** 2.0 — V5 Integration
+**Version:** 2.1 — V5.1 Forge Integration
 **Author:** privacymage
 **Contact:** mage@agentprivacy.ai
-**Date:** February 27, 2026
+**Date:** March 30, 2026
 
 ---
 
@@ -17,12 +17,24 @@ I work through narrative and pattern recognition—finding the story that makes 
 
 **V5 Advance (February 2026):** Three-axis separation (agent · data · inference), holographic bound (96-edge boundary encodes 64-vertex bulk), compression-as-defence (BRAID 74× efficiency), holonic persistence (infrastructure-independent history). C4 (96/64 discrepancy) is now RESOLVED via holographic principle.
 
+**V5.1 Advance (March 2026):** Forge OPERATIONAL. Dragon anatomy complete (Acts XXIV-XXVIII). New conjectures C11-C13: behavioural density (45%), hexagram encoding upgraded to 50%, bilateral witness (60%). Mana economy specified. Ceremony engine with five crossing types.
+
 **Current Status:**
 
-The mathematical work applies information theory and formal methods to what I believe are rigorous proofs. But I haven't had these validated by experts yet. This is **stage 1** - I'm reaching out to people with real expertise to either:
+The mathematical work applies information theory and formal methods to what I believe are rigorous proofs. Expert validation ongoing. **UPDATE (March 2026):** Stage 1 → Stage 2. The blade forge went OPERATIONAL on March 29, 2026. First empirical data collected:
+
+- **3 Dragon blades forged** in single session (spellweb.ai)
+- **Universe Blade:** 62 laps, 2,170 seconds, 65 spells
+- **Hitchhiker's Blade:** 13 laps, 433 seconds, 62 spells
+- **Bilateral witness ceremony** demonstrated
+
+N=1 from single forger. Replication needed. But the data point exists.
+
+I'm reaching out to people with real expertise to either:
 
 1. Help me formalize and validate what I think I've proven, or
 2. Show me where the mathematical flaws are (which would also be valuable)
+3. **NEW:** Help replicate the forge empirical results
 
 **What Makes This Timely:**
 

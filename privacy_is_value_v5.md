@@ -4,9 +4,14 @@
 **Author:** privacymage | mitchuski
 **Date:** February 27, 2026
 **Version:** 5.0
-**Status:** STAGE 1 — Convergent discovery, pre-peer review
+**Status:** STAGE 2 — Forge OPERATIONAL, first empirical data
 **Companion:** [UOR × 64-Tetrahedra × ZK Mapping v2.0](uor_tetrahedra_zk_mapping_v2_0.md)
 **Formal specification:** [Privacy Value Model V5: Formal Specification](privacy_value_v5_formal_specification.md) (mathematics only)
+**V5.1 Research Note:** [V5.1 Candidate Additions](archive/privacy_value_v5_1_research_note.md) (March 2026)
+
+---
+
+> **V5.1 UPDATE (March 30, 2026):** The forge went OPERATIONAL. First empirical data collected. See V5.1 Research Note for candidate additions: behavioural density (ρ), bilateral witness, hexagram encoding (upgraded to 50%), mana economy, ceremony engine. Dragon anatomy complete (Acts XXIV-XXVIII). New conjectures C11-C13.
 
 ---
 

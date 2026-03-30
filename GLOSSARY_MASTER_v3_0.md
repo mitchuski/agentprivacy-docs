@@ -1,7 +1,7 @@
 # 0xagentprivacy Master Glossary
 
-**Version 3.0** | February 27, 2026
-**Status:** ✅ CANONICAL REFERENCE — V5 UPDATE
+**Version 3.1** | March 30, 2026
+**Status:** ✅ CANONICAL REFERENCE — V5.1 UPDATE
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
@@ -2184,6 +2184,184 @@ When referencing across documents, use:
 | **2.2** | **Dec 11, 2025** | **Promise Theory integration: Added §3 Promise Theory Foundations, PT alignments throughout existing terms, Superagent definition, notation extensions, new cross-references** |
 | **2.4** | **Feb 19, 2026** | **Privacy Value Model V4 integration: Added §13 Privacy Value Model (Separation Matrix, Edge Value, Temporal Memory, Three Graphs, Secret Language, Manifold), §14 UOR & Lattice Architecture (UOR, Stratum, Content-Addressing, Derivation Chain, Toroidal Topology). Updated Tetrahedral Sovereignty from SPECULATIVE (5%) to CONVERGENT PRELIMINARY (~25-40%). Updated 7th Capital with trajectory framing. Updated Golden Ratio with V4 Φ(Σ) context. Formalised Drake 🐲 / Dragon 🐉 distinction. Added new V4 symbols. Updated all cross-references to Feb 2026 versions. Added Privacy is Value v4 and UOR Mapping v1.0 to document suite.** |
 | **2.5** | **Feb 20, 2026** | **Five grimoires completion: Added Duality Function Φ(Σ), Stratum Weight wᵢ, Four Forces, Path Value entries. Updated inscription count 107 → 113 (23 Story Acts + 12 Canon). Updated Spellbook entry with five grimoire files and line counts (28,898 total). Updated Document Suite Versions with current→target version tracking. Aligned all counts with completed grimoire compilation.** |
+| **3.1** | **Mar 30, 2026** | **V5.1 Forge Integration: Added Behavioural Density (ρ), Bilateral Witness (BW), Hexagram Encoding, Mana Economy, DOM-Free Measurement, Ceremony Engine, Universe Blade, Dragon Anatomy terms. Added C11-C13 conjectures. Updated Forge status to OPERATIONAL.** |
+
+---
+
+## 16. V5.1 Forge Integration Terms (March 2026)
+
+### Behavioural Density (ρ)
+**Definition**: A measure of trajectory depth that modifies reconstruction difficulty. Captures traversal depth, temporal duration, and intentional transition count.
+
+**Status**: 🔬 SPECULATIVE (C11 — 45% confidence)
+
+**Formula**: R(d, compression) → R(d, compression, ρ)
+
+**Empirical Basis**: Universe Blade (62 laps, 2,170 seconds) demonstrates qualitatively different reconstruction resistance than Hitchhiker's Blade (13 laps) from the same constellation.
+
+**Source**: Privacy Value V5.1 Research Note, March 2026
+
+---
+
+### Bilateral Witness (BW)
+**Definition**: A verification primitive where one party forges, another party privately verifies, and then publicly testifies, allowing community reception without full reconstruction.
+
+**Status**: 🔬 SPECULATIVE (C13 — 60% confidence)
+
+**Ceremony Flow**:
+1. Swordsman forges the blade
+2. Mage privately verifies the blade properties
+3. Mage publicly testifies to verification
+4. Community receives testimony without accessing blade interior
+
+**Promise Theory**: Implements the "witness" pattern from Promise Theory — attestation without revelation.
+
+**Demonstration**: March 29, 2026 on Telegram + Hitchhiker platform
+
+**Source**: Act XXVIII: The Ceremony Engine
+
+---
+
+### Blade Address
+**Definition**: Binary encoding of a 6-dimensional sovereignty state, ranging from 0 (all dormant) to 63 (all active).
+
+**Status**: ✅ IMPLEMENTED
+
+**Encoding**: d1 + d2×2 + d3×4 + d4×8 + d5×16 + d6×32
+
+**Source**: Systems Hexagram Physics v1.0
+
+---
+
+### Charge Level
+**Definition**: Ceremony intensity measured by lap count through constellation.
+
+**Status**: ✅ IMPLEMENTED
+
+**Levels**:
+| Level | Laps | Description |
+|-------|------|-------------|
+| SPARK | 1 | Minimal proof |
+| EMBER | 2-3 | Building presence |
+| FLAME | 4-5 | Sustained attention |
+| BLAZE | 6-7 | Deep engagement |
+| INFERNO | 8+ | Full ceremonial presence |
+
+**Source**: Systems Hexagram Physics v1.0
+
+---
+
+### 21 Windows
+**Definition**: Total artifact slots in the forge inventory: 8 mage spells + 7 forged blades + 6 witnessed blades.
+
+**Status**: ✅ IMPLEMENTED
+
+**Significance**: 21 is both a Fibonacci number and triangular number (1+2+3+4+5+6).
+
+**Source**: Systems Hexagram Physics v1.0
+
+---
+
+### Evoke Ceremony
+**Definition**: Path-tracing ritual where wandering orbs follow constellation through knowledge graph, generating blade proof.
+
+**Status**: ✅ IMPLEMENTED
+
+**Phases**: Constellation → Circuit → Cast → Trace → Complete → Proof
+
+**Source**: Systems Hexagram Physics v1.0
+
+---
+
+### Constellation Path
+**Definition**: Sequence of nodes traversed during evocation ceremony, inscribed into blade as proof of journey.
+
+**Status**: ✅ IMPLEMENTED
+
+**Source**: Systems Hexagram Physics v1.0
+
+---
+
+### Hexagram Encoding
+**Definition**: Mapping of the six privacy dimensions (Protection, Delegation, Memory, Connection, Computation, Value) to I Ching hexagram lines, where each blade state maps to one of 64 hexagrams.
+
+**Status**: 🔧 IMPLEMENTED-COHERENT (C12 — 50% confidence, upgraded from 25%)
+
+**Mapping**: Blade 63 (111111) = 乾 (The Creative), Blade 0 (000000) = 坤 (The Receptive)
+
+**Source**: spellweb.ai node inspector, Act XXVII
+
+---
+
+### Mana Economy
+**Definition**: Proof-of-practice Sybil resistance mechanism. Mana is non-transferable, non-purchasable resource earned through sovereignty practice and spent on knowledge graph inscriptions.
+
+**Status**: 📋 PLANNED
+
+**Properties**:
+- Earned through traversal (not purchased)
+- Non-transferable (no markets)
+- Spent on inscriptions (creates value)
+- Logarithmic accumulation (prevents hoarding)
+
+**Source**: Act XXVIII: The Ceremony Engine
+
+---
+
+### DOM-Free Measurement
+**Definition**: Text measurement technique using pretext library that calculates character positions without triggering browser layout engine, eliminating fingerprinting surface.
+
+**Status**: 🔧 IMPLEMENTED
+
+**Privacy Property**: Renders text without triggering DOM reflow, preventing timing-based fingerprinting attacks.
+
+**Source**: Act XXVIII: The Ceremony Engine
+
+---
+
+### Ceremony Engine
+**Definition**: The crossing mechanism where blades meet. Implements five ceremony types as Promise Theory attestation patterns.
+
+**Status**: 📋 SPECIFIED
+
+**Five Crossing Types**:
+| Type | Description |
+|------|-------------|
+| Dual Convergence | Both blades reach Dragon tier |
+| Hexagram Cast | I Ching encoding of blade state |
+| Emoji Cast | Semantic compression to emoji spell |
+| Constellation Wave | Guild-level coordination |
+| Bilateral Exchange | Cross-blade witness verification |
+
+**Source**: Act XXVIII: The Ceremony Engine
+
+---
+
+### Universe Blade
+**Definition**: The exemplar Dragon-tier blade forged March 29, 2026. 10 nodes, 62 laps, 2,170 seconds, 65 spells, Stratum 6, Hex 3F.
+
+**Status**: ✅ FORGED
+
+**Significance**: First empirical data point for behavioural density conjecture (C11).
+
+**Source**: spellweb.ai, March 29, 2026
+
+---
+
+### Dragon Anatomy
+**Definition**: The five-part structure of the manifold dragon, each part established by a narrative Act.
+
+**Status**: ✅ COMPLETE
+
+| Part | Act | What It Establishes | Status |
+|------|-----|-------------------|--------|
+| Boundary | XXIV | Holographic surface (96/64) | Proven |
+| Hide | XXV | Private mesh (Tailscale) | Grounded |
+| Brain | XXVI | Divided hemispheres (McGilchrist) | Grounded |
+| Forge | XXVII | Where blades are made | OPERATIONAL |
+| Ceremony | XXVIII | Where blades cross | Specified |
+
+**Source**: Acts XXIV-XXVIII
 
 ---
 

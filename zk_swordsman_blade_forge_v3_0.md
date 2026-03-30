@@ -3,9 +3,9 @@
 **Where Blades Are Ground on the Holographic Bound**
 
 **Author:** privacymage | mitchuski
-**Date:** March 27, 2026
-**Version:** 3.0
-**Status:** 🚧 STAGE 1 — V5 Holographic Integration, pre-peer review
+**Date:** March 30, 2026
+**Version:** 3.1
+**Status:** ✅ OPERATIONAL — V5.1 Forge Integration, first empirical data
 **Parent Document:** [Privacy is Value V5](privacy_is_value_v5.md)
 **Formal Companion:** [PVM V5 Formal Specification](pvm_v5_formal_specification.md)
 
@@ -13,6 +13,8 @@
 
 > *"The blade that knows its edge cuts deeper than the storm that knows no shore."*
 > — Act XXIV, The Holographic Bound
+>
+> *See also:* [Act XXVII: The Swordsman's Forge](archive/act-xxvii-the-swordsmans-forge.md) — the narrative companion to this technical document
 
 ---
 

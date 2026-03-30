@@ -2,8 +2,8 @@
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 2.0
-**Date:** February 27, 2026
+**Version:** 2.1
+**Date:** March 30, 2026
 **Status:** ✅ V5 Holographic Bound Integration — Three-Axis Separation Complete
 
 ---
@@ -39,11 +39,12 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 | **Whitepaper** | 6.0 | Technical architecture, three-axis separation, BRAID integration | Developers, Researchers |
 | **Research Paper** | 4.0 | Mathematical proofs, V5 conjectures C6–C10, C4 resolved | Academics, Cryptographers |
 | **Five Grimoires + Act XXIV** | v1.0–v3.0 | 114 inscriptions including Holographic Bound (29K+ lines) | Community, Learners |
-| **ZK Swordsman Blade Forge** | 3.0 | Forge metaphor: UOR × 64-Tetrahedra × ZK unified; V5 integration | Researchers, Mathematicians |
+| **ZK Swordsman Blade Forge** | 3.1 | OPERATIONAL: Forge metaphor, UOR × 64-Tetrahedra × ZK unified; V5 integration | Researchers, Mathematicians |
 | **UOR × 64-Tetrahedra × ZK Mapping** | 2.0 | Foundational mapping; C4 RESOLVED — holographic bound | Researchers |
 | **VRC Promise Protocol** | 3.3 | Economic architecture, guild efficiency | Investors, Builders |
 | **Visual Guide** | 2.0 | Diagrams including three-axis, holographic visualisations | All |
 | **Research Proposal** | 2.0 | Collaboration invitation, BRAID validation needs | Researchers, Partners |
+| **Systems Hexagram Physics** | 1.0 | Operational physics: 64-vertex lattice, forge ceremonies, dimension activation | Developers, Implementers |
 
 You can build this locally and it'll make a neat viewer at 7000.
 
@@ -388,6 +389,15 @@ This documentation suite has been reviewed for terminology consistency, economic
 - **Four Forces**: Protect ⚔️, Project 🧙, Reflect 🪞, Connect 🤝
 - **Five Grimoires + Act XXIV**: 114 inscriptions across 29K+ lines (Story, ZK, Canon, Parallel, Plurality)
 - **Version References**: All documents reference correct companion versions
+
+
+### V5.1 Forge Integration (v2.1)
+- Acts XXVII (The Swordsman's Forge) and XXVIII (The Ceremony Engine) added to grimoire collection
+- Dragon Anatomy complete: Boundary (XXIV), Hide (XXV), Brain (XXVI), Forge (XXVII), Ceremony (XXVIII)
+- ZK Swordsman Blade Forge marked OPERATIONAL - first empirical data from spellweb.ai
+- New conjectures C11-C13: Behavioural density (45%), Hexagram encoding (50%), Bilateral Witness (60%)
+- V5.1 candidates: Behavioural density rho, Bilateral Witness, Mana economy, DOM-free measurement
+- Hexagram encoding upgraded: SPECULATIVE (25%) -> IMPLEMENTED-COHERENT (50%)
 
 ### V5 Holographic Bound Integration (v2.0)
 - Privacy is Value V5, PVM V5 Formal Specification v1.0 added to document suite

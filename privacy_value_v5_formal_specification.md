@@ -1,7 +1,7 @@
 # Privacy Value Model V5: Formal Specification
 
-**Version:** 1.0
-**Date:** February 2026
+**Version:** 1.1
+**Date:** March 2026
 **Author:** Mitchell Travers (privacymage)
 **Status:** Working paper — peer review invited
 **Companion to:** "Privacy is Value: From the Manifold Dragon to the Holographic Bound" (narrative version)
@@ -319,6 +319,9 @@ Each channel flows along edges that activate its corresponding separation axis.
 | C8 | BRAID compression reduces R_max | — | **NEW** — needs formal proof |
 | C9 | Holographic boundary sufficiency | — | **NEW** — needs lattice verification |
 | C10 | O(1) shared-parent modifies k | — | **NEW** — needs calibration |
+| C11 | Behavioural density ρ amplifies privacy | — | **NEW** (V5.1) — 45% confidence |
+| C12 | Hexagram encoding is structurally resonant | — | **UPGRADED** (V5.1) — 50% confidence |
+| C13 | Bilateral Witness is verification primitive | — | **NEW** (V5.1) — 60% confidence |
 
 ### 10.2 Measurement Gaps (Updated)
 

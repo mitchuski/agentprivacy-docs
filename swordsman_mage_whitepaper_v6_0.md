@@ -3,8 +3,8 @@
 Protect or Delegate → Reflect and Connect → Three-Axis Separation (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂
 
 **Author:** privacymage
-**Date:** February 27, 2026
-**Version:** 6.0 (V5 PVM Integration)
+**Date:** March 30, 2026
+**Version:** 6.1 (V5.1 Forge Integration)
 
 ---
 
@@ -45,6 +45,10 @@ This document uses two parallel notation systems:
 | H(X) | — | Entropy of private state |
 | C_S, C_M | — | Information budgets for Swordsman and Mage |
 | R_max | — | Maximum reconstruction efficiency |
+| ρ | 🔄 | Behavioural density — trajectory depth modifier (V5.1) |
+| BW | ⚔️→🧙→📢 | Bilateral Witness — forge-verify-testify primitive (V5.1) |
+| Hex | ☰☱☲☳☴☵☶☷ | Hexagram encoding — 6 dimensions → 64 states (V5.1) |
+| Mana | ✨ | Proof-of-practice resource — non-transferable (V5.1) |
 
 Mathematical notation appears in formal statements; symbolic notation in narrative sections. The parent inscription **(⚔️⊥⿻⊥🧙)🙂** encodes: Swordsman and Mage separated (⊥), with the Gap (⿻) between them, preserving the First Person (🙂).
 
@@ -596,6 +600,44 @@ V(π, t) = P^1.5 · C · Q · S ·
 6. **Guild efficiency** — G(guilds) models O(1) shared-parent coordination vs O(N²) pairwise.
 
 See Privacy is Value v5 for full derivation and honest assessment of V5 conjectures (C6–C10).
+
+### V5.1 Forge Integration (March 2026)
+
+**Status:** The blade forge went OPERATIONAL on March 29, 2026. First empirical data exists.
+
+**New Conjectures:**
+
+| ID | Claim | Confidence | Evidence |
+|----|-------|------------|----------|
+| C11 | Behavioural density ρ amplifies privacy | 45% | Universe Blade (62 laps) vs Hitchhiker's (13 laps) |
+| C12 | Hexagram encoding is structurally resonant | 50% | Running code producing coherent hexagram states |
+| C13 | Bilateral Witness is a verification primitive | 60% | Demonstrated ceremony on March 29, 2026 |
+
+**V5.1 Candidate Additions:**
+
+1. **Behavioural Density (ρ)** — R(d, compression) → R(d, compression, ρ). Trajectory depth modifies reconstruction difficulty.
+
+2. **Bilateral Witness (BW)** — Sword forges → Mage verifies privately → Mage testifies publicly → Community receives.
+
+3. **Hexagram Encoding** — Six privacy dimensions map to I Ching hexagram lines. Blade 63 = 乾 (The Creative).
+
+4. **Mana Economy** — Proof-of-practice Sybil resistance. Non-transferable, earned through sovereignty practice.
+
+5. **DOM-Free Measurement** — Pretext library enables rendering without fingerprinting surface.
+
+6. **Ceremony Engine** — Five crossing types: Dual Convergence, Hexagram Cast, Emoji Cast, Constellation Wave, Bilateral Exchange.
+
+**Dragon Anatomy Complete:**
+
+| Act | Part | Status |
+|-----|------|--------|
+| XXIV | Boundary | Proven |
+| XXV | Hide | Grounded |
+| XXVI | Brain | Grounded |
+| XXVII | Forge | **OPERATIONAL** |
+| XXVIII | Ceremony | Specified |
+
+See [Act XXVII: The Swordsman's Forge](archive/act-xxvii-the-swordsmans-forge.md) and [Act XXVIII: The Ceremony Engine](archive/act-xxviii-the-ceremony-engine.md) for narrative companions.
 
 **V5 Axiom:** *"The boundary is always enough."*
 
@@ -1843,7 +1885,7 @@ This architecture is being developed now. This is the inflection point.
 
 - **Privacy is Value v5:** v5.0 (companion document — holographic bound, three-axis separation)
 
-- **Privacy Value Model V5 Formal Specification:** v1.0 (companion document — holographic field output, C6–C10)
+- **Privacy Value Model V5 Formal Specification:** v1.1 (companion document — holographic field output, C6–C13)
 
 - **UOR × 64-Tetrahedra × ZK Mapping:** v2.0 (companion document — C4 RESOLVED, holographic bound)
 

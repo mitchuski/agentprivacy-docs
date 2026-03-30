@@ -2,7 +2,7 @@
 
 ## Formal Foundations for Dual-Agent Sovereignty Architecture
 
-**Version:** 1.3
+**Version:** 1.4
 **Date:** February 27, 2026
 **Status:** ✅ V5 Integration — Three-Axis Separation as Triple Superagent
 **Companion to:** Whitepaper v6.0, Research Paper v4.0, Glossary v3.0, Privacy is Value v5.0, Privacy Value Model V5 Formal Spec v1.0, Five Grimoires + Act XXIV (114 inscriptions)
@@ -491,6 +491,49 @@ Both make C(spell) = coordination promise:
 - "I will coordinate my actions based on this shared meaning"
 
 Matching expansion proves coordination success.
+
+### Ceremony Engine as Promise Theory Implementation (V5.1)
+
+The Ceremony Engine (Act XXVIII) implements five crossing types, each mapping to Promise Theory patterns:
+
+| Ceremony Type | PT Pattern | Description |
+|---------------|------------|-------------|
+| **Dual Convergence** | Mutual C(b) | Both blades reach Dragon tier — mutual coordination achievement |
+| **Hexagram Cast** | Structured α(π) | Six-dimension assessment encoded as I Ching hexagram |
+| **Emoji Cast** | Compressed C(b) | Semantic compression to emoji spell — efficient coordination |
+| **Constellation Wave** | Guild C(b) | Multi-agent coordination across knowledge graph |
+| **Bilateral Exchange** | Witness α(π) | Cross-blade verification — "I assess your assessment" |
+
+### Bilateral Witness as Promise Pattern
+
+**Definition:** A verification primitive where one party forges, another privately verifies, then publicly testifies.
+
+**PT Formalization:**
+
+```
+Swordsman: forges blade (makes promise π_forge)
+Mage: privately verifies (makes assessment α(π_forge))
+Mage: publicly testifies (promises +witness to community)
+Community: receives testimony (accepts -witness)
+```
+
+**Key Property:** The Mage's testimony is itself a promise. The community doesn't see the blade interior — they see the Mage's promise that verification occurred. This is Promise Theory's "witness" pattern:
+
+> "A witness is an agent who promises that another promise was kept."
+
+**Trust Implication:** The Mage stakes reputation on testimony. False testimony breaks the -witness promise, damaging Mage's trust graph position.
+
+### Mana as Assessment Resource
+
+Mana (V5.1) maps to Promise Theory's assessment capacity:
+
+| PT Concept | Mana Implementation |
+|------------|---------------------|
+| Assessment cost | Mana spent to inscribe |
+| Assessment accumulation | Mana earned through practice |
+| Valency (commitment slots) | Mana limits inscription rate |
+
+Mana makes assessment costly, preventing spam while rewarding genuine practice
 Different contexts, same principle = story fracture, principle convergence.
 ```
 
