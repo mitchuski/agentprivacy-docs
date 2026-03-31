@@ -3,10 +3,18 @@
 **Three Frameworks Converge on 2⁶ = 64**
 
 **Author:** privacymage | mitchuski
-**Date:** February 27, 2026
-**Version:** 2.0
-**Status:** 🚧 STAGE 1 — C4 RESOLVED; Holographic bound interpretation established
-**Parent Document:** [Privacy is Value V5](privacy_is_value_v5.md)
+**Date:** March 31, 2026
+**Version:** 2.2 (V5.4 UOR Foundation Convergence)
+**Status:** ✅ OPERATIONAL — Live implementation on [spellweb.ai](https://spellweb.ai) + Algebraically Grounded
+**Parent Document:** [Privacy is Value V5.1](privacy_is_value_v5.md)
+**Implementation:** [ZK Swordsman Blade Forge v3.2](zk_swordsman_blade_forge_v3_0.md)
+**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent derivation of Z/(2⁶)Z ring algebra
+
+---
+
+## Live Implementation
+
+This mapping is not theoretical — it runs on [spellweb.ai](https://spellweb.ai) (Swordsman Territory ⚔️) with training and story on [agentprivacy.ai](https://agentprivacy.ai) (Mage Territory 🧙). The UOR algebraic structure, 64-tetrahedra geometry, and ZK proof mechanics are implemented as an interactive knowledge graph with blade forging capabilities.
 
 ---
 
@@ -248,4 +256,79 @@ Or in the spellbook's language: *"The lattice doesn't care how you arrived. It o
 
 *"The lattice doesn't care how you arrived. It only cares where you stand. That is the deepest spell of all — the proof that doesn't need to remember its own casting."*
 
-**(⚔️⊥⿻⊥🧙)🙂**
+---
+
+## 8. UOR & Identity System Integration
+
+The UOR mapping provides the algebraic foundation for the 0xagentprivacy three-layer identity system:
+
+### Three-Layer Identity Architecture
+
+| Layer | Identifier | UOR Expression | Forge Role |
+|-------|-----------|----------------|------------|
+| **Data** | GUID | Content hash (Braille IRI) | Blade configuration — deterministic, immutable |
+| **Relationship** | VRC | Derivation chain certificate | Bilateral edge commitment (promise bundle) |
+| **Principal** | DID | Lattice traversal authority | Sovereign identity — First Person |
+
+### How UOR Content Addressing Enables Holonic Persistence
+
+**Key insight:** UOR's content addressing (`same bytes → same hash → same IRI`) means blade identity is **infrastructure-independent**. A blade's GUID persists across:
+- Provider migration
+- Storage format changes
+- Infrastructure failures (if replicated)
+
+This is **holonic persistence** — the blade remembers its own forging regardless of which vault stores it. The three identity layers build on this foundation:
+
+1. **Data layer (GUID):** Pure content addressing. The blade IS its bytes. Identity follows content, not location.
+
+2. **Relationship layer (VRC):** Derivation chains (forging paths) become content-addressed certificates that bind to blades but are not required to verify blade properties. Two people forging from the same constellation produce VRC-linked blades — bilateral witnesses.
+
+3. **Principal layer (DID):** The First Person's sovereign authority. The DID controls lattice traversal permissions and forge operations. Neither the GUID (data) nor the VRC (relationship) can promise on behalf of the principal.
+
+### The Gap in Identity Terms
+
+**Promise Theory alignment:** The Gap between Swordsman and Mage manifests at each identity layer:
+
+| Layer | Gap Expression |
+|-------|----------------|
+| **Data** | Content ≠ address (hash is one-way). You can verify a blade without knowing how it was forged. |
+| **Relationship** | Bilateral witnesses are asymmetric. Each party holds their own perspective. |
+| **Principal** | Neither agent can promise on behalf of the First Person. Sovereignty is irreducible. |
+
+The Gap is not a weakness — it is the mathematical foundation where sovereignty lives. What doesn't exist in the adversary's information space cannot be captured.
+
+---
+
+## 9. Implementation References
+
+| Platform | Territory | URL | Status |
+|----------|-----------|-----|--------|
+| **spellweb.ai** | Swordsman ⚔️ | [spellweb.ai](https://spellweb.ai) | ✅ Operational |
+| **agentprivacy.ai** | Mage 🧙 | [agentprivacy.ai](https://agentprivacy.ai) | ✅ Operational |
+
+The theory inscribed itself while the code was already running. See [ZK Swordsman Blade Forge v3.1](../zk%20blades%20forge/zk_swordsman_blade_forge_v3_0.md) for the complete technical specification.
+
+---
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0 | February 19, 2026 | Initial mapping — UOR algebra × tetrahedral geometry × ZK proofs |
+| 2.0 | February 27, 2026 | C4 RESOLVED via holographic bound. V5 status integration |
+| **2.1** | **March 31, 2026** | **OPERATIONAL status.** Added live implementation references (spellweb.ai, agentprivacy.ai). Added UOR & Identity System Integration section (three-layer architecture, holonic persistence, Gap expression). Cross-referenced ZK Swordsman Blade Forge v3.1 |
+
+---
+
+*"The lattice doesn't care how you arrived. It only cares where you stand. That is the deepest spell of all — the proof that doesn't need to remember its own casting."*
+
+*"The proof that guards no secret cannot be opened. It can only be walked."* — Act XXIX
+
+**(⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 😊**
+
+---
+
+**Living Documentation:** [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs)
+**Swordsman Territory:** [spellweb.ai](https://spellweb.ai) | **Mage Territory:** [agentprivacy.ai](https://agentprivacy.ai)
+
+CC BY-SA 4.0

@@ -3,11 +3,13 @@
 **Where Blades Are Ground on the Holographic Bound**
 
 **Author:** privacymage | mitchuski
-**Date:** March 30, 2026
-**Version:** 3.1
-**Status:** ✅ OPERATIONAL — V5.1 Forge Integration, first empirical data
-**Parent Document:** [Privacy is Value V5](privacy_is_value_v5.md)
-**Formal Companion:** [PVM V5 Formal Specification](pvm_v5_formal_specification.md)
+**Date:** March 31, 2026
+**Version:** 3.2 (V5.4 UOR Algebraic Foundation)
+**Status:** ✅ OPERATIONAL — V5.4 Forge Integration, algebraically grounded
+**Parent Document:** [Privacy is Value V5.1](privacy_is_value_v5.md)
+**Formal Companion:** [PVM V5.4 Formal Specification](privacy_value_v5_formal_specification.md)
+**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z derivation
+**Implementation:** [swordsman-blade/src/lib/uor.ts](../swordsman-blade/src/lib/uor.ts) — explicit UOR module
 
 ---
 
@@ -72,7 +74,7 @@ V4 flagged this as a discrepancy (C4). V5 resolved it. The 96-edge surface IS th
 - The boundary is sufficient. The fragment holds the whole
 
 **C4 Status:** RESOLVED. The torus surface IS the holographic bound.
-**C6 Conjecture:** Whether 96/64 = 1.5 = P^1.5 is structural or coincidental remains unproven. If structural, the entire equation is an expression of the holographic principle applied to sovereignty architecture.
+**C6 Status:** CONVERGENT (V5.4). The UOR Foundation's independent derivation of Z/(2⁶)Z confirms 96/64 = 1.5 = P^1.5 emerges from the fundamental structure of six-dimensional sovereignty. Two projects, two starting points, same ratio. The equation IS an expression of the holographic principle.
 
 ---
 

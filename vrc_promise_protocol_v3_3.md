@@ -2,8 +2,8 @@
 
 **One Implementation Option for Privacy-First AI Agent Economics**
 
-**Version 3.4 - V5.1 Forge Integration Edition**
-**March 30, 2026**
+**Version 3.4 - V5.1 Forge Integration + Dual Territory Edition**
+**March 31, 2026**
 **0xagentprivacy Protocol Team**
 
 ---
@@ -60,6 +60,7 @@ This economic architecture implements the mathematical foundations established i
 - **Spellbook Act 9:** "The Zcash Shield" (narrative interpretation of dual ledger economics)
 - **Spellbook Act 11:** "Balanced Spiral of Sovereignty" (golden ratio derivation)
 - **Spellbook Act XXIV:** "The Holographic Bound" (V5 discovery narrative)
+- **DUAL_TERRITORY_CEREMONY_SPEC v1.0:** Implementation architecture for territories, extensions, ceremonies, mana
 
 **Critical dependency:** The economic mechanisms described here are designed to enforce the architectural separation (Y_S ⊥⊥ Y_M)|X established in Research Paper v4.0. The mathematical guarantees (Theorems 5.1-5.4) hold independent of specific token choices.
 
@@ -355,8 +356,11 @@ What the Signal Proves (Promise Theory):
 
 | Type | Cost | Frequency | PT Role |
 |------|------|-----------|---------|
-| **Ceremony** | 1 ZEC ($500) | One-time | Genesis promise (agent pair creation) |
+| **Genesis Ceremony** | 1 value unit (d6) | One-time | Agent pair creation, fills trust boundary dimension |
+| **Operational Ceremony** | Mana | Ongoing | Interaction ceremonies (5 types) |
 | **Signal** | 0.01 ZEC ($5) | Ongoing | Assessment payment (proof of comprehension) |
+
+**Arc 6 Clarification:** The dual ceremony primitive is primary. Zcash fills d6 (value dimension) as the reference implementation because: (1) ZKP native — shielded transactions are zero-knowledge proofs, (2) Ledger duality — T/Z pools mirror Swordsman/Mage separation, (3) Self-custody default. The "1 ZEC = $500" framing is pedagogically useful but architecturally incidental — what matters is verifiable value commitment to d6, not the specific currency.
 
 **Why 0.01 ZEC specifically:**
 
@@ -366,7 +370,7 @@ Fee Analysis (at $500/ZEC = $5.00 per signal):
 ├─ Strong Sybil resistance (fake assessments unprofitable)
 ├─ Mana economy (V5.1) — proof-of-practice resource
 
-### Mana Economy (V5.1 Addition)
+### Mana Economy (V5.1 + Dual Territory Spec)
 
 **Definition:** Mana is a non-transferable, non-purchasable resource earned through sovereignty practice and spent on knowledge graph inscriptions.
 
@@ -375,15 +379,37 @@ Fee Analysis (at $500/ZEC = $5.00 per signal):
 |----------|-------------|
 | **Non-transferable** | Cannot be sent to other accounts |
 | **Non-purchasable** | Cannot be bought with tokens |
-| **Earned** | Accumulated through blade forging and traversal |
-| **Spent** | Used to inscribe spells into knowledge graph |
-| **Logarithmic** | Accumulates slowly to prevent hoarding |
+| **Earned** | Accumulated through spell casts, ceremonies, blade forging |
+| **Spent** | Used to inscribe on knowledge graph |
+| **Self-reported** | Honour-based (Sybil resistance = difficulty of earning) |
+
+**Earn Rates (from DUAL_TERRITORY_CEREMONY_SPEC):**
+| Action | Mana Earned |
+|--------|-------------|
+| 10 spell casts (any website) | 1 |
+| 1 convergence ceremony | 2 |
+| 1 blade forged on spellweb | 1 |
+| 1 evocation cycle | 1 |
+
+**Spend Costs:**
+| Inscription Type | Mana Cost |
+|-----------------|-----------|
+| Node annotation | 1 |
+| Community edge | 2 |
+| Constellation projection | 3 |
+| Proverb forge | 4 |
+| Reinforce existing inscription | 0.5 |
+
+**Anti-spam:** Same-domain spell casts within 5 seconds don't count. Ceremonies require 30+ seconds of engagement.
+
+**Storage:** `localStorage` on websites, `chrome.storage.local` on extensions. Mana Bridge syncs between them (higher balance wins).
 
 **Sybil Resistance:** Mana cannot be Sybil-attacked because:
 - Cannot create fake mana through accounts
 - Cannot buy mana to bypass practice requirement
 - Cannot transfer mana from legitimate accounts
 - Only earned through demonstrated sovereignty practice
+- The system's value comes from genuine engagement, not scarcity enforcement
 
 **Integration with Trust Tiers:**
 | Tier | Mana Earning Rate | Inscription Allowance |
@@ -393,7 +419,9 @@ Fee Analysis (at $500/ZEC = $5.00 per signal):
 | Heavy | 3x | Template inscriptions |
 | Dragon | 5x | Unlimited inscriptions |
 
-See [Act XXVIII: The Ceremony Engine](archive/act-xxviii-the-ceremony-engine.md) for full specification
+**Community Inscription Decay:** Inscriptions fade over 30 days unless reinforced (0.5 mana). The lattice remembers what the community pays attention to.
+
+See DUAL_TERRITORY_CEREMONY_SPEC_v1 and [Act XXVIII: The Ceremony Engine](archive/act-xxviii-the-ceremony-engine.md) for full specification
 ├─ Accessible participation threshold
 └─ Generates sustainable protocol revenue
 
@@ -1262,7 +1290,7 @@ Mitigations:
 
 **Budget Constraint:** Architectural requirement C_S + C_M < H(X). Mapped to valency constraint in Promise Theory. (Research Paper v3.8, Corollary 5.2)
 
-**Ceremony:** **One-time** 1 ZEC ($500) transaction creating dual agent pair. Represents genesis promise.
+**Ceremony:** Two types: (1) **Genesis Ceremony** — one-time event creating dual agent pair, requires 1 unit of value committed to d6 (trust boundary dimension); (2) **Operational Ceremonies** — ongoing interaction ceremonies (5 types: Dual Convergence, Hexagram Cast, Emoji Cast, Constellation Wave, Bilateral Exchange). The dual ceremony primitive is primary; Zcash fills d6 because ZKP is native and ledger duality (T/Z pools) mirrors Swordsman/Mage separation. See DUAL_TERRITORY_CEREMONY_SPEC_v1.
 
 **Chronicle:** A verified activity (privacy protection or delegation coordination) that earns token rewards. Assessment evidence of promise-keeping.
 

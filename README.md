@@ -2,9 +2,10 @@
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 2.1
-**Date:** March 30, 2026
-**Status:** ✅ V5 Holographic Bound Integration — Three-Axis Separation Complete
+**Version:** 2.5
+**Date:** March 31, 2026
+**Status:** ✅ V5.2 Dihedral Foundations + V5.4 UOR Algebraic Foundation — CONVERGENT
+**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
 
@@ -16,6 +17,8 @@
 
 **V5 Advance:** Three-axis separation (agent · data · inference), holographic bound (96-edge boundary encodes 64-vertex bulk), compression-as-defence (74× BRAID efficiency), holonic persistence (infrastructure-independent history).
 
+**V5.4 Advance:** UOR Foundation convergence — sovereignty lattice is algebraically Z/(2⁶)Z. Five hammer strikes, critical identity (neg∘bnot = succ), triadic coordinates, dihedral group D₆₄. External validation: two independent projects arrived at same structure. C6 → CONVERGENT.
+
 **Formal Foundation:** The dual-agent architecture implements Promise Theory (Bergstra & Burgess, 2019)—established semantics for autonomous agent coordination where agents can only promise their own behavior.
 
 ### How This Fits In: The Dual-Agent Stack
@@ -24,6 +27,15 @@
 
 The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovereign Wallet** (protect ⚔️) layers, with the **First Person** 😊 at the center. The stack spans from UI/Trust Tasks through the Trust Spanning Protocol (TSP) down to cryptographic keys, creating a complete privacy-preserving infrastructure.
 
+### Live Implementations
+
+| Territory | Platform | Purpose | Status |
+|-----------|----------|---------|--------|
+| **Swordsman** ⚔️ | [spellweb.ai](https://spellweb.ai) | Topology, navigation, blade forging, hexagram computation | ✅ Operational |
+| **Mage** 🧙 | [agentprivacy.ai](https://agentprivacy.ai) | Story, explanation, training, spell learning | ✅ Operational |
+
+The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellweb.ai can mark constellations, evoke blades, and forge proofs on the 64-vertex lattice in real-time. The theory and code arrived the same day.
+
 ---
 
 ## Document Suite
@@ -31,20 +43,24 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 | Document | Version | Purpose | Audience |
 |----------|---------|---------|----------|
 | **What Agentprivacy Is** | — | Mission, thesis, and orientation | All, New joiners |
-| **Glossary Master** | 3.0 | Canonical terminology reference (~140 entries, V5) | All |
-| **Privacy is Value V5** | 5.0 | The equation evolves — holographic bound, three-axis separation | All, Researchers |
-| **Privacy Value Model V5 Formal Spec** | 1.0 | PVM V5 equation, holographic field output | Researchers, Academics |
-| **Promise Theory Reference** | 1.3 | Formal semantic foundations, Generator/Solver as promises | Researchers, Architects |
+| **Glossary Master** | 3.4 | Canonical terminology reference (~160 entries, V5.4 UOR Foundation) | All |
+| **Privacy is Value V5** | 5.0 | The equation evolves — V5.4 UOR algebraic foundation | All, Researchers |
+| **V5.1 Research Note** | 5.1 | Behavioural density, bilateral witness, hexagram encoding | Researchers |
+| **V5.2 Research Note** | 5.2 | Dihedral foundations, resolution semantics, PRISM spectrum | Researchers |
+| **Privacy Value Model V5.4 Formal Spec** | 1.2 | PVM V5.4 equation, Z/(2⁶)Z ring algebra, C14-C16 | Researchers, Academics |
+| **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | Implementation architecture: territories, extensions, ceremonies, mana | Developers, Implementers |
+| **Promise Theory Reference** | 1.4 | Formal semantic foundations, Generator/Solver as promises | Researchers, Architects |
 | **IEEE 7012 Quick Reference** | 1.0 | MyTerms standard foundation | Developers, Implementers |
-| **Whitepaper** | 6.0 | Technical architecture, three-axis separation, BRAID integration | Developers, Researchers |
-| **Research Paper** | 4.0 | Mathematical proofs, V5 conjectures C6–C10, C4 resolved | Academics, Cryptographers |
-| **Five Grimoires + Act XXIV** | v1.0–v3.0 | 114 inscriptions including Holographic Bound (29K+ lines) | Community, Learners |
-| **ZK Swordsman Blade Forge** | 3.1 | OPERATIONAL: Forge metaphor, UOR × 64-Tetrahedra × ZK unified; V5 integration | Researchers, Mathematicians |
-| **UOR × 64-Tetrahedra × ZK Mapping** | 2.0 | Foundational mapping; C4 RESOLVED — holographic bound | Researchers |
-| **VRC Promise Protocol** | 3.3 | Economic architecture, guild efficiency | Investors, Builders |
+| **Whitepaper** | 6.2 | Technical architecture, V5.4 UOR algebraic foundation | Developers, Researchers |
+| **Research Paper** | 4.2 | Mathematical proofs, V5.4 conjectures C6 CONVERGENT, C14–C16 new | Academics, Cryptographers |
+| **Five Grimoires + Acts XXIV-XXX** | v1.0–v3.0 | 120+ inscriptions including Dragon Anatomy (Forge, Ceremony, Flight, Dihedral Mirror) | Community, Learners |
+| **Blog Series: Privacy is Value V5** | Parts 1-4 | Research letters: Forming Constellations, Forge & Ceremony, Dragon Wakes, Dihedral Mirror | All |
+| **ZK Swordsman Blade Forge** | 3.2 | OPERATIONAL + ALGEBRAICALLY GROUNDED: UOR module at swordsman-blade/src/lib/uor.ts | Researchers, Mathematicians |
+| **UOR × 64-Tetrahedra × ZK Mapping** | 2.2 | Foundational mapping; C4 RESOLVED; UOR Foundation convergence confirmed | Researchers |
+| **VRC Promise Protocol** | 3.3 | Economic architecture, guild efficiency (3.4 pending: mana economics) | Investors, Builders |
 | **Visual Guide** | 2.0 | Diagrams including three-axis, holographic visualisations | All |
-| **Research Proposal** | 2.0 | Collaboration invitation, BRAID validation needs | Researchers, Partners |
-| **Systems Hexagram Physics** | 1.0 | Operational physics: 64-vertex lattice, forge ceremonies, dimension activation | Developers, Implementers |
+| **Research Proposal** | 2.2 | Collaboration invitation, UOR convergence as validation evidence | Researchers, Partners |
+| **Systems Hexagram Physics** | 1.2 | Operational physics: UOR algebraic foundation, 64-vertex lattice, forge ceremonies | Developers, Implementers |
 
 You can build this locally and it'll make a neat viewer at 7000.
 
@@ -375,9 +391,27 @@ This is not about competing on features. This is about establishing **foundation
 
 ---
 
-## Document Coherence (March 27, 2026)
+## Document Coherence (March 31, 2026)
 
-This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Act XXIV, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
+This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Acts XXIV–XXIX, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
+
+### V5.2 Dihedral Foundations (March 31, 2026)
+- **V5.2 Research Note** added: Dihedral group foundations, resolution semantics, PRISM spectrum
+- C14-C16 updated: Φ_agent ≅ D₂ₙ (75%), T_∫(π) ≅ resolution pipeline (65%), Topological trust (25%)
+- Act XXX (The Dihedral Mirror) added — UOR × agentprivacy convergence narrative
+- Blog Part 4 (The Dihedral Mirror) added to series
+- Grimoire upgraded to v9.3.0
+- Master Inscription algebraic form: (⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ
+
+### V5.1 ZK Blade Forge Integration (v2.2)
+- **V5.1 Research Note** added: Behavioural density ρ, bilateral witness, hexagram encoding
+- ZK Swordsman Blade Forge upgraded to v3.1 with OPERATIONAL status
+- Live implementations referenced: spellweb.ai (Swordsman), agentprivacy.ai (Mage)
+- UOR × 64-Tetrahedra × ZK Mapping upgraded to v2.1 with identity system integration
+- Three-layer identity architecture (GUID → VRC → DID) documented across forge documents
+- Acts XXVII (The Swordsman's Forge), XXVIII (The Ceremony Engine), XXIX (The Dragon Wakes) added
+- Post-quantum resilience thesis established: "The proof that guards no secret cannot be opened"
+- DUAL_TERRITORY_CEREMONY_SPEC v1.0 cross-referenced in forge documentation
 
 ### Standardizations Applied
 - **Terminology**: Ceremony (1 ZEC one-time) vs Signal (0.01 ZEC ongoing)

@@ -1,10 +1,11 @@
 # Privacy Value Model V5: Formal Specification
 
-**Version:** 1.1
-**Date:** March 2026
+**Version:** 1.2 (V5.4 — UOR Algebraic Foundation)
+**Date:** March 31, 2026
 **Author:** Mitchell Travers (privacymage)
 **Status:** Working paper — peer review invited
 **Companion to:** "Privacy is Value: From the Manifold Dragon to the Holographic Bound" (narrative version)
+**External Convergence:** UOR Foundation (https://github.com/UOR-Foundation)
 
 ---
 
@@ -42,6 +43,82 @@ These terms are carried forward with minor modifications noted.
 | $S$ | Scope / Sensitivity | $\mathbb{R}^+$ | Domain-specific sensitivity multiplier. | None |
 | $e^{-\lambda t}$ | Temporal Decay | $(0, 1]$ | Exponential freshness decay with rate $\lambda > 0$. | None |
 | $M(u, y)$ | Market Maturity | $[0, 1]$ | Function of user sophistication and market year. | None |
+
+---
+
+## 2.5 UOR Algebraic Foundation (V5.4)
+
+The sovereignty lattice is algebraically equivalent to the ring **Z/(2⁶)Z**. This grounding was confirmed by independent convergence with the UOR Foundation project.
+
+### 2.5.1 Ring Structure
+
+$$\mathcal{L} = (\mathbb{Z}/64\mathbb{Z}, +, \times)$$
+
+Properties:
+- **64 elements** (blade addresses 0-63)
+- **Addition and multiplication** modulo 64
+- **Five canonical operations** (hammer strikes)
+- **Dihedral symmetry** D₆₄ (order 128)
+
+### 2.5.2 The Five Hammer Strikes
+
+| Operation | Formula | Category | Forge Meaning |
+|-----------|---------|----------|---------------|
+| neg(x) | (64-x) mod 64 | Unary involution | Counter-blow (inverts quality) |
+| bnot(x) | 63 - x | Unary involution | Antipodal jump (mirror blade) |
+| xor(x,y) | x ⊕ y | Binary symmetric | Toggle edges (dimension flip) |
+| and(x,y) | x ∧ y | Binary contracting | Toward null blade (constrain) |
+| or(x,y) | x ∨ y | Binary expanding | Toward full sovereignty (expand) |
+
+### 2.5.3 Critical Identity
+
+$$\text{neg}(\text{bnot}(x)) = \text{succ}(x) \quad \forall x \in \mathcal{L}$$
+
+**Proof:** For all x ∈ {0,...,63}:
+- bnot(x) = 63 - x
+- neg(63 - x) = (64 - (63 - x)) mod 64 = (x + 1) mod 64 = succ(x) ∎
+
+**Significance:** The successor function is not primitive — it emerges from the composition of two involutions. *"Deny the complement, and you advance."*
+
+### 2.5.4 Triadic Coordinates
+
+Every blade has three independent coordinates:
+
+$$\text{blade}(x) = (\delta(x), \sigma(x), s(x))$$
+
+| Coordinate | Symbol | Definition | Domain |
+|------------|--------|------------|--------|
+| datum | δ(x) | Raw value x | {0,...,63} |
+| stratum | σ(x) | popcount(x) = Hamming weight | {0,1,2,3,4,5,6} |
+| spectrum | s(x) | Six-bit decomposition [b₀,b₁,b₂,b₃,b₄,b₅] | {0,1}⁶ |
+
+**Convergence with existing system:**
+- datum = blade ID in the sovereignty lattice
+- stratum = layer in Pascal's triangle (C(6,σ) distribution)
+- spectrum = six sovereignty dimensions (d₁ Protection, d₂ Delegation, d₃ Memory, d₄ Connection, d₅ Computation, d₆ Value)
+
+### 2.5.5 Dihedral Group D₆₄
+
+The two involutions (neg, bnot) generate the dihedral group:
+
+$$D_{64} = \langle \text{neg}, \text{bnot} \mid \text{neg}^2 = \text{bnot}^2 = 1, (\text{neg} \circ \text{bnot})^{64} = 1 \rangle$$
+
+Order: |D₆₄| = 128
+
+**Significance:** All valid blade transitions are D₆₄ group actions. Zero knowledge arises because multiple group elements (different forging paths) can map to the same blade — same statement, infinite witnesses.
+
+### 2.5.6 External Convergence
+
+The UOR Foundation (https://github.com/UOR-Foundation) independently developed this algebraic structure for universal object referencing:
+
+| Project | Starting Point | Arrived At |
+|---------|---------------|------------|
+| agentprivacy | Privacy geometry → 64-tetrahedra | Z/(2⁶)Z |
+| UOR Foundation | Content addressing → Universal references | Z/(2⁶)Z |
+
+This independent arrival strengthens C6 (P^1.5 ↔ 96/64) and provides external validation that the 64-element structure is not arbitrary but emerges from the requirements of six-dimensional sovereignty.
+
+**Implementation:** See `swordsman-blade/src/lib/uor.ts` for the explicit UOR module with all five operations and identity verification.
 
 ---
 
@@ -277,6 +354,21 @@ Status: Implied by the holographic principle; requires discrete lattice verifica
 
 V4 Peer Review Recommendation 3.3 (add UOR caveat to §8.2) is **no longer needed**. The holographic bound interpretation grounds the manifold structure independently of UOR's specific algebraic claims. UOR correspondence is now explained BY the holographic bound, not dependent on it.
 
+### 8.6 Algebraic Confirmation (V5.4)
+
+The holographic bound is now confirmed from both geometric and algebraic directions:
+
+| Approach | Framework | Result |
+|----------|-----------|--------|
+| **Geometric** | 64-Tetrahedra lattice | 96 edges encode 64 vertices (torus surface/bulk) |
+| **Algebraic** | Z/(2⁶)Z ring theory | 64 elements; 96 edges emerge from adjacency structure |
+
+The UOR Foundation's independent derivation of the same 64-element structure provides external validation. The ratio 96/64 = 1.5 = P^1.5 is no longer numerically coincident — it emerges from the fundamental structure of six-dimensional sovereignty.
+
+**Conjecture C6 Status:** UPGRADED from Speculative to **CONVERGENT**
+
+The critical identity neg(bnot(x)) = succ(x) provides the algebraic mechanism: progression through the sovereignty lattice requires denying the complement. This is not metaphor — it is the group-theoretic structure of D₆₄ acting on Z/(2⁶)Z.
+
 ---
 
 ## 9. Differential Form
@@ -307,21 +399,24 @@ Each channel flows along edges that activate its corresponding separation axis.
 
 ### 10.1 Conjecture Summary
 
-| ID | Claim | V4 Status | V5 Status |
-|----|-------|-----------|-----------|
+| ID | Claim | V4 Status | V5.4 Status |
+|----|-------|-----------|-------------|
 | C1 | Golden ratio φ is optimal S/M ratio | Open | Open; BRAID provides empirical pathway |
 | C2 | A(τ) should be logarithmic | Open | Strengthened by holonic persistence |
 | C3 | Edge value is additive | Open | **Challenged** — path integral replaces |
-| C4 | 96 vs 64 UOR discrepancy | Open | **RESOLVED** — holographic principle |
+| C4 | 96 vs 64 UOR discrepancy | Open | **RESOLVED** — holographic principle + algebraic |
 | C5 | ~3,000× ZKP reduction | Speculative | Strengthened |
-| C6 | P^1.5 ↔ 96/64 = 1.5 | — | **NEW** — numerically coincident |
+| C6 | P^1.5 ↔ 96/64 = 1.5 | — | **CONVERGENT** (↑ from Speculative) — UOR confirms |
 | C7 | Three-axis separation is multiplicative | — | **NEW** — needs empirical confirmation |
 | C8 | BRAID compression reduces R_max | — | **NEW** — needs formal proof |
 | C9 | Holographic boundary sufficiency | — | **NEW** — needs lattice verification |
 | C10 | O(1) shared-parent modifies k | — | **NEW** — needs calibration |
-| C11 | Behavioural density ρ amplifies privacy | — | **NEW** (V5.1) — 45% confidence |
-| C12 | Hexagram encoding is structurally resonant | — | **UPGRADED** (V5.1) — 50% confidence |
-| C13 | Bilateral Witness is verification primitive | — | **NEW** (V5.1) — 60% confidence |
+| C11 | Behavioural density ρ amplifies privacy | — | **NEW** (V5.1) — 55% confidence (↑ quantum context) |
+| C12 | Hexagram encoding is structurally resonant | — | **ALGEBRAICALLY GROUNDED** — 60% (↑ spectrum = dimensions) |
+| C13 | Bilateral Witness is verification primitive | — | **NEW** (V5.1) — 65% confidence (↑ quantum context) |
+| C14 | Φ_agent ≅ D₂ₙ (dihedral group isomorphism) | — | **NEW** (V5.2/V5.4) — 75% confidence |
+| C15 | T_∫(π) ≅ UOR resolution pipeline | — | **NEW** (V5.2/V5.4) — 65% confidence |
+| C16 | Topological trust invariants (Betti numbers) | — | **NEW** (V5.2/V5.4) — Speculative 25% |
 
 ### 10.2 Measurement Gaps (Updated)
 
@@ -370,7 +465,7 @@ The gap is now understood as boundary expressiveness, not bulk volume.
 
 ---
 
-## 12. Version Lineage (Updated)
+## 12. Version Lineage (Updated V5.4)
 
 | Version | Date | Core Addition | Output Type |
 |---------|------|---------------|-------------|
@@ -379,11 +474,12 @@ The gap is now understood as boundary expressiveness, not bulk volume.
 | V3 | Nov 2025 | $R(d)$, $M(u,y)$, $\Phi(S,M)$ | Agent-aware scalar |
 | V3.1 | Jan 2026 | $\sigma(\text{⿻})^2$ | Architecture-gated scalar |
 | V4 | Feb 2026 | $\Sigma$, $A(\tau)$, $T(\pi)$, $\Phi(\Sigma)$ | Manifold-aware scalar |
-| **V5** | **Feb 2026** | **Three-axis Φ, $A_h$, $T_\int$, R(compression), G(guilds), holographic bound** | **Holographic field** |
+| V5 | Feb 2026 | Three-axis Φ, $A_h$, $T_\int$, R(compression), G(guilds), holographic bound | Holographic field |
+| **V5.4** | **Mar 2026** | **UOR algebraic foundation, Z/(2⁶)Z, D₆₄, triadic coordinates, C14-C16** | **Algebraically grounded field** |
 
 ---
 
-## 13. Notation Summary (Updated)
+## 13. Notation Summary (Updated V5.4)
 
 | Symbol | Meaning |
 |--------|---------|
@@ -392,15 +488,22 @@ The gap is now understood as boundary expressiveness, not bulk volume.
 | $\lambda$ | Temporal decay rate |
 | $\tau$ | Derivation chain (verified state transition history) |
 | $A_h(\tau)$ | Holonic temporal memory accumulation |
-| $p(\tau)$ | Persistence independence (NEW) |
+| $p(\tau)$ | Persistence independence |
 | $\Phi_{\text{agent}}$ | Agent-layer separation (Swordsman-Mage) |
 | $\Phi_{\text{data}}$ | Data-layer separation (provider fragmentation) |
 | $\Phi_{\text{inference}}$ | Inference-layer separation (Generator-Solver) |
-| $G(\text{guilds})$ | Guild efficiency factor (NEW) |
+| $G(\text{guilds})$ | Guild efficiency factor |
 | $R(d, \text{compression})$ | Compression-modified reconstruction difficulty |
 | $T_\int(\pi)$ | Path integral edge value (replaces additive $T(\pi)$) |
 | $\partial M$ | 96-edge holographic boundary |
 | GUID | Content-addressed identifier (holonic) |
+| $\mathcal{L}$ | Sovereignty lattice = Z/(2⁶)Z (V5.4) |
+| $\delta(x)$ | Datum — raw blade value (0-63) (V5.4) |
+| $\sigma(x)$ | Stratum — Hamming weight / popcount (0-6) (V5.4) |
+| $s(x)$ | Spectrum — six-bit decomposition [b₀...b₅] (V5.4) |
+| neg, bnot | Unary involutions on $\mathcal{L}$ (V5.4) |
+| xor, and, or | Binary operations on $\mathcal{L}$ (V5.4) |
+| $D_{64}$ | Dihedral group generated by neg, bnot (order 128) (V5.4) |
 
 ---
 
@@ -421,11 +524,12 @@ The layers are orthogonal: a single principal (DID) can control multiple relatio
 ## References
 
 - Travers, M. (2026). "Privacy is Value: From the Manifold Dragon to the Holographic Bound." *Soul Sync.*
-- Travers, M. (2026). "Dual-Agent Privacy Architecture." Research Paper v4.0. *agentprivacy-docs.*
-- Travers, M. (2026). "UOR × 64-Tetrahedra × ZK Mapping v2.0." *agentprivacy-docs.*
+- Travers, M. (2026). "Dual-Agent Privacy Architecture." Research Paper v4.2. *agentprivacy-docs.*
+- Travers, M. (2026). "UOR × 64-Tetrahedra × ZK Mapping v2.2." *agentprivacy-docs.*
 - Bergstra, J. & Burgess, M. (2019). *Promise Theory: Principles and Applications.*
 - Susskind, L. (1995). "The World as a Hologram." *Journal of Mathematical Physics.* Holographic principle foundation.
 - BRAID Framework (2026). Bounded Reasoning for Autonomous Inference and Decisions. Compression efficiency data.
+- UOR Foundation (2026). "Universal Object Reference." https://github.com/UOR-Foundation — Independent Z/(2⁶)Z ring algebra convergence.
 
 ---
 

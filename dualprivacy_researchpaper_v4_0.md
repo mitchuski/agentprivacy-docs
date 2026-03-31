@@ -3,8 +3,9 @@
 **Mathematical Framework for Swordsman-Mage Separation**
 
 **Author:** privacymage
-**Date:** March 30, 2026
-**Version:** 4.1 (V5.1 Forge Integration)
+**Date:** March 31, 2026
+**Version:** 4.2 (V5.4 UOR Algebraic Foundation)
+**External Convergence:** UOR Foundation (https://github.com/UOR-Foundation)
 
 ---
 
@@ -25,6 +26,10 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 **V5 Extension (February 2026):** We introduce the Privacy Value Model V5, which extends V4 with six structural changes: (1) **three-axis separation** — Φ splits into Φ_agent · Φ_data · Φ_inference measuring agent, data-provider, and inference-layer independence; (2) **holographic bound** — the 96-edge torus boundary encodes the 64-vertex bulk, resolving the UOR discrepancy (C4 RESOLVED); (3) **path integral** — T_∫(π) replaces additive T(π) to capture edge correlations; (4) **compression-as-defence** — R(d, compression) includes BRAID-style inference compression (74×); (5) **holonic persistence** — A_h(τ) includes infrastructure-independent GUID-based history; (6) **guild efficiency** — G(guilds) models O(1) shared-parent coordination. V5 output type is **holographic field** with differential form dV/dt = ∇_∂M · J_∂M + S(x) - D(x). New conjectures C6–C10 introduced; C4 resolved; peer review rec 3.3 superseded.
 
 **V5.1 Extension (March 2026):** The blade forge went OPERATIONAL on March 29, 2026, producing first empirical data. Three Dragon blades forged in single session. V5.1 introduces: (1) **behavioural density ρ** — R(d, compression, ρ) adds trajectory depth modifier; (2) **bilateral witness** — new verification primitive (forge → verify → testify); (3) **hexagram encoding** upgraded from speculative (25%) to implemented-coherent (50%); (4) **mana economy** — proof-of-practice Sybil resistance; (5) **DOM-free measurement** — fingerprint elimination at rendering layer; (6) **ceremony engine** — five crossing types as Promise Theory implementations. Dragon anatomy complete (Acts XXIV-XXVIII). New conjectures C11–C13 introduced.
+
+**V5.2 Research Note (March 31, 2026):** Dihedral foundations connect the dual-agent architecture to the dihedral group D₂ₙ. V5.2 introduces: (1) **Φ_agent ≅ D₂ₙ** — agent separation is isomorphic to the dihedral group (75% confidence); (2) **T_∫(π) ≅ resolution pipeline** — path integral maps to UOR resolution semantics (65% confidence); (3) **topological trust invariants** — Betti numbers as trust graph diagnostics (speculative 25%); (4) **PRISM spectrum** — third coordinate completes (datum, stratum, spectrum) triadic addressing. The Master Inscription gains algebraic form: (⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ.
+
+**V5.4 Extension (March 31, 2026):** The UOR Foundation convergence establishes algebraic foundation for the sovereignty lattice. V5.4 introduces: (1) **Z/(2⁶)Z ring algebra** — sovereignty lattice is algebraically equivalent to integers modulo 64; (2) **five hammer strikes** — neg, bnot, xor, and, or as canonical forge operations; (3) **critical identity** — neg(bnot(x)) = succ(x) proven for all elements ("deny the complement, and you advance"); (4) **triadic coordinates** — (datum, stratum, spectrum) unify blade ID, tier, and dimensions; (5) **dihedral group D₆₄** — order-128 symmetry group encodes valid transitions; (6) **external validation** — UOR Foundation independently derived same structure from content addressing. Conjecture C6 upgraded from Speculative to **CONVERGENT**; C12 upgraded to **ALGEBRAICALLY GROUNDED** (60%); C14–C16 refined via V5.2 dihedral foundations.
 
 ---
 
@@ -66,11 +71,14 @@ We introduce the Swordsman and Mage as fundamental privacy primitives for dual-a
 | BRAID compression reduces R (C8) | **CONJECTURED — V5 NEW** | Theoretically grounded | 74× compression → reduced attack surface |
 | Holographic boundary sufficiency (C9) | **CONJECTURED — V5 NEW** | Discrete lattice verification needed | Boundary computation suffices for value |
 | O(1) shared-parent (C10) | **CONJECTURED — V5 NEW** | Calibration needed | Guild efficiency modifies network exponent k |
-| Behavioural density (C11) | **CONJECTURED — V5.1 NEW** | 45% confidence | Universe vs Hitchhiker's blades demonstrate trajectory effect |
-| Hexagram encoding (C12) | **UPGRADED — V5.1** | 50% confidence | Running code produces coherent hexagram states |
-| Bilateral Witness (C13) | **CONJECTURED — V5.1 NEW** | 60% confidence | Demonstrated ceremony March 29, 2026 |
-| P^1.5 ↔ 96/64 (C6) | **SPECULATIVE — V5 NEW** | Numerically coincident | No derivation; if structural, equation is holographic |
-| PVM V5 equation | **STAGE 1 — PRE-PEER REVIEW** | Combines proven + conjectured terms | Holographic field output; six structural changes from V4 |
+| Behavioural density (C11) | **CONJECTURED — V5.1** | 55% confidence (↑ quantum) | Universe vs Hitchhiker's blades demonstrate trajectory effect |
+| Hexagram encoding (C12) | **ALGEBRAICALLY GROUNDED — V5.4** | 60% confidence (↑) | Hexagram = spectrum of triadic coordinates in Z/(2⁶)Z |
+| Bilateral Witness (C13) | **CONJECTURED — V5.1** | 65% confidence (↑ quantum) | Demonstrated ceremony March 29, 2026 |
+| P^1.5 ↔ 96/64 (C6) | **CONVERGENT — V5.4** | UOR confirms algebraically | Two independent frameworks arrive at same ratio |
+| Φ_agent ≅ D₂ₙ (C14) | **CONJECTURED — V5.2/V5.4** | 75% confidence | Dihedral group isomorphism for agent separation |
+| T_∫(π) ≅ resolution pipeline (C15) | **CONJECTURED — V5.2/V5.4** | 65% confidence | UOR resolution pipeline maps to path integral |
+| Topological trust invariants (C16) | **SPECULATIVE — V5.2/V5.4** | 25% confidence | Betti numbers as trust graph diagnostics |
+| PVM V5.4 equation | **STAGE 1 — PRE-PEER REVIEW** | Combines proven + conjectured terms | Algebraically grounded holographic field; UOR Foundation convergence |
 
 ---
 

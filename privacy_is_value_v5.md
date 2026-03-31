@@ -2,14 +2,17 @@
 **From the Manifold Dragon to the Holographic Bound**
 
 **Author:** privacymage | mitchuski
-**Date:** February 27, 2026
-**Version:** 5.0
-**Status:** STAGE 2 — Forge OPERATIONAL, first empirical data
-**Companion:** [UOR × 64-Tetrahedra × ZK Mapping v2.0](uor_tetrahedra_zk_mapping_v2_0.md)
-**Formal specification:** [Privacy Value Model V5: Formal Specification](privacy_value_v5_formal_specification.md) (mathematics only)
+**Date:** March 31, 2026
+**Version:** 5.1 (V5.4 UOR Algebraic Foundation)
+**Status:** STAGE 2 — Forge OPERATIONAL, algebraically grounded
+**Companion:** [UOR × 64-Tetrahedra × ZK Mapping v2.2](uor_tetrahedra_zk_mapping_v2_0.md)
+**Formal specification:** [Privacy Value Model V5.4: Formal Specification](privacy_value_v5_formal_specification.md) (mathematics only)
 **V5.1 Research Note:** [V5.1 Candidate Additions](archive/privacy_value_v5_1_research_note.md) (March 2026)
+**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
+
+> **V5.4 UPDATE (March 31, 2026):** The UOR Foundation convergence establishes algebraic foundation for the sovereignty lattice. The ring Z/(2⁶)Z, five hammer strikes (neg, bnot, xor, and, or), critical identity (neg∘bnot = succ), and triadic coordinates (datum, stratum, spectrum) are now explicitly implemented. Conjecture C6 upgraded to CONVERGENT. New conjectures C14-C16.
 
 > **V5.1 UPDATE (March 30, 2026):** The forge went OPERATIONAL. First empirical data collected. See V5.1 Research Note for candidate additions: behavioural density (ρ), bilateral witness, hexagram encoding (upgraded to 50%), mana economy, ceremony engine. Dragon anatomy complete (Acts XXIV-XXVIII). New conjectures C11-C13.
 
@@ -79,6 +82,37 @@ This resolved C4 — the conjecture about UOR correspondence — and opened five
 **V4 — February 2026.** "The lattice becomes manifold." Separation matrix Σ, temporal memory A(τ), edge value T(π). Three frameworks converge on 2⁶=64.
 
 **V5 — February 2026.** "The boundary holds the whole." Three-axis separation, holographic bound, path integral, compression-as-defence, holonic persistence, guild efficiency. The manifold gains its boundary. The scalar becomes a field.
+
+**V5.4 — March 2026.** "The algebra arrives." UOR Foundation convergence confirms the sovereignty lattice is algebraically equivalent to Z/(2⁶)Z. Five hammer strikes (neg, bnot, xor, and, or), the critical identity (neg∘bnot = succ), triadic coordinates (datum, stratum, spectrum), and dihedral group D₆₄. External validation: two independent projects arrived at the same structure. C6 upgraded from Speculative to Convergent.
+
+---
+
+## The Algebra Arrives (V5.4)
+
+Two projects, two starting points, one structure.
+
+The UOR Foundation (https://github.com/UOR-Foundation) has been developing algebraic foundations for universal object referencing — completely independently of agentprivacy. Upon examination, both projects arrived at the same 64-element ring:
+
+| Project | Starting Point | Arrived At |
+|---------|---------------|------------|
+| **agentprivacy** | Privacy geometry → 64-tetrahedra | Z/(2⁶)Z ring algebra |
+| **UOR Foundation** | Content addressing → Universal references | Z/(2⁶)Z with 64 elements |
+
+This is not coordination. This is convergence. When multiple independent trajectories point toward the same coordinates, something real is there.
+
+**What UOR confirms:**
+
+1. **The ring is real.** Z/(2⁶)Z isn't just a convenient abstraction — it's the natural address space for six-dimensional sovereignty.
+
+2. **The five operations are canonical.** neg, bnot, xor, and, or — these are the primitive transformations through sovereignty space.
+
+3. **The critical identity is fundamental.** neg(bnot(x)) = succ(x) — *"Deny the complement, and you advance."* This isn't metaphor; it's provable group theory.
+
+4. **Triadic coordinates unify everything.** Every blade has (datum, stratum, spectrum) — the raw value, the Hamming weight, and the six-bit decomposition. This is exactly what we discovered through hexagram physics.
+
+**Implementation:** The explicit UOR module now lives at `swordsman-blade/src/lib/uor.ts`, exposing all five operations with exhaustive identity verification.
+
+**C6 Upgrade:** The conjecture that P^1.5 ↔ 96/64 is structurally connected is no longer purely speculative. External algebraic confirmation raises it to **CONVERGENT**.
 
 ---
 

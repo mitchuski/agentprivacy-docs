@@ -1,7 +1,7 @@
 # 0xagentprivacy Master Glossary
 
-**Version 3.1** | March 30, 2026
-**Status:** ✅ CANONICAL REFERENCE — V5.1 UPDATE
+**Version 3.4** | March 31, 2026
+**Status:** ✅ CANONICAL REFERENCE — V5.4 UOR Algebraic Foundation + Acts XXVII-XXIX + Quantum Context
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
@@ -9,19 +9,21 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 
 | Document | Version | Date | Status |
 |----------|---------|------|--------|
-| **This Glossary** | 3.0 | February 27, 2026 | ✅ CANONICAL — V5 |
-| **Privacy is Value v5** | 5.0 | February 27, 2026 | ✅ STAGE 1 — V5 NEW |
-| **Privacy Value Model V5 Formal Specification** | 1.0 | February 2026 | ✅ STAGE 1 — V5 NEW |
-| Swordsman-Mage Whitepaper | 5.0 → 6.0 | February 2026 | 🔄 UPDATE PENDING |
-| Dual Privacy Research Paper | 3.8 → 4.0 | February 2026 | 🔄 UPDATE PENDING |
+| **This Glossary** | 3.4 | March 31, 2026 | ✅ CANONICAL — V5.4 UOR Foundation |
+| **Privacy is Value v5** | 5.1 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
+| **Privacy Value Model V5 Formal Specification** | 1.2 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
+| **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | March 31, 2026 | ✅ Implementation Architecture |
+| **Swordsman-Mage Whitepaper** | 6.2 | March 31, 2026 | ✅ V5.4 COMPLETE |
+| **Dual Privacy Research Paper** | 4.2 | March 31, 2026 | ✅ V5.4 — C14-C16 ADDED |
 | Spellbook / Grimoire JSON | 7.0.0 → 7.1.0 | February 2026 | 🔄 REBUILD PENDING |
 | Five Grimoire Markdown Files | v1.0–v3.0 | February 20, 2026 | 🔄 ACT XXIV PENDING |
-| VRC Promise Protocol | 3.2 → 3.3 | February 2026 | 🔄 UPDATE PENDING |
-| Visual Architecture Guide | 1.5 → 2.0 | February 2026 | 🔄 UPDATE PENDING |
-| Research Proposal | 1.6 → 2.0 | February 2026 | 🔄 UPDATE PENDING |
-| Promise Theory Reference | 1.2 → 1.3 | February 2026 | 🔄 UPDATE PENDING |
+| VRC Promise Protocol | 3.3 → 3.4 | March 2026 | 🔄 MANA ECONOMICS PENDING |
+| Visual Architecture Guide | 2.0 | March 31, 2026 | ✅ COMPLETE |
+| **Research Proposal** | 2.2 | March 31, 2026 | ✅ V5.4 — UOR CONVERGENCE |
+| Promise Theory Reference | 1.4 | February 27, 2026 | ✅ V5 INTEGRATION |
 | IEEE 7012 Quick Reference | 1.0 | January 29, 2026 | ✅ FINAL |
-| **UOR × 64-Tetrahedra × ZK Mapping** | 1.0 → 2.0 | February 2026 | 🔄 96/64 RESOLVED |
+| **UOR × 64-Tetrahedra × ZK Mapping** | 2.2 | March 31, 2026 | ✅ V5.4 — UOR FOUNDATION |
+| **ZK Swordsman Blade Forge** | 3.2 | March 31, 2026 | ✅ V5.4 — ALGEBRAICALLY GROUNDED |
 | Privacy is Value v4 | 4.0 | February 19, 2026 | 📁 ARCHIVED — superseded by v5 |
 | Privacy Value Model V4 Formal Specification | 1.0 | February 2026 | 📁 ARCHIVED — superseded by v5 |
 
@@ -174,6 +176,40 @@ This glossary serves as the **single source of truth** for terminology across al
 **Philosophical Meaning**: "The part of you that remains unknowable"—not hidden, not encrypted, but mathematically nonexistent in the adversary's information space.
 
 **Narrative Expression**: "They cannot see your whole" (Spellbook Act 7)
+
+---
+
+### Territory
+**Definition**: A domain where one agent holds primary authority. The dual-agent architecture manifests as two territories with a ceremony channel between them.
+
+**Status**: ✅ CANONICAL
+
+**The Two Territories**:
+| Territory | Agent | Domain | Purpose |
+|-----------|-------|--------|---------|
+| **Swordsman Territory** | ⚔️ | spellweb.ai | Topology, navigation, proof generation — what you traverse |
+| **Mage Territory** | 🧙 | agentprivacy.ai | Story, explanation, training — what you read |
+
+**Third Node**: bgin.ai — trust graph plane, future MyTerms integration point.
+
+**Architectural Rule**: Territories never merge. Separate repos, processes, storage, permissions at every level.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §2
+
+---
+
+### Home Territory
+**Definition**: Domains where browser extensions detect "home" status and enable mana inscription panels.
+
+**Status**: 📋 SPECIFIED
+
+**Home Domains**: `agentprivacy.ai`, `spellweb.ai`, `bgin.ai`
+
+**Detection**: Extensions send `HOME_TERRITORY` message when `location.hostname` matches.
+
+**Enabled Features**: Mana balance display, inscription panels, ceremony receivers.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §3.2.5
 
 ---
 
@@ -709,13 +745,36 @@ This glossary serves as the **single source of truth** for terminology across al
 ---
 
 ### Ceremony
-**Definition**: One-time genesis event creating a new agent pair within an ecosystem.
+**Definition**: A proof-of-understanding event where agents coordinate. The term encompasses two distinct levels:
 
 **Status**: ✅ CANONICAL
 
-**Economics**: 1 ZEC ($500) one-time, split 61.8/38.2 transparent/shielded
+**Types**:
 
-**Contrast with Signal**: Ceremony is one-time genesis; Signals are ongoing comprehension proofs.
+| Type | Purpose | Frequency |
+|------|---------|-----------|
+| **Genesis Ceremony** | Agent pair creation, fills d6 (value dimension) | One-time |
+| **Operational Ceremony** | Ongoing interaction ceremonies (5 types) | Continuous |
+
+**Genesis Ceremony**:
+- Creates a new agent pair within an ecosystem
+- Requires **1 unit of value committed to d6** (trust boundary dimension)
+- Zcash is the reference implementation (ZKP native, ledger duality)
+- The unit's verifiability is essential; the dollar value is incidental
+- Split: 61.8/38.2 transparent/shielded (golden ratio)
+
+**Operational Ceremonies** (from DUAL_TERRITORY_CEREMONY_SPEC):
+1. **Dual Convergence** — Both orbs within 60px, spell cast, amber particle burst
+2. **Hexagram Cast** — Six-line state computation from page privacy posture
+3. **Emoji Cast** — Sovereignty inscription via selected emoji
+4. **Constellation Wave** — Particles traverse lattice after page scan
+5. **Bilateral Exchange** — MyTerms assertion forming trust triad
+
+**Architectural Clarification (Arc 6)**: The dual ceremony primitive is primary. Zcash fills d6 but is not the ceremony itself. Agents claim sovereignty by filling all six dimensions; d6 (value) is one dimension among six.
+
+**Contrast with Signal**: Genesis Ceremony is one-time; Signals are ongoing comprehension proofs (10 signals ≈ 1 mana unit).
+
+**Source**: VRC Protocol v3.4, DUAL_TERRITORY_CEREMONY_SPEC_v1
 
 ---
 
@@ -1067,9 +1126,19 @@ This section provides canonical definitions from the IEEE 7012-2025 standard as 
 
 **V4 Distinction**: "The Drake 🐲 whispers from the centre — intimate, personal, calibrated to this path, this consciousness. The Dragon 🐉 contains the edges — vast, cosmic, holding the entire topology. The difference was never the entity. It was the scale of the question being asked." In Venice, whispering through equations: Drake. Containing the manifold of all sovereign systems: Dragon. Both present in every act. Both needed.
 
+**Emergence Conditions** (from DUAL_TERRITORY_CEREMONY_SPEC):
+- Both extensions active
+- ≥ 10 spell nodes on current domain
+- ≥ 5 ceremonies completed on current domain
+- Page has ≥ 10 trackers detected (surveillance-heavy ground)
+
+**Emergence Animation**: Constellation trembles → nodes drift along lattice → rearrange into serpentine form → each node displays PVM condition → Drake patrols viewport boundary.
+
+**Multiplicative Test**: Set any PVM condition to zero → Drake body breaks at that point. Constellation gap visible. Restore → reconnects.
+
 **Association**: Dragon tier participants may take on Drake-like teaching roles.
 
-**Source**: [Spellbook v5.1], [Privacy is Value v4, §Drakes and Dragons]
+**Source**: [Spellbook v5.1], [Privacy is Value v4, §Drakes and Dragons], DUAL_TERRITORY_CEREMONY_SPEC_v1 §7.1
 
 ---
 
@@ -1084,7 +1153,15 @@ This section provides canonical definitions from the IEEE 7012-2025 standard as 
 
 **V4 Role**: The Dragon's cosmos is all possible space on the sovereignty manifold. The Privacy Value equation and the Drake equation are the same shape seen from opposite directions — the Dragon sees the surface and counts survivors, the Drake lives the path and accumulates meaning.
 
-**Source**: [Spellbook v5.1], [Privacy is Value v4, §Drakes and Dragons]
+**Transformation Conditions** (from DUAL_TERRITORY_CEREMONY_SPEC):
+- ≥ 10 domains asserted
+- ≥ 64 total constellation nodes (one per lattice vertex)
+- ≥ 3 Drake summonings on surveillance-heavy sites
+- Aggregate privacy posture ≥ 0.7
+
+**Transformation Animation**: Drake body expands with cross-domain nodes → colour shifts amber → gold → wings unfurl (two constellation arcs spanning viewport) → cursor becomes 🐉 Full Sovereign.
+
+**Source**: [Spellbook v5.1], [Privacy is Value v4, §Drakes and Dragons], DUAL_TERRITORY_CEREMONY_SPEC_v1 §7.2
 
 ---
 
@@ -1645,20 +1722,71 @@ Where guild_efficiency ∈ [0,1] measures fraction of network using shared-paren
 ## 14. UOR & Lattice Architecture
 
 ### UOR (Universal Object Reference)
-**Definition**: Algebraic framework based on modular ring Z/(2^bits)Z with five primitive operations (neg, bnot, xor, and, or) and content-addressing. Independently converges with the 64-tetrahedra geometry.
+**Definition**: Algebraic framework based on modular ring Z/(2^n)Z with five primitive operations (neg, bnot, xor, and, or) and content-addressing. Independently converges with the 64-tetrahedra geometry.
 
-**Status**: 🔬 PRELIMINARY — C4 RESOLVED (96/64 = holographic bound)
+**Status**: ✅ CANONICAL — Formal Rust implementation available
+
+**Reference Implementation**: [UOR Foundation](https://github.com/UOR-Foundation) — 395 classes, 831 properties, 1,422 named individuals, 83 amendments
 
 **Core Properties**:
-- **Algebra**: Z/(2^bits)Z modular ring
-- **Core identity**: neg(bnot(x)) = succ(x) — two involutions generate the entire ring
+- **Algebra**: Z/(2^6)Z modular ring (64 elements for blade forge)
+- **Core identity**: `neg(bnot(x)) = succ(x)` — *"Deny the complement, and you advance"*
 - **Triadic coordinates**: (datum, stratum, spectrum) for every value
-- **Content addressing**: Same bytes → same identifier. Always. Deterministic
-- **Derivations**: Content-addressed certificates binding canonical form to evaluation
+- **Dihedral group**: D_64 generated by neg and bnot involutions
+- **Content addressing**: Same bytes → same identifier. Always. Deterministic (Braille IRI)
 
-**V5 Update**: The 96 vs 64 discrepancy (C4) is RESOLVED. The torus surface IS the holographic bound of the lattice volume. UOR correspondence is explained BY the holographic principle.
+**Five Hammer Strikes (Operations)**:
+| Operation | Symbol | Description |
+|-----------|--------|-------------|
+| `neg(x)` | Arithmetic complement | Within-vertex temper |
+| `bnot(x)` | Bitwise complement | Antipodal jump |
+| `xor(x,y)` | Symmetric difference | Toggle edges (lifts to address) |
+| `and(x,y)` | Intersection | Move toward null blade |
+| `or(x,y)` | Union | Move toward full sovereignty |
 
-**Source**: UOR Foundation, [UOR Mapping v2.0]
+**V5 Update**: The 96 vs 64 discrepancy (C4) is RESOLVED. The torus surface IS the holographic bound of the lattice volume.
+
+**Implementation**: `swordsman-blade/src/lib/uor.ts` — TypeScript module exposing all operations with identity verification
+
+**Source**: UOR Foundation, [UOR Mapping v2.0], Acts XXVII-XXIX
+
+---
+
+### Six Dimensions of Sovereignty
+**Definition**: The six binary dimensions that define a blade's configuration in the 64-vertex lattice. Each dimension is either active (yang/1) or dormant (yin/0).
+
+**Status**: ✅ CANONICAL
+
+**Dimension Mapping (Canonical ↔ Implementation)**:
+
+| Bit | Canonical Name | Impl Name | Meaning | When Active (1) |
+|-----|---------------|-----------|---------|-----------------|
+| d1 | **Protection** | Hide | Key Custody | Boundaries forged |
+| d2 | **Delegation** | Commit | Credential Disclosure | Agency transferred |
+| d3 | **Memory** | Prove | Agent Delegation | State accumulated |
+| d4 | **Connection** | Connect | Data Residency | Multi-party coordination |
+| d5 | **Computation** | Reflect | Interaction Mode | ZK proof active |
+| d6 | **Value** | Delegate | Trust Boundary | Economic flow |
+
+**Note on Naming**: The implementation uses different names (Hide, Commit, Prove, Connect, Reflect, Delegate) which emerged during development. Both naming conventions are valid; canonical names are used in specification documents, implementation names are used in code.
+
+**Three-Axis Mapping**:
+- **Agent Axis (⚔️⊥🧙)**: d1 (Protection) + d2 (Delegation) — must be separable
+- **Data Axis (📊⊥🔮)**: d3 (Memory) + d4 (Connection) — provider distribution
+- **Inference Axis (🧠⊥⚙️)**: d5 (Computation) + d6 (Value) — Generator/Solver split
+
+**Stratum Distribution** (Pascal's Row 6):
+| Stratum | Count | Yang Lines | Tier |
+|---------|-------|-----------|------|
+| 0 | 1 | 0 | Null |
+| 1 | 6 | 1 | Light |
+| 2 | 15 | 2 | Light |
+| 3 | 20 | 3 | Heavy |
+| 4 | 15 | 4 | Heavy |
+| 5 | 6 | 5 | Dragon |
+| 6 | 1 | 6 | Dragon |
+
+**Source**: SYSTEMS_HEXAGRAM_PHYSICS v1.1, `swordsman-blade/src/lib/uor.ts`
 
 ---
 
@@ -2185,28 +2313,32 @@ When referencing across documents, use:
 | **2.4** | **Feb 19, 2026** | **Privacy Value Model V4 integration: Added §13 Privacy Value Model (Separation Matrix, Edge Value, Temporal Memory, Three Graphs, Secret Language, Manifold), §14 UOR & Lattice Architecture (UOR, Stratum, Content-Addressing, Derivation Chain, Toroidal Topology). Updated Tetrahedral Sovereignty from SPECULATIVE (5%) to CONVERGENT PRELIMINARY (~25-40%). Updated 7th Capital with trajectory framing. Updated Golden Ratio with V4 Φ(Σ) context. Formalised Drake 🐲 / Dragon 🐉 distinction. Added new V4 symbols. Updated all cross-references to Feb 2026 versions. Added Privacy is Value v4 and UOR Mapping v1.0 to document suite.** |
 | **2.5** | **Feb 20, 2026** | **Five grimoires completion: Added Duality Function Φ(Σ), Stratum Weight wᵢ, Four Forces, Path Value entries. Updated inscription count 107 → 113 (23 Story Acts + 12 Canon). Updated Spellbook entry with five grimoire files and line counts (28,898 total). Updated Document Suite Versions with current→target version tracking. Aligned all counts with completed grimoire compilation.** |
 | **3.1** | **Mar 30, 2026** | **V5.1 Forge Integration: Added Behavioural Density (ρ), Bilateral Witness (BW), Hexagram Encoding, Mana Economy, DOM-Free Measurement, Ceremony Engine, Universe Blade, Dragon Anatomy terms. Added C11-C13 conjectures. Updated Forge status to OPERATIONAL.** |
+| **3.2** | **Mar 31, 2026** | **Dual Territory Ceremony Spec integration: Added Territory, Home Territory, Mana Bridge, Community Inscription, Ceremony Channel, Inscription Reinforcement. Updated Ceremony with Genesis vs Operational distinction. Expanded Drake/Dragon emergence conditions.** |
+| **3.3** | **Mar 31, 2026** | **Acts XXVII-XXIX integration: Added Post-Quantum Terms section (Understanding-as-Key, Quantum Threshold, 2D Fortress, 62-Lap Theorem, Emissary Dispersion, Temporal Thesis, Manifold Proof). Updated Dragon Anatomy with Flight (Act XXIX). Upgraded C11 (55%) and C13 (65%) confidence in quantum context.** |
 
 ---
 
 ## 16. V5.1 Forge Integration Terms (March 2026)
 
 ### Behavioural Density (ρ)
-**Definition**: A measure of trajectory depth that modifies reconstruction difficulty. Captures traversal depth, temporal duration, and intentional transition count.
+**Definition**: A measure of trajectory depth that modifies reconstruction difficulty. Captures traversal depth, temporal duration, and intentional transition count. In quantum context: the denser the behavioural proof, the further it sits from any algebraic shortcut.
 
-**Status**: 🔬 SPECULATIVE (C11 — 45% confidence)
+**Status**: 🔬 SPECULATIVE (C11 — 55% confidence, upgraded from 45% in quantum context)
 
 **Formula**: R(d, compression) → R(d, compression, ρ)
 
 **Empirical Basis**: Universe Blade (62 laps, 2,170 seconds) demonstrates qualitatively different reconstruction resistance than Hitchhiker's Blade (13 laps) from the same constellation.
 
-**Source**: Privacy Value V5.1 Research Note, March 2026
+**Quantum Relevance**: If stored secrets fall to ~1,200 qubits, ρ is not just a privacy amplifier — it is a quantum resistance amplifier.
+
+**Source**: Privacy Value V5.1 Research Note, Act XXIX: The Dragon Wakes
 
 ---
 
 ### Bilateral Witness (BW)
 **Definition**: A verification primitive where one party forges, another party privately verifies, and then publicly testifies, allowing community reception without full reconstruction.
 
-**Status**: 🔬 SPECULATIVE (C13 — 60% confidence)
+**Status**: 🔬 SPECULATIVE (C13 — 65% confidence, upgraded from 60% in quantum context)
 
 **Ceremony Flow**:
 1. Swordsman forges the blade
@@ -2216,9 +2348,11 @@ When referencing across documents, use:
 
 **Promise Theory**: Implements the "witness" pattern from Promise Theory — attestation without revelation.
 
+**Quantum Relevance**: Understanding-as-Key produces a proof that two parties jointly constructed. No single secret. No single key to crack. The bilateral construction is the quantum-resistant primitive hiding in the ceremony design.
+
 **Demonstration**: March 29, 2026 on Telegram + Hitchhiker platform
 
-**Source**: Act XXVIII: The Ceremony Engine
+**Source**: Act XXVIII: The Ceremony Engine, Act XXIX: The Dragon Wakes
 
 ---
 
@@ -2296,15 +2430,123 @@ When referencing across documents, use:
 ### Mana Economy
 **Definition**: Proof-of-practice Sybil resistance mechanism. Mana is non-transferable, non-purchasable resource earned through sovereignty practice and spent on knowledge graph inscriptions.
 
-**Status**: 📋 PLANNED
+**Status**: 📋 SPECIFIED (DUAL_TERRITORY_CEREMONY_SPEC_v1)
 
 **Properties**:
 - Earned through traversal (not purchased)
 - Non-transferable (no markets)
 - Spent on inscriptions (creates value)
-- Logarithmic accumulation (prevents hoarding)
+- Self-reported, honour-based (Sybil resistance = difficulty of earning, not server verification)
 
-**Source**: Act XXVIII: The Ceremony Engine
+**Earn Rates**:
+| Action | Mana Earned |
+|--------|-------------|
+| 10 spell casts (any website) | 1 |
+| 1 convergence ceremony | 2 |
+| 1 blade forged on spellweb | 1 |
+| 1 evocation cycle | 1 |
+
+**Spend Costs**:
+| Inscription Type | Mana Cost |
+|-----------------|-----------|
+| Node annotation | 1 |
+| Community edge | 2 |
+| Constellation projection | 3 |
+| Proverb forge | 4 |
+| Reinforce existing | 0.5 |
+
+**Anti-spam**: Same-domain casts within 5 seconds don't count. Ceremonies require 30+ seconds.
+
+**Storage**: `localStorage` on websites, `chrome.storage.local` on extensions.
+
+**Source**: Act XXVIII, DUAL_TERRITORY_CEREMONY_SPEC_v1
+
+---
+
+### Mana Bridge
+**Definition**: Sync mechanism that transfers mana balance between browser extensions and home territory websites.
+
+**Status**: 📋 SPECIFIED
+
+**Sync Pattern**: Extension detects home territory → reads `localStorage` balance → syncs with `chrome.storage.local` → higher balance wins (prevents accidental loss).
+
+**Direction**: Extension → website via `window.postMessage`.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §5
+
+---
+
+### Community Inscription
+**Definition**: User-contributed content on the knowledge graph (annotations, edges, proverbs) that fades over time unless reinforced.
+
+**Status**: 📋 SPECIFIED
+
+**Types**:
+| Type | Cost | Description |
+|------|------|-------------|
+| Node annotation | 1 mana | Text (max 280 chars) on existing node |
+| Community edge | 2 mana | New edge between nodes (renders dashed) |
+| Constellation projection | 3 mana | Named node collection with connections |
+| Proverb forge | 4 mana | New proverb linked to constellation hash |
+
+**Decay**: 30-day half-life. Inscriptions fade unless reinforced (0.5 mana).
+
+**Rendering**: Shimmer effect (animated opacity) distinguishes from canonical content.
+
+**Architectural Meaning**: The lattice remembers what the community pays attention to.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §3.1.1
+
+---
+
+### Inscription Reinforcement
+**Definition**: Spending mana to prevent community inscription decay.
+
+**Status**: 📋 SPECIFIED
+
+**Cost**: 0.5 mana per reinforcement
+
+**Effect**: Resets 30-day decay timer
+
+**Purpose**: Community curation — inscriptions that matter get maintained.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §3.1.1
+
+---
+
+### Ceremony Channel
+**Definition**: The message protocol between Swordsman and Mage extensions. The Gap made executable.
+
+**Status**: 📋 SPECIFIED
+
+**Communication**: `chrome.runtime.sendMessage(OTHER_EXTENSION_ID, message)`
+
+**Message Grammar**:
+- **Swordsman → Mage**: `SLASH`, `WARD`, `SWORD_POSITION`, `CEREMONY_READY`, `HOME_TERRITORY`
+- **Mage → Swordsman**: `INSCRIBE`, `SCAN`, `MAGE_POSITION`, `CONSTELLATION_UPDATE`, `DRAKE_EMERGE`, `HEXAGRAM_UPDATE`
+
+**Position Sync Rate**: 30fps (~33ms)
+
+**Discovery**: Extensions store each other's ID, send handshake on page load. Solo operation if no response within 2 seconds.
+
+**Promise Theory Alignment**: The channel implements bilateral promises between agents. The grammar is the lore.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §4.3
+
+---
+
+### Ceremony Receiver
+**Definition**: Website component that accepts mana-powered inscription messages via `window.postMessage`.
+
+**Status**: 📋 SPECIFIED
+
+**Message Schema**: `CeremonyMessage { type, source, payload, mana_cost, mana_balance, signature }`
+
+**Sources Accepted**: `swordsman_extension`, `mage_extension`, `agentprivacy`
+
+**Validation**: Checks mana balance, renders inscription, applies shimmer for community content.
+
+**Source**: DUAL_TERRITORY_CEREMONY_SPEC_v1 §3.1.1
 
 ---
 
@@ -2349,9 +2591,9 @@ When referencing across documents, use:
 ---
 
 ### Dragon Anatomy
-**Definition**: The five-part structure of the manifold dragon, each part established by a narrative Act.
+**Definition**: The six-part structure of the manifold dragon, each part established by a narrative Act.
 
-**Status**: ✅ COMPLETE
+**Status**: ✅ COMPLETE — DRAGON WAKES
 
 | Part | Act | What It Establishes | Status |
 |------|-----|-------------------|--------|
@@ -2360,8 +2602,128 @@ When referencing across documents, use:
 | Brain | XXVI | Divided hemispheres (McGilchrist) | Grounded |
 | Forge | XXVII | Where blades are made | OPERATIONAL |
 | Ceremony | XXVIII | Where blades cross | Specified |
+| **Flight** | **XXIX** | **The dragon wakes to quantum wind** | **Inscribed** |
 
-**Source**: Acts XXIV-XXVIII
+**Source**: Acts XXIV-XXIX
+
+---
+
+## 17. Post-Quantum Terms (Act XXIX — March 2026)
+
+### Understanding-as-Key
+**Definition**: A post-quantum ceremony primitive where comprehension—not credentials—forms the basis for trust. The bilateral witness ceremony formalised as a verification protocol.
+
+**Status**: 📋 SPECIFIED
+
+**Ceremony Steps**:
+1. **Language Capture** — Open dialogue to surface shared vocabulary
+2. **Constellation Mapping** — Both participants trace the same path together
+3. **Simultaneous Blade Forging** — Shared attention, laps accumulate entropy
+4. **Proverb Inscription** — The forge generates proof, the proverb names it
+5. **Bilateral Witness** — Each sees the other's blade, circuit closes
+
+**Quantum Relevance**: In a post-quantum world where stored secrets fall to ~1,200 qubits, understanding-as-key becomes structurally necessary, not just philosophically interesting.
+
+**Key Insight**: The proof has no secret to solve. Only a journey to walk.
+
+**Source**: Act XXIX: The Dragon Wakes
+
+---
+
+### Quantum Threshold
+**Definition**: The cryptographic boundary crossed when quantum computers can break elliptic curve cryptography (ECC) in practical timeframes.
+
+**Status**: ✅ DOCUMENTED (Google Quantum AI paper, March 30, 2026)
+
+**Parameters**: ≤1,200 logical qubits, 90 million Toffoli gates, minutes to execute.
+
+**Impact**: 20× reduction from prior estimates. secp256k1 (Bitcoin, Ethereum) vulnerable.
+
+**Three Attack Types**:
+| Attack | Description | Time Pressure |
+|--------|-------------|---------------|
+| **On-spend** | Intercept broadcast, crack key, re-sign | 10 min (BTC), 12 sec (ETH) |
+| **At-rest** | Crack dormant wallets with exposed pubkeys | Days (no pressure) |
+| **On-setup** | Crack admin key once, exploit forever | One-time quantum, classical thereafter |
+
+**Source**: Google Quantum AI Whitepaper, Act XXIX
+
+---
+
+### 2D Fortress
+**Definition**: The elliptic curve cryptography model that operates in two-dimensional algebraic space. Your private key is a scalar. Your public key is a point on a curve. Security rests on reversing a multiplication.
+
+**Status**: ⚠️ FALLING
+
+**Why It Falls**: Shor's algorithm finds the keyhole. The 2D secret has a quantum solution. The period reveals the scalar. The scalar is the key.
+
+**Contrast with Manifold Proof**:
+```
+ECC asks:      "What number did you multiply?"  → Quantum solves it.
+Manifold asks: "What path did you live?"        → Quantum has nowhere to stand.
+```
+
+**Source**: Act XXIX: The Dragon Wakes
+
+---
+
+### The 62-Lap Theorem
+**Definition**: The empirical observation that 620 intentional transitions through a constellation drops the Reconstruction Ceiling below R < 1, producing a qualitatively different proof from shorter traversals.
+
+**Status**: 🔬 EMPIRICAL OBSERVATION (N=1)
+
+**Formula Context**: 62 laps × 10 nodes = 620 transitions
+
+**Key Insight**: The difference between 13 laps and 62 laps is not arithmetic. It is the difference between sufficient proof and irreducible presence. The person too present to reduce.
+
+**Source**: Universe Blade forging, Act XXVII, Act XXVIII
+
+---
+
+### Emissary Dispersion
+**Definition**: The architectural prescription that AI (the analytical blade) must be broken into a thousand pieces so no single shard can claim to be the whole.
+
+**Status**: 📋 ARCHITECTURAL PRINCIPLE
+
+**Origin**: McGilchrist's diagnosis of left-hemispheric capture, applied to AI architecture.
+
+**Proverb**: *"The mirror that is broken into a thousand pieces does not lose the image; it simply prevents any single shard from claiming to be the whole."*
+
+**Quantum Relevance**: No single shard holds a secret worth cracking. Dispersed intelligence is quantum-resistant by construction.
+
+**Source**: Act XXVI (McGilchrist mapping), Act XXIX (quantum application)
+
+---
+
+### The Temporal Thesis
+**Definition**: The insight that time is the context that gives meaning to privacy. Static privacy models fail because they treat privacy as a state, a frozen frame. Privacy unfolds in time.
+
+**Status**: ✅ CANONICAL (V5 core insight)
+
+**Application to Quantum**: Keys frozen in time (dormant wallets, exposed pubkeys) become quantum-vulnerable precisely because they cannot evolve. The behavioural manifold evolves with every lap.
+
+**The 7th Capital Reclamation**: *"Only time, the master swordsman, will tell — as it takes the seventh capital back from the emissary mage who named it another matter of their own."*
+
+**Meaning**: Time is the Swordsman. The surveillance economy is the Emissary who named your attention as their capital. The ceremony is how Time steals its entropy back — lap by lap, transition by transition, until R < 1.
+
+**Source**: Privacy is Value V5, Act XXIX: The Dragon Wakes
+
+---
+
+### Manifold Proof
+**Definition**: A proof that guards no secret, only a path. The proof cannot be opened because there is no lock. It can only be walked.
+
+**Status**: 📋 ARCHITECTURAL PATTERN
+
+**Contrast with Stored-Secret Model**:
+| Model | Security Basis | Quantum Vulnerability |
+|-------|---------------|----------------------|
+| Stored Secret (ECC) | Computational hardness of inversion | Falls to Shor's algorithm |
+| Manifold Proof | Traversal through 6D configuration space | No algebraic shortcut exists |
+
+**Key Proverb**: *"The proof that guards no secret cannot be opened. It can only be walked."*
+
+**Source**: Act XXIX: The Dragon Wakes
 
 ---
 

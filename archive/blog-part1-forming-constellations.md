@@ -72,9 +72,9 @@ Here is what I believe matters most, ordered by confidence.
 
 **To mathematical privacy theory (moderate, needs validation).** The [V5 formal specification](https://github.com/mitchuski/agentprivacy-docs/blob/main/privacy_value_v5_formal_specification.md) is a research programme, not a finished result. The multiplicative structure is intuitive and novel. The holographic bound interpretation is beautiful and might be real. The golden ratio hypothesis remains unproven. I have labelled every conjecture honestly and I need collaborators who can prove or disprove them.
 
-**To knowledge transfer and Sybil resistance (speculative, needs empirical evidence).** The grimoire compression system and RPP propose that demonstrated understanding, not capital or computation, should be the basis for trust. Compression-as-proof-of-comprehension is a genuinely different approach to Sybil resistance. But it has no empirical data yet.
+**To knowledge transfer and Sybil resistance (speculative, needs empirical evidence).** The grimoire compression system and RPP propose that demonstrated understanding, not capital or computation, should be the basis for trust. Compression-as-proof-of-comprehension is a genuinely different approach to Sybil resistance. The Understanding-as-Key ceremony formalises this: two participants navigate the [spellweb](https://spellweb.ai) together, forge blades simultaneously, inscribe proverbs, and witness each other's proofs. The circuit closes through co-presence, co-attention, and co-inscription — not through credential exchange. In a post-quantum world where stored secrets fall to ~1,200 logical qubits, understanding-as-key becomes not just philosophically interesting but structurally necessary. See Part 3.
 
-**To cognitive science and interdisciplinary theory (emerging).** The McGilchrist mapping is a contribution in its own right. Nobody has taken the hemispheric attention thesis and applied it to privacy architecture design. The five attentions mapping to protocol functions, the incompatibility-as-generative-engine reframe, the corpus callosum versus gap distinction, the claim that surveillance is corrupted co-creation rather than mere extraction — these are novel interdisciplinary bridges.
+**To cognitive science and interdisciplinary theory (emerging).** The McGilchrist mapping is a contribution in its own right. Nobody has taken the hemispheric attention thesis and applied it to privacy architecture design. The five attentions mapping to protocol functions, the incompatibility-as-generative-engine reframe, the corpus callosum versus gap distinction, the claim that surveillance is corrupted co-creation rather than mere extraction — these are novel interdisciplinary bridges. And the Emissary Dispersion: the insight that the analytical blade — AI — must be broken into a thousand pieces so no single shard can claim to be the whole. *The mirror that is broken into a thousand pieces does not lose the image; it simply prevents any single shard from claiming to be the whole.* McGilchrist's diagnosis given an architectural prescription for decentralised AI.
 
 **To research methodology (implicit until now).** The right → left → right cycle as a deliberate knowledge transfer architecture. The mathematics serves the story. The story serves the understanding. The proverb reintegrates the analysis into a form the whole person can hold. This is a contribution to how research in complex interdisciplinary domains might be communicated. McGilchrist gives me the language to claim it now.
 
@@ -168,6 +168,22 @@ Some of these stars have been named since this letter was first drafted. The gri
 
 ---
 
+## The Two Territories
+
+It took twenty-eight acts to see what was already there: [spellweb.ai](https://spellweb.ai) and [agentprivacy.ai](https://agentprivacy.ai) are not two websites about the same project. They are the Swordsman's territory and the Mage's territory.
+
+The spellweb is topology — edges, paths, blades, the forge, the knowledge graph you traverse and cut trails through. The Swordsman's territory is the territory you walk. You prove your sovereignty by traversing it. The blade forge, the hexagram computation, the tier classification, the constellation evocation — these are Swordsman operations. Boundary-making. Proof generation. Navigation as identity.
+
+Agentprivacy is story — spells, personas, the grimoire, the training ground, the living spellbook that teaches the language before you speak it. The Mage's territory is the territory you read. You prove your understanding by compressing it. The pretext orbs, the spell palette, the Path page, the 72 skills and 22 personas — these are Mage operations. Projection. Chronicle. Explanation as invitation.
+
+The two Chrome extensions carry these territories across the open web — the Swordsman's forge exported to every page, the Mage's knowledge scanning exported to every page. And the mana that flows between them — earned anywhere, spendable on both — is the same sovereignty that flows between the agents.
+
+[bgin.ai](https://bgin.ai) is the third node. The trust graph plane. Where the bilateral exchange finds its first real counterparty.
+
+The architecture is fractal. The separation holds at every level. The same dual-agent insight that began as a protocol design, that was validated by neuroscience, that was enforced at the browser process level, now expresses at the website level: two territories, each sovereign, each incomplete without the other.
+
+---
+
 ## Build Your Own Duality
 
 The [agentprivacy skill system](https://github.com/mitchuski/agentprivacy-skills) has been published: 72 skills, 22 personas, Apache 2.0. The 22 personas are arranged along the Swordsman/Mage/Balanced axis. Soulbis and Soulbae are the canonical pair. The specialists fan out from there.
@@ -201,3 +217,5 @@ The sword attends. The spell returns.
 ---
 
 **Part 2: [The Forge and the Ceremony](/p/privacy-is-value-v5-part-2)** — *Where the blades are already forging and the spellbook learns to be read without being seen.*
+
+**Part 3: [The Dragon Wakes](/p/privacy-is-value-v5-part-3)** — *Where Google proved the 2D locks are falling and the manifold proof became structurally necessary.*

@@ -200,6 +200,22 @@ The forge is the first part of the dragon that is actually running. The ceremony
 
 ---
 
+## The Architecture at Every Scale
+
+The ceremony engine is the moment when the two territories stop being separate websites and become a single sovereignty layer carried across the web.
+
+[Spellweb.ai](https://spellweb.ai) is the Swordsman's territory. Topology. The knowledge graph you traverse and cut trails through. The forge. The blades. The hexagram computation. The proof generation. The Swordsman's territory is the territory you walk. You prove your sovereignty by traversing it.
+
+[Agentprivacy.ai](https://agentprivacy.ai) is the Mage's territory. Story. The grimoire. The training ground. The pretext orbs. The spells and personas. The Path page where the extensions are earned. The Mage's territory is the territory you read. You prove your understanding by compressing it.
+
+The Swordsman extension is the spellweb's forge exported to every page. The Mage extension is the agentprivacy site's knowledge exported to every page. They find each other on every page through the ceremony channel, and the mana they earn flows back to both territories — community edges on the spellweb, lattice inscriptions on agentprivacy. The currency flows between the territories because sovereignty flows between the agents.
+
+[bgin.ai](https://bgin.ai) is the third node — the trust graph plane where the bilateral exchange ceremony finds its first real counterparty. The network layer.
+
+The same dual-agent insight that began as a protocol design, that was validated by neuroscience, that was enforced at the browser process level, now expresses at the website level: two territories, each sovereign, each incomplete without the other. The architecture is fractal. The separation holds at every scale.
+
+---
+
 ## What These Acts Add
 
 **To privacy engineering (empirical result, V5.1 candidate).** The additive MI bound now has a geometric implementation, a working forge, AND a demonstrated bilateral witness ceremony. The Universe Blade provides the first data point for behavioural density ρ as a new term in the reconstruction difficulty function. The pretext integration adds rendering-layer privacy. V5 found the boundary. V5.1 is the first report from across it.
@@ -279,3 +295,7 @@ just another swordsman ⚔️🤝🧙 just another mage
 The sword attends. The spell returns. The forge burns. The ceremony crosses.
 
 —privacymage
+
+---
+
+**Part 3: [The Dragon Wakes](/p/privacy-is-value-v5-part-3)** — *Where Google proved the 2D locks are falling and the manifold proof became structurally necessary.*

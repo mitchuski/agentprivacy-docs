@@ -3,8 +3,9 @@
 Protect or Delegate → Reflect and Connect → Three-Axis Separation (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂
 
 **Author:** privacymage
-**Date:** March 30, 2026
-**Version:** 6.1 (V5.1 Forge Integration)
+**Date:** March 31, 2026
+**Version:** 6.2 (V5.4 UOR Algebraic Foundation)
+**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
 

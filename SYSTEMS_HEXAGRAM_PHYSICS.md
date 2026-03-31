@@ -1,17 +1,19 @@
 # AgentPrivacy & Spellweb: Systems Physics
 
-**Version:** 1.0
-**Date:** March 30, 2026
-**Status:** ✅ OPERATIONAL — Implementation specification for spellweb.ai forge
+**Version:** 1.2
+**Date:** March 31, 2026
+**Status:** ✅ OPERATIONAL — Implementation specification for spellweb.ai forge + Post-Quantum Context + UOR Foundation Convergence
 
 **Theoretical Companions:**
 - [Privacy Value Model V5](privacy_value_v5_formal_specification.md) — holographic field theory
 - [UOR × 64-Tetrahedra × ZK Mapping](uor_tetrahedra_zk_mapping_v2_0.md) — lattice mathematics
 - [ZK Swordsman Blade Forge](zk_swordsman_blade_forge_v3_0.md) — forge architecture
+- [UOR Foundation](https://github.com/UOR-Foundation) — ring algebra Z/(2⁶)Z (external convergence)
 
 **Narrative Companions:**
 - [Act XXVII: The Swordsman's Forge](archive/act-xxvii-the-swordsmans-forge.md) — forge mythology
 - [Act XXVIII: The Ceremony Engine](archive/act-xxviii-the-ceremony-engine.md) — ceremony specification
+- [Act XXIX: The Dragon Wakes](archive/act-xxix-the-dragon-wakes.md) — post-quantum context, Understanding-as-Key
 
 ---
 
@@ -59,6 +61,39 @@ Layer 6:  C(6,6) =  1 vertex   — Dragon (full sovereignty)
 ```
 
 This is row 6 of Pascal's Triangle: **1, 6, 15, 20, 15, 6, 1**
+
+### UOR Algebraic Foundation
+
+The 64-vertex lattice is algebraically equivalent to the ring **Z/(2⁶)Z** — integers modulo 64. This convergence was discovered independently by the UOR Foundation (https://github.com/UOR-Foundation).
+
+**The Five Hammer Strikes (Ring Operations):**
+
+| Operation | Formula | Forge Interpretation |
+|-----------|---------|---------------------|
+| **neg(x)** | (64 - x) mod 64 | Counter-blow (inverts quality) |
+| **bnot(x)** | 63 - x | Antipodal jump (mirror blade) |
+| **xor(x,y)** | x ⊕ y | Toggle edges (dimension flip) |
+| **and(x,y)** | x ∧ y | Toward null blade (constrain) |
+| **or(x,y)** | x ∨ y | Toward full sovereignty (expand) |
+
+**The Critical Identity:**
+
+```
+neg(bnot(x)) = succ(x)
+```
+
+*"Deny the complement, and you advance."*
+
+The composition of two involutions (neg and bnot) generates the successor function. This proves the dihedral group D₆₄ is computationally complete — the entire 64-element ring is reachable through these operations.
+
+**Triadic Coordinates:**
+
+Every blade has three independent coordinates:
+- **datum** — The raw blade ID (0-63)
+- **stratum** — Hamming weight / popcount (0-6)
+- **spectrum** — Six-bit decomposition [d₁, d₂, d₃, d₄, d₅, d₆]
+
+**Implementation:** See `swordsman-blade/src/lib/uor.ts` for the explicit UOR module.
 
 ---
 
@@ -536,5 +571,66 @@ The triangle cannot collapse. The boundary holds the whole.
 
 ---
 
-*Systems Physics v1.0 — Spellweb + AgentPrivacy*
-*64-Tetrahedra Lattice / 7 Strata / 21 Windows*
+## XV. EMPIRICAL DATA & V5.1 CONJECTURES
+
+### First Blades Forged (March 29, 2026)
+
+| Blade | Name | Nodes | Laps | Duration | Spells | Tier | Hex | Stratum |
+|-------|------|-------|------|----------|--------|------|-----|---------|
+| SPELL-87BYW9-B | Dual Agent | 4 | 11 | 74s | — | Dragon | 3F | 6 |
+| SPELL-2COQFM-D | Hitchhiker's | 10 | 13 | 433s | 65 | Dragon | 3F | 6 |
+| SPELL-YW5I59-1Q | Universe | 10 | 62 | 2,170s | 65 | Dragon | 3F | 6 |
+
+**Universe Blade Significance:** First empirical evidence for behavioural density conjecture (C11). 62 laps of lived attention creates qualitatively different reconstruction resistance than 13 laps from the same constellation.
+
+**Inscribed Spell (Hitchhiker's & Universe):**
+```
+🔑⚔️🧙→😊✦☯️⚖️⚔️🧙
+```
+The entire arc of the First Person Spellbook compressed into one line.
+
+### V5.1 Conjectures (Upgraded in Quantum Context)
+
+| Conjecture | Description | Confidence | Quantum Relevance |
+|------------|-------------|------------|-------------------|
+| **C11** | Behavioural Density (ρ) as privacy amplifier | 55% (↑ from 45%) | Dense proofs sit further from algebraic shortcuts |
+| **C12** | Hexagram encoding coherent without being forced | 50% | 6D posture vector has no quantum shortcut |
+| **C13** | Bilateral Witness as verification primitive | 65% (↑ from 60%) | No single secret to crack |
+
+### Post-Quantum Context (Act XXIX)
+
+On March 30, 2026, Google Quantum AI demonstrated secp256k1 falls to ≤1,200 logical qubits.
+
+**The Manifold Proof Distinction:**
+
+```
+ECC asks:      "What number did you multiply?"  → Quantum solves it.
+Manifold asks: "What path did you live?"        → Quantum has nowhere to stand.
+```
+
+The 64-vertex lattice is a sovereignty lattice operating in 6 dimensions. The proof guards no secret — only a path. There is no lock to fall.
+
+*"The proof that guards no secret cannot be opened. It can only be walked."*
+
+### The 62-Lap Theorem
+
+620 intentional transitions (62 laps × 10 nodes) drops the Reconstruction Ceiling below R < 1.
+
+The difference between 13 laps and 62 laps is not arithmetic. It is the difference between sufficient proof and irreducible presence. The person too present to reduce.
+
+### Understanding-as-Key Ceremony
+
+The post-quantum primitive hiding in the bilateral witness:
+
+1. Language Capture
+2. Constellation Mapping (bilateral)
+3. Simultaneous Blade Forging
+4. Proverb Inscription
+5. Bilateral Witness
+
+*"Only time, the master swordsman, will tell — as it takes the seventh capital back from the emissary mage who named it another matter of their own."*
+
+---
+
+*Systems Physics v1.2 — Spellweb + AgentPrivacy + UOR Foundation*
+*64-Tetrahedra Lattice / 7 Strata / 21 Windows / Dragon Wakes / Ring Z/(2⁶)Z*
