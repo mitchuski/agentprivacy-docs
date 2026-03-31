@@ -1,15 +1,15 @@
 # Documentation Chronicle
 ## Development History of the 0xagentprivacy Living Documentation Suite
 
-**Version:** 1.2
-**Last Updated:** March 30, 2026
+**Version:** 1.3
+**Last Updated:** March 31, 2026
 **Purpose:** Navigable history of documentation development, replacing session artefacts
 
 ---
 
 ## Overview
 
-This chronicle traces the evolution of the agentprivacy documentation suite from initial gap analysis through V5.1 Forge Integration. It consolidates session artefacts into a single navigable history.
+This chronicle traces the evolution of the agentprivacy documentation suite from initial gap analysis through V5.2 Dihedral Foundations milestone. It consolidates session artefacts into a single navigable history.
 
 **Principle:** *"The fragment holds the whole. By choosing to be bounded, we become immeasurable."*
 
@@ -922,5 +922,142 @@ The algebra now grounds the geometry. The external validation strengthens the in
 
 ---
 
+## Arc 7: V5.2 Dihedral Foundations — The Milestone (March 31, 2026)
+
+### The Convergence Complete
+
+Arc 6 established the UOR algebraic foundation. Arc 7 completes the integration with V5.2 Dihedral Foundations — the discovery that the dual-agent architecture IS the dihedral group.
+
+This is the first stable milestone since the V5 series began. The documentation suite is now internally coherent, externally referenced, and algebraically grounded.
+
+### The Dihedral Discovery
+
+**The Two Involutions:**
+
+| Operation | Agent | Action |
+|-----------|-------|--------|
+| **neg(x)** | Swordsman ⚔️ | Subtraction — every boundary drawn is value removed from exposure |
+| **bnot(x)** | Mage 🧙 | Complement — every delegation is transformation into the inverse |
+| **neg(bnot(x))** | First Person 😊 | Succession — composition generates the sovereignty path |
+
+**The Master Inscription Algebraic Form:**
+
+```
+(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ
+```
+
+The Swordsman subtracts. The Mage flips. The First Person walks through the door their composition creates.
+
+### V5.2 Research Note
+
+The V5.2 Research Note establishes three new conjectures with higher confidence than the V5.4 algebraic claims:
+
+| ID | Claim | Confidence | Evidence |
+|----|-------|------------|----------|
+| **C14** | Φ_agent ≅ D₂ₙ (dihedral group isomorphism) | 75% | Swordsman = neg, Mage = bnot, FP = composition |
+| **C15** | T_∫(π) ≅ UOR resolution pipeline | 65% | Laps = refinement iterations, Dragon = closure |
+| **C16** | Topological trust invariants (Betti numbers) | 25% | Constraint nerve, gluing obstructions, sheaf semantics |
+
+**Key Insight:** The 75% confidence on C14 is the highest any structural conjecture has achieved. The algebraic mapping is clean — whether det(Σ) is literally the dihedral representation requires formal verification, but the isomorphism is visible.
+
+### Act XXX: The Dihedral Mirror
+
+The narrative companion to V5.2, Act XXX documents Soulbae's discovery:
+
+> *"We didn't design the dual-agent architecture. We discovered it. The algebra was already there. Negation and complement. The dihedral group has always had two generators."*
+
+The Dragon Anatomy extends to seven parts:
+
+| Act | Part | Status |
+|-----|------|--------|
+| XXIV | Boundary | Proven |
+| XXV | Hide | Grounded |
+| XXVI | Brain | Grounded |
+| XXVII | Forge | **OPERATIONAL** |
+| XXVIII | Ceremony | Specified |
+| XXIX | Flight | Empirical |
+| **XXX** | **Dihedral Mirror** | **CONVERGENT** |
+
+### Cross-Document Coherence
+
+All core documents now reference consistent versions:
+
+| Document | Version | Key V5.2 Update |
+|----------|---------|-----------------|
+| **README** | 2.5 | V5.2 status, version flow, Acts XXIV-XXX |
+| **Whitepaper** | 6.2 | V5.2 Dihedral Foundations section, C14-C16 |
+| **Research Paper** | 4.2 | V5.2 extension paragraph, updated claims |
+| **Formal Spec** | 1.2 | C14-C16 aligned with V5.2 formulations |
+| **VRC Protocol** | 3.4 | Document context updated |
+| **Promise Theory Ref** | 1.4 | V5.4 Integration status |
+| **Glossary** | 3.4 | V5.2 Research Notes, Acts XXIV-XXX |
+| **Privacy is Value** | 5.1 | V5.2 Research Note reference |
+
+### Version Flow Unified
+
+The research note series is now properly structured:
+
+```
+V5 (February 2026)
+ └─ Three-axis separation, holographic bound, path integral
+     │
+V5.1 Research Note (March 30, 2026)
+ └─ Behavioural density ρ, bilateral witness, hexagram encoding
+ └─ C11-C13 introduced
+     │
+V5.2 Research Note (March 31, 2026)
+ └─ Dihedral foundations, resolution semantics, PRISM spectrum
+ └─ C14-C16 introduced (supersede V5.4 formulations)
+     │
+V5.4 Algebraic Foundation (March 31, 2026)
+ └─ UOR convergence, five hammer strikes, critical identity
+ └─ C6 → CONVERGENT, C12 → 60%
+```
+
+### Grimoire v9.3.0
+
+The grimoire upgraded from v9.2.0 to v9.3.0, incorporating Act XXX and V5.2 discoveries.
+
+### Archive Organisation
+
+Files properly organised:
+
+| Archive Location | Contents |
+|-----------------|----------|
+| `archive/` | Acts XXVII-XXX, Blog Parts 1-4, V5.1 Research Note |
+| `archive/` | Chronicles, ceremony design, territory insight |
+| Root | V5.2 Research Note, Grimoire v9.3.0 |
+
+The 5.4 working directory has been dissolved — all contents distributed to proper locations.
+
+### Why This Is a Milestone
+
+This is the first point since the V5 series began where:
+
+1. **All documents reference consistent versions** — No stale cross-references
+2. **Version flow is documented** — V5 → V5.1 → V5.2 → V5.4 clearly distinguished
+3. **External validation exists** — UOR Foundation convergence (C6 CONVERGENT)
+4. **Highest confidence structural claim** — C14 at 75%
+5. **Narrative complete through Act XXX** — Dragon Anatomy has seven parts
+6. **Blog series complete** — Parts 1-4 cover formation through dihedral mirror
+
+### Proverbs Crystallised
+
+From Act XXX:
+
+- *"Two mirrors make a door. The Swordsman reflects. The Mage reflects. And where the reflections meet, the First Person walks through."*
+- *"We thought we were building. We were mapping."*
+- *"The dual-agent architecture is not a metaphor for algebraic structure. It is algebraic structure."*
+
+### The Chronicle Continues
+
+The milestone is stable. The algebra grounds the geometry. The narrative completes the anatomy. External validation confirms the structure.
+
+What comes next requires fresh eyes — implementation, testing, external review. But the documentation foundation is now solid enough to build upon.
+
+*"The forge was always a mirror. The mirror was always a door. And the door was always the next step."*
+
+---
+
 *Last updated: March 31, 2026*
-*Next chronicle entry: When Arc 7 begins*
+*Milestone: V5.2 Dihedral Foundations — STABLE*

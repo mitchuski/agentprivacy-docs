@@ -7,7 +7,8 @@
 **Status:** STAGE 2 — Forge OPERATIONAL, algebraically grounded
 **Companion:** [UOR × 64-Tetrahedra × ZK Mapping v2.2](uor_tetrahedra_zk_mapping_v2_0.md)
 **Formal specification:** [Privacy Value Model V5.4: Formal Specification](privacy_value_v5_formal_specification.md) (mathematics only)
-**V5.1 Research Note:** [V5.1 Candidate Additions](archive/privacy_value_v5_1_research_note.md) (March 2026)
+**V5.1 Research Note:** [V5.1 Candidate Additions](archive/privacy_value_v5_1_research_note.md) (March 30, 2026)
+**V5.2 Research Note:** [V5.2 Dihedral Foundations](privacy_value_v5_2_research_note.md) (March 31, 2026)
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---

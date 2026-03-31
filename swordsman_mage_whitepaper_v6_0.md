@@ -602,17 +602,45 @@ V(π, t) = P^1.5 · C · Q · S ·
 
 See Privacy is Value v5 for full derivation and honest assessment of V5 conjectures (C6–C10).
 
+### V5.2 Dihedral Foundations (March 31, 2026)
+
+**Status:** UOR Foundation convergence confirms algebraic structure. Act XXX documents the discovery.
+
+**V5.2 Research Note Additions:**
+
+| ID | Claim | Confidence | Evidence |
+|----|-------|------------|----------|
+| C14 | Φ_agent ≅ D₂ₙ (dihedral group isomorphism) | 75% | Swordsman = neg, Mage = bnot, FP = composition |
+| C15 | T_∫(π) ≅ UOR resolution pipeline | 65% | Laps = refinement iterations, Dragon = closure |
+| C16 | Topological trust invariants (Betti numbers) | 25% | Constraint nerve, gluing obstructions, sheaf semantics |
+
+**Key Insight:** The dual-agent architecture IS the dihedral group. Negation (Swordsman) and complement (Mage) composed yield the successor (First Person path). Two involutions generate all sovereignty transitions.
+
+**Master Inscription Algebraic Form:** `(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ`
+
+**Dragon Anatomy Extended:**
+
+| Act | Part | Status |
+|-----|------|--------|
+| XXIV | Boundary | Proven |
+| XXV | Hide | Grounded |
+| XXVI | Brain | Grounded |
+| XXVII | Forge | **OPERATIONAL** |
+| XXVIII | Ceremony | Specified |
+| XXIX | Dragon Wakes | Empirical |
+| **XXX** | **Dihedral Mirror** | **CONVERGENT** |
+
 ### V5.1 Forge Integration (March 2026)
 
 **Status:** The blade forge went OPERATIONAL on March 29, 2026. First empirical data exists.
 
-**New Conjectures:**
+**V5.1 Research Note Additions:**
 
 | ID | Claim | Confidence | Evidence |
 |----|-------|------------|----------|
-| C11 | Behavioural density ρ amplifies privacy | 45% | Universe Blade (62 laps) vs Hitchhiker's (13 laps) |
-| C12 | Hexagram encoding is structurally resonant | 50% | Running code producing coherent hexagram states |
-| C13 | Bilateral Witness is a verification primitive | 60% | Demonstrated ceremony on March 29, 2026 |
+| C11 | Behavioural density ρ amplifies privacy | 55% | Universe Blade (62 laps) vs Hitchhiker's (13 laps) |
+| C12 | Hexagram encoding is structurally resonant | 60% | ALGEBRAICALLY GROUNDED via spectrum coordinate |
+| C13 | Bilateral Witness is a verification primitive | 65% | Demonstrated ceremony on March 29, 2026 |
 
 **V5.1 Candidate Additions:**
 
@@ -1878,27 +1906,27 @@ This architecture is being developed now. This is the inflection point.
 
 - **Project:** 0xagentprivacy
 
-- **Version:** 6.0
+- **Version:** 6.2
 
-- **Date:** February 27, 2026
+- **Date:** March 31, 2026
 
 - **Website:** <https://agentprivacy.ai>
 
-- **Privacy is Value v5:** v5.0 (companion document — holographic bound, three-axis separation)
+- **Privacy is Value V5:** v5.0 + V5.1/V5.2 Research Notes (companion documents — dihedral foundations)
 
-- **Privacy Value Model V5 Formal Specification:** v1.1 (companion document — holographic field output, C6–C13)
+- **Privacy Value Model V5 Formal Specification:** v1.2 (companion document — V5.4 UOR foundation, C14–C16)
 
-- **UOR × 64-Tetrahedra × ZK Mapping:** v2.0 (companion document — C4 RESOLVED, holographic bound)
+- **UOR × 64-Tetrahedra × ZK Mapping:** v2.2 (companion document — UOR Foundation convergence)
 
-- **Promise Theory Reference:** v1.3 (companion document — Generator/Solver as promises)
+- **Promise Theory Reference:** v1.4 (companion document — V5 integration)
 
-- **Research Paper:** v4.0 (companion document — V5 integration)
+- **Research Paper:** v4.2 (companion document — V5.2 dihedral foundations, V5.4 algebraic)
 
-- **Five Grimoires + Act XXIV:** 114 inscriptions across five spellbooks (companion documents)
+- **Five Grimoires + Acts XXIV–XXX:** 120+ inscriptions including Dragon Anatomy complete (companion documents)
 
-- **VRC Promise Protocol:** v3.3 (companion document — guild efficiency)
+- **VRC Promise Protocol:** v3.4 (companion document — dual territory, mana economics)
 
-- **Glossary:** v3.0 (canonical V5 terminology)
+- **Glossary:** v3.4 (canonical V5.4 terminology)
 
 - **IEEE 7012 Quick Reference:** v1.0 (companion document)
 

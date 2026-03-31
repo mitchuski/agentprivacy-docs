@@ -52,14 +52,14 @@ This document describes how sustainable funding enables the economic implementat
 
 This economic architecture implements the mathematical foundations established in:
 
-- **Whitepaper v6.0:** "Swordsman and Mage: Dual Agents Derived from the First Person"
-- **Research Paper v4.0:** "Dual Privacy Architecture: Information-Theoretic Bounds"
-- **Privacy is Value v5.0:** "The Equation Evolves — From the Manifold Dragon to the Holographic Bound"
-- **Glossary v3.0:** Canonical V5 terminology reference
-- **Promise Theory Reference v1.3:** Formal semantic foundations
+- **Whitepaper v6.2:** "Swordsman and Mage: Dual Agents Derived from the First Person" (V5.4 UOR Foundation)
+- **Research Paper v4.2:** "Dual Privacy Architecture: Information-Theoretic Bounds" (V5.2 dihedral foundations)
+- **Privacy is Value v5.0 + V5.1/V5.2 Research Notes:** Dihedral foundations, resolution semantics
+- **Glossary v3.4:** Canonical V5.4 terminology reference
+- **Promise Theory Reference v1.4:** Formal semantic foundations (V5 integration)
 - **Spellbook Act 9:** "The Zcash Shield" (narrative interpretation of dual ledger economics)
 - **Spellbook Act 11:** "Balanced Spiral of Sovereignty" (golden ratio derivation)
-- **Spellbook Act XXIV:** "The Holographic Bound" (V5 discovery narrative)
+- **Acts XXIV–XXX:** Dragon Anatomy complete through Dihedral Mirror
 - **DUAL_TERRITORY_CEREMONY_SPEC v1.0:** Implementation architecture for territories, extensions, ceremonies, mana
 
 **Critical dependency:** The economic mechanisms described here are designed to enforce the architectural separation (Y_S ⊥⊥ Y_M)|X established in Research Paper v4.0. The mathematical guarantees (Theorems 5.1-5.4) hold independent of specific token choices.

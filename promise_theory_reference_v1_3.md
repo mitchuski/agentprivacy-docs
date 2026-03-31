@@ -3,9 +3,9 @@
 ## Formal Foundations for Dual-Agent Sovereignty Architecture
 
 **Version:** 1.4
-**Date:** February 27, 2026
-**Status:** ✅ V5 Integration — Three-Axis Separation as Triple Superagent
-**Companion to:** Whitepaper v6.0, Research Paper v4.0, Glossary v3.0, Privacy is Value v5.0, Privacy Value Model V5 Formal Spec v1.0, Five Grimoires + Act XXIV (114 inscriptions)
+**Date:** March 31, 2026
+**Status:** ✅ V5.4 Integration — UOR Algebraic Foundation + Dihedral Group
+**Companion to:** Whitepaper v6.2, Research Paper v4.2, Glossary v3.4, Privacy is Value v5.0 + V5.1/V5.2 Research Notes, Privacy Value Model V5 Formal Spec v1.2, Five Grimoires + Acts XXIV–XXX (120+ inscriptions)
 
 ---
 

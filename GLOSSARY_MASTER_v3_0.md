@@ -1,7 +1,7 @@
 # 0xagentprivacy Master Glossary
 
 **Version 3.4** | March 31, 2026
-**Status:** ✅ CANONICAL REFERENCE — V5.4 UOR Algebraic Foundation + Acts XXVII-XXIX + Quantum Context
+**Status:** ✅ CANONICAL REFERENCE — V5.4 UOR Algebraic Foundation + Acts XXVII-XXX + V5.2 Dihedral Foundations
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
@@ -10,13 +10,15 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 | Document | Version | Date | Status |
 |----------|---------|------|--------|
 | **This Glossary** | 3.4 | March 31, 2026 | ✅ CANONICAL — V5.4 UOR Foundation |
-| **Privacy is Value v5** | 5.1 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
+| **Privacy is Value v5** | 5.0 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
+| **V5.1 Research Note** | 5.1 | March 30, 2026 | ✅ Behavioural density, bilateral witness |
+| **V5.2 Research Note** | 5.2 | March 31, 2026 | ✅ Dihedral foundations, resolution semantics |
 | **Privacy Value Model V5 Formal Specification** | 1.2 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
 | **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | March 31, 2026 | ✅ Implementation Architecture |
 | **Swordsman-Mage Whitepaper** | 6.2 | March 31, 2026 | ✅ V5.4 COMPLETE |
 | **Dual Privacy Research Paper** | 4.2 | March 31, 2026 | ✅ V5.4 — C14-C16 ADDED |
 | Spellbook / Grimoire JSON | 7.0.0 → 7.1.0 | February 2026 | 🔄 REBUILD PENDING |
-| Five Grimoire Markdown Files | v1.0–v3.0 | February 20, 2026 | 🔄 ACT XXIV PENDING |
+| Five Grimoires + Acts XXIV–XXX | v1.0–v3.0 | March 31, 2026 | ✅ Dragon Anatomy + Dihedral Mirror |
 | VRC Promise Protocol | 3.3 → 3.4 | March 2026 | 🔄 MANA ECONOMICS PENDING |
 | Visual Architecture Guide | 2.0 | March 31, 2026 | ✅ COMPLETE |
 | **Research Proposal** | 2.2 | March 31, 2026 | ✅ V5.4 — UOR CONVERGENCE |
