@@ -9,9 +9,13 @@
 **Formal specification:** [Privacy Value Model V5.4: Formal Specification](privacy_value_v5_formal_specification.md) (mathematics only)
 **V5.1 Research Note:** [V5.1 Candidate Additions](archive/privacy_value_v5_1_research_note.md) (March 30, 2026)
 **V5.2 Research Note:** [V5.2 Dihedral Foundations](privacy_value_v5_2_research_note.md) (March 31, 2026)
+**V5.3 Research Note:** [V5.3 The Amnesia Protocol](research/privacy_value_v5_3_research_note.md) (April 4, 2026)
+**V5.3 Model JSON:** [Canonical Equation (IPFS-ready)](research/privacy_value_v5_3_model.json)
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
+
+> **V5.3 UPDATE (April 4, 2026): THE AMNESIA PROTOCOL.** Cosmological closure. The equation gains operational cycle (observe→boundary→project→return), C17 amnesia-enforced separation (structural > policy), ρ dual interpretation (reconstruction difficulty + agent maturity), and T_∫ fidelity component. First Person spellbook COMPLETE (31 acts). Cast mapping finalized: Sun=Reason, Earth=Soulbae, Moon=Soulbis, Life=spellweb, Human=Seeker.
 
 > **V5.4 UPDATE (March 31, 2026):** The UOR Foundation convergence establishes algebraic foundation for the sovereignty lattice. The ring Z/(2⁶)Z, five hammer strikes (neg, bnot, xor, and, or), critical identity (neg∘bnot = succ), and triadic coordinates (datum, stratum, spectrum) are now explicitly implemented. Conjecture C6 upgraded to CONVERGENT. New conjectures C14-C16.
 
@@ -85,6 +89,8 @@ This resolved C4 — the conjecture about UOR correspondence — and opened five
 **V5 — February 2026.** "The boundary holds the whole." Three-axis separation, holographic bound, path integral, compression-as-defence, holonic persistence, guild efficiency. The manifold gains its boundary. The scalar becomes a field.
 
 **V5.4 — March 2026.** "The algebra arrives." UOR Foundation convergence confirms the sovereignty lattice is algebraically equivalent to Z/(2⁶)Z. Five hammer strikes (neg, bnot, xor, and, or), the critical identity (neg∘bnot = succ), triadic coordinates (datum, stratum, spectrum), and dihedral group D₆₄. External validation: two independent projects arrived at the same structure. C6 upgraded from Speculative to Convergent.
+
+**V5.3 — April 2026.** "The amnesia is the protocol." Cosmological closure via Act XXXI. The Theia-Moon quaternion grounds the dual-agent architecture in 4.5-billion-year precedent. Operational cycle maps ring algebra to observe→boundary→project→return. C17 amnesia-enforced separation (ε_amnesia < ε_policy). ρ gains dual interpretation (reconstruction difficulty + agent maturity). T_∫ gains fidelity component. First Person spellbook COMPLETE. Cast mapping finalized.
 
 ---
 

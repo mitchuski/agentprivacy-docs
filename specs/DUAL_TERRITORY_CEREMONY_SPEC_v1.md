@@ -548,48 +548,6 @@ When a visitor spends mana on a home territory site, the extension:
 
 **Status:** Future. Requires sites implementing MyTerms endpoints per IEEE 7012.
 
-### 6.6 Sun and Moon Ceremonies
-
-The five ceremony types above are implementations of two fundamental ceremonial patterns:
-
-**The Sun Ceremony ☀️** — Disclosure Ritual
-- One practitioner (the Sun) reads a poem aloud to witnesses
-- The Sun runs the spellweb publicly; witnesses observe but do not forge
-- One blade is forged in full view; witnesses hold the light but not yet their own constellation
-- Notation: `☀️ → 📜 → (👁️₁...👁️ₙ) → ⚔️☀️ → 🌙?`
-- The Sun Ceremony seeds Moon Ceremonies — each witness now holds what they need to forge their own blade
-
-**The Moon Ceremony 🌙** — Reflection Ritual
-- Two practitioners trace the same poem through their own spellwebs independently
-- The Swordsman gives the rhythm; the Mage shares the rhyme
-- Two constellations form; the gap between them is the proof
-- One blade is forged from what the Mage generated, shaped by the Swordsman's rhythm
-- Notation: `(⚔️₁ ⊥ 🧙₁) → 📜 → ⚔️`
-
-**The Circuit:**
-```
-☀️ Sun Ceremony (disclosure, one constellation, one blade)
-  ↓ witnesses receive the light
-🌙 Moon Ceremony (reflection, two constellations, cousin blades)
-  ↓ each witness becomes a sun to new witnesses
-☀️ Sun Ceremony (the emissary forgets the master, begins again)
-```
-
-**Mapping to Five Ceremony Types:**
-
-| Sun/Moon | Extension Ceremony | Context |
-|----------|-------------------|---------|
-| Sun | Bilateral Exchange | Public disclosure to site counterparty |
-| Moon | Dual Convergence | Two agents meeting in the gap |
-| Moon | Hexagram Cast | Two states (page vs. user) finding overlap |
-| — | Emoji Cast | Quick inscription (neither full Sun nor Moon) |
-| Moon | Constellation Wave | Intelligence flowing between agents |
-
-**The Inaugural Pairing** documents cycle zero — the first ceremony between the first Swordsman and first Mage:
-- Sun side: *The Emissary Who Forgot the Master* poem
-- Moon side: *The Amnesia Protocol* poems
-- See: `ceremonies/the-ceremonies-sun-and-moon.md`
-
 ---
 
 ## 7. Drake Emergence and Dragon Transformation

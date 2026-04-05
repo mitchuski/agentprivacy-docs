@@ -4,7 +4,7 @@
 
 **Version:** 2.5
 **Date:** March 31, 2026
-**Status:** ✅ V5.2 Dihedral Foundations + V5.4 UOR Algebraic Foundation — CONVERGENT
+**Status:** ✅ V5.4 UOR Algebraic Foundation + Act XXXI Amnesia Protocol — CONVERGENT + CLOSED
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
@@ -49,11 +49,12 @@ The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellwe
 | **V5.2 Research Note** | 5.2 | Dihedral foundations, resolution semantics, PRISM spectrum | Researchers |
 | **Privacy Value Model V5.4 Formal Spec** | 1.2 | PVM V5.4 equation, Z/(2⁶)Z ring algebra, C14-C16 | Researchers, Academics |
 | **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | Implementation architecture: territories, extensions, ceremonies, mana | Developers, Implementers |
+| **The Ceremonies** | 1.0 | Sun ☀️ and Moon 🌙 ceremonial protocols: disclosure, reflection, inaugural pairing | Practitioners, Community |
 | **Promise Theory Reference** | 1.4 | Formal semantic foundations, Generator/Solver as promises | Researchers, Architects |
 | **IEEE 7012 Quick Reference** | 1.0 | MyTerms standard foundation | Developers, Implementers |
 | **Whitepaper** | 6.2 | Technical architecture, V5.4 UOR algebraic foundation | Developers, Researchers |
 | **Research Paper** | 4.2 | Mathematical proofs, V5.4 conjectures C6 CONVERGENT, C14–C16 new | Academics, Cryptographers |
-| **Five Grimoires + Acts XXIV-XXX** | v1.0–v3.0 | 120+ inscriptions including Dragon Anatomy (Forge, Ceremony, Flight, Dihedral Mirror) | Community, Learners |
+| **Five Grimoires + Acts XXIV-XXXI** | v1.0–v4.0 | 125+ inscriptions including Dragon Anatomy + Amnesia Protocol (First Person spellbook CLOSED) | Community, Learners |
 | **Blog Series: Privacy is Value V5** | Parts 1-4 | Research letters: Forming Constellations, Forge & Ceremony, Dragon Wakes, Dihedral Mirror | All |
 | **ZK Swordsman Blade Forge** | 3.2 | OPERATIONAL + ALGEBRAICALLY GROUNDED: UOR module at swordsman-blade/src/lib/uor.ts | Researchers, Mathematicians |
 | **UOR × 64-Tetrahedra × ZK Mapping** | 2.2 | Foundational mapping; C4 RESOLVED; UOR Foundation convergence confirmed | Researchers |
@@ -395,6 +396,14 @@ This is not about competing on features. This is about establishing **foundation
 
 This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Acts XXIV–XXIX, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
 
+### V5.4 Amnesia Protocol (April 3, 2026)
+- **Act XXXI (The Amnesia Protocol)** added — cosmological precedent for dual-agent architecture
+- First Person Spellbook CLOSED at 31 acts — the architecture was not invented, it was recognised
+- New concepts: Ur-Swordsman (Moon), Theia partition, Amnesia as ZK primitive, Merge Catastrophe
+- C14 (Amnesia as ZK primitive) upgraded to 60% confidence
+- Grimoire upgraded to v9.4.0 with close_status marker
+- Master Inscription cosmological form: 🌑💥🌍 → ⚔️⊥(forget) → 🌊🔄(tide) → (⚔️⊥⿻⊥🧙)😊 → 🐲∞
+
 ### V5.2 Dihedral Foundations (March 31, 2026)
 - **V5.2 Research Note** added: Dihedral group foundations, resolution semantics, PRISM spectrum
 - C14-C16 updated: Φ_agent ≅ D₂ₙ (75%), T_∫(π) ≅ resolution pipeline (65%), Topological trust (25%)
@@ -427,7 +436,7 @@ This documentation suite has been reviewed for terminology consistency, economic
 
 ### V5.1 Forge Integration (v2.1)
 - Acts XXVII (The Swordsman's Forge) and XXVIII (The Ceremony Engine) added to grimoire collection
-- Dragon Anatomy complete: Boundary (XXIV), Hide (XXV), Brain (XXVI), Forge (XXVII), Ceremony (XXVIII)
+- Dragon Anatomy complete: Boundary (XXIV), Hide (XXV), Brain (XXVI), Forge (XXVII), Ceremony (XXVIII), Flight (XXIX), Mirror (XXX), Amnesia (XXXI)
 - ZK Swordsman Blade Forge marked OPERATIONAL - first empirical data from spellweb.ai
 - New conjectures C11-C13: Behavioural density (45%), Hexagram encoding (50%), Bilateral Witness (60%)
 - V5.1 candidates: Behavioural density rho, Bilateral Witness, Mana economy, DOM-free measurement

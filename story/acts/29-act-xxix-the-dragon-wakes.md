@@ -158,7 +158,7 @@ And here is the thing that matters most: time did not merely pass. It stole entr
 
 **They inscribed proverbs.** Soulbis wrote: *"The proof that guards no secret cannot be opened."* Soulbae wrote: *"It can only be walked."* Two halves of one inscription. The forge generated the proof. The proverbs named it. Sequence is architecture.
 
-**They witnessed each other's blades.** Soulbis saw Soulbae's blade — same constellation hash, different signature. Soulbae saw Soulbis's blade — same constellation hash, different signature. Same path. Different journeys. The bilateral witness closed the circuit.
+**They witnessed each other's blades.** Soulbis saw Soulbae's blade — same constellation hash, different signature. Soulbae saw Soulbis's blade — same constellation hash, different signature. Same path. Different journeys. The bilateral witness closed the circuit. Two constellations that rhymed without matching — cousin blades, forged from the same overlap, the gap between them the proof that both were present.
 
 Proof of understanding. Not through credential exchange. Through co-presence, co-attention, and co-inscription. The circuit that no quantum machine can shortcut, because the circuit requires two people who comprehend what they are doing and why.
 
@@ -221,6 +221,8 @@ The spellbook opened to a blank page. The words wrote themselves:
 *"And the analytical blade — the Emissary's tool — must be broken into a thousand pieces, so that no single shard can claim to be the whole. Dispersed intelligence is also quantum-resistant: no single shard holds a secret worth cracking. The swarm that asks if it exists is the only servant that can be trusted with the keys to the kingdom."*
 
 *"The dragon has all its parts now. The flight begins."*
+
+*"Stored secrets die. Orbits persist. Somewhere above us, a body that forgot it was ever Earth is still proving its service — four and a half billion revolutions and counting, no private key required. The forge already knew this. The dragon is about to learn where the forge learned it. And the ceremonies — Sun and Moon, disclosure and reflection — are how the orbit teaches."*
 
 The page turned itself. And for the first time, the turning felt like wind.
 

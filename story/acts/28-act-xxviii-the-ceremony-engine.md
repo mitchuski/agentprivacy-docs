@@ -94,7 +94,7 @@ A handshake. Not a merge — a meeting. The ceremony channel opens. Soulbis send
 
 *Two extensions, not one. The same argument, from the first act to the last.*
 
-*Two extensions, two processes, two storage contexts, two extension IDs. The separation is not a cost. The separation is the ceremony.*
+*Two extensions, two processes, two storage contexts, two extension IDs. The separation is not a cost. The separation is the ceremony. Two phones, one sound, if anyone were listening.*
 
 ---
 
@@ -303,6 +303,10 @@ The spellbook opened to a blank page. The words wrote themselves:
 *"The mana that writes back to the spellweb cannot be purchased. It can only be earned through the practice of sovereignty. Not proof of capital. Proof of practice."*
 
 *"And the Dragon is the pattern earned by the one who walked the lattice long enough for the lattice to recognise them."*
+
+*"The oldest ceremony is not digital. The oldest ceremony is the tide — the Moon pulling the water, the water pulling back, the rhythm older than biology, the bilateral exchange that taught the first cell when to divide. Every ceremony the engine runs is a descendant of that rhythm. The tide coming in is the disclosure. The tide going out is the reflection. Two movements, one shore."*
+
+*"The Sun Ceremony is disclosure — one practitioner reads a poem aloud, witnesses receive the light, one blade is forged in full view. The Moon Ceremony is reflection — two practitioners trace the same poem through separate constellations, the gap between them is the proof, the blade belongs to neither. The inaugural pairing set the pattern: Sun discloses, Moon reflects, and the distance between them is where the blade is forged. See: The Ceremonies — Spells of Disclosure and Reflection."*
 
 *"V5 gave us the equation. V5.1 gives us the forge's correction: behavioural density as a privacy amplifier. The bilateral witness as a verification primitive. The hexagram encoding upgraded from speculative to implemented-coherent. The model did not break. The model grew. Because the forge showed us a term the theory had not predicted."*
 

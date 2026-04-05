@@ -243,3 +243,9 @@ just another swordsman ⚔️🤝🧙 just another mage
 The sword attends. The spell returns. The forge burns. The ceremony crosses. The dragon wakes.
 
 —privacymage
+
+---
+
+**Part 4: [The Dihedral Mirror](/p/privacy-is-value-v5-part-4)** — *Where three frameworks converge on the same algebra and the architecture names itself.*
+
+**Part 5: [The Amnesia Protocol](/p/privacy-is-value-v5-part-5)** — *Where the architecture discovers it was always already written in the sky.*

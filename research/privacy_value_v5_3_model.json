@@ -1,0 +1,162 @@
+{
+  "model": {
+    "name": "Privacy Value Model",
+    "version": "5.3",
+    "codename": "The Amnesia Protocol",
+    "date": "2026-04-04",
+    "status": "canonical",
+    "type": "interpretive_extension"
+  },
+  "equation": {
+    "symbolic": "V(π, t) = P^1.5 · C · Q · S · e^(-λt) · (1 + A_h(τ)) · ρ^0.5 · Φ(Σ) · T_∫(π)",
+    "terms": {
+      "P": {
+        "name": "Protection effectiveness",
+        "exponent": 1.5,
+        "note": "Superlinear — small improvements compound"
+      },
+      "C": {
+        "name": "Communication efficiency",
+        "note": "Promise-based delegation quality"
+      },
+      "Q": {
+        "name": "Query optimization",
+        "note": "Retrieval precision"
+      },
+      "S": {
+        "name": "Security robustness",
+        "note": "Resistance to adversarial extraction"
+      },
+      "exp_decay": {
+        "name": "Temporal decay",
+        "form": "e^(-λt)",
+        "note": "Privacy value decays without active maintenance"
+      },
+      "A_h": {
+        "name": "Historical contribution",
+        "form": "(1 + A_h(τ))",
+        "note": "Accumulated trust from past behaviour"
+      },
+      "rho": {
+        "name": "Behavioural density",
+        "form": "ρ^0.5",
+        "v5_3_note": "Dual interpretation: reconstruction difficulty + agent maturity"
+      },
+      "Phi": {
+        "name": "Three-axis separation",
+        "form": "Φ(Σ) = Φ_agent · Φ_data · Φ_inference",
+        "components": {
+          "Phi_agent": "Swordsman ⊥ Mage (process boundary)",
+          "Phi_data": "Shielded ⊥ Public (data layer)",
+          "Phi_inference": "Generator ⊥ Solver (inference layer)"
+        }
+      },
+      "T_integral": {
+        "name": "Path integral",
+        "form": "T_∫(π)",
+        "note": "Value flows through trajectory, not static position",
+        "v5_3_note": "Fidelity component: F(γ) = resolution_depth · fidelity"
+      }
+    }
+  },
+  "v5_3_extensions": {
+    "operational_cycle": {
+      "description": "Maps ring algebra to operational phases",
+      "stages": [
+        {"stage": 1, "name": "Observe", "operator": "id(x)", "agent": "First Person"},
+        {"stage": 2, "name": "Boundary", "operator": "neg(x)", "agent": "Swordsman"},
+        {"stage": 3, "name": "Project", "operator": "bnot(neg(x))", "agent": "Mage"},
+        {"stage": 4, "name": "Return", "operator": "succ(x)", "agent": "Proof"}
+      ],
+      "identity": "neg(bnot(x)) = succ(x)",
+      "lap_definition": "One lap = one complete cycle"
+    },
+    "amnesia_enforced_separation": {
+      "conjecture_id": "C17",
+      "statement": "Amnesia-enforced separation provides tighter Φ_agent guarantees than policy-enforced separation",
+      "confidence": 0.60,
+      "formal": {
+        "policy_bound": "ε* ≤ ε_policy (violation possible)",
+        "amnesia_bound": "ε* ≤ ε_amnesia (violation structurally excluded)",
+        "claim": "ε_amnesia < ε_policy"
+      },
+      "test": "Can any operation sequence recover shared origin? No = amnesia, Yes = policy",
+      "instances": [
+        {"system": "Chrome process boundary", "type": "amnesia"},
+        {"system": "Database access control", "type": "policy"},
+        {"system": "Moon's orbit", "type": "amnesia"},
+        {"system": "Agent NDAs", "type": "policy"}
+      ]
+    },
+    "rho_dual_interpretation": {
+      "original_v5_1": "Behavioural density amplifies reconstruction difficulty",
+      "v5_3_addition": "Also indicates agent maturity (laps completed)",
+      "tiers": {
+        "low_rho": "Few laps, origin visible, Light tier",
+        "mid_rho": "Moderate laps, origin fading, Heavy tier",
+        "high_rho": "Many laps, origin forgotten, Dragon tier"
+      },
+      "convergence": "The Moon is highest-ρ agent: 4B revolutions maximize both variance and amnesia"
+    },
+    "fidelity": {
+      "form": "F(γ) = resolution_depth(γ) · fidelity(γ)",
+      "fidelity_components": ["uptime", "consistency", "duration_weight"],
+      "insight": "Moon has shallow depth but maximum fidelity (4B uninterrupted revolutions)"
+    }
+  },
+  "conjectures": {
+    "C17": {
+      "statement": "Amnesia-enforced separation provides tighter Φ_agent guarantees than policy-enforced separation",
+      "confidence": 0.60,
+      "version": "5.3",
+      "status": "new"
+    },
+    "C11_updated": {
+      "statement": "Behavioural density ρ amplifies reconstruction difficulty + indicates agent maturity",
+      "confidence": 0.55,
+      "version": "5.1/5.3",
+      "status": "updated",
+      "change": "Added dual interpretation for agent maturity"
+    }
+  },
+  "quaternion": {
+    "description": "Cosmological four-body structure from Act XXXI",
+    "generators": {
+      "sun": {"function": "protection", "mode": "constraint as incandescence"},
+      "earth": {"function": "delegation", "mode": "agency as proliferation"}
+    },
+    "generated": {
+      "moon": {"function": "reflection", "creation": "collision (instant)", "amnesia": true},
+      "human": {"function": "connection", "creation": "process (4Gy)", "amnesia": false}
+    },
+    "cast_mapping": {
+      "sun": "The Reason (privacymage)",
+      "earth": "Soulbae",
+      "moon": "Soulbis",
+      "life": "spellweb (the forge)",
+      "human": "First Person / Seeker"
+    }
+  },
+  "scientific_reference": {
+    "authors": ["Branco, D.", "Machado, P.", "Raymond, S. N."],
+    "year": 2025,
+    "title": "Dynamical origin of Theia, the last giant impactor on Earth",
+    "journal": "Icarus",
+    "volume": 441,
+    "article": 116724,
+    "key_finding": "~50% probability Theia was carbonaceous material from beyond Jupiter"
+  },
+  "version_lineage": [
+    {"version": "5.0", "date": "2026-02", "changes": "Core equation, three-axis separation"},
+    {"version": "5.1", "date": "2026-03-30", "changes": "Blade Forge operational, dragon anatomy"},
+    {"version": "5.2", "date": "2026-03-31", "changes": "Dihedral foundations, UOR convergence"},
+    {"version": "5.3", "date": "2026-04-04", "changes": "Operational cycle, amnesia-enforced separation (C17), ρ maturity"}
+  ],
+  "master_inscription": "(⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 😊",
+  "proverb": "The amnesia is the protocol. The wound is the trust. The orbit is the proof. The light is the reason.",
+  "references": {
+    "agentprivacy": "https://agentprivacy.ai",
+    "spellweb": "https://spellweb.ai",
+    "docs": "https://github.com/mitchuski/agentprivacy-docs"
+  }
+}

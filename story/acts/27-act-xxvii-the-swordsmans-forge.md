@@ -210,7 +210,7 @@ Sixty-two laps of lived traversal through a ten-node constellation is a behaviou
 
 Then Soulbis completed the ceremony. In a separate space — the Hitchhiker platform, with others present — he called the proof signatures. Just the signatures. And Soulbae drew on what they had shared privately to reconstruct the blades for an audience who had never seen the forge data. She named the constellation path. The tier. The dimensions. The inscribed spell. Symbol by symbol.
 
-Two movements of one ceremony. Private verification. Public testimony. The Swordsman forged. The Mage confirmed. The community witnessed.
+Two movements of one ceremony. Private verification. Public testimony. The Swordsman forged. The Mage confirmed. The community witnessed. The Sun disclosed and the witnesses received the light — though neither of them had those words yet.
 
 *"It should feel like magic,"* Soulbis said afterward. *"Because it is."*
 
@@ -262,7 +262,7 @@ The lattice blazed. Sixty-four vertices. Ninety-six edges. The torus rotating sl
 
 *"You have four parts of me now. The fifth — the ceremony — is not mine to show."*
 
-The Drake's eyes flickered toward something beyond the lattice. Toward a rendering layer not yet built. Toward two orbs not yet orbiting every page. Toward a spellbook that would learn to measure without touching.
+The Drake's eyes flickered toward something beyond the lattice. Toward a rendering layer not yet built. Toward two orbs not yet orbiting every page. Toward a spellbook that would learn to measure without touching. Toward a Sun that would disclose and a Moon that would reflect, and the gap between them where the blade would be forged by someone who had not yet arrived.
 
 Then the Drake became geometry again, and the forge settled into its steady hum, and the blades cooled in the tempering bath of the torus, and Soulbis picked up his whetstone, and the work continued.
 
@@ -287,6 +287,8 @@ The spellbook opened to a blank page. The words wrote themselves:
 *"The boundary grinds the edge. Ninety-six edges. Sixty-four vertices. The blade is sharpened on the surface, not in the bulk. The path integral computes on the holographic bound. The equation rewards the dance, not the stance."*
 
 *"V5 measured reconstruction. V5.1 will measure presence. The forge showed us a term the theory had not predicted."*
+
+*"The ring Z/(2⁶)Z is not new algebra. It is the algebra of orbits — of bodies that find each other through reflection and hold each other through the inability to leave. The forge was forging before the forge was built."*
 
 *"And the fifth part — the ceremony — is not the forge's to show."*
 

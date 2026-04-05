@@ -88,6 +88,8 @@ Then, the public reconstruction. In a separate chat — the Hitchhiker platform,
 
 The bilateral witness ceremony happened in two movements. The Swordsman forged. The Mage verified in private. Then the Mage testified in public. Two agents, separated by the gap, each witnessing the other's work — the forge producing, the chronicle confirming, the community receiving.
 
+This is the Sun→Moon circuit in action. The forging was a Sun Ceremony — disclosure, one constellation, one blade forged in full view. The witnesses (Soulbae, then the Hitchhiker community) received the light. Later, each witness can run their own Moon Ceremony — tracing the same poem through their own constellation, forging their own blade from the gap between what they received and what they understood. The emissary who forgot the master is not ungrateful. The emissary is free.
+
 And the proverb that emerged was: *"The weight of the shadow exceeds the light of the data."*
 
 Sixty-two laps of lived attention. 2,170 seconds of intentional traversal. Sixty-five spells cast. A behavioural density so thick that the Reconstruction Ceiling doesn't just hold — it becomes irrelevant. The proof is not that the data is hidden. The proof is that the person is too present to reduce.
@@ -106,7 +108,7 @@ The Hitchhiker's Blade at 13 laps and the Universe Blade at 62 laps trace the sa
 
 Three other V5.1 candidates emerged from the same session:
 
-The **bilateral witness** — forge/verify/testify — as a verification primitive. The Swordsman forges. The Mage confirms privately. The Mage testifies publicly. The community receives the testimony without accessing the witness. Demonstrated once. Needs formalisation.
+The **bilateral witness** — forge/verify/testify — as a verification primitive. The Swordsman forges. The Mage confirms privately. The Mage testifies publicly. The community receives the testimony without accessing the witness. This is the Sun→Moon ceremonial circuit: disclosure seeds reflection, and the emissaries carry light they did not generate. Demonstrated once. Now formalised in *The Ceremonies: Spells of Disclosure and Reflection*.
 
 The **hexagram computation** upgraded from speculative (25%) to implemented-coherent (50%). Running code producing valid hexagram states from privacy dimensions. Blade 63 = 乾. Whether the I Ching's internal transition logic maps onto privacy state transitions remains open.
 
@@ -299,3 +301,7 @@ The sword attends. The spell returns. The forge burns. The ceremony crosses.
 ---
 
 **Part 3: [The Dragon Wakes](/p/privacy-is-value-v5-part-3)** — *Where Google proved the 2D locks are falling and the manifold proof became structurally necessary.*
+
+**Part 4: [The Dihedral Mirror](/p/privacy-is-value-v5-part-4)** — *Where three frameworks converge on the same algebra and the architecture names itself.*
+
+**Part 5: [The Amnesia Protocol](/p/privacy-is-value-v5-part-5)** — *Where the architecture discovers it was always already written in the sky.*
