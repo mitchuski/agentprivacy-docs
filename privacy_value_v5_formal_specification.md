@@ -1,7 +1,7 @@
 # Privacy Value Model V5: Formal Specification
 
-**Version:** 1.2 (V5.4 — UOR Algebraic Foundation)
-**Date:** March 31, 2026
+**Version:** 1.3 (V10.0.0 Grimoire aligned)
+**Date:** April 7, 2026
 **Author:** Mitchell Travers (privacymage)
 **Status:** Working paper — peer review invited
 **Companion to:** "Privacy is Value: From the Manifold Dragon to the Holographic Bound" (narrative version)

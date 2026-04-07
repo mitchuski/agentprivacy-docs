@@ -3,8 +3,8 @@
 **Mathematical Framework for Swordsman-Mage Separation**
 
 **Author:** privacymage
-**Date:** March 31, 2026
-**Version:** 4.2 (V5.4 UOR Algebraic Foundation)
+**Date:** April 7, 2026
+**Version:** 4.3 (V10.0.0 Grimoire aligned)
 **External Convergence:** UOR Foundation (https://github.com/UOR-Foundation)
 
 ---
@@ -1932,7 +1932,7 @@ def monitor_budget_compliance(agent, budget, window=1000):
   - Privacy is Value v5.0
   - Privacy Value Model V5 Formal Specification v1.0
   - UOR × 64-Tetrahedra × ZK Mapping v2.0
-  - Five Grimoires + Act XXIV (114 inscriptions)
+  - 31 Acts complete (V10.0.0 Grimoire)
   - VRC Promise Protocol v3.3
   - Glossary v3.0
   - Promise Theory Reference v1.3
@@ -1960,4 +1960,4 @@ IEEE 7012 does not affect the information-theoretic bounds proven in this paper�
 | **3.6** | **Jan 29, 2026** | **Standards Integration**: Added Standards Foundation Note referencing IEEE 7012-2025. Updated companion document references (Whitepaper v4.8, Spellbook v5.0, Glossary v2.3). Added IEEE 7012 Quick Reference v1.0 to companion documents. |
 | **3.8** | **Feb 20, 2026** | **V4 PVM + Convergence Integration**: Added §Privacy Value Model V4 formal presentation with uncertainty table. Added §UOR Correspondence summary with exact/divergent correspondence table. Updated Claims Classification Table with 8 new V4 entries. Upgraded Tetrahedral Emergence from HIGHLY SPECULATIVE (5%) to CONVERGENT PRELIMINARY (25-40%) with triple derivation evidence. Added V4 context to Golden Ratio section (now embedded in Φ(Σ)). Added §V4 Extension Limitations with 6 permanent uncertainty flags. Added V4 validation items to Experimental Roadmap. Aligned with Whitepaper v5.0, Glossary v2.5, Privacy is Value v4.0, five grimoires (113 inscriptions). |
 | **4.1** | **Mar 30, 2026** | **V5.1 Forge Integration**: First empirical data from spellweb.ai (3 Dragon blades). Added C11-C13. Updated "What Is Missing" — implementations now exist. Hexagram upgraded to 50%. Dragon anatomy complete (XXIV-XXVIII). |
-| **4.0** | **Feb 27, 2026** | **V5 Holographic Bound Integration**: PVM upgraded to V5. Added §V5 Structural Extensions (Three-Axis Separation, Holographic Bound, Compression-as-Defence, Holonic Persistence, Guild Efficiency). Added BRAID Parity Effect. C4 marked RESOLVED (holographic principle). New conjectures C6-C10 integrated. Updated Claims Classification Table. Updated to Privacy is Value v5.0, Glossary v3.0, five grimoires (114 inscriptions including Act XXIV). |
+| **4.0** | **Feb 27, 2026** | **V5 Holographic Bound Integration**: PVM upgraded to V5. Added §V5 Structural Extensions (Three-Axis Separation, Holographic Bound, Compression-as-Defence, Holonic Persistence, Guild Efficiency). Added BRAID Parity Effect. C4 marked RESOLVED (holographic principle). New conjectures C6-C10 integrated. Updated Claims Classification Table. Updated to Privacy is Value v5.0, Glossary v3.0, 31 Acts complete (V10.0.0 Grimoire). |

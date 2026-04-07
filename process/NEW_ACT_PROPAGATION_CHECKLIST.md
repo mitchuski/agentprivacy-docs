@@ -184,7 +184,7 @@ If writing a blog post:
 
 ### Propagation Checklist for Act XXXI
 
-- [x] Narrative act written (`act-xxxi-the-amnesia-protocol.md`)
+- [x] Narrative act written (`act-xxxi-the-first-delegation.md`)
 - [ ] Grimoire JSON updated with act entry
 - [ ] Cast: theia_impact, amnesia_protocol, tidal_proof, vanishing_scaffold
 - [ ] Notation: amnesia_notation

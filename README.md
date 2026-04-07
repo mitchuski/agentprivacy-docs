@@ -2,9 +2,9 @@
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 2.5
-**Date:** March 31, 2026
-**Status:** ✅ V5.4 UOR Algebraic Foundation + Act XXXI Amnesia Protocol — CONVERGENT + CLOSED
+**Version:** 3.0
+**Date:** April 7, 2026
+**Status:** ✅ V10 Grimoire + 31 Acts + Moon Phase + Quaternion — CONVERGENT + CLOSED
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
@@ -315,7 +315,7 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 
 ### For Community / Learners
 1. What Agentprivacy Is (mission and orientation)
-2. Five Grimoires + Act XXIV (114 inscriptions, narrative framework)
+2. 31 Acts complete (V10.0.0 Grimoire, narrative framework)
 3. Visual Guide v2.0 (diagrams)
 4. Glossary v3.0 (terminology reference)
 
@@ -397,7 +397,7 @@ This is not about competing on features. This is about establishing **foundation
 This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Acts XXIV–XXIX, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
 
 ### V5.4 Amnesia Protocol (April 3, 2026)
-- **Act XXXI (The Amnesia Protocol)** added — cosmological precedent for dual-agent architecture
+- **Act XXXI (The First Delegation)** added — cosmological precedent for dual-agent architecture
 - First Person Spellbook CLOSED at 31 acts — the architecture was not invented, it was recognised
 - New concepts: Ur-Swordsman (Moon), Theia partition, Amnesia as ZK primitive, Merge Catastrophe
 - C14 (Amnesia as ZK primitive) upgraded to 60% confidence
@@ -430,7 +430,7 @@ This documentation suite has been reviewed for terminology consistency, economic
 - **IEEE 7012-2025**: MyTerms standard integration, published January 20, 2026
 - **PVM V5**: Three-axis separation, holographic bound, path integral T_∫(π), guild efficiency G(guilds)
 - **Four Forces**: Protect ⚔️, Project 🧙, Reflect 🪞, Connect 🤝
-- **Five Grimoires + Act XXIV**: 114 inscriptions across 29K+ lines (Story, ZK, Canon, Parallel, Plurality)
+- **Five Grimoires + Act XXIV**: 31 Acts across V10.0.0 Grimoire (Story, ZK, Canon, Parallel, Plurality)
 - **Version References**: All documents reference correct companion versions
 
 

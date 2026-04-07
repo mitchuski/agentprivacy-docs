@@ -1,8 +1,8 @@
 # Documentation Chronicle
 ## Development History of the 0xagentprivacy Living Documentation Suite
 
-**Version:** 1.3
-**Last Updated:** March 31, 2026
+**Version:** 1.4
+**Last Updated:** April 7, 2026
 **Purpose:** Navigable history of documentation development, replacing session artefacts
 
 ---
@@ -1065,7 +1065,7 @@ What comes next requires fresh eyes — implementation, testing, external review
 
 **Milestone:** V5.3 Amnesia Protocol — COMPLETE
 
-The First Person spellbook closes with Act XXXI: The Amnesia Protocol. This act provides cosmological grounding for the entire privacy architecture, revealing that the dual-agent pattern predates biology by 4.5 billion years.
+The First Person spellbook closes with Act XXXI: The First Delegation. This act provides cosmological grounding for the entire privacy architecture, revealing that the dual-agent pattern predates biology by 4.5 billion years.
 
 ### Act XXXI Summary
 
@@ -1164,3 +1164,62 @@ The Second Person spellbook will ask WHY.
 *Last updated: April 3, 2026*
 *Milestone: V5.3 Amnesia Protocol — COMPLETE*
 *First Person Spellbook: CLOSED*
+
+---
+
+## Arc 8: V10 Grimoire Convergence (April 7, 2026)
+
+### The Moon Phase Revelation
+
+The April 7 session brought the full V10 convergence across five repositories:
+
+**Key Discoveries:**
+- **Moon Phase Notation** — Stratum encodes visibility ratio (🌑→🌕)
+- **Quaternion Resolved** — Earth = Soulbae, Moon = Soulbis
+- **Skills Count** — 86 skills, 42 personas (38 selectable + 4 cosmological)
+- **IPFS Published** — `bafkreicl677c52ayuw7i2cpxcc2534fuv4ehd7gbsc55ozotpbsuk3qqtu`
+
+### Five-Repository Coherence
+
+| Repository | Update |
+|------------|--------|
+| **agentprivacy-docs** | V10 grimoire JSON, ceremonies expanded (1→13 files), glossary v4.0, visual guide v2.1 |
+| **agentprivacy-skills** | V10 UPDATE INSTRUCTIONS master doc, ceremonies directory, skills mapping |
+| **agentprivacy_master** | Private key burn (sessionStorage), Swordsman import bridge |
+| **spellweb** | Moon phase forge, dual-keypair runecraft, Moonkeeper node |
+| **ceremonies** | Acts XXVII-XXXI complete, celestial ceremony specs |
+
+### Moon Phase Notation
+
+The moon phase encodes sovereignty posture without revealing content:
+
+```
+🌑 Stratum 0 — Null blade
+🌒 Stratum 1 — One boundary
+🌓 Stratum 2 — Dual-agent vertex
+🌔 Stratum 3 — Half sovereignty
+🌖 Stratum 4 — Four boundaries
+🌗 Stratum 5 — One dimension dark
+🌕 Stratum 6 — All six reflected
+```
+
+*"The dark part is the privacy. The lit part is the proof."*
+
+### Cosmological Quaternion
+
+```
+Sun ☀️ → Earth 🌍 → Moon 🌑 (via Theia 🪨💥)
+                  → Human 👤 (via Life 🧬🌱)
+```
+
+The answer to life, the universe, and everything: **42 personas**.
+
+### The Proverb
+
+*"The architecture was not invented. It was recognised."*
+
+---
+
+*Last updated: April 7, 2026*
+*Milestone: V10.0.0 Grimoire — PUBLISHED*
+*IPFS: bafkreicl677c52ayuw7i2cpxcc2534fuv4ehd7gbsc55ozotpbsuk3qqtu*

@@ -138,7 +138,7 @@ This is not hiding history — history lives in the archive ring. This is **enab
 Add a section:
 
 ```markdown
-### Act XXXI: The Amnesia Protocol (April 3, 2026)
+### Act XXXI: The First Delegation (April 3, 2026)
 
 The First Person Spellbook closes at thirty-one acts.
 

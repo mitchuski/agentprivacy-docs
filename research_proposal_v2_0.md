@@ -563,7 +563,7 @@ The Swordsman and Mage framework provides those guarantees. The math is proven. 
 - 61.8/38.2 transparent/shielded canonical fee split (φ-derived hypothesis)
 - O(n²) network effects through VRC coordination
 
-**Five Grimoires + Act XXIV (114 inscriptions)** (*First Person Spellbook - V5 Edition*)
+**31 Acts complete (V10.0.0 Grimoire)** (*First Person Spellbook - V5 Edition*)
 - 13 Acts + Act XXIV (Holographic Bound) + 30 Tales narrative framework
 - Symbolic compression system
 - RPP (Relationship Proverb Protocol) as assessment mechanism
@@ -816,7 +816,7 @@ Let's build this together.
   - Privacy is Value v5.0
   - Privacy Value Model V5 Formal Specification v1.0
   - UOR × 64-Tetrahedra × ZK Mapping v2.0
-  - Five Grimoires + Act XXIV (114 inscriptions)
+  - 31 Acts complete (V10.0.0 Grimoire)
   - Glossary v3.0
   - Promise Theory Reference v1.3
   - IEEE 7012 Quick Reference v1.0
@@ -830,4 +830,4 @@ Let's build this together.
 | 1.3 | Dec 11, 2025 | Alignment update: Updated all companion document references. Added Claims Classification approach. Clarified ZKPs prove structural constraints. Clarified Promise Theory as semantic framework. |
 | **1.4** | **Jan 29, 2026** | **IEEE 7012-2025 Integration**: Added IEEE 7012 to timely convergence. Added MyTerms Alliance to collaborators. Updated all companion document references (Research Paper v3.8, Whitepaper v5.0, Five Grimoires (113 inscriptions), Glossary v2.5). Added IEEE 7012 bilateral agreement layer to Implemented section. |
 | **1.6** | **Feb 20, 2026** | **V4 Convergence Update**: Upgraded tetrahedral confidence 5% → 25-40% with triple derivation evidence. Added UOR convergence validation as collaboration opportunity (Algebraist/Combinatorialist). Added Convergent Preliminary and V4 Conjectured tiers to Research Status. Updated all companion document references. Added Privacy is Value v4.0 and UOR Mapping v1.0 to companion documents. |
-| **2.0** | **Feb 27, 2026** | **V5 Holographic Bound Integration**: C4 RESOLVED via holographic principle. Added three-axis separation (agent · data · inference) as research direction. Added BRAID efficiency validation workstream. Added compression-as-defence hypothesis. Added holonic persistence collaboration opportunity. Updated all companion document references to V5 versions. Five Grimoires + Act XXIV (114 inscriptions). |
+| **2.0** | **Feb 27, 2026** | **V5 Holographic Bound Integration**: C4 RESOLVED via holographic principle. Added three-axis separation (agent · data · inference) as research direction. Added BRAID efficiency validation workstream. Added compression-as-defence hypothesis. Added holonic persistence collaboration opportunity. Updated all companion document references to V5 versions. 31 Acts complete (V10.0.0 Grimoire). |

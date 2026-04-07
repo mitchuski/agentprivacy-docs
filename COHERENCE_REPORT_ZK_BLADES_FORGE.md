@@ -1,6 +1,6 @@
 # Coherence Report: ZK Blades Forge
 
-**Date:** March 31, 2026
+**Date:** April 7, 2026 (V10 aligned)
 **Scope:** `zk blades forge/` specification vs `swordsman-blade/` implementation vs `agentprivacy-docs/`
 **Status:** COHERENT with minor gaps noted
 

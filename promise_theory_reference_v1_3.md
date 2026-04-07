@@ -815,7 +815,7 @@ English:           Swordsman promises protection to First Person,
 - UOR × 64-Tetrahedra × ZK Mapping v2.0 — C4 resolved via holographic principle
 - Glossary v3.0 — Canonical V5 terminology (140 entries)
 - VRC Promise Protocol v3.3 — Economic architecture with guild efficiency
-- Five Grimoires + Act XXIV — 114 inscriptions including Holographic Bound
+- 31 Acts complete — V10.0.0 Grimoire including Holographic Bound
 
 ---
 

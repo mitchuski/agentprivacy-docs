@@ -1,6 +1,6 @@
 # Convergence Study: DUAL_TERRITORY_CEREMONY_SPEC_v1.md
 
-**Date:** March 31, 2026
+**Date:** April 7, 2026 (V10 aligned)
 **Document Under Review:** `DUAL_TERRITORY_CEREMONY_SPEC_v1.md`
 **Author:** privacymage
 **Prepared For:** Integration into agentprivacy-docs

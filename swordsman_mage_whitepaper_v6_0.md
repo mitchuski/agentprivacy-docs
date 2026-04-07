@@ -3,8 +3,8 @@
 Protect or Delegate → Reflect and Connect → Three-Axis Separation (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂
 
 **Author:** privacymage
-**Date:** March 31, 2026
-**Version:** 6.2 (V5.4 UOR Algebraic Foundation)
+**Date:** April 7, 2026
+**Version:** 6.3 (V10.0.0 Grimoire aligned)
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
@@ -71,7 +71,7 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 **Genesis Ceremony**: One-time agent pair origination, 1 ZEC ($500), different from signals
 
-**Spellbook**: Source material for learning (12 Acts + bookends = 13 sections, plus 30 tales in Zero Spellbook)
+**Spellbook**: Source material for learning (31 Acts + bookends = 32 sections, plus 30 tales in Zero Spellbook)
 
 **RPP (Relationship Proverb Protocol)**: Compression protocol proving comprehension---1 proverb formed = 1 signal posted
 
@@ -111,7 +111,7 @@ Other documents translate these concepts:
 
 For complete terminology and economic details, see companion documents:
 
-- `GLOSSARY_MASTER_v2_3.md` --- Complete protocol terminology
+- `GLOSSARY_MASTER_v4_0.md` --- Complete protocol terminology
 
 - `promise_theory_reference_v1_0.md` --- Promise Theory foundations
 
@@ -1908,7 +1908,7 @@ This architecture is being developed now. This is the inflection point.
 
 - **Version:** 6.2
 
-- **Date:** March 31, 2026
+- **Date:** April 7, 2026
 
 - **Website:** <https://agentprivacy.ai>
 

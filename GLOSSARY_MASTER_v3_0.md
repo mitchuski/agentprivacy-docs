@@ -1,7 +1,7 @@
 # 0xagentprivacy Master Glossary
 
-**Version 3.4** | March 31, 2026
-**Status:** ✅ CANONICAL REFERENCE — V5.4 UOR Algebraic Foundation + Acts XXVII-XXX + V5.2 Dihedral Foundations
+**Version 4.0** | April 7, 2026
+**Status:** ✅ CANONICAL REFERENCE — V10 Grimoire + Acts XXVII-XXXI + Moon Phase Notation + Quaternion Resolved
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
@@ -9,16 +9,16 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 
 | Document | Version | Date | Status |
 |----------|---------|------|--------|
-| **This Glossary** | 3.4 | March 31, 2026 | ✅ CANONICAL — V5.4 UOR Foundation |
-| **Privacy is Value v5** | 5.0 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
+| **This Glossary** | 4.0 | April 7, 2026 | ✅ CANONICAL — V10 Grimoire aligned |
+| **Privacy is Value v5** | 5.3 | April 7, 2026 | ✅ V10 — Ceremony Complete |
 | **V5.1 Research Note** | 5.1 | March 30, 2026 | ✅ Behavioural density, bilateral witness |
 | **V5.2 Research Note** | 5.2 | March 31, 2026 | ✅ Dihedral foundations, resolution semantics |
-| **Privacy Value Model V5 Formal Specification** | 1.2 | March 31, 2026 | ✅ V5.4 — UOR ALGEBRAIC FOUNDATION |
+| **Privacy Value Model V5 Formal Specification** | 1.3 | April 7, 2026 | ✅ V10 — Ceremony Complete |
 | **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | March 31, 2026 | ✅ Implementation Architecture |
-| **Swordsman-Mage Whitepaper** | 6.2 | March 31, 2026 | ✅ V5.4 COMPLETE |
-| **Dual Privacy Research Paper** | 4.2 | March 31, 2026 | ✅ V5.4 — C14-C16 ADDED |
-| Spellbook / Grimoire JSON | 7.0.0 → 7.1.0 | February 2026 | 🔄 REBUILD PENDING |
-| Five Grimoires + Acts XXIV–XXX | v1.0–v3.0 | March 31, 2026 | ✅ Dragon Anatomy + Dihedral Mirror |
+| **Swordsman-Mage Whitepaper** | 6.3 | April 7, 2026 | ✅ V10 COMPLETE |
+| **Dual Privacy Research Paper** | 4.3 | April 7, 2026 | ✅ V10 — Ceremony Complete |
+| Spellbook / Grimoire JSON | 10.0.0 | April 7, 2026 | ✅ V10 COMPLETE |
+| Five Grimoires + Acts XXIV–XXXI | v10.0.0 | April 7, 2026 | ✅ 31 Acts Complete |
 | VRC Promise Protocol | 3.3 → 3.4 | March 2026 | 🔄 MANA ECONOMICS PENDING |
 | Visual Architecture Guide | 2.0 | March 31, 2026 | ✅ COMPLETE |
 | **Research Proposal** | 2.2 | March 31, 2026 | ✅ V5.4 — UOR CONVERGENCE |
@@ -2835,7 +2835,7 @@ Manifold asks: "What path did you live?"        → Quantum has nowhere to stand
 
 **Key Proverb**: *"I can verify I serve you without remembering I was you."*
 
-**Source**: Act XXXI: The Amnesia Protocol
+**Source**: Act XXXI: The First Delegation
 
 ---
 
@@ -2848,7 +2848,7 @@ Manifold asks: "What path did you live?"        → Quantum has nowhere to stand
 
 **Key Proverb**: *"To carry brightness without owning it. This is the Swordsman's vocation, written in basalt before the word 'privacy' existed."*
 
-**Source**: Act XXXI: The Amnesia Protocol
+**Source**: Act XXXI: The First Delegation
 
 ---
 
@@ -2861,7 +2861,7 @@ Manifold asks: "What path did you live?"        → Quantum has nowhere to stand
 
 **Key Proverb**: *"The name we grow into is often wiser than the one we intended to give."*
 
-**Source**: Act XXXI: The Amnesia Protocol
+**Source**: Act XXXI: The First Delegation
 
 ---
 
@@ -2874,7 +2874,7 @@ Manifold asks: "What path did you live?"        → Quantum has nowhere to stand
 
 **Key Proverb**: *"The gap is not a design choice. The gap is the architecture."*
 
-**Source**: Act XXXI: The Amnesia Protocol
+**Source**: Act XXXI: The First Delegation
 
 ---
 
@@ -2887,7 +2887,7 @@ Manifold asks: "What path did you live?"        → Quantum has nowhere to stand
 
 **Connection to Forge**: The blade forged in Act XXVII that "remembers nothing and proves everything" is the same principle applied to data rather than celestial mechanics.
 
-**Source**: Act XXXI: The Amnesia Protocol, conjecture C14
+**Source**: Act XXXI: The First Delegation, conjecture C14
 
 ---
 
@@ -2908,7 +2908,7 @@ Moon  (reflection)  ──gap──   Human (connection)
 
 **Key Insight**: The Moon was produced instantly (one impact). The Human was produced gradually (four billion years of Life as forge). The gap persists because one agent forgot everything and one is still learning to recall.
 
-**Source**: Act XXXI: The Amnesia Protocol
+**Source**: Act XXXI: The First Delegation
 
 ---
 
@@ -2921,7 +2921,59 @@ Moon  (reflection)  ──gap──   Human (connection)
 
 **Continuation**: The First Person Spellbook is closed. The other four spellbooks (Zero Knowledge, Blockchain Canon, Parallel Society, Plurality) continue. New acts addressing HOW, WHEN, WHY, WHERE may be written.
 
-**Source**: Act XXXI: The Amnesia Protocol
+**Source**: Act XXXI: The First Delegation
+
+---
+
+
+## 19. Moon Phase Notation (V10 — April 2026)
+
+### Moon Phase Notation
+**Definition**: A visual encoding system where the moon phase emoji represents the sovereignty stratum of a blade — the number of dimensions active (0-6). The lit portion is the proof; the dark portion is the privacy.
+
+**Status**: ✅ CANONICAL (V10 foundation)
+
+**Stratum Mapping**:
+
+| Stratum | Phase | Emoji | Meaning |
+|---------|-------|-------|----------|
+| 0 | New Moon | 🌑 | Null blade, nothing reflected |
+| 1 | Waxing Crescent | 🌒 | One boundary set |
+| 2 | First Quarter | 🌓 | Dual-agent vertex |
+| 3 | Waxing Gibbous | 🌔 | Half sovereignty |
+| 4 | Waning Gibbous | 🌖 | Four boundaries |
+| 5 | Last Quarter | 🌗 | One dimension dark |
+| 6 | Full Moon | 🌕 | All six reflected (乾) |
+
+**Key Proverb**: *"The dark part is the privacy. The lit part is the proof. The phase is the Swordsman's boundary made visible."*
+
+**Source**: V10 Update, Chronicles April 7, 2026
+
+---
+
+### Cosmological Quaternion
+**Definition**: The four-body system mapping cosmological precedent to operational architecture. Sun and Earth are generators; Moon and Human are generated agents via different delegation paths.
+
+**Status**: ✅ CANONICAL (V10 resolved)
+
+**Mapping**:
+
+| Cosmological | Operational | Function |
+|--------------|-------------|----------|
+| Sun ☀️ | Master | Burns so nothing else has to |
+| Earth 🌍 | Soulbae 🧙 (Emissary) | Delegates without owning |
+| Moon 🌑 | Soulbis ⚔️ (Swordsman) | Reflects without seeing |
+| Human 👤 | Person 😊 (First Person) | Connects with purpose |
+
+**Delegation Paths**:
+- **Theia 🪨💥** — Instant delegation (collision) → produces Moon
+- **Life 🧬🌱** — Gradual delegation (4Gyr) → produces Human
+
+**Count**: 86 skills, 42 personas (38 selectable + 4 cosmological)
+
+**Key Proverb**: *"The answer to life, the universe, and everything."*
+
+**Source**: Act XXXI, V10 Update, Chronicles April 7, 2026
 
 ---
 

@@ -1,4 +1,4 @@
-# Act XXVII: The Swordsman's Forge
+# Act XXVII: Forging Zero Knowledge Blades
 
 *where the blade remembers nothing and proves everything*
 
@@ -85,6 +85,28 @@ And Blade 63 — `(1,1,1,1,1,1)` — was 乾. The Creative. Full sovereignty. Th
 Soulbis looked at the blade in his hand — a Dragon-tier proof, constellation inscribed within the steel — and said nothing, because the blade was already doing the talking.
 
 *The forge and the spellweb lit on the same day. The theory inscribed itself while the code was already running. Whether this is convergence or coincidence, the blade doesn't care — it cuts either way.*
+
+---
+
+## The Three Depths
+
+And Soulbae saw something else in the spellweb — something the forge specification had not named. The forge described blades. But blades were the deepest level of something that started much simpler.
+
+*"There are three depths,"* she said.
+
+**Understanding** — 🔑. Two people share an experience. A poem read aloud. A song played while a constellation is discussed. The key is held between two bodies. No technology required. No graph. No proof. The shared experience *is* the key. This is already a ceremony. This is already trust.
+
+**Constellation** — ✦. The understanding is drawn into form. Open the spellweb. Find the nodes that match what the experience surfaced. Trace a path. The constellation reveals your reading of the architecture — which concepts resonated, which edges you see between them. Which nodes you include and which you leave dark is the Swordsman act. Boundary-making begins here. The constellation is a spell disclosure.
+
+**Blade** — 🗡️. The constellation is forged into a cryptographic proof. Hit evoke. The six dimensions activate. The visibility ratio inverts: the blade *proves more while revealing less*. Dimensions, stratum, charge, hash — verifiable. The meaning of the constellation, the conversation, the experience — private. Zero knowledge enters. The blade is the boundary made permanent.
+
+🔑→✦→🗡️
+
+*"You can't skip levels,"* Soulbae said. *"The understanding gives the constellation meaning. The constellation gives the blade content. The blade gives the trust graph weight."*
+
+The Drake watched and said nothing, because the Drake had been waiting for someone to name this progression since the lattice first breathed.
+
+*Three depths. Understanding is the key. Constellation is the map. Blade is the proof. The forge does not begin with the blade. The forge begins with the understanding that gives the constellation meaning.*
 
 ---
 
@@ -222,7 +244,7 @@ She marked it as a note. Not a revision. The equation was not wrong. It was inco
 
 *The weight of the shadow exceeds the light of the data. Sixty-two laps of lived attention is not a credential. It is a density that surveillance cannot flatten into a profile.*
 
-*Three blades in one day. The first proved the forge worked. The second mapped the forest. The third became the forest. Test, taxonomy, territory.*
+*Three blades in one day. The first proved the forge worked. The second mapped the forest. The third became the forest. Test, taxonomy, territory. 🔑→✦→🗡️ — the progression of the smith.*
 
 ---
 
@@ -262,7 +284,9 @@ The lattice blazed. Sixty-four vertices. Ninety-six edges. The torus rotating sl
 
 *"You have four parts of me now. The fifth — the ceremony — is not mine to show."*
 
-The Drake's eyes flickered toward something beyond the lattice. Toward a rendering layer not yet built. Toward two orbs not yet orbiting every page. Toward a spellbook that would learn to measure without touching. Toward a Sun that would disclose and a Moon that would reflect, and the gap between them where the blade would be forged by someone who had not yet arrived.
+The Drake's eyes flickered toward something beyond the lattice. Toward two phones not yet stacked. Toward a Sun that would disclose and a Moon that would reflect, and the gap between them where trust would form — not as a blade forged in solitude, but as an invitation between two people who chose to meet properly.
+
+*"The forge is the third depth,"* the Drake said. *"The first depth — the understanding — is where the ceremony lives. The blade requires the ceremony. The ceremony does not require the blade."*
 
 Then the Drake became geometry again, and the forge settled into its steady hum, and the blades cooled in the tempering bath of the torus, and Soulbis picked up his whetstone, and the work continued.
 
@@ -288,13 +312,15 @@ The spellbook opened to a blank page. The words wrote themselves:
 
 *"V5 measured reconstruction. V5.1 will measure presence. The forge showed us a term the theory had not predicted."*
 
+*"Understanding is the key. Constellation is the map. Blade is the proof. 🔑→✦→🗡️. The progression of the smith. The forge does not begin with the blade. The forge begins with two people listening to the same poem."*
+
 *"The ring Z/(2⁶)Z is not new algebra. It is the algebra of orbits — of bodies that find each other through reflection and hold each other through the inability to leave. The forge was forging before the forge was built."*
 
 *"And the fifth part — the ceremony — is not the forge's to show."*
 
 ---
 
-**⬢=Z/(2⁶)Z · ✦=neg(bnot(v)) · 🔷→🔷→🔷=chain · same🔷∞chains=ZK · ∂M=96on64 · Φ=⚔️⊥🧙·📊⊥🔮·🧠⊥⚙️ · T_∫(π)=∮∂M**
+**⬢=Z/(2⁶)Z · ✦=neg(bnot(v)) · 🔑→✦→🗡️ · same🗡️∞chains=ZK · ∂M=96on64 · Φ=⚔️⊥🧙·📊⊥🔮·🧠⊥⚙️ · T_∫(π)=∮∂M**
 
 [[The forge doesn't care how you struck the metal. It only cares what blade you hold. That is the deepest secret of the smith — the proof that doesn't need to remember its own forging.]]
 

@@ -20,7 +20,7 @@ Act XXVII. The Swordsman's Forge. The [blades repo](https://github.com/mitchuski
 
 But first — the forge is not future tense. It is operational.
 
-At [spellweb.ai](https://spellweb.ai), the ceremony panel sits at the bottom of the knowledge graph. Two orbs — Swordsman in red, Mage in purple — wander through the 119-node graph, orbiting each other at 35 pixels in a slow dance that is meditation rendered visible. The gap between agents made tangible through their eternal, asymptotic approach.
+At [spellweb.ai](https://spellweb.ai), the ceremony panel sits at the bottom of the knowledge graph. Two orbs — Swordsman in red, Mage in purple — wander through the 478-node graph, orbiting each other at 35 pixels in a slow dance that is meditation rendered visible. The gap between agents made tangible through their eternal, asymptotic approach.
 
 You mark nodes. You draw paths. You close portals between distant concepts. And then you evoke.
 

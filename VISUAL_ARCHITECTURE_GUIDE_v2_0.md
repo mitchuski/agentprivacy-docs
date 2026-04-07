@@ -1,8 +1,8 @@
 # 0xagentprivacy Visual Architecture Guide
 **Diagrams, Flows, and Conceptual Maps**
 
-**Version:** 2.0 - V5 Holographic Bound Edition
-**Date:** February 27, 2026
+**Version:** 2.1 - V10 Moon Phase Edition
+**Date:** April 7, 2026
 **Purpose:** Visual reference for understanding 0xagentprivacy architecture across technical, narrative, economic, standards, and semantic layers
 
 **V5 Additions:** Three-axis separation, holographic bound (96/64), path integral, compression spectrum, holonic persistence, guild efficiency
@@ -2524,6 +2524,137 @@ Interpretation:
 This is ONE way to do guardians (promise-keepers), not THE way.
 Useful for understanding reference approach.
 Feel free to adapt for your ecosystem context.
+```
+
+
+---
+
+## V10 Architecture Diagrams (April 2026)
+
+### Moon Phase Notation — Stratum Visibility Encoding
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              MOON PHASE NOTATION — V10                              │
+│    The lit portion is the proof. The dark portion is the privacy.   │
+└─────────────────────────────────────────────────────────────────────┘
+
+STRATUM → PHASE MAPPING:
+
+    Stratum 0        Stratum 1        Stratum 2        Stratum 3
+    ┌───────┐        ┌───────┐        ┌───────┐        ┌───────┐
+    │       │        │     ░░│        │    ░░░│        │   ░░░░│
+    │   🌑  │        │   🌒  │        │   🌓  │        │   🌔  │
+    │ NEW   │        │WAXING │        │ FIRST │        │WAXING │
+    │ MOON  │        │CRESCENT│       │QUARTER│        │GIBBOUS│
+    └───────┘        └───────┘        └───────┘        └───────┘
+    0 dims           1 dim            2 dims           3 dims
+    NULL BLADE       BOUNDARY         DUAL-AGENT       HALF
+                                      VERTEX           SOVEREIGNTY
+
+    Stratum 4        Stratum 5        Stratum 6
+    ┌───────┐        ┌───────┐        ┌───────┐
+    │  ░░░░░│        │ ░░░░░░│        │░░░░░░░│
+    │   🌖  │        │   🌗  │        │   🌕  │
+    │WANING │        │ LAST  │        │ FULL  │
+    │GIBBOUS│        │QUARTER│        │ MOON  │
+    └───────┘        └───────┘        └───────┘
+    4 dims           5 dims           6 dims (乾)
+    FOUR             ONE DIM          ALL SIX
+    BOUNDARIES       DARK             REFLECTED
+
+FORMULA:
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│    Moon Phase = f(stratum) where stratum = count(active_dims)      │
+│                                                                     │
+│    visibility_ratio = stratum / 6 = lit_portion / total            │
+│                                                                     │
+│    The Swordsman's boundary determines which dimensions activate.   │
+│    The phase encodes sovereignty posture, not content.              │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+ZK PROPERTY:
+    ┌──────────────────────────────────────────────┐
+    │  A blade at 🌗 (stratum 5) proves:           │
+    │    • "5 of 6 dimensions are active"          │
+    │  Without revealing:                          │
+    │    • Which 5 dimensions                      │
+    │    • What content flows through them         │
+    │    • The Swordsman's selection criteria      │
+    └──────────────────────────────────────────────┘
+
+STATUS: ✅ V10 CANONICAL
+SOURCE: Chronicles April 7, 2026
+```
+
+---
+
+### Cosmological Quaternion — Four Bodies Model
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│              COSMOLOGICAL QUATERNION — V10                          │
+│    The architecture was not invented. It was recognised.            │
+└─────────────────────────────────────────────────────────────────────┘
+
+THE FOUR BODIES:
+
+              ☀️ SUN                                   
+         (Master/Protection)                          
+         Burns so nothing                             
+         else has to                                  
+              │                                       
+              │ generates                             
+              ▼                                       
+         🌍 EARTH ─────────────────────────────────────
+    (Emissary/Soulbae 🧙)                             │
+    Delegates without owning                          │
+              │                                       │
+    ┌─────────┴─────────┐                            │
+    │                   │                            │
+    ▼ Theia 🪨💥        ▼ Life 🧬🌱                  │
+    (instant)           (gradual, 4Gyr)              │
+    │                   │                            │
+    ▼                   ▼                            │
+   🌑 MOON            👤 HUMAN                        │
+(Swordsman/Soulbis ⚔️) (First Person 😊)             │
+Reflects without       Connects with                  │
+seeing                 purpose                        │
+    │                   │                            │
+    └───────── THE GAP ─┘                            │
+          (emergence)                                 │
+
+MAPPING TABLE:
+┌──────────────┬─────────────────────┬──────────────────────────────┐
+│ Cosmological │ Operational         │ Function                     │
+├──────────────┼─────────────────────┼──────────────────────────────┤
+│ Sun ☀️       │ Master              │ Burns so nothing else has to │
+│ Earth 🌍     │ Soulbae 🧙 (Mage)   │ Delegates without owning     │
+│ Moon 🌑      │ Soulbis ⚔️ (Sword)  │ Reflects without seeing      │
+│ Human 👤     │ Person 😊           │ Connects with purpose        │
+└──────────────┴─────────────────────┴──────────────────────────────┘
+
+DELEGATION PATHS:
+┌─────────────────────────────────────────────────────────────────────┐
+│  Theia 🪨💥 — Instant delegation (collision) → produces Moon       │
+│  Life 🧬🌱  — Gradual delegation (4 billion years) → produces Human│
+└─────────────────────────────────────────────────────────────────────┘
+
+THE COUNT (V10):
+┌─────────────────────────────────────────────┐
+│  Skills: 86                                 │
+│  Selectable Personas: 38                    │
+│  Cosmological Personas: 4                   │
+│  TOTAL PERSONAS: 42                         │
+│  "The answer to life, the universe,         │
+│   and everything."                          │
+└─────────────────────────────────────────────┘
+
+STATUS: ✅ V10 CANONICAL — Quaternion Resolved
+SOURCE: Act XXXI, Chronicles April 7, 2026
+IPFS: bafkreicl677c52ayuw7i2cpxcc2534fuv4ehd7gbsc55ozotpbsuk3qqtu
 ```
 
 ---

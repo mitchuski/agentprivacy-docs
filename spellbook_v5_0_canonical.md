@@ -1,10 +1,10 @@
 # The 0xagentprivacy Spellbook: Complete System
 ## Symbolic Language, Trust Game, and Recovery Architecture for Sovereign Agency
 
-**Version 5.0-canonical - Five Spellbooks Edition**
+**Version 5.3 (V10.0.0 Ceremony Complete)**
 
 **Author:** privacymage  
-**Date:** January 29, 2026
+**Date:** April 7, 2026
 
 ---
 
@@ -56,7 +56,7 @@ This spellbook is a living document—part technical manual, part narrative fict
 
 **Three Ways to Read:**
 
-1. **Narrative Journey**: Read the Story Spellbook (18 Acts) sequentially to follow Soulbis (Swordsman ⚔️) and Soulbae (Mage 🧙‍♂️) through their journey
+1. **Narrative Journey**: Read the Story Spellbook (31 Acts) sequentially to follow Soulbis (Swordsman ⚔️) and Soulbae (Mage 🧙‍♂️) through their journey
 2. **Technical Reference**: Study the Zero Knowledge Spellbook (30 Tales) for cryptographic foundations
 3. **Historical Context**: Study the Canon (11 Chapters) to understand WHY this architecture became necessary
 

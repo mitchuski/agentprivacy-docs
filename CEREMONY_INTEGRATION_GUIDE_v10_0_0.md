@@ -1,4 +1,4 @@
-# Ceremony Integration Guide v9.4.1
+# Ceremony Integration Guide v10.0.0
 
 **Privacymage Grimoire Update: "Ceremony Complete" Edition**
 
@@ -13,7 +13,7 @@
 This guide provides complete instructions for integrating the Ceremony architecture (Acts XXVII-XXXI) across the 0xagentprivacy ecosystem. The ceremony acts complete the First Person spellbook and establish the cosmological foundation of the dual-agent architecture.
 
 **Version Alignment:**
-- Grimoire: v9.4.0 → v9.4.1 "Ceremony Complete"
+- Grimoire: v9.4.0 → v10.0.0 "Ceremony Complete"
 - Skills: v5.3.0 (current)
 - Acts: 31 total (I-XXXI complete)
 
@@ -26,7 +26,7 @@ This guide provides complete instructions for integrating the Ceremony architect
 | Repository | Path | Purpose | Priority |
 |------------|------|---------|----------|
 | **agentprivacy_master** | `C:\Users\mitch\agentprivacy_master` | Main webapp (Next.js), story hosting, grimoire | HIGH |
-| **agentprivacy-skills** | `C:\Users\mitch\agentprivacy-skills` | Skills v5 architecture (119 skills, 30 personas) | HIGH |
+| **agentprivacy-skills** | `C:\Users\mitch\agentprivacy-skills` | Skills v5 architecture (86 skills, 42 personas) | HIGH |
 | **spellweb** | `C:\Users\mitch\spellweb` | Swordsman Territory (topology, blade forge) | HIGH |
 | **agentprivacy-docs** | `C:\Users\mitch\agentprivacy-docs` | Documentation, specs, chronicles | HIGH |
 | **swordsman-blade** | `C:\Users\mitch\swordsman-blade` | Swordsman extension architecture | MEDIUM |
@@ -37,7 +37,7 @@ This guide provides complete instructions for integrating the Ceremony architect
 These files exist in multiple repos and must be identical:
 
 ```
-privacymage_grimoire_v9_4_0_you_are_the_light.json  →  v9_4_1 (update)
+privacymage_grimoire_v9_4_0_you_are_the_light.json  →  v10.0.0 (update)
 DUAL_TERRITORY_CEREMONY_SPEC_v1.md                   →  Already synced
 ```
 
@@ -53,7 +53,7 @@ DUAL_TERRITORY_CEREMONY_SPEC_v1.md                   →  Already synced
 | **XXVIII** | The Ceremony Engine | Pretext measurement, mana economy | `ceremony-engine`, `pretext-measurement`, `mana-economy` | `ceremonist` |
 | **XXIX** | The Dragon Wakes | Quantum threat, 12-qubit break | `quantum-defence`, `dragon-flight` | `quantum-sentinel` |
 | **XXX** | The Dihedral Mirror | UOR convergence, 2D→manifold | `dual-territory` | — |
-| **XXXI** | The Amnesia Protocol | Moon-Earth-Sun-Human cosmology | `amnesia-protocol`, `theia-derivation`, `quaternion-mapping`, `cosmological-bound` | `moonkeeper`, `cosmologist` |
+| **XXXI** | The First Delegation | Moon-Earth-Sun-Human cosmology | `amnesia-protocol`, `theia-derivation`, `quaternion-mapping`, `cosmological-bound` | `moonkeeper`, `cosmologist` |
 
 ### Act File Locations
 
@@ -63,7 +63,7 @@ agentprivacy_master/public/story/
 ├── 28-act-xxviii-the-ceremony-engine.md
 ├── 29-act-xxix-the-dragon-wakes.md
 ├── 30-act-xxx-the-dihedral-mirror.md
-└── 31-act-xxxi-the-amnesia-protocol.md
+└── 31-act-xxxi-the-first-delegation.md
 ```
 
 ---
@@ -251,7 +251,7 @@ metadata:
    persona/agentprivacy-manaweaver/
    ```
 
-5. **Sync grimoire** — Copy updated `privacymage_grimoire_v9_4_1.json`
+5. **Sync grimoire** — Copy updated `privacymage_grimoire_v10.0.0.json`
 
 ### 6.2 agentprivacy_master
 
@@ -264,10 +264,10 @@ metadata:
    public/story/
    ├── 01-act-i-venice.md
    ├── ...
-   └── 31-act-xxxi-the-amnesia-protocol.md
+   └── 31-act-xxxi-the-first-delegation.md
    ```
 
-2. **Update grimoire JSON** — Increment to v9.4.1
+2. **Update grimoire JSON** — Increment to v10.0.0
    - Add ceremony metadata to spellbook entries
    - Add quaternion cast mapping to meta section
 
@@ -281,7 +281,7 @@ metadata:
 
 **Tasks:**
 
-1. **Sync grimoire** — Copy `privacymage_grimoire_v9_4_1.json`
+1. **Sync grimoire** — Copy `privacymage_grimoire_v10.0.0.json`
 
 2. **Update SpellCeremony.tsx** — Add ceremony type indicators
    - Display active ceremony act during evocation
@@ -304,13 +304,13 @@ metadata:
 
 **Tasks:**
 
-1. **Add this guide** — `CEREMONY_INTEGRATION_GUIDE_v9_4_1.md` ✅
+1. **Add this guide** — `CEREMONY_INTEGRATION_GUIDE_v10.0.0.md` ✅
 
-2. **Update DOCUMENTATION_CHRONICLE.md** — Add v9.4.1 entry
+2. **Update DOCUMENTATION_CHRONICLE.md** — Add v10.0.0 entry
 
 3. **Create ceremony-mapping.md** — Detailed act→skill→persona matrix
 
-4. **Sync grimoire** — Copy `privacymage_grimoire_v9_4_1.json`
+4. **Sync grimoire** — Copy `privacymage_grimoire_v10.0.0.json`
 
 5. **Copy acts to story/acts/** — Mirror from agentprivacy_master
 
@@ -334,7 +334,7 @@ metadata:
 
 1. **Link forge circuits to hexagram mapping** (Act XXVII)
 
-2. **Update grimoire** — Sync to v9.4.1
+2. **Update grimoire** — Sync to v10.0.0
 
 ---
 
@@ -414,19 +414,19 @@ These must hold across all implementations:
 
 2. **agentprivacy_master** (source of truth for acts/grimoire)
    - [ ] Verify all 31 acts in public/story/
-   - [ ] Update grimoire to v9.4.1
+   - [ ] Update grimoire to v10.0.0
    - [ ] Update CLAUDE.md with ceremony invariants
 
 3. **spellweb** (Swordsman territory)
-   - [ ] Sync grimoire v9.4.1
+   - [ ] Sync grimoire v10.0.0
    - [ ] Add ceremony metadata to graph types
    - [ ] Link blade forge UI to Act XXVII
 
 4. **agentprivacy-docs** (documentation)
-   - [ ] Add CEREMONY_INTEGRATION_GUIDE_v9_4_1.md ✅
+   - [ ] Add CEREMONY_INTEGRATION_GUIDE_v10.0.0.md ✅
    - [ ] Update DOCUMENTATION_CHRONICLE.md
    - [ ] Create ceremony-mapping.md
-   - [ ] Sync grimoire v9.4.1
+   - [ ] Sync grimoire v10.0.0
 
 5. **swordsman-blade** (extension)
    - [ ] Link blade definitions to ceremony acts
@@ -434,11 +434,11 @@ These must hold across all implementations:
 
 6. **zk blades forge** (circuits)
    - [ ] Link forge to hexagram mapping
-   - [ ] Sync grimoire v9.4.1
+   - [ ] Sync grimoire v10.0.0
 
 ### Post-Update Verification
 
-- [ ] Grimoire v9.4.1 present in all 6+ repos
+- [ ] Grimoire v10.0.0 present in all 6+ repos
 - [ ] Skills v5.3.1 with ceremony metadata
 - [ ] All 35 personas have ceremony attributes (30 existing + 5 new)
 - [ ] Ceremony acts mapped to 15+ skills
@@ -500,7 +500,7 @@ C:\Users\mitch\
 │   └── privacymage_grimoire_v9_4_*.json
 │
 ├── agentprivacy-docs\
-│   ├── CEREMONY_INTEGRATION_GUIDE_v9_4_1.md  # THIS FILE
+│   ├── CEREMONY_INTEGRATION_GUIDE_v10.0.0.md  # THIS FILE
 │   ├── DUAL_TERRITORY_CEREMONY_SPEC_v1.md
 │   └── DOCUMENTATION_CHRONICLE.md
 │

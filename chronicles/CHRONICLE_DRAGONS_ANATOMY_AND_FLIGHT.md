@@ -20,7 +20,7 @@ Twenty-three documents. Sixty-five thousand words. The dragon got its body and l
 
 ### Day 1 — Saturday, March 29
 
-**Morning:** The spellweb blade forge goes operational. Ceremony panel with dual orbs (Swordsman red, Mage purple) wandering 119-node D3.js knowledge graph. Evocation drives orbs through constellation paths. Six-dimension blade activation based on actual traversal. Tier classification (Light/Heavy/Dragon via Pascal's row strata). Blade SVG carries constellation inscribed within it.
+**Morning:** The spellweb blade forge goes operational. Ceremony panel with dual orbs (Swordsman red, Mage purple) wandering 478-node D3.js knowledge graph (984 edges). Evocation drives orbs through constellation paths. Six-dimension blade activation based on actual traversal. Tier classification (Light/Heavy/Dragon via Pascal's row strata). Blade SVG carries constellation inscribed within it.
 
 **Afternoon:** Hexagram convergence. The spellweb's six dimensions (d1Hide through d6Delegate) mapped to I Ching hexagram lines when binarised at 0.5 threshold. Blade 63 = 乾 (The Creative) = full sovereignty. Node inspector renders hexagram states. Blade tracing with tier-coloured cut segments. I Ching confidence upgraded from 25% to 50% — "implemented-coherent, origin of coherence unclear."
 

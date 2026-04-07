@@ -67,7 +67,7 @@ The 0xagentprivacy ecosystem has two territories and two extensions connected by
 | `types/graph.ts` | Hexagram types + dimension computation | ✅ Operational |
 
 **Existing features:**
-- 119-node knowledge graph with D3 force simulation
+- 478-node knowledge graph (984 edges) with D3 force simulation
 - Dual orbs (Swordsman red `#e74c3c`, Mage purple `#9b59b6`)
 - Constellation marking, saving, loading
 - Evocation (orbs trace constellation path, count laps, accumulate charge)

@@ -41,7 +41,7 @@ mythtomath/ → agentprivacy_master/public/story/
 ├── act-xxviii-the-ceremony-engine.md
 ├── act-xxix-the-dragon-wakes.md
 ├── act-xxx-the-dihedral-mirror.md
-└── act-xxxi-the-amnesia-protocol.md
+└── act-xxxi-the-first-delegation.md
 
 mythtomath/ → agentprivacy_master/public/blog/
 ├── blog-part0-the-myth-before-the-math.md
@@ -113,7 +113,7 @@ mythtomath/ → spellweb/public/story/
 ├── act-xxviii-the-ceremony-engine.md
 ├── act-xxix-the-dragon-wakes.md
 ├── act-xxx-the-dihedral-mirror.md
-└── act-xxxi-the-amnesia-protocol.md
+└── act-xxxi-the-first-delegation.md
 ```
 
 ### Knowledge Graph Updates
@@ -262,7 +262,7 @@ mythtomath/ → agentprivacy-docs/story/acts/
 ├── act-xxviii-the-ceremony-engine.md
 ├── act-xxix-the-dragon-wakes.md
 ├── act-xxx-the-dihedral-mirror.md
-└── act-xxxi-the-amnesia-protocol.md
+└── act-xxxi-the-first-delegation.md
 
 mythtomath/ → agentprivacy-docs/blog/
 ├── blog-part0-the-myth-before-the-math.md
@@ -316,7 +316,7 @@ Add to the Acts section:
 | XXVIII | The Ceremony Engine | Interaction design, mana economy |
 | XXIX | The Dragon Wakes | System emergence, flight threshold |
 | XXX | The Dihedral Mirror | D₂ₙ groups, the naming |
-| XXXI | The Amnesia Protocol | Cosmological closure, quaternion |
+| XXXI | The First Delegation | Cosmological closure, quaternion |
 ```
 
 Add to the Research section:
@@ -363,7 +363,7 @@ Append:
 **Session:** Act XXXI completion and suite propagation
 
 **Key additions:**
-- Act XXXI: The Amnesia Protocol (cosmological closure)
+- Act XXXI: The First Delegation (cosmological closure)
 - Blog Part 5: The Amnesia Protocol
 - 4 new skills: amnesia-protocol, cosmological-bound, theia-derivation, quaternion-mapping
 - 2 new personas: moonkeeper, cosmologist
