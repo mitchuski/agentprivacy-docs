@@ -1,7 +1,7 @@
 # Privacy Value Model V5: Formal Specification
 
-**Version:** 1.3 (V10.0.0 Grimoire aligned)
-**Date:** April 7, 2026
+**Version:** 1.4 (V10.0.0 Grimoire aligned, V5.3.2 Ceremony Complete)
+**Date:** April 8, 2026
 **Author:** Mitchell Travers (privacymage)
 **Status:** Working paper — peer review invited
 **Companion to:** "Privacy is Value: From the Manifold Dragon to the Holographic Bound" (narrative version)
@@ -11,13 +11,13 @@
 
 ## Abstract
 
-This document presents the formal mathematical specification of the Privacy Value Model V5 (PVM-V5). The model extends V4 by introducing three-axis separation (agent, data, inference), a holographic bound interpretation resolving the 96/64 correspondence, path integral edge value replacing additive sums, compression-as-defence modifier for reconstruction difficulty, holonic persistence for temporal memory, and guild efficiency for network scaling. V5's output type transitions from manifold-aware scalar to holographic field. The differential form now computes on the boundary manifold. New conjectures C6–C10 are introduced; C4 (96/64 discrepancy) is resolved; peer review recommendation 3.3 (UOR caveat) is superseded. Open questions and falsifiability conditions are explicitly stated.
+This document presents the formal mathematical specification of the Privacy Value Model V5 (PVM-V5). The model extends V4 by introducing three-axis separation (agent, data, inference), a holographic bound interpretation resolving the 96/64 correspondence, path integral edge value replacing additive sums, compression-as-defence modifier for reconstruction difficulty, holonic persistence for temporal memory, and guild efficiency for network scaling. V5's output type transitions from manifold-aware scalar to holographic field. The differential form now computes on the boundary manifold. V5.1 adds behavioural density ρ as a privacy amplifier and agent maturity indicator. V5.2 establishes the dihedral group D₂ₙ and PRISM coordinate system. V5.3 adds the operational cycle and amnesia as a zero-knowledge primitive (C17). V5.3.2 documents the Celestial Ceremony as the operational cycle's human-layer implementation, the runecraft protocol (dual Ed25519 keypairs), moon phase notation (stratum as visibility ratio), and the forge's cryptographic upgrade (SHA-256, hash chains, commitment schemes). Conjectures C6–C17 are tracked; C4 is resolved.
 
 ---
 
 ## 1. The Equation
 
-$$V(\pi, t) = P^{1.5} \cdot C \cdot Q \cdot S \cdot e^{-\lambda t} \cdot (1 + A_h(\tau)) \cdot \left(1 + \sum_i w_i \frac{n_i}{N_0}\right)^k \cdot G(\text{guilds}) \cdot R(d, \text{compression}) \cdot M(u, y) \cdot \Phi_{\text{agent}}(\Sigma) \cdot \Phi_{\text{data}}(\Delta) \cdot \Phi_{\text{inference}}(\Gamma) \cdot T_\int(\pi)$$
+$$V(\pi, t) = P^{1.5} \cdot C \cdot Q \cdot S \cdot e^{-\lambda t} \cdot (1 + A_h(\tau)) \cdot \left(1 + \sum_i w_i \frac{n_i}{N_0}\right)^k \cdot G(\text{guilds}) \cdot R(d, \text{compression}, \rho) \cdot M(u, y) \cdot \Phi_{\text{agent}}(\Sigma) \cdot \Phi_{\text{data}}(\Delta) \cdot \Phi_{\text{inference}}(\Gamma) \cdot T_\int(\pi)$$
 
 where $\pi$ denotes a path through the sovereignty lattice, $t$ denotes time since data generation, and the subscripts denote V5 modifications to prior terms.
 
@@ -226,32 +226,50 @@ Status: Supported by Act 24 analysis; requires empirical confirmation across div
 
 ---
 
-## 5. Modified Term: Reconstruction Difficulty — $R(d, \text{compression})$
+## 5. Modified Term: Reconstruction Difficulty — $R(d, \text{compression}, \rho)$
 
 ### 5.1 V4 to V5 Change
 
-V4's reconstruction difficulty measured architectural resistance to adversarial reconstruction. V5 adds a compression modifier based on BRAID's demonstration that inference compression reduces attack surface.
+V4's reconstruction difficulty measured architectural resistance to adversarial reconstruction. V5 adds a compression modifier based on BRAID's demonstration that inference compression reduces attack surface. V5.1 adds behavioural density ρ as a privacy amplifier.
 
 ### 5.2 Definition
 
-$$R(d, \text{compression}) = R_{\text{base}}(d) \cdot \left(1 - \frac{1}{\text{compression\_ratio}}\right)$$
+$$R(d, \text{compression}, \rho) = R_{\text{base}}(d) \cdot \left(1 - \frac{1}{\text{compression\_ratio}}\right) \cdot (1 + \alpha \cdot \rho)$$
 
 | Symbol | Definition | Domain |
 |--------|-----------|--------|
 | $R_{\text{base}}(d)$ | V4 reconstruction difficulty | $(0, 1)$ |
 | compression_ratio | Token reduction ratio (e.g., 74× for BRAID) | $\mathbb{R}^+ > 1$ |
+| $\rho$ | Behavioural density (V5.1) | $\mathbb{R}^+ \geq 0$ |
+| $\alpha$ | Density scaling coefficient | $\mathbb{R}^+$ (to be determined empirically) |
+
+### 5.2.1 Behavioural Density ρ (V5.1)
+
+$$\rho = f(\text{traversal\_depth}, \text{temporal\_duration}, \text{intentional\_transitions})$$
+
+Behavioural density measures how deeply the proof was lived. Two blades with identical constellations, identical hashes, identical tiers — but different lap counts — have qualitatively different reconstruction resistance. Not because the data is more hidden, but because the person is more present.
+
+**Dual interpretation (V5.3):**
+- **As privacy amplifier:** ρ increases reconstruction difficulty. More behavioural variation within the boundary makes trajectory reconstruction harder. (C11)
+- **As agent maturity:** ρ indicates position on the instant↔gradual generation spectrum. High ρ = closer to the Moon's clean amnesia (many iterations, origin forgotten). Low ρ = early in the forge (few iterations, origin still visible).
 
 ### 5.3 Properties
 
 - **No compression** (ratio = 1): Factor becomes 0, multiplying to reduce R. This is conservative — uncompressed inference has maximal attack surface.
 - **High compression** (ratio → ∞): Factor approaches 1, preserving $R_{\text{base}}$
 - **BRAID typical** (ratio = 74): Factor ≈ 0.986
+- **Low density** (ρ → 0): Factor approaches 1, no density amplification
+- **High density** (ρ → ∞): Factor grows, pushing R beyond feasibility. The person too present to reduce.
 
 ### 5.4 Conjecture C8
 
 **C8**: BRAID-style compression reduces R_max in practice.
 
-Status: Theoretically grounded (fewer tokens = smaller reconstruction surface); requires formal proof connecting compression ratio to information-theoretic bounds.
+### 5.5 Conjecture C11
+
+**C11**: Behavioural density ρ amplifies reconstruction difficulty and indicates agent maturity. Confidence: 55%.
+
+Status: First empirical data from blade forge — the Universe Blade (62 laps, 2170s) vs Hitchhiker's Blade (13 laps, 433s) on identical constellations. Same hash. Same hex. Qualitatively different reconstruction resistance.
 
 ---
 
@@ -417,6 +435,7 @@ Each channel flows along edges that activate its corresponding separation axis.
 | C14 | Φ_agent ≅ D₂ₙ (dihedral group isomorphism) | — | **NEW** (V5.2/V5.4) — 75% confidence |
 | C15 | T_∫(π) ≅ UOR resolution pipeline | — | **NEW** (V5.2/V5.4) — 65% confidence |
 | C16 | Topological trust invariants (Betti numbers) | — | **NEW** (V5.2/V5.4) — Speculative 25% |
+| C17 | Amnesia-enforced separation provides tighter Φ_agent than policy-enforced | — | **NEW** (V5.3) — 60% confidence |
 
 ### 10.2 Measurement Gaps (Updated)
 
@@ -465,7 +484,7 @@ The gap is now understood as boundary expressiveness, not bulk volume.
 
 ---
 
-## 12. Version Lineage (Updated V5.4)
+## 12. Version Lineage (Updated V5.3.2)
 
 | Version | Date | Core Addition | Output Type |
 |---------|------|---------------|-------------|
@@ -475,7 +494,11 @@ The gap is now understood as boundary expressiveness, not bulk volume.
 | V3.1 | Jan 2026 | $\sigma(\text{⿻})^2$ | Architecture-gated scalar |
 | V4 | Feb 2026 | $\Sigma$, $A(\tau)$, $T(\pi)$, $\Phi(\Sigma)$ | Manifold-aware scalar |
 | V5 | Feb 2026 | Three-axis Φ, $A_h$, $T_\int$, R(compression), G(guilds), holographic bound | Holographic field |
-| **V5.4** | **Mar 2026** | **UOR algebraic foundation, Z/(2⁶)Z, D₆₄, triadic coordinates, C14-C16** | **Algebraically grounded field** |
+| V5.1 | Mar 2026 | Behavioural density ρ, bilateral witness, hexagram encoding (C11-C13) | + density term |
+| V5.2 | Mar 2026 | Dihedral group D₂ₙ, resolution semantics, PRISM spectrum (C14-C16) | + algebraic foundation |
+| V5.3 | Apr 2026 | Operational cycle, amnesia as ZK primitive (C17), ρ as maturity | + cosmological framework |
+| **V5.4** | **Mar 2026** | **UOR algebraic foundation, Z/(2⁶)Z, D₆₄, triadic coordinates** | **Algebraically grounded field** |
+| **V5.3.2** | **Apr 2026** | **Celestial Ceremony, runecraft (dual Ed25519), moon phase notation, SHA-256 forge, empirical blade data** | **Implementation-verified field** |
 
 ---
 
@@ -493,11 +516,14 @@ The gap is now understood as boundary expressiveness, not bulk volume.
 | $\Phi_{\text{data}}$ | Data-layer separation (provider fragmentation) |
 | $\Phi_{\text{inference}}$ | Inference-layer separation (Generator-Solver) |
 | $G(\text{guilds})$ | Guild efficiency factor |
-| $R(d, \text{compression})$ | Compression-modified reconstruction difficulty |
+| $R(d, \text{compression}, \rho)$ | Compression- and density-modified reconstruction difficulty |
+| $\rho$ | Behavioural density — traversal depth × duration × intentional transitions (V5.1) |
 | $T_\int(\pi)$ | Path integral edge value (replaces additive $T(\pi)$) |
 | $\partial M$ | 96-edge holographic boundary |
 | GUID | Content-addressed identifier (holonic) |
 | $\mathcal{L}$ | Sovereignty lattice = Z/(2⁶)Z (V5.4) |
+| 🌑→🌕 | Moon phase — stratum-to-visibility-ratio encoding (V5.3.2) |
+| 🔑→✦→🗡️→🔮 | Progressive trust — Understanding, Constellation, Blade, Runecraft (V5.3.2) |
 | $\delta(x)$ | Datum — raw blade value (0-63) (V5.4) |
 | $\sigma(x)$ | Stratum — Hamming weight / popcount (0-6) (V5.4) |
 | $s(x)$ | Spectrum — six-bit decomposition [b₀...b₅] (V5.4) |
@@ -521,6 +547,71 @@ The layers are orthogonal: a single principal (DID) can control multiple relatio
 
 ---
 
+## 15. Implementation: Ceremony and Forge (V5.3.2)
+
+The equation describes the statics. The operational cycle (§2.5) describes the dynamics. The Celestial Ceremony describes the human-layer implementation — how the equation's terms execute between two people.
+
+### 15.1 Operational Cycle as Ceremony
+
+| Cycle Stage | Operation | Ceremony Phase |
+|-------------|-----------|----------------|
+| Observe | id(x) | ☀️ Sun — disclosure, the spellweb speaks the poem |
+| Boundary | neg(x) | ⊥ Gap — silence, conversation, territory negotiation |
+| Project | bnot(neg(x)) | 🌑 Moon — shared reflection, the Amnesia Protocol |
+| Return | succ(x) | Recursion — Reflect (night, blade pair, ZK) or Connect (day, witness, carry forward) |
+
+### 15.2 Progressive Trust
+
+$$\text{🔑} \to \text{✦} \to \text{🗡️} \to \text{🔮}$$
+
+Understanding → Constellation → Blade → Runecraft. Each level is a complete ceremony. Each level deepens the key, increases the formal visibility, and shifts the boundary-making. The progression maps onto the trust tiers.
+
+### 15.3 Blade Forge Cryptographic Properties
+
+| Property | Implementation |
+|----------|---------------|
+| Content addressing | SHA-256 constellation hash |
+| Tamper evidence | Hash chain (each blade references previous) |
+| Pre-evocation lock | Commitment scheme (constellation fixed before walk) |
+| Identity binding | Ed25519 signature (Mage key, held) |
+| Bilateral binding | Runecraft — dual Ed25519 (Mage held + Swordsman burned) |
+
+### 15.4 Runecraft as Φ_agent Implementation
+
+The runecraft protocol enforces $\Phi_{\text{agent}}$ at the cryptographic identity layer:
+
+- **Mage key** (spellweb, Sun view): Ed25519, persisted in localStorage. ID format: `mage-{16hex}`.
+- **Swordsman key** (agentprivacy, Moon reflection): Ed25519, stored in sessionStorage, destroyed on tab close. ID format: `ap-{16hex}`.
+
+The private key burns because the amnesia protocol (C17) requires structural inability to access shared origin. Process boundary = separate memory = structural amnesia. This is topology, not policy.
+
+### 15.5 Moon Phase as Visibility Ratio
+
+The stratum (Hamming weight of the 6-bit blade configuration) encodes as a moon phase:
+
+| Stratum | Phase | Meaning |
+|---------|-------|---------|
+| 0 | 🌑 | Null blade — nothing reflected |
+| 1 | 🌒 | One boundary set |
+| 2 | 🌓 | Dual-agent vertex (1,1,0,0,0,0) |
+| 3 | 🌔 | Half sovereignty |
+| 4 | 🌖 | Four boundaries |
+| 5 | 🌗 | Five reflected, one dark |
+| 6 | 🌕 | Full sovereignty (乾, The Creative) |
+
+The phase shows the sovereignty posture (which dimensions active). It does NOT show the content (which nodes, which poems, which conversation). The phase is the WHAT. ZK protects the HOW.
+
+### 15.6 Tier Classification
+
+| Axis | Measure | Light | Heavy | Dragon |
+|------|---------|-------|-------|--------|
+| Stratum | Dimensional coverage | 1–2 | 3–4 | 5–6 |
+| Laps | Depth of engagement | < 21 | 21+ | 62+ |
+
+Both axes are displayed on the blade. Stratum shows WHAT you touched. Laps show HOW DEEPLY you walked it.
+
+---
+
 ## References
 
 - Travers, M. (2026). "Privacy is Value: From the Manifold Dragon to the Holographic Bound." *Soul Sync.*
@@ -530,6 +621,8 @@ The layers are orthogonal: a single principal (DID) can control multiple relatio
 - Susskind, L. (1995). "The World as a Hologram." *Journal of Mathematical Physics.* Holographic principle foundation.
 - BRAID Framework (2026). Bounded Reasoning for Autonomous Inference and Decisions. Compression efficiency data.
 - UOR Foundation (2026). "Universal Object Reference." https://github.com/UOR-Foundation — Independent Z/(2⁶)Z ring algebra convergence.
+- Babbush, R. et al. (2026). "The Quantum Threat to Elliptic Curve Cryptocurrencies." Google Quantum AI.
+- Cain, M. et al. (2026). "Shor's algorithm is possible with as few as 10,000 reconfigurable atomic qubits." arXiv:2603.28627.
 
 ---
 
