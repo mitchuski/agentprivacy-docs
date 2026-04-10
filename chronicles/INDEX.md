@@ -4,6 +4,14 @@
 
 ---
 
+## V5.4.x Series (IPFS Archive & Convergence)
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [CHRONICLE_V5_4_IPFS_ARCHIVE_2026-04-10.md](CHRONICLE_V5_4_IPFS_ARCHIVE_2026-04-10.md) | 2026-04-10 | IPFS pinning of V5.4 suite (5 CIDs), version alignment (Whitepaper→v6.3), repo organization |
+
+---
+
 ## V5.3.x Series (Ceremony Integration)
 
 | Chronicle | Date | Summary |
@@ -48,6 +56,7 @@ V5.2   2026-03-31   Dragon Anatomy, UOR Convergence (+4 skills, +3 personas)
 V5.3.0 2026-04-03   Acts XXVII-XXXI foundation
 V5.3.1 2026-04-05   Ceremony metadata, 5 personas
 V5.3.2 2026-04-07   Skills mapping sync, quaternion resolved (86 skills, 38+4=42 personas)
+V5.4   2026-04-10   IPFS Archive, version alignment (Whitepaper v6.3, 5 CIDs pinned)
 ```
 
 ---

@@ -5,7 +5,7 @@
 **Version:** 1.4
 **Date:** March 31, 2026
 **Status:** ✅ V5.4 Integration — UOR Algebraic Foundation + Dihedral Group
-**Companion to:** Whitepaper v6.2, Research Paper v4.2, Glossary v3.4, Privacy is Value v5.0 + V5.1/V5.2 Research Notes, Privacy Value Model V5 Formal Spec v1.2, Five Grimoires + Acts XXIV–XXX (120+ inscriptions)
+**Companion to:** Whitepaper v6.3, Research Paper v4.2, Glossary v3.4, Privacy is Value v5.0 + V5.1/V5.2 Research Notes, Privacy Value Model V5 Formal Spec v1.2, Five Grimoires + Acts XXIV–XXX (120+ inscriptions)
 
 ---
 

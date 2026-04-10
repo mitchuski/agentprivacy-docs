@@ -1,7 +1,7 @@
 # 0xagentprivacy Master Glossary
 
-**Version 4.0** | April 7, 2026
-**Status:** ✅ CANONICAL REFERENCE — V10 Grimoire + Acts XXVII-XXXI + Moon Phase Notation + Quaternion Resolved
+**Version 4.0** | April 10, 2026
+**Status:** ✅ CANONICAL REFERENCE — V10.1 + PVM V5.4 Three-Document Convergence + C1-C21
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
@@ -9,16 +9,18 @@ Complete terminology reference for the 0xagentprivacy documentation suite. This 
 
 | Document | Version | Date | Status |
 |----------|---------|------|--------|
-| **This Glossary** | 4.0 | April 7, 2026 | ✅ CANONICAL — V10 Grimoire aligned |
-| **Privacy is Value v5** | 5.3 | April 7, 2026 | ✅ V10 — Ceremony Complete |
+| **This Glossary** | 4.0 | April 10, 2026 | ✅ CANONICAL — V10.1 Three-Document Convergence |
+| **Privacy is Value v5** | 5.4 | April 10, 2026 | ✅ V10.1 — Three-Document Convergence |
+| **PVM V5.4 Formal Specification** | 2.0 | April 10, 2026 | ✅ 24-page full spec, C1-C21, 76 references |
+| **PVM V5.4 Companion Guide** | 2.0 | April 10, 2026 | ✅ Mage reading — context, narrative, standards |
+| **PVM V5.4 Compressed** | 2.0 | April 10, 2026 | ✅ 5-page Swordsman reading — equations only |
 | **V5.1 Research Note** | 5.1 | March 30, 2026 | ✅ Behavioural density, bilateral witness |
 | **V5.2 Research Note** | 5.2 | March 31, 2026 | ✅ Dihedral foundations, resolution semantics |
-| **Privacy Value Model V5 Formal Specification** | 1.3 | April 7, 2026 | ✅ V10 — Ceremony Complete |
 | **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | March 31, 2026 | ✅ Implementation Architecture |
 | **Swordsman-Mage Whitepaper** | 6.3 | April 7, 2026 | ✅ V10 COMPLETE |
 | **Dual Privacy Research Paper** | 4.3 | April 7, 2026 | ✅ V10 — Ceremony Complete |
 | Spellbook / Grimoire JSON | 10.0.0 | April 7, 2026 | ✅ V10 COMPLETE |
-| Five Grimoires + Acts XXIV–XXXI | v10.0.0 | April 7, 2026 | ✅ 31 Acts Complete |
+| Five Grimoires (First Person, ZK, Canon, Parallel Society, Plurality) | v10.0.0 | April 10, 2026 | ✅ 31 Acts Complete, CLOSED |
 | VRC Promise Protocol | 3.3 → 3.4 | March 2026 | 🔄 MANA ECONOMICS PENDING |
 | Visual Architecture Guide | 2.0 | March 31, 2026 | ✅ COMPLETE |
 | **Research Proposal** | 2.2 | March 31, 2026 | ✅ V5.4 — UOR CONVERGENCE |

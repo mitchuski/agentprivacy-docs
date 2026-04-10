@@ -52,7 +52,7 @@ This document describes how sustainable funding enables the economic implementat
 
 This economic architecture implements the mathematical foundations established in:
 
-- **Whitepaper v6.2:** "Swordsman and Mage: Dual Agents Derived from the First Person" (V5.4 UOR Foundation)
+- **Whitepaper v6.3:** "Swordsman and Mage: Dual Agents Derived from the First Person" (V5.4 UOR Foundation)
 - **Research Paper v4.2:** "Dual Privacy Architecture: Information-Theoretic Bounds" (V5.2 dihedral foundations)
 - **Privacy is Value v5.0 + V5.1/V5.2 Research Notes:** Dihedral foundations, resolution semantics
 - **Glossary v3.4:** Canonical V5.4 terminology reference

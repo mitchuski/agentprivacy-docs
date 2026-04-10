@@ -2,8 +2,8 @@
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 10.0
-**Date:** April 8, 2026
+**Version:** 10.1
+**Date:** April 10, 2026
 **Status:** ✅ V10 Grimoire + 31 Acts + Moon Phase + Quaternion — CONVERGENT + CLOSED
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
@@ -43,19 +43,21 @@ The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellwe
 | Document | Version | Purpose | Audience |
 |----------|---------|---------|----------|
 | **What Agentprivacy Is** | — | Mission, thesis, and orientation | All, New joiners |
-| **Glossary Master** | 3.4 | Canonical terminology reference (~160 entries, V5.4 UOR Foundation) | All |
+| **Glossary Master** | 4.0 | Canonical terminology reference (~160 entries, V5.4 UOR Foundation) | All |
 | **Privacy is Value V5** | 5.0 | The equation evolves — V5.4 UOR algebraic foundation | All, Researchers |
 | **V5.1 Research Note** | 5.1 | Behavioural density, bilateral witness, hexagram encoding | Researchers |
 | **V5.2 Research Note** | 5.2 | Dihedral foundations, resolution semantics, PRISM spectrum | Researchers |
-| **Privacy Value Model V5.4 Formal Spec** | 1.2 | PVM V5.4 equation, Z/(2⁶)Z ring algebra, C14-C16 | Researchers, Academics |
+| **Privacy Value Model V5.4 Formal Spec** | 2.0 | PVM V5.4 equation, Z/(2⁶)Z ring algebra, C1-C21, full references | Researchers, Academics |
+| **PVM V5.4 Companion Guide** | 2.0 | Context, narrative, standards, economics — the Mage reading | All |
+| **PVM V5.4 Compressed** | 2.0 | 5-page equations-only spec — the Swordsman reading | Mathematicians |
 | **DUAL_TERRITORY_CEREMONY_SPEC** | 1.0 | Implementation architecture: territories, extensions, ceremonies, mana | Developers, Implementers |
 | **The Ceremonies** | 1.0 | Sun ☀️ and Moon 🌙 ceremonial protocols: disclosure, reflection, inaugural pairing | Practitioners, Community |
 | **Promise Theory Reference** | 1.4 | Formal semantic foundations, Generator/Solver as promises | Researchers, Architects |
 | **IEEE 7012 Quick Reference** | 1.0 | MyTerms standard foundation | Developers, Implementers |
-| **Whitepaper** | 6.2 | Technical architecture, V5.4 UOR algebraic foundation | Developers, Researchers |
-| **Research Paper** | 4.2 | Mathematical proofs, V5.4 conjectures C6 CONVERGENT, C14–C16 new | Academics, Cryptographers |
-| **Five Grimoires + Acts XXIV-XXXI** | v1.0–v4.0 | 125+ inscriptions including Dragon Anatomy + Amnesia Protocol (First Person spellbook CLOSED) | Community, Learners |
-| **Blog Series: Privacy is Value V5** | Parts 1-4 | Research letters: Forming Constellations, Forge & Ceremony, Dragon Wakes, Dihedral Mirror | All |
+| **Whitepaper** | 6.3 | Technical architecture, V5.4 UOR algebraic foundation | Developers, Researchers |
+| **Research Paper** | 4.3 | Mathematical proofs, V5.4 conjectures C6 CONVERGENT, C14–C16 new | Academics, Cryptographers |
+| **Five Grimoires + 31 Acts** | v10.0.0 | First Person, Zero Knowledge, Canon, Parallel Society, Plurality spellbooks (First Person CLOSED) | Community, Learners |
+| **Blog Series: Privacy is Value V5** | Parts 0-5 | Research letters: Myth Before Math, Constellations, Forge & Ceremony, Dragon Wakes, Dihedral Mirror, Amnesia Protocol | All |
 | **ZK Swordsman Blade Forge** | 3.2 | OPERATIONAL + ALGEBRAICALLY GROUNDED: UOR module at swordsman-blade/src/lib/uor.ts | Researchers, Mathematicians |
 | **UOR × 64-Tetrahedra × ZK Mapping** | 2.2 | Foundational mapping; C4 RESOLVED; UOR Foundation convergence confirmed | Researchers |
 | **VRC Promise Protocol** | 3.3 | Economic architecture, guild efficiency (3.4 pending: mana economics) | Investors, Builders |
@@ -294,19 +296,21 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 ## Reading Order by Audience
 
 ### For Researchers / Academics
-1. Promise Theory Reference v1.3 (formal foundations, V5 three-axis as promises)
-2. Research Paper v4.0 (mathematical proofs, PVM V5, holographic bound)
-3. Privacy is Value v5.0 (the equation evolves) / [PVM V5 Formal Spec v1.0](privacy_value_v5_formal_specification.md) (mathematics only)
-4. ZK Swordsman Blade Forge v3.0 (forge metaphor, V5 full integration)
-5. UOR × 64-Tetrahedra × ZK Mapping v2.0 (foundational C4 resolution)
-6. Whitepaper v6.0 (architecture, three-axis separation, BRAID integration)
-7. Research Proposal v2.0 (collaboration opportunities, BRAID validation)
+1. Promise Theory Reference v1.4 (formal foundations, V5 three-axis as promises)
+2. [PVM V5.4 Formal Spec v2.0](privacy_value_v5_4_formal_specification.md) (mathematics, C1-C21, full references)
+3. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) (context, narrative, standards)
+4. Research Paper v4.3 (mathematical proofs, PVM V5, holographic bound)
+5. ZK Swordsman Blade Forge v3.2 (forge metaphor, V5 full integration)
+6. UOR × 64-Tetrahedra × ZK Mapping v2.2 (foundational C4 resolution)
+7. Whitepaper v6.3 (architecture, three-axis separation, BRAID integration)
+8. Research Proposal v2.2 (collaboration opportunities, BRAID validation)
 
 ### For Developers / Builders
-1. Visual Guide v2.0 (quick orientation, V5 diagrams)
-2. IEEE 7012 Quick Reference v1.0 (MyTerms standard)
-3. Whitepaper v6.0 (technical details)
-4. Glossary v3.0 (terminology)
+1. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) (context and standards)
+2. Visual Guide v2.0 (quick orientation, V5 diagrams)
+3. IEEE 7012 Quick Reference v1.0 (MyTerms standard)
+4. Whitepaper v6.3 (technical details)
+5. Glossary v4.0 (terminology)
 
 ### For Investors / Advisors
 1. This README (summary)
@@ -315,14 +319,16 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 
 ### For Community / Learners
 1. What Agentprivacy Is (mission and orientation)
-2. 31 Acts complete (V10.0.0 Grimoire, narrative framework)
-3. Visual Guide v2.0 (diagrams)
-4. Glossary v3.0 (terminology reference)
+2. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) (accessible context)
+3. 31 Acts complete (V10.0.0 Grimoire, narrative framework)
+4. Visual Guide v2.0 (diagrams)
+5. Glossary v4.0 (terminology reference)
 
 ### For Promise Theory Practitioners
-1. Promise Theory Reference v1.3 (concept mappings, Generator/Solver as promises)
-2. Whitepaper v6.0 (implementation details)
-3. Research Paper v4.0 (formal proofs, V5 structural extensions)
+1. Promise Theory Reference v1.4 (concept mappings, Generator/Solver as promises)
+2. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) §3 (Promise Theory mapping)
+3. Whitepaper v6.3 (implementation details)
+4. Research Paper v4.3 (formal proofs, V5 structural extensions)
 
 ---
 
@@ -392,9 +398,40 @@ This is not about competing on features. This is about establishing **foundation
 
 ---
 
-## Document Coherence (April 8, 2026)
+## IPFS Archive (V5.4 Documents)
 
-This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5 Privacy Value Model integration, five grimoire compilation plus Acts XXIV–XXIX, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide.
+Permanent, content-addressed pins for the Privacy Value Model V5.4 document suite:
+
+| Document | Size | CID |
+|----------|------|-----|
+| **PVM V5.4 Formal Spec** (PDF) | 167.78 KB | `bafkreifevtszw5jbts5ipddvw3v62m2nxtjkrtowayhakdqpo3uyh53xvq` |
+| **PVM V5.4 Companion Guide** (PDF) | 106.50 KB | `bafkreigmw25nexb57ocytmatyjnlhnhfbzvmiqlg427r774fydwl6j6jxu` |
+| **PVM V5.4 Compressed** (PDF) | 87.77 KB | `bafkreid5pxuiyq5j7nl6qyik6gbloqzwjcxidoq4fqe73unbiwih5ujrji` |
+| **Model JSON (Dark)** | 19.41 KB | `bafkreidhwokaezsnykhmavejpx4ugq5e76hhxja6dw6oi4e57tqno7boca` |
+| **Model JSON (Light)** | 5.73 KB | `bafkreibtj537ij4cuxxgpx55ngedeb6neeihznykcndf24s4ryehyrscie` |
+
+**Gateway:** `https://red-acute-chinchilla-216.mypinata.cloud/ipfs/{CID}`
+
+These documents are now permanently addressable via any IPFS gateway. The CIDs are cryptographic hashes of the content — if the content changes, the CID changes. This ensures citation integrity for academic references.
+
+---
+
+## Document Coherence (April 10, 2026)
+
+This documentation suite has been reviewed for terminology consistency, economic parameter alignment, Promise Theory integration, IEEE 7012-2025 integration, V5.4 Privacy Value Model integration, five grimoire naming, and cross-reference accuracy. See `INSTRUCTIONAL_CONVERGENCE_v2_0.md` for the systematic update guide. PDFs consolidated in `/pdfs/` directory.
+
+### V5.4 Three-Document Convergence (April 10, 2026)
+- **Formal Spec v2.0** — 24-page comprehensive specification with C1-C21, 76 references
+- **Companion Guide v2.0** — 11-page Mage reading bridging math to mission
+- **Compressed Spec v2.0** — 5-page equations-only Swordsman reading
+- Model JSONs updated: light (5.6KB blade) + dark (19KB full)
+- **Grimoire names corrected**: First Person, Zero Knowledge, Canon, Parallel Society, Plurality spellbooks
+- `canon_spellbook_v1_0.md` content lives in grimoire JSON and agentprivacy.ai/story
+- A_h formula canonical: summation form (per-holon granularity)
+- Φ_data formula canonical: concentration-penalizing 1 − max_j(share_j)
+- V6 conjectures C18-C21 (dynamical reconstruction ceiling) now tracked
+- PDFs moved to `/pdfs/` directory
+- See `CHRONICLE_V5_4_THREE_DOCUMENT_CONVERGENCE.md`
 
 ### V5.4 Amnesia Protocol (April 3, 2026)
 - **Act XXXI (The First Delegation)** added — cosmological precedent for dual-agent architecture
@@ -466,13 +503,14 @@ This documentation suite has been reviewed for terminology consistency, economic
 
 ### Citation Format
 When referencing across documents:
-- `[Whitepaper v6.0, §Section]`
-- `[Research Paper v4.0, Theorem 3.2]`
-- `[PVM V5 Formal Spec v1.0, §Section]`
-- `[Glossary v3.0, Term Name]`
+- `[Whitepaper v6.3, §Section]`
+- `[Research Paper v4.3, Theorem 3.2]`
+- `[PVM V5.4 Formal Spec v2.0, §Section]`
+- `[PVM V5.4 Companion v2.0, §Section]`
+- `[Glossary v4.0, Term Name]`
 - `[Privacy is Value v5.0, §Section]`
-- `[UOR Mapping v2.0, §Section]`
-- `[Promise Theory Ref v1.3, §Section]`
+- `[UOR Mapping v2.2, §Section]`
+- `[Promise Theory Ref v1.4, §Section]`
 - `[IEEE 7012 Quick Ref v1.0, §Section]`
 - `[VRC Protocol v3.3, §Section]`
 - `[Bergstra & Burgess (2019), §Chapter]`
