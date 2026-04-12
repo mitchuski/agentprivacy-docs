@@ -897,6 +897,10 @@ Acts with direct formal spec relevance:
 - Dwork, C. & Roth, A. (2014). "The Algorithmic Foundations of Differential Privacy." *Foundations and Trends in Theoretical Computer Science,* 9(3–4), 211–407. [Comparison: DP adds noise; PVM adds structure]
 - Goldreich, O. (2004). *Foundations of Cryptography.* Cambridge University Press. [MPC foundations — we distribute observation rights, not computation]
 
+### External References — Graph Theory
+
+- Brandes, U. (2001). "A Faster Algorithm for Betweenness Centrality." *Journal of Mathematical Sociology,* 25(2), 163–177. [Betweenness centrality algorithm O(V·E) — computational tool for measuring the Gap (⿻), §10.2]
+
 ### External References — Related Disciplines
 
 - Bergstra, J. A. & Burgess, M. (2019). *Promise Theory: Principles and Applications.* (2nd ed.) O'Reilly Media. [Semantic foundation: autonomy axiom, superagent structure]

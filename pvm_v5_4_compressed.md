@@ -112,6 +112,8 @@ $$I(S;M \mid FP) < \varepsilon^* \qquad \text{(load-bearing wall)}$$
 
 Amnesia: $\varepsilon_{\text{amnesia}} < \varepsilon_{\text{policy}}$ (C17, 60%). Topology > policy.
 
+Betweenness centrality: $C_B(v) = \sum_{s,t} \sigma(s,t|v)/\sigma(s,t)$ (Brandes, 2001). The $\perp$ is the node with maximal betweenness in the trust graph.
+
 # Algebraic Foundation
 
 $$\mathcal{L} = (\mathbb{Z}/64\mathbb{Z},\;+,\;\times) \qquad D_{64} = \langle \text{neg}, \text{bnot} \mid \text{neg}^2 = \text{bnot}^2 = 1,\;(\text{neg} \circ \text{bnot})^{64} = 1\rangle$$
@@ -209,7 +211,7 @@ Moon phase: stratum $\to$ visibility ratio. $\;$  0 = New Moon, 6 = Full Moon.
 
 # References
 
-Shannon (1948). Fano (1961). Cover \& Thomas (2006). Bergstra \& Burgess (2019). Susskind (1995). McGilchrist (2009). Groth (2016). PLONK (2019). Nova (2022). Dwork \& Roth (2014). Branco et al. (2025). Babbush et al. (2026). Cain et al. (2026). IEEE 7012-2025. UOR Foundation (2026). Hope \& Ludlow (2023). Weyl \& Tang (2023).
+Shannon (1948). Fano (1961). Cover \& Thomas (2006). Bergstra \& Burgess (2019). Susskind (1995). McGilchrist (2009). Groth (2016). PLONK (2019). Nova (2022). Dwork \& Roth (2014). Brandes (2001, 2008). Branco et al. (2025). Babbush et al. (2026). Cain et al. (2026). IEEE 7012-2025. UOR Foundation (2026). Hope \& Ludlow (2023). Weyl \& Tang (2023).
 
 The First Person Spellbook (31 acts, v10.0.0, CLOSED). Blog: sync.soulbis.com (Parts 0--5).
 
