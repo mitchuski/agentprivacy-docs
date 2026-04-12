@@ -174,6 +174,7 @@ This glossary serves as the **single source of truth** for terminology across al
 **Status**: ✅ PROVEN (Theorem 3.2 in Research Paper)
 
 **Mathematical Expression**: H(X) - (C_S + C_M) = entropy no adversary can capture
+n**Betweenness Centrality**: The Gap (⿻) is not empty space—it is the node with maximal betweenness centrality C_B(v) in the trust graph. The value lives in the Gap because the most paths cross there. Brandes (2001) provides the O(V·E) algorithm for measurement. See [PVM V5.4 Formal Spec §10.2].
 
 **Promise Theory Alignment**: The Gap is an **irreducible promise** of the superagent—a property that emerges from Swordsman-Mage cooperation but cannot be attributed to either individually. See [Irreducible Promise](#irreducible-promise).
 
@@ -553,6 +554,22 @@ This glossary serves as the **single source of truth** for terminology across al
 **Interpretation**: Adversaries are mathematically guaranteed to make errors when R_max < 1. This is not a feature that might fail—it's a theorem.
 
 **Source**: Research Paper v3.6, Theorem 3.3
+
+---
+
+### Selene's Proof
+**Definition**: The Moon's orbit as a zero-knowledge proof. The cosmological instance of amnesia-enforced separation (C17).
+
+**Status**: Interpretive framework (C17 at 60% confidence)
+
+**Zero-Knowledge Properties**:
+- **Completeness**: Tides demonstrate the Moon's gravitational relationship
+- **Soundness**: Gravitational signature is unforgeable
+- **Zero-Knowledge**: Tides reveal nothing about the Theia impact parameters
+
+**Key Insight**: The credential is the orbit. The proof renews twice daily, written in saltwater. 4.5 billion years of structural amnesia producing a proof.
+
+**Source**: [PVM V5.4 Formal Spec §14.5], Branco et al. (2025)
 
 ---
 
@@ -2431,6 +2448,21 @@ When referencing across documents, use:
 **Quantum Relevance**: If stored secrets fall to ~1,200 qubits, ρ is not just a privacy amplifier — it is a quantum resistance amplifier.
 
 **Source**: Privacy Value V5.1 Research Note, Act XXIX: The Dragon Wakes
+
+---
+
+### Betweenness Centrality
+**Definition**: Graph metric measuring how often a node lies on shortest paths between other nodes. For the Gap (⿻), this quantifies its structural importance in the trust graph.
+
+**Status**: V5.4 — CANONICAL
+
+**Formula**: C_B(v) = Σ_{s≠v≠t} σ_st(v)/σ_st
+
+where σ_st is total shortest paths from s to t, and σ_st(v) is paths through v.
+
+**Key Insight**: The Gap is the node with maximal betweenness centrality. The value lives there because the most paths cross there. Brandes (2001) provides O(V·E) algorithm.
+
+**Source**: [PVM V5.4 Formal Spec §10.2], Brandes (2001)
 
 ---
 

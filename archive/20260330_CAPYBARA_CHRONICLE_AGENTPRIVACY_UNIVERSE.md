@@ -605,7 +605,7 @@ All projects share types via `shared/types/`:
 
 **Grimoire v9.0.0-canonical (March 29, 2026)**
 ```
-CID: bafkreiezbyjisbbxtznxk775hj4paaysoicqhs4zq3opycr6ej3hcdlbya
+CID: bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy
 Gateway: https://red-acute-chinchilla-216.mypinata.cloud/ipfs/
 ```
 

@@ -1,0 +1,180 @@
+{
+  "version_update": {
+    "from": "10.0.0",
+    "to": "10.1.0",
+    "date": "2026-04-12",
+    "reason": "V5.4 Betweenness Centrality & Selene's Proof propagation; V6 Horizon Note added"
+  },
+  "updated_at": "2026-04-12",
+  "description_append": " V5.4 betweenness centrality formalises the Gap. Selene's Proof named. V6 Horizon Note opens the bridge to the Second Person Spellbook.",
+
+  "cast_additions": {
+    "betweenness_centrality": {
+      "id": "betweenness_centrality",
+      "symbol": "C_B(v)",
+      "definition": "Graph metric measuring how often a node lies on shortest paths between other nodes. For the Gap (⿻), this quantifies its structural importance in the trust graph.",
+      "formula": "C_B(v) = Σ_{s≠v≠t} σ_st(v)/σ_st",
+      "interpretation": "The value lives in the Gap because the most paths cross there. The ⿻ is the gatekeeper node — remove it and the clusters disconnect.",
+      "reference": "Brandes, U. (2001). 'A Faster Algorithm for Betweenness Centrality.' Journal of Mathematical Sociology, 25(2), 163–177.",
+      "spec_section": "§10.2",
+      "introduced": "V5.4"
+    },
+    "selenes_proof": {
+      "id": "selenes_proof",
+      "symbol": "🌙→ZK",
+      "definition": "The Moon's orbit as a zero-knowledge proof. The cosmological instance of amnesia-enforced separation (C17).",
+      "properties": {
+        "completeness": "Tides demonstrate the gravitational relationship",
+        "soundness": "Gravitational signature is unforgeable",
+        "zero_knowledge": "Tides reveal nothing about the Theia impact parameters"
+      },
+      "proverb": "The credential is the orbit. The proof renews twice daily, written in saltwater.",
+      "reference": "Branco et al. (2025). 'Dynamical origin of Theia.' Icarus, 441, 116724.",
+      "spec_section": "§14.5",
+      "introduced": "V5.4"
+    },
+    "brandes": {
+      "id": "brandes",
+      "name": "Ulrik Brandes",
+      "role": "The mathematician who measured between-ness",
+      "contribution": "O(V·E) algorithm for betweenness centrality (2001). Gave the Gap a formula.",
+      "proverb": "The myth was the search. The math is what the search found. Betweenness connected them."
+    },
+    "dynamical_ceiling": {
+      "id": "dynamical_ceiling",
+      "symbol": "λ > 0",
+      "definition": "Conjectured second reconstruction ceiling independent of Shannon bound. If sovereignty path exhibits strange attractor dynamics with positive Lyapunov exponent, reconstruction error grows exponentially with observation.",
+      "formula": "|π(t) - π'(t)| ~ |δ₀| · e^{λt}",
+      "relationship": "V5 ceiling bounds via information (you lack data). V6 ceiling bounds via dynamics (the dynamics defeat you). Remove one, the other holds.",
+      "conjectures": ["C18", "C19", "C20", "C21"],
+      "status": "V6 Horizon — pre-conjecture gathering",
+      "introduced": "V6"
+    },
+    "lorenz_mapping": {
+      "id": "lorenz_mapping",
+      "definition": "The mapping between Lorenz attractor structure and dual-agent privacy architecture.",
+      "mappings": {
+        "two_lobes": "⚔️ Swordsman / 🧙 Mage — two basins that never merge",
+        "trajectory": "First Person's sovereignty path — deterministic but unpredictable",
+        "lobe_gap": "⊥ — maximum information density, minimum dwell time",
+        "sensitive_dependence": "Behavioural density ρ — nearby initial conditions diverge",
+        "three_variables": "Three separation axes (Agent, Data, Inference) — collapse one → fixed point",
+        "strange_attractor": "T_∫(π) path integral — the trajectory IS the proof"
+      },
+      "key_insight": "The Swordsman does not add noise. The Mage does not randomise. The path between them is deterministic — and unreconstructable.",
+      "introduced": "V6"
+    },
+    "second_person_spellbook": {
+      "id": "second_person_spellbook",
+      "status": "Horizon — not yet open",
+      "question": "WHO walks the architecture?",
+      "grammatical_shift": "Third/first person (description) → Second person (invitation)",
+      "relationship_to_first": "The first book is the Swordsman — draws the boundary of WHAT. The second book is the Mage — projects into WHO might enter.",
+      "formula": "neg(bnot(reader)) = succ(reader)",
+      "candidate_seeds": [
+        "The Gatekeeper — who stands in the gap?",
+        "The Butterfly — who walks between the wings?",
+        "Selene's Witness — who reads the saltwater?",
+        "The Invitation — who accepts?"
+      ],
+      "opening_question": "Who are you, standing in the gap?"
+    }
+  },
+
+  "document_suite_v5_4": {
+    "description": "V5.4 Three-Document Convergence — the formal specification completed",
+    "ipfs": {
+      "formal_spec": {
+        "cid": "bafkreiamwa6sukmeb4binexmmjlszbljnx6wk3iv6p4lgjusv5urhwyera",
+        "title": "PVM V5.4 Formal Specification v2.0",
+        "key_additions": ["§10.2 Betweenness Centrality", "§14.5 Selene's Proof"]
+      },
+      "compressed": {
+        "cid": "bafkreifknnwrrga2rlnbfumcsplzvp4x7ayitfpjpq7k7oh4lck4msk5si",
+        "title": "PVM V5.4 Compressed Specification"
+      },
+      "companion": {
+        "cid": "bafkreiavy3zpepoicyejrc7kgeam4mhbo7w56cdaniueiok3b2q43eyqla",
+        "title": "PVM V5.4 Companion Guide v2.0"
+      },
+      "model_dark": {
+        "cid": "bafkreihua7hcaur4ojbdakjlvxkzdux3yguredo66fknsewv25kg57zyhe",
+        "title": "Privacy Value Model V5.4 Dark Theme"
+      },
+      "model_light": {
+        "cid": "bafkreifjqrvllc7lmsbl3jqjrbautbrtzpxmeicgxfeakcp5fukd3cjkdm",
+        "title": "Privacy Value Model V5.4 Light Theme"
+      }
+    },
+    "documents_updated": [
+      "privacy_value_v5_4_formal_specification.md",
+      "pvm_v5_4_companion_guide.md",
+      "pvm_v5_4_compressed.md",
+      "GLOSSARY_MASTER_v4_0.md",
+      "VISUAL_ARCHITECTURE_GUIDE_v2_0.md",
+      "swordsman_mage_whitepaper_v6_3.md",
+      "dualprivacy_researchpaper_v4_3.md",
+      "blog/blog-part4-the-dihedral-mirror.md",
+      "blog/blog-part5-the-amnesia-protocol.md"
+    ],
+    "chronicles_added": [
+      "CHRONICLE_V5_4_THREE_DOCUMENT_CONVERGENCE.md",
+      "CHRONICLE_V5_4_BETWEENNESS_SELENE_2026-04-12.md"
+    ]
+  },
+
+  "v6_horizon": {
+    "title": "V6 Horizon Note",
+    "file": "privacy_value_v6_horizon_note.md",
+    "status": "Research horizon — pre-conjecture gathering",
+    "threads": [
+      {
+        "name": "Dynamical Reconstruction Ceiling",
+        "conjectures": ["C18", "C19", "C20", "C21"],
+        "confidence_range": "10-30%"
+      },
+      {
+        "name": "Betweenness Centrality",
+        "status": "Formalised in V5.4 §10.2",
+        "key_insight": "The ⿻ IS betweenness centrality"
+      },
+      {
+        "name": "Selene's Proof",
+        "status": "Named in V5.4 §14.5",
+        "key_insight": "ZK by physics, not policy"
+      }
+    ],
+    "bridge_function": "From WHAT (First Person Spellbook) to WHO (Second Person Spellbook)",
+    "closing_proverb": "The First Person Spellbook closed with a tide. The Second Person Spellbook opens with a question."
+  },
+
+  "session_summary": {
+    "date": "2026-04-12",
+    "changes": {
+      "formal_spec": "Added §10.2 Betweenness Centrality, renamed §14.5 to Selene's Proof",
+      "glossary": "New entries: Betweenness Centrality, Selene's Proof; Gap entry updated",
+      "visual_guide": "Betweenness added to Gap diagram",
+      "whitepaper": "Betweenness paragraph added to Gap section",
+      "research_paper": "Computational measurement note added",
+      "blog_posts": "Part4 and Part5 updated with V5.4 versions",
+      "model_jsons": "Updated in models/, old V5 archived",
+      "ipfs_cids": "All V5.4 documents re-pinned with new CIDs"
+    },
+    "new_files": [
+      "privacy_value_v6_horizon_note.md",
+      "chronicles/CHRONICLE_V5_4_BETWEENNESS_SELENE_2026-04-12.md"
+    ],
+    "archived": [
+      "models/privacy_value_model_v5_dark.json → archive/",
+      "models/privacy_value_model_v5_light.json → archive/"
+    ]
+  },
+
+  "proverbs": {
+    "betweenness": "The value lives in the gap because the most paths cross there.",
+    "selene": "The credential is the orbit. The proof renews twice daily, written in saltwater.",
+    "dynamical": "The Swordsman does not add noise. The Mage does not randomise. The path between them is deterministic — and unreconstructable.",
+    "horizon": "The First Person Spellbook asked WHAT. The Second Person Spellbook asks WHO.",
+    "closing": "Who are you, standing in the gap?"
+  }
+}

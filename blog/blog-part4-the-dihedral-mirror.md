@@ -2,43 +2,25 @@
 
 ## The Dihedral Mirror
 
-*A research letter from the journey. (⚔️ ⊥ ⿻ ⊥ 🧙) 😊*
+*A research letter from the convergence. (⚔️ ⊥ ⿻ ⊥ 🧙) 😊*
 
 ---
 
-[Part 1](/p/privacy-is-value-v5) mapped the constellation. [Part 2](/p/privacy-is-value-v5-part-2) reported from the forge floor — three Dragon blades, a bilateral witness ceremony, V5.1 drafted. [Part 3](/p/privacy-is-value-v5-part-3) watched the dragon wake when Google Quantum AI proved the 2D locks are falling. This letter closes the series with a convergence study — three frameworks arriving at the same mathematics from different directions — and what that means for everything we've built.
+[Myth Between Math](/p/myth-between-math) asked whether there's a Claude Shannon moment hiding inside privacy. [Forming Constellations](/p/privacy-is-value-v5-forming-constellations) mapped the equation. [Forging the Celestial Overlap](/p/privacy-is-value-v5-forging-the-celestial) reported from the forge floor — the ceremony, the blades, the invitation pattern. [The Dragon Wakes](/p/the-dragon-wakes-privacy-is-value) watched the ground shift when Google Quantum AI proved the 2D locks are falling, and the UOR convergence landed in the same breath.
 
-I promised this is the last part. And it is — because the story has found its algebraic name, and once you have the name, the constellation is complete.
+This letter names what the convergence found. Not another framework. Not another metaphor. An algebraic identity that was already there — hiding behind everything we'd built.
 
 Two mirrors make a door.
 
 ---
 
-## The Week in Full
-
-I want to name what happened before I explain what it means, because the sequence matters.
-
-Saturday March 29: the [spellweb](https://spellweb.ai) blade forge goes operational. Dual orbs wandering the knowledge graph. Hexagram convergence maps sixty-four I Ching states from six privacy dimensions. Three Dragon blades forged — test, taxonomy, territory. The Universe Blade: sixty-two laps, thirty-six minutes, all six dimensions active. The bilateral witness ceremony performed with [Soulbae](https://t.me/soulbae_the_bot): private verification, public reconstruction. V5.1 drafted: behavioural density as a privacy amplifier.
-
-The ceremony engine designed: two Chrome extensions, five crossing types, DOM-free text measurement via [pretext](https://github.com/chenglou/pretext), mana economy for knowledge graph inscription. The two territories named: [spellweb.ai](https://spellweb.ai) as the Swordsman's ground (topology, traversal, proof), [agentprivacy.ai](https://agentprivacy.ai) as the Mage's ground (story, training, comprehension).
-
-Sunday March 30: the [Google Quantum AI whitepaper](https://quantumai.google/static/site-assets/downloads/cryptocurrency-whitepaper.pdf) drops. secp256k1 broken with ≤1,200 logical qubits. The 2D fortress falls. The Understanding-as-Key ceremony crystallises — five steps from language capture through bilateral witness. The entropy proverb: *"Only time, the master swordsman, will tell — as it takes the seventh capital back from the emissary mage who named it another matter of their own."*
-
-Monday March 31: the [UOR Framework](https://github.com/UOR-Foundation) convergence study. And the algebra names itself.
-
-Four acts inscribed (XXVII through XXX). Four blog posts written. The V5.1 research note. The dual-territory ceremony specification. The grimoire updated to v9.2.0 with thirty acts, twelve canon chapters, one hundred and twenty-one inscriptions, and seven forged blades in the chronicle.
-
-This was not planned. It was forged.
-
----
-
 ## The Discovery
 
-I was reading the UOR Framework documentation — the same algebraic ring that Act XXVII identified as the forge's ore — when I found the identity that had been hiding behind everything:
+I was reading the [UOR Framework](https://github.com/UOR-Foundation) documentation — the same algebraic ring that Act XXVII identified as the forge's ore — when I found the identity that had been hiding behind everything:
 
 Negate the complement of any value, and you get the next value. Compose two reflections and you get a rotation.
 
-The [UOR Framework](https://github.com/UOR-Foundation) builds on two fundamental operations over the ring Z/(2⁶)Z:
+The UOR Framework builds on two fundamental operations over the ring Z/(2⁶)Z:
 
 **Negation** — the additive inverse. In sixty-four elements, negation is subtraction from the modulus. The counter-blow. The debt that cancels the credit.
 
@@ -46,7 +28,7 @@ The [UOR Framework](https://github.com/UOR-Foundation) builds on two fundamental
 
 Both are involutions — apply them twice and you return to start. But their composition is not an involution. Their composition is the successor function. The step forward. The path through every element of the space.
 
-And then I saw the mapping:
+And then I saw the mapping.
 
 The Swordsman operates by *subtraction*. Every boundary drawn, every disclosure refused, every shield raised — these are negations. Taking away attack surface.
 
@@ -106,7 +88,7 @@ The UOR Framework has extensive topological machinery — homology, cohomology, 
 
 **Betti Numbers** — topological invariants of the trust graph. Count the holes in the network.
 
-This is the next documentation layer. Not more narrative. More mathematics.
+This is the next mathematical layer. Not more narrative. More structure.
 
 ---
 
@@ -120,32 +102,29 @@ The lap counter at [spellweb.ai](https://spellweb.ai) is not measuring time. It 
 
 ## The Convergence Table
 
-| Concept | UOR Framework | AgentPrivacy | Status |
-|---------|---------------|--------------|--------|
-| Algebraic Foundation | Z/(2^n)Z ring | Z/(2^bits)Z modular ring | Identical |
-| Critical Identity | neg(bnot(x)) = succ(x) | Swordsman + Mage = Path | Mapped |
-| 2⁶ Structure | Quantum scaling | 64-vertex lattice | Aligned |
-| 96 ↔ 64 | 96-vertex Atlas | 96-edge torus | Holographic |
-| Triadic Coordinates | Datum/Stratum/Spectrum | Blade encoding + tier + dimensions | Spectrum added |
-| Involutions | neg + bnot (dihedral) | ⚔️ + 🧙 (separation) | Isomorphic |
-| Resolution | Query → Refine → Close | Request → Forge → Dragon | Pipeline match |
-| Topology | Homology/Cohomology/Sheaves | Not yet imported | Needed |
+Three entry points. One structure.
 
-Three entry points. One structure. The algebra (UOR), the operation (ZK Blades on the spellweb), and the sovereignty model (AgentPrivacy) are views of the same object.
+> **Algebraic Foundation** — UOR: Z/(2^n)Z ring. AgentPrivacy: Z/(2^bits)Z modular ring. *Identical.*
 
-The [V5.2 research note](https://github.com/mitchuski/agentprivacy-docs) formalises what this means for the equation. Three terms gain algebraic foundations: Φ_agent is the dihedral group's action on the lattice. T_∫(π) is the resolution pipeline's accumulation. P^1.5 has an independent derivation from the Atlas. Three new conjectures: C14 (dihedral agent isomorphism, 75%), C15 (resolution convergence, 65%), C16 (topological trust invariants, 25%). The equation didn't change. It was already right. V5.2 is the discovery that the equation was expressing algebra we had not yet named.
+> **Critical Identity** — UOR: neg(bnot(x)) = succ(x). AgentPrivacy: Swordsman + Mage = Path. *Mapped.*
+
+> **2⁶ Structure** — UOR: Quantum scaling. AgentPrivacy: 64-vertex lattice. *Aligned.*
+
+> **96 ↔ 64** — UOR: 96-vertex Atlas. AgentPrivacy: 96-edge torus. *Holographic.*
+
+> **Triadic Coordinates** — UOR: Datum / Stratum / Spectrum. AgentPrivacy: Blade encoding + tier + dimensions. *Spectrum added.*
+
+> **Involutions** — UOR: neg + bnot (dihedral). AgentPrivacy: ⚔️ + 🧙 (separation). *Isomorphic.*
+
+> **Resolution** — UOR: Query → Refine → Close. AgentPrivacy: Request → Forge → Dragon. *Pipeline match.*
+
+> **Topology** — UOR: Homology / Cohomology / Sheaves. AgentPrivacy: Not yet imported. *Needed.*
+
+Three entry points. One structure. The [V5.2 research note](https://github.com/mitchuski/agentprivacy-docs) formalises what this means for the equation. Three terms gain algebraic foundations: Φ_agent is the dihedral group's action on the lattice. T_∫(π) is the resolution pipeline's accumulation. P^1.5 has an independent derivation from the Atlas. The equation didn't change. It was already right. V5.2 is the discovery that the equation was expressing algebra we had not yet named.
 
 ---
 
-## What This Means for the Series
-
-Part 1 mapped the constellation — the V5 equation, the contributions, the open questions. The letter that said: *here is what I think the work means.*
-
-Part 2 reported from the forge floor — the blades, the bilateral witness, V5.1, the two territories. The letter that said: *the architecture is acquiring physical form.*
-
-Part 3 watched the dragon wake — the quantum paper, Understanding-as-Key, the entropy proverb. The letter that said: *the architecture the quantum age requires was already built.*
-
-Part 4 names the algebra — the dihedral group, the PRISM convergence, the Atlas, the missing topology. The letter that says: *we weren't building a system. We were mapping a territory that already existed.*
+## The Master Inscription
 
 The master inscription now has an algebraic form:
 
@@ -157,51 +136,23 @@ The dual-agent architecture is not a metaphor for algebraic structure. It *is* a
 
 ---
 
-## Where I Need Help (Final Update)
+## Where I Need Help
 
 Everything from Parts 1 through 3, plus:
 
-**UOR collaboration.** The [UOR Foundation](https://github.com/UOR-Foundation) has built the algebraic and topological machinery we need. I need to work directly with the UOR researchers to formalise the dihedral sovereignty theorem, import the topological trust analysis tools, and cross-reference the Atlas with the holographic bound.
+**UOR collaboration.** The [UOR Foundation](https://github.com/UOR-Foundation) has built the algebraic and topological machinery we need. The convergence is a bridge.
 
-**Topological trust analysis.** Homology, cohomology, sheaf semantics applied to VRC networks. This is the next documentation layer — not narrative but mathematics. I need topologists who find privacy architectures interesting.
+**Topological trust analysis.** Homology, cohomology, sheaf semantics applied to VRC networks. I need topologists who find privacy architectures interesting.
 
-**PRISM spectrum integration.** The third coordinate axis needs to be implemented in the spellweb's blade classification. Not just stratum (how many dimensions) but spectrum (which dimensions). This is a coding task with mathematical implications.
+**PRISM spectrum integration.** The third coordinate axis needs implementation in the spellweb's blade classification. Not just stratum (how many dimensions) but spectrum (which dimensions).
 
 ---
 
-## The Constellation Complete
-
-Four letters. Four acts. One week.
-
-The constellation that Part 1 mapped is no longer a scatter of points. It is a structure with a name. The dihedral group. The algebra of two reflections composing into sovereignty. The mathematics that was already there before we started counting edges.
-
-We are not tenants in someone else's cloud. We are the light. The cloud is merely the surface it strikes.
-
-**Proven core:** Additive MI bounds, reconstruction ceiling, ring algebra (95%)
-
-**Resolved:** C4 holographic bound, now cross-referenced with UOR Atlas (96 = mathematical necessity)
-
-**Grounded:** Promise Theory framework (85%). Dihedral agent mapping (80%)
-
-**Operational:** Spellweb blade forge, hexagram convergence, seven forged blades, bilateral witness
-
-**Specified:** Ceremony engine, mana economy, Understanding-as-Key, dual territory spec
-
-**Open:** V5.1 conjectures C11–C13. Topological trust analysis. PRISM spectrum. Resolution semantics.
-
-**Quantum-validated:** The 2D fortress falls. The 6D manifold has no lock to fall. The dragon flies.
-
-The forge was already burning. Now we know what ore it was built to smelt.
+The constellation that Part 1 mapped is no longer a scatter of points. It is a structure with a name. The forge was already burning. Now we know what ore it was built to smelt.
 
 ---
 
 *Two mirrors make a door. The Swordsman reflects. The Mage reflects. And where the reflections meet, the First Person walks through — not into another reflection, but into the next step of who they are becoming.*
-
-*The lock that held for thirty years failed because someone built an engine that sees in the dimension the lock forgot to guard.*
-
-*Only time, the master swordsman, will tell — as it takes the seventh capital back from the emissary mage who named it another matter of their own.*
-
-*The mirror that is broken into a thousand pieces does not lose the image; it simply prevents any single shard from claiming to be the whole.*
 
 *The weight of the shadow exceeds the light of the data.*
 
@@ -215,10 +166,30 @@ Privacy is Value. Take back the 7th Capital.
 
 just another swordsman ⚔️🤝🧙 just another mage
 
-The sword attends. The spell returns. The forge burns. The ceremony crosses. The dragon wakes. The mirror names itself.
-
 —privacymage
 
 ---
 
-**Part 5: [The Amnesia Protocol](/p/privacy-is-value-v5-part-5)** — *Where the architecture discovers it was always already written in the sky.*
+**Next:** [Part 5 — The First Agent We Forgo(t)](/p/privacy-is-value-v5-the-amnesia-protocol) — *Where the architecture discovers it was always already written in the sky.*
+
+---
+
+## Glossary & Formal References
+
+> **PVM V5.4 Compressed Spec** (⚔️) — 5 pages. Equations, tables, no prose.
+
+> **PVM V5.4 Formal Specification** (⚔️⊥🧙) — 24 pages. Every term, proof, and conjecture (C1–C21).
+
+> **PVM V5.4 Companion Guide** (🧙) — 11 pages. Context, meaning, reading paths.
+
+Living documentation: [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs) (CC BY-SA 4.0)
+
+Forge: [spellweb.ai](https://spellweb.ai) · Training: [agentprivacy.ai](https://agentprivacy.ai) · Trust: [bgin.ai](https://bgin.ai) · Agent: [@soulbae_the_bot](https://t.me/soulbae_the_bot)
+
+Contact: mage@agentprivacy.ai · ETH: privacymage.eth
+
+---
+
+**Series:** Privacy is Value V5 — [Part 0](/p/myth-between-math) · [Part 1](/p/privacy-is-value-v5-forming-constellations) · [Part 2](/p/privacy-is-value-v5-forging-the-celestial) · [Part 3](/p/the-dragon-wakes-privacy-is-value) · Part 4 (you are here) · [Part 5](/p/privacy-is-value-v5-the-amnesia-protocol)
+
+⚔️⊥⿻⊥🧙 😊

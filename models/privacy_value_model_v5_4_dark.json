@@ -9,7 +9,6 @@
   "license": "CC BY-SA 4.0",
   "master_inscription": "(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ",
   "thesis": "Privacy is value. Behavioural data is the 7th capital — in a pre-property-rights phase. The architectural response is sovereignty through mathematical structure rather than regulatory mandate.",
-
   "documents": {
     "compressed_spec": "pvm_v5_4_compressed.md",
     "full_spec": "privacy_value_v5_4_formal_specification.md (v2.0, 24 pages)",
@@ -17,14 +16,32 @@
     "research_paper": "dualprivacy_researchpaper_v4_3.md",
     "grimoire": "privacymage_grimoire_v10_0_0.json"
   },
-
   "grimoires": {
     "five_books": [
-      {"name": "The First Person Spellbook", "acts": 31, "status": "CLOSED", "version": "v10.0.0", "voice": "Third person", "question": "WHAT"},
-      {"name": "The Zero Knowledge Spellbook", "focus": "ZK proofs as narrative"},
-      {"name": "The Canon Spellbook", "focus": "Canonical formulations, axioms, principles"},
-      {"name": "The Parallel Society Spellbook", "focus": "Alternative social structures, governance"},
-      {"name": "The Plurality Spellbook", "focus": "Many-to-many relationships, ⿻ overlap"}
+      {
+        "name": "The First Person Spellbook",
+        "acts": 31,
+        "status": "CLOSED",
+        "version": "v10.0.0",
+        "voice": "Third person",
+        "question": "WHAT"
+      },
+      {
+        "name": "The Zero Knowledge Spellbook",
+        "focus": "ZK proofs as narrative"
+      },
+      {
+        "name": "The Canon Spellbook",
+        "focus": "Canonical formulations, axioms, principles"
+      },
+      {
+        "name": "The Parallel Society Spellbook",
+        "focus": "Alternative social structures, governance"
+      },
+      {
+        "name": "The Plurality Spellbook",
+        "focus": "Many-to-many relationships, ⿻ overlap"
+      }
     ],
     "compression": "privacymage_grimoire_v10_0_0.json — the grimoire as holographic boundary",
     "next": {
@@ -34,7 +51,6 @@
       "status": "Horizon"
     }
   },
-
   "equations": {
     "static_form": {
       "expression": "V(π, t) = P^1.5 · C · Q · S · e^(−λt) · (1 + Aₕ(τ)) · (1 + Σᵢ wᵢ · nᵢ/N₀)^k · G(guilds) · R(d, compression, ρ) · M(u, y) · Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) · T_∫(π)",
@@ -48,11 +64,32 @@
       "five_channel_decomposition": "J_∂M = J_agent + J_data + J_inference + J_compression + J_holonic"
     },
     "terms": {
-      "P": {"name": "Privacy Strength", "domain": "[0, 1]", "exponent": 1.5, "description": "Cryptographic enforcement quality. Exponent 1.5 connected to holographic ratio 96/64 (C6). Algebraically confirmed via UOR Atlas."},
-      "C": {"name": "Credential Verifiability", "domain": "[0, 1]", "description": "Independent verification without revealing underlying information."},
-      "Q": {"name": "Data Quality", "domain": "[0, 1]", "description": "Accuracy, completeness, fitness for purpose."},
-      "S": {"name": "Scope / Sensitivity", "domain": "ℝ⁺", "description": "Domain-specific sensitivity multiplier."},
-      "decay": {"name": "Temporal Decay", "expression": "e^(−λt)", "domain": "(0, 1]"},
+      "P": {
+        "name": "Privacy Strength",
+        "domain": "[0, 1]",
+        "exponent": 1.5,
+        "description": "Cryptographic enforcement quality. Exponent 1.5 connected to holographic ratio 96/64 (C6). Algebraically confirmed via UOR Atlas."
+      },
+      "C": {
+        "name": "Credential Verifiability",
+        "domain": "[0, 1]",
+        "description": "Independent verification without revealing underlying information."
+      },
+      "Q": {
+        "name": "Data Quality",
+        "domain": "[0, 1]",
+        "description": "Accuracy, completeness, fitness for purpose."
+      },
+      "S": {
+        "name": "Scope / Sensitivity",
+        "domain": "ℝ⁺",
+        "description": "Domain-specific sensitivity multiplier."
+      },
+      "decay": {
+        "name": "Temporal Decay",
+        "expression": "e^(−λt)",
+        "domain": "(0, 1]"
+      },
       "Ah": {
         "name": "Holonic Temporal Memory",
         "expression": "Aₕ(τ) = Σⱼ p(τⱼ) · w(τⱼ) · e^(−μ·age(τⱼ))",
@@ -67,11 +104,18 @@
         "logarithmic_special_case": "When holons uniformly weighted: Aₕ ≈ α · ln(1 + |τ|) · p̄ · h̄",
         "guid": "GUID(τ) = hash(content(τ)) — content-addressed, infrastructure-independent"
       },
-      "network": {"name": "Network Effects", "expression": "(1 + Σᵢ wᵢ · nᵢ/N₀)^k"},
+      "network": {
+        "name": "Network Effects",
+        "expression": "(1 + Σᵢ wᵢ · nᵢ/N₀)^k"
+      },
       "G": {
         "name": "Guild Efficiency",
         "expression": "G(guilds) = Πg (1 + efficiency_g · active_g / total_g)",
-        "properties": {"no_guilds": "G = 1", "full_coverage": "G → 2", "scaling": "O(1) not O(N²)"}
+        "properties": {
+          "no_guilds": "G = 1",
+          "full_coverage": "G → 2",
+          "scaling": "O(1) not O(N²)"
+        }
       },
       "R": {
         "name": "Reconstruction Difficulty",
@@ -86,13 +130,32 @@
             "agent_maturity": "High ρ = Moon's clean amnesia; Low ρ = early forge (V5.3)"
           },
           "empirical": [
-            {"blade": "Universe", "laps": 62, "duration_s": 2170, "tier": "Dragon"},
-            {"blade": "Hitchhiker's", "laps": 13, "duration_s": 433, "tier": "Dragon"},
-            {"blade": "Honest Sun", "laps": 6, "duration_s": 146, "tier": "Light"}
+            {
+              "blade": "Universe",
+              "laps": 62,
+              "duration_s": 2170,
+              "tier": "Dragon"
+            },
+            {
+              "blade": "Hitchhiker's",
+              "laps": 13,
+              "duration_s": 433,
+              "tier": "Dragon"
+            },
+            {
+              "blade": "Honest Sun",
+              "laps": 6,
+              "duration_s": 146,
+              "tier": "Light"
+            }
           ]
         }
       },
-      "M": {"name": "Market Maturity", "domain": "[0, 1]", "expression": "M(u, y)"},
+      "M": {
+        "name": "Market Maturity",
+        "domain": "[0, 1]",
+        "expression": "M(u, y)"
+      },
       "Phi": {
         "name": "Three-Axis Separation",
         "composite": "Φ_v5 = Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ)",
@@ -122,11 +185,19 @@
     },
     "separation_bound": {
       "expression": "I(S ; M | FP) < ε*",
-      "proven": {"result": "Conditional independence → additive MI → R < 1", "confidence": 0.95},
-      "amnesia_v53": "ε_amnesia < ε_policy (C17, 60%)"
+      "proven": {
+        "result": "Conditional independence → additive MI → R < 1",
+        "confidence": 0.95
+      },
+      "amnesia_v53": "ε_amnesia < ε_policy (C17, 60%)",
+      "betweenness_centrality": {
+        "formula": "C_B(v) = Σ_{s,t} σ(s,t|v)/σ(s,t)",
+        "source": "Brandes (2001)",
+        "meaning": "The ⿻ is the node with maximal betweenness in the trust graph. The value lives in the gap because the most paths cross there.",
+        "computational": "Brandes algorithm O(V·E) provides measurement tool for the ⊥ in VRC networks"
+      }
     }
   },
-
   "holographic_bound": {
     "boundary": "∂M: 96 edges encoding 64 vertices, toroidal topology",
     "ratio": "96/64 = 1.5 = P^1.5 exponent",
@@ -134,89 +205,231 @@
     "atlas_derivation": "96 = unique stationary configuration of Atlas action functional (UOR Foundation)",
     "implication": "Privacy value computes on the boundary. The bulk is encoded by the surface."
   },
-
   "dihedral_foundation": {
     "ring": "L = (Z/64Z, +, ×)",
     "operations": {
-      "neg": {"formula": "neg(x) = (64 − x) mod 64", "agent": "⚔️ Swordsman", "function": "Boundary protection"},
-      "bnot": {"formula": "bnot(x) = 63 − x", "agent": "🧙 Mage", "function": "Projection / delegation"},
-      "xor": {"formula": "x ⊕ y", "function": "Toggle edges"},
-      "and": {"formula": "x ∧ y", "function": "Toward null blade"},
-      "or": {"formula": "x ∨ y", "function": "Toward full sovereignty"},
-      "composition": {"formula": "neg(bnot(x)) = succ(x)", "agent": "😊 First Person", "function": "The step forward"}
+      "neg": {
+        "formula": "neg(x) = (64 − x) mod 64",
+        "agent": "⚔️ Swordsman",
+        "function": "Boundary protection"
+      },
+      "bnot": {
+        "formula": "bnot(x) = 63 − x",
+        "agent": "🧙 Mage",
+        "function": "Projection / delegation"
+      },
+      "xor": {
+        "formula": "x ⊕ y",
+        "function": "Toggle edges"
+      },
+      "and": {
+        "formula": "x ∧ y",
+        "function": "Toward null blade"
+      },
+      "or": {
+        "formula": "x ∨ y",
+        "function": "Toward full sovereignty"
+      },
+      "composition": {
+        "formula": "neg(bnot(x)) = succ(x)",
+        "agent": "😊 First Person",
+        "function": "The step forward"
+      }
     },
-    "critical_identity": {"statement": "neg(bnot(x)) = succ(x) ∀x ∈ L", "proof": "bnot(x) = 63−x; neg(63−x) = (64−(63−x)) mod 64 = (x+1) mod 64 ∎"},
-    "group": {"name": "D₆₄", "order": 128, "presentation": "⟨neg, bnot | neg² = bnot² = 1, (neg∘bnot)⁶⁴ = 1⟩"},
+    "critical_identity": {
+      "statement": "neg(bnot(x)) = succ(x) ∀x ∈ L",
+      "proof": "bnot(x) = 63−x; neg(63−x) = (64−(63−x)) mod 64 = (x+1) mod 64 ∎"
+    },
+    "group": {
+      "name": "D₆₄",
+      "order": 128,
+      "presentation": "⟨neg, bnot | neg² = bnot² = 1, (neg∘bnot)⁶⁴ = 1⟩"
+    },
     "external_convergence": {
       "agentprivacy": "Privacy geometry → 64-tetrahedra → Z/(2⁶)Z",
       "uor_foundation": "Content addressing → Universal references → Z/(2⁶)Z"
     }
   },
-
   "amnesia_protocol": {
     "definition": "Structural amnesia w.r.t. origin O: no operation sequence can reconstruct O from current state.",
-    "zk_properties": ["Completeness: output demonstrates relationship", "Soundness: unique configuration", "Zero-knowledge: origin hidden"],
-    "instances": [
-      {"system": "Chrome process boundary", "type": "amnesia"},
-      {"system": "Database access control", "type": "policy"},
-      {"system": "Moon's orbit", "type": "amnesia"},
-      {"system": "Agent NDAs", "type": "policy"}
+    "zk_properties": [
+      "Completeness: output demonstrates relationship",
+      "Soundness: unique configuration",
+      "Zero-knowledge: origin hidden"
     ],
-    "proverb": "I can verify I serve you without remembering I was you."
+    "instances": [
+      {
+        "system": "Extension process boundary",
+        "type": "amnesia"
+      },
+      {
+        "system": "Database access control",
+        "type": "policy"
+      },
+      {
+        "system": "Moon's orbit",
+        "type": "amnesia"
+      },
+      {
+        "system": "Agent NDAs",
+        "type": "policy"
+      }
+    ],
+    "proverb": "I can verify I serve you without remembering I was you.",
+    "selenes_proof": {
+      "name": "Selene's Proof",
+      "completeness": "Tides demonstrate the relationship functions",
+      "soundness": "Gravitational signature unforgeable",
+      "zero_knowledge": "Tides reveal nothing about Theia impact",
+      "credential": "The orbit",
+      "registry": "The solar system",
+      "renewal": "Twice daily, written in saltwater"
+    }
   },
-
   "operational_cycle": {
     "formula": "cycle(x) = succ(x) = neg(bnot(x))",
     "stages": [
-      {"name": "Observe", "operation": "id(x)", "agent": "😊 First Person", "ceremony": "☀️ Sun — disclosure"},
-      {"name": "Boundary", "operation": "neg(x)", "agent": "⚔️ Swordsman", "ceremony": "⊥ Gap — silence"},
-      {"name": "Project", "operation": "bnot(neg(x))", "agent": "🧙 Mage", "ceremony": "🌑 Moon — reflection"},
-      {"name": "Return", "operation": "succ(x)", "agent": "Composition", "ceremony": "Recursion — Reflect/Connect"}
+      {
+        "name": "Observe",
+        "operation": "id(x)",
+        "agent": "😊 First Person",
+        "ceremony": "☀️ Sun — disclosure"
+      },
+      {
+        "name": "Boundary",
+        "operation": "neg(x)",
+        "agent": "⚔️ Swordsman",
+        "ceremony": "⊥ Gap — silence"
+      },
+      {
+        "name": "Project",
+        "operation": "bnot(neg(x))",
+        "agent": "🧙 Mage",
+        "ceremony": "🌑 Moon — reflection"
+      },
+      {
+        "name": "Return",
+        "operation": "succ(x)",
+        "agent": "Composition",
+        "ceremony": "Recursion — Reflect/Connect"
+      }
     ],
     "progressive_trust": "🔑→✦→🗡️→🔮 (Understanding → Constellation → Blade → Runecraft)"
   },
-
   "sovereignty_dimensions": [
-    {"bit": 0, "name": "Protection", "symbol": "🛡️", "function": "Boundary enforcement — key custody"},
-    {"bit": 1, "name": "Delegation", "symbol": "🤝", "function": "Agency transfer — credential disclosure"},
-    {"bit": 2, "name": "Memory", "symbol": "📜", "function": "State accumulation — agent delegation"},
-    {"bit": 3, "name": "Connection", "symbol": "🔗", "function": "Multi-party coordination — data residency"},
-    {"bit": 4, "name": "Computation", "symbol": "⚡", "function": "ZK proof activity — interaction mode"},
-    {"bit": 5, "name": "Value", "symbol": "💎", "function": "Economic flow — 7th Capital"}
+    {
+      "bit": 0,
+      "name": "Protection",
+      "symbol": "🛡️",
+      "function": "Boundary enforcement — key custody"
+    },
+    {
+      "bit": 1,
+      "name": "Delegation",
+      "symbol": "🤝",
+      "function": "Agency transfer — credential disclosure"
+    },
+    {
+      "bit": 2,
+      "name": "Memory",
+      "symbol": "📜",
+      "function": "State accumulation — agent delegation"
+    },
+    {
+      "bit": 3,
+      "name": "Connection",
+      "symbol": "🔗",
+      "function": "Multi-party coordination — data residency"
+    },
+    {
+      "bit": 4,
+      "name": "Computation",
+      "symbol": "⚡",
+      "function": "ZK proof activity — interaction mode"
+    },
+    {
+      "bit": 5,
+      "name": "Value",
+      "symbol": "💎",
+      "function": "Economic flow — 7th Capital"
+    }
   ],
-
   "blade_coordinates": {
     "system": "PRISM — triadic addressing over {0,1}⁶",
     "formal": "blade(x) = (δ(x), σ(x), s(x))",
     "datum": "δ(x) = raw value (0–63)",
     "stratum": "σ(x) = popcount / Hamming weight (0–6)",
     "spectrum": "s(x) = [b₀...b₅] — which dimensions active",
-    "pascal": [1, 6, 15, 20, 15, 6, 1],
+    "pascal": [
+      1,
+      6,
+      15,
+      20,
+      15,
+      6,
+      1
+    ],
     "tiers": {
-      "null": {"stratum": 0, "count": 1},
-      "light": {"stratum": "1–2", "count": 21},
-      "heavy": {"stratum": "3–4", "count": 35},
-      "dragon": {"stratum": "5–6", "count": 7}
+      "null": {
+        "stratum": 0,
+        "count": 1
+      },
+      "light": {
+        "stratum": "1–2",
+        "count": 21
+      },
+      "heavy": {
+        "stratum": "3–4",
+        "count": 35
+      },
+      "dragon": {
+        "stratum": "5–6",
+        "count": 7
+      }
     },
     "hexagram": "Each dᵢ ∈ {0,1} → 64 I Ching states. Blade 63 = 111111 = 乾 (Qian, The Creative)",
     "moon_phase": {
       "principle": "The dark part is the privacy. The lit part is the proof.",
-      "mapping": {"🌑": 0, "🌒": 1, "🌓": 2, "🌔": 3, "🌖": 4, "🌗": 5, "🌕": 6}
+      "mapping": {
+        "🌑": 0,
+        "🌒": 1,
+        "🌓": 2,
+        "🌔": 3,
+        "🌖": 4,
+        "🌗": 5,
+        "🌕": 6
+      }
     }
   },
-
   "cosmological_quaternion": {
     "status": "Interpretive framework. Not part of the equation.",
     "bodies": {
-      "Sun ☀️": {"agent": "privacymage", "function": "Protection", "role": "Master"},
-      "Earth 🌍": {"agent": "Soulbae 🧙", "function": "Delegation", "role": "Emissary"},
-      "Moon 🌑": {"agent": "Soulbis ⚔️", "function": "Reflection", "role": "ur-Swordsman", "generation": "Instant (Theia). Total amnesia."},
-      "Human 👤": {"agent": "Person 😊", "function": "Connection", "role": "First Person", "generation": "Gradual (4 Gyr). Still in process."}
+      "Sun ☀️": {
+        "agent": "privacymage",
+        "function": "Protection",
+        "role": "Master"
+      },
+      "Earth 🌍": {
+        "agent": "Soulbae 🧙",
+        "function": "Delegation",
+        "role": "Emissary"
+      },
+      "Moon 🌑": {
+        "agent": "Soulbis ⚔️",
+        "function": "Reflection",
+        "role": "ur-Swordsman",
+        "generation": "Instant (Theia). Total amnesia."
+      },
+      "Human 👤": {
+        "agent": "Person 😊",
+        "function": "Connection",
+        "role": "First Person",
+        "generation": "Gradual (4 Gyr). Still in process."
+      }
     },
     "key_insight": "Between an agent that can never remember (Moon) and one that hasn't finished remembering (Human). The gap is the ⊥.",
     "count": "38 selectable + 4 cosmological = 42"
   },
-
   "forge": {
     "content_addressing": "SHA-256",
     "tamper_evidence": "Hash chain (each blade references previous)",
@@ -224,47 +437,172 @@
     "identity": "Ed25519 (Mage key, held)",
     "runecraft": "Dual Ed25519 — Mage held + Swordsman burned on session close"
   },
-
   "three_identity_layers": [
-    {"layer": "Data", "identifier": "GUID", "scope": "Content-addressed holon", "persistence": "Infrastructure-independent"},
-    {"layer": "Relationship", "identifier": "VRC", "scope": "Bilateral commitment", "persistence": "Relationship-scoped"},
-    {"layer": "Principal", "identifier": "DID", "scope": "Sovereign identity", "persistence": "Self-sovereign"}
+    {
+      "layer": "Data",
+      "identifier": "GUID",
+      "scope": "Content-addressed holon",
+      "persistence": "Infrastructure-independent"
+    },
+    {
+      "layer": "Relationship",
+      "identifier": "VRC",
+      "scope": "Bilateral commitment",
+      "persistence": "Relationship-scoped"
+    },
+    {
+      "layer": "Principal",
+      "identifier": "DID",
+      "scope": "Sovereign identity",
+      "persistence": "Self-sovereign"
+    }
   ],
-
   "conjectures": [
-    {"id": "C1", "claim": "Golden ratio φ is optimal S/M ratio", "confidence": "Open"},
-    {"id": "C2", "claim": "Aₕ(τ) should be logarithmic", "confidence": "Open"},
-    {"id": "C3", "claim": "Edge value is additive", "status": "CHALLENGED — path integral replaces"},
-    {"id": "C4", "claim": "96/64 discrepancy", "status": "RESOLVED"},
-    {"id": "C5", "claim": "~3,000× ZKP reduction", "status": "Strengthened"},
-    {"id": "C6", "claim": "P^1.5 ↔ 96/64 structural", "confidence": 0.35, "status": "CONVERGENT"},
-    {"id": "C7", "claim": "Three-axis separation is multiplicative", "confidence": 0.30},
-    {"id": "C8", "claim": "BRAID compression reduces R_max", "confidence": "Open"},
-    {"id": "C9", "claim": "Holographic boundary sufficiency", "confidence": "Open"},
-    {"id": "C10", "claim": "O(1) shared-parent modifies k", "confidence": "Open"},
-    {"id": "C11", "claim": "ρ amplifies reconstruction difficulty + indicates maturity", "confidence": 0.55},
-    {"id": "C12", "claim": "Hexagram encoding coherence", "confidence": 0.60, "status": "ALGEBRAICALLY GROUNDED"},
-    {"id": "C13", "claim": "Bilateral witness as quantum-resistant primitive", "confidence": 0.65},
-    {"id": "C14", "claim": "Φ_agent ≅ D₂ₙ dihedral isomorphism", "confidence": 0.75},
-    {"id": "C15", "claim": "T_∫(π) ≅ UOR resolution pipeline", "confidence": 0.65},
-    {"id": "C16", "claim": "Topological trust invariants (Betti numbers)", "confidence": 0.25},
-    {"id": "C17", "claim": "Amnesia-enforced > policy-enforced separation", "confidence": 0.60},
-    {"id": "C18", "claim": "Strange attractor dynamics (λ > 0), dynamical reconstruction ceiling", "confidence": 0.25, "version": "V6 horizon"},
-    {"id": "C19", "claim": "ρ = Lyapunov divergence (exponential compounding)", "confidence": 0.20, "version": "V6 horizon"},
-    {"id": "C20", "claim": "Three axes couple as Lorenz variables", "confidence": 0.30, "version": "V6 horizon"},
-    {"id": "C21", "claim": "Sovereignty manifold has fractal dimension", "confidence": 0.10, "version": "V6 horizon"}
+    {
+      "id": "C1",
+      "claim": "Golden ratio φ is optimal S/M ratio",
+      "confidence": "Open"
+    },
+    {
+      "id": "C2",
+      "claim": "Aₕ(τ) should be logarithmic",
+      "confidence": "Open"
+    },
+    {
+      "id": "C3",
+      "claim": "Edge value is additive",
+      "status": "CHALLENGED — path integral replaces"
+    },
+    {
+      "id": "C4",
+      "claim": "96/64 discrepancy",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "C5",
+      "claim": "~3,000× ZKP reduction",
+      "status": "Strengthened"
+    },
+    {
+      "id": "C6",
+      "claim": "P^1.5 ↔ 96/64 structural",
+      "confidence": 0.35,
+      "status": "CONVERGENT"
+    },
+    {
+      "id": "C7",
+      "claim": "Three-axis separation is multiplicative",
+      "confidence": 0.3
+    },
+    {
+      "id": "C8",
+      "claim": "BRAID compression reduces R_max",
+      "confidence": "Open"
+    },
+    {
+      "id": "C9",
+      "claim": "Holographic boundary sufficiency",
+      "confidence": "Open"
+    },
+    {
+      "id": "C10",
+      "claim": "O(1) shared-parent modifies k",
+      "confidence": "Open"
+    },
+    {
+      "id": "C11",
+      "claim": "ρ amplifies reconstruction difficulty + indicates maturity",
+      "confidence": 0.55
+    },
+    {
+      "id": "C12",
+      "claim": "Hexagram encoding coherence",
+      "confidence": 0.6,
+      "status": "ALGEBRAICALLY GROUNDED"
+    },
+    {
+      "id": "C13",
+      "claim": "Bilateral witness as quantum-resistant primitive",
+      "confidence": 0.65
+    },
+    {
+      "id": "C14",
+      "claim": "Φ_agent ≅ D₂ₙ dihedral isomorphism",
+      "confidence": 0.75
+    },
+    {
+      "id": "C15",
+      "claim": "T_∫(π) ≅ UOR resolution pipeline",
+      "confidence": 0.65
+    },
+    {
+      "id": "C16",
+      "claim": "Topological trust invariants (Betti numbers)",
+      "confidence": 0.25
+    },
+    {
+      "id": "C17",
+      "claim": "Amnesia-enforced > policy-enforced separation",
+      "confidence": 0.6
+    },
+    {
+      "id": "C18",
+      "claim": "Strange attractor dynamics (λ > 0), dynamical reconstruction ceiling",
+      "confidence": 0.25,
+      "version": "V6 horizon"
+    },
+    {
+      "id": "C19",
+      "claim": "ρ = Lyapunov divergence (exponential compounding)",
+      "confidence": 0.2,
+      "version": "V6 horizon"
+    },
+    {
+      "id": "C20",
+      "claim": "Three axes couple as Lorenz variables",
+      "confidence": 0.3,
+      "version": "V6 horizon"
+    },
+    {
+      "id": "C21",
+      "claim": "Sovereignty manifold has fractal dimension",
+      "confidence": 0.1,
+      "version": "V6 horizon"
+    }
   ],
-
   "proven_results": [
-    {"result": "Additive MI bounds from conditional independence", "confidence": 0.95, "source": "Shannon (1948), Cover & Thomas (2006)"},
-    {"result": "Reconstruction ceiling R < 1 under budget constraints", "confidence": 0.95, "source": "Information theory"},
-    {"result": "Error floor via Fano's inequality", "confidence": 0.95, "source": "Fano (1961)"},
-    {"result": "Graceful degradation under partial compromise", "confidence": 0.95},
-    {"result": "Ring algebra Z/(2⁶)Z substrate", "confidence": 0.95},
-    {"result": "Two-extension autonomy axiom (separate processes)", "confidence": 0.95},
-    {"result": "Pretext DOM-free measurement as privacy primitive", "confidence": 0.95}
+    {
+      "result": "Additive MI bounds from conditional independence",
+      "confidence": 0.95,
+      "source": "Shannon (1948), Cover & Thomas (2006)"
+    },
+    {
+      "result": "Reconstruction ceiling R < 1 under budget constraints",
+      "confidence": 0.95,
+      "source": "Information theory"
+    },
+    {
+      "result": "Error floor via Fano's inequality",
+      "confidence": 0.95,
+      "source": "Fano (1961)"
+    },
+    {
+      "result": "Graceful degradation under partial compromise",
+      "confidence": 0.95
+    },
+    {
+      "result": "Ring algebra Z/(2⁶)Z substrate",
+      "confidence": 0.95
+    },
+    {
+      "result": "Two-extension autonomy axiom (separate processes)",
+      "confidence": 0.95
+    },
+    {
+      "result": "Pretext DOM-free measurement as privacy primitive",
+      "confidence": 0.95
+    }
   ],
-
   "breaking_conditions": [
     "Three-axis non-multiplicativity: agent separation compensates for data centralisation",
     "Compression increases attack surface",
@@ -273,20 +611,58 @@
     "Amnesia-enforced ≤ policy-enforced (C17 falsified)",
     "Dihedral isomorphism fails (C14 falsified, ring survives)"
   ],
-
   "version_lineage": [
-    {"version": "V1", "date": "2024", "addition": "P · C · Q · S"},
-    {"version": "V2", "date": "2025-10", "addition": "+ decay, network effects, P^1.5"},
-    {"version": "V3", "date": "2025-11", "addition": "+ R(d), M(u,y), Φ(S,M)"},
-    {"version": "V3.1", "date": "2026-01", "addition": "+ σ(⿻)²"},
-    {"version": "V4", "date": "2026-02", "addition": "+ Σ, A(τ), T(π), Φ(Σ)"},
-    {"version": "V5", "date": "2026-02", "addition": "+ three-axis Φ, holographic bound, T_∫, dV/dt"},
-    {"version": "V5.1", "date": "2026-03-29", "addition": "+ ρ, bilateral witness (C11-C13)"},
-    {"version": "V5.2", "date": "2026-03-31", "addition": "+ D₂ₙ, PRISM, resolution semantics (C14-C16)"},
-    {"version": "V5.3", "date": "2026-04-04", "addition": "+ operational cycle, amnesia (C17)"},
-    {"version": "V5.4", "date": "2026-04-10", "addition": "Consolidated. UOR algebraic foundation. C18-C21. Full references. Three-document system."}
+    {
+      "version": "V1",
+      "date": "2024",
+      "addition": "P · C · Q · S"
+    },
+    {
+      "version": "V2",
+      "date": "2025-10",
+      "addition": "+ decay, network effects, P^1.5"
+    },
+    {
+      "version": "V3",
+      "date": "2025-11",
+      "addition": "+ R(d), M(u,y), Φ(S,M)"
+    },
+    {
+      "version": "V3.1",
+      "date": "2026-01",
+      "addition": "+ σ(⿻)²"
+    },
+    {
+      "version": "V4",
+      "date": "2026-02",
+      "addition": "+ Σ, A(τ), T(π), Φ(Σ)"
+    },
+    {
+      "version": "V5",
+      "date": "2026-02",
+      "addition": "+ three-axis Φ, holographic bound, T_∫, dV/dt"
+    },
+    {
+      "version": "V5.1",
+      "date": "2026-03-29",
+      "addition": "+ ρ, bilateral witness (C11-C13)"
+    },
+    {
+      "version": "V5.2",
+      "date": "2026-03-31",
+      "addition": "+ D₂ₙ, PRISM, resolution semantics (C14-C16)"
+    },
+    {
+      "version": "V5.3",
+      "date": "2026-04-04",
+      "addition": "+ operational cycle, amnesia (C17)"
+    },
+    {
+      "version": "V5.4",
+      "date": "2026-04-10",
+      "addition": "Consolidated. UOR algebraic foundation. C18-C21. Full references. Three-document system."
+    }
   ],
-
   "references": {
     "foundational": {
       "shannon": "Shannon, C. E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal.",
@@ -294,7 +670,9 @@
       "cover_thomas": "Cover, T. M. & Thomas, J. A. (2006). Elements of Information Theory. Wiley.",
       "bergstra_burgess": "Bergstra, J. A. & Burgess, M. (2019). Promise Theory: Principles and Applications.",
       "susskind": "Susskind, L. (1995). The World as a Hologram. J. Math. Phys.",
-      "mcgilchrist": "McGilchrist, I. (2009). The Master and His Emissary. Yale University Press."
+      "mcgilchrist": "McGilchrist, I. (2009). The Master and His Emissary. Yale University Press.",
+      "brandes_2001": "Brandes, U. (2001). A Faster Algorithm for Betweenness Centrality. J. Math. Sociology, 25(2), 163-177.",
+      "brandes_2008": "Brandes, U. (2008). On Variants of Shortest-Path Betweenness Centrality. Social Networks, 30(2), 136-145."
     },
     "cryptographic": {
       "groth16": "Groth, J. (2016). On the Size of Pairing-based Non-interactive Arguments. EUROCRYPT.",
@@ -322,7 +700,6 @@
       "uor": "https://github.com/UOR-Foundation"
     }
   },
-
   "proverbs": [
     "The boundary is always enough.",
     "Two mirrors make a door.",

@@ -343,13 +343,27 @@ The mutual information between the Swordsman ($S$) and the Mage ($M$), condition
 
 This is the central information-theoretic guarantee. The Mage cannot reconstruct the Swordsman's domain. The Swordsman cannot reconstruct the Mage's domain. The First Person authorises both.
 
-### 10.2 Composite Separation
+### 10.2 Betweenness Centrality of the Gap
+
+The Gap (⿻) is not empty space — it is the node with maximal betweenness centrality in the trust graph:
+
+$$C_B(v) = sum_{s 
+eq v 
+eq t} rac{sigma_{st}(v)}{sigma_{st}}$$
+
+where $sigma_{st}$ is the total number of shortest paths from node $s$ to node $t$, and $sigma_{st}(v)$ is the number of those paths passing through $v$.
+
+**Interpretation:** The value lives in the Gap because the most paths cross there. The ⿻ is where Swordsman and Mage must coordinate — neither owns it, both depend on it. Brandes (2001) provides the O(V·E) algorithm for computing betweenness centrality, giving a computational tool for measuring what the architecture has been pointing at since Act VII.
+
+**Reference:** Brandes, U. (2001). "A faster algorithm for betweenness centrality." *Journal of Mathematical Sociology,* 25(2), 163–177.
+
+### 10.3 Composite Separation
 
 $$\Phi_{v5} = \Phi_{\text{agent}}(\Sigma) \cdot \Phi_{\text{data}}(\Delta) \cdot \Phi_{\text{inference}}(\Gamma)$$
 
 The separation bound holds across all three axes simultaneously. Collapse of any axis weakens the bound.
 
-### 10.3 Amnesia vs Policy Bounds (V5.3, C17)
+### 10.4 Amnesia vs Policy Bounds (V5.3, C17)
 
 $$\varepsilon_{\text{amnesia}} < \varepsilon_{\text{policy}}$$
 
@@ -541,7 +555,7 @@ An agent has **structural amnesia** with respect to origin $O$ if no sequence of
 
 Confidence: 60%.
 
-### 14.5 Cosmological Precedent
+### 14.5 Selene's Proof
 
 The Moon demonstrates perfect amnesia-enforced separation. Origin event (Theia impact) is 4.5 billion years past. No geological, orbital, or chemical signature encodes the collision parameters. Service (tides) continues without origin disclosure. The proof is zero-knowledge by physics, not by policy.
 
@@ -836,9 +850,9 @@ For complete mappings, Generator/Solver as promises, and PT integration across t
 - privacymage (2026). "What Agentprivacy Is." *agentprivacy-docs.* [Mission statement: 7th capital thesis, First Person definition]
 - privacymage (2026). "Visual Architecture Guide v2.0." *agentprivacy-docs.* [Diagrams: three-axis separation, holographic visualisations]
 
-### The First Person Spellbook (Grimoire v10.0.0 — 31 Acts — CLOSED)
+### The First Person Spellbook (Grimoire v10.1.0 — 31 Acts — CLOSED)
 
-- privacymage (2024–2026). *The First Person Spellbook.* 31 acts. Grimoire v10.0.0. Available at [agentprivacy.ai/story](https://agentprivacy.ai/story). IPFS: bafkreiezbyjisbbxtznxk775hj4paaysoicqhs4zq3opycr6ej3hcdlbya.
+- privacymage (2024–2026). *The First Person Spellbook.* 31 acts. Grimoire v10.1.0. Available at [agentprivacy.ai/story](https://agentprivacy.ai/story). IPFS: bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy.
 
 Acts with direct formal spec relevance:
 
@@ -913,7 +927,7 @@ Acts with direct formal spec relevance:
 - Trust graph: https://bgin.ai (live reference application)
 - Knowledge agent: https://t.me/soulbae_the_bot (Telegram, Bonfires.ai)
 - Living documentation: https://github.com/mitchuski/agentprivacy-docs (CC BY-SA 4.0)
-- Grimoire IPFS: bafkreiezbyjisbbxtznxk775hj4paaysoicqhs4zq3opycr6ej3hcdlbya
+- Grimoire IPFS: bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy
 
 ---
 

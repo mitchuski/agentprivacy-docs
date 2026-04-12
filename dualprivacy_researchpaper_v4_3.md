@@ -246,6 +246,7 @@ The First Person + Swordsman + Mage system forms a superagent:
 3. The First Person alone cannot achieve R_max < 1 (needs operational agents)
 4. Only the cooperation of all three—with maintained separation—achieves R_max < 1
 5. Therefore, R_max < 1 can be interpreted as an emergent property of the superagent
+n**Computational Measurement (V5.4):** The Gap has a computational characterization: it is the node with maximal betweenness centrality C_B(v) = Σ_{s≠v≠t} σ_st(v)/σ_st in the trust graph. The value lives in the Gap because the most paths cross there. Brandes (2001) provides an O(V·E) algorithm. This gives a measurable proxy for the irreducible promise. See PVM V5.4 Formal Spec §10.2.
 
 **What This Interpretation Provides:**
 

@@ -20,11 +20,11 @@ Five documents permanently pinned to IPFS via Pinata:
 
 | Document | Size | CID |
 |----------|------|-----|
-| PVM V5.4 Formal Spec (PDF) | 167.78 KB | `bafkreifevtszw5jbts5ipddvw3v62m2nxtjkrtowayhakdqpo3uyh53xvq` |
-| PVM V5.4 Companion Guide (PDF) | 106.50 KB | `bafkreigmw25nexb57ocytmatyjnlhnhfbzvmiqlg427r774fydwl6j6jxu` |
-| PVM V5.4 Compressed (PDF) | 87.77 KB | `bafkreid5pxuiyq5j7nl6qyik6gbloqzwjcxidoq4fqe73unbiwih5ujrji` |
-| Model JSON (Dark) | 19.41 KB | `bafkreidhwokaezsnykhmavejpx4ugq5e76hhxja6dw6oi4e57tqno7boca` |
-| Model JSON (Light) | 5.73 KB | `bafkreibtj537ij4cuxxgpx55ngedeb6neeihznykcndf24s4ryehyrscie` |
+| PVM V5.4 Formal Spec (PDF) | 167.78 KB | `bafkreiamwa6sukmeb4binexmmjlszbljnx6wk3iv6p4lgjusv5urhwyera` |
+| PVM V5.4 Companion Guide (PDF) | 106.50 KB | `bafkreiavy3zpepoicyejrc7kgeam4mhbo7w56cdaniueiok3b2q43eyqla` |
+| PVM V5.4 Compressed (PDF) | 87.77 KB | `bafkreifknnwrrga2rlnbfumcsplzvp4x7ayitfpjpq7k7oh4lck4msk5si` |
+| Model JSON (Dark) | 19.41 KB | `bafkreihua7hcaur4ojbdakjlvxkzdux3yguredo66fknsewv25kg57zyhe` |
+| Model JSON (Light) | 5.73 KB | `bafkreifjqrvllc7lmsbl3jqjrbautbrtzpxmeicgxfeakcp5fukd3cjkdm` |
 
 **Gateway:** `https://red-acute-chinchilla-216.mypinata.cloud/ipfs/{CID}`
 

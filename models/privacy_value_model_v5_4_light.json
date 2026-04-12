@@ -7,35 +7,95 @@
   "license": "CC BY-SA 4.0",
   "contact": "mage@agentprivacy.ai",
   "docs": "https://github.com/mitchuski/agentprivacy-docs",
-
   "thesis": "Privacy is value. Behavioural data is the 7th capital — in a pre-property-rights phase. The architectural response is sovereignty through mathematical structure rather than regulatory mandate.",
-
   "master_inscription": "(S ⊥ Gap ⊥ M) FP = neg ⊕ bnot → succ",
-
   "equation": {
     "static": "V(π, t) = P^1.5 · C · Q · S · e^(−λt) · (1 + Aₕ(τ)) · (1 + Σᵢ wᵢ·nᵢ/N₀)^k · G(guilds) · R(d, compression, ρ) · M(u, y) · Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) · T_∫(π)",
     "differential": "dV/dt = ∇_∂M · J_∂M + S(x) − D(x)",
     "gating": "Multiplicative. Any term = 0 → V = 0.",
     "output": "Holographic field on ∂M (96-edge boundary encoding 64-vertex lattice)"
   },
-
   "terms": [
-    {"symbol": "P^1.5", "name": "Privacy Strength", "domain": "[0, 1]", "why_1.5": "96/64 = 1.5 — holographic ratio. UOR Atlas confirms independently."},
-    {"symbol": "C", "name": "Credential Verifiability", "domain": "[0, 1]"},
-    {"symbol": "Q", "name": "Data Quality", "domain": "[0, 1]"},
-    {"symbol": "S", "name": "Scope / Sensitivity", "domain": "ℝ⁺"},
-    {"symbol": "e^(−λt)", "name": "Temporal Decay", "domain": "(0, 1]"},
-    {"symbol": "Aₕ(τ)", "name": "Holonic Temporal Memory", "formula": "Aₕ(τ) = Σⱼ p(τⱼ) · w(τⱼ) · e^(−μ·age(τⱼ))"},
-    {"symbol": "(1 + Σᵢ wᵢ·nᵢ/N₀)^k", "name": "Network Effects"},
-    {"symbol": "G(guilds)", "name": "Guild Efficiency", "formula": "G = Πg (1 + efficiency_g · active_g / total_g)", "scaling": "O(1) not O(N²)"},
-    {"symbol": "R(d, c, ρ)", "name": "Reconstruction Difficulty", "formula": "R = R_base(d) · (1 − 1/c) · (1 + α·ρ)", "ceiling": "R < 1 (proven)", "rho_dual": ["Privacy amplifier", "Agent maturity"]},
-    {"symbol": "M(u, y)", "name": "Market Maturity", "domain": "[0, 1]"},
-    {"symbol": "Φ_agent", "name": "Agent Separation", "formula": "min(1, (S/M)/φ) · det(Σ)", "algebraic": "≅ D₂ₙ (C14, 75%)"},
-    {"symbol": "Φ_data", "name": "Data Separation", "formula": "1 − max_j(share_j)"},
-    {"symbol": "Φ_inference", "name": "Inference Separation", "formula": "1 − I(model ; executor)"},
-    {"symbol": "T_∫(π)", "name": "Path Integral", "continuous": "1 + β · ∫_π F(γ) dγ", "discrete": "1 + β · Σᵢ R(stepᵢ)", "fidelity": "F(γ) = resolution_depth · fidelity"}
+    {
+      "symbol": "P^1.5",
+      "name": "Privacy Strength",
+      "domain": "[0, 1]",
+      "why_1.5": "96/64 = 1.5 — holographic ratio. UOR Atlas confirms independently."
+    },
+    {
+      "symbol": "C",
+      "name": "Credential Verifiability",
+      "domain": "[0, 1]"
+    },
+    {
+      "symbol": "Q",
+      "name": "Data Quality",
+      "domain": "[0, 1]"
+    },
+    {
+      "symbol": "S",
+      "name": "Scope / Sensitivity",
+      "domain": "ℝ⁺"
+    },
+    {
+      "symbol": "e^(−λt)",
+      "name": "Temporal Decay",
+      "domain": "(0, 1]"
+    },
+    {
+      "symbol": "Aₕ(τ)",
+      "name": "Holonic Temporal Memory",
+      "formula": "Aₕ(τ) = Σⱼ p(τⱼ) · w(τⱼ) · e^(−μ·age(τⱼ))"
+    },
+    {
+      "symbol": "(1 + Σᵢ wᵢ·nᵢ/N₀)^k",
+      "name": "Network Effects"
+    },
+    {
+      "symbol": "G(guilds)",
+      "name": "Guild Efficiency",
+      "formula": "G = Πg (1 + efficiency_g · active_g / total_g)",
+      "scaling": "O(1) not O(N²)"
+    },
+    {
+      "symbol": "R(d, c, ρ)",
+      "name": "Reconstruction Difficulty",
+      "formula": "R = R_base(d) · (1 − 1/c) · (1 + α·ρ)",
+      "ceiling": "R < 1 (proven)",
+      "rho_dual": [
+        "Privacy amplifier",
+        "Agent maturity"
+      ]
+    },
+    {
+      "symbol": "M(u, y)",
+      "name": "Market Maturity",
+      "domain": "[0, 1]"
+    },
+    {
+      "symbol": "Φ_agent",
+      "name": "Agent Separation",
+      "formula": "min(1, (S/M)/φ) · det(Σ)",
+      "algebraic": "≅ D₂ₙ (C14, 75%)"
+    },
+    {
+      "symbol": "Φ_data",
+      "name": "Data Separation",
+      "formula": "1 − max_j(share_j)"
+    },
+    {
+      "symbol": "Φ_inference",
+      "name": "Inference Separation",
+      "formula": "1 − I(model ; executor)"
+    },
+    {
+      "symbol": "T_∫(π)",
+      "name": "Path Integral",
+      "continuous": "1 + β · ∫_π F(γ) dγ",
+      "discrete": "1 + β · Σᵢ R(stepᵢ)",
+      "fidelity": "F(γ) = resolution_depth · fidelity"
+    }
   ],
-
   "core_algebra": {
     "ring": "Z/(2⁶)Z — 64 elements",
     "neg": "64 − x (Swordsman: boundary)",
@@ -44,53 +104,118 @@
     "group": "D₆₄ (order 128)",
     "proverb": "Two mirrors make a door."
   },
-
   "separation_bound": {
     "expression": "I(S ; M | FP) < ε*",
     "proven": "Additive MI → R < 1 (95%)",
-    "amnesia": "ε_amnesia < ε_policy (C17, 60%)"
+    "amnesia": "ε_amnesia < ε_policy (C17, 60%)",
+    "selenes_proof": "The Moon's orbit as ZK proof: completeness (tides), soundness (gravitational signature), zero-knowledge (origin hidden). The credential is the orbit.",
+    "betweenness": "C_B(v) = Σ σ(s,t|v)/σ(s,t) (Brandes, 2001). The ⿻ is the node with maximal betweenness in the trust graph."
   },
-
   "operational_cycle": [
-    {"stage": "Observe", "op": "id(x)", "agent": "First Person", "ceremony": "☀️ Sun"},
-    {"stage": "Boundary", "op": "neg(x)", "agent": "Swordsman", "ceremony": "⊥ Gap"},
-    {"stage": "Project", "op": "bnot(neg(x))", "agent": "Mage", "ceremony": "🌑 Moon"},
-    {"stage": "Return", "op": "succ(x)", "agent": "Composition", "ceremony": "Recursion"}
+    {
+      "stage": "Observe",
+      "op": "id(x)",
+      "agent": "First Person",
+      "ceremony": "☀️ Sun"
+    },
+    {
+      "stage": "Boundary",
+      "op": "neg(x)",
+      "agent": "Swordsman",
+      "ceremony": "⊥ Gap"
+    },
+    {
+      "stage": "Project",
+      "op": "bnot(neg(x))",
+      "agent": "Mage",
+      "ceremony": "🌑 Moon"
+    },
+    {
+      "stage": "Return",
+      "op": "succ(x)",
+      "agent": "Composition",
+      "ceremony": "Recursion"
+    }
   ],
-
   "sovereignty_dimensions": [
-    {"bit": 0, "name": "Protection", "symbol": "🛡️"},
-    {"bit": 1, "name": "Delegation", "symbol": "🤝"},
-    {"bit": 2, "name": "Memory", "symbol": "📜"},
-    {"bit": 3, "name": "Connection", "symbol": "🔗"},
-    {"bit": 4, "name": "Computation", "symbol": "⚡"},
-    {"bit": 5, "name": "Value", "symbol": "💎"}
+    {
+      "bit": 0,
+      "name": "Protection",
+      "symbol": "🛡️"
+    },
+    {
+      "bit": 1,
+      "name": "Delegation",
+      "symbol": "🤝"
+    },
+    {
+      "bit": 2,
+      "name": "Memory",
+      "symbol": "📜"
+    },
+    {
+      "bit": 3,
+      "name": "Connection",
+      "symbol": "🔗"
+    },
+    {
+      "bit": 4,
+      "name": "Computation",
+      "symbol": "⚡"
+    },
+    {
+      "bit": 5,
+      "name": "Value",
+      "symbol": "💎"
+    }
   ],
-
   "tiers": {
-    "by_stratum": {"light": "1–2", "heavy": "3–4", "dragon": "5–6"},
-    "by_laps": {"light": "< 21", "heavy": "21+", "dragon": "62+"}
+    "by_stratum": {
+      "light": "1–2",
+      "heavy": "3–4",
+      "dragon": "5–6"
+    },
+    "by_laps": {
+      "light": "< 21",
+      "heavy": "21+",
+      "dragon": "62+"
+    }
   },
-
   "conjectures": {
-    "C4": "RESOLVED", "C6": "CONVERGENT 35%", "C7": "30%",
-    "C11": "55%", "C12": "60%", "C13": "65%", "C14": "75%",
-    "C15": "65%", "C16": "25%", "C17": "60%",
-    "C18": "25% (strange attractor)", "C19": "20% (ρ = Lyapunov)",
-    "C20": "30% (Lorenz coupling)", "C21": "10% (fractal dimension)"
+    "C4": "RESOLVED",
+    "C6": "CONVERGENT 35%",
+    "C7": "30%",
+    "C11": "55%",
+    "C12": "60%",
+    "C13": "65%",
+    "C14": "75%",
+    "C15": "65%",
+    "C16": "25%",
+    "C17": "60%",
+    "C18": "25% (strange attractor)",
+    "C19": "20% (ρ = Lyapunov)",
+    "C20": "30% (Lorenz coupling)",
+    "C21": "10% (fractal dimension)"
   },
-
   "proven": [
-    "Additive MI bounds (95%)", "R < 1 ceiling (95%)", "Fano error floor (95%)",
-    "Graceful degradation (95%)", "Z/(2⁶)Z ring (95%)", "Two-extension axiom (95%)",
+    "Additive MI bounds (95%)",
+    "R < 1 ceiling (95%)",
+    "Fano error floor (95%)",
+    "Graceful degradation (95%)",
+    "Z/(2⁶)Z ring (95%)",
+    "Two-extension axiom (95%)",
     "DOM-free measurement (95%)"
   ],
-
   "grimoires": {
-    "closed": ["First Person Spellbook (31 acts, v10.0.0)", "Zero Knowledge Spellbook", "Canon Spellbook", "Parallel Society Spellbook", "Plurality Spellbook"],
+    "closed": [
+      "First Person Spellbook (31 acts, v10.0.0)",
+      "Zero Knowledge Spellbook",
+      "Canon Spellbook",
+      "Parallel Society Spellbook",
+      "Plurality Spellbook"
+    ],
     "next": "Second Person Spellbook — shifts from WHAT to WHO, from third to second person"
   },
-
   "proverbs": [
     "The boundary is always enough.",
     "Two mirrors make a door.",
@@ -99,7 +224,6 @@
     "The weight of the shadow exceeds the light of the data.",
     "The dragon maps the territory. The butterfly proves the territory was never still."
   ],
-
   "references": {
     "docs": "https://github.com/mitchuski/agentprivacy-docs",
     "forge": "https://spellweb.ai",
@@ -109,6 +233,7 @@
     "agent": "https://t.me/soulbae_the_bot",
     "uor": "https://github.com/UOR-Foundation",
     "full_spec": "privacy_value_v5_4_formal_specification.md (v2.0)",
-    "companion": "pvm_v5_4_companion_guide.md (v2.0)"
+    "companion": "pvm_v5_4_companion_guide.md (v2.0)",
+    "brandes": "Brandes, U. (2001). A Faster Algorithm for Betweenness Centrality. J. Math. Sociology."
   }
 }

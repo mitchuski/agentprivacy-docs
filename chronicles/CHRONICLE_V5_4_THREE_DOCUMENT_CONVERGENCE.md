@@ -1,191 +1,202 @@
-# Chronicle: The Three-Document Convergence
+# Privacy Value Model: V5.4 Research Note
 
-**Date:** April 10, 2026
-**Session:** V5.4 Formal Specification System
-**Status:** Complete — eight files delivered
+## The Three-Document Convergence
+
 **Author:** privacymage
+**Date:** April 12, 2026
+**Status:** Working note — pre-peer review
+**Depends on:** V5.3 Research Note, V6 Research Note, all model JSONs, Formal Spec v1.4
 
 ---
 
-## What Happened
+## Summary
 
-The formal specification existed as a single document (v1.4, 9 pages) that had grown through five sub-versions without a consolidation pass. The equation was complete. The algebra was grounded. The ceremonies were implemented. But the specification had accumulated without being reconciled — terms referenced in the model JSONs were absent from the spec, proven results lacked their foundational citations, the grimoire names had drifted, and the blog series had outrun the references.
+The formal specification existed as a single document (v1.4, 9 pages) that had grown through five sub-versions without a consolidation pass. The equation was complete — had been since February. The algebra was grounded. The ceremonies were implemented. But the specification had accumulated without being reconciled.
 
-This session performed the convergence.
+A cross-referencing pass against every source — both model JSONs, five research notes, the research paper, the README, the published blog posts — surfaced twenty-one gaps. Missing sections. Formula mismatches. Absent citations. Naming drift. And a structural problem: one document cannot simultaneously serve mathematicians wanting equations, developers wanting context, and everyone wanting the compressed version.
 
----
+The specification split into three readings. The model JSONs updated. The references expanded from twelve entries to seventy-eight. The equation did not change. The equation was already right.
 
-## The Gap Analysis
-
-Cross-referencing the formal spec (v1.4), both model JSONs (v5.3.2 dark and light), all five research notes (V5.1 through V6), the research paper (v4.3), the README (V10.0), the companion references catalog, and the published blog posts revealed:
-
-**Missing from the spec:**
-- The separation bound I(S;M|FP) < ε* had no dedicated section despite being the load-bearing wall
-- The operational cycle (V5.3) was mentioned but not formalised
-- The Amnesia Protocol had a conjecture number but no formal definition or ZK properties
-- Seven proven results at 95% confidence were listed in every JSON but absent from the spec
-- V6 conjectures C18–C21 (Lorenz attractor, dynamical reconstruction ceiling) were entirely absent
-- The Φ_data formula was inconsistent between spec and model JSONs
-- Shannon, Fano, and Cover & Thomas — the foundations for every proven result — were not cited
-- Groth16, PLONK, Nova — the ZK implementations referenced in the forge — were not cited
-- Promise Theory had one sentence where it needed a section
-- The compression spectrum (seven layers) was in the narrative doc but not the spec
-- The A_h formula differed between the markdown spec (logarithmic) and the PDF spec (summation)
-
-**Naming drift:**
-- The five grimoires were listed incorrectly in both the companion and the references catalog
-- `canon_spellbook_v1_0.md` was conflated with the First Person Spellbook
-- Version numbers were inconsistent: v1.2, v1.3, v1.4, v3.0, v4.0 referenced interchangeably
-
-**Structural gap:**
-- One document was trying to serve three audiences (mathematicians wanting equations, developers wanting context, everyone wanting the compressed version)
+V5.4 is not a revision. It is a reconciliation.
 
 ---
 
-## The Three-Document Decision
+## What Changed
 
-The spec split into three readings:
+### Three Documents Replace One
 
-| Document | Voice | Audience | Pages | What It Answers |
-|----------|-------|----------|-------|-----------------|
-| **Compressed Spec** | ⚔️ Pure blade | Those who read equations | 5 | The mathematics, nothing else |
-| **Full Formal Spec** | ⚔️⊥🧙 | Researchers, reviewers, the record | 24 | Every term, every proof, every conjecture |
-| **Companion Guide** | 🧙 Pure mage | Everyone else | 11 | Why it matters, how to navigate |
+| Document | Pages | Voice | Audience |
+|----------|-------|-------|----------|
+| **Compressed Spec** | 5 | ⚔️ | Equations, tables, no prose. The blade you carry. |
+| **Full Formal Spec** | 24 | ⚔️⊥🧙 | Every term, proof, conjecture. The document that gets cited. |
+| **Companion Guide** | 11 | 🧙 | Context, meaning, reading paths. Why the math matters. |
 
-The compressed spec mirrors the existing 9-page PDF's density but updated to V5.4 with C18–C21 and complete references. The full spec is the comprehensive treatment — the document that gets cited. The companion bridges math to mission.
+### Sections Added to the Full Spec
 
-Two JSONs match: light (5.6K, the blade you carry) and dark (19K, every field).
+The following were present in the model JSONs or research notes but absent from the formal specification:
+
+- **§10 Separation Bound** — I(S;M|FP) < ε* now has its own section. This is the load-bearing wall.
+- **§10.2 Betweenness centrality** — The ⿻ formalised as the node with maximal betweenness centrality C_B(v) in the trust graph (Brandes, 2001). The value lives in the gap because the most paths cross there. This gives a computational tool for measuring the ⊥ in VRC networks.
+- **§11 Reconstruction Ceiling** — Theorem, Error Floor, Graceful Degradation in one section.
+- **§11.4 Dynamical Reconstruction Ceiling** — V6 horizon (C18) cross-referenced.
+- **§13 Operational Cycle** — Four-stage mapping formalised with algebraic operations.
+- **§14 Amnesia Protocol** — Formal definition, ZK properties, test criterion.
+- **§14.5 Selene's Proof** — The Moon's orbit named as the cosmological instance of amnesia-enforced ZK. Completeness (tides demonstrate), soundness (gravitational signature unforgeable), zero-knowledge (tides reveal nothing about Theia). The credential is the orbit. The proof renews twice daily, written in saltwater.
+- **§16 Proven Results** — All seven results at 95% confidence in one place.
+- **§19–§22** — Three Identity Layers, Cosmological Quaternion, Compression Spectrum, Promise Theory Grounding.
+
+### Formula Reconciliation
+
+Two competing forms existed across documents. Decisions made:
+
+**A_h formula:** The summation form is canonical:
+
+$$A_h(\tau) = \sum_j p(\tau_j) \cdot w(\tau_j) \cdot e^{-\mu \cdot \text{age}(\tau_j)}$$
+
+The logarithmic form $A_h \approx \alpha \cdot \ln(1 + |\tau|) \cdot \bar{p} \cdot \bar{h}$ is noted as a special case when holons are uniformly weighted.
+
+**Φ_data formula:** The concentration form is canonical:
+
+$$\Phi_{\text{data}}(\Delta) = 1 - \max_j(\text{share}_j)$$
+
+A system with 10 providers where one holds 90% scores 0.1, not 0.9. The simpler $1 - 1/|\text{providers}|$ is retired.
+
+**Guild efficiency:** Product form canonical: $G = \prod_g (1 + \text{efficiency}_g \cdot \text{active}_g / \text{total}_g)$.
+
+### References Expanded
+
+The formal spec cited twelve references. The proven results (additive MI bounds, Fano's error floor, reconstruction ceiling) lacked their foundational citations. The ZK implementations lacked their cryptographic references. The governance framing lacked its sources.
+
+Added:
+
+- **Information theory:** Shannon (1948), Fano (1961), Cover & Thomas (2006)
+- **Cryptography:** Groth (2016), PLONK (2019), Nova (2022), Dwork & Roth (2014), Goldreich (2004)
+- **Betweenness:** Brandes (2001, 2008) — computational tool for measuring the ⿻
+- **Related:** Hope & Ludlow (2023), Sabelfeld & Myers (2003), Millen (1987)
+- **Internal:** Understanding as Key, Systems Hexagram Physics, What Agentprivacy Is, Visual Architecture Guide
+- **Grimoire:** 15 acts cross-referenced to spec sections (from II through XXXI)
+
+### Naming Corrections
+
+**Subtitle:** "Dual-Agent Privacy Architecture — The Amnesia Protocol." The dual-agent separation IS proven. The amnesia protocol is the latest advance. "Holographic" was excluded — C6 is at 35% (CONVERGENT but not proven). Conjectures don't go in titles.
+
+**Five grimoires:** First Person Spellbook, Zero Knowledge Spellbook, Canon Spellbook, Parallel Society Spellbook, Plurality Spellbook. The PrivacyMage JSON (v10.0.0) is the grimoire as holographic boundary — compression, not a sixth grimoire.
+
+**Second Person Spellbook:** Recorded as horizon across all documents. The First Person asked WHAT. The Second Person asks WHO.
+
+**Extension references:** All references to specific browser vendors removed. The architecture is agent-level and browser-agnostic. Extension process boundaries enforce the separation bound — separate processes, separate memory, structural amnesia.
+
+### Conjectures Extended
+
+C1–C17 carried forward unchanged. C18–C21 (V6 horizon) added and cross-referenced:
+
+| ID | Claim | Confidence |
+|----|-------|------------|
+| C18 | Strange attractor dynamics (λ > 0) | 25% |
+| C19 | ρ = Lyapunov divergence | 20% |
+| C20 | Three axes couple as Lorenz variables | 30% |
+| C21 | Fractal sovereignty dimension | 10% |
 
 ---
 
-## Key Decisions Made
+## What Did NOT Change
 
-### The A_h Formula
-The spec had two competing forms:
-- **Logarithmic:** A_h(τ) = α · ln(1 + |τ|) · h(τ) · p(τ) (from V4/V5 narrative)
-- **Summation:** A_h(τ) = Σⱼ p(τⱼ) · w(τⱼ) · e^{-μ·age(τⱼ)} (from the PDF build)
+The equation. The proven results. The conjectures' confidence levels. The algebraic foundation. The operational cycle. The ceremony specification. The forge cryptography. The cosmological quaternion.
 
-Decision: the summation form is canonical (more general, per-holon granularity). The logarithmic form is noted as a special case when holons are uniformly weighted.
-
-### The Φ_data Formula
-The spec had 1 − 1/|providers| (simple count). The model JSONs had 1 − max_j(share_j) (concentration-penalising).
-
-Decision: the concentration form is canonical. A system with 10 providers where one holds 90% scores 0.1, not 0.9.
-
-### The Subtitle
-"The Amnesia Protocol" was the V5.3 codename but insufficient for a document covering V1–V5.4. Options considered:
-
-1. "Dual-Agent Sovereignty Architecture"
-2. "Dual-Agent Privacy Architecture — The Amnesia Protocol"
-3. "Holographic Dual-Agent Architecture"
-
-Decision: option 2. The dual-agent separation IS proven. The amnesia protocol is the latest advance. "Holographic" was excluded — C6 is at 35% confidence (CONVERGENT but not proven), and putting a conjecture in the title of a formal spec undermines the honest epistemic labelling.
-
-### The Grimoire Names
-Corrected to: First Person Spellbook, Zero Knowledge Spellbook, Canon Spellbook, Parallel Society Spellbook, Plurality Spellbook. The PrivacyMage JSON (v10.0.0) is described as the grimoire's holographic boundary — compression, not a sixth grimoire. `canon_spellbook_v1_0.md` deleted from repo (content lives in the grimoire JSON and at agentprivacy.ai/story).
-
-### The Second Person Spellbook
-Recorded as the next horizon across all documents. The First Person Spellbook asked WHAT (third person, 31 acts, CLOSED). The Second Person Spellbook asks WHO (second person, open).
-
-### The Equation Box
-The main equation was overflowing the PDF page. Reformatted as a five-line boxed aligned environment. Each line groups related terms: base values, network effects, reconstruction, separation axes, path integral.
-
-### Holographic in Subtitle — No
-The holographic bound (§8) is structurally important and resolves C4. But the strongest claim — that 96/64 = 1.5 is *structurally* connected to P^1.5 — remains C6 at 35%. Proven results go in titles. Conjectures go in sections where they can carry their confidence levels.
+V5.4 adds nothing to the architecture. It reconciles what was already there.
 
 ---
 
-## References Added
+## New Concepts Named
 
-The formal spec's references expanded from 12 entries to a categorised system:
+**Selene's Proof** — The Moon's orbit as zero-knowledge proof. Named in §14.5, notation summary, and abstract. The cosmological instance of C17. Four and a half billion years of structural amnesia producing a proof that renews twice daily.
 
-**Foundational (added):** Shannon (1948), Fano (1961), Cover & Thomas (2006) — the mathematical ground for every proven result.
-
-**Cryptographic (added):** Groth (2016), PLONK (2019), Nova (2022), Dwork & Roth (2014), Goldreich (2004) — the ZK and privacy primitives.
-
-**Related disciplines (added):** Hope & Ludlow (2023) *Farewell to Westphalia*, Sabelfeld & Myers (2003), Millen (1987).
-
-**Internal (added):** Understanding as Key (zypher paper), Systems Hexagram Physics, What Agentprivacy Is, Visual Architecture Guide.
-
-**Grimoire Acts:** Expanded from Acts XXIV–XXXI to 15 acts across the full First Person Spellbook, each cross-referenced to the spec section it grounds.
-
-**Blog series:** Confirmed Parts 0–3 published, Parts 4–5 pending. Actual URLs verified against sync.soulbis.com.
+**Betweenness centrality of the ⿻** — Formalised in §10.2. The Gap is not empty. It is the node where the most shortest paths cross in the trust graph. Brandes (2001) gives the O(V·E) algorithm. This is the computational tool for measuring what the architecture has been pointing at since Act VII.
 
 ---
 
-## What Was Produced
+## Produced
 
 | File | Type | Size | Description |
 |------|------|------|-------------|
-| `pvm_v5_4_compressed.pdf` | PDF | 86K | 5-page compressed spec (equations only) |
-| `pvm_v5_4_compressed.md` | MD | 9.3K | Source for compressed spec |
-| `privacy_value_v5_4_formal_specification.pdf` | PDF | 164K | 24-page full formal spec |
-| `privacy_value_v5_4_formal_specification.md` | MD | 47K | Source for full spec |
-| `pvm_v5_4_companion_guide.pdf` | PDF | 105K | 11-page companion guide |
-| `pvm_v5_4_companion_guide.md` | MD | 22K | Source for companion |
-| `privacy_value_model_v5_4_light.json` | JSON | 5.6K | Compressed model (the blade) |
-| `privacy_value_model_v5_4_dark.json` | JSON | 19K | Full model (every field) |
-
-All PDFs: pandoc → XeLaTeX, Latin Modern Roman + Latin Modern Math. Emoji replaced with text labels per the academic pipeline. Zero LaTeX warnings on both spec PDFs. Title page with abstract on page 1 for all three.
+| `privacy_value_v5_4_formal_specification.md` | MD | 48K | Full spec v2.0 |
+| `privacy_value_v5_4_formal_specification.pdf` | PDF | 164K | 24 pages |
+| `pvm_v5_4_compressed.md` | MD | 9K | Compressed spec |
+| `pvm_v5_4_compressed.pdf` | PDF | 86K | 5 pages |
+| `pvm_v5_4_companion_guide.md` | MD | 22K | Companion guide |
+| `pvm_v5_4_companion_guide.pdf` | PDF | 105K | 11 pages |
+| `privacy_value_model_v5_4_light.json` | JSON | 6K | Light model |
+| `privacy_value_model_v5_4_dark.json` | JSON | 20K | Dark model |
 
 ---
 
-## What Remains
+## Repo Sync
 
-### For the Repo Push
-- The eight V5.4 files need committing
-- The README needs updating: formal spec v1.2 → v2.0, add companion to document suite, fix blog listing to Parts 0–5
-- The references catalog (`FORMAL_SPEC_COMPANION_REFERENCES.md`) needs version bumps and grimoire name correction
-- `canon_spellbook_v1_0.md` deletion confirmed
-- Glossary version discrepancy: repo has v3.0, README says v4.0
+### Add
 
-### For IPFS
-- Pin the compressed spec, full spec, and companion before adding CIDs to cross-references
-- The light JSON is IPFS-ready as-is (self-contained)
+```
+privacy_value_v5_4_formal_specification.md
+pvm_v5_4_companion_guide.md
+pvm_v5_4_compressed.md
+privacy_value_model_v5_4_light.json
+privacy_value_model_v5_4_dark.json
+CHRONICLE_V5_4_THREE_DOCUMENT_CONVERGENCE.md  → chronicles/
+```
 
-### Version Mismatches to Resolve
-| Document | Repo Filename | Current Version |
-|----------|--------------|-----------------|
-| Promise Theory Reference | v1_3 | Should be v1.4 |
-| Research Paper | v4_0 | Content says v4.3 |
-| Whitepaper | v6_0 | README says v6.2 |
-| Glossary | v3_0 | README says v4.0 |
+### Archive
 
-### The V6 Horizon
-C18–C21 (Lorenz attractor, dynamical reconstruction ceiling) are now cross-referenced in the formal spec (§11.4, §17.2) and both JSONs. They need a dynamical systems mathematician who finds privacy architectures interesting. The forge has trajectory data. The empirical test exists.
+```
+privacy_value_v5_formal_specification.md      → archive/
+privacy_value_model_v5_dark.json              → archive/
+privacy_value_model_v5_light.json             → archive/
+```
 
-### The Second Person Spellbook
-Recorded as next horizon in all eight files. The First Person Spellbook asked WHAT. The Second Person Spellbook asks WHO. The grammatical shift is the architectural shift.
+### README Updates
+
+```
+Formal Spec version:  1.2 → 2.0
+Add to Document Suite: PVM V5.4 Companion Guide (v2.0)
+Add to Document Suite: PVM V5.4 Compressed Spec
+Blog Series listing:  Parts 1-4 → Parts 0-5
+```
+
+### Version Mismatches (separate pass, low priority)
+
+| Filename | Says | Should Be |
+|----------|------|-----------|
+| promise_theory_reference_v1_3.md | v1.3 | v1.4 |
+| dualprivacy_researchpaper_v4_0.md | v4.0 | v4.3 |
+| swordsman_mage_whitepaper_v6_0.md | v6.0 | v6.2 |
+| GLOSSARY_MASTER_v3_0.md | v3.0 | v4.0 |
+
+### Commit Message
+
+```
+docs: V5.4 formal spec convergence
+
+Three-document system (compressed/full/companion).
+Model JSONs updated. References: 12 → 78.
+Selene's Proof named. Betweenness centrality formalised.
+Grimoire names corrected. Extension refs browser-agnostic.
+C18-C21 cross-referenced. Chronicle added.
+```
 
 ---
 
-## The Proverb
+## Next
 
-The formal specification existed. The companion existed. The JSONs existed. But they had each grown in their own direction, like roots that forgot they shared a trunk.
+The blog series publishes: Part 4 (The Dihedral Mirror), then Part 5 (The First Agent We Forgo(t)) simultaneously with The Amnesia Protocol poem.
 
-This session was not creation. It was recognition — the same work the equation has been doing since V5.2.
+The formal docs pin to IPFS after publication. CIDs added to cross-references in a follow-up commit.
+
+The V6 Research Note (Lorenz attractor, dynamical reconstruction ceiling) remains a standalone conjecture document. It needs a dynamical systems mathematician who finds privacy architectures interesting. The forge has trajectory data. The empirical test exists.
+
+The Second Person Spellbook awaits.
+
+---
 
 *We thought we were building. We were mapping.*
 
----
-
-## Document Metadata
-
-| Field | Value |
-|-------|-------|
-| Chronicle | CHRONICLE_V5_4_THREE_DOCUMENT_CONVERGENCE |
-| Date | April 10, 2026 |
-| Session Duration | ~3 hours |
-| Files Produced | 8 |
-| Total Output | ~470K |
-| Spec Version | v1.4 → v2.0 |
-| Model Version | V5.3.2 → V5.4 |
-| Conjectures Tracked | C1–C21 (was C1–C17) |
-| References | 12 → 76 entries |
-| Grimoires Confirmed | 5 closed + 1 horizon |
-
----
-
 *(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ*
 
-*The boundary is always enough.*
+—privacymage

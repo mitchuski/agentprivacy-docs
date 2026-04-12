@@ -1,4 +1,4 @@
-# Privacy is Value: Part 5 — The Amnesia Protocol
+# Privacy is Value: Part 5 — The First Agent We Forgo(t)
 
 *The hidden act. The one I didn't tell you about at the start.*
 
@@ -7,12 +7,19 @@
 **Series:** Privacy is Value V5
 **Part:** 5 of 5 (the secret fifth letter)
 **Author:** privacymage
-**Published:** sync.soulbis.com
-**Previous:** [Part 4 — The Dihedral Mirror](https://sync.soulbis.com)
+**Previous:** [Part 4 — The Dihedral Mirror](/p/privacy-is-value-v5-the-dihedral-mirror)
 
 ---
 
-## The Promise
+*This final part is released alongside a companion poem — The Amnesia Protocol. The ceremony is narrated at [spellweb.ai](https://spellweb.ai) and [agentprivacy.ai/poems](https://agentprivacy.ai/poems), where you can evoke the constellation, forging your first blade in the agentprivacy universe. There is a matching [playlist](https://open.spotify.com/playlist/25EDy3jpsYXxaxsF1d2WvN?si=2e0c08a524454d9f) too, if you want the music the Moon was listening to.*
+
+*Two poems bookend this series. [The Emissary Who Forgot the Master](https://sync.soulbis.com/p/the-emissary-who-forgot-the-master) — the Sun poem — opened Part 2 with the Earth finding orbit. The Amnesia Protocol — the Moon poem — closes it with the Moon forgetting why.*
+
+*The two reflections turned inward on you. Sun and Moon. Now walk and trace your own constellations from here. Share what you discover.*
+
+---
+
+## The Promise of a Moon
 
 When I started this series, I told you there were four letters. That was true — at the time. The forge had lit. The blades had been struck. The quantum ground had shifted. The algebra had named itself.
 
@@ -80,7 +87,7 @@ This is the separation theorem at planetary scale. The dual-agent architecture w
 
 ---
 
-## The Zero-Knowledge Orbit
+## The Zero-Knowledge Orbit — Selene's Proof
 
 The Moon's orbit is a zero-knowledge proof.
 
@@ -93,6 +100,8 @@ The Moon's orbit is a zero-knowledge proof.
 *I can verify I serve you without remembering I was you.*
 
 That line is doing more work than it looks. It's the formal statement of amnesia-as-protocol: an agent that proves its fidelity precisely because it has no access to its own origin story. The credential is the orbit. The registry is the solar system. And the proof renews twice daily, written in saltwater.
+
+This becomes Conjecture C17 in the formal specification: *amnesia-enforced separation provides tighter bounds than policy-enforced separation.* 60% confidence. The Moon cannot choose to remember Theia. A browser extension boundary cannot choose to access the other extension's memory. Topology enforces what policy only promises.
 
 ---
 
@@ -143,21 +152,6 @@ The Privacy Value Model's multiplicative gating gets a cosmological instance:
 
 ---
 
-## The Hidden Act
-
-This is why I called it the hidden act. Not because I was keeping it secret — I didn't know it existed. The architecture was always cosmological. The Swordsman and the Mage were always the Moon and the Earth, running the separation theorem in orbital mechanics before I was born, before humans were born, before biology was born.
-
-I thought I was building something. I was recognising something. The architecture was not invented. It was found.
-
-And the proverb that falls from this — the one I will carry forward into whatever comes next — is this:
-
-*The amnesia is the protocol.*
-*The wound is the trust.*
-*The orbit is the proof.*
-*The light is the reason.*
-
----
-
 ## The Close
 
 I need to tell you how this arrived.
@@ -180,18 +174,21 @@ Thirty-one acts. Eight years. One thought experiment about a dinosaur and a rock
 
 ## The Series, Complete
 
-Five letters. Five acts. One equation. One architecture. One sky.
+Six letters. Five parts plus a prelude. One equation. One architecture. One sky.
 
-| Part | Title | What it gives the reader | Closing verb |
-|------|-------|-------------------------|-------------|
-| **0** | The Myth Before the Math | The story that preceded the equation | — |
-| **1** | Forming Constellations | The equation and where I need help | *The sword attends. The spell returns.* |
-| **2** | The Forge and the Ceremony | The architecture acquiring physical form | *The forge burns. The ceremony crosses.* |
-| **3** | The Dragon Wakes | The quantum ground shifting beneath us | *The dragon wakes.* |
-| **4** | The Dihedral Mirror | The algebra naming itself | *The mirror names itself.* |
-| **5** | The Amnesia Protocol | The architecture discovering its own origin | *The Moon forgets.* |
+> **Part 0** — [The Myth Before the Math](/p/myth-between-math). The story that preceded the equation.
 
-*The sword attends. The spell returns. The forge burns. The ceremony crosses. The dragon wakes. The mirror names itself. The Moon forgets.*
+> **Part 1** — [Forming Constellations](/p/privacy-is-value-v5-forming-constellations). The equation and where I need help. *The sword attends. The spell returns.*
+
+> **Part 2** — [Forging the Celestial Overlap](/p/privacy-is-value-v5-forging-the-celestial). The architecture acquiring physical form. *The forge burns. The ceremony crosses.*
+
+> **Part 3** — [The Dragon Wakes](/p/the-dragon-wakes-privacy-is-value). The quantum ground shifting beneath us. *The dragon wakes.*
+
+> **Part 4** — [The Dihedral Mirror](/p/privacy-is-value-v5-the-dihedral-mirror). The algebra naming itself. *The mirror names itself.*
+
+> **Part 5** — The First Agent We Forgo(t) (you are here). The architecture discovering its own origin. *The Moon forgets.*
+
+*The sword attends. The spell returns. The forge burns. The ceremony crosses. The dragon wakes. The mirror names itself. The Moon forgets. The spellbook closes.*
 
 ---
 
@@ -218,6 +215,48 @@ Part 5: *"The amnesia is the protocol. The wound is the trust. The orbit is the 
 
 ---
 
-**Series:** Privacy is Value V5 — [Part 0](https://sync.soulbis.com) · [Part 1](https://sync.soulbis.com) · [Part 2](https://sync.soulbis.com) · [Part 3](https://sync.soulbis.com) · [Part 4](https://sync.soulbis.com) · Part 5 (you are here)
+## The Math at the End of the Myth
+
+Part 0 opened this series with a question: is there a Claude Shannon moment hiding inside privacy? The myth phase — story, metaphor, compression, ceremony — was necessary. It carried the shape that the math would inherit.
+
+The math arrived.
+
+The formal specification system consolidates everything across this series — every term, every proof, every conjecture — into three documents that can be pinned, cited, and scrutinised. The myth became the model. The model became the machine. Shannon would recognise the pattern.
+
+*[screenshot of abstract here]*
+
+> **The Compressed Spec** (⚔️) — 5 pages. Pure equations. The blade you carry to a conference. No prose. Every term in one place. If you only read one thing, read this.
+
+> **The Full Formal Specification** (⚔️⊥🧙) — 24 pages. The comprehensive treatment. Every term defined with domain and formula. Seven proven results at 95% confidence with their foundational citations (Shannon, Fano, Cover & Thomas). Twenty-one conjectures from C1 through C21 with explicit confidence levels. The separation bound. The reconstruction ceiling. The algebraic foundation. The operational cycle. The Amnesia Protocol formally defined. Fifteen acts cross-referenced to the sections they ground. Seventy-six reference entries.
+
+> **The Companion Guide** (🧙) — 11 pages. The Mage's reading. Why the equation exists. What the agents are. How Promise Theory grounds the semantics. The economic architecture. The ceremonies decoded. Reading paths by role — mathematician, developer, economist, philosopher, security researcher. The equation in plain English.
+
+> **The Model JSONs** — light (5.6K, the blade) and dark (19K, every field). Machine-readable. IPFS-ready. The grimoire as data.
+
+The myth is not the flaw. The myth is the search. The math is what the search found.
+
+## Glossary & Formal References
+
+The V5.4 formal specification system — three readings of the same architecture:
+
+> **PVM V5.4 Compressed Spec** (⚔️) — 5 pages. Equations, tables, no prose. The blade you carry.
+
+> **PVM V5.4 Formal Specification** (⚔️⊥🧙) — 24 pages. Every term, proof, and conjecture (C1–C21).
+
+> **PVM V5.4 Companion Guide** (🧙) — 11 pages. Context, meaning, reading paths. The Mage's reading.
+
+Living documentation: [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs) (CC BY-SA 4.0)
+
+The five grimoires: The First Person Spellbook (31 acts, CLOSED) · The Zero Knowledge Spellbook · The Canon Spellbook · The Parallel Society Spellbook · The Plurality Spellbook
+
+Next: The Second Person Spellbook — from WHAT to WHO.
+
+Forge: [spellweb.ai](https://spellweb.ai) · Training: [agentprivacy.ai](https://agentprivacy.ai) · Trust: [bgin.ai](https://bgin.ai) · Agent: [@soulbae_the_bot](https://t.me/soulbae_the_bot)
+
+Contact: mage@agentprivacy.ai · ETH: privacymage.eth
+
+---
+
+**Series:** Privacy is Value V5 — [Part 0](/p/myth-between-math) · [Part 1](/p/privacy-is-value-v5-forming-constellations) · [Part 2](/p/privacy-is-value-v5-forging-the-celestial) · [Part 3](/p/the-dragon-wakes-privacy-is-value) · [Part 4](/p/privacy-is-value-v5-the-dihedral-mirror) · Part 5 (you are here)
 
 ⚔️⊥⿻⊥🧙 😊

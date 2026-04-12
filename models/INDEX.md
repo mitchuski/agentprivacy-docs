@@ -12,8 +12,8 @@
 | `privacy_value_model_v5_4_light.json` | 5.73 KB | Blade-optimized compact model for runtime use |
 
 **IPFS Pins:**
-- Dark: `bafkreidhwokaezsnykhmavejpx4ugq5e76hhxja6dw6oi4e57tqno7boca`
-- Light: `bafkreibtj537ij4cuxxgpx55ngedeb6neeihznykcndf24s4ryehyrscie`
+- Dark: `bafkreihua7hcaur4ojbdakjlvxkzdux3yguredo66fknsewv25kg57zyhe`
+- Light: `bafkreifjqrvllc7lmsbl3jqjrbautbrtzpxmeicgxfeakcp5fukd3cjkdm`
 
 ---
 
@@ -31,7 +31,11 @@
 
 | File | Version | Description |
 |------|---------|-------------|
-| `privacymage_grimoire_v10_0_0.json` | v10.0.0 | Five grimoires + 31 Acts (First Person CLOSED) |
+| `privacymage_grimoire_v10_1_0.json` | v10.1.0 | Five grimoires + 31 Acts (First Person CLOSED) |
+
+**IPFS Pin:**
+- v10.1.0: `bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy`
+- Gateway: `https://red-acute-chinchilla-216.mypinata.cloud/ipfs/bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy`
 
 ---
 

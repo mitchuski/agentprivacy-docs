@@ -196,6 +196,7 @@ Promise Theory's most profound insight for this architecture: superagents can ha
 The conditional independence property (S ⊥⊥ M | X) is not something the Swordsman promises, nor something the Mage promises. It emerges from their *separation*—from the promises they *don't* make to each other.
 
 This interpretation explains why The Gap resists capture: no adversary can extract an irreducible promise because no single component contains it. The Gap exists in the space between kept promises, owned by neither agent individually. The mathematical guarantees (Corollary 5.2 in the Research Paper) formalize this; Promise Theory provides the semantic interpretation.
+n**Betweenness Centrality (V5.4):** The Gap is not merely conceptual—it is structurally measurable as the node with maximal betweenness centrality C_B(v) in the trust graph. The value lives in the Gap because the most paths cross there. Brandes (2001) provides the O(V·E) algorithm. See PVM V5.4 Formal Spec §10.2.
 
 ## Assessment and Trust
 

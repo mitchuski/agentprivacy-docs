@@ -89,9 +89,11 @@ The Swordsman never delegates. The Mage never protects. This is the guarantee �
 
 **The Gap (⿻):** The irreducible separation between them. The spec's Φ_agent measures this gap. When Φ_agent → 0, the agents collapse into one, and privacy fails. The dihedral group D₆₄ (§12.5) gives this algebraic structure — two involutions that must remain independent for the full group to be accessible.
 
-**The Amnesia Protocol (§14):** The Swordsman and Mage don't just operate separately — they are structurally unable to recover shared origin. This is not a policy ("don't share data"). It is topology ("cannot share memory"). Chrome process boundaries enforce this: separate processes = separate memory = structural amnesia.
+**The Amnesia Protocol (§14):** The Swordsman and Mage don't just operate separately — they are structurally unable to recover shared origin. This is not a policy ("don't share data"). It is topology ("cannot share memory"). Extension process boundaries enforce this: separate processes = separate memory = structural amnesia.
 
-The cosmological precedent: the Moon cannot recover the Theia impact from its geological state. The tides prove the relationship without disclosing the origin.
+The cosmological precedent: the Moon cannot recover the Theia impact from its geological state. The tides prove the relationship without disclosing the origin. This is **Selene's Proof** — zero-knowledge by physics, not by policy.
+
+**Betweenness centrality (⿻):** The Gap is not empty — it is the node with highest betweenness centrality in the trust graph (Brandes, 2001). The value lives in the gap because the most paths cross there.
 
 **Deep dive:** `swordsman_mage_whitepaper_v6_0.md`, extension whitepapers
 

@@ -245,6 +245,11 @@ TYPE 4: The Irreducible Promise
 │ • Requires all three (FP+S+M) to exist │
 │                                        │
 │ R_max < 1 IS the irreducible promise   │
+│                                        │
+│ Betweenness Centrality (V5.4):         │
+│ • Gap has maximal C_B(v) in trust graph│
+│ • Value lives where most paths cross   │
+│ • Brandes (2001): O(V·E) algorithm     │
 └────────────────────────────────────────┘
 ```
 
