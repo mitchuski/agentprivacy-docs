@@ -216,6 +216,8 @@ $$R(d, \text{compression}, \rho) < 1 \quad \forall \text{ adversaries under budg
 
 This is not a conjecture. The ceiling follows from information-theoretic analysis via Fano's inequality. See §16 for the full proof status.
 
+**External alignment:** The First Person Network whitepaper (2026) provides independent framing for this ceiling as "data dignity" — the thesis that behavioural data is capital owned by the First Person, not resource extracted by observers. The reconstruction ceiling is the mathematical guarantee that makes data dignity enforceable.
+
 ---
 
 ## 6. Network Effects and Guild Efficiency
@@ -920,6 +922,7 @@ Acts with direct formal spec relevance:
 ### External References — Standards and Frameworks
 
 - IEEE 7012-2025. Machine-readable personal privacy terms (MyTerms). Published January 20, 2026.
+- First Person Network (2026). "First Person: A White Paper." https://www.firstperson.network/whitepaper [First Person sovereignty framing, data dignity, behavioural capital thesis]
 - BRAID Framework (2026). Bounded Reasoning for Autonomous Inference and Decisions. [Compression-as-defence, Generator/Solver split]
 - UOR Foundation (2026). "Universal Object Reference." https://github.com/UOR-Foundation [Independent Z/(2⁶)Z convergence]
 - Allen, C. et al. (2026). Open Integrity Project. Blockchain Commons. [Cryptographic provenance for repositories]
