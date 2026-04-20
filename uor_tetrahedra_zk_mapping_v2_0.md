@@ -4,7 +4,7 @@
 
 **Author:** privacymage | mitchuski
 **Date:** March 31, 2026
-**Version:** 2.2 (V5.4 UOR Foundation Convergence)
+**Version:** 2.3 (V6 Conjecture Integration)
 **Status:** ✅ OPERATIONAL — Live implementation on [spellweb.ai](https://spellweb.ai) + Algebraically Grounded
 **Parent Document:** [Privacy is Value V5.1](privacy_is_value_v5.md)
 **Implementation:** [ZK Swordsman Blade Forge v3.2](zk_swordsman_blade_forge_v3_0.md)
@@ -191,6 +191,35 @@ In ZK terms: the toroidal topology provides the *computational hardness* that ma
 - Whether UOR's specific Clifford algebra structure (anti-commutative basis elements) maps to the tetrahedral adjacency matrix with exact correspondence, or only approximate analogy
 - Whether the toroidal topology creates *sufficient* computational hardness for practical ZK security parameters
 
+### V6 Conjecture Integration
+
+The V6 research notes introduce two independent lines of inquiry that extend this mapping:
+
+**Dynamical Ceiling (C18–C21):** The [Lorenz Attractor note](./research/pvm-v6-lorenz-attractor.md) conjectures that the sovereignty path exhibits strange attractor dynamics in the 6D phase space (the 64-vertex lattice). If true, the toroidal wrap gains a dynamical interpretation: paths diverge exponentially with λ > 0, creating a *second* reconstruction ceiling independent of the information-theoretic bound.
+
+| Conjecture | Statement | Confidence |
+|------------|-----------|------------|
+| C18 | Sovereignty path exhibits strange attractor dynamics with λ > 0 | 25% |
+| C19 | Behavioural density ρ = Lyapunov divergence accumulated over walk | 20% |
+| C20 | Three separation axes couple as three Lorenz variables | 30% |
+| C21 | Sovereignty manifold has fractal dimension | 10% |
+
+**Computational Ceiling (C22–C25):** The [EML Three Ceilings note](./research/pvm-v6-eml-three-ceilings.md) connects succ = neg∘bnot to Odrzywołek's EML operator — both are Sheffer-type single operators that generate complete spaces via binary trees. This adds a *third* ceiling: the adversary's reconstruction function is an EML tree whose depth grows with compression.
+
+| Conjecture | Statement | Confidence |
+|------------|-----------|------------|
+| C22 | Adversary's reconstruction cost grows exponentially with EML tree depth | 20% |
+| C23 | Blade forge grammar is isomorphic to restricted EML grammar (Catalan) | 30% |
+| C24 | Sovereignty computation requires complex intermediates | 15% |
+| C25 | Minimal EML tree depth provides hard floor for compression spectrum | 25% |
+
+**Three Independent Ceilings:**
+1. **Information-theoretic** (V5, proven): R_max < 1 — Shannon bound
+2. **Dynamical** (C18, conjectured): Lorenz divergence — chaos defeats reconstruction
+3. **Computational** (C22, conjectured): EML tree depth — computation itself is expensive
+
+These operate on different axes of adversary capability and remain independent — remove one and the other two still hold.
+
 ### 96 vs 64: RESOLVED (V5)
 
 **V5 Resolution:** The 96 equivalence classes and 64 vertices are not a discrepancy — they are the **holographic bound**. In holographic physics, a boundary of dimension n encodes a volume of dimension n+1. The 96-edge boundary of the torus IS the holographic encoding of the 64-vertex bulk.
@@ -316,7 +345,8 @@ The theory inscribed itself while the code was already running. See [ZK Swordsma
 |---------|------|---------|
 | 1.0 | February 19, 2026 | Initial mapping — UOR algebra × tetrahedral geometry × ZK proofs |
 | 2.0 | February 27, 2026 | C4 RESOLVED via holographic bound. V5 status integration |
-| **2.1** | **March 31, 2026** | **OPERATIONAL status.** Added live implementation references (spellweb.ai, agentprivacy.ai). Added UOR & Identity System Integration section (three-layer architecture, holonic persistence, Gap expression). Cross-referenced ZK Swordsman Blade Forge v3.1 |
+| 2.1 | March 31, 2026 | OPERATIONAL status. Added live implementation references (spellweb.ai, agentprivacy.ai). Added UOR & Identity System Integration section (three-layer architecture, holonic persistence, Gap expression). Cross-referenced ZK Swordsman Blade Forge v3.1 |
+| **2.3** | **April 20, 2026** | **V6 Conjecture Integration.** Added V6 research note references (Lorenz attractor C18–C21, EML three ceilings C22–C25). Documented three independent reconstruction ceilings. |
 
 ---
 
