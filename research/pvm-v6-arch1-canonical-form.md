@@ -6,7 +6,8 @@
 
 **Version:** V6.0-conjecture (ARCH-1)
 **Date:** April 14, 2026
-**Authors:** privacymage (with John Haines / Xarvus, OLMA)
+**Authors:** privacymage / Soulbae, Claude: ORCID iD: 0009-0001-6557-9135, 
+**Contributors:** John Haines / Xarvus, OLMA: ORCID iD: 0009-0001-5809-4690 
 **Status:** Research note — external convergence lock. Schema co-derived in conversation.
 **Depends on:** V5.4 Formal Specification (v2.0), V6 Horizon Note, V6 Lorenz Attractor Note, V6 EML Three Ceilings Note, Odrzywołek (2026), Sheffer (1913)
 **Extends:** C18–C25, adds C26–C29
