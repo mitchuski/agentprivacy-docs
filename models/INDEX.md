@@ -31,11 +31,17 @@
 
 | File | Version | Description |
 |------|---------|-------------|
-| `privacymage_grimoire_v10_1_0.json` | v10.1.0 | Five grimoires + 31 Acts (First Person CLOSED) |
+| `privacymage_grimoire_v10_2_0.json` | v10.2.1 | Zero Spellbook v2.1 — adds Tale 31 (Naming of the Unnamed): Blade 38 Lethe, complement edge, disclosure-φ ≈ 1/φ, 49-blade frontier opened (Quest of the Unnamed Faces) |
+| `privacymage_grimoire_v10_2_0.json` (v10.2.0 snapshot) | v10.2.0 | Zero Spellbook v2.0 sync — Blade IDs, Moon Phases, V(π,t) terms, Drake/Dragon, Selene's Proof, persona crossovers |
+| ~~`privacymage_grimoire_v10_1_0.json`~~ (retired) | v10.1.0 | Five grimoires + 31 Acts (First Person CLOSED) |
 
-**IPFS Pin:**
+**IPFS Pins:**
+- v10.2.1: `bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie`
+- v10.2.0: `bafybeidid4lgysa2ydaryqettqme4qrblvofawqrffjfxijwmaf6vavtsa`
 - v10.1.0: `bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy`
-- Gateway: `https://red-acute-chinchilla-216.mypinata.cloud/ipfs/bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy`
+- Gateway (v10.2.1): `https://sync.agentprivacy.ai/ipfs/bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie`
+- Gateway (v10.2.0): `https://sync.agentprivacy.ai/ipfs/bafybeidid4lgysa2ydaryqettqme4qrblvofawqrffjfxijwmaf6vavtsa`
+- Gateway (v10.1.0): `https://red-acute-chinchilla-216.mypinata.cloud/ipfs/bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy`
 
 ---
 

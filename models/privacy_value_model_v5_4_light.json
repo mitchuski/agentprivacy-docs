@@ -2,7 +2,7 @@
   "model": "Privacy Value Model",
   "version": "5.4",
   "spec_version": "2.0",
-  "grimoire_version": "10.1.0",
+  "grimoire_version": "10.2.0",
   "author": "privacymage",
   "license": "CC BY-SA 4.0",
   "master_inscription": "(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ",
@@ -100,8 +100,12 @@
     "full_spec": "privacy_value_v5_4_formal_specification.md (v2.0, 24pp)",
     "compressed": "pvm_v5_4_compressed.md (5pp)",
     "companion": "pvm_v5_4_companion_guide.md (v2.0, 11pp)",
-    "grimoire": "privacymage_grimoire_v10_1_0.json",
-    "ipfs_grimoire": "bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy",
+    "grimoire": "privacymage_grimoire_v10_2_0.json",
+    "grimoire_version": "10.2.1",
+    "ipfs_grimoire": "bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie",
+    "ipfs_grimoire_v10_2_1": "bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie",
+    "ipfs_grimoire_v10_2_0": "bafybeidid4lgysa2ydaryqettqme4qrblvofawqrffjfxijwmaf6vavtsa",
+    "ipfs_grimoire_v10_1_0": "bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy",
     "repo": "https://github.com/mitchuski/agentprivacy-docs"
   },
 

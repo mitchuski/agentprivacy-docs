@@ -3,7 +3,7 @@
   "version": "5.4",
   "version_name": "Dual-Agent Privacy Architecture — The Amnesia Protocol",
   "spec_version": "2.0",
-  "grimoire_version": "10.1.0",
+  "grimoire_version": "10.2.0",
   "author": "privacymage",
   "contact": "mage@agentprivacy.ai",
   "date": "2026-04-10",
@@ -519,8 +519,12 @@
     "compressed_spec": "pvm_v5_4_compressed.md (5 pages)",
     "companion_guide": "pvm_v5_4_companion_guide.md (v2.0, 11 pages)",
     "research_paper": "dualprivacy_researchpaper_v4_3.md",
-    "grimoire": "privacymage_grimoire_v10_1_0.json",
-    "ipfs_grimoire": "bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy",
+    "grimoire": "privacymage_grimoire_v10_2_0.json",
+    "grimoire_version": "10.2.1",
+    "ipfs_grimoire": "bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie",
+    "ipfs_grimoire_v10_2_1": "bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie",
+    "ipfs_grimoire_v10_2_0": "bafybeidid4lgysa2ydaryqettqme4qrblvofawqrffjfxijwmaf6vavtsa",
+    "ipfs_grimoire_v10_1_0": "bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy",
     "v6_horizon": "privacy_value_v6_horizon_note.md",
     "chronicle": "CHRONICLE_V5_4_THREE_DOCUMENT_CONVERGENCE.md",
     "blog_series": {
@@ -585,13 +589,13 @@
 
   "grimoires": {
     "five_books": [
-      { "name": "The First Person Spellbook", "acts": 31, "status": "CLOSED", "version": "v10.1.0", "question": "WHAT" },
-      { "name": "The Zero Knowledge Spellbook", "focus": "ZK proofs as narrative" },
+      { "name": "The First Person Spellbook", "acts": 31, "status": "CLOSED", "closed_at": "grimoire v10.1.0", "question": "WHAT" },
+      { "name": "The Zero Knowledge Spellbook", "tales": 30, "status": "v2.0 (grimoire v10.2.0)", "synced_at": "2026-04-22", "focus": "ZK proofs as narrative — Blade IDs, Moon Phases, V(π,t) term mapping, persona crossovers (Cipher, Architect, Sentinel, Ranger)" },
       { "name": "The Canon Spellbook", "focus": "Canonical formulations, axioms" },
       { "name": "The Parallel Society Spellbook", "focus": "Alternative social structures" },
       { "name": "The Plurality Spellbook", "focus": "Many-to-many, ⿻ overlap" }
     ],
-    "compression": "privacymage_grimoire_v10_1_0.json — the grimoire as holographic boundary",
+    "compression": "privacymage_grimoire_v10_2_0.json — the grimoire as holographic boundary (Zero Spellbook v2.0 synced)",
     "next": { "name": "The Second Person Spellbook", "voice": "Second person", "question": "WHO", "status": "Horizon" }
   },
 

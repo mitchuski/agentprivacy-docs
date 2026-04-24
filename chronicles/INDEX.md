@@ -8,6 +8,8 @@
 
 | Chronicle | Date | Summary |
 |-----------|------|---------|
+| [CHRONICLE_MASTER_CONTENT_SYNC_2026-04-22.md](CHRONICLE_MASTER_CONTENT_SYNC_2026-04-22.md) | 2026-04-22 | Skills source→master content sync: Act XXXI rename, Moon Phase Notation propagation, PRISM triadic coordinates (11 files, drift=0) |
+| [CHRONICLE_SKILL_YAML_FIX_2026-04-22.md](CHRONICLE_SKILL_YAML_FIX_2026-04-22.md) | 2026-04-22 | Bulk repair of 104 SKILL.md frontmatter blocks — folded-scalar indent mismatch broke Claude web uploads |
 | [CHRONICLE_V5_4_IPFS_ARCHIVE_2026-04-10.md](CHRONICLE_V5_4_IPFS_ARCHIVE_2026-04-10.md) | 2026-04-10 | IPFS pinning of V5.4 suite (5 CIDs), version alignment (Whitepaper→v6.3), repo organization |
 
 ---
