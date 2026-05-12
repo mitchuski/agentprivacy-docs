@@ -661,14 +661,62 @@ These results hold at 95% confidence. The proofs rely on standard information th
 
 ### 17.2 V6 Horizon Conjectures
 
-These are speculative. They belong to V6 and are included here for completeness and to invite scrutiny. See V6 Research Note for full treatment.
+These are speculative. They belong to V6 and are included here for completeness and to invite scrutiny. See V6 Research Notes for full treatment.
 
-| ID | Claim | Confidence | Version |
-|----|-------|------------|---------|
-| C18 | Sovereignty path exhibits strange attractor dynamics (λ > 0), establishing dynamical reconstruction ceiling independent of Shannon bound | 25% | V6 |
-| C19 | ρ is Lyapunov divergence accumulated over the sovereign's walk — exponential compounding | 20% | V6 |
-| C20 | Three separation axes couple as three Lorenz variables — collapse any one → attractor degrades to fixed point | 30% | V6 |
-| C21 | Sovereignty manifold has fractal dimension, not integer dimension | 10% | V6 |
+| ID | Claim | Confidence | Anchor doc |
+|----|-------|------------|------------|
+| C18 | Sovereignty path exhibits strange attractor dynamics (λ > 0), establishing dynamical reconstruction ceiling independent of Shannon bound | 25% | `research/pvm-v6-lorenz-attractor.md` |
+| C19 | ρ is Lyapunov divergence accumulated over the sovereign's walk — exponential compounding | 20% | `research/pvm-v6-lorenz-attractor.md` |
+| C20 | Three separation axes couple as three Lorenz variables — collapse any one → attractor degrades to fixed point | 30% | `research/pvm-v6-lorenz-attractor.md` |
+| C21 | Sovereignty manifold has fractal dimension, not integer dimension | 10% | `research/pvm-v6-lorenz-attractor.md` |
+| C22 | Adversary's reconstruction cost grows exponentially with EML tree depth | 20% | `research/pvm-v6-eml-three-ceilings.md` |
+| C23 | Blade forge traversal grammar is isomorphic to restricted EML grammar | 30% | `research/pvm-v6-eml-three-ceilings.md` |
+| C24 | Sovereignty computation requires complex intermediates | 15% | `research/pvm-v6-eml-three-ceilings.md` |
+| C25 | Minimal EML tree depth provides hard floor for compression spectrum | 25% | `research/pvm-v6-eml-three-ceilings.md` |
+| C26 | ARCH-1 is canonical form of NAND, EML, succ as co-instances | 40% | `research/pvm-v6-arch1-canonical-form.md` |
+| C27 | ρ is the activation mechanism; Ω without ρ is structurally inert | 35% | `research/pvm-v6-arch1-canonical-form.md` |
+| C28 | Three reconstruction ceilings are independent because ARCH-1 factors into β / μS / Ω | 30% | `research/pvm-v6-arch1-canonical-form.md` |
+| C29 | The Second Person Lift — `You := μS.(β ∨ Ω(S,S))` — identifies sovereign as recursive symbol | 20% | `research/pvm-v6-arch1-canonical-form.md` |
+| C30 | Trust half-life begins at inscription; T(t) decays monotonically until renewed | 60% | `research/pvm-v6-1-bakhta-half-life.md` |
+| C31 | Half-life differs by inscription register (shielded vs transparent) | 55% | `research/pvm-v6-1-bakhta-half-life.md` |
+| C32 | Productive trust-edges have higher half-life than transactional | 50% | `research/pvm-v6-1-bakhta-half-life.md` |
+| C33 | Half-lives compose multiplicatively across the three axes | 45% | `research/pvm-v6-1-bakhta-half-life.md` |
+| C34 | Convergence requires a bijective cap | 55% | `research/pvm-v6-convergence-wound-and-cap.md` |
+| C35 | The wound is where the architectural asymmetry lives | 60% | `research/pvm-v6-convergence-wound-and-cap.md` |
+| C36 | The cap is where the bijection lives or breaks | 55% | `research/pvm-v6-convergence-wound-and-cap.md` |
+| C37 | Convergence is recognition, not coincidence | 50% | `research/pvm-v6-convergence-wound-and-cap.md` |
+
+### 17.2.1 V6 Conjectures introduced by the Bound Collection (Tomes IV–V)
+
+| ID | Claim | Confidence | Anchor |
+|----|-------|------------|--------|
+| C38 | Bilateral ARCH-1 — `Σ_{ij} := μS.(β_{ij} ∨ Ω(S_i, S_j))` preserves fixpoint property | ~40% | Tome IV Act III + Cloak Spec |
+| C39 | Cousin-blade as ecosystem-layer primitive | ~50% | Tome IV Act V; strengthened in Tome V Acts 7/9/10/11/12 |
+| C40 | Zcash dual-ledger preserves Eight Cloak Properties | ~70% | `agentprivacy_tomes/.../plans/02-zcash-integration-plan.md` |
+| C41 | 61.8/38.2 transparent/shielded inscription ratio emerges as cultural norm | open observation | Same |
+| C42 | Stake economics generate Sybil resistance equivalent to or stronger than tier accumulation | ~50% | Same |
+| C43 | Per-VRC viewing-key disclosure produces strictly more privacy than unscoped | ~60% | Same |
+| C44 | Productive VRC (ceremony) ≈ hash-exchange VRC in trust strength | ~55% | `agentprivacy_tomes/.../specs/03-bilateral-cloak-ceremony-spec.md` |
+| C45 | Four-chain publication > single-chain reconstruction resistance | ~70% | Same |
+| C46 | Productive trust-edge has higher half-life than transactional | ~50% | Same |
+
+### 17.2.2 V6 Conjectures introduced by Post-V5.4 Coherence (2026-05-09)
+
+| ID | Claim | Confidence | Anchor |
+|----|-------|------------|--------|
+| C47 | The dynamical reconstruction ceiling inhabits a fourth aging category (*ages progressively*) Bakhta's three-category taxonomy does not cover | ~50% | `research/v6_1_research_note.md` (renumbered from C22-Bakhta) |
+| C48 | Reconstruct-later threat model for behavioural data is structurally isomorphic to Bakhta's TM-1 | ~65% | `research/v6_1_research_note.md` (from C23-Bakhta) |
+| C49 | Behavioural Mosca Inequality binds for long-horizon behavioural evidence | ~70% | `research/v6_1_research_note.md` (from C24-Bakhta) |
+| C50 | PVM multiplicative gating ≡ Bakhta compositional defense at different substrates | ~60% | `research/v6_1_research_note.md` (from C25-Bakhta) |
+| C51 | The ⿻ remains max-betweenness across all trust-graph evolutions | open | `chronicles/CHRONICLE_V5_4_BETWEENNESS_SELENE_2026-04-12.md` |
+| C52 | Aether = Quintessence = the Gap (single substance, three traditions) | open | `research/aether-blade-ceremony-circuit.md` |
+| C53 | Every bnot-pair on the lattice has a mythological reading | ~70% | `research/aletheia-and-lethe.md` |
+| C54 | Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ | ~40% | `research/aletheia-and-lethe.md` |
+| C55 | Privacy is a seventh kind of capital, foundationally | architectural | `poems/tide-orbit-selene.md` |
+
+### 17.2.3 Reconciliation note · 2026-05-09
+
+The V6.1 Bakhta-response note (`research/v6_1_research_note.md`, April 21, 2026) originally claimed C22–C25 for its four conjectures (ages-progressively, reconstruct-later, Behavioural Mosca, compositional-defense). The EML Three Ceilings note (`research/pvm-v6-eml-three-ceilings.md`, April 13, 2026, prior date) had already claimed C22–C25 for its conjectures. **Resolution:** EML retains C22–C25; Bakhta-response renumbers to C47–C50. The renumbering was performed in the V6.1 note on 2026-05-09; downstream references in tomes and specs use the renumbered IDs going forward. Canonical reconciliation in `agentprivacy_tomes/COMPRESSION_MASTER_v2_2026-05-09.md`.
 
 ### 17.3 Resolved Conjectures
 

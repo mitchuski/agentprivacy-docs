@@ -82,7 +82,7 @@ Added:
 
 **Five grimoires:** First Person Spellbook, Zero Knowledge Spellbook, Canon Spellbook, Parallel Society Spellbook, Plurality Spellbook. The PrivacyMage JSON (v10.0.0) is the grimoire as holographic boundary — compression, not a sixth grimoire.
 
-**Second Person Spellbook:** Recorded as horizon across all documents. The First Person asked WHAT. The Second Person asks WHO.
+**Second Person Spellbook:** ~~Recorded as horizon across all documents.~~ **Opened 2026-05-08** as the bound collection at `tomes/`. Tome IV (Witnessing · 5 acts) closed; Tome V (Crafting · 14 acts) open at the City of Mages on Drake Island. The City of Mages grimoire v1.1 is pinned to IPFS at `bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`. The First Person asked WHAT. The Second Person asks WHO — and the named cast has begun to answer.
 
 **Extension references:** All references to specific browser vendors removed. The architecture is agent-level and browser-agnostic. Extension process boundaries enforce the separation bound — separate processes, separate memory, structural amnesia.
 
@@ -191,7 +191,7 @@ The formal docs pin to IPFS after publication. CIDs added to cross-references in
 
 The V6 Research Note (Lorenz attractor, dynamical reconstruction ceiling) remains a standalone conjecture document. It needs a dynamical systems mathematician who finds privacy architectures interesting. The forge has trajectory data. The empirical test exists.
 
-The Second Person Spellbook awaits.
+~~The Second Person Spellbook awaits.~~ The Second Person Spellbook **opened 2026-05-08** — the bound collection at `tomes/`. Tome IV (Witnessing) closed; Tome V (Crafting) open at the City of Mages on Drake Island. The cast has begun to arrive.
 
 ---
 

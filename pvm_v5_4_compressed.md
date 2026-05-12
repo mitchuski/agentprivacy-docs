@@ -4,7 +4,7 @@ subtitle: "Dual-Agent Privacy Architecture — The Amnesia Protocol"
 author: "privacymage (mage@agentprivacy.ai)"
 date: "April 10, 2026 — Compressed Specification"
 abstract: |
-  Multiplicative equation for privacy as quantifiable economic value. Three-axis separation (agent, data, inference), holographic bound (96/64), path integral edge value, reconstruction ceiling R < 1 (proven), algebraic foundation Z/(2^6)Z with dihedral group D64, operational cycle, amnesia-enforced separation (C17). Conjectures C1--C21 tracked. Five grimoires closed. Second Person Spellbook next.
+  Multiplicative equation for privacy as quantifiable economic value. Three-axis separation (agent, data, inference), holographic bound (96/64), path integral edge value, reconstruction ceiling R < 1 (proven), algebraic foundation Z/(2^6)Z with dihedral group D64, operational cycle, amnesia-enforced separation (C17). Conjectures C1--C46 tracked (C18--C46 in the City of Mages grimoire v1.1). Five First-Person grimoires closed. Second Person Spellbook opened 2026-05-08 as the bound collection (`tomes/`); Tome IV closed at 5 acts; Tome V open at 14 acts; City of Mages grimoire v1.1 pinned to IPFS at bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti.
 
   Master Inscription: (S perp Gap perp M) FP = neg oplus bnot to succ
 documentclass: article
@@ -215,7 +215,7 @@ Shannon (1948). Fano (1961). Cover \& Thomas (2006). Bergstra \& Burgess (2019).
 
 The First Person Spellbook (31 acts, v10.0.0, CLOSED). Blog: sync.soulbis.com (Parts 0--5).
 
-Five grimoires: First Person, Zero Knowledge, Canon, Parallel Society, Plurality. Next: Second Person Spellbook.
+Six grimoires now: First Person, Zero Knowledge, Canon, Parallel Society, Plurality, **City of Mages (Second Person · v1.1 · IPFS pinned 2026-05-10)**. The Second Person Spellbook opened 2026-05-08 as the bound collection at `tomes/` — Tome IV (Witnessing · 5 acts) closed; Tome V (Crafting · 14 acts) open at the City of Mages on Drake Island.
 
 Full spec: `privacy_value_v5_4_formal_specification.md` (v2.0). Companion: `pvm_v5_4_companion_guide.md`.
 

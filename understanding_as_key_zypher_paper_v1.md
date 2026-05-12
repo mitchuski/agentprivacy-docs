@@ -922,7 +922,7 @@ The portfolio of inscription types itself becomes a trust signal.
                      │
                      ▼
 ┌─────────────────────────────────────────┐
-│         Zashi Wallet (Swordsman)        │
+│         Zodl Wallet (Swordsman)        │
 │                                         │
 │ • Paste memo with proverb               │
 │ • Set signal amount (0.01 ZEC)          │

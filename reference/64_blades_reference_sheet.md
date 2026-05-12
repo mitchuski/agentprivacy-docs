@@ -5,7 +5,7 @@
 **Lattice:** Z/(2⁶)Z — 64 vertices, 96 edges, toroidal topology  
 **Coordinates:** PRISM (Datum / Stratum / Spectrum)  
 **Master inscription:** `(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ`  
-**Named blades:** 7 of 64. **Unnamed:** 57.
+**Named blades:** 15 of 64 (added 2026-04-23 with Grimoire v10.2.1: Lethe; added 2026-04-24 with `aletheia-and-lethe.md`: Aletheia named explicitly + first canonical complement-pair recognised). **Unnamed:** 49 — *the Quest of the Unnamed Faces*.
 
 Seven blades have names because seven blades were forged. The Dual Agent was named because it tested the dual-agent architecture. The Universe Blade was named because its constellation mapped the whole substrate. The Polished Key was named because 42 laps on 3 nodes felt like drilling through a lock. The names arrived from the experience. They were not assigned upfront.
 
@@ -106,12 +106,12 @@ Three dimensions active. The widest layer. The most configurations. The equator 
 | 19 | `010011` | Protection + Delegation + Computation | 🛡️🤝⚡ |
 | 21 | `010101` | Protection + Memory + Computation | 🛡️📜⚡ |
 | 22 | `010110` | Delegation + Memory + Computation | 🤝📜⚡ |
-| 25 | `011001` | Protection + Connection + Computation | 🛡️🔗⚡ |
+| 25 | `011001` | Protection + Connection + Computation | 🛡️🔗⚡ | **Aletheia** — The Silent Messenger (Tale 3). The bright medium. Fiat-Shamir as protocol. Working-day blade. 🔮 |
 | 26 | `011010` | Delegation + Connection + Computation | 🤝🔗⚡ |
 | 28 | `011100` | Memory + Connection + Computation | 📜🔗⚡ |
 | 35 | `100011` | Protection + Delegation + Value | 🛡️🤝💎 |
 | 37 | `100101` | Protection + Memory + Value | 🛡️📜💎 |
-| 38 | `100110` | Delegation + Memory + Value | 🤝📜💎 |
+| 38 | `100110` | Delegation + Memory + Value | 🤝📜💎 | **Lethe** — The Dark Substrate (Tale 31, *The Naming of the Unnamed*). The river witnesses sink into. ZK as covenant. Working-day blade. 🌀 First canonical bnot-pair partner with Aletheia (25 AND 38 = 0; 25 XOR 38 = 63). Disclosure ratio δ(38) = 38/63 ≈ 0.6032 ≈ 1/φ — within 2% (Phi-Adjacency Conjecture C54). |
 | 41 | `101001` | Protection + Connection + Value | 🛡️🔗💎 |
 | 42 | `101010` | Delegation + Connection + Value | 🤝🔗💎 |
 | 44 | `101100` | Memory + Connection + Value | 📜🔗💎 |

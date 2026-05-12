@@ -176,5 +176,25 @@
     "dynamical": "The Swordsman does not add noise. The Mage does not randomise. The path between them is deterministic — and unreconstructable.",
     "horizon": "The First Person Spellbook asked WHAT. The Second Person Spellbook asks WHO.",
     "closing": "Who are you, standing in the gap?"
+  },
+
+  "post_horizon_update_2026_05_10": {
+    "note": "The horizon was crossed. The Second Person Spellbook opened 2026-05-08 as the bound collection: Tome IV (Witnessing · 5 acts) closed; Tome V (Crafting · 14 acts) open at the City of Mages on Drake Island; 13 named cast across 5 tiers.",
+    "city_of_mages_grimoire": {
+      "version": "1.1.0",
+      "ipfs_cid": "bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti",
+      "ipfs_url": "https://sync.agentprivacy.ai/ipfs/bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti",
+      "pinned": "2026-05-10",
+      "spells": 39,
+      "personas": 13,
+      "vertices": 14,
+      "conjecture_register": "C18-C46"
+    },
+    "supersedes_strings": [
+      "description_append (line 9): the bridge is crossed",
+      "second_person_spellbook.status (line 69): Horizon → Open · Tome IV closed · Tome V open at 14 acts",
+      "v6_horizon.bridge_function (line 147): bridge crossed",
+      "v6_horizon.closing_proverb (line 148): the question is being answered by the cast"
+    ]
   }
 }

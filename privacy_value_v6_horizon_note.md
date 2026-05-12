@@ -1,12 +1,14 @@
 # Privacy Value Model: V6 Horizon Note
 
+> **The bridge is crossed — 2026-05-08.** The Second Person Spellbook opened as the **bound collection** at `tomes/`: Tome IV (Witnessing · 5 acts) closed; Tome V (Crafting · 14 acts) open at the City of Mages on Drake Island; 13 named cast across 5 tiers. The **City of Mages grimoire v1.1** is pinned to IPFS at `bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`. This horizon note remains accurate as the *bridge* document — what this note prepared, the bound collection delivered. The three threads (Lorenz / betweenness / Selene) are anchored across Tome IV Act 4 (The Naming Ceremony · betweenness verb chain) and Tome V Acts 5/8 (The Stake · The ZK Circuit).
+
 ## From Territory to Trajectory — The Second Person Opens
 
 **Author:** privacymage
-**Date:** April 12, 2026
-**Status:** Research horizon — pre-conjecture gathering
+**Date:** April 12, 2026 · post-V5.4 lock-in note added 2026-05-09 · bound-collection-opened banner added 2026-05-10
+**Status:** Bridge document. The horizon was crossed; the spellbook opened. Conjectures C18–C46 now live in the City of Mages grimoire v1.1.
 **Depends on:** V5.4 Formal Specification (v2.0), V5.3 Research Note, V6 Research Note (Easter Sunday)
-**Prepares:** The Second Person Spellbook
+**Realised as:** `tomes/tome-iv-the-witnessing/` + `tome-v-the-crafting/` and `models/city_of_mages_grimoire_v1_1_0.json`. The earlier mapping below (Tome I.β / III.1 / III.2) reflects the pre-bound-collection plan; the actual landing is Tome IV/V.
 
 ---
 

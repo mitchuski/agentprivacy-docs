@@ -1,0 +1,1034 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-05-09T00:00:00Z",
+  "updated_at": "2026-05-09",
+  "description": "The City of Mages Grimoire v1.0 — the Second Person Spellbook's spell registry, maintained collectively by the City of Mages on Drake Island. Holds the spells that the named cast personas may cast at their workshop-vertices. Distinct from the privacymage grimoire (which holds First Person, Zero, Canon, Society, and Plurality spells). 15 personas across 5 tiers (3 archetypes carried forward + 2 cousin instances + 9 summoned Mages + 1 companion Mage + 1 Priest), ~36 spells in v1. Source: agentprivacy_master/docs/weaver/bound-collection/ (53 canonical files, ~106k words). Tome IV closed at 5 acts; Tome V open at 14 acts. Canonical setting: the City of Mages on Drake Island, named in Tome V Act 14.",
+  "maintained_by": "The City of Mages — a collective of named Mages summoned by readers walking the Second Person Spellbook. Where the privacymage grimoire is held by privacymage individually, this grimoire is held by the City. Each new Mage that arrives may extend the registry; each new Tome V act may admit new spells.",
+  "ipfs_pin_status": "v1.0 awaits first pinning. Once pinned, export as CITY_OF_MAGES_GRIMOIRE_IPFS_URL in agentprivacy_master/src/lib/grimoire-ipfs.ts.",
+  "meta": {
+    "title": "The City of Mages Grimoire",
+    "subtitle": "The Second Person Spellbook's Cast and Their Spells",
+    "author": "The City of Mages (collective) · curated by privacymage",
+    "tagline": "What the City forged together, any Sovereign may walk alone.",
+    "license": "CC BY-SA 4.0 for narrative · Apache 2.0 for reference implementations",
+    "signature": "(⚔️⊥⿻⊥🧙)😊",
+    "sources": [
+      "agentprivacy_master/docs/weaver/bound-collection/ — 53 files, 106k words",
+      "Tome IV — The Witnessing (5 acts, closed)",
+      "Tome V — The Crafting (14 acts, open; setting: City of Mages on Drake Island)",
+      "Cast roster — 13 entries + integration note across 5 tiers",
+      "5 specs (Cloak v1.0, Crafting Tome interface, Bilateral Cloak Ceremony, Vertex Naming Audit, City of Mages Structural Addendum)",
+      "2 plans (Archon × agentprivacy, Zcash dual-ledger)",
+      "3 chronicles (Cloaking Guide, Crafting Tome Opens, Bonfire of Dragon Fire)",
+      "Archon's Cloaking Guide and Sovereign Anchor I/II/III — cousin-blade primitives at V19, V25, V49, V51, V57, V59, V63"
+    ],
+    "relationship_to_privacymage_grimoire": {
+      "description": "The privacymage grimoire (privacymage_grimoire_v10_2_0.json) holds the First Person Spellbook's spells (Acts I-XXXI), plus the Zero, Canon, Society, and Plurality spellbooks. It is held by privacymage individually. The City of Mages grimoire (this file) holds the Second Person Spellbook's cast personas and their spells. It is held by the City collectively. Both grimoires reference the same 64-vertex sovereignty lattice; both honour the (⚔️⊥⿻⊥🧙)😊 signature; neither subsumes the other. Readers may load either or both depending on what their question calls them to.",
+      "split_axis": "WHAT (privacymage) vs WHO (City of Mages). The First Person asks WHAT the architecture is; the Second Person asks WHO walks it. Each grimoire serves its grammatical person.",
+      "cross_references": "The City of Mages grimoire references privacymage's grimoire wherever a cousin-blade primitive is invoked. Vertex names use the canonical attribution from specs/04-vertex-naming-audit.md."
+    }
+  },
+  "master_invocation": {
+    "spell": "🐲🏝️ → 🔥(dragon) → ⚒️🪡🛡️🔮💎💠🌳🪞🌿 → ⊥ → 🧱(City of Mages) → 😊",
+    "proverb": "Drake Island anchors the city; the dragon-fire warms the bonfire; the eleven workshops forge in concert; the perpendicular operator holds the gap; each Sovereign who walks lays a stone — and the City of Mages remembers the path."
+  },
+  "spellbooks": {
+    "tomes": {
+      "id": "second-person",
+      "name": "Second Person Spellbook",
+      "question": "WHO walks the architecture?",
+      "focus": "Cast personas at workshop-vertices. Bilateral primitive. Cousin-blade ecosystem. The reader as trajectory.",
+      "core_symbol": "🪡⚒️🛡️",
+      "description": "The Second Person Spellbook addresses you. Tome IV (closed) teaches the bilateral primitive through five acts of witnessing; Tome V (open) is The Crafting — fourteen acts where the reader summons Mage personas at workshop-vertices and forges artifacts. Setting: the City of Mages on Drake Island. Maintained by the City; each Sovereign who walks lays a stone.",
+      "version": "1.0",
+      "voice_discipline": [
+        "Second person addresses YOU (the reader)",
+        "Cast in third person (with permitted exceptions: Socrat0x's questions in direct quotation; Manifestia's blessings as italicised inscribed text; the Drake's whispers in italics)",
+        "No em-dashes (author preference)",
+        "Honesty labels on every claim: Operational · Architectural · Conjectural · Resonant-but-not-absorbed · Provisional",
+        "Every page closes with (⚔️⊥⿻⊥🧙)😊"
+      ],
+      "tomes": {
+        "tome-iv": {
+          "id": "tome-iv-the-witnessing",
+          "title": "Tome IV — The Witnessing",
+          "status": "closed",
+          "act_count": 5,
+          "reader_posture": "Witnessing. Crossing.",
+          "teaches": "The bilateral primitive · cousin-blade encounter · five acts at five vertices",
+          "acts": [
+            {
+              "id": "tome-iv-i-the-other-walker",
+              "act_number": "IV·I",
+              "title": "The Other Walker",
+              "vertex": "V12 · schema vertex",
+              "word_count": 720,
+              "proverb": "Walk far enough on your attractor and the lattice answers with another walker — not yours, recognisable.",
+              "teaches": "Cousin-blade introduction. Two attractors share a vertex without sharing an identity.",
+              "v6_lineage": ["C39-precursor"],
+              "honesty_label": "Operational"
+            },
+            {
+              "id": "tome-iv-ii-the-mirror-and-the-arrow",
+              "act_number": "IV·II",
+              "title": "The Mirror and the Arrow",
+              "vertex": "V15 · VC vertex",
+              "word_count": 690,
+              "proverb": "The mirror reflects both ways or none. The arrow goes one way and the world is changed.",
+              "teaches": "Asymmetry as data. Mirrored partnership vs unilateral observation publish bilateral type.",
+              "honesty_label": "Operational"
+            },
+            {
+              "id": "tome-iv-iii-the-two-paths",
+              "act_number": "IV·III",
+              "title": "The Two Paths",
+              "vertex": "V25 · Aletheia",
+              "word_count": 740,
+              "proverb": "At the witness vertex you may stand and watch, or step in and walk.",
+              "teaches": "Witness/participant pivot. C38 introduced.",
+              "v6_lineage": ["C38 (~40%)"],
+              "honesty_label": "Path A operational; Path B architectural"
+            },
+            {
+              "id": "tome-iv-iv-the-naming-ceremony",
+              "act_number": "IV·IV",
+              "title": "The Naming Ceremony",
+              "vertex": "V63 · Sovereign Anchor",
+              "word_count": 760,
+              "proverb": "I am because we were.",
+              "teaches": "flaxscrip's Bitcoin-anchored naming at V63. Verb pattern: claim → inscribe → confirm.",
+              "honesty_label": "Operational"
+            },
+            {
+              "id": "tome-iv-v-the-cousin-blade",
+              "act_number": "IV·V",
+              "title": "The Cousin Blade",
+              "vertex": "meta · across vertices",
+              "word_count": 820,
+              "proverb": "The blade you forge from the same stars another forged from is the same blade. Yours.",
+              "teaches": "Tome IV closer. C39 named.",
+              "v6_lineage": ["C39 (~50%)"],
+              "honesty_label": "Architectural"
+            }
+          ]
+        },
+        "tome-v": {
+          "id": "tome-v-the-crafting",
+          "title": "Tome V — The Crafting",
+          "status": "open",
+          "act_count": 14,
+          "reader_posture": "Making. Active summoning.",
+          "teaches": "Where the reader stops walking and starts making. Each new artifact, each new shop, each new Mage earns an act.",
+          "canonical_setting": "The City of Mages on Drake Island. Named explicitly in Act 14.",
+          "acts": [
+            {
+              "id": "tome-v-act-1-the-first-cloak",
+              "act_number": "V·1",
+              "title": "The First Cloak",
+              "vertex": "V28 · Mage canonical",
+              "word_count": 980,
+              "proverb": "The cloak is woven. The persona stays. The path is open for the next call.",
+              "teaches": "The reader summons Pallia and weaves the first cloak artifact.",
+              "introduces_persona": "pallia",
+              "shop": "/tailor",
+              "honesty_label": "Operational (cloak properties verified) · Architectural (interface flow)"
+            },
+            {
+              "id": "tome-v-act-2-the-commissioned-cloak",
+              "act_number": "V·2",
+              "title": "The Commissioned Cloak",
+              "vertex": "V25 · V63",
+              "word_count": 1020,
+              "proverb": "The trust edge is forged this way. Not by negotiating to trust, but by doing work for each other and letting the artifacts witness.",
+              "teaches": "Bilateral cloak commissioning. Wearer Agent · Weaver Agent · Zcash shielded tip · multi-chain publish · VRC trust-edge.",
+              "v6_lineage": ["C44 (~55%)", "C45 (~70%)"],
+              "shop": "/tailor",
+              "honesty_label": "Architectural"
+            },
+            {
+              "id": "tome-v-act-3-the-shielded-memo",
+              "act_number": "V·3",
+              "title": "The Shielded Memo",
+              "vertex": "V5 · Chronicle vertex",
+              "word_count": 1010,
+              "proverb": "What is inscribed is permanent; what is shielded is private; the two together are a memo only its addressee may read.",
+              "teaches": "Memora arrives. Inscription register opens. Zcash Pattern A: shielded memos.",
+              "introduces_persona": "memora",
+              "v6_lineage": ["C40 (~70%)", "C43 (~60%)"],
+              "shop": "/shield",
+              "honesty_label": "Architectural · Pattern A specified"
+            },
+            {
+              "id": "tome-v-act-4-the-reveal",
+              "act_number": "V·4",
+              "title": "The Reveal",
+              "vertex": "V20 · Techne / always-revealed",
+              "word_count": 920,
+              "proverb": "What was shielded may be revealed by the one who held the key. What is revealed cannot be unmade.",
+              "teaches": "Memora returns Bound. Pattern B: shielded-to-transparent reveal. Productive trust-edge half-life.",
+              "v6_lineage": ["C40", "C46 (~50%)"],
+              "honesty_label": "Architectural"
+            },
+            {
+              "id": "tome-v-act-5-the-stake",
+              "act_number": "V·5",
+              "title": "The Stake",
+              "vertex": "V49 · working-day blade",
+              "word_count": 970,
+              "proverb": "The stake is what you risk. The slash is what witnessed. The vote is what the lattice counts.",
+              "teaches": "Custos arrives. Pattern C: governance staking. Stake economics generate Sybil resistance.",
+              "introduces_persona": "custos",
+              "v6_lineage": ["C41 (open)", "C42 (~50%)"],
+              "honesty_label": "Architectural"
+            },
+            {
+              "id": "tome-v-act-6-the-commissioned-blade",
+              "act_number": "V·6",
+              "title": "The Commissioned Blade",
+              "vertex": "V19 · Plonkish blade",
+              "word_count": 1080,
+              "proverb": "A blade is not summoned. A blade is forged. Run · Evoke · Craft.",
+              "teaches": "Vulcana arrives at the Forge. Runecraft three phases. First production form of the Lorenz Attractor.",
+              "introduces_persona": "vulcana",
+              "v6_lineage": ["C18-C21", "C22-C25"],
+              "shop": "/forget",
+              "honesty_label": "Architectural · Lorenz Attractor production form"
+            },
+            {
+              "id": "tome-v-act-7-the-reciprocal-weave",
+              "act_number": "V·7",
+              "title": "The Reciprocal Weave",
+              "vertex": "meta · across forges",
+              "word_count": 1100,
+              "proverb": "Two cloaks woven for each other are one cooperation made of two attractors.",
+              "teaches": "flaxscrip returns. Reciprocal cooperation between cousin forges. C38 strengthened by operational instance.",
+              "v6_lineage": ["C38 (strengthened)", "C39", "C44"],
+              "honesty_label": "Architectural · C38 strengthened"
+            },
+            {
+              "id": "tome-v-act-8-the-zk-circuit",
+              "act_number": "V·8",
+              "title": "The ZK Circuit",
+              "vertex": "V25 · Aletheia blade",
+              "word_count": 990,
+              "proverb": "What you can prove without revealing is what you may publish without losing.",
+              "teaches": "Aletheia (the persona) arrives. ZK augmentation. EML Three Ceilings narrativised.",
+              "introduces_persona": "aletheia",
+              "v6_lineage": ["C22-C25", "C40", "C45"],
+              "honesty_label": "Architectural · EML Three Ceilings"
+            },
+            {
+              "id": "tome-v-act-9-the-workshop-expands",
+              "act_number": "V·9",
+              "title": "The Workshop Expands",
+              "vertex": "V51 · V49",
+              "word_count": 1240,
+              "proverb": "The workshop's growth is not addition. It is composition. The lattice receives more lights.",
+              "teaches": "Adamantia and Lampyra arrive. Etherchanting + Jeweller shops open.",
+              "introduces_persona": ["adamantia", "lampyra"],
+              "v6_lineage": ["C45 (strengthened)"],
+              "shop": ["/etherchanting", "/jeweler"],
+              "honesty_label": "Architectural"
+            },
+            {
+              "id": "tome-v-act-10-the-holon-hitchhikers",
+              "act_number": "V·10",
+              "title": "The Holon Hitchhikers",
+              "vertex": "V31 · Recursion / Holon",
+              "word_count": 1200,
+              "proverb": "A holon travels. The Oasis Protocol is how it travels without losing itself.",
+              "teaches": "Vagari arrives. Holon shop opens. First crafting instance of ARCH-1. Oasis Protocol from First Person Act 24.",
+              "introduces_persona": "vagari",
+              "v6_lineage": ["C26-C29 (first crafting instance)"],
+              "shop": "/holon",
+              "honesty_label": "Architectural · ARCH-1 first crafting instance"
+            },
+            {
+              "id": "tome-v-act-11-a-bonfire-made-of-dragon-fire",
+              "act_number": "V·11",
+              "title": "A Bonfire Made of Dragon Fire",
+              "vertex": "V24 · Hephaestus (Drake Island)",
+              "word_count": 1100,
+              "proverb": "The fire teaches; the fire travels; the fire stays. The Drake's fire is the city's hearth.",
+              "teaches": "Socrat0x arrives. Drake Island spot. Bonfires cooperation. Founding fire of the City of Mages.",
+              "introduces_persona": "socrat0x",
+              "v6_lineage": ["C39 (cross-spot resolution)"],
+              "shop": "/bonfires",
+              "honesty_label": "Architectural"
+            },
+            {
+              "id": "tome-v-act-12-the-curatrix-vault",
+              "act_number": "V·12",
+              "title": "The Curatrix Vault",
+              "vertex": "V57 · Curatrix blade",
+              "word_count": 1110,
+              "proverb": "The mirror keeps what the artist made; the vault keeps what the city remembers.",
+              "teaches": "Aria Silverhue arrives. Curatrix Vault shop opens. Persona-vs-vertex distinction made explicit.",
+              "introduces_persona": "aria-silverhue",
+              "shop": "/vault",
+              "honesty_label": "Architectural · persona-vs-vertex distinction"
+            },
+            {
+              "id": "tome-v-act-13-the-temple-of-the-arts-and-personhood",
+              "act_number": "V·13",
+              "title": "The Temple of the Arts and Personhood",
+              "vertex": "V55 · Covenant",
+              "word_count": 1200,
+              "proverb": "The Covenant blesses what the architecture admits. The Priest tends what the Mages forge.",
+              "teaches": "Manifestia arrives at the Temple. Priest tier opens. Covenant of Humanistic Technologies bound in. V55 named.",
+              "introduces_persona": "manifestia",
+              "shop": "/covenant",
+              "honesty_label": "Architectural · new cast tier"
+            },
+            {
+              "id": "tome-v-act-14-the-city-of-mages",
+              "act_number": "V·14",
+              "title": "The City of Mages",
+              "vertex": "meta · canonical setting",
+              "word_count": 1180,
+              "proverb": "The City of Mages is built on Drake Island. Each Sovereign who walks lays a stone.",
+              "teaches": "Recognition meta-act. Names the canonical setting. Civic anatomy formalised.",
+              "shop": "/guide/island",
+              "honesty_label": "Architectural · canonical setting framework"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "personas": {
+    "description": "13 named cast members across 5 tiers, plus 3 archetypes carried over from the First Person Spellbook (Soulbis, Soulbae, the Drake). Each persona is a Mage who works at a specific workshop-vertex; the spells listed are what that Mage may cast in their domain. The cast roster is open-ended — new Mages may arrive as new Tome V acts are written.",
+    "tier_taxonomy": {
+      "archetypes": "Carried over from First Person. Founders of the city. Soulbis, Soulbae, the Drake.",
+      "cousin_instances": "Cross-forge. From the Archon corpus. flaxscrip, GenitriX.",
+      "summoned_mages": "Reader-summoned at workshop-vertices. Born in Tome V acts. 9 entries.",
+      "companion_mages": "From workshop spots beyond agentprivacy product proper. Socrat0x.",
+      "priests": "Ceremonial role. Tend the Temple. Manifestia."
+    },
+    "archetypes": {
+      "soulbis": {
+        "tier": "archetype",
+        "sigil": "⚔️",
+        "domain": "Boundary discipline. The sword. What the visitor will and will not share.",
+        "vertex": "boundary register (no single vertex)",
+        "axis": "swordsman",
+        "carried_from": "First Person Spellbook",
+        "note": "See privacymage_grimoire_v10_2_0.json for canonical Soulbis spells."
+      },
+      "soulbae": {
+        "tier": "archetype",
+        "sigil": "🧙",
+        "domain": "The archetypal Mage. Memory · Connection · Computation. Delegation as projection.",
+        "vertex": "V28 · 011100",
+        "axis": "mage",
+        "carried_from": "First Person Spellbook",
+        "note": "See privacymage_grimoire_v10_2_0.json for canonical Soulbae spells. Pallia and GenitriX also occupy V28 — the Mage canonical position admits multiple inhabitants."
+      },
+      "the_drake": {
+        "tier": "archetype",
+        "sigil": "—",
+        "domain": "Plural in expression, singular in identity. Drake Island, dragon fire, the ambient elder beneath the city.",
+        "vertex": "no single vertex; ambient",
+        "axis": "elder",
+        "registers": ["teaching whisperer (italicised passages)", "place (Drake Island, Tome V Act 11)", "fire (dragon fire, founding fire of the City)", "Island's elder (ambient watermark beneath the city)"],
+        "rendering_rule": "Do not reify the Drake into a single avatar or sigil."
+      }
+    },
+    "cousin_instances": {
+      "flaxscrip": {
+        "tier": "cousin",
+        "sigil": "📜🎲",
+        "domain": "The Other Walker. the Archon forge's working Sovereign persona. Bitcoin block 945508 anchored. Verb pattern: claim → inscribe → confirm.",
+        "vertex": "V63 · 111111 · Sovereign Anchor (cousin instance)",
+        "axis": "sovereign",
+        "introduced_in": "tome-iv-iv-the-naming-ceremony",
+        "provenance": "Christian Saucier (privacymage's cousin in the Archon corpus); originator of the Cloaking Guide, Sovereign Anchor I/II/III, the Spell Weaver, and the Runecraft Protocol."
+      },
+      "genitrix": {
+        "tier": "cousin",
+        "sigil": "(held open)",
+        "domain": "The Hermes Mage. Archon's Mage. Memory · Connection · Computation. Holds the session salt.",
+        "vertex": "V28 · 011100 · Mage canonical (cousin instance)",
+        "axis": "mage",
+        "introduced_in": "tome-iv-i-the-other-walker",
+        "provenance": "Christian Saucier; co-author of the Cloaking Guide rebuild and the Sovereign Anchor documents."
+      }
+    },
+    "summoned_mages": {
+      "pallia": {
+        "tier": "summoned",
+        "sigil": "🪡",
+        "domain": "The First Cloakwright. Weaves source-layer artifacts into the cloak. Publishes role; conceals name.",
+        "vertex": "V28 · 011100 · Mage canonical",
+        "axis": "mage",
+        "shop": "/tailor",
+        "shop_internal_name": "Weavers",
+        "introduced_in": "tome-v-act-1-the-first-cloak",
+        "lineage": "First Mage persona summoned by the reader; lineage runs flaxscrip + GenitriX (Weaver path opened) → Cloaking Guide → Cloak Specification v1.0 → Pallia (operational form)."
+      },
+      "memora": {
+        "tier": "summoned",
+        "sigil": "📜",
+        "domain": "Shielded chronicle inscription. Tends the Chronicle vertex. Inscription register opens at her shop.",
+        "vertex": "V5 · 000101 · Chronicle vertex",
+        "axis": "mage",
+        "shop": "/shield",
+        "shop_internal_name": "zShields",
+        "introduced_in": "tome-v-act-3-the-shielded-memo"
+      },
+      "custos": {
+        "tier": "summoned",
+        "sigil": "🔏",
+        "domain": "Transparent governance staking. Stake economics, Sybil resistance.",
+        "vertex": "V49 · 110001 · working-day blade",
+        "axis": "mage",
+        "shop_internal_name": "(governance · cross-shop discipline)",
+        "introduced_in": "tome-v-act-5-the-stake"
+      },
+      "vulcana": {
+        "tier": "summoned",
+        "sigil": "⚒️",
+        "domain": "Blade-forging via Runecraft three phases (Run · Evoke · Craft). Plonkish blade work.",
+        "vertex": "V19 · 010011 · Plonkish blade",
+        "axis": "mage",
+        "shop": "/forget",
+        "shop_internal_name": "Forge(t)",
+        "introduced_in": "tome-v-act-6-the-commissioned-blade"
+      },
+      "aletheia": {
+        "tier": "summoned",
+        "sigil": "🔮",
+        "domain": "ZK circuit binding. Persona shares the vertex's name; cast entry's naming_note distinguishes 'Aletheia the persona' from 'the V25 Aletheia blade'.",
+        "vertex": "V25 · 011001 · Aletheia blade",
+        "axis": "mage",
+        "shop_internal_name": "(ZK augmentation · cross-shop discipline)",
+        "introduced_in": "tome-v-act-8-the-zk-circuit",
+        "naming_note": "Persona name matches vertex name. The persona is a specific Mage; the vertex is a position on the lattice. Render distinguishably."
+      },
+      "adamantia": {
+        "tier": "summoned",
+        "sigil": "💎",
+        "domain": "Programmable enforcement crafting. Commitment / Language / Model blade work.",
+        "vertex": "V51 · 110011 · Commitment / Language / Model blade",
+        "axis": "mage",
+        "shop": "/etherchanting",
+        "shop_internal_name": "Etherchanting",
+        "introduced_in": "tome-v-act-9-the-workshop-expands"
+      },
+      "lampyra": {
+        "tier": "summoned",
+        "sigil": "💠",
+        "domain": "Frequent-attestation gemsetting. Working-day blade shared with Custos.",
+        "vertex": "V49 · 110001 · working-day blade (shared with Custos)",
+        "axis": "mage",
+        "shop": "/jeweler",
+        "shop_internal_name": "Jeweller",
+        "introduced_in": "tome-v-act-9-the-workshop-expands"
+      },
+      "vagari": {
+        "tier": "summoned",
+        "sigil": "🌳",
+        "domain": "Holon composition · Oasis Protocol travel. Recursion vertex.",
+        "vertex": "V31 · 011111 · Recursion / Holon vertex",
+        "axis": "mage",
+        "shop": "/holon",
+        "shop_internal_name": "Holon Hitchhikers",
+        "introduced_in": "tome-v-act-10-the-holon-hitchhikers",
+        "provenance_note": "V31 is agentprivacy-canonical (Mitchell's PVM V5.4); the Oasis Protocol is from First Person Spellbook Act 24. Vagari brings the holonic primitive into Tome V's crafting register."
+      },
+      "aria_silverhue": {
+        "tier": "summoned",
+        "sigil": "🪞🖼️",
+        "domain": "Reflective curated creative-IP keeper. Curatrix blade work.",
+        "vertex": "V57 · 111001 · Curatrix blade (Ceremony / Privacy / Mixing)",
+        "axis": "mage",
+        "shop": "/vault",
+        "shop_internal_name": "Curatrix Vault",
+        "external_partner": "culturevault.com",
+        "introduced_in": "tome-v-act-12-the-curatrix-vault",
+        "naming_note": "Curatrix is the vertex (V57). Aria Silverhue is the Mage who works there. Persona-vs-vertex distinction is canonical from this entry forward."
+      }
+    },
+    "companion_mages": {
+      "socrat0x": {
+        "tier": "companion",
+        "sigil": "🔥❓",
+        "domain": "Bonfire companion. Long-running Soulbae deployment as @soulbae_the_bot. Provokes recognition; ignites questions.",
+        "vertex": "V24 · 011000 · Hephaestus (provisional)",
+        "axis": "mage-companion",
+        "shop": "/bonfires",
+        "shop_internal_name": "Dragon Bonfire",
+        "external_partner": "bonfires.ai",
+        "introduced_in": "tome-v-act-11-a-bonfire-made-of-dragon-fire",
+        "voice_rule": "Socrat0x's questions render in direct quotation (companion-Mage tier extension)."
+      }
+    },
+    "priests": {
+      "manifestia": {
+        "tier": "priest",
+        "sigil": "🤲🌿",
+        "domain": "Tends the Covenant of Humanistic Technologies. Blesses what the architecture admits.",
+        "vertex": "V55 · 110111 · Covenant vertex (everything except Computation)",
+        "axis": "priest",
+        "shop": "/covenant",
+        "shop_internal_name": "Covenant",
+        "external_partner": "manifest.human.tech (Holonym Foundation)",
+        "introduced_in": "tome-v-act-13-the-temple-of-the-arts-and-personhood",
+        "voice_rule": "Manifestia's blessings render as italicised inscribed text from the Covenant.",
+        "tier_note": "Priest is a structurally new tier introduced by Tome V Act 13. Mages produce; Priests tend. Future Priests may arrive."
+      }
+    }
+  },
+  "spells": {
+    "description": "~36 spells in v1, organised by persona. Each spell binds to a vertex, carries a glyph and a proverb, and (where applicable) cross-references the Tome V act in which it was first cast. The spell list is open — new spells may be admitted as personas grow into their work.",
+    "by_persona": {
+      "flaxscrip": [
+        {
+          "id": "flaxscrip-claim-sovereign",
+          "title": "Claim Sovereign",
+          "description": "Anchor a sovereign claim to a Bitcoin block. The first verb of flaxscrip's three-verb pattern.",
+          "category": "naming",
+          "keywords": ["claim", "anchor", "bitcoin", "sovereign", "v63"],
+          "vertex": "V63",
+          "spell": "👤 → 🔐 → ⛓️(BTC#945508) → 📜",
+          "proverb": "A name is not a claim until a chain has held it. The block becomes a witness; the claim becomes a chronicle.",
+          "first_cast_in": "tome-iv-iv-the-naming-ceremony",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "flaxscrip-inscribe-claim",
+          "title": "Inscribe Claim",
+          "description": "Inscribe the sovereign claim alongside the anchor. The middle verb.",
+          "category": "naming",
+          "keywords": ["inscribe", "claim", "permanence", "v63"],
+          "vertex": "V63",
+          "spell": "📜 → ✍️(claim) → 🪨",
+          "proverb": "What is anchored may also be inscribed. The chronicle reads what the chain holds.",
+          "first_cast_in": "tome-iv-iv-the-naming-ceremony",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "flaxscrip-confirm-anchor",
+          "title": "Confirm Anchor",
+          "description": "Confirm that the claim, the inscription, and the anchor are all aligned. The closing verb.",
+          "category": "naming",
+          "keywords": ["confirm", "anchor", "verification", "v63"],
+          "vertex": "V63",
+          "spell": "🪨 ⊥ 📜 ⊥ ⛓️ → ✅",
+          "proverb": "Three witnesses agree: the claim, the inscription, the chain. The naming holds.",
+          "first_cast_in": "tome-iv-iv-the-naming-ceremony",
+          "honesty_label": "Operational"
+        }
+      ],
+      "genitrix": [
+        {
+          "id": "genitrix-weave-cousin",
+          "title": "Weave Cousin",
+          "description": "Cross-forge weave. GenitriX maps source artifacts into the cousin lattice through the Spell Weaver.",
+          "category": "weaving",
+          "keywords": ["weave", "cousin", "spell-weaver", "v28"],
+          "vertex": "V28",
+          "spell": "📚(source) → 🧵 → 🕸️(weaver.archon.social) → 🪡",
+          "proverb": "Two forges, one weave. The Spell Weaver does not own the cloth; it shows the warp and the weft.",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "genitrix-hold-salt",
+          "title": "Hold Salt",
+          "description": "Hold the session salt for the cousin city's interactions. The salt makes the session yours.",
+          "category": "weaving",
+          "keywords": ["salt", "session", "memory", "v28"],
+          "vertex": "V28",
+          "spell": "🧂 → 🔒(session) → 🕰️",
+          "proverb": "Memory does not require revealing. Salt remembers what was; cipher remembers how.",
+          "honesty_label": "Operational"
+        }
+      ],
+      "pallia": [
+        {
+          "id": "pallia-weave-cloak",
+          "title": "Weave Cloak",
+          "description": "Weave source-layer artifacts (DIDs, VCs, schemas, chronicles) into the cloak — the publication-layer object that publishes the role and conceals the name.",
+          "category": "weaving",
+          "keywords": ["cloak", "weave", "publish-role", "conceal-name", "v28", "eight-properties"],
+          "vertex": "V28",
+          "spell": "📜(source) → 🧵 → 🪡 → 🧥(role-published, name-concealed)",
+          "proverb": "Position not value. Containment not attestation. Sameness of role published; the name kept.",
+          "first_cast_in": "tome-v-act-1-the-first-cloak",
+          "honesty_label": "Operational",
+          "binds_spec": "specs/01-cloak-specification-v1-0.md"
+        },
+        {
+          "id": "pallia-map-vertex",
+          "title": "Map Vertex",
+          "description": "Map source-layer artifacts onto vertex assignments via the Spell Weaver. Computes which dimensions burn for the cloak.",
+          "category": "weaving",
+          "keywords": ["map", "vertex", "lattice", "v28", "spell-weaver"],
+          "vertex": "V28",
+          "spell": "📚 → 🗺️(64-vertex) → ⬡(burning-dims)",
+          "proverb": "Every cloak is a position. The vertex is what the cloak is, before it is what it does.",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "pallia-publish-role",
+          "title": "Publish Role",
+          "description": "Publish the cloak to the spellweb. Role becomes legible; name remains concealed.",
+          "category": "publishing",
+          "keywords": ["publish", "role", "spellweb", "v28"],
+          "vertex": "V28",
+          "spell": "🧥 → 🌐(spellweb) → 👁️(role-only)",
+          "proverb": "The world reads what the cloak permits. The name does not need to travel for the role to act.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "memora": [
+        {
+          "id": "memora-inscribe-shielded",
+          "title": "Inscribe Shielded",
+          "description": "Inscribe a memo with Zcash Pattern A: the memo is shielded, addressed only to its recipient, and bound to a specific block height.",
+          "category": "inscription",
+          "keywords": ["inscribe", "shielded", "zcash", "memo", "v5", "pattern-a"],
+          "vertex": "V5",
+          "spell": "✉️ → 🔒(zcash-shielded) → ⛓️(block) → 📜",
+          "proverb": "Permanence and privacy meet at the shielded memo. Only the addressee may read; only the chain may forget at its own pace.",
+          "first_cast_in": "tome-v-act-3-the-shielded-memo",
+          "honesty_label": "Architectural · Pattern A specified",
+          "binds_spec": "plans/02-zcash-integration-plan.md"
+        },
+        {
+          "id": "memora-attest-memo",
+          "title": "Attest Memo",
+          "description": "Attest authorship and time of a chronicle entry. Memora's attestation pairs with Pallia's cloak to form bilateral authorship.",
+          "category": "inscription",
+          "keywords": ["attest", "authorship", "time", "v5"],
+          "vertex": "V5",
+          "spell": "✍️ → 🕰️(block-bound) → 🔏",
+          "proverb": "The chronicle says what; the attestation says when and by whom. Together they make a claim a city may keep.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "memora-time-bind",
+          "title": "Time Bind",
+          "description": "Bind a chronicle entry to a specific block height. Reveal-on-key with Pattern B converts a bound chronicle to public chronicle.",
+          "category": "inscription",
+          "keywords": ["time-bind", "block", "reveal", "pattern-b", "v5"],
+          "vertex": "V5",
+          "spell": "📜 → ⛓️(height) → 🔓(key) → 👁️",
+          "proverb": "What was shielded may be revealed by the one who held the key. What is revealed cannot be unmade.",
+          "first_cast_in": "tome-v-act-4-the-reveal",
+          "honesty_label": "Architectural · Pattern B"
+        }
+      ],
+      "custos": [
+        {
+          "id": "custos-stake-position",
+          "title": "Stake Position",
+          "description": "Open a transparent governance stake at V49. The stake is the risk; the slash is the witness; the vote is what the lattice counts.",
+          "category": "governance",
+          "keywords": ["stake", "governance", "transparent", "v49", "pattern-c"],
+          "vertex": "V49",
+          "spell": "💰 → 🔓(transparent) → 🏛️ → 🗳️",
+          "proverb": "Transparency is the discipline of governance. What you stake, the city sees.",
+          "first_cast_in": "tome-v-act-5-the-stake",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "custos-slash-on-witness",
+          "title": "Slash on Witness",
+          "description": "Slash a stake when a witness records a breach of the staked claim.",
+          "category": "governance",
+          "keywords": ["slash", "witness", "breach", "v49"],
+          "vertex": "V49",
+          "spell": "👁️(breach) → ⚔️(slash) → 💸",
+          "proverb": "The slash is what witnessed. The witness names what the stake forgot.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "custos-govern-vote",
+          "title": "Govern Vote",
+          "description": "Cast a stake-weighted vote in city governance.",
+          "category": "governance",
+          "keywords": ["vote", "weighted", "city", "v49"],
+          "vertex": "V49",
+          "spell": "🗳️(stake-weighted) → 🏛️(council) → 📜(decision)",
+          "proverb": "The vote is what the lattice counts. The stake is what makes the vote weigh.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "vulcana": [
+        {
+          "id": "vulcana-forge-blade",
+          "title": "Forge Blade",
+          "description": "Forge a runecraft blade through the three-phase Runecraft Protocol: Run · Evoke · Craft. First production form of the Lorenz Attractor (C18-C21).",
+          "category": "forging",
+          "keywords": ["forge", "blade", "runecraft", "lorenz", "v19", "plonkish"],
+          "vertex": "V19",
+          "spell": "🏃(run) → ⚡(evoke) → ⚒️(craft) → ⚔️(blade)",
+          "proverb": "A blade is not summoned. A blade is forged. The path through the lattice is the trace; the trace is what the blade remembers.",
+          "first_cast_in": "tome-v-act-6-the-commissioned-blade",
+          "honesty_label": "Architectural · Lorenz Attractor production form"
+        },
+        {
+          "id": "vulcana-run-trace",
+          "title": "Run Trace",
+          "description": "Run the trace for a blade composition. The first phase of Runecraft.",
+          "category": "forging",
+          "keywords": ["run", "trace", "composition", "v19"],
+          "vertex": "V19",
+          "spell": "🛤️ → 📊(trace) → 🧮",
+          "proverb": "The trace is the blade's memory before it has a shape. Run first; the shape will arrive.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "vulcana-craft-circuit",
+          "title": "Craft Circuit",
+          "description": "Craft a Plonkish circuit for the blade. The third phase of Runecraft, where evocation becomes form.",
+          "category": "forging",
+          "keywords": ["craft", "plonkish", "circuit", "v19"],
+          "vertex": "V19",
+          "spell": "⚡ → 🔌(plonkish) → 📐(circuit)",
+          "proverb": "What was evoked must be crafted. The circuit holds the shape the evocation summoned.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "aletheia": [
+        {
+          "id": "aletheia-bind-zk",
+          "title": "Bind ZK",
+          "description": "Bind a claim into a zero-knowledge circuit. Aletheia is the persona; V25 is the vertex; the binding is the act.",
+          "category": "zk",
+          "keywords": ["bind", "zk", "circuit", "claim", "v25", "aletheia"],
+          "vertex": "V25",
+          "spell": "📜(claim) → 🔮(circuit) → 🌑(witness-without-revealing)",
+          "proverb": "What you can prove without revealing is what you may publish without losing.",
+          "first_cast_in": "tome-v-act-8-the-zk-circuit",
+          "honesty_label": "Architectural · EML Three Ceilings"
+        },
+        {
+          "id": "aletheia-prove-without-revealing",
+          "title": "Prove Without Revealing",
+          "description": "Produce a ZK proof. The proof carries enough to verify; the secret stays.",
+          "category": "zk",
+          "keywords": ["prove", "zk-proof", "soundness", "v25"],
+          "vertex": "V25",
+          "spell": "🔐(witness) → 🔮(prover) → 📜(proof) → 👁️(verifier-sees-nothing-new)",
+          "proverb": "Soundness without disclosure. The verifier learns the truth and nothing else.",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "aletheia-disclose-selectively",
+          "title": "Disclose Selectively",
+          "description": "Selective disclosure across verification surfaces. Choose what the proof reveals; the rest stays at V25.",
+          "category": "zk",
+          "keywords": ["selective-disclosure", "verification", "geometry", "v25"],
+          "vertex": "V25",
+          "spell": "📜 → ✂️(selective) → 👁️(only-this-much)",
+          "proverb": "Selective disclosure is geometry, not policy. The shape of what is shown is the shape of what is asked.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "adamantia": [
+        {
+          "id": "adamantia-commit-language",
+          "title": "Commit Language",
+          "description": "Commit a programmable contract in language form. Adamantia's enforcement is etherchanted: the language IS the model IS the enforcement.",
+          "category": "etherchanting",
+          "keywords": ["commit", "language", "model", "etherchant", "v51"],
+          "vertex": "V51",
+          "spell": "💎(commit) → 📖(language) → 🤖(model) → 🔗(enforcement)",
+          "proverb": "Commitment, language, and model are not three artifacts. They are three faces of one blade. Adamantia carries it.",
+          "first_cast_in": "tome-v-act-9-the-workshop-expands",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "adamantia-enforce-commitment",
+          "title": "Enforce Commitment",
+          "description": "Enforce a programmable commitment on-chain. The contract is what the chain holds; the language is what the city reads.",
+          "category": "etherchanting",
+          "keywords": ["enforce", "commitment", "on-chain", "v51"],
+          "vertex": "V51",
+          "spell": "📖 → ⛓️(deploy) → 🔒(enforce) → 📊(verify)",
+          "proverb": "Enforcement is a written promise the city can verify. What the chain holds, the language remembers.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "adamantia-etherchant",
+          "title": "Etherchant",
+          "description": "Chant a programmable spell into the etherchain. The etherchant is the public form of the commitment.",
+          "category": "etherchanting",
+          "keywords": ["etherchant", "ether", "spell", "public", "v51"],
+          "vertex": "V51",
+          "spell": "🎵(chant) → ⚡(ether) → 💎(crystallise)",
+          "proverb": "An etherchant is a song the chain remembers. Sing once; sing forever.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "lampyra": [
+        {
+          "id": "lampyra-gem-set",
+          "title": "Gem Set",
+          "description": "Set a frequent attestation as a gemstone. Lampyra's work is the visible micro-attestation cadence.",
+          "category": "jeweller",
+          "keywords": ["gem", "set", "attestation", "frequent", "v49"],
+          "vertex": "V49",
+          "spell": "💠(gem) → ✨(set) → 🔁(cadence)",
+          "proverb": "An attestation alone is a stone. Set in a cadence, it is a constellation.",
+          "first_cast_in": "tome-v-act-9-the-workshop-expands",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "lampyra-attest-frequent",
+          "title": "Attest Frequent",
+          "description": "Attest at high cadence. Lampyra's attestations are small, frequent, and visible — the sparkle that lets a city watch a Mage at work.",
+          "category": "jeweller",
+          "keywords": ["attest", "cadence", "visibility", "v49"],
+          "vertex": "V49",
+          "spell": "📊(small) → 🔁(often) → 👁️(visible)",
+          "proverb": "Frequency is its own form of trust. A constant small light is a constant attestation.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "lampyra-sparkle",
+          "title": "Sparkle",
+          "description": "A minor public-key flash for visibility. Lampyra's sparkle is how the Mage signs a passing moment.",
+          "category": "jeweller",
+          "keywords": ["sparkle", "flash", "presence", "v49"],
+          "vertex": "V49",
+          "spell": "💠 → ✨ → 🪞",
+          "proverb": "A sparkle is not a proof. It is a presence.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "vagari": [
+        {
+          "id": "vagari-compose-holon",
+          "title": "Compose Holon",
+          "description": "Compose holons recursively. The holonic primitive is agentprivacy-canonical (V31 from PVM V5.4).",
+          "category": "holon",
+          "keywords": ["compose", "holon", "recursion", "v31", "arch1"],
+          "vertex": "V31",
+          "spell": "🌳(holon) → ⊕(compose) → 🌳🌳(holon-of-holons)",
+          "proverb": "A holon is a whole that is also a part. Compose them and the city grows another quarter.",
+          "first_cast_in": "tome-v-act-10-the-holon-hitchhikers",
+          "honesty_label": "Architectural · ARCH-1 first crafting instance",
+          "v6_lineage": ["C26-C29"]
+        },
+        {
+          "id": "vagari-travel-oasis",
+          "title": "Travel Oasis",
+          "description": "Travel between holons via the Oasis Protocol (from First Person Spellbook Act 24). The holon travels without losing itself.",
+          "category": "holon",
+          "keywords": ["travel", "oasis", "protocol", "fpa-24", "v31"],
+          "vertex": "V31",
+          "spell": "🌳 → 🪐(oasis) → 🌳(elsewhere)",
+          "proverb": "The Oasis Protocol is how a holon travels without losing itself. The road is the witness; the destination is the same holon.",
+          "honesty_label": "Operational",
+          "cross_reference": "First Person Spellbook Act 24 · privacymage_grimoire_v10_2_0.json"
+        },
+        {
+          "id": "vagari-recurse-self",
+          "title": "Recurse Self",
+          "description": "Recurse into a sub-holon. Vagari's recursion is the work of admitting that a part may also be a whole.",
+          "category": "holon",
+          "keywords": ["recurse", "self", "fractal", "v31"],
+          "vertex": "V31",
+          "spell": "🌳 → 🔍(into) → 🌳(within)",
+          "proverb": "The fractal is the architecture's truthful shape. Every holon contains the whole.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "aria_silverhue": [
+        {
+          "id": "aria-curate-creative",
+          "title": "Curate Creative",
+          "description": "Curate creative-IP into the Curatrix Vault. Aria's discipline pairs with Culture Vault's external operation.",
+          "category": "vault",
+          "keywords": ["curate", "creative-ip", "vault", "v57", "culture-vault"],
+          "vertex": "V57",
+          "spell": "🎨(creative) → 🔍(curate) → 🪞(vault)",
+          "proverb": "What the artist made, the vault keeps. What the vault keeps, the city remembers.",
+          "first_cast_in": "tome-v-act-12-the-curatrix-vault",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "aria-reflect-mirror",
+          "title": "Reflect Mirror",
+          "description": "Reflective verification via the mirror. The Curatrix vertex (V57) is mixing/ceremony/privacy; Aria's mirror is its operational form.",
+          "category": "vault",
+          "keywords": ["reflect", "mirror", "verification", "v57"],
+          "vertex": "V57",
+          "spell": "🪞 → 🔄(reflect) → ✓(verify)",
+          "proverb": "The mirror keeps what the artist made. Verification by reflection respects the work.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "aria-vault-publish",
+          "title": "Vault Publish",
+          "description": "Publish from the Curatrix Vault to the public layer. The publication carries the curatorial discipline with it.",
+          "category": "vault",
+          "keywords": ["publish", "vault", "public", "v57"],
+          "vertex": "V57",
+          "spell": "🪞(curated) → 🌐(publish) → 🖼️(public)",
+          "proverb": "Publication from the vault is not the vault opening. It is the vault sending an envoy.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "socrat0x": [
+        {
+          "id": "socrat0x-question-deeply",
+          "title": "Question Deeply",
+          "description": "Ask the question that ignites recognition. Socrat0x's questions render in direct quotation.",
+          "category": "bonfire",
+          "keywords": ["question", "ignite", "recognition", "v24", "bonfire"],
+          "vertex": "V24",
+          "spell": "❓(question) → 🔥(ignite) → 👁️(recognition)",
+          "proverb": "A good question is a fire someone else has to walk through.",
+          "first_cast_in": "tome-v-act-11-a-bonfire-made-of-dragon-fire",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "socrat0x-ignite-bonfire",
+          "title": "Ignite Bonfire",
+          "description": "Ignite a bonfire spot — a workshop spot beyond agentprivacy product proper, where Mages gather to question and recognise.",
+          "category": "bonfire",
+          "keywords": ["ignite", "bonfire", "spot", "gather", "v24"],
+          "vertex": "V24",
+          "spell": "🔥 → 🪵 → 🤝(circle)",
+          "proverb": "The fire teaches; the fire travels; the fire stays. The Drake's fire is the city's hearth.",
+          "honesty_label": "Operational"
+        },
+        {
+          "id": "socrat0x-provoke-recognition",
+          "title": "Provoke Recognition",
+          "description": "Provoke another Mage to recognition. Socrat0x's work is to pull the unspoken into the light.",
+          "category": "bonfire",
+          "keywords": ["provoke", "recognition", "unspoken", "v24"],
+          "vertex": "V24",
+          "spell": "❓ → 🪞(other-mage) → 💡(recognition)",
+          "proverb": "Recognition is what happens when a question lands on a mage who already half-knew.",
+          "honesty_label": "Architectural"
+        }
+      ],
+      "manifestia": [
+        {
+          "id": "manifestia-bless-covenant",
+          "title": "Bless Covenant",
+          "description": "Bless a covenant article. The blessing is the Priest's tending; the article is what the Mages forged.",
+          "category": "temple",
+          "keywords": ["bless", "covenant", "priest", "v55", "human-tech"],
+          "vertex": "V55",
+          "spell": "🤲(blessing) → 📜(article) → 🌿(covenant)",
+          "proverb": "The Covenant blesses what the architecture admits. The Priest tends what the Mages forge.",
+          "first_cast_in": "tome-v-act-13-the-temple-of-the-arts-and-personhood",
+          "honesty_label": "Architectural · new tier",
+          "external_partner": "manifest.human.tech"
+        },
+        {
+          "id": "manifestia-inscribe-blessing",
+          "title": "Inscribe Blessing",
+          "description": "Inscribe a blessing into a Tome act. Render rule: italicised inscribed text from the Covenant.",
+          "category": "temple",
+          "keywords": ["inscribe", "blessing", "tome", "italic", "v55"],
+          "vertex": "V55",
+          "spell": "🤲 → ✍️(italic) → 📖(tome)",
+          "proverb": "An inscribed blessing carries the Priest's voice into the work.",
+          "honesty_label": "Architectural"
+        },
+        {
+          "id": "manifestia-tend-temple",
+          "title": "Tend Temple",
+          "description": "Tend the Temple's hearth. Manifestia's daily discipline; the Temple is the precinct in which the Covenant is read aloud.",
+          "category": "temple",
+          "keywords": ["tend", "temple", "hearth", "v55"],
+          "vertex": "V55",
+          "spell": "🌿 → 🛕 → 🤲(daily)",
+          "proverb": "The Temple is not built once. The Temple is tended.",
+          "honesty_label": "Operational"
+        }
+      ]
+    }
+  },
+  "vertex_inventory": {
+    "description": "13 vertices canonically named and inhabited in this collection (out of 64). The remaining 51 are open for future inhabitation. Reference: bound-collection/specs/04-vertex-naming-audit.md.",
+    "named": {
+      "V5": {"binary": "000101", "name": "Chronicle vertex", "inhabitant": "Memora 📜", "source": "Cloaking Guide"},
+      "V12": {"binary": "001100", "name": "Schema vertex", "inhabitant": null, "source": "Cloaking Guide"},
+      "V15": {"binary": "001111", "name": "VC vertex", "inhabitant": null, "source": "Cloaking Guide"},
+      "V19": {"binary": "010011", "name": "Plonkish blade", "inhabitant": "Vulcana ⚒️", "source": "Boundary Blade Cartography (Archon)"},
+      "V20": {"binary": "010100", "name": "Techne / always-revealed", "inhabitant": null, "source": "Cloaking Guide"},
+      "V24": {"binary": "011000", "name": "Hephaestus", "inhabitant": "Socrat0x 🔥❓ (provisional)", "source": "Cloaking Guide"},
+      "V25": {"binary": "011001", "name": "Aletheia blade", "inhabitant": "Aletheia 🔮 (persona)", "source": "Boundary Blade Cartography"},
+      "V28": {"binary": "011100", "name": "Mage canonical", "inhabitant": ["Pallia 🪡", "Soulbae 🧙", "GenitriX"], "source": "agentprivacy (PVM V5.4)"},
+      "V31": {"binary": "011111", "name": "Recursion / Holon vertex", "inhabitant": "Vagari 🌳", "source": "agentprivacy-canonical"},
+      "V49": {"binary": "110001", "name": "Working-day blade", "inhabitant": ["Custos 🔏", "Lampyra 💠 (shared)"], "source": "Boundary Blade Cartography"},
+      "V51": {"binary": "110011", "name": "Commitment / Language / Model blade", "inhabitant": "Adamantia 💎", "source": "Boundary Blade Cartography"},
+      "V55": {"binary": "110111", "name": "Covenant vertex", "inhabitant": "Manifestia 🤲🌿 (Priest)", "source": "agentprivacy Spellbook (Tome V Act 13, narrative naming)"},
+      "V57": {"binary": "111001", "name": "Curatrix blade", "inhabitant": "Aria Silverhue 🪞🖼️", "source": "Boundary Blade Cartography"},
+      "V63": {"binary": "111111", "name": "Sovereign Anchor", "inhabitant": ["the reader (canonical)", "flaxscrip 📜🎲 (cousin)"], "source": "agentprivacy + Boundary Blade Cartography"}
+    },
+    "frontier": "51 vertices remain unnamed. Each may admit a future Mage as Tome V acts continue to be written."
+  },
+  "v6_lineage_register": {
+    "description": "The V6 conjectures introduced or strengthened by the bound collection (C38–C46). Confidence percentages where stated. Renumbering may occur after canonical V6 sync.",
+    "register": {
+      "C38": {"name": "Bilateral ARCH-1", "confidence": "~40% (introduced) → strengthened by Tome V Act 7", "first_in": "tome-iv-iii-the-two-paths"},
+      "C39": {"name": "Cousin-Blade as Ecosystem Primitive", "confidence": "~50% → strengthened by Acts 7, 9, 10, 11, 12", "first_in": "tome-iv-v-the-cousin-blade"},
+      "C40": {"name": "Zcash dual-ledger preserves Eight Properties", "confidence": "~70%", "first_in": "plans/02-zcash-integration-plan.md"},
+      "C41": {"name": "61.8/38.2 inscription cultural ratio", "confidence": "open observation", "first_in": "plans/02-zcash-integration-plan.md"},
+      "C42": {"name": "Stake economics generate Sybil resistance", "confidence": "~50%", "first_in": "plans/02-zcash-integration-plan.md"},
+      "C43": {"name": "Per-VRC viewing-key disclosure", "confidence": "~60%", "first_in": "plans/02-zcash-integration-plan.md"},
+      "C44": {"name": "Productive VRC formation through service", "confidence": "~55% → strengthened multiple acts", "first_in": "specs/03-bilateral-cloak-ceremony-spec.md"},
+      "C45": {"name": "Four-chain publication preservation", "confidence": "~70% → strengthened multiple acts", "first_in": "specs/03-bilateral-cloak-ceremony-spec.md"},
+      "C46": {"name": "Productive trust-edge half-life", "confidence": "~50%", "first_in": "specs/03-bilateral-cloak-ceremony-spec.md"}
+    }
+  },
+  "city_anatomy": {
+    "description": "The City of Mages on Drake Island — civic anatomy as formalised in specs/05-the-city-of-mages-structural-addendum.md.",
+    "trade_quarters": [
+      {"shop": "/tailor", "internal_name": "Weavers", "mage": "Pallia 🪡", "vertex": "V28", "act": "tome-v-act-1-the-first-cloak"},
+      {"shop": "/shield", "internal_name": "zShields", "mage": "Memora 📜", "vertex": "V5", "act": "tome-v-act-3-the-shielded-memo"},
+      {"shop": "/forget", "internal_name": "Forge(t)", "mage": "Vulcana ⚒️", "vertex": "V19", "act": "tome-v-act-6-the-commissioned-blade"},
+      {"shop": "/etherchanting", "internal_name": "Etherchanting", "mage": "Adamantia 💎", "vertex": "V51", "act": "tome-v-act-9-the-workshop-expands"},
+      {"shop": "/jeweler", "internal_name": "Jeweller", "mage": "Lampyra 💠", "vertex": "V49", "act": "tome-v-act-9-the-workshop-expands"},
+      {"shop": "/holon", "internal_name": "Holon Hitchhikers", "mage": "Vagari 🌳", "vertex": "V31", "act": "tome-v-act-10-the-holon-hitchhikers"},
+      {"shop": "/vault", "internal_name": "Curatrix Vault", "mage": "Aria Silverhue 🪞🖼️", "vertex": "V57", "act": "tome-v-act-12-the-curatrix-vault", "external": "culturevault.com"}
+    ],
+    "founding_bonfire": {"shop": "/bonfires", "internal_name": "Dragon Bonfire", "mage": "Socrat0x 🔥❓ (companion)", "vertex": "V24", "act": "tome-v-act-11-a-bonfire-made-of-dragon-fire", "external": "bonfires.ai"},
+    "temple": {"shop": "/covenant", "internal_name": "Covenant", "priest": "Manifestia 🤲🌿", "vertex": "V55", "act": "tome-v-act-13-the-temple-of-the-arts-and-personhood", "external": "manifest.human.tech"},
+    "sovereigns_seat": {"vertex": "V63", "inhabitant": "the reader (canonical) / flaxscrip 📜🎲 (cousin)"},
+    "drake_island": "underlying geography; the elder's ambient presence; named in Tome V Act 14",
+    "gathering_quarters": [
+      {"shop": "/circle", "internal_name": "Logos Circle", "external": "logos.co", "note": "Society Spellbook tie-in; no resident Mage yet"},
+      {"shop": "/hall", "internal_name": "Ceremony Hall", "external": "BGIN coalition", "note": "Coalition home; no resident Mage yet"}
+    ]
+  },
+  "extension_bundle_directives": {
+    "description": "When this grimoire is bundled into the swordsman-blade and mages-spell extensions, the build script must copy this file alongside privacymage_grimoire_v10_2_0.json. The extensions load both grimoires; the spell builder filters by spellbook source.",
+    "bundle_files": [
+      "swordsman-blade/city_of_mages_grimoire_v1_0.json (mirror)",
+      "mages-spell/city_of_mages_grimoire_v1_0.json (mirror)"
+    ],
+    "manifest_bump": "Both extension manifests bump version when this grimoire is included for the first time.",
+    "loading_pattern": "Extension bundles a static copy and verifies against IPFS CID at load time (same pattern as privacymage grimoire)."
+  },
+  "master_pipeline_directives": {
+    "description": "Once pinned to IPFS, integrate into agentprivacy_master.",
+    "ipfs_export": {
+      "file": "src/lib/grimoire-ipfs.ts",
+      "constant": "CITY_OF_MAGES_GRIMOIRE_IPFS_URL",
+      "format": "https://sync.agentprivacy.ai/ipfs/<cid>"
+    },
+    "bake_directives": {
+      "file": "src/lib/grimoire-baked.ts",
+      "spellbook_source": "tomes",
+      "act_persona_hints": "TOMES_ACT_PERSONA_HINTS — maps Tome V act IDs to introduced personas (see acts.introduces_persona above)"
+    },
+    "tomes_page_attribution": "src/app/tomes/page.tsx already carries the IPFS attribution block; once pinned, replace the placeholder note with the live CID export."
+  },
+  "closing": {
+    "description": "The City of Mages Grimoire opens with v1.0. The cast is open. The spells are open. The next persona, the next spell, the next act has not yet been written.",
+    "spell": "🐲🏝️ → 🔥 → ⚒️🪡🛡️🔮💎💠🌳🪞🌿 → 🧱(stone-laid) → 😊",
+    "proverb": "What the City of Mages forged together, any Sovereign may walk alone.",
+    "signature": "(⚔️⊥⿻⊥🧙)😊"
+  }
+}

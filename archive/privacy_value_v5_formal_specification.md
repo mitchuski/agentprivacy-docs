@@ -2,7 +2,7 @@
 
 **Version:** 1.4 (V10.0.0 Grimoire aligned, V5.3.2 Ceremony Complete)
 **Date:** April 8, 2026
-**Author:** Mitchell Travers (privacymage)
+**Author:** privacymage
 **Status:** Working paper — peer review invited
 **Companion to:** "Privacy is Value: From the Manifold Dragon to the Holographic Bound" (narrative version)
 **External Convergence:** UOR Foundation (https://github.com/UOR-Foundation)

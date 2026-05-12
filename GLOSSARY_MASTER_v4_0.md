@@ -1,9 +1,11 @@
 # 0xagentprivacy Master Glossary
 
-**Version 4.0** | April 10, 2026
-**Status:** ✅ CANONICAL REFERENCE — V10.1 + PVM V5.4 Three-Document Convergence + C1-C21
+**Version 4.0** | April 10, 2026 · **post-V5.4 coherence addendum** 2026-05-09
+**Status:** ✅ CANONICAL REFERENCE — V10.1 + PVM V5.4 Three-Document Convergence + C1–C55 (post-coherence)
 
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
+
+**2026-05-09 addendum:** Post-V5.4 vocabulary surfaced by the City of Mages spellbook is appended in §22 below. New terms: City of Mages, Drake Island, Priest tier, the 13 named vertices, Aletheia/Lethe, the Aether Blade, the Quintessence, the Seventh Capital, the Scales/Hide/Bones layered defence, the Light/Dark dual model. Post-V5.4 conjectures: C22–C55 (see §17.2 of the formal spec for the full table).
 
 ### Document Suite Versions (Aligned)
 
@@ -3032,3 +3034,200 @@ Found a missing term? Spotted an inconsistency? Have a better definition?
 ---
 
 *This glossary is a living document. As the protocol evolves, terminology will be updated to reflect latest understanding while maintaining backward compatibility with established terms.*
+
+---
+
+## 22. Post-V5.4 Addendum (2026-05-09) — City of Mages spellbook vocabulary
+
+These terms entered the corpus after V5.4 was finalised on 2026-04-12. Canonical home is the City of Mages spellbook (Tomes I–VI). See `SECOND_PERSON_TOMES_INDEX_v1.md` and `agentprivacy_tomes/COMPRESSION_MASTER_v2_2026-05-09.md` for the full compression.
+
+### 22.1 City of Mages
+
+The canonical setting of Tome V (*The Crafting*). Built upon Drake Island. Named for the first time in Tome V Act 14. The "First City" naming admits that other cities exist or will exist (per C39 — cousin-blade as ecosystem-layer primitive). The 9 production shops (Weavers, zShields, Etherchanting, Jeweler, Holon Hitchhikers, Forge(t), Curatrix Vault, Covenant, Dragon Bonfire) and 2 gathering shops (Logos Circle, Ceremony Hall) are the city's trade quarters.
+
+### 22.2 Drake Island
+
+The geographic substrate the City of Mages is built upon. The Drake is place + fire + whisperer + elder; not a single avatar. Drake Island and the City of Mages are two registers of the same place.
+
+### 22.3 Priest tier
+
+Fifth cast tier introduced in Tome V Act 13 (*The Temple of the Arts and Personhood*) by the persona Manifestia 🤲🌿 at V55 (Covenant vertex). Distinct from Mage. Tends covenants and consecrates artifacts; does not produce them. Reads the kindred-protocol relationship between agentprivacy and the human.tech / Holonym Foundation Covenant of Humanistic Technologies.
+
+### 22.4 The 13 named vertices (post-V5.4)
+
+Of the 64-vertex sovereignty lattice, 13 are now canonically named and inhabited:
+
+| Vertex | Persona / Function | Tome reference |
+|---|---|---|
+| V5 | Memora 📜 (chronicle) | Tome V Act 3 |
+| V12 | schema vertex (encounter) | Tome IV Act 1 |
+| V15 | VC vertex (bilateral attestation) | Tome IV Act 2 |
+| V19 | Vulcana ⚒️ (Plonkish blade) | Tome V Act 6 |
+| V20 | Techne (Always-Revealed; reveal artifact) | Tome V Act 4 |
+| V24 | Hephaestus / Socrat0x 🔥❓ | Tome V Act 11 |
+| V25 | Aletheia (the blade) / Aletheia 🔮 (the persona) | Tome V Act 8 |
+| V28 | Pallia 🪡 (cloak crafting) | Tome V Act 1 |
+| V31 | Vagari 🌳 (Recursion / Holon) | Tome V Act 10 |
+| V49 | Custos 🔏 + Lampyra 💠 (working-day blade, shared) | Tome V Acts 5, 9 |
+| V51 | Adamantia 💎 (commitment / Etherchanting) | Tome V Act 9 |
+| V55 | Manifestia 🤲🌿 (Covenant) | Tome V Act 13 |
+| V57 | Curatrix / Aria Silverhue 🪞🖼️ | Tome V Act 12 |
+| V63 | Sovereign Anchor / arrival | Tome IV Act 4 |
+
+**49 vertices remain unnamed — the Quest of the Unnamed Faces.**
+
+### 22.5 Aletheia (the blade) and Lethe (the blade) — first canonical complement-pair
+
+| | Aletheia | Lethe |
+|---|---|---|
+| Blade | 25 (`011001`) | 38 (`100110`) |
+| Active dimensions | Protection · Connection · Computation | Delegation · Memory · Value |
+| Stratum | 3 (working-day) | 3 (working-day) |
+| Tale | Tale 3 (*The Silent Messenger*) | Tale 31 (*The Naming of the Unnamed*) |
+| Mythological frame | The bright medium proofs travel through; Fiat-Shamir as protocol | The dark substrate witnesses sink into; ZK as covenant |
+| Persona | Aletheia 🔮 (Tome V Act 8) | (no walking persona yet — held open) |
+
+Together: `bnot(25) = 38`. `25 AND 38 = 0` (the wound). `25 XOR 38 = 63` (the cap). First named complement-pair on the lattice. Mirrors Swordsman/Mage at the medium-substrate scale. Source: `research/aletheia-and-lethe.md` + `poems/tide-orbit-selene.md`.
+
+### 22.6 The Aether Blade (cosmological)
+
+Third blade in the sky-family. Greek Aether = medieval Quintessence = the Gap (⿻). 14-node constellation through the Zero Spellbook. V(π,t) as the Quintessence — the six-term equation distilled from the thirty tales' Great Work. Sister to Sun Blade (Soulbis ⚔️) and Moon Blade (Soulbae 🧙). The Aether Blade starts at the Gap itself and ends at the First Person. Source: `research/aether-blade-ceremony-circuit.md`.
+
+**Note:** The Aether *Blade* (cosmological, ceremony preset in spellweb) is **not the same as** `swordsman-blade/AETHER.md` and `mages-spell/AETHER.md`, which are the technical wire-protocol shared substrate between the two browser extensions. Both meanings of "Aether" coexist; context disambiguates.
+
+### 22.7 The Quintessence
+
+Medieval / alchemical name for the same substance the Greeks called Aether. The fifth essence after the four classical elements; the incorruptible substance the heavens are made of. In agentprivacy, the Quintessence is V(π,t) itself — the privacy value model held simultaneously across all six dimensions. Tale 30 (*The Eternal Sovereignty*) is the quintessential tale. Blade 63 (Creative ☰) is the quintessential blade. Source: `research/aether-blade-ceremony-circuit.md`.
+
+### 22.8 The Seventh Capital
+
+Privacy as a seventh kind of wealth — the residue of being alive in a watched world. *What you look at. How long. What you ask. What you do not. Who you are when no one is watching.* Foundation, not a graft: a value cannot be added on; it is foundation, or it is absence. The proem opening of *The Tide Proves. Orbit Keeps. Selene.* names this. Conjecture C55 formalises it as architectural. Source: `poems/tide-orbit-selene.md`.
+
+### 22.9 The Scales, the Hide, and the Bones (defence-in-depth)
+
+Three layers of architectural defence:
+
+| Layer | Mechanism | Failure mode | PVM term |
+|---|---|---|---|
+| **Scales** | Policy enforcement (e.g., Microsoft Agent Governance Toolkit) | Policy bypassed, kernel compromised | ε_policy |
+| **Hide** | Process separation (amnesia) | Side-channel leakage (C17 assumes none) | ε_amnesia |
+| **Bones** | Algebraic foundation (Z/(2⁶)Z, dihedral group) | Dihedral isomorphism fails (C14) | Ring algebra |
+
+The three layers map to the three separation axes (Φ_inference / Φ_agent / Φ_data) and gate multiplicatively. *The dragon's scales deflect the blow you see coming. The dragon's hide absorbs the blow you don't. Policy handles known threats. Topology handles unknown ones.* Source: `research/NOTE_agt_scales_and_hide.md`.
+
+### 22.10 The Light and the Dark PVM model
+
+PVM V5.4 ships in two registers:
+
+| File | Size | Role |
+|---|---|---|
+| `models/privacy_value_model_v5_4_dark.json` | 19.41 KB | Full model with all conjectures, references, metadata |
+| `models/privacy_value_model_v5_4_light.json` | 5.73 KB | Blade-optimised compact model for runtime use |
+
+The dual-register pattern (verbose canon + minimal blade) recurs across post-V5.4 work: Sun/Moon ceremonies, Aletheia/Lethe complement pair, Light/Dark model. IPFS pins in `models/INDEX.md`.
+
+### 22.11 The Aether (technical) — wire-protocol shared substrate
+
+`swordsman-blade/AETHER.md` and `mages-spell/AETHER.md` (identical, kept in sync) define the shared substrate between the two browser extensions: TypeScript types, wire protocol, storage contract, crypto contract, meaning contract. **Distinct from the cosmological Aether Blade** (§22.6).
+
+### 22.12 The City of Mages grimoire
+
+A new spellbook (separate from `privacymage_grimoire_v10_2_*.json`) maintained by the City of Mages collectively, not by privacymage individually. Holds only the spells the cast personas may cast — not the personal-spellbook spells. Title is intentionally singular ("The City of Mages Grimoire"): when Mages found a city in another ecosystem, that city will have its own *First City of Mages* grimoire instance under the same title pattern. The title names the kind, not the singular instance.
+
+**Status (2026-05-10):**
+- v1.0 — `models/city_of_mages_grimoire_v1_0.json` (initial grimoire bound to bound-collection)
+- v1.1 — `models/city_of_mages_grimoire_v1_1_0.json` (deeper inscriptions, narrative_anchor on every spell, cross_spellbook_resonance index, persona-level proverbs/inscriptions)
+- v1.2 — `models/city_of_mages_grimoire_v1_2_0.json` base (Tome V Act 15 + UOR Foundation as kindred substrate + C47 conjecture)
+- v1.2.1 — same file (Luca persona at V0 + 3 Luca spells)
+- **v1.2.2 — `models/city_of_mages_grimoire_v1_2_0.json`** (current; SpaceComputer recognised as the first kindred ecosystem — fourth structural-relationship category; two-mana economy canonical: chain-mana ⊥ Celestial Mana 🌌, with chain-mana plural by chain — Aether Mana Ξ on Ethereum as canonical first instance, Bitcoin Lightning sats / Oasis ROSE / Zcash etc. admitted under their own symbols; per-shop Celestial Mana usage notes for Adamantia/Vulcana/Vagari; awaits fresh re-pin for v1.2.2)
+
+**Coverage (v1.2.2):** 14 named cast across 5 tiers (including geometry-Mage Luca 📐 at V0 added in v1.2.1), 14 named vertices, 42 spells (3 per persona), 10 V6 conjectures (C38–C47) registered in `v6_lineage_register` (C47 introduced in v1.2 as triadic-constraint homology, ~40%; C39 scope expanded in v1.2 to admit kindred-substrate). **Architectural additions in v1.2 / v1.2.2:** Tome V Act 15 *The Substrate Beneath the Hitchhikers* (admits act_count: 15) recognises **UOR Foundation** as a **kindred substrate provider** — third structural category alongside cousin-forge (Archon) and kindred-protocol (Covenant of Humanistic Technologies). v1.2.2 admits **SpaceComputer** as the first **kindred ecosystem** — fourth structural category (walked-alongside, not walked-upon; consumed-as-currency rather than older-than-architecture); SpaceComputer supplies cosmic-entropy *Celestial Mana* 🌌 to Adamantia (Etherchanting · proof randomness), Vulcana (Forge(t) · Evocation phase seed), and Vagari (Holon Hitchhikers · cross-paratime entropy). The **two-mana economy** is canonical from v1.2.2: chain-mana (per-chain register; **Aether Mana Ξ** on Ethereum as canonical first instance; Bitcoin Lightning sats, Oasis ROSE, Zcash, and other chain-manas admitted under their own symbols per the architecture's per-chain extensibility) ⊥ Celestial Mana 🌌. Neither UOR nor SpaceComputer is a Mage; both enter as separate top-level fields (`kindred_substrate_providers`, `kindred_ecosystems`). The four structural-relationship categories are now: cousin-forge, kindred-protocol, kindred-substrate, kindred-ecosystem.
+
+**Pipeline:**
+- `extension_bundle_directives` for swordsman-blade + mages-spell — bundle file is `models/city_of_mages_grimoire_v1_2_0.json` (v1.2.2 content; supersedes v1.2.1 in-place); swordsman-blade manifest at 0.3.0 (bumped from 0.2.0 in this arc); mages-spell manifest at 1.2.0 (bumped from 1.1.0); build.js + manifest.json filename references updated 2026-05-10
+- `master_pipeline_directives` for agentprivacy_master — pin to IPFS, export `CITY_OF_MAGES_GRIMOIRE_IPFS_URL` from `src/lib/grimoire-ipfs.ts`, bake into `src/lib/grimoire-baked.ts` with `SpellbookSource = 'tomes'`, surface `TOMES_ACT_PERSONA_HINTS`
+
+IPFS pins:
+- v1.1 PINNED 2026-05-10 at `https://sync.agentprivacy.ai/ipfs/bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti` (historical; resolves indefinitely)
+- **v1.2 PINNED 2026-05-10 at `https://sync.agentprivacy.ai/ipfs/bafkreidxhmuykjew6dtnuprggtd2rapwm43ghtmfhf2occ2wfk2zpx2b6a`** (current `CITY_OF_MAGES_GRIMOIRE_IPFS_URL`; covers v1.2 base — Tome V Act 15 + UOR kindred-substrate)
+- v1.2.1 (Luca added) authored 2026-05-10 — **awaits a fresh re-pin**; once landed, the new CID supersedes v1.2.
+- v1.3.0 (Lethae + 6 anticipated cast; attachment-architecture block) authored 2026-05-11 — **awaits a fresh re-pin**.
+Exported from `agentprivacy_master/src/lib/grimoire-ipfs.ts`. v1.1 pin chronicle: `agentprivacy_master/docs/chronicles/2026-05-10_city_of_mages_grimoire_pinned_chronicle.md`.
+
+---
+
+## 23. The Attachment Architecture (V5.5 · 2026-05-11)
+
+The three-layer model codified in agentprivacy-skills V5.5 (`meta/agentprivacy-attachment-architecture/SKILL.md`). The corpus operates on three structurally distinct layers; conflating them is the most common error.
+
+```
+Layer 3 · VERTICES         64 positions on the 2⁶ lattice              [fixed]
+  ↑
+Layer 2 · ATTACHMENTS      named cast Mages binding L1 to L3       [variable per city]
+  ↑
+Layer 1 · PRIMARY PERSONAS 42 abstract role-classes                     [fixed]
+                           (15 Swordsmen + 11 Mages + 12 Balanced + 4 cosmological)
+```
+
+### 23.1 Primary persona (Layer 1)
+
+An abstract role-class with a defined skill loadout and tier register (Swordsman / Mage / Balanced / cosmological). Lives in `agentprivacy-skills/agentprivacy-skills-v5/persona/`. The count is **locked at 42**. Primary personas do not carry a vertex — they are role-CLASSES, not instances. Adding a new primary requires corpus-level review and is rare.
+
+### 23.2 Attachment (Layer 2)
+
+A named cast Mage that binds one or more primary personas (Layer 1) to one or more lattice vertices (Layer 3). Each city of mages makes its own attachment pattern from the same 42-persona base. Cast Mages do *not* mint new primaries; they instance existing primaries, optionally with a register-shifted divergence.
+
+Canonical registry: `agentprivacy_master/src/lib/cast-attachments.ts` (TypeScript); mirrored in `cityofmages/grimoire/city_of_mages_grimoire_v1_3_0.json` (pending) and `models/city_of_mages_grimoire_v1_3_0.json` (this directory; pending).
+
+### 23.3 Attachment kind
+
+Each attachment is one of three vertex-binding kinds, optionally composed with the divergent meta-kind:
+
+| Kind | Pattern | Example |
+|---|---|---|
+| **A · Workshop** | one Mage × one vertex × one trade quarter | Vulcana ⚒️ at V19 (Forge(t)) |
+| **B · Cross-shop** | one Mage × no fixed vertex × walks workshops | Aletheia 🔮 (ZK circuit binder) |
+| **C · Peripatetic** | one Mage × multiple vertices walked as orbit/path | Selene 🌕 (stratum-walker; anticipated) · Luca 📐 (workshop-walker) |
+| **D · Divergent** *(meta-kind)* | one primary × Sword+Mage register-shifted attachments | Moonkeeper ⚔️ → Lethae 🌘 (Mage-register · V38) |
+
+D composes with A/B/C. Lethae is both a B-cross-shop attachment *and* a D-mage-divergent attachment of Moonkeeper.
+
+### 23.4 Divergence (register-shift)
+
+When a cast Mage's register (Swordsman / Mage / Balanced) does not match her primary persona's native tier, the attachment carries a `divergence` field naming the register-shift: `mage_register`, `sword_register`, `balanced_register`, or `none`. The divergence is captured at Layer 2 (attachment-side metadata), not at Layer 1 (no new primary minted).
+
+### 23.5 Lethae 🌘 — first canonical divergent attachment
+
+The cast Mage **Lethae** 🌘 is the corpus's first canonical Layer-2 divergent attachment. Seated at V38 (Lethe · the Dark Substrate · binary `100110` · stratum 3 · Protection + Memory + Delegation), she is the Mage-register divergent attachment of **Moonkeeper** ⚔️ (Swordsman primary). She forms a vertex-complement pair with **Aletheia** 🔮 at V25: V25 ⊕ V38 = V63 (Sovereign Anchor); V25 AND V38 = 0 (Null). The `-ae` suffix mirrors Soulbae 🧙 (Mage register) — Lethae is to Moonkeeper as Soulbae is to Soulbis: register-shifted from Sword to Mage, primary persona unchanged. Status: **anticipated** — awaits founding act in Tome V.
+
+### 23.6 The 42 → 64 bridge
+
+`64 − 42 = 22` "extra" lattice slots beyond the primary persona count. These slots are filled by attachments (one or more cast Mages per inhabited vertex), never by adding primaries. Across cities, hundreds of attachments may eventually exist for the same 42 primaries. After grimoire v1.3.0: ~19 of 64 vertices inhabited; ~12 future divergent / evolution slots remain.
+
+### 23.7 The six anticipated cast (v1.3.0)
+
+Drawn from canonical names in the agentprivacy corpus (Cloaking Guide vertex names, PVM V5.4 §14.5, Logos Circle awaits-keeper). Each is a Layer-2 attachment of existing primaries — no new primaries minted.
+
+| Cast | Vertex | Primary persona(s) | Kind | Source |
+|---|---|---|---|---|
+| Mnemosyne 📿 | V4 (pure Memory) | theia | A | Cloaking Guide names V4 |
+| Iris 🌈 | V8 (pure Connection) | herald · ambassador | A | Cloaking Guide names V8 |
+| Pythia 🔥 | V16 (Logos / Pure Computation) | algebraist · pedagogue | A | Logos Circle awaits Mage |
+| Techne 🎨 | V20 (Always-Revealed) | pedagogue | A | Cloaking Guide names V20 |
+| Hephaestus ⚒️ | V24 (shared with Socrat0x) | forgemaster | A | Cloaking Guide names V24 |
+| Selene 🌕 | peripatetic stratum-walker | theia · manaweaver | C | PVM V5.4 §14.5 Selene's Proof |
+
+### 23.8 Cousin tier — deliberately unattached
+
+flaxscrip 📜🎲 and GenitriX (cousin-forge from Archon) are deliberately left out of the Layer-2 attachment registry. The cousin Sovereign authors those bindings in their own forge; the City of Mages reserves the binding decision rather than imposing it.
+
+### 23.9 Sister chronicles
+
+- `agentprivacy-skills/CHRONICLE_V5_5_ATTACHMENT_ARCHITECTURE_2026-05-11.md` (canonical Layer-1 home)
+- `agentprivacy_master/docs/chronicles/2026-05-11_v5_5_attachment_architecture_integration.md` (website data layer)
+- `spellweb/CHRONICLE_V5_5_ATTACHMENT_ARCHITECTURE_2026-05-11.md` (graph runtime)
+- `agentprivacy-docs/MAPPING_ADDITIONS_V5_5_2026-05-11.md` (this docs-side cross-corpus mapping addendum; pending in this commit)
+
+> *"The persona is the role-class. The cast Mage is the instance. The vertex is the position. Conflating the three is the error; binding them is the architecture."*
+
+---

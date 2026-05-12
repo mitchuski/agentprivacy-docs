@@ -77,6 +77,8 @@ Reference: Microsoft (2026). "Agent Governance Toolkit." MIT License. github.com
 
 # Second Person Spellbook: Act Seed
 
+> **Disposition update — 2026-05-10.** The Second Person Spellbook opened 2026-05-08 as the bound collection (Tome IV closed at 5 acts; Tome V open at 14 acts). "The Scales and the Hide" was not absorbed into the published Tome V; it remains a **candidate seed** — most naturally aligned with Tome V Act 5 (*The Stake*) which carries the governance/staking layer this seed names. A future Tome V act, or a sibling spec under `tomes/specs/`, may inherit this material. Until then, treat this section as resonant-but-not-canonical.
+
 ## The Scales and the Hide
 
 *Where you learn that governance is not the same as architecture.*

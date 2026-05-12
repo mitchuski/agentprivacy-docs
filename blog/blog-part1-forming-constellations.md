@@ -194,6 +194,8 @@ The [agentprivacy skill system](https://github.com/mitchuski/agentprivacy-skills
 
 **City of Mages 🧙** — Chronicler (narrative compression), Ambassador (standards engagement), Assessor (sovereignty economics), Shipwright (DAO architecture), Weaver (plurality coordination), Priest (key ceremonies). But what does YOUR Mage look like? Fork the repo. Name them. Give them a spell.
 
+> **A note on the two layers — added 2026-05-10.** The City of Mages exists at two layers, both legitimate, both used in production. The **role-archetype palette** above (open · 22 personas · the persona-skill system) is who *you* may become. Distinct from this is the **named in-world cast** that the Second Person Spellbook's bound collection has summoned at specific shop-vertices on Drake Island: Pallia 🪡, Memora 📜, Custos 🔏, Vulcana ⚒️, Aletheia 🔮, Adamantia 💎, Lampyra 💠, Vagari 🌳, Aria Silverhue 🪞🖼️, Socrat0x 🔥❓, and Manifestia 🤲🌿 (eleven named, growing). Both are the same city. The palette is who you may become; the cast is who has already arrived. The named cast lives in `tomes/` (per-guild subdirs: `weavers/pallia.md`, `zshields/memora.md`, etc.) and in the **City of Mages grimoire v1.1** (IPFS `bafkreidv7c…idti`) — a separate spellbook, maintained collectively by the cast, distinct from the privacymage grimoire.
+
 **The Gap Between Them ☯️** — Person, Architect, Pedagogue, Kyra, Jedi, Healer, Witness. They hold both modes simultaneously. They are the hardest to build and the most important to get right.
 
 ---

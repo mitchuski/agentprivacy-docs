@@ -596,7 +596,7 @@
       { "name": "The Plurality Spellbook", "focus": "Many-to-many, ⿻ overlap" }
     ],
     "compression": "privacymage_grimoire_v10_2_0.json — the grimoire as holographic boundary (Zero Spellbook v2.0 synced)",
-    "next": { "name": "The Second Person Spellbook", "voice": "Second person", "question": "WHO", "status": "Horizon" }
+    "next": { "name": "The Second Person Spellbook", "voice": "Second person", "question": "WHO", "status": "Open · Tome IV closed (5 acts) · Tome V open at 14 acts · City of Mages grimoire v1.1 pinned 2026-05-10 · CID bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti" }
   },
 
   "proverbs": [

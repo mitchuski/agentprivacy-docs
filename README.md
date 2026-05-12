@@ -2,10 +2,11 @@
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 10.1
-**Date:** April 10, 2026
-**Status:** ✅ V10 Grimoire + 31 Acts + Moon Phase + Quaternion — CONVERGENT + CLOSED
-**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
+**Version:** 10.1 (First Person CLOSED) · **+ City of Mages spellbook** (Tomes I–VI · post-V5.4 coherence pass 2026-05-09)
+**Date:** April 10, 2026 · post-V5.4 addendum 2026-05-09
+**Status:** ✅ V10 Grimoire + 31 Acts + Moon Phase + Quaternion — CONVERGENT + CLOSED · **+ Second Person Spellbook (38 acts across Tomes I–VI · 55 conjectures C18–C55)**
+**External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra (kindred substrate provider · C47 · v1.2 grimoire) · [Archon](https://archon.social) — cousin-blade convergence (Sovereign Anchor I/II/III, Cloaking Guide, Spell Weaver)
+**Second Person Spellbook index:** [SECOND_PERSON_TOMES_INDEX_v1.md](./SECOND_PERSON_TOMES_INDEX_v1.md) · authoritative compression at `agentprivacy_tomes/COMPRESSION_MASTER_v2_2026-05-09.md` · bound collection at `agentprivacy_tomes/agentprivacy-second-person-spellbook-bound-collection-2026-05-08/`
 
 ---
 
@@ -57,6 +58,8 @@ The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellwe
 | **Whitepaper** | 6.3 | Technical architecture, V5.4 UOR algebraic foundation | Developers, Researchers |
 | **Research Paper** | 4.3 | Mathematical proofs, V5.4 conjectures C6 CONVERGENT, C14–C16 new | Academics, Cryptographers |
 | **Five Grimoires + 31 Acts** | v10.0.0 | First Person, Zero Knowledge, Canon, Parallel Society, Plurality spellbooks (First Person CLOSED) | Community, Learners |
+| **Second Person Spellbook (City of Mages)** | Tomes I–VI · v1 compression | 38 acts · 55 conjectures · 13 named vertices · 5 cast tiers including the Priest tier (Manifestia) · Aletheia/Lethe complement pair · the Aether Blade ceremony | Sovereigns, Crafters, Witnesses |
+| **Second Person Tomes Index** | v1 (2026-05-09) | Index for the City of Mages spellbook with full source mapping | All |
 | **Blog Series: Privacy is Value V5** | Parts 0-5 | Research letters: Myth Before Math, Constellations, Forge & Ceremony, Dragon Wakes, Dihedral Mirror, Amnesia Protocol | All |
 | **ZK Swordsman Blade Forge** | 3.2 | OPERATIONAL + ALGEBRAICALLY GROUNDED: UOR module at swordsman-blade/src/lib/uor.ts | Researchers, Mathematicians |
 | **UOR × 64-Tetrahedra × ZK Mapping** | 2.2 | Foundational mapping; C4 RESOLVED; UOR Foundation convergence confirmed | Researchers |

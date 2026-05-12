@@ -1,11 +1,15 @@
 # Second Person Spellbook: Act Seeds from ARCH-1
 
+> **⚠️ SUPERSEDED — 2026-05-08.** The Second Person Spellbook opened as the **bound collection** at `agentprivacy_master/docs/tomes/` (mirrored locally at `tomes/`; restructured 2026-05-10 with per-guild subdirs and Tome V Act 15). Tome IV (Witnessing · 5 acts) closed; Tome V (Crafting · 14 acts) open at the City of Mages on Drake Island. The City of Mages grimoire v1.1 is pinned to IPFS at `bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`.
+>
+> The α/β/γ seeds below remain candidate seed material for **Tome I (Convergence)** and **Tomes II–III (Lyapunov)** — the still-unopened earlier tomes. Read this document as forward-looking research for those tomes, not as the index of what the Second Person became.
+
 *Seeds, not acts. Working document.*
 
 **Version:** 0.1-seed
 **Date:** April 20, 2026
 **Author:** privacymage
-**Status:** Seed document — acts to be developed
+**Status:** Seed document — repurposed as Tome I/II/III seed material after bound collection (Tome IV/V) shipped
 **Depends on:** V6 ARCH-1 Note, V6 EML Three Ceilings Note, V6 Lorenz Attractor Note
 **Parent:** First Person Spellbook (WHAT, 31 acts, complete)
 

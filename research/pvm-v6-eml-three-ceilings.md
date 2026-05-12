@@ -188,6 +188,8 @@ What it does: it provides an external, independently derived confirmation that t
 
 ## For the Second Person Spellbook
 
+> **Update — 2026-05-10.** The Second Person Spellbook opened 2026-05-08 as the bound collection. The "single button" framing has its closest landing in **Tome V Act 8 — *The ZK Circuit*** (`tomes/tome-v-the-crafting/08-the-zk-circuit.md`), where Aletheia's recursive-proof discipline absorbs the EML composition motif into an in-world act. Three Ceilings concept remains alive in the C18–C25 conjecture register.
+
 The EML paper opens a new candidate act seed:
 
 **The Single Button** — Odrzywołek's broken calculator reduced to two buttons (1 and EML). The spellweb reduced to two agents (neg and bnot). The question the Second Person asks: *who presses the button?* Not what the operator does — who chooses to apply it. The sovereign is not the operation. The sovereign is the one who composes.

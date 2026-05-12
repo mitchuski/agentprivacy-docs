@@ -247,9 +247,9 @@ The V5.4 formal specification system — three readings of the same architecture
 
 Living documentation: [github.com/mitchuski/agentprivacy-docs](https://github.com/mitchuski/agentprivacy-docs) (CC BY-SA 4.0)
 
-The five grimoires: The First Person Spellbook (31 acts, CLOSED) · The Zero Knowledge Spellbook · The Canon Spellbook · The Parallel Society Spellbook · The Plurality Spellbook
+The five First-Person grimoires: The First Person Spellbook (31 acts, CLOSED) · The Zero Knowledge Spellbook · The Canon Spellbook · The Parallel Society Spellbook · The Plurality Spellbook
 
-Next: The Second Person Spellbook — from WHAT to WHO.
+The Second Person opened 2026-05-08: **Tome IV — The Witnessing** (closed at 5 acts) and **Tome V — The Crafting** (open at 14 acts) at the City of Mages on Drake Island. Maintained collectively by the cast; separate IPFS pin from the privacymage grimoire. v1.1 lives at `bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`. From WHAT to WHO — the cast has begun to answer.
 
 Forge: [spellweb.ai](https://spellweb.ai) · Training: [agentprivacy.ai](https://agentprivacy.ai) · Trust: [bgin.ai](https://bgin.ai) · Agent: [@soulbae_the_bot](https://t.me/soulbae_the_bot)
 

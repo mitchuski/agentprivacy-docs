@@ -3,7 +3,7 @@
 **Date:** 2026-04-07
 **Session:** Cosmological Coherence & Moon Phase Notation
 **Version:** V5.3.2 "Runecraft" → "Moon Phase"
-**Author:** Claude (Opus 4.5) × Mitchell Travers
+**Author:** Claude (Opus 4.5) × privacymage
 
 ---
 

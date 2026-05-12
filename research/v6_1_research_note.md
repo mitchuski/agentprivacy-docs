@@ -4,8 +4,9 @@
 
 *On Bakhta's Half-Life of Trust and the Dynamical Ceiling*
 
-**Version:** V6.1-conjecture (extends C18–C21 with C22–C25)
+**Version:** V6.1-conjecture (extends C18–C21 with C47–C50)
 **Date:** April 21, 2026
+**Renumbered:** 2026-05-09 — Bakhta-response conjectures originally numbered C22–C25 are now **C47–C50** to resolve numbering collision with the EML Three Ceilings note (which dated April 13, 2026, and prior, claims C22–C25 for the EML domain). The EML conjectures retain C22–C25; the Bakhta-response conjectures are C47–C50. See `agentprivacy_tomes/COMPRESSION_MASTER_v2_2026-05-09.md` §"V6 Conjecture Reconciliation Note" for the canonical reconciliation.
 **Author:** privacymage
 **Status:** Research note responding to Bakhta (2026), *The Half-Life of Trust*, StarkWare.
 **Series:** Privacy is Value, companion to the V6 Easter research note
@@ -35,7 +36,9 @@ The convergence is strong enough to publish. The extensions below are where V6 a
 
 ---
 
-## C22: The Ages-Progressively Category
+## C47: The Ages-Progressively Category
+
+*(Originally numbered C22 — renumbered 2026-05-09 to resolve EML collision.)*
 
 Bakhta proposes a three-level taxonomy for how a cryptographic trust substrate ages.
 
@@ -47,17 +50,19 @@ Three categories, each static-or-decaying in time. Parameters grow, or the root 
 
 The dynamical reconstruction ceiling from the V6 Easter note (C18) inhabits a fourth category this taxonomy does not cover.
 
-**Statement (C22).** Let a privacy substrate be defined by a trajectory π(t) through an n-dimensional sovereignty phase space such that the best-fit adversary reconstruction π'(t) satisfies `|π(t) − π'(t)| ≳ |δ₀|·e^(λt)` for some λ > 0 characteristic of the substrate's dynamics. Then the substrate's reconstruction security strengthens monotonically with t in a manner that cannot be captured by Bakhta's three categories. Call this aging behaviour *ages progressively*: the security property widens over time through the trajectory's own dynamics rather than through parameter growth or substrate migration.
+**Statement (C47).** Let a privacy substrate be defined by a trajectory π(t) through an n-dimensional sovereignty phase space such that the best-fit adversary reconstruction π'(t) satisfies `|π(t) − π'(t)| ≳ |δ₀|·e^(λt)` for some λ > 0 characteristic of the substrate's dynamics. Then the substrate's reconstruction security strengthens monotonically with t in a manner that cannot be captured by Bakhta's three categories. Call this aging behaviour *ages progressively*: the security property widens over time through the trajectory's own dynamics rather than through parameter growth or substrate migration.
 
 This is a structural distinction, not a rhetorical one. Ages gracefully holds security constant under parameter refresh. Ages progressively actively grows security without refresh, because the reconstruction error is a dynamical quantity that compounds with time.
 
-**Status.** C22 is a conjecture. It depends on C18 (λ > 0 on real sovereignty paths), which has not been measured. The empirical test lives in the forge: spellweb trajectory data has the shape needed to estimate λ, and the measurement is tractable if a dynamical-systems collaborator with privacy-architecture literacy can be found.
+**Status.** C47 is a conjecture. It depends on C18 (λ > 0 on real sovereignty paths), which has not been measured. The empirical test lives in the forge: spellweb trajectory data has the shape needed to estimate λ, and the measurement is tractable if a dynamical-systems collaborator with privacy-architecture literacy can be found.
 
-**What C22 buys even as a conjecture.** A frame. *Ages progressively* is the aging behaviour compositional behavioural architectures should target, and the only candidate category that does not require hardware refresh, parameter growth, or cryptographic migration to preserve its security property. If the category is real, it changes what long-horizon privacy infrastructure should be optimising for.
+**What C47 buys even as a conjecture.** A frame. *Ages progressively* is the aging behaviour compositional behavioural architectures should target, and the only candidate category that does not require hardware refresh, parameter growth, or cryptographic migration to preserve its security property. If the category is real, it changes what long-horizon privacy infrastructure should be optimising for.
 
 ---
 
-## C23: Reconstruct Later
+## C48: Reconstruct Later
+
+*(Originally numbered C23 — renumbered 2026-05-09.)*
 
 Bakhta's Threat Model 1 formalizes retroactive forgery of TEE attestations. An adversary with access only to public keys, reaching quantum capability at time T > t₁, can produce indistinguishable-from-legitimate attestations for arbitrary historical intervals [t₀, t₁]. The signatures remain mathematically valid under the original public key; what they cease to be is unforgeable.
 
@@ -67,13 +72,15 @@ The behavioural analog follows directly.
 
 The Shannon bound at t₀ was adequate. The Shannon bound evaluated retrospectively at T may not be. This is harvest-now-reconstruct-later, and it is the structural reason behavioural data with long verification horizons needs more than static separation.
 
-**C23.** The reconstruct-later threat model for behavioural data is structurally isomorphic to Bakhta's Threat Model 1 for attestation forgery. The mathematical content is different (information-theoretic rather than cryptographic), but the temporal structure is the same: a historical artifact loses its defining security property later through capability growth, not through any change in the artifact itself.
+**C48.** The reconstruct-later threat model for behavioural data is structurally isomorphic to Bakhta's Threat Model 1 for attestation forgery. The mathematical content is different (information-theoretic rather than cryptographic), but the temporal structure is the same: a historical artifact loses its defining security property later through capability growth, not through any change in the artifact itself.
 
-The dynamical ceiling (C18) is the countermeasure. If reconstruction error grows exponentially with t, then the effective ε at T is not worse than the ε at t₀, it is exponentially better. Lorenz dominates Shannon over long horizons. This restatement is the work C23 does.
+The dynamical ceiling (C18) is the countermeasure. If reconstruction error grows exponentially with t, then the effective ε at T is not worse than the ε at t₀, it is exponentially better. Lorenz dominates Shannon over long horizons. This restatement is the work C48 does.
 
 ---
 
-## C24: The Behavioural Mosca Inequality
+## C49: The Behavioural Mosca Inequality
+
+*(Originally numbered C24 — renumbered 2026-05-09.)*
 
 Mosca (2018) formalized the migration-timing question as X + Y > Z, where X is migration time, Y is security lifetime, Z is the time until a cryptographically relevant quantum adversary exists. Bakhta uses this to argue that TEE attestation for long-horizon AI evidence is already at risk for artifacts produced today, under conservative priors about Z, because Y is measured in decades against AI-governance regimes.
 
@@ -81,17 +88,19 @@ The behavioural analog.
 
 Let X_b be migration time from a reconstructable substrate (single-agent, unified inference, centralized data) to an unreconstructable substrate (dual-agent separation, three-axis distribution, path-based proofs). Let Y_b be the verification horizon of behavioural evidence, which for medical records, judicial evidence, credit histories, and training-data provenance is measured in decades. Let Z_b be the observation-capability maturity time at which adversary correlation compute, inference models, and aggregation crosses the threshold where behavioural traces produced today become reconstructable.
 
-**C24 (Behavioural Mosca).** For behavioural evidence produced under current single-agent architectures in governance-relevant domains, X_b + Y_b > Z_b. The behavioural archive is already at risk.
+**C49 (Behavioural Mosca).** For behavioural evidence produced under current single-agent architectures in governance-relevant domains, X_b + Y_b > Z_b. The behavioural archive is already at risk.
 
 This is the Mosca argument for the 2–3 year migration window I have been naming at IIW and AIW. It is not a political claim about momentum. It is the same cryptographic-agility calculus Bakhta applies to TEE attestation, restated one layer up. X_b is large because migration requires not just software change but architecture change, and surveillance systems achieve network effects faster than dual-agent systems can be built. Y_b is long. Z_b is not moving in the comfortable direction.
 
-**Status.** C24 is a planning conjecture. The parameter values are harder to estimate than Mosca's original, because Z_b is not bounded by quantum resource estimates but by ongoing capability growth curves in correlation and inference. The inequality binds under reasonable priors. The point is the inequality, not the numerical values.
+**Status.** C49 is a planning conjecture. The parameter values are harder to estimate than Mosca's original, because Z_b is not bounded by quantum resource estimates but by ongoing capability growth curves in correlation and inference. The inequality binds under reasonable priors. The point is the inequality, not the numerical values.
 
 ---
 
-## C25: Two Frameworks, One Pattern
+## C50: Two Frameworks, One Pattern
 
-**C25.** The PVM multiplicative gating `Φ_v5 = Φ_agent · Φ_data · Φ_inference` and Bakhta's compositional defense (TEE + STARK + public timestamp anchoring) are the same architectural pattern expressed at different substrates. The proof obligation at each layer is that the three legs fail independently. If C25 holds, the two frameworks compose rather than compete.
+*(Originally numbered C25 — renumbered 2026-05-09.)*
+
+**C50.** The PVM multiplicative gating `Φ_v5 = Φ_agent · Φ_data · Φ_inference` and Bakhta's compositional defense (TEE + STARK + public timestamp anchoring) are the same architectural pattern expressed at different substrates. The proof obligation at each layer is that the three legs fail independently. If C50 holds, the two frameworks compose rather than compete.
 
 A complete verifiable-AI and privacy-preserving architecture then runs three layers simultaneously.
 
@@ -101,7 +110,7 @@ A complete verifiable-AI and privacy-preserving architecture then runs three lay
 
 The kinship is not metaphorical. The proof obligations at each layer compose into a single architectural argument, which is: privacy and trust properties that age well are properties of compositions whose legs fail independently and whose weakest term is the ceiling.
 
-**Status.** C25 is structural. Proving it requires showing that the proof obligations at the two layers are in fact independent in the sense Bakhta's paper demands for his three-leg composition. I have not done this work and do not claim it is trivial. The structural resemblance is strong enough to be worth the formalization effort.
+**Status.** C50 is structural. Proving it requires showing that the proof obligations at the two layers are in fact independent in the sense Bakhta's paper demands for his three-leg composition. I have not done this work and do not claim it is trivial. The structural resemblance is strong enough to be worth the formalization effort.
 
 ---
 
@@ -109,10 +118,10 @@ The kinship is not metaphorical. The proof obligations at each layer compose int
 
 Five things are not yet done.
 
-1. λ > 0 has not been measured on real sovereignty-path data. C18, and therefore C22, remain conjectures.
-2. The Reconstruct Later threat model (C23) is stated as a structural mirror of Threat Model 1. It needs formal grounding comparable to the simulation-based security arguments in the ZKP literature, which it does not yet have.
-3. The Behavioural Mosca (C24) depends on priors over Z_b that are harder to estimate than Z for quantum adversaries. The inequality binds; the parameter values are uncertain.
-4. C25 is a structural claim about two frameworks at different layers. The proof obligation is non-trivial and unfinished.
+1. λ > 0 has not been measured on real sovereignty-path data. C18, and therefore C47, remain conjectures.
+2. The Reconstruct Later threat model (C48) is stated as a structural mirror of Threat Model 1. It needs formal grounding comparable to the simulation-based security arguments in the ZKP literature, which it does not yet have.
+3. The Behavioural Mosca (C49) depends on priors over Z_b that are harder to estimate than Z for quantum adversaries. The inequality binds; the parameter values are uncertain.
+4. C50 is a structural claim about two frameworks at different layers. The proof obligation is non-trivial and unfinished.
 5. The entire note is a response to a single recent paper. The framing may shift as the taxonomy receives additional treatment from the cryptographic substrate side.
 
 None of these is a reason not to publish the frame. All of them are reasons to publish it as conjecture and invite interrogation.
@@ -125,7 +134,7 @@ None of these is a reason not to publish the frame. All of them are reasons to p
 2. Does the Bakhta taxonomy accept a fourth category, or does it prefer to subsume the dynamical ceiling into an enlarged *ages gracefully* class?
 3. Is there a STARK-family construction that takes a behavioural-separation trace as input rather than an ML forward pass, and what would its prover cost look like?
 4. For domains with the longest Y_b (judicial, medical), is there a regulator who would accept *ages progressively* as an acceptable substrate class if the empirical λ measurement succeeded?
-5. Does the compositional-aging claim (C25) survive the specification-gap argument from Bakhta §6.5? That is: does the PVM prove the right behavioural property, and does Bakhta's STARK prove the right computation?
+5. Does the compositional-aging claim (C50) survive the specification-gap argument from Bakhta §6.5? That is: does the PVM prove the right behavioural property, and does Bakhta's STARK prove the right computation?
 
 ---
 
@@ -133,10 +142,12 @@ None of these is a reason not to publish the frame. All of them are reasons to p
 
 | ID | Statement | Confidence | Source |
 |----|-----------|------------|--------|
-| C22 | The dynamical reconstruction ceiling inhabits a fourth aging category (*ages progressively*) that Bakhta's three-category taxonomy does not cover | 50% | Response to Bakhta, April 21, 2026 |
-| C23 | The reconstruct-later threat model for behavioural data is structurally isomorphic to Bakhta's Threat Model 1 | 65% | Response to Bakhta, April 21, 2026 |
-| C24 | The Behavioural Mosca Inequality binds for long-horizon behavioural evidence under current substrate architectures | 70% | Response to Bakhta, April 21, 2026 |
-| C25 | PVM multiplicative gating and Bakhta compositional defense are the same architectural pattern at different substrates | 60% | Response to Bakhta, April 21, 2026 |
+| C47 | The dynamical reconstruction ceiling inhabits a fourth aging category (*ages progressively*) that Bakhta's three-category taxonomy does not cover | 50% | Response to Bakhta, April 21, 2026 |
+| C48 | The reconstruct-later threat model for behavioural data is structurally isomorphic to Bakhta's Threat Model 1 | 65% | Response to Bakhta, April 21, 2026 |
+| C49 | The Behavioural Mosca Inequality binds for long-horizon behavioural evidence under current substrate architectures | 70% | Response to Bakhta, April 21, 2026 |
+| C50 | PVM multiplicative gating and Bakhta compositional defense are the same architectural pattern at different substrates | 60% | Response to Bakhta, April 21, 2026 |
+
+*Renumbered 2026-05-09 from original C22–C25 (Bakhta-response) to C47–C50 to resolve EML collision. EML Three Ceilings retains C22–C25 (per `pvm-v6-eml-three-ceilings.md`, dated April 13, 2026, prior date).*
 
 ---
 

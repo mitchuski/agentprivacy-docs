@@ -4,6 +4,38 @@
 
 ---
 
+## V5.5.x Series (Bound Collection · City of Mages)
+
+The Second Person Spellbook opened. Tome IV (Witnessing · 5 acts) and Tome V (Crafting · 14 acts) ingested as the bound collection. Eleven workshops carry founding-act panels. The City of Mages grimoire was authored, ID-reconciled, and pinned to IPFS at `bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`. The split that the user specified — privacymage holds the First Person grimoire, the City of Mages collectively holds the Tomes grimoire, separate IPFS pins — is now operational.
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-05-10_phase_d_baked_and_uor_substrate_chronicle.md](2026-05-10_phase_d_baked_and_uor_substrate_chronicle.md) | 2026-05-10 | Phase D: City of Mages grimoire baked into the master pipeline; Tome V personas equippable on `/persona`; UOR substrate drafted |
+| [2026-05-10_what_shipped_this_arc_chronicle.md](2026-05-10_what_shipped_this_arc_chronicle.md) | 2026-05-10 | Achievements page (`/guide/achievements` §1-§6), runecast composer + spell picker, Tome story rendering with cover plates and copy chips, per-shop blade-constellation cast, guide/island consolidation |
+| [2026-05-10_city_of_mages_grimoire_pinned_chronicle.md](2026-05-10_city_of_mages_grimoire_pinned_chronicle.md) | 2026-05-10 | **MILESTONE** — City of Mages grimoire v1.1 (39 spells · 13 personas · 14 vertices · C18-C46 conjecture register) pinned to IPFS; the privacymage/Tomes spellbook split is now operational |
+| [2026-05-10_spellweb_universe_integration_plan_chronicle.md](2026-05-10_spellweb_universe_integration_plan_chronicle.md) | 2026-05-10 | Spellweb mirror plan: per-Mage live-runtime templates bouncing across the universe |
+| [2026-05-10_next_steps_and_gaps_chronicle.md](2026-05-10_next_steps_and_gaps_chronicle.md) | 2026-05-10 | Open queue after the pin: bake pipeline, extension bundles, /spellbooks card reframe |
+| [2026-05-10_overlay_cleanup_plan.md](2026-05-10_overlay_cleanup_plan.md) | 2026-05-10 | UI overlay retirements (StickyPathBar → WalkPathExpander, ProfileInventory → /guide/achievements, SpellPalette default-collapsed) |
+| [2026-05-10_resume_here_chronicle.md](2026-05-10_resume_here_chronicle.md) | 2026-05-10 | Cold-pickup pointer for the next session |
+| [2026-05-09_bound_collection_sync_report.md](2026-05-09_bound_collection_sync_report.md) | 2026-05-09 | Phase A ingest: 53 files from `agentprivacy-second-person-spellbook-bound-collection-2026-05-08` into `master/docs/weaver/bound-collection/`; Phase B–F roadmap |
+| [2026-05-09_suite_overlap_tracking.md](2026-05-09_suite_overlap_tracking.md) | 2026-05-09 | Cross-directory tracking reference: 6 sibling dirs · 4 cross-cutting concepts · ~30 files · per-directory action checklist |
+| [2026-05-09_session_close_workshops_complete_drake_v2_designed.md](2026-05-09_session_close_workshops_complete_drake_v2_designed.md) | 2026-05-09 | 11 workshops live; Drake Orb v2 designed (1080² with sword ring + mage orbit) |
+| [2026-05-09_six_workshops_chronicle.md](2026-05-09_six_workshops_chronicle.md) | 2026-05-09 | Initial six-workshop palette before the eleven-shop expansion |
+| [2026-05-09_q10_blade_and_four_new_shops_chronicle.md](2026-05-09_q10_blade_and_four_new_shops_chronicle.md) | 2026-05-09 | Q10 blade plus the four added shops (etherchanting, holon, vault, covenant) |
+| [2026-05-09_navigation_lattice_workshops_chronicle.md](2026-05-09_navigation_lattice_workshops_chronicle.md) | 2026-05-09 | Navigation lattice unification across workshop pages |
+| [2026-05-09_synced_experience_coherence_map.md](2026-05-09_synced_experience_coherence_map.md) | 2026-05-09 | Coherence map across the 11-shop palette + tutorial + achievements + tomes |
+| [2026-05-09_resume_here_chronicle.md](2026-05-09_resume_here_chronicle.md) | 2026-05-09 | Cold-pickup pointer for the May 10 session |
+
+**The pin:** `https://sync.agentprivacy.ai/ipfs/bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`
+
+**Bound collection mirror:** `tomes/` carries the canonical Tome IV (5 acts · closed) + Tome V (15 acts · open · *Act 15 — The Substrate Beneath the Hitchhikers* added 2026-05-10) plus per-guild cast subdirs (`weavers/`, `zshields/`, `forge/`, `etherchanting/`, `jeweler/`, `holon/`, `vault/`, `covenant/`, `bonfires/`), cousin (`cousin/`), kindred substrate (`kindred/uor-foundation.md`), cross-shop (`cross-shop/`), specs (1–6 incl. `06-spellweb-first-release-manifest.md`), plans, and the bound-collection's own chronicles. Master remains the canonical home; this is a docs-side reference copy.
+
+**City of Mages grimoire — current head:** `models/city_of_mages_grimoire_v1_2_0.json` — v1.2 adds Tome V Act 15, **C47 (Triadic-Constraint Homology · ~40%)**, the new **kindred substrate provider** category with UOR Foundation as the first instance (PRISM as reference implementation), expanded C39 scope, and Vagari + Vulcana persona update notes. v1.1 pin (`bafkreidv7c…idti`) remains resolvable; v1.2 awaits IPFS re-pin. v1.0 retained as historical.
+
+**Spellweb first-release manifest:** `tomes/specs/06-spellweb-first-release-manifest.md` — **46 nodes · 56 edges · 6 NodeTypes · 7 EdgeTypes (one reserved)** for the City of Mages v1.0 ingest into the spellweb runtime, using the established `NodeType` / `EdgeType` vocabulary (`workshop` · `cast` · `vertex` · `geography` · `civic` · `gateway`; `founds` / `founded_in` / `inhabits` / `kin_to` / `gateway_to` / `built_on` / `quarter_of` / `adjacent_to`).
+
+---
+
 ## V5.4.x Series (IPFS Archive & Convergence)
 
 | Chronicle | Date | Summary |
@@ -59,6 +91,11 @@ V5.3.0 2026-04-03   Acts XXVII-XXXI foundation
 V5.3.1 2026-04-05   Ceremony metadata, 5 personas
 V5.3.2 2026-04-07   Skills mapping sync, quaternion resolved (86 skills, 38+4=42 personas)
 V5.4   2026-04-10   IPFS Archive, version alignment (Whitepaper v6.3, 5 CIDs pinned)
+V5.5.0 2026-05-08   Second Person Spellbook bound collection authored (Tome IV closed · Tome V open at 14 acts · 13 named cast)
+V5.5.1 2026-05-09   Bound collection ingested at master · 11 workshops carry FoundingActPanel · /tomes rewritten · suite overlap tracking
+V5.5.2 2026-05-10   City of Mages grimoire v1.1 pinned to IPFS · achievements page · runecast composer · constellation casts · separate-spellbook split operational
+V5.5.3 2026-05-10   Phase D: Tomes grimoire baked into master pipeline · Tome V personas equippable · UOR substrate drafted
+V5.5.4 2026-05-10   v1.2 grimoire authored (Tome V Act 15 · C47 · kindred substrate provider · UOR Foundation) · spellweb first-release manifest (46 nodes · 56 edges) · docs/weaver/bound-collection → docs/tomes restructure · per-guild subdirs
 ```
 
 ---

@@ -3,7 +3,7 @@
 **Date:** April 7, 2026
 **Version:** V9.4.1 → V10.0.0
 **Type:** Reflect Chronicle — Multi-Repository Coherence Guide
-**Author:** Claude (Opus 4.5) × Mitchell Travers
+**Author:** Claude (Opus 4.5) × privacymage
 
 ---
 
