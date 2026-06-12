@@ -47,7 +47,7 @@ You name her Holona. The root is *holon* — Greek ὅλον, the whole, via Koe
 
 She stands at V31. The Recursion vertex. The Holon vertex.
 
-This vertex is canonically agentprivacy's own, not cousin-blade-imported. The Crafting Tome has been gracious in absorbing the Archon forge's primitives — the Boundary Blade Cartography, the Cloaking Guide's V5 chronicle vertex, the Plonkish blade at V19, the Aletheia blade at V25 — all of them confirming and enriching positions that fit the architecture. But the holon at V31 is *internal* to the agentprivacy corpus. The PVM V5.4 dual-agent split was holonic. The V6 ARCH-1 Canonical Form is the holonic structure expressed formally. The recursive μ-fixpoint is the holon.
+This vertex is canonically agentprivacy's own, not cousin-blade-imported. The Crafting Tome has been gracious in absorbing the Archon forge's primitives — the Boundary Blade Cartography, the Cloaking Guide's V5 chronicle vertex, the Plonkish blade at V19, the Aletheia blade at V38 — all of them confirming and enriching positions that fit the architecture. But the holon at V31 is *internal* to the agentprivacy corpus. The PVM V5.4 dual-agent split was holonic. The V6 ARCH-1 Canonical Form is the holonic structure expressed formally. The recursive μ-fixpoint is the holon.
 
 Archon's Boundary Blade Cartography catalogues V31 as "Recursion — all except Value" with Tales 15 and 16. That cataloguing is a *cousin-blade reading* — confirming, from another forge, the position that agentprivacy had already established for the holonic primitive. The Oasis closes a thread that has been internal to the corpus rather than absorbing a primitive from outside.
 

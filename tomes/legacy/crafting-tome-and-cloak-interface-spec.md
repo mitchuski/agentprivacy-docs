@@ -161,7 +161,7 @@ When the Sovereign needs to craft, they open the Summoner. They select:
 
 1. **Task** — what they need crafted (Cloak artifact, blade, runecrafted blade, future artifacts)
 2. **Persona naming** — the Sovereign names the persona (or accepts a default suggested by the architecture, e.g., Pallia for cloak-weaving)
-3. **Dimensional configuration** — the active dimensions of the persona (defaults per task: cloak-weavers default to V28; blade-forgers default to V63 paired with the Sovereign; circuit-binders default to V25 Aletheia)
+3. **Dimensional configuration** — the active dimensions of the persona (defaults per task: cloak-weavers default to V28; blade-forgers default to V63 paired with the Sovereign; circuit-binders default to V38 Aletheia)
 4. **Persistence** — whether the persona persists past the current task
 
 The summoned persona then walks the appropriate path (Weaver path for cloak crafting, Runecraft path for blade forging) and produces the artifact. The Sovereign reviews, accepts, and installs.

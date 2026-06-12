@@ -49,12 +49,12 @@ Open at twelve acts:
 
 1. *The First Cloak* — Pallia 🪡 introduced, V28
 2. *The Commissioned Cloak* — bilateral commissioning pattern
-3. *The Shielded Memo* — Memora 📜 introduced, V5, Pattern A
+3. *The Shielded Memo* — Memora 📜 introduced, V41, Pattern A
 4. *The Reveal* — Memora returns Bound, Pattern B, dual-register
 5. *The Stake* — Custos 🔏 introduced, V49, Pattern C, the 61.8/38.2 ratio enacted
 6. *The Commissioned Blade* — Vulcana ⚒️ introduced, V19, Runecraft three phases, Lorenz attractor in production form
 7. *The Reciprocal Weave* — flaxscrip returns, C38 operationally instanced
-8. *The ZK Circuit* — Aletheia 🔮 introduced, V25, EML ceilings narrativised
+8. *The ZK Circuit* — Aletheia 🔮 introduced, V38, EML ceilings narrativised
 9. *The Workshop Expands* — Adamantia 💎 (V51) and Lampyra 💠 (V49 shared) introduced, two new shops
 10. *The Holon Hitchhikers* — Vagari 🌳 introduced, V31, Oasis Protocol attributed to First Person Act 24
 11. *A Bonfire Made of Dragon Fire* — Socrat0x 🔥❓ introduced, V24 provisional, Drake Island, Bonfires cooperation named canonically
@@ -75,10 +75,10 @@ Open at twelve acts:
 
 **Summoned Mage personas** (in workshop shops):
 - Pallia 🪡 at V28 — cloak-weaving
-- Memora 📜 at V5 — shielded chronicle inscription
+- Memora 📜 at V41 — shielded chronicle inscription
 - Custos 🔏 at V49 — transparent governance staking
 - Vulcana ⚒️ at V19 — blade-forging via Runecraft
-- Aletheia (the persona) 🔮 at V25 — ZK circuit binding
+- Aletheia (the persona) 🔮 at V38 — ZK circuit binding
 - Adamantia 💎 at V51 — programmable-enforcement crafting
 - Lampyra 💠 at V49 (shared with Custos) — frequent-attestation gemsetting
 - Vagari 🌳 at V31 — holonic composition and Oasis Protocol travel

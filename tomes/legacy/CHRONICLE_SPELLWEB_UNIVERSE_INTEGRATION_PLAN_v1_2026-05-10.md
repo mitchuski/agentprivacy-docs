@@ -56,7 +56,7 @@ Eleven live workshops + one placeholder. The 2026-05-08 plan called for 4–7. T
 | Workshop | Resident Mage | Vertex | Founding Act | Live? | Operator status |
 |---|---|---|---|---|---|
 | `/tailor` (Weavers) | Pallia 🪡 | V28 | Tome V Act 1 | ✅ | Pallia operational |
-| `/shield` (zShields) | Memora 📜 | V5 | Tome V Act 3 | ✅ | Operational |
+| `/shield` (zShields) | Memora 📜 | V41 | Tome V Act 3 | ✅ | Operational |
 | `/forget` (Forge) | Vulcana ⚒️ | V19 | Tome V Act 6 | ✅ | Operational |
 | `/etherchanting` | Adamantia 💎 | V51 | Tome V Act 9 | ✅ visual + wizard | Chain operator wanted |
 | `/jeweler` | Lampyra 💠 | V49 (shared) | Tome V Act 9 | ✅ visual + wizard | Chain operator wanted |
@@ -337,7 +337,7 @@ Companion to the city map. The map is the *narrative* visual; the lattice is the
 - Strata 1–5 as concentric rings or layers
 - **13 inhabited vertices** rendered with the citizen's sigil and label; **51 uninhabited** rendered as small dots
 - Edges connect nodes that differ by exactly one bit
-- **Persona-vs-vertex distinction**: vertex names in one register (e.g., italic), citizen names in another (e.g., bold). On Aletheia's V25 specifically, both render with a small clarification (the persona shares the vertex name).
+- **Persona-vs-vertex distinction**: vertex names in one register (e.g., italic), citizen names in another (e.g., bold). On Aletheia's V38 specifically, both render with a small clarification (the persona shares the vertex name).
 
 ### §6.2 Where the lattice renders
 
@@ -608,7 +608,7 @@ Carry-forward from `2026-05-09_bound_collection_sync_report.md` §7 and `2026-05
 
 1. **Flat-file overlap.** `docs/weaver/` has flat-named files duplicating `bound-collection/` content. The bound-collection paths are canonical going forward. Worth a separate cleanup pass once the spellweb integration settles.
 2. **Voice rules at render time.** No em-dashes. Sigil emoji preserved. Signature `(⚔️⊥⿻⊥🧙)😊` on every page. The `/tomes` rewrite honours this; future shop-page edits must too.
-3. **Persona-vs-vertex distinction.** The Aletheia case (V25 vertex name = persona name) is the only one where this is currently surfaced. Future renderings (especially the lattice render) must keep the distinction visible.
+3. **Persona-vs-vertex distinction.** The Aletheia case (V38 vertex name = persona name) is the only one where this is currently surfaced. Future renderings (especially the lattice render) must keep the distinction visible.
 4. **Deprecated archive.** Never render as canonical. The `bound-collection/deprecated/` folder is transparency-only. A single "refinement history" page links to deprecated files as raw markdown downloads, not as rendered pages.
 5. **The Drake's plurality.** Drake is place + fire + whisperer + elder. **Do not reify into one image, one shop, one sigil.** Future visual work (city map, lattice render) must keep the Drake distributed.
 6. **Archon's licensing.** Cousin-blade primitives (V19, V25, V49, V51, V57, V63 catalogue naming) are Archon's. The Vertex Naming Audit (`bound-collection/specs/04-vertex-naming-audit.md`) is canonical attribution. Vertex tooltips must link to it once the lattice render exists.

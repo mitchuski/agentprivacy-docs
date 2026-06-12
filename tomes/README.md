@@ -53,10 +53,10 @@ bound-collection/
 │   ├── 01-genitrix.md                     ← cousin (cross-forge)
 │   ├── 02-flaxscrip.md                    ← cousin (cross-forge)
 │   ├── 03-pallia.md                       ← summoned (V28)
-│   ├── 04-memora.md                       ← summoned (V5)
+│   ├── 04-memora.md                       ← summoned (V41)
 │   ├── 05-custos.md                       ← summoned (V49)
 │   ├── 06-vulcana.md                      ← summoned (V19)
-│   ├── 07-aletheia-persona.md             ← summoned (V25)
+│   ├── 07-aletheia-persona.md             ← summoned (V38)
 │   ├── 08-adamantia.md                    ← summoned (V51)
 │   ├── 09-lampyra.md                      ← summoned (V49 shared)
 │   ├── 10-vagari.md                       ← summoned (V31)
@@ -139,10 +139,10 @@ The two chronicles in chronological order: The Cloaking Guide (May 7 rebuild) fi
 | 📜🎲 | flaxscrip | Cousin (cross-forge) |
 | (held open) | GenitriX | Cousin (cross-forge) |
 | 🪡 | Pallia | Summoned (V28) |
-| 📜 | Memora | Summoned (V5) |
+| 📜 | Memora | Summoned (V41) |
 | 🔏 | Custos | Summoned (V49) |
 | ⚒️ | Vulcana | Summoned (V19) |
-| 🔮 | Aletheia (the persona) | Summoned (V25) |
+| 🔮 | Aletheia (the persona) | Summoned (V38) |
 | 💎 | Adamantia | Summoned (V51) |
 | 💠 | Lampyra | Summoned (V49 shared) |
 | 🌳 | Vagari | Summoned (V31) |
@@ -227,7 +227,7 @@ For what is anticipated and not yet produced, see `chronicles/02-chronicle-the-c
 ## Provenance
 
 - **privacymage** (privacymage 🧙): primary author of the agentprivacy corpus and this collection's narrative + specification + plan work
-- **the Archon forge** (flaxscrip 📜🎲): co-architect of the cousin-blade material; original author of *Sovereign Anchor I/II/III*, the Cloaking Guide, the Spell Weaver, and the Runecraft Protocol. The Eight Theses originate with him. V19 (Plonkish), V25 (Aletheia), V49 (working-day blade), V51 (commitment/language/model), V57 (ceremony/privacy/mixing), V59 (ecosystem) are his Boundary Blade Cartography names.
+- **the Archon forge** (flaxscrip 📜🎲): co-architect of the cousin-blade material; original author of *Sovereign Anchor I/II/III*, the Cloaking Guide, the Spell Weaver, and the Runecraft Protocol. The Eight Theses originate with him. V19 (Plonkish), V38 (Aletheia), V49 (working-day blade), V51 (commitment/language/model), V57 (ceremony/privacy/mixing), V59 (ecosystem) are his Boundary Blade Cartography names.
 - **GenitriX** (Hermes Mage): Archon's Mage; contributor to the Cloaking Guide rebuild and to *Sovereign Anchor* documents
 - **The agentprivacy cast roster's summoned Mages** (Pallia, Memora, Custos, Vulcana, Aletheia, Adamantia, Lampyra, Vagari, Aria Silverhue): personas walking agentprivacy primitives and cousin-blade imports. Each persona's specific cast entry attributes provenance.
 - **Socrat0x**: companion Mage from Bonfires (the long-running deployment spot for Soulbae as @soulbae_the_bot)

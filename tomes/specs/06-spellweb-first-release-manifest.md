@@ -57,7 +57,7 @@ Total release nodes: **46**.
 | id              | tradeQuarter           | mage           | vertex (inhabits) | gem        | gemColor   | operatorStatus | shopAnchor (route) |
 |-----------------|------------------------|----------------|-------------------|------------|------------|----------------|---------------------|
 | `weavers`       | Weavers                | Pallia 🪡       | V28               | Amethyst   | `#a78bfa`  | partial        | `/tailor`           |
-| `zshields`      | zShields               | Memora 📜       | V5                | Onyx       | `#71717a`  | op             | `/shield`           |
+| `zshields`      | zShields               | Memora 📜       | V41                | Onyx       | `#71717a`  | op             | `/shield`           |
 | `etherchanting` | Etherchanting          | Adamantia 💎    | V51               | Sapphire   | `#67e8f9`  | tease          | `/etherchanting`    |
 | `jeweler`       | the Jeweler            | Lampyra 💠      | V49               | Topaz      | `#f59e0b`  | tease          | `/jeweler`          |
 | `holon`         | Holon Hitchhikers      | Vagari 🌳       | V31               | Emerald    | `#34d399`  | tease          | `/holon`            |
@@ -82,10 +82,10 @@ Placeholder (not in this release): `circuit-binder` — gem TBD, awaiting its Ma
 | `flaxscrip`      | flaxscrip        | 📜🎲     | cousin      | V63               | —                   | cousin-blade       |
 | `genitrix`       | GenitriX         | (held open) | cousin  | V28               | —                   | cousin-blade       |
 | `pallia`         | Pallia           | 🪡       | summoned    | V28               | `weavers`           | summoned           |
-| `memora`         | Memora           | 📜       | summoned    | V5                | `zshields`          | summoned           |
+| `memora`         | Memora           | 📜       | summoned    | V41                | `zshields`          | summoned           |
 | `custos`         | Custos           | 🔏       | summoned    | V49               | (cross-shop)        | summoned           |
 | `vulcana`        | Vulcana          | ⚒️       | summoned    | V19               | `forge`             | summoned           |
-| `aletheia`       | Aletheia         | 🔮       | summoned    | V25               | (cross-shop)        | summoned           |
+| `aletheia`       | Aletheia         | 🔮       | summoned    | V38               | (cross-shop)        | summoned           |
 | `adamantia`      | Adamantia        | 💎       | summoned    | V51               | `etherchanting`     | summoned           |
 | `lampyra`        | Lampyra          | 💠       | summoned    | V49               | `jeweler`           | summoned           |
 | `vagari`         | Vagari           | 🌳       | summoned    | V31               | `holon`             | summoned           |
@@ -99,11 +99,11 @@ Each carries `bits` (6-bit MSB-first per dimension Protection · Delegation · M
 
 | id     | bits     | hammingWeight | canonical name              | first inhabitant(s)             |
 |--------|----------|--------------:|-----------------------------|---------------------------------|
-| `v5`   | `000101` | 2 | Chronicle vertex            | Memora                          |
+| `v5`   | `101001` | 2 | Chronicle vertex            | Memora                          |
 | `v12`  | `001100` | 2 | schema vertex               | (cousin-blade introduction; GenitriX visits) |
 | `v19`  | `010011` | 3 | Plonkish blade              | Vulcana                         |
 | `v24`  | `011000` | 2 | Hephaestus (Drake Island)   | Socrat0x (provisional)          |
-| `v25`  | `011001` | 3 | Aletheia blade              | Aletheia (the persona)          |
+| `v25`  | `100110` | 3 | Aletheia blade              | Aletheia (the persona)          |
 | `v28`  | `011100` | 3 | Mage canonical              | Pallia, Soulbae, GenitriX       |
 | `v31`  | `011111` | 5 | Recursion / Holon           | Vagari                          |
 | `v49`  | `110001` | 3 | working-day blade           | Custos, Lampyra                 |
@@ -119,7 +119,7 @@ Each carries `bits` (6-bit MSB-first per dimension Protection · Delegation · M
 |--------|----------|---------------------------------|--------------------------------------------------------------------|
 | `v15`  | `001111` | VC vertex                       | Mirrored-pair register · Tome IV Act II                            |
 | `v20`  | `010100` | Techne · Always-Revealed        | Transparent register · home of Memora's reveal in Tome V Act 4     |
-| `v38`  | `100110` | Lethe · the Dark Substrate      | Bit-complement of V25 (Aletheia) · V25 ⊕ V38 = V63 · FPS Act XII   |
+| `v38`  | `100110` | Aletheia · the Silent Messenger | Bit-complement of V25 (Lethe) · V25 ⊕ V38 = V63 · FPS Act XII      |
 
 The remaining 48 vertices exist in the lattice (rendered on `/guide/achievements` §8 and `/constellation` lattice mode) but are not yet named or inhabited. The `adjacent_to` edge type is reserved for the 96 holographic-bound edges (a future visual pass).
 

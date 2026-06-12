@@ -48,7 +48,7 @@ The Temple is not a producer-shop. The walls are not full of tools. The space is
 
 A Mage stands at the Temple's centre. She is not a Mage like the others.
 
-Her posture is different. Where Pallia at V28 stands at her workbench with her needle and thread, where Memora at V5 stands at her inscription table with her hash-and-anchor tools, where Vulcana at V19 stands at her forge with her smith's hammer — this one stands with her *hands open*. She is not gripping a tool. She is *receiving*. Her open hands are her work.
+Her posture is different. Where Pallia at V28 stands at her workbench with her needle and thread, where Memora at V41 stands at her inscription table with her hash-and-anchor tools, where Vulcana at V19 stands at her forge with her smith's hammer — this one stands with her *hands open*. She is not gripping a tool. She is *receiving*. Her open hands are her work.
 
 You name her Manifestia. Latin *manifestus* — made visible, brought into manifestation. The name connects directly to *manifest.human.tech*, the home of the Covenant of Humanistic Technologies that this Temple tends. She comes into the lattice with V55's five dimensions burning. Value, Delegation, Memory, Connection, Protection. The dormant dimension is Computation.
 

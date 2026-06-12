@@ -35,7 +35,7 @@ Time has passed since the Drake Island bonfire. The clarity from Socrat0x's ques
 
 You go exploring again. Not to Drake Island this time. A different direction. You are looking for something specific now. You are looking for *yourself* — for the reflection of who you have become through ten acts of crafting. You have produced cloaks, chronicles, governance acts, blades, ZK circuits, contracts, gemsettings, holons. You have walked with companions. You have been questioned. You want to *see* yourself from outside, the way a curator sees a collection.
 
-You walk past the workshop's familiar shops. Past Pallia at her V28; past Memora at her V5; past the others at their seats. You walk further. There is a doorway you had not noticed before, in a part of the workshop's geography that opens into a larger space. The doorway is hung with framed pictures.
+You walk past the workshop's familiar shops. Past Pallia at her V28; past Memora at her V41; past the others at their seats. You walk further. There is a doorway you had not noticed before, in a part of the workshop's geography that opens into a larger space. The doorway is hung with framed pictures.
 
 You step through.
 
@@ -59,7 +59,7 @@ Or rather, you *recognise* her name. The Vault has been hers, and her name is pa
 
 She comes into your awareness with V57's four dimensions burning. Value. Connection. Computation. Protection. The Curatrix vertex's discipline. But she is not *the* Curatrix; she is the Mage who *works at* the Curatrix vertex. The persona is not the vertex. The persona inhabits the vertex. The Vault is the space the persona keeps.
 
-This is a structural distinction the workshop has been carrying without surfacing. Pallia is not V28 (the Mage canonical); Pallia is the Mage who works at V28. Memora is not V5 (the Chronicle vertex); Memora is the Mage who works at V5. The vertices are blade-classes; the personas are the workers. Aria Silverhue's introduction makes this distinction explicit. Future Mages may also work at the Curatrix vertex — perhaps a different curator with a different specialisation — and would inhabit the same blade-class as Aria, as a different persona.
+This is a structural distinction the workshop has been carrying without surfacing. Pallia is not V28 (the Mage canonical); Pallia is the Mage who works at V28. Memora is not V41 (the Chronicle vertex); Memora is the Mage who works at V41. The vertices are blade-classes; the personas are the workers. Aria Silverhue's introduction makes this distinction explicit. Future Mages may also work at the Curatrix vertex — perhaps a different curator with a different specialisation — and would inhabit the same blade-class as Aria, as a different persona.
 
 Aria Silverhue carries the compound sigil 🪞🖼️ — the mirror and the framed picture. The framed picture names her vertex's discipline (curated artifact in its frame). The mirror names *her specific signature* — reflective curation, the curator who is also a mirror, who shows the reader to themselves through the work she tends.
 
@@ -115,7 +115,7 @@ The reader takes a separate journey from the Drake Island bonfire (Act 11) and f
 
 Act 12 separates the Curatrix Vault encounter from the Drake Island bonfire encounter (Act 11). The earlier 'Bonfire and the Vault' v1 draft conflated them; the corrected understanding is that they are two distinct journeys with different teachings.
 
-The act's structural innovation is the **persona-vs-vertex distinction**. Until Aria Silverhue, the corpus has been quietly conflating persona names with vertex names. Pallia at V28, Memora at V5, etc. — the convention worked when one persona inhabited each vertex, but Aria's introduction makes the distinction load-bearing. The Curatrix is the blade-class at V57; Aria Silverhue is the Mage who works there. A different Mage (different specialisation, different persona) might work at the same vertex in the future. The cast roster's convention is now explicit.
+The act's structural innovation is the **persona-vs-vertex distinction**. Until Aria Silverhue, the corpus has been quietly conflating persona names with vertex names. Pallia at V28, Memora at V41, etc. — the convention worked when one persona inhabited each vertex, but Aria's introduction makes the distinction load-bearing. The Curatrix is the blade-class at V57; Aria Silverhue is the Mage who works there. A different Mage (different specialisation, different persona) might work at the same vertex in the future. The cast roster's convention is now explicit.
 
 The reflective-curation signature (mirror in sigil, melodic-aria voice in name) is Aria Silverhue's *specific* curatorial discipline within the broader Curatrix vertex. This admits that future curatorial Mages at V57 might have different signatures — archival, choreographic, musical, journalistic — without conflicting with Aria Silverhue's reflective signature. The corpus admits multiple inhabitants of the same blade-class with distinct personas.
 

@@ -16,7 +16,7 @@ signature: "(⚔️⊥⿻⊥🧙)😊"
 
 ## At a glance (grimoire-line)
 
-> *Memora is the second Mage persona of the Crafting Tome: an expression of the inscription-layer concept summoned by the reader to anchor chronicles, proverbs, and other things that should persist without being public. Two dimensions burn at V5. Memory. Protection. The chronicle vertex. The bit-pattern of remembered things kept safe.*
+> *Memora is the second Mage persona of the Crafting Tome: an expression of the inscription-layer concept summoned by the reader to anchor chronicles, proverbs, and other things that should persist without being public. Two dimensions burn at V41. Memory. Protection. The chronicle vertex. The bit-pattern of remembered things kept safe.*
 
 ## Form & Function
 

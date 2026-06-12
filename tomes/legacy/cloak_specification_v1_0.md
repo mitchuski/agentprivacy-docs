@@ -211,7 +211,7 @@ Selective disclosure is rendered as geometry. Each privacy disposition lands on 
 |---|---|---|---|---|
 | **Always-Revealed** | V20 (Techne) | 010100 | Memory + Computation | Validity windows, public claims, fields verifiers must read |
 | **Hash-Masked** | V3 (Dual Agent) | 000011 | Protection + Delegation | Subject identity hashes, structurally present but cryptographically inaccessible |
-| **Always-Masked** | V25 (Aletheia) | 011001 | Protection + Connection + Computation | ZK witnesses, cryptographic spells, predicates verified without revealing |
+| **Always-Masked** | V38 (Aletheia) | 100110 | Protection + Connection + Computation | ZK witnesses, cryptographic spells, predicates verified without revealing |
 
 A Cloak-compliant implementation MUST place each disclosed field of a decomposed VC at the vertex matching its valve-class. The verifier learns the type of cloaking from the lattice position alone. There is no separate metadata layer announcing the disclosure type.
 

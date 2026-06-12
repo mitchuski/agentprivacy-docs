@@ -150,7 +150,7 @@
         "name": "Three-Axis Separation",
         "composite": "Φ_v5 = Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ)",
         "gating": "Multiplicative. Collapse on any single axis collapses total separation.",
-        "v4_to_v5": "V4 measured separation as a single 4×4 matrix Σ over four forces (Protect, Project, Reflect, Connect). V5 recognises three orthogonal architectural axes.",
+        "v4_to_v5": "V8 measured separation as a single 4×4 matrix Σ over four forces (Protect, Project, Reflect, Connect). V41 recognises three orthogonal architectural axes.",
         "agent": {
           "expression": "Φ_agent(Σ) = min(1.0, (S/M) / φ) · det(Σ)",
           "variables": {

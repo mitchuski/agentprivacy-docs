@@ -1,12 +1,12 @@
-# (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂 0xagentprivacy Living Documents
+﻿# (⚔️⊥⿻⊥🧙)·(📊⊥🔮)·(🧠⊥⚙️)·☯️🔷 🙂 0xagentprivacy Living Documents
 
 ## Privacy-First AI Agent Architecture for Human Sovereignty
 
-**Version:** 10.1 (First Person CLOSED) · **+ City of Mages spellbook** (Tomes I–VI · post-V5.4 coherence pass 2026-05-09)
-**Date:** April 10, 2026 · post-V5.4 addendum 2026-05-09
+**Version:** 10.1 (First Person CLOSED) · **+ City of Mages spellbook** (Tomes I–VI · post-V5.4 coherence pass 2026-05-09) · **+ PVM V6 (2026-06-10): the gathering turn and the moving ceiling — `papers/v6/` (canon) · `pdfs/v6/` (renders incl. academic xelatex editions) · unified V6 labels across all canon papers · conjecture register head C89 at `research/CONJECTURE_REGISTER_V6.md`**
+**Date:** April 10, 2026 · post-V5.4 addendum 2026-05-09 · V6 head 2026-06-10
 **Status:** ✅ V10 Grimoire + 31 Acts + Moon Phase + Quaternion — CONVERGENT + CLOSED · **+ Second Person Spellbook (38 acts across Tomes I–VI · 55 conjectures C18–C55)**
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra (kindred substrate provider · C47 · v1.2 grimoire) · [Archon](https://archon.social) — cousin-blade convergence (Sovereign Anchor I/II/III, Cloaking Guide, Spell Weaver)
-**Second Person Spellbook index:** [SECOND_PERSON_TOMES_INDEX_v1.md](./SECOND_PERSON_TOMES_INDEX_v1.md) · authoritative compression at `agentprivacy_tomes/COMPRESSION_MASTER_v2_2026-05-09.md` · bound collection at `agentprivacy_tomes/agentprivacy-second-person-spellbook-bound-collection-2026-05-08/`
+**Second Person Spellbook index:** [SECOND_PERSON_TOMES_INDEX_v1.md](./reference/SECOND_PERSON_TOMES_INDEX_v1.md) · authoritative compression at `agentprivacy_tomes/COMPRESSION_MASTER_v2_2026-05-09.md` · bound collection at `agentprivacy_tomes/agentprivacy-second-person-spellbook-bound-collection-2026-05-08/`
 
 ---
 
@@ -24,7 +24,7 @@
 
 ### How This Fits In: The Dual-Agent Stack
 
-![First Person Dual-Agent Stack](agentprivacy_FirstPerson_dualagentstack2.jpg)
+![First Person Dual-Agent Stack](assets/agentprivacy_FirstPerson_dualagentstack2.jpg)
 
 The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovereign Wallet** (protect ⚔️) layers, with the **First Person** 😊 at the center. The stack spans from UI/Trust Tasks through the Trust Spanning Protocol (TSP) down to cryptographic keys, creating a complete privacy-preserving infrastructure.
 
@@ -43,9 +43,14 @@ The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellwe
 
 | Document | Version | Purpose | Audience |
 |----------|---------|---------|----------|
+| ***Privacy is Value · V6: The Gathering Turn and the Moving Ceiling*** | **6.0** | **THE CURRENT HEAD — formal spec: R(t), t*, preconditions, C81–C89, unified register · series convention: one book, versioned volumes · full catalogue at `reference/PAPERS_INDEX.md`** | Researchers, Academics |
+| **Conjecture Register** | head C89 | Single numbering authority for the whole suite (`research/CONJECTURE_REGISTER_V6.md`) — when prose and register disagree, the register wins | All |
+| **PVM V6 Compressed** | 6.0 | Equations-only V6 — the Swordsman reading | Mathematicians, Agents |
+| **PVM V6 Companion Guide** | 6.0 | Context, narrative, standards — the Mage reading | All |
+| **Research Paper V6 Edition** | 6.0 | What changed in the maths at V6 + provenance reconciliation (v4.3 proof body carried forward) | Academics, Cryptographers |
 | **What Agentprivacy Is** | — | Mission, thesis, and orientation | All, New joiners |
-| **Glossary Master** | 4.0 | Canonical terminology reference (~160 entries, V5.4 UOR Foundation) | All |
-| **Privacy is Value V5** | 5.0 | The equation evolves — V5.4 UOR algebraic foundation | All, Researchers |
+| **Glossary Master** | 4.0 (+V6 addendum pending) | Canonical terminology reference (~160 entries, V5.4 UOR Foundation) | All |
+| **Privacy is Value V5** | 5.0 (superseded by V6 spec) | The equation evolves — V5.4 UOR algebraic foundation | All, Researchers |
 | **V5.1 Research Note** | 5.1 | Behavioural density, bilateral witness, hexagram encoding | Researchers |
 | **V5.2 Research Note** | 5.2 | Dihedral foundations, resolution semantics, PRISM spectrum | Researchers |
 | **Privacy Value Model V5.4 Formal Spec** | 2.0 | PVM V5.4 equation, Z/(2⁶)Z ring algebra, C1-C21, full references | Researchers, Academics |
@@ -69,6 +74,32 @@ The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellwe
 | **Systems Hexagram Physics** | 1.2 | Operational physics: UOR algebraic foundation, 64-vertex lattice, forge ceremonies | Developers, Implementers |
 
 You can build this locally and it'll make a neat viewer at 7000.
+
+### Repository Layout (restructured 2026-06-10)
+
+| Directory | Holds |
+|---|---|
+| `compendium/` | the assembly point for *Privacy is Value: The Compendium* (the one publishable book): Part manifests by era, spine, front/back matter stubs · constitution at `chronicles/2026-06-11_compendium_plan...md` · plan at `compendium/PLAN.md` |
+| `papers/v6/` | the V6 canon papers (formal specification · skeleton spec · compressed Swordsman reading · companion Mage reading · research paper V6 edition) |
+| `papers/v5/` | the V5/V5.4 paper lineage (privacy_is_value_v5 essay · V5.4 formal spec · V5.4 companion · V5.4 compressed) |
+| `papers/whitepapers/` | the whitepaper line (Swordsman and Mage v6.3 = the whitepaper V6 edition · Mage extension · Swordsman extension) |
+| `papers/lineage/` | earlier paper bodies still cited (research paper v4.3 proof body · understanding-as-key Zypher v1 · research proposal v2.2) |
+| `pdfs/v6/` | all V6 renders: web-pipeline PDFs (MathJax, full emoji) and `*_academic.pdf` (xelatex, journal typesetting) |
+| `pdfs/` | V5.4 renders · `prevPVM/` for earlier |
+| `build/` | construction: `build_v6_pdfs.py` (web renders) · `build_v6_academic_pdfs.py` (academic renders) · `build_pdfs.py` (legacy) · `tex/v6/` (LaTeX sources) · requirements |
+| `grimoires/` | the spellbook texts (parallel society v1.0 · plurality v1.1 · zero-knowledge v3.0 · spellbook v5.0 canonical) |
+| `reference/` | canonical reference docs (glossary master · Promise Theory v1.4 · IEEE 7012 quick reference · visual guide v2.0 · systems hexagram physics · UOR×tetrahedra mapping · Second Person tomes index · V5.5 mapping additions · 64-blades sheet) |
+| `specs/` | implementation specs (dual territory ceremony · dual agent harness · runecraft protocol · protocol schemas · VRC promise protocol v3.3 · ZK blade forge v3.0 · blade forge build instructions) |
+| `research/` | the research-note series, the V6 working draft, and `CONJECTURE_REGISTER_V6.md` (the numbering authority) |
+| `models/` | the model JSONs (V6 dark/light heads, V5.4 lineage, grimoires) |
+| `audits/` | audit and coherence reports (V10 alignment · V5 checklist · ZK forge coherence · convergence studies · instructional convergence) |
+| `plans/` `chronicles/` | the V6 autopath, gates, reflection map, reading ledger, and the chronicle record |
+| `assets/` | images |
+| `archive/` | superseded versions and dated session records (dated `YYYYMMDD_` prefix convention) |
+| `blog/` `ceremonies/` `poems/` `story/` `tomes/` `process/` | the narrative and process surfaces, unchanged |
+| repo root | entry points only: README · QUICK_START · what-agentprivacy-is · DOCUMENTATION_CHRONICLE · server.py (NOTE: server.py's document list predates V5 and needs a V6 refresh) |
+
+Rebuild all V6 renders: `python build/build_v6_pdfs.py` and `python build/build_v6_academic_pdfs.py` (run from anywhere).
 
 ---
 
@@ -300,8 +331,8 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 
 ### For Researchers / Academics
 1. Promise Theory Reference v1.4 (formal foundations, V5 three-axis as promises)
-2. [PVM V5.4 Formal Spec v2.0](privacy_value_v5_4_formal_specification.md) (mathematics, C1-C21, full references)
-3. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) (context, narrative, standards)
+2. [PVM V5.4 Formal Spec v2.0](papers/v5/privacy_value_v5_4_formal_specification.md) (mathematics, C1-C21, full references)
+3. [PVM V5.4 Companion Guide](papers/v5/pvm_v5_4_companion_guide.md) (context, narrative, standards)
 4. Research Paper v4.3 (mathematical proofs, PVM V5, holographic bound)
 5. ZK Swordsman Blade Forge v3.2 (forge metaphor, V5 full integration)
 6. UOR × 64-Tetrahedra × ZK Mapping v2.2 (foundational C4 resolution)
@@ -309,7 +340,7 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 8. Research Proposal v2.2 (collaboration opportunities, BRAID validation)
 
 ### For Developers / Builders
-1. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) (context and standards)
+1. [PVM V5.4 Companion Guide](papers/v5/pvm_v5_4_companion_guide.md) (context and standards)
 2. Visual Guide v2.0 (quick orientation, V5 diagrams)
 3. IEEE 7012 Quick Reference v1.0 (MyTerms standard)
 4. Whitepaper v6.3 (technical details)
@@ -322,14 +353,14 @@ The Spellbook uses emoji-based semantic compression (~125:1 ratio):
 
 ### For Community / Learners
 1. What Agentprivacy Is (mission and orientation)
-2. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) (accessible context)
+2. [PVM V5.4 Companion Guide](papers/v5/pvm_v5_4_companion_guide.md) (accessible context)
 3. 31 Acts complete (V10.0.0 Grimoire, narrative framework)
 4. Visual Guide v2.0 (diagrams)
 5. Glossary v4.0 (terminology reference)
 
 ### For Promise Theory Practitioners
 1. Promise Theory Reference v1.4 (concept mappings, Generator/Solver as promises)
-2. [PVM V5.4 Companion Guide](pvm_v5_4_companion_guide.md) §3 (Promise Theory mapping)
+2. [PVM V5.4 Companion Guide](papers/v5/pvm_v5_4_companion_guide.md) §3 (Promise Theory mapping)
 3. Whitepaper v6.3 (implementation details)
 4. Research Paper v4.3 (formal proofs, V5 structural extensions)
 
@@ -384,7 +415,7 @@ This is not about competing on features. This is about establishing **foundation
 
 - **Website**: https://agentprivacy.ai
 - **Public Goods Research**: https://sync.soulbis.com
-- **Private AI Intel**: https://intel.agentkyra.ai
+- **Private AI Intel**: https://intel.agentprivacy.ai
 - **Contact**: mage@agentprivacy.ai
 
 ### Collaborators & Networks
@@ -548,4 +579,4 @@ When the 7th capital—behavioral sovereignty—remains with First Persons rathe
 
 ---
 
-![Soulbis & Soulbae: Agent Privacy](soulbisoulbae_agentprivacy.jpg)
+![Soulbis & Soulbae: Agent Privacy](assets/soulbisoulbae_agentprivacy.jpg)

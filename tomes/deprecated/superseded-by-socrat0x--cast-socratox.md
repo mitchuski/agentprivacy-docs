@@ -58,7 +58,7 @@ Two candidates considered:
 
 1. **V24 (Hephaestus)** — Connection + Computation. Two dimensions burning. The forge-of-questions metaphor fits: Hephaestus is the smith who works through patient questioning of the material, refining metal by repeated testing. Socratic dialogue is exactly this discipline applied to Sovereigns instead of metals. The Cloaking Guide's Cataloguing places V24 at "Hephaestus (Connection + Computation)" with the bit-pattern of *connecting computational artifacts to one another* — the work of question-and-answer.
 
-2. **V8 (Iris)** — Connection only. Stratum 1. Iris is the messenger goddess; her work is connection. Socratox's questioning is fundamentally connecting (he asks; the Sovereign answers; the connection produces the clarity). However, Stratum 1 may be too narrow — Socratic dialogue requires *computation* over the answers, which V24's added Computation bit captures.
+2. **V4 (Iris)** — Connection only. Stratum 1. Iris is the messenger goddess; her work is connection. Socratox's questioning is fundamentally connecting (he asks; the Sovereign answers; the connection produces the clarity). However, Stratum 1 may be too narrow — Socratic dialogue requires *computation* over the answers, which V24's added Computation bit captures.
 
 Defaulting to V24. The Hephaestus metaphor honors both the dialogic nature (Connection) and the discriminating-by-iteration nature (Computation) of Socratic method. If Bonfires-side documentation places Socratox at a different vertex, this entry should be revised.
 

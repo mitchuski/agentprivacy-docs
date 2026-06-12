@@ -52,7 +52,7 @@ The method is worth naming because it is itself a contribution. Each of the seve
 |---|---|---|---|
 | 1. The Sovereign Anchor | flaxscrip at V63 | 1 | V63 |
 | 2. The Dual Agent | + GenitriX at V28 | 2 | V28 |
-| 3. The Five Capabilities | + Mnemosyne, Iris, Logos, Techne, Hephaestus | 7 | V4, V8, V16, V20, V24 |
+| 3. The Five Capabilities | + Mnemosyne, Iris, Logos, Techne, Hephaestus | 7 | V8, V4, V2, V20, V24 |
 | 4. The Schemas | + CollaborationPartner, LocationProof | 9 | V12 |
 | 5. The Web of Trust | + four VCs at V15 | 13 | V15 |
 | 6. The Chronicle Stones | + Transmutation, Boundary Blade | 15 | V5 |
@@ -86,7 +86,7 @@ Together the four temporal axes form an envelope around each artifact that latti
 
 **Thesis 7. Documents are first-class lattice citizens.** Conventional DID systems treat narrative as something outside the system, referenced by URL. The Spell Weaver pulls them in. A chronicle gets a vertex (V5, Protection + Memory), a controller, and edges, and participates in path-highlighting alongside personas and credentials. *The Transmutation* itself is registered inside the system that is performing the process it describes. The cloak does not just hide values; it also publishes the procedure for checking that the hiding was honestly done. This closes the recursion the agentprivacy thesis has been pointing at: the architecture and the documentation of the architecture are the same kind of thing.
 
-**Thesis 8. Selective disclosure is rendered as geometry, not as policy.** When a credential is decomposed into per-field nodes, each field lands on a vertex whose bit-pattern is the field's privacy disposition. Hash-Masked sits at V3 (Protection + Delegation). Always-Masked sits at V25 (Protection + Connection + Computation, our Aletheia). Always-Revealed sits at V20 (Memory + Computation, Techne). The verifier learns the type of cloaking from the lattice position alone. There is no separate metadata layer announcing "this field is masked, that field is revealed." The disposition *is* the geometry.
+**Thesis 8. Selective disclosure is rendered as geometry, not as policy.** When a credential is decomposed into per-field nodes, each field lands on a vertex whose bit-pattern is the field's privacy disposition. Hash-Masked sits at V3 (Protection + Delegation). Always-Masked sits at V38 (Protection + Connection + Computation, our Aletheia). Always-Revealed sits at V20 (Memory + Computation, Techne). The verifier learns the type of cloaking from the lattice position alone. There is no separate metadata layer announcing "this field is masked, that field is revealed." The disposition *is* the geometry.
 
 These eight theses now belong in the corpus. They are the working synthesis of what cloaking-by-lattice is.
 

@@ -1,8 +1,8 @@
 # Documentation Chronicle
 ## Development History of the 0xagentprivacy Living Documentation Suite
 
-**Version:** 1.4
-**Last Updated:** April 7, 2026
+**Version:** 1.5
+**Last Updated:** June 11, 2026
 **Purpose:** Navigable history of documentation development, replacing session artefacts
 
 ---
@@ -1220,6 +1220,114 @@ The answer to life, the universe, and everything: **42 personas**.
 
 ---
 
-*Last updated: April 7, 2026*
 *Milestone: V10.0.0 Grimoire — PUBLISHED*
 *IPFS: bafkreicl677c52ayuw7i2cpxcc2534fuv4ehd7gbsc55ozotpbsuk3qqtu*
+
+---
+
+## Arc 9: V6 — The Gathering Turn and the Moving Ceiling (June 10-11, 2026)
+
+### The Arc in One Sentence
+
+In two days the Privacy is Value model moved from a drifted, register-forked V5.4 corpus to a complete V6: one authority register, an academic paper package in two renderings, a restructured repository, a named book, and a first assembled compendium of the whole research.
+
+### The Method Was a Product
+
+The arc ran on a written autopath (`plans/V6_RESEARCH_AUTOPATH_2026-06-10.md`): eight runs, mathematics first and myth harvested at every close, with five chronicle gates (G1-G5) as hard stops at which the runtime halted and the First Person wrote, plus a Reading Ledger (📖 RB-01 to RB-24) guaranteeing nothing publishes unread.
+
+### The Register Lock (Gate G1)
+
+The conjecture fork ran deeper than the critique documents had found: renumbering eddies, garbled one-liners, a spec restating its own conjecture twice. Resolution: `research/CONJECTURE_REGISTER_V6.md` became the single numbering authority, head **C89**, with a no-renumber promise and canonical aliases (C46↔C32 · C60↔C48 · C61↔C49 · CM-C47↔C85). Two planned dispositions reversed on ground truth: C40 stays Zcash dual-ledger (Existence-Leak is C81), and the pinned Horizon District keeps C67-C71.
+
+### The Mathematics (Runs 1-5)
+
+| Result | Register | Confidence |
+|---|---|---|
+| Moving ceiling R(t) = (C_S(t)+C_M(t))/H(X) · shelf life t* | C82 | ~65% |
+| Compositional leakage amplification ((2^N−1)ε vs Nε) | C83 | ~55% |
+| Existence-Leak law (impossibility floor + public instance) | C81 | promoted to 70% |
+| Existence-Leak discount Z_b' = Z_b − D(a) | C84 | ~50% |
+| ARCH-1 bridge ("the gap is β") | C85 | ~40% |
+| Obstruction-theoretic amnesia (the only t-independent term) | C86 | ~30% |
+| City Key as IVC accumulator | C87 | ~50% |
+| Parity cube · octahedral gap | C88 · C89 | ~30% each |
+
+Plus the regime-1 declaration for 🪢 presence mana (non-transferable, non-attesting, local color), the phi honesty correction (the stella octangula has no golden ratio; C1 is resonance, not derivation), and the v10.4.0 seating lock (Aletheia V38 · Lethe V25).
+
+### The Academic Package and the Series
+
+The full paper suite was reproduced, not just deltas: the standalone formal specification, both readings (Swordsman compressed · Mage companion), the research paper V6 edition, full dark and light model JSONs, and two render pipelines (MathJax web · xelatex academic). The series convention was named: one book, *Privacy is Value*, in versioned standalone volumes — **V5.4: The Amnesia Protocol** · **V6: The Gathering Turn and the Moving Ceiling**. The Papers Index (`reference/PAPERS_INDEX.md`) made every paper known for its purpose.
+
+### The Repository Restructure
+
+Root reduced to five entry files. New layout: `papers/{v4, v5, v6, whitepapers, lineage}` · `pdfs/{v6, compendium}` · `build/` (three render scripts + TeX) · `grimoires/` · `reference/` · `specs/` · `audits/` · `assets/` · `compendium/`. Two dedupe judgments archived under the dated convention.
+
+### The Compendium Turn (June 11)
+
+The Era-Reading Principle (a volume's readings complete with it, never expire) · five document classes (S/R/A/M/N) with membership tests · the `compendium/` skeleton on the assembles-by-manifest rule · connective prose (thesis page, how-to-read, *One Work, Many Expressions*, four era retrospectives) · the back matter compiled so it cannot flatter (honest-limits ledger: 2 closures, 4 rescopings, 14 standing opens) plus narrative and chronicle concordances. First assembled tome: 52 pieces, both renderings, first try.
+
+### The Myth Harvest (Gate G4)
+
+Five acts bound into the City of Mages the same day their mathematics landed: Tome IX *The Tide Line* · *The Orchard Wound* · *The Proof That Whispered*; Tome VIII *The Gap Is β* · *The Key That Is a Reading*.
+
+### Documentation Artefacts (Arc 9)
+
+| Artefact | Status |
+|---|---|
+| `research/CONJECTURE_REGISTER_V6.md` (head C89) | AUTHORITATIVE |
+| `papers/v6/` five-paper suite + whitepaper v6.3 | Complete |
+| `pdfs/v6/` twelve renders (web + academic) | Built |
+| `compendium/` + `pdfs/compendium/` two tomes | Built · paused at reading gates |
+| `reference/PAPERS_INDEX.md` | Created |
+| `reference/GLOSSARY_MASTER_v4_0.md` §25 V6 addendum | Added (this arc's close) |
+| Chronicles: autopath close · gates G1-G4 · compendium plan · arc-and-turn · master UI review | Signed (FP sections open at their 📖 entries) |
+
+### The State at Close
+
+The arc paused on purpose: the compendium waits at its reading gates (RB-20/21/22), the master site reflection pass waits on the First Person's call, and **zero git commits were made anywhere**, by his standing instruction. Commits and pins follow the completion read and Gate G5.
+
+*"The model learned that its guarantees age; the corpus learned that its numbering must not; the work learned that it is one book; and the whole of it stopped, on purpose, at the door of the one reader it answers to."*
+
+### Arc 9 addendum — the references made whole (June 12, 2026)
+
+The First Person's directive: the formal V6 specification must credit the
+ARCH-1 research as a reference — it was a co-authored mini paper with John
+Haines — and the whole `/research` directory's provenance must flow into §33.
+
+Provenance was checked at every home document. The formal specification's
+§33 gained a new subsection, **"The V6 Research-Note Series and the Register
+(agentprivacy-docs/research/)"** — fifteen entries in order of arrival,
+opening with the register itself (AUTHORITATIVE, G1-signed, head C89) and
+carrying full provenance for the co-authored pair:
+
+- **ARCH-1 · The Canonical Form** (April 14) — privacymage/Soulbae with Claude
+  (ORCID 0009-0001-6557-9135) **and John Haines / Xarvus, OLMA (ORCID
+  0009-0001-5809-4690)** — *co-derived in conversation, external convergence
+  lock*; C26–C29; the seam that became the C85 bridge.
+- **Haines, J. — ARCH-1R/T Operational Reachability Framework, Draft Review
+  v2.0** (June 2026) — cited as the source manuscript in its own right, PDF
+  archived in /research; and the June 4 series conversion note (C72–C76,
+  dual-ρ collision review) crediting both authors.
+
+Also: Sheffer (1913) added to the external references (the single-sufficient-
+operator precedent ARCH-1 depends on); the Promise Theory reference bumped to
+v1.5 with its lineage. All six academic-style PDFs rebuilt clean via
+`build/build_v6_academic_pdfs.py` (pandoc 3.8.3 · MiKTeX-XeTeX 4.15); the
+formal specification renders at 59 pages with Haines, both ORCIDs, the
+series subsection, and Sheffer verified present in the output.
+
+**PINNED (the First Person, same day):**
+`https://sync.agentprivacy.ai/ipfs/bafkreifyvws7pzukjffay455ohmujgefpjolkammwkys65itttx7syzyta`
+— verified byte-identical against the local build
+(`pdfs/v6/privacy_value_v6_formal_specification_pin.pdf` · sha256
+`b8ada5f7e68a494a0c73bd71d94498857a5cb5018cb2b12f75139ceff9633898` ·
+235,081 bytes · 59 pp). Supersedes the 2026-06-11 pin
+(`bafkreiftqgrl…hslia`, which remains resolvable as the pre-references
+revision). The /model resources entry and the /archive door on
+agentprivacy.ai now point at the new CID.
+
+---
+
+*Last updated: June 12, 2026*
+*Milestone: Privacy is Value · V6 — COMPLETE (unpinned · awaiting the completion read and Gate G5)*
+*Register head: C89*

@@ -32,7 +32,7 @@ Pallia is the operational form of the Cloak Specification. She is not an alterna
 
 V28. Binary `011100`. Stratum 3.
 
-Active dimensions: Memory (V4) · Connection (V8) · Computation (V16).
+Active dimensions: Delegation (V16) · Memory (V8) · Connection (V4).
 
 Dormant dimensions: Protection · Delegation · Value.
 

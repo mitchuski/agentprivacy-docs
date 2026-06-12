@@ -15,23 +15,38 @@ PORT = 7000
 
 # Document files in order: (filename, title, description, file_type)
 # file_type: 'md' for markdown, 'pdf' for PDF
+# Paths are relative to the repo root (post 2026-06-10 restructure:
+# papers/{v4,v5,v6,whitepapers}, pdfs/{v6,compendium}, reference/, research/)
 DOCUMENTS = [
-    ("README.md", "README v1.3 - Overview", "Complete introduction to the privacy-first AI agent architecture and documentation suite", "md"),
+    # Entry points
+    ("README.md", "README - Overview", "Introduction to the privacy-first AI agent architecture and the V6 documentation suite", "md"),
     ("what-agentprivacy-is.md", "What Agentprivacy Is", "Mission, thesis, and orientation for new joiners", "md"),
-    ("swordsman_mage_whitepaper_v4_8.md", "Whitepaper v4.8 - Technical Architecture", "Dual agent system design, IEEE 7012 integration: Swordsman (protect) and Mage (delegate)", "md"),
-    ("swordsman_mage_whitepaper_v4_8.pdf", "Whitepaper v4.8 (PDF)", "Same content as above, printable PDF", "pdf"),
-    ("dualprivacy_researchpaper_v3_6.md", "Research Paper v3.6 - Mathematical Foundations", "Formal mathematical models, proofs, and standards foundation for dual privacy mechanisms", "md"),
-    ("dualprivacy_researchpaper_v3_6.pdf", "Research Paper v3.6 (PDF)", "Same content as above, printable PDF", "pdf"),
-    ("spellbook_v5_0_canonical.md", "Spellbook v5.0 - Narrative Framework", "Symbolic language, Five Spellbooks, trust game mechanics for sovereign agency", "md"),
-    ("vrc_promise_protocol_economic_architecture_v3_0.md", "VRC Promise Protocol v3.0 - Economic Architecture", "Economic models, bilateral promises, and dignity-based tokenomics for agent ecosystems", "md"),
-    ("vrc_promise_protocol_economic_architecture_v3_0.pdf", "VRC Promise Protocol v3.0 (PDF)", "Same content as above, printable PDF", "pdf"),
-    ("VISUAL_ARCHITECTURE_GUIDE_v1_3.md", "Visual Guide v1.3 - Diagrams & Flows", "Visual diagrams, IEEE 7012 flows, and architectural illustrations of the agent framework", "md"),
-    ("GLOSSARY_MASTER_v2_3.md", "Glossary v2.3 - Canonical Terminology", "Comprehensive glossary including IEEE 7012 definitions and terminology across all documentation", "md"),
-    ("research_proposal_v1_4.md", "Research Proposal v1.4 - Collaboration Invitation", "Research collaboration framework, MyTerms Alliance, and academic/industry partnerships", "md"),
-    ("IEEE_7012_QUICK_REFERENCE.md", "IEEE 7012 Quick Reference v1.0", "Machine-readable personal privacy terms: agreement taxonomy and technical specs", "md"),
-    ("promise_theory_reference_v1_0.md", "Promise Theory Reference v1.0", "Formal semantic foundations for autonomous agent coordination", "md"),
-    ("understanding_as_key_zypher_paper_v1.md", "Understanding as Key (Zypher) v1", "Conceptual paper on comprehension and identity", "md"),
-    ("SPELLBOOK_STRUCTURE_OPTIONS.md", "Spellbook Structure Options", "Options for organizing the Five Spellbooks in the repository", "md"),
+    ("QUICK_START.md", "Quick Start", "Where to begin reading, by audience", "md"),
+    ("DOCUMENTATION_CHRONICLE.md", "Documentation Chronicle", "Navigable history of the documentation suite, Arc 1 through Arc 9 (V6)", "md"),
+    # Privacy is Value V6 - The Gathering Turn and the Moving Ceiling
+    ("papers/v6/privacy_value_v6_formal_specification.md", "Privacy is Value V6 - Formal Specification", "The standalone academic volume: moving ceiling R(t), shelf life t*, register head C89, consolidated references", "md"),
+    ("pdfs/v6/privacy_value_v6_formal_specification.pdf", "V6 Formal Specification (PDF)", "Web render with MathJax-typeset equations", "pdf"),
+    ("pdfs/v6/privacy_value_v6_formal_specification_academic.pdf", "V6 Formal Specification (academic PDF)", "xelatex render for academic submission", "pdf"),
+    ("papers/v6/privacy_value_v6.md", "Privacy is Value V6 - Crosswalk Paper", "The narrative paper carrying the V5.4 to V6 path", "md"),
+    ("pdfs/v6/privacy_value_v6.pdf", "Privacy is Value V6 (PDF)", "Same content as above, printable PDF", "pdf"),
+    ("papers/v6/pvm_v6_compressed.md", "PVM V6 Compressed - Swordsman Reading", "Equations only: the five-page reading", "md"),
+    ("pdfs/v6/pvm_v6_compressed.pdf", "PVM V6 Compressed (PDF)", "Same content as above, printable PDF", "pdf"),
+    ("papers/v6/pvm_v6_companion_guide.md", "PVM V6 Companion Guide - Mage Reading", "Context, narrative, and standards alignment", "md"),
+    ("pdfs/v6/pvm_v6_companion_guide.pdf", "PVM V6 Companion Guide (PDF)", "Same content as above, printable PDF", "pdf"),
+    ("papers/v6/dualprivacy_researchpaper_v6.md", "Dual Privacy Research Paper V6", "The V6 edition over the v4.3 proof body: formal models, proofs, standards foundation", "md"),
+    ("pdfs/v6/dualprivacy_researchpaper_v6.pdf", "Dual Privacy Research Paper V6 (PDF)", "Same content as above, printable PDF", "pdf"),
+    ("papers/whitepapers/swordsman_mage_whitepaper_v6_3.md", "Whitepaper v6.3 - Technical Architecture", "Dual agent system design, IEEE 7012 integration: Swordsman (protect) and Mage (delegate)", "md"),
+    ("pdfs/v6/swordsman_mage_whitepaper_v6_3.pdf", "Whitepaper v6.3 (PDF)", "Same content as above, printable PDF", "pdf"),
+    # The book
+    ("pdfs/compendium/privacy_is_value_compendium.pdf", "Privacy is Value - The Compendium (PDF)", "The whole research as one book: Parts I-IV, era retrospectives, honest-limits ledger, concordances", "pdf"),
+    ("pdfs/compendium/privacy_is_value_compendium_academic.pdf", "The Compendium (academic PDF)", "xelatex render of the compendium tome", "pdf"),
+    # Authorities and reference
+    ("research/CONJECTURE_REGISTER_V6.md", "Conjecture Register V6", "The single numbering authority: head C89, bands, aliases, the no-renumber promise", "md"),
+    ("reference/PAPERS_INDEX.md", "Papers Index", "Every paper made known for its purpose: the catalogue authority", "md"),
+    ("reference/GLOSSARY_MASTER_v4_0.md", "Glossary Master v4.0 + V6 Addendum", "Canonical terminology including the Section 25 V6 vocabulary", "md"),
+    ("reference/IEEE_7012_QUICK_REFERENCE.md", "IEEE 7012 Quick Reference", "Machine-readable personal privacy terms: agreement taxonomy and technical specs", "md"),
+    ("reference/promise_theory_reference_v1_4.md", "Promise Theory Reference v1.4", "Formal semantic foundations for autonomous agent coordination", "md"),
+    ("reference/VISUAL_ARCHITECTURE_GUIDE_v2_0.md", "Visual Guide v2.0 - Diagrams & Flows", "Visual diagrams, IEEE 7012 flows, and architectural illustrations of the agent framework", "md"),
 ]
 
 class DocsHandler(http.server.SimpleHTTPRequestHandler):

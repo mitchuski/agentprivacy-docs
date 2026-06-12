@@ -52,7 +52,7 @@ The City of Mages grimoire is held collectively (Second Person spellbook · Tome
 | File | Version | Description |
 |------|---------|-------------|
 | (source-of-truth) | **v1.6.0** | **PINNED 2026-05-14** — consolidated new-head bundle: Threshold District restructure (Pandia 🌕 + Hermaion ⚚ + Faunia-at-Familiars 🪶 at V59 · stance-differentiated), archetype-modal-shop pattern (Staff Shop · Alexandrite dual-aspect), Chart Shop opens at V44 (Pleione 🧭 · Navigation District · Hold-witness), C58 promoted ~85%, C63 candidate ~50% (attentional workshop register). Supersedes v1.5.0 + v1.5.1 patches (neither independently pinned). |
-| `city_of_mages_grimoire_v1_3_0.json` | v1.3.0 | Attachment Architecture · Lethae at V38 · first divergent attachment. PINNED 2026-05-11. |
+| `city_of_mages_grimoire_v1_3_0.json` | v1.3.0 | Attachment Architecture · Lethae at V25 · first divergent attachment. PINNED 2026-05-11. |
 | `city_of_mages_grimoire_v1_2_0.json` | v1.2.0 | Tome V Act 15 · C47 · UOR kindred substrate. |
 | `city_of_mages_grimoire_v1_1_0.json` | v1.1.0 | 39 spells · 13 personas · 14 vertices · C18-C46 conjecture register. PINNED 2026-05-09. |
 | `city_of_mages_grimoire_v1_0.json` | v1.0 | Initial Tomes IV-V binding. |

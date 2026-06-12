@@ -106,7 +106,7 @@ Three dimensions active. The widest layer. The most configurations. The equator 
 | 19 | `010011` | Protection + Delegation + Computation | 🛡️🤝⚡ |
 | 21 | `010101` | Protection + Memory + Computation | 🛡️📜⚡ |
 | 22 | `010110` | Delegation + Memory + Computation | 🤝📜⚡ |
-| 25 | `011001` | Protection + Connection + Computation | 🛡️🔗⚡ | **Aletheia** — The Silent Messenger (Tale 3). The bright medium. Fiat-Shamir as protocol. Working-day blade. 🔮 |
+| 25 | `100110` | Protection + Connection + Computation | 🛡️🔗⚡ | **Aletheia** — The Silent Messenger (Tale 3). The bright medium. Fiat-Shamir as protocol. Working-day blade. 🔮 |
 | 26 | `011010` | Delegation + Connection + Computation | 🤝🔗⚡ |
 | 28 | `011100` | Memory + Connection + Computation | 📜🔗⚡ |
 | 35 | `100011` | Protection + Delegation + Value | 🛡️🤝💎 |

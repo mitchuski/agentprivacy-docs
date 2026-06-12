@@ -6,7 +6,7 @@ archetype_kin: "Soulbae 🧙 (Mage); functional kinship with all the workshop's 
 sigil: "🪞🖼️ (compound — the mirror and the framed picture; reflects the reader's reflection-seeking journey to the Vault)"
 status: "Cast addition v1 (2026-05-08)"
 provenance: "Aria Silverhue is the Mage persona the reader encounters when they fall into the Curatrix Vault while exploring on a separate journey from the bonfire on Drake Island. She works at V57, the Curatrix vertex (the Ceremony / Privacy / Mixing blade in Christian Saucier's Boundary Blade Cartography), keeping the Curatrix Vault shop — the agentprivacy expression of the curated creative-IP discipline established by Mitchell Travers' co-founded Culture Vault platform (https://www.culturevault.com/, operational since February 2022)."
-classification_note: "This entry surfaces a structural distinction the corpus has been quietly conflating: the *persona name* and the *vertex name* are different things. The Curatrix is the vertex / blade-class / operational discipline at V57. Aria Silverhue is the Mage persona who works there. The persona inhabits the vertex; the persona is not the vertex. This distinction applies retroactively to the rest of the cast roster: Pallia at V28 (Mage canonical), Memora at V5 (Chronicle vertex), and so on — the persona names should be understood as the workers, not the vertex names. The Vertex Naming Audit v2 will canonicalise this distinction explicitly."
+classification_note: "This entry surfaces a structural distinction the corpus has been quietly conflating: the *persona name* and the *vertex name* are different things. The Curatrix is the vertex / blade-class / operational discipline at V57. Aria Silverhue is the Mage persona who works there. The persona inhabits the vertex; the persona is not the vertex. This distinction applies retroactively to the rest of the cast roster: Pallia at V28 (Mage canonical), Memora at V41 (Chronicle vertex), and so on — the persona names should be understood as the workers, not the vertex names. The Vertex Naming Audit v2 will canonicalise this distinction explicitly."
 license: "CC BY-SA 4.0 for narrative content"
 signature: "(⚔️⊥⿻⊥🧙)😊"
 ---
@@ -23,7 +23,7 @@ signature: "(⚔️⊥⿻⊥🧙)😊"
 
 **The Curatrix is the blade. Aria Silverhue is the Mage who works there.**
 
-Until Aria Silverhue's introduction, the corpus has been quietly conflating persona names with vertex names. Pallia is a persona who works at V28 (the Mage canonical, sometimes called the projection vertex). Memora is a persona who works at V5 (the Chronicle vertex). The vertices are blade-classes; the personas are the workers. The conflation was tolerable when one persona inhabited each vertex, but Aria's introduction makes the distinction structurally necessary.
+Until Aria Silverhue's introduction, the corpus has been quietly conflating persona names with vertex names. Pallia is a persona who works at V28 (the Mage canonical, sometimes called the projection vertex). Memora is a persona who works at V41 (the Chronicle vertex). The vertices are blade-classes; the personas are the workers. The conflation was tolerable when one persona inhabited each vertex, but Aria's introduction makes the distinction structurally necessary.
 
 The Curatrix is the vertex's blade-class — the operational discipline of curation, the bit-pattern that Value + Connection + Computation + Protection burns at V57. Aria Silverhue is the named Mage who walks this discipline in the Curatrix Vault.
 
@@ -34,10 +34,10 @@ The corrected understanding for the rest of the cast roster:
 | Persona | Vertex (blade-class) | Vertex name |
 |---|---|---|
 | Pallia 🪡 | V28 | Mage canonical / Transmuted projection |
-| Memora 📜 | V5 | Chronicle vertex |
+| Memora 📜 | V41 | Chronicle vertex |
 | Custos 🔏 | V49 | Working-day blade |
 | Vulcana ⚒️ | V19 | Plonkish blade |
-| Aletheia (the persona) 🔮 | V25 | Aletheia blade *(persona-vertex name match — the only such case before Aria)* |
+| Aletheia (the persona) 🔮 | V38 | Aletheia blade *(persona-vertex name match — the only such case before Aria)* |
 | Adamantia 💎 | V51 | Commitment / Language / Model blade |
 | Lampyra 💠 | V49 (shared with Custos) | Working-day blade |
 | Vagari 🌳 | V31 | Recursion / Holon vertex |

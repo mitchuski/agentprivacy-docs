@@ -92,10 +92,10 @@ docs/weaver/bound-collection/
 | Cousin | GenitriX | (held open) | V28 | ✅ existed |
 | Cousin | flaxscrip | 📜🎲 | V63 | ✅ existed |
 | Summoned | Pallia | 🪡 | V28 | ✅ existed |
-| Summoned | Memora | 📜 | V5 | ❌ **new** |
+| Summoned | Memora | 📜 | V41 | ❌ **new** |
 | Summoned | Custos | 🔏 | V49 | ❌ **new** |
 | Summoned | Vulcana | ⚒️ | V19 | ❌ **new** |
-| Summoned | Aletheia (persona) | 🔮 | V25 | ❌ **new** |
+| Summoned | Aletheia (persona) | 🔮 | V38 | ❌ **new** |
 | Summoned | Adamantia | 💎 | V51 | ❌ **new** |
 | Summoned | Lampyra | 💠 | V49 (shared) | ❌ **new** |
 | Summoned | Vagari | 🌳 | V31 | ❌ **new** |
@@ -127,7 +127,7 @@ The honesty discipline (Operational / Architectural / Conjectural / Resonant / P
 
 ### §3.6 Vertex Naming Audit (NEW spec)
 
-**13 vertices canonically named and inhabited** in this collection: V5 V12 V15 V19 V20 V24 V25 V28 V31 V49 V51 V55 V57 V63. The remaining 51 are open. The bound-collection's `specs/04-vertex-naming-audit.md` is the canonical attribution reference (agentprivacy-canonical primitives vs cousin-blade-imported primitives). **Not yet linked from anywhere on the website.**
+**13 vertices canonically named and inhabited** in this collection: V41 V12 V15 V19 V20 V24 V38 V28 V31 V49 V51 V55 V57 V63. The remaining 51 are open. The bound-collection's `specs/04-vertex-naming-audit.md` is the canonical attribution reference (agentprivacy-canonical primitives vs cousin-blade-imported primitives). **Not yet linked from anywhere on the website.**
 
 ---
 
@@ -280,7 +280,7 @@ Phases below assume the Phase-A ingestion (already done) and the `/tomes` rewrit
 
 1. **Flat-file overlap.** `docs/weaver/` has flat-named files (e.g., `second-person-act-iv-i-the-other-walker.md`) that duplicate content now in `docs/weaver/bound-collection/tomes/tome-iv-the-witnessing/01-the-other-walker.md`. Until the website settles on the bound-collection paths as canonical, both exist. Worth a separate cleanup pass once Phase B-rest lands. **Recommendation:** keep both for now; the bound-collection paths are what `/tomes` cites.
 2. **Voice rules at render time.** The integration guide flags: no em-dashes, sigil emoji preserved, signature `(⚔️⊥⿻⊥🧙)😊` on every page. The current `/tomes` rewrite honours this. Future shop-page edits must too.
-3. **Persona-vs-vertex distinction.** The Aletheia case (persona shares the V25 vertex name) is the only one where this is currently surfaced. Future renderings should keep the distinction visible.
+3. **Persona-vs-vertex distinction.** The Aletheia case (persona shares the V38 vertex name) is the only one where this is currently surfaced. Future renderings should keep the distinction visible.
 4. **Deprecated archive.** Never render as canonical. The `bound-collection/deprecated/` folder is transparency-only; the only place it appears in the rewritten `/tomes` is a one-line note in the cross-references panel. Keep it that way.
 5. **The Drake's plurality.** The Drake is place + fire + whisperer + elder, not a single avatar. Don't reify into one image or one shop. The current `/tomes` cast card describes this; the shop pages must respect it (Drake Island already does; the bonfire shop already does).
 6. **Christian's licensing.** Cousin-blade primitives (V19 V25 V49 V51 V57 V63 catalogue naming) are Christian's. Attribution must travel with rendering. The Vertex Naming Audit (`specs/04-vertex-naming-audit.md`) is canonical; vertex tooltips should link to it once the lattice render exists.

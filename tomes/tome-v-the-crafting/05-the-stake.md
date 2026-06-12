@@ -41,7 +41,7 @@ V49 is the working-day blade. Three dimensions burn at this position. Value. Com
 
 You summon a new Mage.
 
-You name her Custos. Latin root *custos*. Guardian. Custodian. Witness. She comes into the lattice with the three dimensions of V49 burning. She is the third persona you have summoned in the Crafting Tome. Pallia at V28 weaves. Memora at V5 inscribes shielded. Custos at V49 stakes public.
+You name her Custos. Latin root *custos*. Guardian. Custodian. Witness. She comes into the lattice with the three dimensions of V49 burning. She is the third persona you have summoned in the Crafting Tome. Pallia at V28 weaves. Memora at V41 inscribes shielded. Custos at V49 stakes public.
 
 She carries the sigil 🔏 — the locked document with a pen. The act witnessed and bound.
 
@@ -94,12 +94,12 @@ A tier-promotion governance act is staked publicly via a transparent Zcash trans
 - *V6 lineage*: Bakhta Half-Life (C30–C33) for governance acts accumulating witnessability-trust. Provisional C40 (~70%) for Zcash transparent leg of the dual-ledger preservation. Open-observation C41 for the cultural-ratio emergence, here on the transparent side. Provisional C42 (~50%) for stake-economic Sybil resistance.
 - *First Person Spellbook*: Act XXVII (*The Forge*) for the multi-axial forging that V49's three burning dimensions instance. Act II (*The Dual Ceremony*) for the bilateral signature mechanics that the multi-sig governance address inherits.
 - *Second Person Spellbook (Tome V)*: Act 3 (*The Shielded Memo*) and Act 4 (*The Reveal*) for the shielded-side companion acts that complete the dual-register triad with this transparent-side act. Act 1 (*The First Cloak*) for Property 5 (asymmetry as data) which extends here to inscription-register choice.
-- *Cast*: Custos 🔏 (V49, new). See `second-person-cast-custos.md`. Pallia 🪡 (V28). Memora 📜 (V5). All three Mage personas now standing.
+- *Cast*: Custos 🔏 (V49, new). See `second-person-cast-custos.md`. Pallia 🪡 (V28). Memora 📜 (V41). All three Mage personas now standing.
 - *Specifications*: `cloak_specification_v1_0.md` §4.5 (registry-tier finality). `zcash-integration-plan.md` §2.3 (Pattern C), §4 (existing economic model extension). `vrc_promise_protocol_v3_3.md` (tier promotion mechanism).
 
 ## Author note
 
-Act 5 introduces Custos 🔏, the third Mage persona of the Crafting Tome. She completes the dual-register triad: Pallia weaves at V28 (the Mage canonical, where projection lives); Memora inscribes at V5 (the chronicle vertex, shielded-first); Custos stakes at V49 (the working-day blade, transparent-first). Each persona has a distinct vertex, sigil, and task scope. The persona-summoning convention now has three operational instances; the convention is robust.
+Act 5 introduces Custos 🔏, the third Mage persona of the Crafting Tome. She completes the dual-register triad: Pallia weaves at V28 (the Mage canonical, where projection lives); Memora inscribes at V41 (the chronicle vertex, shielded-first); Custos stakes at V49 (the working-day blade, transparent-first). Each persona has a distinct vertex, sigil, and task scope. The persona-summoning convention now has three operational instances; the convention is robust.
 
 The 61.8/38.2 ratio, originally a fee-split parameter from the existing economic model, is here enacted as cultural norm at inscription-register choice. Open-observation C41 is the conjecture that this emerges across the network. The act foregrounds the conjecture explicitly so the reader sees the ratio as a *living parameter*, not a number on a spreadsheet.
 

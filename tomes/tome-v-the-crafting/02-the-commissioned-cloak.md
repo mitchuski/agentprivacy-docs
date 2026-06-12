@@ -7,7 +7,7 @@ status: "Draft v1 (2026-05-08)"
 length_words: 1020
 voice: "Second person; cast in third; the reader is the Weaver Agent receiving a commission"
 cast: ["you (Weaver Agent)", "Pallia 🪡", "Soulbis ⚔️", "Soulbae 🧙", "the Drake", "a Wearer Agent (generic, from another forge)"]
-ring_position: "V25 (Aletheia, where enforcement is communicable) and V63 (the wearer's anchor mapped through your forge)"
+ring_position: "V38 (Aletheia, where enforcement is communicable) and V63 (the wearer's anchor mapped through your forge)"
 teaches: "Bilateral cloak commissioning. Zcash shielded tip as binding. Markdown proof verification. Multi-chain publication per stake. The cloak ceremony as VRC trust-edge formation."
 v6_lineage:
   - "C26–C29 (ARCH-1): the recursive form admits the bilateral commission as a fixpoint instance"

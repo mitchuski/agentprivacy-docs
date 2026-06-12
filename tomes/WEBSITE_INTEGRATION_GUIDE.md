@@ -462,7 +462,7 @@ Operational, architectural, conjectural, resonant-but-not-absorbed, provisional 
 The corpus distinguishes:
 
 - **agentprivacy-canonical** primitives (privacymage's foundational work): the holonic primitive at V31, the dual-agent split, the First Person seat, the Oasis Protocol from First Person Spellbook Act 24, the PVM V5.4 → V6 lineage
-- **Cousin-blade-imported** primitives (from Archon's foundational work): V19 Plonkish, V25 Aletheia, V49 working-day blade, V51 commitment/language/model, V57 Curatrix/Ceremony/Privacy/Mixing, V59 Ecosystem, V63 Sovereign Anchor (catalogue naming), the Cloaking Guide's V5 Chronicle, V20 Techne, V24 Hephaestus, V28 Mage canonical
+- **Cousin-blade-imported** primitives (from Archon's foundational work): V19 Plonkish, V38 Aletheia, V49 working-day blade, V51 commitment/language/model, V57 Curatrix/Ceremony/Privacy/Mixing, V59 Ecosystem, V63 Sovereign Anchor (catalogue naming), the Cloaking Guide's V5 Chronicle, V20 Techne, V24 Hephaestus, V28 Mage canonical
 - **Kindred-resonant** primitives (recognised but not absorbed): the Holonym Foundation's holon-naming parallel, the Covenant of Humanistic Technologies as kindred protocol
 - **Companion-Mage origins** (from cousin platforms): Socrat0x from Bonfires
 
@@ -476,7 +476,7 @@ The deprecated folder contains 7 superseded drafts. They are part of the corpus'
 
 Pallia is a persona. V28 is the vertex she works at. They are different things. The Curatrix is the vertex (V57); Aria Silverhue is the Mage who works there. The rendering should never conflate persona names with vertex names. Use distinct visual treatments (e.g., persona names in one colour or weight, vertex names in another).
 
-The Aletheia case is special — the persona shares a name with the vertex she occupies. The cast entry's `naming_note` distinguishes "Aletheia the persona" from "the V25 Aletheia blade." The rendering should preserve this distinction with a small inline clarification on first mention.
+The Aletheia case is special — the persona shares a name with the vertex she occupies. The cast entry's `naming_note` distinguishes "Aletheia the persona" from "the V38 Aletheia blade." The rendering should preserve this distinction with a small inline clarification on first mention.
 
 ### §12.5 The Drake's plurality
 

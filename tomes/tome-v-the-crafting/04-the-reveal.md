@@ -8,7 +8,7 @@ length_words: 920
 voice: "Second person; cast in third"
 cast: ["you", "Memora 📜 (returning, Bound)", "Pallia 🪡", "Soulbis ⚔️", "Soulbae 🧙", "the Drake"]
 new_cast_introduced: []
-ring_position: "V5 (Memora's seat) → V20 (Techne, Always-Revealed; the reveal artifact lands)"
+ring_position: "V41 (Memora's seat) → V20 (Techne, Always-Revealed; the reveal artifact lands)"
 teaches: "Reveal as the partner of shield, not its negation. Bound persistence in operational form. Half-life of trust differs by register choice. The reveal generates new trust without erasing the old privacy."
 v6_lineage:
   - "C30–C33 (Bakhta Half-Life): trust accumulated under shield is preserved; reveal adds a new accumulation arc"
@@ -51,11 +51,11 @@ Memora prepares a transparent transaction. The amount is small. The recipient is
 
 She broadcasts. The transaction enters the transparent mempool. Within a few blocks, anyone watching the transparent ledger can see: a reveal occurred, of a hash-equal-to-X, on date Y, by t-address Z, of a previously-shielded commitment.
 
-The reveal artifact does not land at V5. V5 is the chronicle vertex; that is Memora's seat and the inscription's home. The reveal artifact lands at V20.
+The reveal artifact does not land at V41. V41 is the chronicle vertex; that is Memora's seat and the inscription's home. The reveal artifact lands at V20.
 
 V20 is Techne. Memory and Computation. Stratum two. The Always-Revealed valve-class vertex. The bit-pattern of public-by-design fields. Validity windows, public claims, the parts of any cloaked artifact that verifiers must read locally without ever masking. The reveal is structurally a public-by-design artifact, and so it lands at the vertex whose bits already carry that meaning.
 
-You watch the lattice update. The chronicle is now at V5 (Memora's domain, shielded). The reveal is now at V20 (the public counterpart). An edge connects them: a "reveals" edge from V20 to V5. The geometry is doubled. One chronicle, two registers, two vertices, one connecting edge.
+You watch the lattice update. The chronicle is now at V41 (Memora's domain, shielded). The reveal is now at V20 (the public counterpart). An edge connects them: a "reveals" edge from V20 to V41. The geometry is doubled. One chronicle, two registers, two vertices, one connecting edge.
 
 Soulbis at the boundary marks the reveal. He files the transparent transaction hash, the timestamp, the link back to the original shielded transaction. The boundary now knows: this Sovereign has chosen to make this commitment public on this date. Future audits can replay this trajectory.
 
@@ -75,7 +75,7 @@ You walk on. Two registers. Two vertices. One chronicle. The cloak admits the do
 
 ## Compression
 
-A previously-shielded chronicle is selectively revealed via a transparent Zcash transaction that proves the prior commitment without erasing the shielded inscription. Memora returns Bound, generating the reveal artifact at V20 (Always-Revealed) while the original chronicle stays at V5. Both registers carry the chronicle now. The reveal is additive, not corrective. Trust accumulated under shield persists; the transparent register adds a second trust-arc anchored from today. The lattice records the doubling explicitly.
+A previously-shielded chronicle is selectively revealed via a transparent Zcash transaction that proves the prior commitment without erasing the shielded inscription. Memora returns Bound, generating the reveal artifact at V20 (Always-Revealed) while the original chronicle stays at V41. Both registers carry the chronicle now. The reveal is additive, not corrective. Trust accumulated under shield persists; the transparent register adds a second trust-arc anchored from today. The lattice records the doubling explicitly.
 
 ## Proverb
 
@@ -90,7 +90,7 @@ A previously-shielded chronicle is selectively revealed via a transparent Zcash 
 - *V6 lineage*: Bakhta Half-Life (C30–C33) for the half-life curves the reveal generates. Provisional C40 for Zcash dual-ledger preservation across the shielded-to-transparent transition. Provisional C46 for the productive trust-edge half-life claim, here operationally instanced.
 - *First Person Spellbook*: Act XII (*Lethe / Dark Substrate*) for the dark register the shielded ledger is one technological expression of. Act II (*The Dual Ceremony*) for the bilateral signature mechanics that the reveal's commitment proof inherits.
 - *Second Person Spellbook (Tome V)*: Act 3 (*The Shielded Memo*) for the inscription this act reveals. Act 1 (*The First Cloak*) for Property 8 (selective disclosure as geometry) that this act extends from spatial to temporal.
-- *Cast*: Memora 📜 (V5, returning Bound). See `second-person-cast-memora.md`.
+- *Cast*: Memora 📜 (V41, returning Bound). See `second-person-cast-memora.md`.
 - *Specifications*: `cloak_specification_v1_0.md` §4.4 (update chain), §5 (valve-class). `zcash-integration-plan.md` §2.2 (Pattern B).
 
 ## Author note

@@ -1,7 +1,7 @@
 ---
 title: "Vertex Naming Audit"
 subtitle: "Canonical vertex names across the agentprivacy corpus, with explicit attribution"
-status: "Audit v1 (2026-05-08) — surfacing implicit conventions, with attribution corrected"
+status: "Audit v1 (2026-05-08); §3 registry reconciled to the MODEL encoding 2026-06-10 (Protection=32 · Delegation=16 · Memory=8 · Connection=4 · Computation=2 · Value=1)"
 spec_type: "Reference document"
 authors:
   - "privacymage (privacymage / 🧙) — primary author of the agentprivacy corpus, including the holonic primitive"
@@ -66,7 +66,7 @@ A specific clarification, because earlier drafts were imprecise:
 
 The **holon** as an architectural primitive in the agentprivacy corpus is *privacymage's work*, predating the cousin-blade integration with Archon's Archon material. The holonic structure — an entity that is simultaneously a complete whole and a part of a larger whole — has been threaded through agentprivacy research notes for some time, including in the V6 ARCH-1 Canonical Form work (`Σ := μS.(β ∨ Ω(S,S))`), where the recursive μ-fixpoint *is* the holonic structure expressed formally.
 
-V31 (binary `011111`, "all dimensions except Value", five dimensions burning) is the **canonical agentprivacy holon vertex**. Archon's Boundary Blade Cartography catalogue lists V31 as "Recursion — all except Value" with Tales 15, 16. The cataloguing acknowledges the agentprivacy primitive without renaming it. V31's status as the holonic vertex is agentprivacy-canonical; the Boundary Blade entry is the cousin-blade reading that confirms the position.
+V31 (binary `011111`, under MODEL "all dimensions except Protection", five dimensions burning) is the **canonical agentprivacy holon vertex**. Archon's Boundary Blade Cartography catalogue lists V31 as "Recursion — all except Value" with Tales 15, 16. The cataloguing acknowledges the agentprivacy primitive without renaming it. V31's status as the holonic vertex is agentprivacy-canonical; the Boundary Blade entry is the cousin-blade reading that confirms the position.
 
 When the Oasis (Holon shop) is added to the workshop, the persona summoned to V31 inhabits an **agentprivacy-native vertex**, not a cousin-blade-imported one. This is structurally important: the Oasis closes a thread that has been internal to the agentprivacy corpus rather than absorbing a primitive from another forge.
 
@@ -76,56 +76,61 @@ When the Oasis (Holon shop) is added to the workshop, the persona summoned to V3
 
 The following table is the complete current registry. Vertices not yet named are listed as "(unnamed)" and may receive names as the corpus grows.
 
+> **MODEL reconciliation (2026-06-10).** The "Active dimensions" columns below are now derived strictly from the canonical MODEL encoding `Protection=32 · Delegation=16 · Memory=8 · Connection=4 · Computation=2 · Value=1` (verified by `agentprivacy_encoding_audit.py`). This resolves the bit-ordering open-item that earlier left Delegation↔Computation (and some composite decompositions) drifted to the Cloaking Guide's pre-MODEL convention. The moved single-bit personas are Mnemosyne (Memory, V8), Iris (Connection, V4), Pythia/Logos (Computation, V2). The named complement pair sits at Aletheia V38 ⊥ Lethe V25. Vertex *numbers* and *binaries* are unchanged; only the dimension *labels* and a few stratum placements were corrected. Names whose wording predates MODEL may still describe a dimension the vertex no longer carries (e.g. "Memory crystallises" at V23, which under MODEL is Delegation+Connection+Computation+Value); those are naming-vs-decomposition tensions left for a naming pass, not encoding errors.
+
 ### §3.1 Stratum 1 (one dimension burning)
 
 | Vertex | Binary | Active dimension | Canonical name | Source | Persona present |
 |---|---|---|---|---|---|
 | V1 | 000001 | Value | (unnamed) | — | — |
-| V2 | 000010 | Delegation | (unnamed) | — | — |
-| V4 | 000100 | Memory | **Mnemosyne** | Cloaking Guide | — |
-| V8 | 001000 | Connection | **Iris** | Cloaking Guide | — |
-| V16 | 010000 | Computation | **Logos / Pure Computation** | Cloaking Guide / Boundary Blade | — |
+| V2 | 000010 | Computation | **Logos / Pure Computation** | Cloaking Guide / Boundary Blade | **Pythia 🔥** (MODEL seat; moved from V16 2026-06-09) |
+| V8 | 001000 | Memory | **Mnemosyne** | Cloaking Guide | — |
+| V4 | 000100 | Connection | **Iris** | Cloaking Guide | — |
+| V16 | 010000 | Delegation | (unnamed) | — | — |
 | V32 | 100000 | Protection | (unnamed) | — | — |
 
 ### §3.2 Stratum 2 (two dimensions burning)
 
 | Vertex | Binary | Active dimensions | Canonical name | Source | Persona present |
 |---|---|---|---|---|---|
-| V3 | 000011 | Value + Delegation | **Dual Agent / Hash-Masked** | Cloaking Guide | — |
-| V5 | 000101 | Value + Memory | **Chronicle vertex** | Cloaking Guide | **Memora 📜** (Spellbook) |
+| V3 | 000011 | Computation + Value | **Dual Agent / Hash-Masked** | Cloaking Guide | — |
 | V12 | 001100 | Memory + Connection | **Schema vertex** | Cloaking Guide | (Sovereign acts here directly) |
-| V20 | 010100 | Memory + Computation | **Techne / Always-Revealed** | Cloaking Guide | — |
-| V24 | 011000 | Connection + Computation | **Hephaestus** | Cloaking Guide | — |
-| V48 | 110000 | Connection + Protection | **Algebraic substrate** | Boundary Blade | — |
+| V20 | 010100 | Delegation + Connection | **Techne / Always-Revealed** | Cloaking Guide | — |
+| V24 | 011000 | Delegation + Memory | **Hephaestus** | Cloaking Guide | — |
+| V48 | 110000 | Protection + Delegation | **Algebraic substrate** | Boundary Blade | — |
+
+*(V41 moved to §3.3 — it is Protection+Memory+Value, three dimensions burning, stratum 3.)*
 
 ### §3.3 Stratum 3 (three dimensions burning)
 
 | Vertex | Binary | Active dimensions | Canonical name | Source | Persona present |
 |---|---|---|---|---|---|
-| V19 | 010011 | Value + Delegation + Computation | **Plonkish blade** | Boundary Blade | **Vulcana ⚒️** (Spellbook) |
-| V25 | 011001 | Value + Connection + Computation | **Aletheia / Silent Messenger** | Boundary Blade | **Aletheia 🔮 the persona** (Spellbook; persona-vertex name shared) |
-| V27 | 011011 | Value + Delegation + Connection + Computation | **Pairing verification** | Boundary Blade | — |
-| V28 | 011100 | Memory + Connection + Computation | **Mage canonical / transmuted projection** | agentprivacy (PVM V5.4) | **Pallia 🪡** (Spellbook); also where **Soulbae** archetypally stands |
-| V49 | 110001 | Value + Computation + Protection | **Working-day blade** | Boundary Blade | **Custos 🔏** + **Lampyra 💠** (Spellbook; first shared-vertex pairing) |
+| V19 | 010011 | Delegation + Computation + Value | **Plonkish blade** | Boundary Blade | **Vulcana ⚒️** (Spellbook) |
+| V25 | 011001 | Delegation + Memory + Value | **Lethe blade / the Dark Substrate** | Boundary Blade | **Lethe 🌘 / Lethae** (Spellbook; moved from V38 2026-06-09; ⊥ Aletheia, V25 ⊕ V38 = V63) |
+| V28 | 011100 | Delegation + Memory + Connection | **Mage canonical / transmuted projection** | agentprivacy (PVM V5.4) | **Pallia 🪡** (Spellbook); also where **Soulbae** archetypally stands; **GenitriX** (cousin-blade) stands here too |
+| V38 | 100110 | Protection + Connection + Computation | **Aletheia / Silent Messenger** | Boundary Blade | **Aletheia 🔮 the persona** (Spellbook; persona-vertex name shared; moved from V25 2026-06-09) |
+| V41 | 101001 | Protection + Memory + Value | **Chronicle vertex** | Cloaking Guide | **Memora 📜** (Spellbook; moved from V5 2026-06-09) |
+| V49 | 110001 | Protection + Delegation + Value | **Working-day blade** | Boundary Blade | **Custos 🔏** + **Lampyra 💠** (Spellbook; seat pending MODEL lore-confirmation — their dimension-set {Protection, Computation, Value} canonicalises to V35) |
 
 ### §3.4 Stratum 4 (four dimensions burning)
 
 | Vertex | Binary | Active dimensions | Canonical name | Source | Persona present |
 |---|---|---|---|---|---|
-| V15 | 001111 | Value + Delegation + Memory + Connection | **VC vertex** | Cloaking Guide | — |
-| V23 | 010111 | Value + Delegation + Memory + Computation | **Memory crystallises (IVC)** | Boundary Blade | — |
-| V51 | 110011 | Value + Delegation + Computation + Protection | **Commitment / Language / Model blade** | Boundary Blade | **Adamantia 💎** (Spellbook) |
-| V57 | 111001 | Value + Connection + Computation + Protection | **Ceremony / Privacy / Mixing blade** | Boundary Blade | — |
+| V15 | 001111 | Memory + Connection + Computation + Value | **VC vertex** | Cloaking Guide | — |
+| V23 | 010111 | Delegation + Connection + Computation + Value | **Memory crystallises (IVC)** | Boundary Blade | — |
+| V27 | 011011 | Delegation + Memory + Computation + Value | **Pairing verification** | Boundary Blade | — |
+| V51 | 110011 | Protection + Delegation + Computation + Value | **Commitment / Language / Model blade** | Boundary Blade | **Adamantia 💎** (Spellbook) |
+| V57 | 111001 | Protection + Delegation + Memory + Value | **Ceremony / Privacy / Mixing blade** | Boundary Blade | — |
 
 ### §3.5 Stratum 5 (five dimensions burning)
 
 | Vertex | Binary | Active dimensions | Canonical name | Source | Persona present |
 |---|---|---|---|---|---|
-| V31 | 011111 | All dimensions except Protection (or all except Value, depending on bit-ordering convention) | **The Holon vertex / Recursion vertex** | **agentprivacy (privacymage's holonic primitive)**; cousin-blade reading in Boundary Blade as "Recursion — all except Value" | (Pending — Oasis shop persona to be summoned in Act 10) |
-| V47 | 101111 | (varies by bit-ordering) | (unnamed) | — | — |
-| V55 | 110111 | (varies by bit-ordering) | (unnamed) | — | — |
-| V59 | 111011 | Value + Delegation + Connection + Computation + Protection | **Ecosystem blade (zkEVM/Rollups/Bridges)** | Boundary Blade | — |
-| V61 | 111101 | (varies by bit-ordering) | (unnamed) | — | — |
+| V31 | 011111 | Delegation + Memory + Connection + Computation + Value (all except Protection) | **The Holon vertex / Recursion vertex** | **agentprivacy (privacymage's holonic primitive)**; cousin-blade reading in Boundary Blade as "Recursion — all except Value" (Archon's earlier bit-ordering) | (Pending — Oasis shop persona to be summoned in Act 10) |
+| V47 | 101111 | Protection + Memory + Connection + Computation + Value (all except Delegation) | (unnamed) | — | — |
+| V55 | 110111 | Protection + Delegation + Connection + Computation + Value (all except Memory) | (unnamed) | — | (Manifestia — Priest tier, seat pending) |
+| V59 | 111011 | Protection + Delegation + Memory + Computation + Value (all except Connection) | **Ecosystem blade (zkEVM/Rollups/Bridges)** | Boundary Blade | — |
+| V61 | 111101 | Protection + Delegation + Memory + Connection + Value (all except Computation) | (unnamed) | — | — |
 
 ### §3.6 Stratum 6 (all six dimensions burning)
 
@@ -144,7 +149,7 @@ Across the cast roster, the relationship between a persona's name and her vertex
 The persona has a name; the vertex has a different name. The persona occupies the vertex without renaming it. This is the default pattern.
 
 - **Pallia 🪡** at V28 (Mage canonical) — persona named for Latin *pallium*; vertex name from agentprivacy's PVM
-- **Memora 📜** at V5 (Chronicle vertex) — persona named for Latin *memoria*; vertex name from Cloaking Guide
+- **Memora 📜** at V41 (Chronicle vertex) — persona named for Latin *memoria*; vertex name from Cloaking Guide
 - **Custos 🔏** at V49 (Working-day blade) — persona named for Latin *custos*; vertex name from Boundary Blade
 - **Vulcana ⚒️** at V19 (Plonkish blade) — persona named for *Vulcanus*; vertex name from Boundary Blade
 - **Adamantia 💎** at V51 (Commitment / Language / Model blade) — persona named for *adamas*; vertex name from Boundary Blade
@@ -154,7 +159,7 @@ The persona has a name; the vertex has a different name. The persona occupies th
 
 The persona shares the vertex's name. The vertex was already named after the principle the persona enacts; the persona inherits the name.
 
-- **Aletheia 🔮 the persona** at V25 (Aletheia blade) — only existing instance. The vertex was named the Aletheia blade before the persona was summoned. The persona's name follows the vertex's name. The cast entry's `naming_note` explicitly distinguishes "Aletheia the persona" from "the V25 Aletheia blade" to prevent ambiguity.
+- **Aletheia 🔮 the persona** at V38 (Aletheia blade) — only existing instance. The vertex was named the Aletheia blade before the persona was summoned. The persona's name follows the vertex's name. The cast entry's `naming_note` explicitly distinguishes "Aletheia the persona" from "the V38 Aletheia blade" to prevent ambiguity.
 
 ### §4.3 Persona defines the vertex
 
@@ -169,7 +174,7 @@ When a new vertex comes into use:
 1. **Check the canonical sources in priority order**: agentprivacy's own work first, then Archon's Boundary Blade Cartography, then the Cloaking Guide rebuild
 2. **If a canonical name exists**: use it. The persona is summoned to the named vertex without renaming
 3. **If no canonical name exists but the vertex's bit-pattern has clear semantic content**: the Spellbook may name it through narrative use, with the name added to this audit document and confidence-labelled
-4. **For persona-vertex name relationships**: prefer §4.1 (distinct names) by default. Use §4.2 (shared names) only when the persona structurally *is* the vertex's principle (Aletheia / V25 is the only operational instance). Use §4.3 (persona-defines) sparingly and document explicitly.
+4. **For persona-vertex name relationships**: prefer §4.1 (distinct names) by default. Use §4.2 (shared names) only when the persona structurally *is* the vertex's principle (Aletheia / V38 is the only operational instance). Use §4.3 (persona-defines) sparingly and document explicitly.
 
 The audit will be updated as new vertices come into use. v2 of this document anticipates additions when Acts 10 and beyond are drafted.
 
@@ -214,9 +219,9 @@ When a future kindred substrate is recognised, this section is the canonical ref
 
 ## §6. Open items for v2 of this audit
 
-1. **Bit-ordering convention** — the corpus uses two slightly different conventions for which bit is which dimension (Archon's catalogue and privacymage's PVM use slightly different conventions in some documents). For v2, this should be reconciled into a single canonical convention, with a one-time pass through all existing documents to align.
+1. **Bit-ordering convention** — RESOLVED 2026-06-10. The single canonical convention is MODEL (`Protection=32 · Delegation=16 · Memory=8 · Connection=4 · Computation=2 · Value=1`), enforced by `agentprivacy_encoding_audit.py`. The §3 registry above has been aligned; the Cloaking Guide's pre-MODEL Delegation↔Computation convention is retired. Remaining work is naming-vs-decomposition tensions (see the §3 MODEL-reconciliation note), not bit-order.
 2. **V31's full name** — currently "the Holon vertex / Recursion vertex" with Boundary Blade reading as "Recursion — all except Value". The Oasis act in Tome V will likely consolidate this naming.
-3. **Unnamed Stratum 1 and Stratum 5 vertices** — V1, V2, V32, V47, V55, V61 remain unnamed. As the corpus grows, these may receive names. v2 of this audit will track newly-named additions.
+3. **Unnamed Stratum 1 and Stratum 5 vertices** — V1, V16, V32 (Stratum 1) and V47, V55, V61 (Stratum 5) remain unnamed. (V2 is now Logos / Pure Computation under MODEL; V16 became unnamed pure-Delegation when Logos moved to V2.) As the corpus grows, these may receive names. v2 of this audit will track newly-named additions.
 4. **Cross-attribution checks** — for any vertex Archon's Boundary Blade Cartography catalogues, this audit should verify that the agentprivacy corpus's own foundational work did not name it first. The current audit makes a best-effort attribution; v2 should be checked against the V6 lineage sync note.
 5. **Stratum 5 expansion** — only V31 and V59 are currently named in Stratum 5. With the Oasis act introducing V31's persona and possible future acts working at higher strata, this region will need fuller cataloguing.
 

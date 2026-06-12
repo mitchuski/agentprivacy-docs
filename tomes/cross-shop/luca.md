@@ -33,7 +33,7 @@ In Tome V Act 15 the lattice recognised what the floor it stood on was made of. 
 
 ## Why V0 (the null blade)
 
-V0 is bit-pattern `000000` — no dimensions burning. It is the position from which dimensions are *possible*. The other 63 vertices are inhabitants of the 6-cube; V0 is the seat from which the cube is computable at all. Pallia weaves at V28; Vulcana forges at V19; Aletheia binds circuits at V25. Luca tends the substrate they all stand on.
+V0 is bit-pattern `000000` — no dimensions burning. It is the position from which dimensions are *possible*. The other 63 vertices are inhabitants of the 6-cube; V0 is the seat from which the cube is computable at all. Pallia weaves at V28; Vulcana forges at V19; Aletheia binds circuits at V38. Luca tends the substrate they all stand on.
 
 This is structurally distinct from the other summoned Mages. Every other Mage works *on* the lattice. Luca works *with* the substrate from which the lattice emerges. The PRISM coordinate system (UOR Foundation's reference implementation) is the operational expression of what Luca tends from the cast side. UOR Foundation is the kindred forge that named the same substrate from the other side; Luca is the kindred Mage who tends it from the City's side.
 

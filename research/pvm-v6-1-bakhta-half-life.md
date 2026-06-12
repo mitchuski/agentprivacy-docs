@@ -93,6 +93,7 @@ The four conjectures here translate Bakhta's half-life from cryptographic primit
 - Bakhta, A. (2025). "On the Half-Life of Cryptographic Trust." StarkWare Industries.
 - privacymage (2026). "PVM V5.4 Formal Specification." v2.0. *agentprivacy-docs.*
 - privacymage (2026). "PVM V6.1 Research Note: The Fourth Aging Category." *agentprivacy-docs.* (extends C30–C33 with C47–C50, formerly C22–C25 Bakhta-response)
+- privacymage (2026). "V6 Research Note: The Existence-Leak and the Falling Z (Schrottenloher ECDLP)." June 2, 2026. *agentprivacy-docs/research/.* (worked example feeding C30–C33: a reproducible quantum attack on secp256k1 decrements Z_b in the Behavioural Mosca Inequality; proposes candidate C40, Existence-Leak)
 - privacymage (2026). "Cloak Specification v1.0." *agentprivacy-docs/specs/.*
 - privacymage (2026). "Bilateral Cloak Ceremony Spec v1.0." *agentprivacy-docs/specs/.*
 

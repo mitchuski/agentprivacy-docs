@@ -1,0 +1,84 @@
+{
+  "model": "Privacy Value Model",
+  "version": "6.0",
+  "version_name": "The Gathering Turn and the Moving Ceiling",
+  "date": "2026-06-10",
+  "author": "privacymage",
+  "contact": "mage@agentprivacy.ai",
+  "license": "CC BY-SA 4.0",
+  "master_inscription": "(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ",
+  "thesis": {
+    "strand_1_gathering": "V5 answered WHAT the architecture is. V6 asks WHO: it opens the model outward, in the second person, to the City of Mages and every kindred builder, so the equation can be filled with data instead of estimates.",
+    "strand_2_dynamical": "In the act of gathering, the research moved: the reconstruction ceiling is a function of time with a shelf life, policy separation leaks exponentially where amnesia leaks linearly, existence proofs leak, the lattice and the axes meet at one bridge, and amnesia is the only term whose security is independent of time."
+  },
+  "authority": {
+    "document": "agentprivacy-docs/privacy_value_v6.md",
+    "conjecture_register": "agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md",
+    "register_head": "C89",
+    "rule": "when any surface and the register disagree, the register wins",
+    "suite_labeling": "unified V6 across all canon papers: formal spec, compressed Swordsman reading, companion Mage reading, research paper, whitepaper edition (G3 decision, 2026-06-10)",
+    "predecessor": "privacy-value-model-v5.4.json carries the V5.4 dark model (learning paths, full pedagogy); its conjecture content is superseded by the register; V6 dark-model regeneration is queued"
+  },
+  "v6_core": {
+    "moving_ceiling": {
+      "statement": "R(t) = (C_S(t) + C_M(t)) / H(X); H(X) fixed by the person, capacities grow with frontier capability; shelf life t* = sup{ t : R(t) < 1 }",
+      "conjecture": "C82",
+      "label": "Proven, conditional regime (Preconditions: non-collusion; fixed adversary class)",
+      "grounding": ["Wyner 1975", "Fano 1961 / Cover-Thomas", "Leung-Yan-Cheong & Hellman 1978", "Bayes-capacity bound", "Geiger & Kubin"],
+      "instances_2026": ["Zcash Orchard (flaw 2022-05; found 2026-05-29 day after Opus 4.8; fixed block 3364600, 2026-06-03)", "Schrottenloher rediscovery (eprint 2026/1128, 2026-06-02, ~2 months after ZK attestation)"]
+    },
+    "leakage": {
+      "statement": "additive leakage holds exactly in the no-inter-agent-channel regime; outside it, sequential composition compounds toward (2^N − 1)ε (Asif-Amiri Thm 4.1); amnesia caps at Nε",
+      "conjecture": "C83",
+      "edge": "C7 → C83 → C17",
+      "measurements": { "agentleak_total_exposure": 0.689, "inter_agent_channel": 0.688, "single_agent_output": 0.432, "multi_agent_output": 0.272, "missed_by_output_only_audits": 0.417 }
+    },
+    "existence_leak": {
+      "statement": "a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0",
+      "conjecture": "C81",
+      "confidence": 0.7,
+      "bookends": ["Garg-Jain-Sahai: LR-ZK with λ < 1 impossible (floor)", "Schrottenloher rediscovery (instance)"],
+      "corollary": "C84: Z_b' = Z_b − D(a); migration deadlines tighten on attestation"
+    },
+    "bridge": {
+      "statement": "three Φ axes ↔ lattice triadic coordinates; pair map Protection+Delegation→Σ, Memory+Value→Δ, Connection+Computation→Γ; the gap is β",
+      "conjecture": "C85",
+      "predictions": ["bnot-pairs invert all three axes", "stratum-3 is the no-dominant-axis seat"]
+    },
+    "amnesia": {
+      "statement": "Grade-2 forgetting = non-vanishing obstruction class to gluing local agent views into a global witness; Grade-1 = vanishing class with withheld gluing data",
+      "conjecture": "C86",
+      "consequence": "amnesia is the only term in the equation whose security is independent of t",
+      "falsification": "any composition of agent views recovering a Grade-2-forgotten O"
+    },
+    "city_key": {
+      "ivc": "C87: Key = accumulator, trust tasks = step circuits, Charge = folding step, V63 = attested invariant; LatticeFold is the post-quantum hedge",
+      "status": "C66 (~55%): the Key is a reading, not an authority (ocap lineage: SPKI/SDSI, designation without authority)",
+      "presence_regime": "regime 1: 🪢 is non-transferable, non-attesting local color; not proof, not stake-weight, not an attestation input; upgrade ladder: witness co-signing, then elapsed-time proofs"
+    },
+    "geometry": {
+      "phi_honesty": "the stella octangula carries no golden ratio; volumes are rational (tetrahedron 1/3, octahedral core 1/6, compound 5/12 of the cube); C1 references beside the figure are resonance, not derivation",
+      "conjectures": ["C88 parity cube", "C89 octahedral gap"]
+    }
+  },
+  "conjectures": {
+    "note": "full statements, confidences, statuses, and homes live in the register; this index mirrors it at publication (2026-06-10), head C89",
+    "core_v1_v5": { "C1": "φ optimal S/M ratio (open)", "C2": "A(τ) logarithmic (open)", "C3": "challenged", "C4": "resolved", "C5": "resolved", "C6": "P^1.5 ↔ 96/64 convergent 35%", "C7": "three-axis multiplicative 30% · falsification frontier", "C8": "BRAID reduces R_max 45%", "C9": "holographic sufficiency 25%", "C10": "O(1) shared-parent 20%", "C11": "behavioural density 55%", "C12": "hexagram resonance 60%", "C13": "bilateral witness quantum-resistant 65%", "C14": "Φ_agent ≅ D₂ₙ 75%", "C15": "T_∫ ≅ UOR pipeline 65%", "C16": "Betti invariants 25%", "C17": "amnesia > policy 60% · quantitative via C83" },
+    "v6_series_apr2026": { "C18-C21": "Lorenz dynamical ceiling 10-30%", "C22-C25": "EML three ceilings 15-30%", "C26-C29": "ARCH-1 canonical form 20-40%", "C30-C33": "Bakhta half-life 45-60%", "C34-C37": "wound and cap 50-60%" },
+    "bound_collection": { "C38": "bilateral ARCH-1 40%", "C39": "kindred-blade 50%", "C40": "Zcash dual-ledger 70%", "C41": "observation", "C42": "stake sybil resistance 50%", "C43": "per-VRC viewing-key 60%", "C44": "productive VRC 55%", "C45": "four-chain 70%", "C46": "alias of C32" },
+    "post_v54_coherence": { "C47": "ages progressively 50%", "CM-C47": "alias of C85", "C48": "reconstruct-later 65% (alias C60)", "C49": "Behavioural Mosca 70% (alias C61)", "C50": "gating ≡ compositional defense 60%", "C51-C55": "occupied, never reassign" },
+    "city_register": { "C56": "caduceus 60%", "C57": "held open", "C58": "Forge(t) ∥ Threshold 85%", "C59": "create-format gateway 70%", "C60": "alias of C48", "C61": "alias of C49", "C62": "reserved", "C63": "attentional register 50%", "C64": "listener-discipline tier 50%", "C65": "invitation-posture 50%", "C66": "Key is a reading 55%" },
+    "horizon_district_pinned_v180": { "C67": "cryptographic Mosca", "C68": "resource-estimate as durability signal", "C69": "held-out gate", "C70": "crypto-agility", "C71": "Horizon Vertex V35" },
+    "renumbered_at_run0": { "C72-C76": "ARCH-1R/T (was provisional C67-C71)", "C77-C80": "integrity-gap convergence (was provisional C70-C73)" },
+    "registered_v6_runs": { "C81": "Existence-Leak 70%", "C82": "Moving Ceiling 65%", "C83": "Compositional Leakage Amplification 55%", "C84": "Existence-Leak Discount 50%", "C85": "Triadic-Constraint Homology (ARCH-1 bridge) 40%", "C86": "Obstruction-Theoretic Amnesia 30%", "C87": "The Key Accumulates (IVC) 50%", "C88": "Parity Cube 30%", "C89": "Octahedral Gap 30%" }
+  },
+  "canonical_figures": {
+    "rule": "these figures appear in suite prose only in these formulations",
+    "678x": "the present-day per-person data-value gap (just for data today) · basis: Substack essay v2",
+    "31000x": "the accessible-volume value gap under full behavioural capture · basis: essay v4",
+    "70:1": "the compression ratio of the spellbook corpus · basis: README lineage",
+    "74x": "BRAID compression efficiency · basis: V5 formal lineage",
+    "value_capture_per_year": "$47k to $52k indicative per-person range · basis: README lineage"
+  },
+  "lineage": ["V1-V4 foundation", "V5/V5.4 holographic bound · three axes · Z/(2⁶)Z · Amnesia Protocol", "V5.5 named sublayer (attachment architecture)", "V6 the gathering turn and the moving ceiling (this file)"]
+}

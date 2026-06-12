@@ -334,7 +334,7 @@ This is not about competing on features. This is about establishing **foundation
 
 - **Website**: https://agentprivacy.ai
 - **Public Goods Research**: https://sync.soulbis.com
-- **Private AI Intel**: https://intel.agentkyra.ai
+- **Private AI Intel**: https://intel.agentprivacy.ai
 - **Contact**: mage@agentprivacy.ai
 
 ### Collaborators & Networks

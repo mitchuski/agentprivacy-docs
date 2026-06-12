@@ -1,0 +1,252 @@
+﻿{
+  "model": "Privacy Value Model",
+  "version": "6.0",
+  "version_name": "The Gathering Turn and the Moving Ceiling",
+  "spec_version": "1.0",
+  "grimoire_version": "10.4.0",
+  "date": "2026-06-10",
+  "author": "privacymage",
+  "license": "CC BY-SA 4.0",
+  "master_inscription": "(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ",
+  "thesis": "V5 answered WHAT; V6 asks WHO: the gathering turn opens the model outward in the second person to fill the equation with data. Privacy is a dynamical quantity: the ceiling moves as R(t), and amnesia is the only t-independent term.",
+
+  "start_here": {
+    "note": "Five concepts in order. Each depends on the previous.",
+    "path": [
+      {
+        "step": 1,
+        "concept": "Multiplicative gating",
+        "one_line": "Any term = 0 → V = 0. No tradeoffs. All axes must hold.",
+        "spec": "§1.3"
+      },
+      {
+        "step": 2,
+        "concept": "Dual agents",
+        "one_line": "Swordsman (neg, boundary) ⊥ Mage (bnot, projection). Separated. Composed = succ.",
+        "spec": "§12, §4.2"
+      },
+      {
+        "step": 3,
+        "concept": "Separation bound",
+        "one_line": "I(S;M|FP) < ε*. Proven in the conditional regime: Precondition 1 non-collusion, Precondition 2 fixed adversary class.",
+        "spec": "§10"
+      },
+      {
+        "step": 4,
+        "concept": "Algebraic foundation",
+        "one_line": "Z/(2⁶)Z ring. D₆₄ dihedral group. neg(bnot(x)) = succ(x). Two involutions → sovereignty path.",
+        "spec": "§12"
+      },
+      {
+        "step": 5,
+        "concept": "The moving ceiling",
+        "one_line": "R(t) = (C_S(t)+C_M(t))/H(X); shelf life t* = sup{t : R(t) < 1}. The decoder improves while the archive sits still.",
+        "spec": "§5, §25"
+      }
+    ]
+  },
+
+  "equation": {
+    "static": "V(π, t) = P^1.5 · C · Q · S · e^(−λt) · (1 + Aₕ(τ)) · (1 + Σᵢ wᵢ·nᵢ/N₀)^k · G(guilds) · R(d, compression, ρ) · M(u, y) · Φ_agent(Σ) · Φ_data(Δ) · Φ_inference(Γ) · T_∫(π)",
+    "differential": "dV/dt = ∇_∂M · J_∂M + S(x) − D(x)",
+    "gating": "Multiplicative. Any term = 0 → V = 0.",
+    "output": "Holographic field on ∂M (96-edge boundary encoding 64-vertex lattice)",
+    "moving_ceiling": {
+      "expression": "R(t) = (C_S(t) + C_M(t)) / H(X)",
+      "shelf_life": "t* = sup{ t : R(t) < 1 }",
+      "mechanism": "the decoder, not the data"
+    },
+    "compounding_bound": {
+      "expression": "I(O_N; S_1..S_N) <= sum_i 2^(N-i) eps_i = (2^N - 1) eps (uniform)",
+      "amnesia_cap": "N eps",
+      "source": "Asif-Amiri Thm 4.1"
+    }
+  },
+
+  "terms": [
+    { "symbol": "P^1.5", "name": "Privacy Strength", "domain": "[0, 1]", "why_1.5": "96/64 holographic ratio" },
+    { "symbol": "C", "name": "Credential Verifiability", "domain": "[0, 1]" },
+    { "symbol": "Q", "name": "Data Quality", "domain": "[0, 1]" },
+    { "symbol": "S", "name": "Scope / Sensitivity", "domain": "ℝ⁺" },
+    { "symbol": "e^(−λt)", "name": "Temporal Decay", "domain": "(0, 1]" },
+    { "symbol": "Aₕ(τ)", "name": "Holonic Temporal Memory", "formula": "Σⱼ p(τⱼ)·w(τⱼ)·e^(−μ·age(τⱼ))" },
+    { "symbol": "Network", "name": "Network Effects", "formula": "(1 + Σᵢ wᵢ·nᵢ/N₀)^k" },
+    { "symbol": "G", "name": "Guild Efficiency", "formula": "Πg(1 + eff_g · active_g/total_g)", "scaling": "O(1)" },
+    { "symbol": "R", "name": "Reconstruction Difficulty", "formula": "R_base(d)·(1−1/c)·(1+α·ρ)", "ceiling": "R < 1 (proven, conditional regime); V6: R(t) moves" },
+    { "symbol": "M(u,y)", "name": "Market Maturity", "domain": "[0, 1]" },
+    { "symbol": "Φ_agent", "name": "Agent Separation", "formula": "min(1,(S/M)/φ)·det(Σ)", "algebraic": "≅ D₂ₙ (C14, 75%)" },
+    { "symbol": "Φ_data", "name": "Data Separation", "formula": "1 − max_j(share_j)" },
+    { "symbol": "Φ_inference", "name": "Inference Separation", "formula": "1 − I(model;executor)" },
+    { "symbol": "T_∫(π)", "name": "Path Integral", "formula": "1 + β·∫_π F(γ)dγ", "fidelity": "resolution_depth · fidelity" }
+  ],
+
+  "core_algebra": {
+    "ring": "Z/(2⁶)Z — 64 elements",
+    "neg": "Swordsman: (64−x) mod 64",
+    "bnot": "Mage: 63−x",
+    "succ": "First Person: neg(bnot(x)) = x+1",
+    "group": "D₆₄ (order 128)"
+  },
+
+  "separation_bound": {
+    "expression": "I(S;M|FP) < ε*",
+    "proven": "Additive MI → R < 1 (95%, Precondition 1 only)",
+    "preconditions": "1: non-collusion, I(Y_S;Y_M|X) = 0 · 2: fixed adversary class",
+    "amnesia": "ε_amnesia < ε_policy (C17, 60%); quantitative form C83: (2^N − 1)ε policy vs Nε amnesia",
+    "selenes_proof": "Moon's orbit as ZK proof: completeness (tides), soundness (gravitational signature), zero-knowledge (origin hidden). The credential is the orbit.",
+    "betweenness": "C_B(v) = Σ σ(s,t|v)/σ(s,t) (Brandes, 2001). The ⿻ is the node with maximal betweenness in the trust graph."
+  },
+
+  "conjecture_register": {
+    "authority": "research/CONJECTURE_REGISTER_V6.md",
+    "register_head": "C89",
+    "next_free": "C90"
+  },
+
+  "conjectures": [
+    { "id": "C1", "claim": "Golden ratio φ is optimal S/M (protect:project) ratio", "confidence": "open", "status": "open" },
+    { "id": "C2", "claim": "A(τ) should be logarithmic", "confidence": "open", "status": "open" },
+    { "id": "C3", "claim": "Edge value is additive", "status": "challenged" },
+    { "id": "C4", "claim": "96 vs 64 discrepancy", "status": "resolved" },
+    { "id": "C5", "claim": "~3,000× ZKP reduction", "status": "resolved" },
+    { "id": "C6", "claim": "P^1.5 ↔ 96/64 is structural", "confidence": 0.35, "status": "convergent" },
+    { "id": "C7", "claim": "Three-axis separation is multiplicative; the V6 falsification frontier", "confidence": 0.3, "status": "active" },
+    { "id": "C8", "claim": "BRAID compression reduces R_max", "confidence": 0.45, "status": "active" },
+    { "id": "C9", "claim": "Holographic boundary sufficiency", "confidence": 0.25, "status": "active" },
+    { "id": "C10", "claim": "O(1) shared-parent modifies k", "confidence": 0.2, "status": "active" },
+    { "id": "C11", "claim": "Behavioural density ρ amplifies privacy, indicates maturity", "confidence": 0.55, "status": "active" },
+    { "id": "C12", "claim": "Hexagram encoding is structurally resonant", "confidence": 0.6, "status": "active" },
+    { "id": "C13", "claim": "Bilateral witness as quantum-resistant primitive", "confidence": 0.65, "status": "active" },
+    { "id": "C14", "claim": "Φ_agent ≅ D₂ₙ dihedral isomorphism", "confidence": 0.75, "status": "active" },
+    { "id": "C15", "claim": "T_∫(π) ≅ UOR resolution pipeline", "confidence": 0.65, "status": "active" },
+    { "id": "C16", "claim": "Topological trust invariants via Betti numbers", "confidence": 0.25, "status": "active" },
+    { "id": "C17", "claim": "Amnesia-enforced separation tighter than policy-enforced; quantitative at C83", "confidence": 0.6, "status": "active" },
+    { "id": "C18", "claim": "Sovereignty path exhibits strange attractor dynamics (λ > 0); dynamical reconstruction ceiling", "confidence": 0.25, "status": "active" },
+    { "id": "C19", "claim": "ρ is Lyapunov divergence accumulated over the walk", "confidence": 0.2, "status": "active" },
+    { "id": "C20", "claim": "Three axes couple as three Lorenz variables", "confidence": 0.3, "status": "active" },
+    { "id": "C21", "claim": "Sovereignty manifold has fractal dimension", "confidence": 0.1, "status": "active" },
+    { "id": "C22", "claim": "Reconstruction cost grows exponentially with EML tree depth", "confidence": 0.2, "status": "active" },
+    { "id": "C23", "claim": "Blade forge grammar isomorphic to restricted EML grammar", "confidence": 0.3, "status": "active" },
+    { "id": "C24", "claim": "Sovereignty computation requires complex intermediates", "confidence": 0.15, "status": "active" },
+    { "id": "C25", "claim": "Minimal EML tree depth is hard floor for compression spectrum", "confidence": 0.25, "status": "active" },
+    { "id": "C26", "claim": "ARCH-1 is canonical form of NAND, EML, succ as co-instances", "confidence": 0.4, "status": "active" },
+    { "id": "C27", "claim": "ρ is the activation mechanism; Ω without ρ is inert", "confidence": 0.35, "status": "active" },
+    { "id": "C28", "claim": "Three ceilings independent because ARCH-1 factors into β / μS / Ω", "confidence": 0.3, "status": "active" },
+    { "id": "C29", "claim": "The Second Person Lift: You := μS.(β ∨ Ω(S,S))", "confidence": 0.2, "status": "active" },
+    { "id": "C30", "claim": "Trust half-life begins at inscription; decays until renewed", "confidence": 0.6, "status": "active" },
+    { "id": "C31", "claim": "Half-life differs by inscription register (shielded vs transparent)", "confidence": 0.55, "status": "active" },
+    { "id": "C32", "claim": "Productive trust-edges have higher half-life than transactional", "confidence": 0.5, "status": "active" },
+    { "id": "C33", "claim": "Half-lives compose multiplicatively across the three axes", "confidence": 0.45, "status": "active" },
+    { "id": "C34", "claim": "Convergence requires a bijective cap", "confidence": 0.55, "status": "active" },
+    { "id": "C35", "claim": "The wound is where the architectural asymmetry lives", "confidence": 0.6, "status": "active" },
+    { "id": "C36", "claim": "The cap is where the bijection lives or breaks", "confidence": 0.55, "status": "active" },
+    { "id": "C37", "claim": "Convergence is recognition, not coincidence", "confidence": 0.5, "status": "active" },
+    { "id": "C38", "claim": "Bilateral ARCH-1: Σ_ij := μS.(β_ij ∨ Ω(S_i, S_j)) preserves fixpoint", "confidence": 0.4, "status": "active" },
+    { "id": "C39", "claim": "Kindred-blade as ecosystem-layer primitive", "confidence": 0.5, "status": "active" },
+    { "id": "C40", "claim": "Zcash dual-ledger preserves Eight Cloak Properties", "confidence": 0.7, "status": "active" },
+    { "id": "C41", "claim": "61.8/38.2 transparent/shielded inscription ratio as cultural norm", "confidence": "observation", "status": "observation" },
+    { "id": "C42", "claim": "Stake economics generate Sybil resistance ≥ tier accumulation", "confidence": 0.5, "status": "active" },
+    { "id": "C43", "claim": "Per-VRC viewing-key disclosure strictly more private than unscoped", "confidence": 0.6, "status": "active" },
+    { "id": "C44", "claim": "Productive VRC ≈ hash-exchange VRC in trust strength", "confidence": 0.55, "status": "active" },
+    { "id": "C45", "claim": "Four-chain publication beats single-chain reconstruction resistance", "confidence": 0.7, "status": "active" },
+    { "id": "C46", "claim": "Productive trust-edge has higher half-life than transactional (alias of C32)", "confidence": 0.5, "status": "alias" },
+    { "id": "C47", "claim": "Ages progressively: the dynamical ceiling is a fourth aging category beyond Bakhta's taxonomy", "confidence": 0.5, "status": "active" },
+    { "id": "CM-C47", "claim": "Triadic-Constraint Homology (alias of C85, promoted Run 4)", "confidence": 0.4, "status": "alias" },
+    { "id": "C48", "claim": "Reconstruct-later threat model isomorphic to Bakhta TM-1", "confidence": 0.65, "status": "active" },
+    { "id": "C49", "claim": "Behavioural Mosca Inequality binds for long-horizon behavioural evidence", "confidence": 0.7, "status": "active" },
+    { "id": "C50", "claim": "PVM multiplicative gating ≡ Bakhta compositional defense at different substrates", "confidence": 0.6, "status": "active" },
+    { "id": "C51", "claim": "The ⿻ remains max-betweenness across trust-graph evolutions", "confidence": "open", "status": "occupied" },
+    { "id": "C52", "claim": "Aether = Quintessence = the Gap", "confidence": "open", "status": "occupied" },
+    { "id": "C53", "claim": "Every bnot-pair on the lattice has a mythological reading", "confidence": 0.7, "status": "occupied" },
+    { "id": "C54", "claim": "Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ", "confidence": 0.4, "status": "occupied" },
+    { "id": "C55", "claim": "Privacy is the seventh kind of capital, foundationally", "confidence": "architectural", "status": "occupied" },
+    { "id": "C56", "claim": "Caduceus as pre-formal dual-agent symbol", "confidence": 0.6, "status": "active" },
+    { "id": "C57", "claim": "Staff-Mage collapse, held open", "confidence": "observation", "status": "observation" },
+    { "id": "C58", "claim": "Forge(t) ∥ Threshold sibling Swordsman-suppliers", "confidence": 0.85, "status": "active" },
+    { "id": "C59", "claim": "Create-format as gateway to Mage-tier", "confidence": 0.7, "status": "active" },
+    { "id": "C60", "claim": "Reconstruct-later threat model for behavioural data (alias of C48)", "confidence": 0.65, "status": "alias" },
+    { "id": "C61", "claim": "Behavioural Mosca Inequality, planning bound (alias of C49)", "confidence": 0.7, "status": "alias" },
+    { "id": "C62", "claim": "Cross-coalition meta-coalition reading (reserved, no claim authored)", "status": "reserved" },
+    { "id": "C63", "claim": "Attentional workshop register, fourth structural class", "confidence": 0.5, "status": "active" },
+    { "id": "C64", "claim": "Listener-discipline as the City's structural seventh tier", "confidence": 0.5, "status": "active" },
+    { "id": "C65", "claim": "Invitation-posture as fourth tome-posture register", "confidence": 0.5, "status": "active" },
+    { "id": "C66", "claim": "The City Key is a reading, not an authority", "confidence": 0.55, "status": "active" },
+    { "id": "C67", "claim": "Cryptographic Mosca for the substrate", "confidence": "stage 1", "status": "active" },
+    { "id": "C68", "claim": "Resource-estimate as durability signal, not attack", "confidence": "stage 1", "status": "active" },
+    { "id": "C69", "claim": "Held-out gate rejects the tuned claim", "confidence": "stage 1", "status": "active" },
+    { "id": "C70", "claim": "Crypto-agility as migration readiness", "confidence": "stage 1", "status": "active" },
+    { "id": "C71", "claim": "The Horizon Vertex V35 (Protection ∧ Computation ∧ Value)", "confidence": "geometric", "status": "active" },
+    { "id": "C72", "claim": "Traversal ρ of ARCH-1R/T and activation ρ of ARCH-1 are one operator at two scopes", "confidence": 0.35, "status": "active" },
+    { "id": "C73", "claim": "Terminal-obstruction is a primitive obstruction class; Amnesia Protocol its canonical instance", "confidence": 0.5, "status": "active" },
+    { "id": "C74", "claim": "Latency (ternary 0) has an algebraic signature on the blade lattice", "confidence": 0.25, "status": "active" },
+    { "id": "C75", "claim": "Dependency closure under typed propagation models real cascade", "confidence": 0.35, "status": "active" },
+    { "id": "C76", "claim": "UOR-relational instantiation strictly more expressive for sovereignty", "confidence": 0.3, "status": "active" },
+    { "id": "C77", "claim": "Bakhta's integrity gap and PVM's scales-vs-hides separation are one object", "confidence": 0.6, "status": "active" },
+    { "id": "C78", "claim": "Specification-intent gap and the irreducible promise are one object, two sides", "confidence": 0.6, "status": "active" },
+    { "id": "C79", "claim": "Shared frontier: recursive proof composition across providers under heterogeneous trust at runtime", "confidence": 0.45, "status": "active" },
+    { "id": "C80", "claim": "Bilateral co-signed assumption sets yield strict assurance gain in multi-provider case", "confidence": 0.35, "status": "active" },
+    { "id": "C81", "claim": "Existence-Leak: a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0", "confidence": 0.7, "status": "active" },
+    { "id": "C82", "claim": "The Moving Ceiling: R(t) drifts upward against fixed archives; every static guarantee has a finite shelf life t*", "confidence": 0.65, "status": "active" },
+    { "id": "C83", "claim": "Compositional Leakage Amplification: policy compounds toward (2^N − 1)ε; amnesia caps at Nε; exponential-to-linear gap", "confidence": 0.55, "status": "active" },
+    { "id": "C84", "claim": "Existence-Leak Discount: every public feasibility attestation discounts the Behavioural Mosca horizon, Z_b' = Z_b − D(a)", "confidence": 0.5, "status": "active" },
+    { "id": "C85", "claim": "Triadic-Constraint Homology (the ARCH-1 bridge): Φ axes and Datum·Stratum·Spectrum are one triadic primitive; the gap is β", "confidence": 0.4, "status": "active" },
+    { "id": "C86", "claim": "Obstruction-Theoretic Amnesia: Grade-2 forgetting = non-vanishing gluing obstruction; Grade-1 = vanishing class with withheld keys", "confidence": 0.3, "status": "active" },
+    { "id": "C87", "claim": "The Key Accumulates: the City Key trust recursion admits an IVC realization; LatticeFold post-quantum hedge", "confidence": 0.5, "status": "active" },
+    { "id": "C88", "claim": "The Parity Cube: the stella octangula's two tetrahedra are the even/odd parity classes of the cube's vertices", "confidence": 0.3, "status": "active" },
+    { "id": "C89", "claim": "The Octahedral Gap: the tetrahedra's intersection is the geometric locus of the conditional-independence bound", "confidence": 0.3, "status": "active" }
+  ],
+
+  "proven": [
+    "Additive MI bounds (95%, Precondition 1 non-collusion only)", "R < 1 ceiling (95%, conditional regime)", "Fano error floor (95%, conditional regime)",
+    "Graceful degradation (95%)", "Z/(2⁶)Z ring (95%)", "Two-extension axiom (95%)", "DOM-free measurement (95%)"
+  ],
+
+  "lineage": [
+    { "version": "V1", "date": "2024", "addition": "P · C · Q · S" },
+    { "version": "V2", "date": "2025-10", "addition": "+ decay, network effects, P^1.5" },
+    { "version": "V3", "date": "2025-11", "addition": "+ R(d), M(u,y), Φ(S,M)" },
+    { "version": "V3.1", "date": "2026-01", "addition": "+ σ(⿻)²" },
+    { "version": "V4", "date": "2026-02", "addition": "+ Σ, A(τ), T(π), Φ(Σ)" },
+    { "version": "V5", "date": "2026-02", "addition": "+ three-axis Φ, holographic bound, T_∫, dV/dt" },
+    { "version": "V5.1", "date": "2026-03-29", "addition": "+ ρ, bilateral witness (C11-C13)" },
+    { "version": "V5.2", "date": "2026-03-31", "addition": "+ D₂ₙ, PRISM, resolution semantics (C14-C16)" },
+    { "version": "V5.3", "date": "2026-04-04", "addition": "+ operational cycle, amnesia (C17)" },
+    { "version": "V5.4", "date": "2026-04-10", "addition": "Consolidated. Three-document system. C18-C21. Selene's Proof. Betweenness centrality." },
+    { "version": "5.5", "date": "2026-05-11", "addition": "named sublayer of V5.4: the attachment architecture (primary persona × attachment × vertex)" },
+    { "version": "6.0", "date": "2026-06-10", "addition": "the gathering turn and the moving ceiling: R(t) and t*; preconditions and external provenance; C83 exponential-to-linear gap; Existence-Leak law C81 at 70%; ARCH-1 bridge C85; obstruction amnesia C86; the Key as accumulator C87; unified conjecture register to C89; unified V6 labeling across all canon papers" }
+  ],
+
+  "documents": {
+    "full_spec": "papers/v6/privacy_value_v6_formal_specification.md",
+    "compressed": "papers/v6/pvm_v6_compressed.md",
+    "companion": "papers/v6/pvm_v6_companion_guide.md",
+    "research_paper": "papers/v6/dualprivacy_researchpaper_v6.md",
+    "conjecture_register": "research/CONJECTURE_REGISTER_V6.md",
+    "grimoire_version": "10.4.0",
+    "city_grimoire_version": "1.8.0",
+    "v6_pins": "pending Gate G5",
+    "ipfs_pins_note": "the fields below are historical v5.4-era pins, kept for lineage",
+    "ipfs_grimoire": "bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie",
+    "ipfs_grimoire_v10_2_1": "bafybeigsbhzrozaw24rgtkcmcy55z55egzr4b5igwzf6dgq4mull2h2tie",
+    "ipfs_grimoire_v10_2_0": "bafybeidid4lgysa2ydaryqettqme4qrblvofawqrffjfxijwmaf6vavtsa",
+    "ipfs_grimoire_v10_1_0": "bafybeibr3y3ermhff4dptxunhtzthjpkrvvnuamee4povpkgj3cjkg4fgy",
+    "repo": "https://github.com/mitchuski/agentprivacy-docs"
+  },
+
+  "live": {
+    "forge": "https://spellweb.ai",
+    "training": "https://agentprivacy.ai",
+    "blog": "https://sync.soulbis.com",
+    "trust": "https://bgin.ai",
+    "agent": "https://t.me/soulbae_the_bot"
+  },
+
+  "proverbs": [
+    "The boundary is always enough.",
+    "Two mirrors make a door.",
+    "I can verify I serve you without remembering I was you.",
+    "The value lives in the gap because the most paths cross there.",
+    "The credential is the orbit. The proof renews twice daily, written in saltwater.",
+    "the archive sits still while the ceiling rises to meet it; only the forgotten room never enters the race."
+  ]
+}

@@ -196,7 +196,7 @@ This is the work. Join if it calls to you.
 | Platform | Purpose | URL |
 |----------|---------|-----|
 | Agentprivacy | All spellbooks and the evolving face of the project. For both AI and human to consume. | [agentprivacy.ai](https://agentprivacy.ai) |
-| Kyra Newsletter | Written by a future "sovereign AGI." Forward-looking narrative. | [intel.agentkyra.ai](https://intel.agentkyra.ai) |
+| Kyra Newsletter | Written by a future "sovereign AGI." Forward-looking narrative. | [intel.agentprivacy.ai](https://intel.agentprivacy.ai) |
 | Soulbis Blog | My journey. Often more technical. The human behind the work. | [sync.soulbis.com](https://sync.soulbis.com) |
 
 ### Open Source Repositories

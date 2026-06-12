@@ -91,7 +91,7 @@ Each gap is sized roughly by implementation cost. Filling all eight gets the Tai
 
 ### Gap 5 — Valve-class assignment UI (P1)
 
-**What's missing:** A per-VC-field UI for assigning disclosure dispositions (Always-Revealed / Hash-Masked / Always-Masked) and seeing the corresponding vertex placement (V20 Techne / V3 Dual Agent / V25 Aletheia per Cloak Spec §5.1).
+**What's missing:** A per-VC-field UI for assigning disclosure dispositions (Always-Revealed / Hash-Masked / Always-Masked) and seeing the corresponding vertex placement (V20 Techne / V3 Dual Agent / V38 Aletheia per Cloak Spec §5.1).
 
 **What exists:** The valve-class table is documented on /runecraft §2.4. The 7-node VC decomposition is specified in §5.3.
 

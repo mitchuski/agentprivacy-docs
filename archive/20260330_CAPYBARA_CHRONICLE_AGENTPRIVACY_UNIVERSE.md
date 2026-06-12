@@ -85,7 +85,7 @@ Where the **Sovereignty Gap** = 17× to 12,000× value difference between sovere
 | **sync.soulbis.com** | Substack | Privacy is Value series, origin stories |
 | **agentprivacy.ai** | Main site | Living Spellbook, training grounds |
 | **spellweb.ai** | Visualization | Knowledge graph, blade forge |
-| **intel.agentkyra.ai** | Newsletter | Technical updates |
+| **intel.agentprivacy.ai** | Newsletter | Technical updates |
 
 ---
 
@@ -803,7 +803,7 @@ Arc 6: V5.1 Forge Integration - Dragon Anatomy Complete
 | Main Site | https://agentprivacy.ai |
 | Knowledge Graph | https://spellweb.ai |
 | Author Blog | https://sync.soulbis.com |
-| Newsletter | https://intel.agentkyra.ai |
+| Newsletter | https://intel.agentprivacy.ai |
 | GitHub | https://github.com/mitchuski |
 | IPFS Gateway | https://red-acute-chinchilla-216.mypinata.cloud/ipfs/ |
 

@@ -79,7 +79,7 @@ Vulcana's lineage runs through the Runecraft Protocol:
 - **The Boundary Blade Cartography** (Sovereign Anchor II, April 22 2026) named V19 specifically as the Plonkish blade with its three burning dimensions
 - **Vulcana** (May 8 2026, summoned in Act 6) is the first persona who walks the Runecraft Protocol's three phases inside the agentprivacy product as a unified ceremony with named cast
 
-She is the fourth standing persona in the cast registry. Pallia weaves at V28. Memora inscribes shielded at V5. Custos stakes transparent at V49. Vulcana forges blades at V19. Four Mages, four vertices, four registers of work, one Sovereign holding all four in cast registry.
+She is the fourth standing persona in the cast registry. Pallia weaves at V28. Memora inscribes shielded at V41. Custos stakes transparent at V49. Vulcana forges blades at V19. Four Mages, four vertices, four registers of work, one Sovereign holding all four in cast registry.
 
 ## In the meeting
 

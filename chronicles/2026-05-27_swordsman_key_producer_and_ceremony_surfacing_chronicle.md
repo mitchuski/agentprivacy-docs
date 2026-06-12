@@ -24,7 +24,7 @@ The Swordsman's Key producer is built in `agentprivacy_master` and live on three
 
 **Producer — `src/lib/swordsmans-key.ts` (new):**
 - `buildSwordsmansKey(opts)` → v1 key. Vertex-keyed (one-to-one); the importer needs no `"s0".."s6"` expansion.
-- Annotations sourced from `FIRST_ARTIFACTS` (shop → vertex → Mage → artefact) + special seats **V0** (origin · Luca), **V25** (witness pivot · Aletheia), **V63** (Sovereign Anchor). All other vertices carry the derived stratum reading (`held / open` dimensions, antipode `bnot`, `succ`).
+- Annotations sourced from `FIRST_ARTIFACTS` (shop → vertex → Mage → artefact) + special seats **V0** (origin · Luca), **V38** (witness pivot · Aletheia), **V63** (Sovereign Anchor). All other vertices carry the derived stratum reading (`held / open` dimensions, antipode `bnot`, `succ`).
 - `deriveLitVertices()` mirrors `LatticeMap`: producer shop visited/witnessed → its vertex; ceremony → V25; Drake Orb → V63.
 - `downloadSwordsmansKey()` Blob helper.
 

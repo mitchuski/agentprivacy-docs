@@ -169,7 +169,7 @@ The integration plan §6.3 anticipates cross-references and annotations in exist
 
 - Act II (Dual Ceremony) — note Thesis 4 (two modes of relating)
 - Act VII (Mirror That Never Completes) — note Thesis 5 (asymmetries are data)
-- Act XII (Lethe / Dark Substrate) — note Thesis 8 (selective disclosure as geometry); confirm V25/V38 bit-complement now operational on one half
+- Act XII (Lethe / Dark Substrate) — note Thesis 8 (selective disclosure as geometry); confirm V25/V25 bit-complement now operational on one half
 - Act XXVII (The Forge) — note Theses 6 and 7 (forge is multi-axial, documents first-class)
 - Act XXXI (First Delegation) — note Thesis 7 (closure as recursion instance)
 

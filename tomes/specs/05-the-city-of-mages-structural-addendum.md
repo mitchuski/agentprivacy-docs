@@ -81,10 +81,10 @@ Nine producer-shops, each kept by a citizen-Mage at her vertex:
 | Shop | Keeper | Vertex | Trade |
 |---|---|---|---|
 | Pallia's Weaving Room | Pallia 🪡 | V28 | Cloak-weaving |
-| Memora's Inscription Chamber | Memora 📜 | V5 | Shielded chronicle inscription |
+| Memora's Inscription Chamber | Memora 📜 | V41 | Shielded chronicle inscription |
 | Custos's Stake Hall | Custos 🔏 | V49 | Transparent governance staking |
 | Vulcana's Forge | Vulcana ⚒️ | V19 | Blade-forging via Runecraft |
-| Aletheia's Circuit-Binding Workshop | Aletheia 🔮 (the persona) | V25 | ZK circuit installation |
+| Aletheia's Circuit-Binding Workshop | Aletheia 🔮 (the persona) | V38 | ZK circuit installation |
 | Adamantia's Etherchanting Hall | Adamantia 💎 | V51 | Programmable-enforcement contract crafting |
 | Lampyra's Jeweller's Bench | Lampyra 💠 | V49 (shared with Custos) | Frequent-attestation gemsetting |
 | Vagari's Holon Hitchhikers | Vagari 🌳 | V31 | Holonic composition + Oasis Protocol travel |

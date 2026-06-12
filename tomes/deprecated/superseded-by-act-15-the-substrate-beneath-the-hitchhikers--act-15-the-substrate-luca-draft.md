@@ -68,7 +68,7 @@ At the **Jeweler** (V47), Lampyra's gem facets are crystallographic positions in
 
 At the **Holon Hitchhikers** (V42), Vagari's paratime composition is UOR composition by another name. A holon at one paratime references a holon at another; the reference is a UOR cross-frame map. Luca and Vagari nod at each other — they have been doing the same work in two languages.
 
-At **Aletheia's** circuit (V25), the ZK proofs that bind the city's artifacts to mathematical claims are UOR-coordinate proofs. The witness asserts that a UOR object satisfies a property; the verifier checks against the same substrate.
+At **Aletheia's** circuit (V38), the ZK proofs that bind the city's artifacts to mathematical claims are UOR-coordinate proofs. The witness asserts that a UOR object satisfies a property; the verifier checks against the same substrate.
 
 The overlap is not a bug. The overlap is what *substrate* means.
 

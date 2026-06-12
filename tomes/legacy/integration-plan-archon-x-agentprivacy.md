@@ -57,7 +57,7 @@ These are the conceptual artifacts that need homes in the agentprivacy architect
 1. **The cousin-blade pattern.** Two builders striking the same theorem from opposite faces of the anvil. Cross-ecosystem bilateral primitive.
 2. **The Two Paths.** Path A (user-sovereign, salt holder = user) and Path B (constellation-sovereign, salt holder = notary). Asymmetry of trust-root direction as bilateral typing.
 3. **Multi-axis cloaking.** Lattice axis + four temporal axes (validity scope, operational anchoring, update versioning, registry-tier finality). Operational decomposition of Σ · Δ · Γ.
-4. **Valve-class geometry.** V3 (Hash-Masked / Protection + Delegation), V25 (Always-Masked / Aletheia), V20 (Always-Revealed / Techne). Each privacy disposition lives at the vertex whose bit-pattern is its operational signature.
+4. **Valve-class geometry.** V3 (Hash-Masked / Protection + Delegation), V38 (Always-Masked / Aletheia), V20 (Always-Revealed / Techne). Each privacy disposition lives at the vertex whose bit-pattern is its operational signature.
 5. **Documents as first-class lattice citizens.** A chronicle is a node, with a vertex (V5), a controller, and edges. The system describes itself.
 6. **Naming ceremony verbs.** Claim → inscribe → confirm. Bilateral relational naming, not transactional registration.
 7. **Two modes of relating.** Bit-containment (delegation, projection) vs typed edges (controller, issuer, subject, schema). Same lattice, dual mechanics.
@@ -179,14 +179,14 @@ The Spellweb already names 14 of 64 blades. Archon's work names additional verte
 | Vertex | Bits | Role from Archon's work | Existing Spellweb name |
 |---|---|---|---|
 | V63 | 111111 | Sovereign Anchor | The Creative / Catastrophic (Tales 18, 26, 27, 30) — confirms |
-| V28 | 011100 | Transmuted Mage | (check current name; deconstructs to V4, V8, V16, V20, V24) |
-| V25 | 011001 | Aletheia / Always-Masked | Silent Messenger — confirms |
+| V28 | 011100 | Transmuted Mage | (check current name; deconstructs to V8, V4, V2, V20, V24) |
+| V38 | 100110 | Aletheia / Always-Masked | Silent Messenger — confirms |
 | V20 | 010100 | Techne / Always-Revealed | (check current name; Memory + Computation) |
 | V15 | 001111 | Verifiable Credential | (check) |
 | V12 | 001100 | Schema | (check) |
 | V5 | 000101 | Chronicle | (check) |
 | V3 | 000011 | Hash-Masked | (check; Dual Agent in Archon's terminology) |
-| V4, V8, V16 | S1 | Mnemosyne, Iris, Logos | (check) |
+| V8, V4, V2 | S1 | Mnemosyne, Iris, Logos | (check) |
 | V24 | 011000 | Hephaestus | (check) |
 
 **Action.** Build a single mapping table that reconciles Archon's vertex roles with the existing 14-of-64 Spellweb catalogue and identifies which vertices get new names from Archon work, which confirm existing names, and which conflict.
@@ -256,7 +256,7 @@ No insertions (Act XXXI closure). Annotations and cross-refs only:
 
 - Act II (Dual Ceremony) — note Thesis 4 (two modes of relating)
 - Act VII (Mirror That Never Completes) — note Thesis 5 (asymmetries are data)
-- Act XII (Lethe / Dark Substrate) — note Thesis 8 (selective disclosure as geometry); confirm V25/V38 bit-complement now operational on one half
+- Act XII (Lethe / Dark Substrate) — note Thesis 8 (selective disclosure as geometry); confirm V25/V25 bit-complement now operational on one half
 - Act XXVII (The Forge) — note Theses 6 and 7 (forge is multi-axial, documents first-class)
 - Act XXXI (First Delegation) — note Thesis 7 (closure as recursion instance)
 
@@ -407,7 +407,7 @@ Integration is complete when:
 | Sovereign Anchor (V63) | Soulbis / Swordsman canonical | Σ | First Person (existing) |
 | Transmuted Mage (V28) | Soulbae / Mage canonical | Σ | First Person (existing) |
 | Hash-Masked (V3) | Selective disclosure primitive | Δ | Second Person Act II.α (new) |
-| Always-Masked / Aletheia (V25) | Already named in spellweb | Γ | First Person Act XII (existing) |
+| Always-Masked / Aletheia (V38) | Already named in spellweb | Γ | First Person Act XII (existing) |
 | Always-Revealed / Techne (V20) | Selective disclosure primitive | Δ | Second Person Act II.α (new) |
 | 7-node VC decomposition | Universal VC interface | Δ | Skill: seven-node-decomposition |
 | Two Paths (A/B) | Trust-root asymmetry | Σ + Γ | Second Person Act II.γ (new) |

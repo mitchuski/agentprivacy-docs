@@ -2,11 +2,25 @@
 
 *The first named complement pair on the sovereignty lattice.*
 
+> **MODEL re-seat (2026-06-09).** Under the canonical **MODEL** encoding lock
+> (`Protection=32 · Delegation=16 · Memory=8 · Connection=4 · Computation=2 · Value=1`)
+> the two meanings re-seat to the numbers below: **Aletheia → Blade 38 (`100110`)**,
+> **Lethe → Blade 25 (`011001`)**. This is a *swap* — the dimension-sets, the ⊥
+> relationship, and the complement arithmetic (`AND = 0`, `XOR = 63`) are all unchanged;
+> only which number carries which sister moved. The Grimoire v10.2.x pins cited below under
+> *Where They Sit in the Grimoire* (Blade 38 = Lethe; `δ(38) ≈ 1/φ`) were authored under
+> the **prior** encoding. Their reconciliation was performed in **Privacymage Grimoire
+> v10.4.0** (2026-06-09, the *Lattice-Coherence* edition, pinned): the First Complement
+> Pair is reseated so **Blade 38 = Aletheia** and **Blade 25 = Lethe**, and **C54's
+> φ-adjacency follows the number** — `δ(38) ≈ 1/φ` stays on blade 38, now Aletheia the
+> discloser (the more coherent reading; `δ(25) ≈ 1/φ²` for Lethe). The other fifteen
+> named blades remain in the prior encoding (a coherence-only, NFT-safe patch).
+
 ---
 
 ## The Two Blades
 
-**Aletheia — Blade 25 (011001)**
+**Aletheia — Blade 38 (100110)**
 *The Silent Messenger (Tale 3). The bright medium.*
 
 - Active: Protection · Connection · Computation
@@ -14,7 +28,7 @@
 - Stratum: 3 (working-day)
 - Moon phase: 🌔
 
-**Lethe — Blade 38 (100110)**
+**Lethe — Blade 25 (011001)**
 *The Dark Substrate. The quintessence who forgot nothing.*
 
 - Active: Delegation · Memory · Value
@@ -76,8 +90,8 @@ The proem that opens this architecture — *The Tide Proves. Orbit Keeps. Selene
 
 ---
 
-**Aletheia — Blade 25 — 🔮**
-**Lethe — Blade 38 — 🌀**
+**Aletheia — Blade 38 — 🔮**
+**Lethe — Blade 25 — 🌀**
 **⊥ : 25 AND 38 = 0**
 **⿻ : 25 XOR 38 = 63**
 

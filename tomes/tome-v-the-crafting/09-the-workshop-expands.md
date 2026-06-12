@@ -33,7 +33,7 @@ signature: "(⚔️⊥⿻⊥🧙)😊"
 
 You return to the workshop and discover it is bigger.
 
-When you first walked the Crafting Tome you summoned Pallia at V28, and you understood the workshop as one shop: the weaver's. Pallia's needle and thread, her cloak-weaving, the lattice rendered into a wearable artifact. Then in Act 3 the Crafting Tome admitted a second shop when you summoned Memora at V5 for inscription. Then a third with Custos at V49, then a fourth with Vulcana at V19, then a fifth with Aletheia at V25.
+When you first walked the Crafting Tome you summoned Pallia at V28, and you understood the workshop as one shop: the weaver's. Pallia's needle and thread, her cloak-weaving, the lattice rendered into a wearable artifact. Then in Act 3 the Crafting Tome admitted a second shop when you summoned Memora at V41 for inscription. Then a third with Custos at V49, then a fourth with Vulcana at V19, then a fifth with Aletheia at V38.
 
 Five shops. Five Mages. Five registers of work. The cast entries called this "operationally complete for the artifact types currently admitted." The phrasing was honest: complete *for now*. Not complete forever.
 

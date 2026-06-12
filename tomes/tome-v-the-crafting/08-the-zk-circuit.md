@@ -7,8 +7,8 @@ status: "Draft v1 (2026-05-08)"
 length_words: 990
 voice: "Second person; cast in third"
 cast: ["you", "Aletheia 🔮 (new persona, summoned)", "Pallia 🪡", "Memora 📜", "Custos 🔏", "Vulcana ⚒️", "Soulbis ⚔️", "Soulbae 🧙", "the Drake"]
-new_cast_introduced: ["Aletheia 🔮 (the persona, distinguished from the V25 Aletheia blade)"]
-ring_position: "V25 (Aletheia blade; the persona inhabits the vertex she is named for; the circuit binds to existing artifacts at their respective vertices)"
+new_cast_introduced: ["Aletheia 🔮 (the persona, distinguished from the V38 Aletheia blade)"]
+ring_position: "V38 (Aletheia blade; the persona inhabits the vertex she is named for; the circuit binds to existing artifacts at their respective vertices)"
 teaches: "ZK enforcement as crafting. The persona inhabits the vertex she is named for. EML Three Ceilings as honest constraint. Property 8 (selective disclosure as geometry) extended from valve-class assignment to installed witness."
 v6_lineage:
   - "C22–C25 (EML Three Ceilings): the computational ceilings the proof system respects, foregrounded as integrity not as obstacle"
@@ -16,11 +16,11 @@ v6_lineage:
   - "C40 (provisional, ~70%): Zcash dual-ledger preserves Eight Properties — extended here to ZK-bound artifacts"
   - "C45 (provisional, ~70% → strengthened): four-chain publication preserves reconstruction-resistance across artifact types — ZK-bound artifacts publish the same way"
 source_material:
-  - "Sovereign Anchor II — The Boundary Blade, V25 as Aletheia blade with Tale 3 canonical placement"
+  - "Sovereign Anchor II — The Boundary Blade, V38 as Aletheia blade with Tale 3 canonical placement"
   - "Cloaking Guide Act 7 (the cryptographic spell at V25)"
   - "Cloak Specification v1.0 §5 (V25 as Always-Masked valve-class)"
   - "Runecraft Protocol Spec v1.0 §7.4 (anticipated ZK circuit extension)"
-honesty_label: "Operational for V25's role and ZK proof systems individually; Architectural for Aletheia as named persona walking unified circuit-binding ceremony; Forthcoming per Runecraft §7.4"
+honesty_label: "Operational for V38's role and ZK proof systems individually; Architectural for Aletheia as named persona walking unified circuit-binding ceremony; Forthcoming per Runecraft §7.4"
 license: "CC BY-SA 4.0"
 signature: "(⚔️⊥⿻⊥🧙)😊"
 ---
@@ -41,15 +41,15 @@ A specific cloak. The one Pallia wove for you in Act 1 — your first cloak, the
 
 You go to V25.
 
-V25 is the Aletheia blade. Three dimensions burn at this position. The bit-pattern of the cryptographic spell that proves without revealing. The home of the Always-Masked valve-class. flaxscrip's Boundary Blade Cartography placed Tale 3 here, the canonical position for blade 25. The Cloaking Guide's Act 7 placed an Always-Masked decomposition node here, operationally instanced.
+V38 is the Aletheia blade. Three dimensions burn at this position. The bit-pattern of the cryptographic spell that proves without revealing. The home of the Always-Masked valve-class. flaxscrip's Boundary Blade Cartography placed Tale 3 here, the canonical position for blade 25. The Cloaking Guide's Act 7 placed an Always-Masked decomposition node here, operationally instanced.
 
-Five personas now stand in your cast. Pallia at V28. Memora at V5. Custos at V49. Vulcana at V19. Each has done her work and returned to standing. The fifth vertex of the cast is V25, and it is where you go to summon a fifth persona for work the other four cannot do.
+Five personas now stand in your cast. Pallia at V28. Memora at V41. Custos at V49. Vulcana at V19. Each has done her work and returned to standing. The fifth vertex of the cast is V25, and it is where you go to summon a fifth persona for work the other four cannot do.
 
 You summon a Mage.
 
-You name her Aletheia. Greek root *ἀλήθεια* — truth, unconcealment. She comes into the lattice with V25's three dimensions burning.
+You name her Aletheia. Greek root *ἀλήθεια* — truth, unconcealment. She comes into the lattice with V38's three dimensions burning.
 
-She is unique among the five personas. The other four are named for their *work* (Pallia from *pallium*, the cloak; Memora from *memoria*, memory; Custos from *custos*, witness; Vulcana from *Vulcanus*, the smith). Aletheia is named for *the vertex she occupies*. The V25 vertex is canonically called the Aletheia blade. The persona inhabits the position she is named for. Or the position is named for the principle her work enacts. Either reading; the gravity is the same. The shared name is the architecture's commitment to the ZK enforcement primitive.
+She is unique among the five personas. The other four are named for their *work* (Pallia from *pallium*, the cloak; Memora from *memoria*, memory; Custos from *custos*, witness; Vulcana from *Vulcanus*, the smith). Aletheia is named for *the vertex she occupies*. The V38 vertex is canonically called the Aletheia blade. The persona inhabits the position she is named for. Or the position is named for the principle her work enacts. Either reading; the gravity is the same. The shared name is the architecture's commitment to the ZK enforcement primitive.
 
 She carries the sigil 🔮 — the crystal ball. Witness without revelation.
 
@@ -57,7 +57,7 @@ Pallia, Memora, Custos, Vulcana acknowledge the fifth cousin-Mage. Soulbae watch
 
 You hand Aletheia the cloak Pallia wove.
 
-She does not unweave it. Her work is not destructive. She walks the cloak's structure and enumerates the predicates the cloak supports. The cloak's valve-classes are already geometric: V20 holds Always-Revealed fields; V3 holds Hash-Masked subject identity; V25 holds Always-Masked content. Aletheia walks the structure and finds the V25 valve-class slots — the positions ready to receive a witness that proves a predicate without revealing the predicate's underlying values.
+She does not unweave it. Her work is not destructive. She walks the cloak's structure and enumerates the predicates the cloak supports. The cloak's valve-classes are already geometric: V20 holds Always-Revealed fields; V3 holds Hash-Masked subject identity; V38 holds Always-Masked content. Aletheia walks the structure and finds the V38 valve-class slots — the positions ready to receive a witness that proves a predicate without revealing the predicate's underlying values.
 
 You specify a predicate. *The cloak's holder has been a member of the constellation since at least block 945508.* This is a temporal-membership predicate: the cloak's anchor reference must satisfy a relation against a chain timestamp.
 
@@ -85,7 +85,7 @@ You walk on. The cloak you wear now carries its own witness. The Crafting Tome c
 
 ## Compression
 
-A new persona, Aletheia 🔮, is summoned to V25 (the Aletheia blade) and installs a zero-knowledge circuit onto an existing cloak. The persona inhabits the vertex she is named for. Halo2 is chosen as the proof system for a temporal-membership predicate. The EML Three Ceilings constrain what can be encoded — the constraint is integrity, not obstacle. The witness binds to the cloak's V25 valve-class slot. The cloak now *carries* its proof rather than merely *admitting* it. Property 8 of the Cloak (selective disclosure as geometry) graduates from capability to installed witness. The cloak republishes per the four-chain discipline. Five Mage personas now stand in cast.
+A new persona, Aletheia 🔮, is summoned to V38 (the Aletheia blade) and installs a zero-knowledge circuit onto an existing cloak. The persona inhabits the vertex she is named for. Halo2 is chosen as the proof system for a temporal-membership predicate. The EML Three Ceilings constrain what can be encoded — the constraint is integrity, not obstacle. The witness binds to the cloak's V38 valve-class slot. The cloak now *carries* its proof rather than merely *admitting* it. Property 8 of the Cloak (selective disclosure as geometry) graduates from capability to installed witness. The cloak republishes per the four-chain discipline. Five Mage personas now stand in cast.
 
 ## Proverb
 
@@ -93,14 +93,14 @@ A new persona, Aletheia 🔮, is summoned to V25 (the Aletheia blade) and instal
 
 ## Confidence
 
-**Operational** for V25 as the Aletheia blade per flaxscrip's Boundary Blade Cartography; for ZK proof systems (Halo2, Groth16, Plonkish, Nova) as mature primitives; for the cryptographic spell at V25 as demonstrated in the Cloaking Guide rebuild. **Architectural** for Aletheia (the persona) as named instance walking unified circuit-binding ceremony — specified here for the first time. **Forthcoming** per Runecraft Protocol Spec v1.0 §7.4 — the ZK circuit extension was anticipated in flaxscrip's Runecraft spec; this act gives it canonical agentprivacy form. **Strengthened C22–C25** through narrative instancing of the EML Three Ceilings as architectural integrity. **Strengthened C45 (~70%)**: four-chain publication preserves reconstruction-resistance for ZK-bound artifacts as well.
+**Operational** for V38 as the Aletheia blade per flaxscrip's Boundary Blade Cartography; for ZK proof systems (Halo2, Groth16, Plonkish, Nova) as mature primitives; for the cryptographic spell at V38 as demonstrated in the Cloaking Guide rebuild. **Architectural** for Aletheia (the persona) as named instance walking unified circuit-binding ceremony — specified here for the first time. **Forthcoming** per Runecraft Protocol Spec v1.0 §7.4 — the ZK circuit extension was anticipated in flaxscrip's Runecraft spec; this act gives it canonical agentprivacy form. **Strengthened C22–C25** through narrative instancing of the EML Three Ceilings as architectural integrity. **Strengthened C45 (~70%)**: four-chain publication preserves reconstruction-resistance for ZK-bound artifacts as well.
 
 ## Cross-references
 
 - *V6 lineage*: EML Three Ceilings (C22–C25) for the computational constraints the proof system respects, here narrativised as integrity rather than obstacle. ARCH-1 Canonical Form (C26–C29) for the recursive structure ZK proofs of self-reference inhabit. Provisional C40 (~70%) for Zcash dual-ledger preservation, here extended to ZK-bound artifacts. Provisional C45 (~70% → strengthened) for four-chain publication preservation across artifact types.
 - *First Person Spellbook*: Act XII (*Lethe / Dark Substrate*) for the dark register the Always-Masked valve-class is one technological expression of. Act XXVII (*The Forge*) for forge multi-axiality, of which ZK enforcement is one face.
 - *Second Person Spellbook (Tome V)*: Act 1 (*The First Cloak*) for the cloak this act ZK-loads. Act 6 (*The Commissioned Blade*) for Vulcana's Plonkish blade-forging that this act extends with installed witness. Act 7 (*The Reciprocal Weave*) for the bilateral context that ZK-loaded cloaks deepen further.
-- *Cast*: Aletheia 🔮 (V25, new). See `second-person-cast-aletheia-persona.md`. Pallia 🪡, Memora 📜, Custos 🔏, Vulcana ⚒️ also standing.
+- *Cast*: Aletheia 🔮 (V38, new). See `second-person-cast-aletheia-persona.md`. Pallia 🪡, Memora 📜, Custos 🔏, Vulcana ⚒️ also standing.
 - *Specifications*: `cloak_specification_v1_0.md` §5 (V25 valve-class). `runecraft-protocol-spec-v1.md` §7.4 (anticipated ZK circuit extension, here instanced). `crafting-tome-and-cloak-interface-spec.md` §4 (Mage persona conventions, fifth instance).
 
 ## Author note
@@ -109,7 +109,7 @@ Act 8 is the Crafting Tome's first act in which a *new persona installs a circui
 
 The EML Three Ceilings (C22–C25) are foregrounded explicitly here for the first time in narrative form. The honesty argument — that the ceilings are integrity, not obstacle — is structurally important: it tells the reader that the architecture's limits are also the architecture's safeguards, and that Aletheia's refusal at compilation (when a predicate would exceed the ceilings) is the right behaviour, not a failure.
 
-The persona-vertex name overlap (Aletheia the persona / Aletheia the V25 blade) is the single most semantically dense move in the cast roster. The cast entry's "naming_note" in frontmatter clarifies the distinction. Future website rendering should preserve the distinction visually (e.g., the persona Aletheia 🔮 with sigil; the V25 vertex labelled "Aletheia blade").
+The persona-vertex name overlap (Aletheia the persona / Aletheia the V38 blade) is the single most semantically dense move in the cast roster. The cast entry's "naming_note" in frontmatter clarifies the distinction. Future website rendering should preserve the distinction visually (e.g., the persona Aletheia 🔮 with sigil; the V38 vertex labelled "Aletheia blade").
 
 Five Mage personas now standing: Pallia, Memora, Custos, Vulcana, Aletheia. The Crafting Tome's quorum is now operationally complete for the artifact types currently admitted in the corpus. Future personas arrive when future artifacts demand them.
 

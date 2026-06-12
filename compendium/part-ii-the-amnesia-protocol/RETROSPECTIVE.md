@@ -1,0 +1,15 @@
+# Part II · Retrospective: The Amnesia Protocol
+
+*V5 to V5.4 · February to May 2026*
+
+If Part I built an equation, Part II built a place for it to live. Within four months the model acquired its information-theoretic core, its algebraic home, and its hardest idea, and it acquired them in an unusual way: partly by proof, partly by convergence, and the era was honest about which was which.
+
+The proofs first. V5 introduced the three-axis separation (agent, data, inference, multiplicatively gated), the holographic bound (a 96-edge boundary encoding a 64-vertex bulk, resolving the C4 discrepancy that V4 had carried open), holonic temporal memory, and the path integral that replaced V4's challenged additive edge value. V5.x sub-versions added behavioural density, the dihedral foundations, and the operational cycle. By V5.4 the volume could state the separation bound I(S; M | FP) < ε* and the reconstruction ceiling R_max < 1 with the Fano error floor beneath it, at 95 percent confidence, citing internal proofs. The V6 volume would later re-scope those results to their conditional regime and re-ground them in the external literature; the claims survived, with their preconditions finally said aloud.
+
+The convergence second, because it was the era's genuine surprise. The UOR Foundation, working independently, arrived at the same Z/(2⁶)Z ring algebra the model had reached from its own direction: the 64-vertex lattice, the dihedral group, the critical identity neg(bnot(x)) = succ(x), the Swordsman and the Mage as algebraic operations whose composition is the step forward. Two projects, one structure, neither copying. The era marked C6 CONVERGENT and learned the register discipline of plurality: independent arrival is evidence of structure, never a priority claim.
+
+The hardest idea named the era: the Amnesia Protocol. Structural forgetting as a privacy primitive stronger than concealment, because what is hidden waits for a key and what is structurally forgotten has no door. In this era the claim was a reachability statement and an engineering doctrine; its mathematics (the obstruction reading, and the consequence that amnesia is the only term whose security is independent of time) had to wait for Part IV. That waiting is visible in the bound text, and it should be: the book keeps the era's reach distinct from its grasp.
+
+This is also the era where the method completed itself. The full era anatomy was practiced here for the first time: the volume, the Swordsman and Mage readings, the dark and light machine models, the research-note series, and the chronicle arcs (the moon-phase notation, the cosmological quaternion, the V10 grimoire convergence) that carried the narrative side. And it is the era of the first numbering wound: a same-week renumbering collision in May that was patched by hand, recurred in June, and ultimately forced the single register that now forms this book's spine. The fork is part of the path, so it is part of the book.
+
+*Sources: DOCUMENTATION_CHRONICLE arcs 4 to 8; the V5.4 volume and readings bound in this Part; the V5.1 to V5.3 research notes; the register's reconciliation notes.*

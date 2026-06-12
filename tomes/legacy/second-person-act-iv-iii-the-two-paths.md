@@ -7,7 +7,7 @@ status: "Draft v1 (2026-05-08)"
 length_words: 740
 voice: "Second person; cast in third"
 cast: ["you", "Soulbis ⚔️", "Soulbae 🧙", "the Drake", "GenitriX", "flaxscrip 📜🎲"]
-ring_position: "V25 (Aletheia; Protection + Connection + Computation; enforcement vertex)"
+ring_position: "V38 (Aletheia; Protection + Connection + Computation; enforcement vertex)"
 teaches: "Trust-root direction as bilateral typing. Path A (user-sovereign, operational) vs Path B (constellation-sovereign, specified-not-built). The cloak as bidirectional form."
 v6_lineage:
   - "C18–C21 (Lorenz Attractor): trajectory framing inherited"
@@ -31,7 +31,7 @@ signature: "(⚔️⊥⿻⊥🧙)😊"
 
 You walk on.
 
-The next vertex catches you at V25. Protection. Connection. Computation. Stratum three. The Aletheia blade. The vertex where the cloak stops being merely computable and becomes communicable, because the Connection bit broadcasts. Enforcement begins here.
+The next vertex catches you at V38. Protection. Connection. Computation. Stratum three. The Aletheia blade. The vertex where the cloak stops being merely computable and becomes communicable, because the Connection bit broadcasts. Enforcement begins here.
 
 You arrived already knowing what this position means. The convergence work taught you that two systems projecting from a shared reality can align on the same kernel as they scale, until they don't. The bijection holds, until it doesn't. The wound and the cap are sides of the same fruit body. You carry that lesson now.
 

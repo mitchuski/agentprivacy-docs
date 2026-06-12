@@ -94,6 +94,8 @@ This is the Mosca argument for the 2–3 year migration window I have been namin
 
 **Status.** C49 is a planning conjecture. The parameter values are harder to estimate than Mosca's original, because Z_b is not bounded by quantum resource estimates but by ongoing capability growth curves in correlation and inference. The inequality binds under reasonable priors. The point is the inequality, not the numerical values.
 
+> **Worked decrement (2026-06-02).** Schrottenloher's reproducible secp256k1 Shor circuit (arXiv:2606.02235) is the first published, runnable downward revision of the Z_b trajectory for the curve securing on-chain identity and credential rails — a measured rise in the effective decay rate λ, not a new attack class. See "V6 Research Note: The Existence-Leak and the Falling Z" (`research/schrottenloher-ecdlp-v6-note.md`), which also proposes candidate C40 (Existence-Leak).
+
 ---
 
 ## C50: Two Frameworks, One Pattern
