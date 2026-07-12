@@ -1,0 +1,8 @@
+# --- session scratch (analysis, not canon) ---
+prov2.txt
+provcount.txt
+
+# --- generated reader/tracker surfaces (GR-6: regenerate from source, never versioned) ---
+papers/Programme/pipeline/reader/
+papers/Programme/pipeline/tracker/
+papers/Programme/blog/reader/
