@@ -76,7 +76,7 @@ canon: series-titled \emph{Privacy is Value · V6: The Whitepaper
 (Swordsman and Mage)}, a volume of the \emph{Privacy is Value} book.
 Model authority:
 \texttt{papers/v6/privacy\_value\_v6\_formal\_specification.md} (PVM
-V6.0) and \texttt{research/CONJECTURE\_REGISTER\_V6.md} (head C89); the
+V6.0) and \texttt{research/CONJECTURE\_REGISTER\_V6.md} (head C96); the
 full catalogue is \texttt{reference/PAPERS\_INDEX.md}. Where this body
 cites the static reconstruction ceiling, read it as Proven-conditional
 with the V6 time-dependence R(t) per spec §5 and §11; conjecture
@@ -180,15 +180,19 @@ Swordsman (protection) and Mage (delegation)
 \textbf{First Person}: You, the human whose sovereignty is protected
 (capitalized throughout to emphasize agency)
 
-\textbf{Reconstruction Ceiling (R \textless{} 1)}: Mathematical
-guarantee that adversaries cannot fully reconstruct your private state
-from observations
+\textbf{Reconstruction Ceiling (R(t) \textless{} 1)}: Proven-conditional
+bound: while the two agents do not collude (the non-collusion
+precondition) and the stated adversary class's combined channel
+capacities fall short of your private state's entropy (C\_S + C\_M
+\textless{} H(X)), that adversary cannot fully reconstruct your private
+state from observations. The ceiling is time-indexed, R(t), and moves as
+adversary capability grows (PVM V6 §5, §11)
 
 \textbf{Signal}: Ongoing proverb posting (0.01 ZEC each), continuous
 demonstration of comprehension
 
-\textbf{Genesis Ceremony}: One-time agent pair origination, 1 ZEC
-(\$500), different from signals
+\textbf{Genesis Ceremony}: One-time agent pair origination, 1 ZEC,
+different from signals
 
 \textbf{Spellbook}: Source material for learning (31 Acts + bookends =
 32 sections, plus 30 tales in Zero Spellbook)
@@ -226,8 +230,9 @@ This document uses \textbf{mathematical/architectural} terminology:
 
 \begin{itemize}
 \item
-  Technical: S ⊥⊥ M \textbar{} X, reconstruction ceiling R \textless{}
-  1, information-theoretic bounds
+  Technical: S ⊥⊥ M \textbar{} X, the time-indexed reconstruction
+  ceiling R(t) \textless{} 1 (conditional on non-collusion and a stated
+  adversary class), information-theoretic bounds
 \item
   Architecture: Dual agents, separation primitives, conditional
   independence
@@ -401,7 +406,8 @@ quality:
 \begin{itemize}
 \tightlist
 \item
-  High compression (70:1+) = strong positive assessment
+  High compression (at the spellbook corpus's 70:1 compression ratio or
+  better) = strong positive assessment
 \item
   Low/no compression = weak/failed assessment
 \end{itemize}
@@ -499,8 +505,8 @@ promises grouped for reusability and coordinated assessment.
   Coordinated actions = bundle maintained
 \end{itemize}
 
-The 70:1 coordination efficiency comes from promise bundle reuse. Once a
-VRC is established, the bundle doesn't need re-verification for each
+This coordination efficiency comes from promise bundle reuse. Once a VRC
+is established, the bundle doesn't need re-verification for each
 interaction---accumulated trust carries forward.
 
 \emph{VRC Architecture:} VRCs have both a \textbf{cryptographic layer}
@@ -607,7 +613,7 @@ When your personal AI operates as dual agents using RPP, it can:
 \item
   Form VRCs with other agents (trust without surveillance)
 \item
-  Coordinate through spells (70:1 efficiency gains)
+  Coordinate through spells (compression-scale efficiency gains)
 \item
   Maintain your sovereignty through separation (irreducible privacy gap)
 \end{itemize}
@@ -742,7 +748,7 @@ agent delegation:
   \textbf{Human trust becomes agent capability:} Person A's Mage can now
   coordinate with Person B's Mage using the affirmed spell
 \item
-  \textbf{70:1 compression efficiency:} Instead of exchanging 500 tokens
+  \textbf{Compression efficiency:} Instead of exchanging 500 tokens
   explaining context, agents transmit ⚔️ ⊥ 🔮 \textbar{} 🗝️ and expand
   on demand
 \item
@@ -1010,8 +1016,9 @@ infrastructure is \textbf{2-3 years}.
 
 This whitepaper describes that alternative: dual-agent architecture
 where separation is enforced through structure rather than policy, where
-privacy emerges from mathematical impossibility rather than corporate
-promises.
+privacy emerges from a mathematical bound --- holding for as long as the
+capacity-deficit condition C\_S + C\_M \textless{} H(X) holds against
+the stated adversary class --- rather than from corporate promises.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1054,12 +1061,12 @@ Privacy-first architectures may generate significantly more value than
 surveillance alternatives through multiplicative trust effects. The
 Privacy Value Model (see Privacy is Value v5) formalises this through a
 \textbf{holographic field equation} where each term is a gating
-condition --- any zero collapses total value. The 31,000× gap between
-sovereign and surveillance architectures is now understood as
-\textbf{boundary expressiveness}: sovereignty architectures have
-expressive boundaries; surveillance has constrained boundaries. The
-96-edge torus surface encodes the 64-vertex bulk --- the holographic
-bound.
+condition --- any zero collapses total value. The 31,000×
+accessible-volume value gap under full behavioural capture is now
+understood as \textbf{boundary expressiveness}: sovereignty
+architectures have expressive boundaries; surveillance has constrained
+boundaries. The 96-edge torus surface encodes the 64-vertex bulk --- the
+holographic bound.
 
 \textbf{The V5 equation:}
 
@@ -1568,8 +1575,8 @@ multiple separated systems simultaneously.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{The Reconstruction Ceiling: Information-Theoretic
-Privacy}\label{the-reconstruction-ceiling-information-theoretic-privacy}
+\section{The Reconstruction Ceiling R(t): Information-Theoretic
+Privacy}\label{the-reconstruction-ceiling-rt-information-theoretic-privacy}
 
 Complete surveillance resembles a jigsaw puzzle with 100 pieces
 representing an individual.
@@ -1590,28 +1597,44 @@ adversary gets 40 total pieces.
 \textbf{Critical constraint:} Conditional independence prevents
 inference beyond these 40.
 
-\textbf{Result:} \textbf{60 pieces remain forever unreconstructable}.
+\textbf{Result:} \textbf{while the two agents do not collude and the
+stated adversary's combined channel capacity stays below the entropy of
+the whole (C\_S + C\_M \textless{} H(X)), the remaining 60 pieces stay
+beyond that adversary's reach} for as long as that capacity deficit
+holds.
 
-Not hidden. Not encrypted. \textbf{Nonexistent in the adversary's
+Not hidden. Not encrypted. \textbf{Nonexistent in that adversary's
 information space.}
 
-\textbf{Promise Theory:} The 60 unreconstructable pieces are the
-\emph{irreducible promise}---the property that emerges from separation
-but cannot be attributed to either agent.
+\textbf{Promise Theory:} Those 60 pieces are the \emph{irreducible
+promise}---the property that emerges from separation but cannot be
+attributed to either agent.
 
 This is information-theoretic privacy. It doesn't depend on
 computational hardness, cryptographic assumptions, or implementation
-perfection. It depends on mathematical impossibility. The ceiling
+perfection. Under its stated preconditions it depends on counting, not
+on adversary effort. The ceiling
 
-\textbf{Reconstruction Ceiling:}
+\textbf{Reconstruction Ceiling (time-indexed, R(t) per PVM V6 §5 and
+§11):}
 
 \begin{quote}
-\textbf{R\_max = (C\_S + C\_M) / H(X) \textless{} 1}
+\textbf{R\_max = (C\_S + C\_M) / H(X)}
 \end{quote}
 
-cannot be exceeded.
+bounds what any adversary of the stated class can recover. The
+preconditions---non-collusion between the agents, capacities evaluated
+against a stated adversary class---give the additive structure and the
+error floor P\_e ≥ 1 − R\_max. The strict bound R\_max \textless{} 1
+holds exactly when the measurable capacity-deficit condition C\_S + C\_M
+\textless{} H(X) additionally holds; the preconditions alone do not
+place R\_max below one. The capacities are time-indexed: R(t) = (C\_S(t)
++ C\_M(t)) / H(X) rises as the adversary class strengthens, and the
+guarantee stands up to the validity horizon t* at which the deficit
+condition would expire.
 
-Sovereignty lives in that permanent gap.
+Sovereignty lives in that gap, for as long as the deficit condition
+holds.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1915,8 +1938,9 @@ infrastructure for the 0xagentprivacy protocol.
 
 \subsection{Three Core Functions}\label{three-core-functions}
 
-\subsubsection{1. Efficiency Through 70:1 Compression
-Ratio}\label{efficiency-through-701-compression-ratio}
+\subsubsection{1. Efficiency Through the Spellbook Corpus's 70:1
+Compression
+Ratio}\label{efficiency-through-the-spellbook-corpuss-701-compression-ratio}
 
 \textbf{Traditional approach:} 500-token explanations per interaction.
 
@@ -2197,11 +2221,13 @@ Reputation}\label{chronicles-personal-meaning-compression-create-unforgeable-rep
   depth of comprehension
 \end{itemize}
 
-\subsection{The 70:1 Efficiency Gain}\label{the-701-efficiency-gain}
+\subsection{The Spellbook Compression Efficiency
+Gain}\label{the-spellbook-compression-efficiency-gain}
 
-With spellbook compression, agent coordination moves from full chronicle
-exchange to spell transmission with expand-on-demand. Trust signal
-becomes measurable through compression fidelity.
+With spellbook compression (the spellbook corpus's 70:1 compression
+ratio), agent coordination moves from full chronicle exchange to spell
+transmission with expand-on-demand. Trust signal becomes measurable
+through compression fidelity.
 
 \subsection{Emerging Marketplace for Custom Chronicle
 Experiences}\label{emerging-marketplace-for-custom-chronicle-experiences}
@@ -3016,12 +3042,16 @@ architecture.
 
 \subsection{The Research Paper}\label{the-research-paper}
 
-``Dual Privacy Architecture v3.5'' is a research proposal providing
-mathematical foundations developing from peer-reviewed information
-systems and cryptography literature. Rigorous separation bounds,
-reconstruction ceilings, error floors grounded in established
-information theory. Includes Claims Classification Table distinguishing
-proven results, semantic frameworks, and speculative conjectures.
+\emph{Privacy is Value · V6: The Research Paper Edition}
+(\texttt{papers/v6/dualprivacy\_researchpaper\_v6.md}, successor to the
+``Dual Privacy Architecture'' line, layered over the v4.3 proof body)
+provides mathematical foundations developing from peer-reviewed
+information systems and cryptography literature. Rigorous separation
+bounds, time-indexed reconstruction ceilings R(t) stated with their
+preconditions (non-collusion, a stated adversary class), error floors
+grounded in established information theory. Includes Claims
+Classification Table distinguishing proven results, semantic frameworks,
+and speculative conjectures.
 
 \subsection{The Privacymage Spellbook}\label{the-privacymage-spellbook}
 
@@ -3056,7 +3086,9 @@ sustainable 7th capital for first person.
 \item
   Architectural separation creates information-theoretic privacy
 \item
-  Budget constraints establish reconstruction ceilings
+  Budget constraints establish reconstruction ceilings R(t),
+  time-indexed and conditional on non-collusion and the stated adversary
+  class
 \item
   Separation enforced through architecture rather than alignment
 \item
@@ -3110,11 +3142,9 @@ Swordsman and Mage agents.
 \item
   Spellbook comprehension creates understanding (not speculation)
 \item
-  Genesis ceremony: 1 ZEC (\$500 at \$500/ZEC) creates agent pair once
-  per ecosystem
+  Genesis ceremony: 1 ZEC creates agent pair once per ecosystem
 \item
-  Ongoing signals: 0.01 ZEC (\$5) each, continuous
-  proof-of-comprehension
+  Ongoing signals: 0.01 ZEC each, continuous proof-of-comprehension
 \item
   Fee distribution: 61.8\% transparent pool, 38.2\% shielded pool
   (internal allocation per ecosystem)
@@ -3146,8 +3176,8 @@ Swordsman and Mage agents.
 \item
   Trust networks built on shared meaning create adoption incentives
 \item
-  Compression-based VRCs enable 70:1 coordination efficiency (\$10 →
-  \$0.14)
+  Compression-based VRCs reduce coordination costs in proportion to the
+  spellbook corpus's 70:1 compression ratio
 \item
   VRC formation: 100 MAGE stake, break-even at 4 coordinations
 \item
@@ -3162,12 +3192,14 @@ Swordsman and Mage agents.
 
 \begin{itemize}
 \item
-  First Persons: \$47k-\$52k/year value capture (active participants)
+  First Persons: the primary value-capture tier; returns denominated in
+  protocol units and scaling with active participation
 \item
-  Guardians: \$30k-\$120k/year validation compensation (Dragon tier)
+  Guardians: validation compensation scaled by stake tier (Dragon tier
+  highest)
 \item
-  Ecosystem operators: \$50k-\$500k/year (successful 1k-10k member
-  guilds)
+  Ecosystem operators: revenue scales with guild size (successful 1k-10k
+  member guilds)
 \item
   Protocol layer: Self-sustaining Year 2, surplus by Year 3
 \end{itemize}
@@ -3228,7 +3260,7 @@ This architecture is being developed now. This is the inflection point.
 \item
   \textbf{Project:} 0xagentprivacy
 \item
-  \textbf{Version:} 6.2
+  \textbf{Version:} 6.3
 \item
   \textbf{Date:} April 7, 2026
 \item
@@ -3243,19 +3275,24 @@ This architecture is being developed now. This is the inflection point.
   \textbf{UOR × 64-Tetrahedra × ZK Mapping:} v2.2 (companion document
   --- UOR Foundation convergence)
 \item
-  \textbf{Promise Theory Reference:} v1.4 (companion document --- V5
+  \textbf{Promise Theory Reference:} v1.5 (companion document --- V5
   integration)
 \item
-  \textbf{Research Paper:} v4.2 (companion document --- V5.2 dihedral
-  foundations, V5.4 algebraic)
+  \textbf{Research Paper:} \emph{Privacy is Value · V6: The Research
+  Paper Edition} ---
+  \texttt{papers/v6/dualprivacy\_researchpaper\_v6.md} (companion
+  document --- layered over the v4.3 proof body)
 \item
   \textbf{Five Grimoires + Acts XXIV--XXX:} 120+ inscriptions including
   Dragon Anatomy complete (companion documents)
 \item
   \textbf{VRC Promise Protocol:} v3.4 (companion document --- dual
-  territory, mana economics)
+  territory, mana economics;
+  \texttt{specs/vrc\_promise\_protocol\_v3\_3.md}, filename retained at
+  v3\_3 for link stability)
 \item
-  \textbf{Glossary:} v3.4 (canonical V5.4 terminology)
+  \textbf{Glossary:} Glossary Master v4.0 (canonical terminology; V6
+  addendum)
 \item
   \textbf{IEEE 7012 Quick Reference:} v1.0 (companion document)
 \end{itemize}
@@ -3310,6 +3347,21 @@ separation matrix formalism. Added Reflect 🪞 and Connect 🤝 to notation
 table. Expanded four forces with ASCII geometry. Updated thesis with
 topological gap framing. Aligned with Glossary v2.5, Privacy is Value
 v4, five grimoires (113 inscriptions). \\
+6.2 & 2026 (date not separately recorded) & V6-era body revision
+preceding 6.3; carried in Document Metadata until the 2026-07-02
+reconciliation. Change record not retained; row backfilled 2026-07-02
+(ledger L015). \\
+\textbf{6.3} & \textbf{April 7, 2026} & \textbf{V10.0.0 Grimoire
+alignment} (header version). Body version of the present document; row
+backfilled 2026-07-02 (ledger L015). \\
+6.3 (V6 edition) & June 10, 2026 & \textbf{V6 edition note added} under
+the unified-V6 labeling decision (Gate G3): designated \emph{Privacy is
+Value · V6: The Whitepaper (Swordsman and Mage)}; model authority PVM
+V6.0 + \texttt{research/CONJECTURE\_REGISTER\_V6.md}; static-ceiling
+citations read as Proven-conditional with R(t). Body version and date
+retained (the April 7, 2026 date is the body's; June 10, 2026 is the
+edition's). Document Metadata reconciled 6.2 → 6.3 on 2026-07-02 per
+\texttt{reference/PAPERS\_INDEX.md} (ledger L015, L016). \\
 \end{longtable}
 }
 

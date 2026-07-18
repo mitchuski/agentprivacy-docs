@@ -80,11 +80,13 @@ Z/(2⁶)Z algebraic foundation, the Amnesia Protocol) · V5.5 (named
 sublayer of V5.4: the attachment architecture) · \textbf{V6 (this
 document)} \textbf{Conjecture authority:}
 \texttt{research/CONJECTURE\_REGISTER\_V6.md} · register head C89 at
-publication · when this document and the register disagree, the register
-wins \textbf{Suite labeling (G3 decision):} all canon papers carry the
-unified V6 label: this formal specification · the compressed Swordsman
-reading · the companion Mage reading · the research paper · the
-whitepaper V6 edition. One label, one current state of the model.
+publication (2026-06-10), C93 after the Limitative Reading addendum
+(Band IX, §17.10, 2026-06-28) · when this document and the register
+disagree, the register wins \textbf{Suite labeling (G3 decision):} all
+canon papers carry the unified V6 label: this formal specification · the
+compressed Swordsman reading · the companion Mage reading · the research
+paper · the whitepaper V6 edition. One label, one current state of the
+model.
 
 \textbf{External Convergence:} UOR Foundation
 (https://github.com/UOR-Foundation)
@@ -582,8 +584,13 @@ regime)}\label{the-reconstruction-ceiling-proven-conditional-regime}
 \[R(d, \text{compression}, \rho) < 1 \quad \forall \text{ adversaries under budget constraints}\]
 
 This is not a conjecture. The ceiling follows from information-theoretic
-analysis via Fano's inequality. See §16 for the full proof status, and
-§10 to §11 for the preconditions under which it holds.
+analysis via Fano's inequality, read as a decomposition: the
+preconditions of §10.5 yield the additive capacity sum and the error
+floor, and the budget constraint is the capacity-deficit condition C\_S
++ C\_M \textless{} H(X) of §11.1, the numerical condition that places
+the ceiling strictly below one. See §16 for the full proof status, and
+§10 to §11 for the preconditions and the capacity-deficit condition
+under which it holds.
 
 \textbf{External alignment:} The First Person Network whitepaper (2026)
 provides independent framing for this ceiling as ``data dignity'': the
@@ -937,14 +944,31 @@ Yagoubi, Badu-Marfo, Al Mallah, arXiv:2602.11510) finds that multi-agent
 configurations reduce per-channel output leakage (27.2\% versus 43.2\%
 single-agent) while unmonitored inter-agent channels raise total system
 exposure to 68.9\%. §14.7 and §26 treat this in full. Here it is the
-boundary condition: \textbf{the ceiling holds in the regime the Amnesia
-Protocol is designed to enforce, and only there.}
+boundary condition: \textbf{the additive capacity sum, and with it the
+error floor P\_e ≥ 1 − R\_max, hold in the regime the Amnesia Protocol
+is designed to enforce, and only there; the strict ceiling R\_max
+\textless{} 1 requires in addition the capacity-deficit condition of
+§11.1.}
 
 \textbf{Precondition 2 (fixed adversary model).} C\_S and C\_M are
 channel capacities evaluated against a stated adversary class: its
 compute, its inference models, its correlation methods. The bound says
 nothing about a later, stronger class. This precondition is the door V6
 walks through in §5.5.
+
+\textbf{The capacity-deficit condition (not a third precondition).} The
+two preconditions are architectural: attestable properties of the
+deployment. Neither constrains the sum C\_S + C\_M relative to H(X).
+What they buy is the additive leakage structure and the error floor P\_e
+≥ 1 − R\_max; the strict bound R\_max \textless{} 1 holds exactly when,
+additionally, C\_S + C\_M \textless{} H(X). That capacity deficit is a
+numerical fact about a given system and adversary class: measurable,
+declarable, and eroded over time as stronger classes arrive (§5.5). It
+is deliberately not listed as a third precondition, because two
+conditionally independent channels of sufficient combined capacity
+satisfy both preconditions with R\_max at or above one; the deficit is
+the separate, system-specific fact a deployment measures and declares.
+§11 states the decomposition as the theorem's conditioning.
 
 \subsubsection{10.6 External Grounding
 (V6)}\label{external-grounding-v6}
@@ -977,7 +1001,8 @@ established family, and V6 cites the family rather than internal papers:
 
 This move costs nothing and buys defensibility: the claim is no longer
 ``proven in our internal paper'' but ``an instance of a family of bounds
-the field already accepts, under named preconditions.''
+the field already accepts, under named preconditions and a declared
+capacity-deficit condition.''
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -993,16 +1018,27 @@ where \(C_S\) and \(C_M\) are the information capacities of the
 Swordsman and Mage channels respectively, and \(H(X)\) is the entropy of
 the First Person's private state.
 
-\textbf{Consequence:} Perfect reconstruction of the First Person's state
-is impossible.
+The theorem decomposes. The two preconditions of §10.5 license the
+capacity sum and yield the error floor of §11.2; they do not by
+themselves place \(R_{\max}\) below one. The strict inequality is the
+\textbf{capacity-deficit condition} \(C_S + C_M < H(X)\): a measurable,
+declarable, numerical fact about a given system and adversary class, not
+a consequence of the architecture (§10.5).
+
+\textbf{Consequence:} When the two preconditions and the
+capacity-deficit condition hold together, perfect reconstruction of the
+First Person's state is impossible against the stated adversary class.
 
 \subsubsection{11.2 Error Floor (Proven, conditional
 regime)}\label{error-floor-proven-conditional-regime}
 
 \[P_e \geq 1 - R_{\max}\]
 
-The adversary is guaranteed to make errors. This follows from Fano's
-inequality.
+The adversary is guaranteed to make errors whenever the capacity-deficit
+condition of §11.1 holds. The floor itself follows from Fano's
+inequality and holds under the two preconditions of §10.5; at
+\(R_{\max} \geq 1\) it is vacuous, which is exactly why the deficit
+condition must be declared alongside the preconditions.
 
 \subsubsection{11.3 Graceful Degradation (Proven, conditional
 regime)}\label{graceful-degradation-proven-conditional-regime}
@@ -1029,10 +1065,16 @@ Status: V6 conjecture (C18). Confidence: 25\%.
 \subsubsection{11.5 Conditioning (V6)}\label{conditioning-v6}
 
 R\_max = (C\_S + C\_M)/H(X) \textless{} 1 carries the label
-\textbf{Proven, conditional regime}: proven within Preconditions 1 and 2
-of §10, an instance of the family cited there, and time-indexed per
-§5.5. The error floor P\_e ≥ 1 − R\_max (Fano converse) carries the same
-conditioning. Outside the regime, §26 governs.
+\textbf{Proven, conditional regime}, read as a decomposition: within
+Preconditions 1 and 2 of §10 the capacity sum is licensed and the error
+floor P\_e ≥ 1 − R\_max (Fano converse) is proven, an instance of the
+family cited there; the strict bound R\_max \textless{} 1 holds when,
+additionally, the capacity-deficit condition C\_S + C\_M \textless{}
+H(X) of §11.1 holds. The deficit condition, not the preconditions, is
+the time-indexed quantity per §5.5: R(t) can cross one with both
+preconditions intact, because capability growth raises the effective
+capacities, and what expires at t* is the deficit condition, not the
+architecture. Outside the regime, §26 governs.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1191,6 +1233,17 @@ Index & Dimension & Symbol & Function \\
 Each \(d_i \in \{0, 1\}\). Binarised at threshold 0.5. Hexagram mapping:
 \([d_1, d_2, d_3, d_4, d_5, d_6]\) → 64 I Ching states. Blade 63 =
 \texttt{111111} = 乾 (The Creative) = full sovereignty.
+
+\textbf{Numeric encoding (ruled 2026-06-12 · the MODEL lock).} The
+string \([d_1 d_2 d_3 d_4 d_5 d_6]\) reads most-significant-bit first:
+\(d_k\) carries weight \(2^{6-k}\), so \(d_1\) Protection is the high
+bit (32) and \(d_6\) Value the low bit (1). Worked anchors: V38 =
+\texttt{100110} = Protection+Connection+Computation (Aletheia, the
+bright medium); V25 = \texttt{011001} = Delegation+Memory+Value (Lethe,
+the dark substrate); V41 = \texttt{101001} = Protection+Memory+Value
+(Memora). This is consistent with the Aletheia/Lethe reading in §12.8
+and with every pinned grimoire seat. Any surface reading \(d_1\) at the
+low bit is in erratum to this ruling.
 
 \subsubsection{12.7 External Convergence}\label{external-convergence}
 
@@ -1846,7 +1899,10 @@ Statement
 conditional independence is additive, not multiplicative:
 \(I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)\) \\
 \textbf{Reconstruction ceiling} & \(R_{\max} = (C_S + C_M)/H(X) < 1\)
-under budget constraints \\
+under budget constraints, read per §11: the §10.5 preconditions license
+the sum and yield the error floor; the budget constraint is the
+capacity-deficit condition \(C_S + C_M < H(X)\) that places the ceiling
+below one \\
 \textbf{Error floor} & \(P_e \geq 1 - R_{\max}\) via Fano's
 inequality \\
 \textbf{Graceful degradation} & Small \(\varepsilon\) violations → small
@@ -2425,7 +2481,78 @@ document §28 \\
 \end{longtable}
 }
 
-\subsubsection{17.10 Gate G1 Dispositions (Signed
+\subsubsection{17.10 Band IX · The Limitative Reading (C90 to C93) ·
+Addendum
+2026-06-28}\label{band-ix-the-limitative-reading-c90-to-c93-addendum-2026-06-28}
+
+\emph{Post-publication addendum. This volume locked at head C89 on
+2026-06-10; the Limitative Reading was registered at Gate G6 on
+2026-06-28 (Run 8 of the autopath) and is reproduced here for
+completeness. Home note:
+\texttt{research/limitative-theorems-and-privacy-is-value.md}. These are
+framing conjectures: the V6 ceilings and the existence-leak law read as
+privacy-flavoured instances of Gödel and Tarski. Every join is
+structural framing (\textasciitilde80\%), not a theorem-to-theorem
+reduction (\textasciitilde50\%); the arithmetisation correspondence
+(Gödel numbering ↔ Z/(2⁶)Z) is intuition, not load-bearing.}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Title / claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Conf.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Register
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Home
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+C90 & The Limitative Inversion: completeness ⇒ Φ → 0 ⇒ collapse is the
+value-sign reversal of completeness ⇒ inconsistency ⇒ collapse; the
+unreconstructable remainder is load-bearing. C17 in limitative terms &
+\textasciitilde90\% as observation & observation · registered Run 8,
+2026-06-28 · no reduction claimed & core & limitative-theorems note §1,
+§4 \\
+C91 & Gödel ↔ Φ\_agent: zero-memory (Selene) is the Φ\_agent instance of
+Gödel's first theorem; a witness real yet underivable from within,
+intrinsic to a single system; destroying it is structural separation &
+\textasciitilde60\% & active · registered Run 8, 2026-06-28 & core &
+limitative-theorems note §2, §3.3 \\
+C92 & Tarski ↔ Φ\_inference: existence-leak is the Tarski-undefinability
+instance loading on Φ\_inference; feasibility-truth escapes containment
+across systems; D(X) monotone non-increasing in corroborating systems;
+absorbs the Gödelian seed (existence as positive provability); rides on
+C81, cannot exceed its base & \textasciitilde70\% & active · registered
+Run 8, 2026-06-28 & core & limitative-theorems note §3 \\
+C93 & Content-addressed liveness leak: a live content-address is an
+existence claim about its content; deduplication/GUID liveness leaks
+existence, and existence bounds the search; the address does not leak
+content, its liveness leaks existence & \textasciitilde55\% & active ·
+registered Run 8, 2026-06-28 & core & limitative-theorems note §3.5 \\
+\end{longtable}
+}
+
+\emph{Open seam (no number): does Φ\_data have a limitative twin, or
+does it fail by degree (Φ\_data = 1 − 1/\textbar providers\textbar)
+rather than undecidability? Left open at G6. Decides whether Φ\_v5
+stands on two limitative theorems plus a degree-of-freedom or on three.}
+
+\subsubsection{17.11 Gate G1 Dispositions (Signed
 2026-06-10)}\label{gate-g1-dispositions-signed-2026-06-10}
 
 \begin{enumerate}
@@ -2881,10 +3008,12 @@ required) was present from Orchard's launch in May 2022. It was findable
 for roughly four years. Anthropic released Claude Opus 4.8 on
 2026-05-28; Taylor Hornby found the flaw the next day, 2026-05-29, and
 with the model's help wrote a complete exploit generating unlimited,
-undetectable counterfeit ZEC in a regtest environment. ZEC fell roughly
-27 to 33\% in 24 hours after disclosure; the issue was fixed by the
-NU6.2 hard fork at block 3,364,600 on 2026-06-03. Reading in R(t) terms:
-the circuit's H(X) never changed; the decoder improved overnight; four
+undetectable counterfeit ZEC in a regtest environment. The market
+repriced sharply in the days around disclosure, an effect confounded by
+a concurrent, prominent institutional exit and therefore not
+attributable to the flaw alone; the issue was fixed by the NU6.2 hard
+fork at block 3,364,600 on 2026-06-03. Reading in R(t) terms: the
+circuit's H(X) never changed; the decoder improved overnight; four
 findable years collapsed into one found day.
 
 \subsubsection{25.2 Instance 2: The Schrottenloher
@@ -3196,8 +3325,6 @@ today'') & Substack essay v2 \\
 & essay v4 \\
 70:1 & the compression ratio of the spellbook corpus & README lineage \\
 74× & BRAID compression efficiency & V5 formal lineage \\
-\$47k to \$52k/year & indicative per-person annual value capture range &
-README lineage \\
 \end{longtable}
 }
 
@@ -3411,8 +3538,9 @@ V6 inherits that or inherits nothing.
   privacymage (2026). ``PVM V6 Research Note: The Dynamical
   Reconstruction Ceiling.'' April 6, 2026. \emph{agentprivacy-docs.}
 \item
-  privacymage (2026). ``Promise Theory Reference v1.4.''
-  \emph{agentprivacy-docs.}
+  privacymage (2026). ``Promise Theory Reference v1.5.'' April 20, 2026.
+  \emph{agentprivacy-docs/research.} {[}V5.4 integration + historical
+  lineage (Burgess \& Fagernes 2007, Burgess 2015){]}
 \item
   privacymage (2026). ``UOR × 64-Tetrahedra × ZK Mapping v2.2.''
   \emph{agentprivacy-docs.}
@@ -3441,6 +3569,94 @@ V6 inherits that or inherits nothing.
   privacymage (2026). ``Visual Architecture Guide v2.0.''
   \emph{agentprivacy-docs.} {[}Diagrams: three-axis separation,
   holographic visualisations{]}
+\end{itemize}
+
+\subsubsection{The V6 Research-Note Series and the Register
+(agentprivacy-docs/research/)}\label{the-v6-research-note-series-and-the-register-agentprivacy-docsresearch}
+
+The notes this specification grew from, in order of arrival, with
+provenance as stated at each home document. Conjecture numbering across
+all of them resolves through the register.
+
+\begin{itemize}
+\tightlist
+\item
+  privacymage, with Claude Fable 5 (2026). ``The Conjecture Register.''
+  Opened 2026-06-10 (V6 autopath, Run 0); Gate G1 signed 2026-06-10;
+  register head C89.
+  \emph{agentprivacy-docs/research/CONJECTURE\_REGISTER\_V6.md.}
+  {[}AUTHORITATIVE for conjecture numbering across the agentprivacy
+  suite; when prose and register disagree, the register wins and the
+  prose gets an erratum{]}
+\item
+  privacymage (2026). ``PVM V6 Horizon Note: From Territory to
+  Trajectory --- The Second Person Opens.'' April 12, 2026 (post-V5.4
+  lock-in note added May 9). {[}Bridge document; the horizon crossed;
+  the C18--C46 lineage into the bound collection{]}
+\item
+  privacymage (2026). ``PVM V6 Research Note: The Single Sufficient
+  Operator --- Three Ceilings.'' April 13, 2026. {[}EML; C22--C25{]}
+\item
+  privacymage (2026). ``The Dragon's Scales --- A Note on Microsoft's
+  Agent Governance Toolkit.'' April 14, 2026. {[}Comparative analysis:
+  governance tooling read against the dual-agent architecture{]}
+\item
+  privacymage / Soulbae, with Claude (ORCID 0009-0001-6557-9135), and
+  John Haines / Xarvus, OLMA (ORCID 0009-0001-5809-4690) (2026). ``PVM
+  V6 Research Note: ARCH-1 --- The Canonical Form.'' April 14, 2026.
+  {[}\textbf{Co-derived in conversation --- external convergence lock.}
+  The canonical form Σ := μS.(β ∨ Ω(S,S)) with activation engine ρ,
+  locked across the Boolean, continuous, and sovereignty domains;
+  C26--C29; the seam later promoted to the ARCH-1 bridge, C85 (§12.8).
+  Depends on Sheffer (1913) and Odrzywołek (2026){]}
+\item
+  privacymage (2026). ``PVM V6 Research Note: The Bakhta Half-Life of
+  Trust.'' April 17, 2026 (locked-in May 9). {[}C30--C33{]}
+\item
+  privacymage (2026). ``PVM V6 Research Note: The Wound and the Cap ---
+  Convergence at the Bijective Boundary.'' April 18, 2026 (locked-in May
+  9). {[}C34--C37{]}
+\item
+  privacymage (2026). ``Second Person Spellbook: Act Seeds from
+  ARCH-1.'' April 20, 2026. {[}Seed document; repurposed as Tome I--III
+  seed material after the bound collection shipped{]}
+\item
+  privacymage (2026). ``PVM V6.1 Research Note: The Fourth Aging
+  Category.'' April 21, 2026. {[}C47--C50; responds to Bakhta (2026),
+  \emph{The Half-Life of Trust}{]}
+\item
+  Travers, M. (privacymage) (2026). ``Convergence Note: Compiled AI and
+  the agentprivacy Architecture.'' May 20, 2026. {[}Filed as a path
+  taken, not a load-bearing result{]}
+\item
+  privacymage (2026). ``V6 Research Note: The Existence-Leak and the
+  Falling Z.'' June 2, 2026. {[}The worked empirical instance of C81/C82
+  against Schrottenloher (2026); §25{]}
+\item
+  Haines, J. (Xarvus / Chaos Rider, OLMA · ORCID 0009-0001-5809-4690)
+  (2026). \emph{ARCH-1R/T Operational Reachability Framework.} Draft
+  Review v2.0, June 2026. {[}\textbf{The source manuscript.} Appends
+  operational layers downstream of G without modifying β, Ω, or μ; the
+  latent/obstructed distinction (0 ≠ −). Archived:
+  \emph{research/ARCH-1RT Operational Reachability Framework v2
+  Expanded.pdf}; the v3 notation supplement is archived alongside{]}
+\item
+  privacymage / Soulbae, with Claude (ORCID 0009-0001-6557-9135);
+  contributor John Haines / Xarvus, OLMA (ORCID 0009-0001-5809-4690)
+  (2026). ``PVM V6 Research Note: ARCH-1R/T --- The Operational
+  Reachability Framework.'' June 4, 2026. {[}Conversion of Haines' Draft
+  Review v2.0 into the series, with the dual-ρ collision review; seated
+  as C72--C76 (§12.9; the provisional C67--C71 numbering was renumbered
+  at Run 0). The review chronicle and the reply letter of the same date
+  are archived alongside{]}
+\item
+  privacymage / Soulbae, with Claude (2026). ``PVM V6 Research Note:
+  Convergence on the Integrity Gap --- Bakhta's \emph{Safety by Design}
+  read against the Dual Model.'' June 4, 2026. {[}C77--C80; §22.4{]}
+\item
+  privacymage (2026). ``Research Note: Cryptographic Durability and the
+  Quantum Horizon.'' June 9, 2026. {[}The Horizon District grounding;
+  C67--C71 as pinned in grimoire v1.8.0{]}
 \end{itemize}
 
 \subsubsection{The First Person Spellbook (Grimoire v10.1.0 · 31 Acts ·
@@ -3731,6 +3947,12 @@ Frameworks}\label{external-references-standards-and-frameworks}
   Odrzywołek, A. (2026). The EML operator. {[}Single-operator basis for
   computation; the three-ceilings note, C22 to C25{]}
 \item
+  Sheffer, H. M. (1913). ``A set of five independent postulates for
+  Boolean algebras, with application to logical constants.''
+  \emph{Transactions of the American Mathematical Society,} 14(4),
+  481--488. {[}The Sheffer stroke --- the single sufficient operator
+  precedent; dependency of the ARCH-1 canonical form, C26 to C29{]}
+\item
   Kothapalli, A., Setty, S., \& Tzialla, I. (2022). ``Nova: Recursive
   Zero-Knowledge Arguments from Folding Schemes.'' \emph{CRYPTO 2022.}
   {[}The folding line's origin; C87, §15.7{]}
@@ -3807,7 +4029,7 @@ Frameworks}\label{external-references-standards-and-frameworks}
 privacymage (2026). "Privacy Value Model V6: Formal Specification.
 The Gathering Turn and the Moving Ceiling." Version 6.0.
 agentprivacy-docs, 2026-06-10. privacy_value_v6_formal_specification.md.
-CC BY-SA 4.0. Conjecture register: CONJECTURE_REGISTER_V6.md (head C89).
+CC BY-SA 4.0. Conjecture register: CONJECTURE_REGISTER_V6.md (head C89 at publication; C93 after the 2026-06-28 Limitative Reading addendum, §17.10).
 \end{verbatim}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
