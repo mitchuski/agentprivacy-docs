@@ -36,6 +36,8 @@ Before information theory existed, cryptography had no formal definition of secu
 
 Then Claude Shannon published *A Mathematical Theory of Communication* in 1948 and transformed cryptography into something rigorous. Security became quantifiable. Systems could be compared, tested, and improved. The myth collapsed into math. But the math inherited the shape of the myth — confusion became diffusion metrics, secrecy became entropy bounds. Shannon didn't replace the intuition. He gave it a language that machines could verify.
 
+And Shannon did not arrive from nowhere. Harry Nyquist, working the same problem at Bell Labs two decades earlier, had already fixed the maximum rate at which a channel could carry distinguishable symbols — and the companion fact that a signal sampled too slowly *aliases*, folding fast structure into slow and losing it beyond any later recovery. Nyquist gave the bound; Shannon gave the theory that explained why it was a bound, and then proved the sampling law outright in 1949. The pattern repeats one layer down: even the man who formalised the myth was standing on an earlier, narrower law that already knew the shape of the answer. It is worth naming where privacy sits on that ladder — closer to the Nyquist rung than the Shannon one: the bounds are already visible before the theory that will explain them arrives.
+
 ---
 
 ## Economics Before Equilibrium

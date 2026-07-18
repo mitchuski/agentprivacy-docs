@@ -60,15 +60,17 @@ House style is absolute in everything generated under this path: no em-dashes, v
 | Wave R | Suite reflection (see reflection map §4) | IN PROGRESS | 2026-06-10 |
 | Run 6b | Full Academic Package (First Person directive): standalone formal spec adopting prior-version text wholesale (not deltas) + full dark/light JSON rebuilds + fully-standalone sword/mage readings + LaTeX-grade PDFs (pandoc + xelatex available) + grimoire v10.4.0/v1.8.0 narrative references + complete reference list to V6 | IN PROGRESS | 2026-06-10 |
 | Gate G5 | The Reflection Gate ✍️ | SIGNED (2026-06-11, in session; reflection scope — pins and pushes stay on the First Person's per-repo trigger) | `chronicles/gates/2026-06-11_v6_gate_G5_reflection.md` |
+| Run 8 | The Limitative Reading (post-path addendum) | DONE (C90–C93 minted; formal docs + master mirror + spellweb KG + skills + cityofmages draft act all applied locally; builds + pins + pushes on the per-repo trigger) | 2026-06-28 · `plans/V6_LIMITATIVE_THEOREMS_PATCH_2026-06-28.md` |
+| Gate G6 | The Limitative Gate ✍️ | SIGNED (2026-06-28, in session; accept all four · seed absorbed by C92 · Φ_data open seam) | `chronicles/gates/2026-06-28_v6_gate_G6_limitative.md` |
 
 Gate statuses: NOT REACHED → OPEN (brief written, awaiting First Person) → SIGNED (writing folded back, path may continue).
 
 **Repo restructure note (2026-06-10, post Run 6b):** the V6 canon papers moved to `papers/v6/`, all V6 renders to `pdfs/v6/`, build scripts and TeX to `build/`. Root-path references to the five papers in entries below this line predate the move; the Reading Ledger carries the current paths.
 
-**Register head:** C89 · next free C90 · register AUTHORITATIVE (G1 signed; preface due at G3)
+**Register head:** C93 · next free C94 · register AUTHORITATIVE (G1 signed; preface due at G3) · Band IX (C90–C93) minted at G6, 2026-06-28
 **V6 draft sections completed:** Parts I to V in `research/privacy_value_v6_draft.md` · assembly directive recorded (V5.4 skeleton, two-strand thesis)
 **Promotions this path:** C81 → 70% (Run 3) · C66 → ~55% (Run 5, City confirms at Wave R) · CM-C47 promoted to C85 (Run 4)
-**Registered new:** C82 (~65%) · C83 (~55%) · C84 (~50%) · C85 (~40%) · C86 (~30%) · C87 (~50%) · C88 (~30%) · C89 (~30%)
+**Registered new:** C82 (~65%) · C83 (~55%) · C84 (~50%) · C85 (~40%) · C86 (~30%) · C87 (~50%) · C88 (~30%) · C89 (~30%) · C90 (~90% obs) · C91 (~60%) · C92 (~70%) · C93 (~55%)
 **ACT-SEED count:** 0 bound, 14 captured
 
 Update this table at every CLOSE beat. It is the resume point.
@@ -79,6 +81,7 @@ Update this table at every CLOSE beat. It is the resume point.
 
 One line per run completion or partial: `YYYY-MM-DD · Run N · status · one-sentence outcome`.
 
+- 2026-06-28 · Run 8 · IN PROGRESS · Post-path Limitative Reading folded in (`research/limitative-theorems-and-privacy-is-value.md`): Gödel ↔ Φ_agent (C91) and Tarski ↔ Φ_inference (C92) axis-assignment, the Limitative Inversion (C90, observation), and the content-addressed liveness leak (C93) MINTED at Gate G6 as Band IX (head C89 → C93); Gödelian seed absorbed into C92, Φ_data twin left an open seam; C81 gains a second home with confidence flat at ~70% (Tarski reading is framing, not the empirical Stage-2 instance); ~C40 → C81 erratum applied to the note. Remaining: formal-docs cross-links (spec §17, v6 draft §III, papers index, honest-limits ledger) then outward reflection (cityofmages patch tome, master /model + JSON, spellweb KG, skills framing, research wiki) on the per-repo push trigger. Patch plan `plans/V6_LIMITATIVE_THEOREMS_PATCH_2026-06-28.md`.
 - 2026-06-10 · Run 7 · DONE · Coherence gate clean (em-dash sweep: zero across all eleven authored files; register cross-check: every cited number C1 to C89 resolves; version claims consistent); five ACT-SEED candidates drafted into the G4 brief; path chronicle written at `chronicles/2026-06-10_v6_research_autopath_close.md` with the First Person section open; post-path queue restated (Wave R → completion read → G5 → pins; unified-V6 suite regeneration per the G3 override).
 - 2026-06-10 · Run 6 · DONE · `privacy_value_v6.md` ASSEMBLED at repo root: V5.4-mirroring skeleton §1 to §24 with CARRIED/REVISED/NEW markers plus new §25 to §33 (the two instances, the compounding absorption, the temporal thread, the geometry of the gap, canonical figures, external landscape, honest limits, references, citation); two-strand abstract per the G2 direction (gathering turn first); conjectures by reference to the register throughout; G3 signatures folded (regime 1 declaration, phi correction, unified V6 labeling in §23 and the front matter); register preface drafted under draft-then-rewrite.
 - 2026-06-10 · Gate G3 · SIGNED · regime 1 confirmed; phi honesty accepted; LINEAGE OVERRIDE: unified V6 labeling across all canon papers (formal spec, compressed Swordsman reading, companion Mage reading, research paper, whitepaper edition); V5.5 stays a sublayer; preface draft-then-rewrite (📖 RB-08).
@@ -117,6 +120,10 @@ Seeds already on the table from the review pass, available to any run:
 - Run 4 · ACT-SEED · Lethe's law, stated at last with mathematics: what is hidden waits for a key, what is forgotten has no door; the better decoder that comes for every archive finds, where the witness stood, a place where gluing fails · C86, the only t-independent term
 - Run 5 · ACT-SEED · the Key that is a reading: it grants nothing it does not describe, and the registry-keepers of three decades past built the same refusal into their certificates without ever seeing the City · C66 + ocap lineage
 - Run 5 · seed · the star surrenders its borrowed gold: φ never lived in the solid, and the figure is more beautiful for owning its halvings · the phi honesty correction
+- Run 8 · ACT-SEED · the gap you cannot close is the value you can; where the logician found a wound, the architecture banks the asset · the central inversion, proposed C90
+- Run 8 · ACT-SEED · existence is the one secret you cannot take back; the first disclosure is the deep cut, the rest only tighten the knot · existence-leak as the Tarski instance, proposed C92
+- Run 8 · seed · the wizard hid the witness, the witch burned it; one pays a tax forever, the other pays once and cannot undo it · zero-knowledge versus zero-memory, the existence tax
+- Run 8 · seed · a name spoken aloud cannot be unspoken into a stronger system; truth climbs out of every room it is named in · Tarski non-containment, Lethe adjacency
 
 ---
 

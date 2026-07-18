@@ -62,6 +62,8 @@ The RUN also determines the **tier** (depth of engagement):
 | Heavy | 21+ | Substantial reflection time |
 | Dragon | 62+ | Deep ceremonial investment. Mathematical closure. |
 
+*Unit note (2026-07-18, ledger L154): a lap here is one full traversal of the marked constellation. The technical spec's "lap" is a single node-to-node transition, and its 62-Lap Theorem threshold (m ≥ 620) is stated in that transition unit. Same conjectural threshold (register C11), two units; the numeric correspondence between 62 traversals and 620 transitions is unresolved — "mathematical closure" here means the design intent, not an established value.*
+
 ### 1.3 PVM Mapping
 
 The RUN phase populates:
@@ -189,6 +191,8 @@ The moon phase is the visual encoding:
 | 🌕 | 6 | Full sovereignty. 乾, The Creative. |
 
 The dark part is the privacy. The lit part is the proof. The phase is the WHAT. ZK protects the HOW.
+
+*Object note (2026-07-18, ledger L154): the moon phase is a **display encoding of stratum** — visibility derived deterministically from how many dimensions are active. It is not the technical spec's disclosure budget σ ∈ [0,1], a freely chosen inscription ratio with lifetime sum Σσ·ρ, which is a separate design-layer object and is not implemented. Two objects, one word; downstream surfaces name which one they mean.*
 
 ### 3.3 PVM Mapping
 

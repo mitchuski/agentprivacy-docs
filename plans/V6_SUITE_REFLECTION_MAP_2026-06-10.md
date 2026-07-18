@@ -151,6 +151,11 @@ Appended by runtimes during Runs 0 to 7 whenever math produces an outward reflec
 - Run 5 · cityofmages · C66 revised to ~55% with the ocap lineage citation (SPKI/SDSI, designation without authority); City register owner confirms and the capstone chronicle gains the citation · joins §2.2 task 1
 - Run 5 · soulbis + agentprivacy_master · regime-1 prose binding: no surface may describe 🪢 as proof, stake-weight, or attestation input; footer lines and any contrary phrasing in chronicles corrected · joins §2.5 task 3 and §2.1 task 5
 - Run 5 · cityofmages · phi honesty paragraph for Tome VIII Act 3 and blog post 18 (resonance not derivation; exact volumes 1/3, 1/6, 5/12) · joins §2.2 task 2
+- Run 8 · cityofmages · the Limitative Reading as a patch tome addition (Lethe / Horizon material: Tarski non-containment, the existence tax, zero-knowledge hides vs zero-memory burns); candidate acts seeded in autopath §3 Run 8 · NEW (gated by G6, then a myth gate for binding) · joins §2.2 task 1
+- Run 8 · agentprivacy_master · `/model` one-line limitative framing under the equation; the v6 JSON conjecture corpus + `tome-v-conjectures.ts` (if cited) gain C90 to C93 once minted at G6 · joins §2.1
+- Run 8 · spellweb · KG nodes/edges for the limitative reading once minted (godel_phi_agent, tarski_phi_inference, limitative_inversion, content_addressed_leak as deviation-layer nodes; edges to existence_leak/C81 and amnesia/C14) · NEW · joins §2.6
+- Run 8 · agentprivacy-skills · framing-only touch where existence-leak / amnesia / zero-memory skills cite confidences; no number changes until G6 mints · NEW · joins §2.7
+- Run 8 · research.localhost (wiki) · project the note as a research-wiki page after G6 via the agentprivacy-wiki-sync skill · NEW
 
 ---
 

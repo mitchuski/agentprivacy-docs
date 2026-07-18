@@ -67,7 +67,7 @@ The forge is live at [spellweb.ai](https://spellweb.ai). This section documents 
 
 ### 2.2 Forge Capabilities
 
-- 478-node knowledge graph (984 edges) with D3 force simulation
+- 478-node knowledge graph (984 edges) with D3 force simulation *(dated snapshot; the live data model counts 807 nodes / 1738 edges as of 2026-07-18 — src/data/nodes.ts is the authority, per pipeline L158)*
 - Dual orbs (Swordsman red `#e74c3c`, Mage purple `#9b59b6`, 35px orbit radius)
 - Constellation marking, saving, loading
 - Evocation (orbs trace constellation path, count laps, accumulate charge)

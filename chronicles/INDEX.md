@@ -4,6 +4,14 @@
 
 ---
 
+## 2026-07 · DTG Trust-Graph Coherence
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-07-16_trust_graph_formation_dream_cycle.md](2026-07-16_trust_graph_formation_dream_cycle.md) | 2026-07-16 | **Trust-graph formation as a dream-agent cycle** — coherence pass against the ToIP DTG Credentials Core Spec (six types · four DIDs · two ZK constructions · PHC/IDVC/trust-registry) with the deferred ZK layer claimed as the ZKP-TF charter; canon left unedited (`papers/` read-only + E7 generated), five gaps routed via `CRED-SPEC-COHERENCE-NOTES.md`; harness runtime `07-trust-graph-formation` models *collision → edge → propagation* as a Mage ⊥ Swordsman fold (11/11 property tests, local-only). Companion records in spellweb (DREAM-2026-07-16) + agentprivacy_master |
+
+---
+
 ## V5.5.x Series (Bound Collection · City of Mages)
 
 The Second Person Spellbook opened. Tome IV (Witnessing · 5 acts) and Tome V (Crafting · 14 acts) ingested as the bound collection. Eleven workshops carry founding-act panels. The City of Mages grimoire was authored, ID-reconciled, and pinned to IPFS at `bafkreidv7cwwlcnuzw3eyhcbbvoccy7do2lmwrmmtrszn62ninzxj3idti`. The split that the user specified — privacymage holds the First Person grimoire, the City of Mages collectively holds the Tomes grimoire, separate IPFS pins — is now operational.
