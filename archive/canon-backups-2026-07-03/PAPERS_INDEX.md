@@ -51,7 +51,7 @@ Glossary Master v4.0 (terminology, ~160 entries; V6 addendum pending) · Promise
 
 ## The spec shelf (`specs/`)
 
-Dual Territory Ceremony Spec v1 · Dual Agent Harness Spec v1 · Runecraft Protocol Spec v1 · Protocol Schemas · VRC Promise Protocol v3.4 (the economic architecture; file retains the v3_3 name for link stability) · ZK Swordsman Blade Forge v3.0 (operational) · Blade Forge build instructions.
+Dual Territory Ceremony Spec v1 · Dual Agent Harness Spec v1 · Runecraft Protocol Spec v1 · Protocol Schemas · VRC Promise Protocol v3.3 (the economic architecture) · ZK Swordsman Blade Forge v3.0 (operational) · Blade Forge build instructions.
 
 ## The grimoire shelf (`grimoires/`)
 

@@ -109,7 +109,7 @@ $J_{\partial M} = J_{\text{agent}} + J_{\text{data}} + J_{\text{inference}} + J_
 
 $$I(S; M \mid FP) < \varepsilon^* \qquad \text{(load-bearing wall)}$$
 
-**Theorem (95%):** Preconditions 1 and 2 $\implies$ the additive MI bound $I(X; Y_S, Y_M) \leq I(X; Y_S) + I(X; Y_M)$ (equality iff additionally $I(Y_S; Y_M) = 0$) and the Fano floor $P_e \geq 1 - R_{\max}$; the strict bound $R_{\max} < 1$ holds exactly when, additionally, the declared capacity-deficit condition $C_S + C_M < H(X)$ holds.
+**Theorem (95%):** Conditional independence $\implies$ additive MI bound $\implies R_{\max} < 1$.
 
 **Precondition 1 (non-collusion):** $I(Y_S; Y_M \mid X) = 0$ and no third channel carries the inter-agent residue. **Precondition 2:** capacities against a stated adversary class. Grounding: Wyner (1975) equivocation; Fano converse; Leung-Yan-Cheong and Hellman (1978); Bayes-capacity; Geiger and Kubin.
 
@@ -232,7 +232,7 @@ V5.4 baseline (95%):
 6. Two-extension autonomy axiom (separate processes)
 7. Pretext DOM-free measurement as privacy primitive
 
-V6 scoping: Additive leakage bound $I(X; Y_S, Y_M) \leq I(X; Y_S) + I(X; Y_M)$, equality iff additionally $I(Y_S; Y_M) = 0$, at 95% **inside Precondition 1 only**. Separation bound and ceiling: Proven, conditional regime. Worked instances of the drift (2026): Orchard (flaw 2022-05, found 2026-05-29, fixed block 3,364,600 on 2026-06-03); Schrottenloher (eprint 2026/1128, 2026-06-02, ~2 months after the ZK attestation).
+V6 scoping: Additive leakage $I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)$ at 95% **inside Precondition 1 only**. Separation bound and ceiling: Proven, conditional regime. Worked instances of the drift (2026): Orchard (flaw 2022-05, found 2026-05-29, fixed block 3,364,600 on 2026-06-03); Schrottenloher (eprint 2026/1128, 2026-06-02, ~2 months after the ZK attestation).
 
 # Version Lineage
 

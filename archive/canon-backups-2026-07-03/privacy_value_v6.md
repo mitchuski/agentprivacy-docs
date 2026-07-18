@@ -59,11 +59,11 @@ V5.4 §5 treated reconstruction difficulty R(d, compression, ρ) as static. V6 r
 
 > **R(t) = (C_S(t) + C_M(t)) / H(X)**
 
-H(X), the source entropy of the First Person's private state, is fixed by the person. C_S(t) and C_M(t), the effective capacities of the two observation channels, are evaluated against the strongest adversary class available at time t, and what grows is the adversary's informational capability: the linkage corpus and side priors accumulate along calendar time, shrinking the residual entropy H(X | B_t) while the archive gains nothing. The mechanism is the reader's background, not the data — and not compute, against which the information-theoretic guarantee is saturated: observations already emitted do not change, but the background they can be joined to does. Every static reconstruction guarantee therefore has a **shelf life**:
+H(X), the source entropy of the First Person's private state, is fixed by the person. C_S(t) and C_M(t), the effective capacities of the two observation channels, are evaluated against the strongest adversary class available at time t, and they grow as frontier capability grows. The mechanism is the decoder, not the data: observations already emitted do not change, but what can be extracted from them does. Every static reconstruction guarantee therefore has a **shelf life**:
 
 > **t\* = sup { t : R(t) < 1 }**
 
-**Conjecture C82 (The Moving Ceiling, ~65%; re-typed 2026-07-17 per the register, which wins):** adversary informational capability grows against fixed archives: the linkage corpus and side priors accumulate along calendar time, shrinking H(X | B_t) while nothing is added to the archive and no action of the subject is involved; R_inf(t) drifts upward on a schedule. Frontier-model releases enter only informationally (better extraction of linkage from existing corpora), never as compute against the information-theoretic guarantee, which is compute-saturated. The erosion form is proven conditional (WP-07); the conjectural content is the rate. It is not coupled to any action of the subject. Worked instances in §25.
+**Conjecture C82 (The Moving Ceiling, ~65%):** frontier capability growth raises C_S(t) + C_M(t) against fixed behavioural archives without raising H(X); R(t) drifts upward; the drift is coupled to frontier models, not to any action of the subject. Worked instances in §25.
 
 ## 6. Network Effects and Guild Efficiency · CARRIED
 
@@ -129,7 +129,7 @@ The V5.4 implementation stands. V6 adds the City Key arc (2026-05-27/28) to the 
 
 ## 16. Proven Results · REVISED: scoped, not lowered
 
-The V5.4 results stand with their conditioning stated. In particular, in the Precondition-1 regime (no inter-agent channel) the joint leakage satisfies I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M) − I(Y_S; Y_M), hence is at most the sum of the marginal leakages, with equality if and only if the two outputs are also marginally independent (I(Y_S; Y_M) = 0); the 95% label applies to the at-most bound there and nowhere else. The compounding results of §26 describe the complement of the regime and are absorbed as the model's own argument.
+The V5.4 results stand with their conditioning stated. In particular, additive leakage I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M) holds exactly in the Precondition-1 regime (no inter-agent channel); the 95% label applies there and nowhere else. The compounding results of §26 describe the complement of the regime and are absorbed as the model's own argument.
 
 ## 17. Open Conjectures · BY REFERENCE
 
@@ -181,7 +181,7 @@ R(t), t* (§5) · Z_b' = Z_b − D(a) (§27) · τ: T → {+, 0, −} and orbit(
 
 ## 25. NEW · The Two Instances of 2026
 
-**Zcash Orchard.** A soundness flaw in `halo2_gadgets` (`ecc::chip::mul`: `assign_advice()` where `copy_advice()` was required), present since May 2022. Claude Opus 4.8 released 2026-05-28; Taylor Hornby found the flaw 2026-05-29 and, with the model's help, built a complete counterfeiting exploit in regtest; the market repriced sharply around disclosure (confounded by a concurrent institutional exit); fixed by the NU6.2 hard fork at block 3,364,600 on 2026-06-03. Four findable years, one found day: the decoder moved, the circuit did not.
+**Zcash Orchard.** A soundness flaw in `halo2_gadgets` (`ecc::chip::mul`: `assign_advice()` where `copy_advice()` was required), present since May 2022. Claude Opus 4.8 released 2026-05-28; Taylor Hornby found the flaw 2026-05-29 and, with the model's help, built a complete counterfeiting exploit in regtest; ZEC fell roughly 27 to 33% in 24 hours; fixed by the NU6.2 hard fork at block 3,364,600 on 2026-06-03. Four findable years, one found day: the decoder moved, the circuit did not.
 
 **The Schrottenloher rediscovery.** Google Quantum AI withheld a roughly 10x Shor optimization for secp256k1, publishing only a zero-knowledge proof of its existence. On 2026-06-02 André Schrottenloher published an independent rediscovery (eprint 2026/1128), roughly two months after the attestation. The proof of feasibility priced the search.
 
@@ -228,10 +228,11 @@ The stella octangula (Tome VIII Act 3) enters the formal lineage with its accoun
 
 | Figure | Canonical formulation | Basis document |
 |---|---|---|
-| 678× | RETIRED as asserted fact 2026-07-17 (fenced lineage of the essay era only) | Substack essay v2 |
-| 31,000× | RETIRED as asserted fact 2026-07-17 (fenced lineage; value = the interface-set appropriation share) | essay v4 |
+| 678× | the present-day per-person data-value gap ("just for data today") | Substack essay v2 |
+| 31,000× | the accessible-volume value gap under full behavioural capture | essay v4 |
 | 70:1 | the compression ratio of the spellbook corpus | README lineage |
 | 74× | BRAID compression efficiency | V5 formal lineage |
+| $47k to $52k/year | indicative per-person annual value capture range | README lineage |
 
 ## 30. External Landscape and Standards Context
 

@@ -1,5 +1,3 @@
-<!-- artefact-status: superseded (historical/superseded flag convention, OBS-GPT56-017; applied 2026-07-10 per CTR-OBS-01 / L125). This V5.4 volume is succeeded by the V6 formal specification (papers/v6/privacy_value_v6_formal_specification.md), which carries the corrected wording. Known pre-correction wording preserved unedited in this artefact: the §16 "Additive MI bounds" table row states exact additivity; the corrected subadditive form (at most the sum, equality iff additionally I(Y_S; Y_M) = 0) lives in the V6 specification §16. This artefact is a historical record and is not edited. -->
-
 # Privacy is Value · V5.4: The Amnesia Protocol
 
 ## Formal Specification of the Privacy Value Model · Dual-Agent Privacy Architecture

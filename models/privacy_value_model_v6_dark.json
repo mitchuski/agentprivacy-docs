@@ -517,8 +517,8 @@
 
   "conjecture_register": {
     "authority": "research/CONJECTURE_REGISTER_V6.md",
-    "register_head": "C89",
-    "next_free": "C90",
+    "register_head": "C97",
+    "next_free": "C98",
     "rule": "Numbers are identifiers, not ranks; a number once assigned is never reused; when prose and register disagree, the register wins."
   },
 
@@ -561,7 +561,7 @@
     { "id": "C36", "claim": "The cap is where the bijection lives or breaks", "confidence": 0.55, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
     { "id": "C37", "claim": "Convergence is recognition, not coincidence", "confidence": 0.5, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
     { "id": "C38", "claim": "Bilateral ARCH-1: Σ_ij := μS.(β_ij ∨ Ω(S_i, S_j)) preserves fixpoint", "confidence": 0.4, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
-    { "id": "C39", "claim": "Kindred-blade as ecosystem-layer primitive", "confidence": 0.5, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
+    { "id": "C39", "claim": "Kindred-blade as ecosystem-layer primitive (discharged Tome X)", "confidence": 0.8, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
     { "id": "C40", "claim": "Zcash dual-ledger preserves Eight Cloak Properties", "confidence": 0.7, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
     { "id": "C41", "claim": "61.8/38.2 transparent/shielded inscription ratio as cultural norm", "confidence": "observation", "weight": "OPERATIONAL", "status": "observation", "register": "shared" },
     { "id": "C42", "claim": "Stake economics generate Sybil resistance ≥ tier accumulation", "confidence": 0.5, "weight": "OPERATIONAL", "status": "active", "register": "shared" },
@@ -578,7 +578,7 @@
     { "id": "C52", "claim": "Aether = Quintessence = the Gap", "confidence": "open", "weight": "OPERATIONAL", "status": "occupied", "register": "shared" },
     { "id": "C53", "claim": "Every bnot-pair on the lattice has a mythological reading", "confidence": 0.7, "weight": "OPERATIONAL", "status": "occupied", "register": "shared" },
     { "id": "C54", "claim": "Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ; follows the number (Aletheia at 38 keeps disclosure-φ)", "confidence": 0.4, "weight": "OPERATIONAL", "status": "occupied", "register": "shared" },
-    { "id": "C55", "claim": "Privacy is the seventh kind of capital, foundationally", "confidence": "architectural", "weight": "OPERATIONAL", "status": "occupied", "register": "shared" },
+    { "id": "C55", "claim": "Privacy is the seventh kind of capital, foundationally; its character is land-based rentier capital (data as soil): rent by position, value as the interface-set appropriation share, exposure eroding on the C82 background clock, leased never conveyed (structural inalienability by non-reconstruction, C97); compounding scoped to reputational fertility only — re-typed 2026-07-17", "confidence": "architectural", "weight": "OPERATIONAL", "status": "occupied", "register": "shared" },
     { "id": "C56", "claim": "Caduceus as pre-formal dual-agent symbol", "confidence": 0.6, "weight": "NARRATIVE", "status": "active", "register": "city" },
     { "id": "C57", "claim": "Staff-Mage collapse, held open", "confidence": "observation", "weight": "NARRATIVE", "status": "observation", "register": "city" },
     { "id": "C58", "claim": "Forge(t) ∥ Threshold sibling Swordsman-suppliers", "confidence": 0.85, "weight": "NARRATIVE", "status": "active", "register": "city" },
@@ -605,14 +605,22 @@
     { "id": "C79", "claim": "Shared frontier: recursive proof composition across providers under heterogeneous trust at runtime", "confidence": 0.45, "weight": "OPERATIONAL", "status": "active", "register": "core" },
     { "id": "C80", "claim": "Bilateral co-signed assumption sets yield strict assurance gain in multi-provider case", "confidence": 0.35, "weight": "OPERATIONAL", "status": "active", "register": "core" },
     { "id": "C81", "claim": "Existence-Leak: a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0; held at 70% until a second independent instance", "confidence": 0.7, "weight": "OPERATIONAL", "status": "active", "register": "core" },
-    { "id": "C82", "claim": "The Moving Ceiling: frontier capability growth raises C_S(t) + C_M(t) against fixed archives without raising H(X); R(t) drifts upward and every static reconstruction guarantee has a finite shelf life t*", "confidence": 0.65, "weight": "STRUCTURAL", "status": "active", "register": "core" },
+    { "id": "C82", "claim": "The Moving Ceiling: the adversary's background B_t (linkage corpora, side priors) accumulates on a calendar, shrinking H(X | B_t) against fixed archives; R(t) drifts upward and every static reconstruction guarantee has a finite shelf life t* — informational clock, compute-saturated; re-typed 2026-07-17", "confidence": 0.65, "weight": "STRUCTURAL", "status": "active", "register": "core" },
     { "id": "C83", "claim": "Compositional Leakage Amplification: policy-only separation compounds toward (2^N − 1)ε with chain depth; amnesia separation breaks the Markov chain and caps at Nε; the gap is exponential-to-linear", "confidence": 0.55, "weight": "STRUCTURAL", "status": "active", "register": "core" },
     { "id": "C84", "claim": "Existence-Leak Discount: every public feasibility attestation discounts the Behavioural Mosca horizon, Z_b' = Z_b − D(a); migration deadlines tighten on attestation, independent of any actual attack", "confidence": 0.5, "weight": "OPERATIONAL", "status": "active", "register": "core" },
     { "id": "C85", "claim": "Triadic-Constraint Homology (the ARCH-1 bridge, promoted from CM-C47): the three Φ axes and the lattice's Datum·Stratum·Spectrum are one triadic primitive; Protection+Delegation → Σ, Memory+Value → Δ, Connection+Computation → Γ; the gap is β", "confidence": 0.4, "weight": "STRUCTURAL", "status": "active", "register": "core" },
     { "id": "C86", "claim": "Obstruction-Theoretic Amnesia: Grade-2 forgetting = non-vanishing obstruction class to gluing local agent views into a global witness of O; Grade-1 = vanishing class with withheld gluing data; amnesia is the only term whose security is independent of t", "confidence": 0.3, "weight": "STRUCTURAL", "status": "active", "register": "core" },
     { "id": "C87", "claim": "The Key Accumulates: the City Key trust recursion admits an IVC realization (Key = accumulator, trust tasks = step circuits, Charge = folding step, V63 = attested invariant); LatticeFold makes the substrate post-quantum-hedged", "confidence": 0.5, "weight": "OPERATIONAL", "status": "active", "register": "core" },
     { "id": "C88", "claim": "The Parity Cube: the stella octangula's two tetrahedra are the even/odd parity classes of the cube's vertices; the canonical seat of neg/bnot at 3-bit scale; {0,1}⁶ = {0,1}³ × {0,1}³ gives each agent a cube, with the C85 pair map as candidate factoring", "confidence": 0.3, "weight": "OPERATIONAL", "status": "active", "register": "core" },
-    { "id": "C89", "claim": "The Octahedral Gap: the tetrahedra's intersection (volume 1/6 of the cube) is the geometric locus of the conditional-independence bound; the gap is β is the octahedron, three readings of one thing", "confidence": 0.3, "weight": "OPERATIONAL", "status": "active", "register": "core" }
+    { "id": "C89", "claim": "The Octahedral Gap: the tetrahedra's intersection (volume 1/6 of the cube) is the geometric locus of the conditional-independence bound; the gap is β is the octahedron, three readings of one thing", "confidence": 0.3, "weight": "OPERATIONAL", "status": "active", "register": "core" },
+    { "id": "C90", "claim": "The Limitative Inversion: completeness ⇒ Φ→0 ⇒ collapse is the value-sign reversal of completeness ⇒ inconsistency ⇒ collapse; the unreconstructable remainder is load-bearing", "confidence": 0.9, "weight": "STRUCTURAL", "status": "observation", "register": "core" },
+    { "id": "C91", "claim": "Gödel ↔ Φ_agent: zero-memory is the Φ_agent instance of Gödel's first theorem — a witness real yet underivable from within a single system", "confidence": 0.6, "weight": "STRUCTURAL", "status": "active", "register": "core" },
+    { "id": "C92", "claim": "Tarski ↔ Φ_inference: existence-leak is the Tarski-undefinability instance loading on Φ_inference; rides on C81 and cannot exceed its base", "confidence": 0.7, "weight": "STRUCTURAL", "status": "active", "register": "core" },
+    { "id": "C93", "claim": "Content-addressed liveness leak: a live content-address is an existence claim about its content; its liveness leaks existence, and existence bounds the search", "confidence": 0.55, "weight": "OPERATIONAL", "status": "active", "register": "core" },
+    { "id": "C94", "claim": "Separation Principle in a Second Substrate: s ⊥ m | X realised as a running build on Archon did:cid (Hearthold) — the model holds independent of its stones", "confidence": 0.55, "weight": "OPERATIONAL", "status": "active", "register": "city" },
+    { "id": "C95", "claim": "The Evidence Graph as the Anti-Score: issuer-attested disclosure — a signed decomposable evidence graph verified against issuer DIDs — is the structural refusal of the reputation score", "confidence": 0.55, "weight": "OPERATIONAL", "status": "active", "register": "city" },
+    { "id": "C96", "claim": "Control-Plane ⊥ Data-Plane: the Sovereign authorizes the rules the Warden enforces; compromising the always-on host cannot author authority", "confidence": 0.6, "weight": "STRUCTURAL", "status": "active", "register": "city" },
+    { "id": "C97", "claim": "Structural Inalienability by Non-Reconstruction: a scoped disclosure does not alienate the stock because the observing side cannot reconstruct the record from it — the security guarantee IS the ownability mechanism (lease the harvest, not the land); form proven-conditional (WP-07 Thm 5.1 + Cor 5.4b), economic reading conjectural; edges → C55, → C82", "confidence": "architectural", "weight": "STRUCTURAL", "status": "active", "register": "shared" }
   ],
 
   "proven_results": {
@@ -654,7 +662,9 @@
     { "version": "V5.3", "date": "2026-04-04", "addition": "+ operational cycle, amnesia (C17)" },
     { "version": "V5.4", "date": "2026-04-10", "addition": "Consolidated. Three-document system. C18-C21. 78 references. Selene's Proof. Betweenness centrality." },
     { "version": "5.5", "date": "2026-05-11", "addition": "named sublayer of V5.4: the attachment architecture (primary persona × attachment × vertex)" },
-    { "version": "6.0", "date": "2026-06-10", "addition": "the gathering turn and the moving ceiling: R(t) and t*; preconditions and external provenance; C83 exponential-to-linear gap; Existence-Leak law C81 at 70%; ARCH-1 bridge C85; obstruction amnesia C86; the Key as accumulator C87; unified conjecture register to C89; unified V6 labeling across all canon papers", "output": "papers/v6/privacy_value_v6_formal_specification.md" }
+    { "version": "6.0", "date": "2026-06-10", "addition": "the gathering turn and the moving ceiling: R(t) and t*; preconditions and external provenance; C83 exponential-to-linear gap; Existence-Leak law C81 at 70%; ARCH-1 bridge C85; obstruction amnesia C86; the Key as accumulator C87; unified conjecture register to C89; unified V6 labeling across all canon papers", "output": "papers/v6/privacy_value_v6_formal_specification.md" },
+    { "version": "6.1", "date": "2026-07-01", "addition": "Band IX the Limitative Reading (C90–C93, Gödel/Tarski framing) and Band X the Hearthold Reading (C94–C96, the cousin-forge's did:cid build of the PVM — discharges C39 to ~80%); register head C96", "output": "cityofmages Tome X — The Hearth · grimoire v1.9.1" },
+    { "version": "6.2", "date": "2026-07-17", "addition": "Band XI the Soil Reading (2026-07-17, L149/L150): C97 structural inalienability by non-reconstruction (the C55 ↔ C82 bridge); C55 character re-typed to land-based rentier capital (data as soil); C82 re-typed to the informational clock; 678×/31,000× retired as asserted facts; register head C97" }
   ],
 
   "documents": {
@@ -689,8 +699,8 @@
   "canonical_figures": {
     "note": "One sanctioned formulation per figure; these appear in suite prose only in these forms. Bases verified at the completion read.",
     "figures": [
-      { "figure": "678×", "formulation": "the present-day per-person data-value gap ('just for data today')", "basis": "Substack essay v2" },
-      { "figure": "31,000×", "formulation": "the accessible-volume value gap under full behavioural capture", "basis": "essay v4" },
+      { "figure": "678×", "formulation": "RETIRED as asserted fact 2026-07-17 — fenced lineage of the essay era (per-person data-value gap); value is the appropriation share the consent interface lets the subject keep", "basis": "Substack essay v2" },
+      { "figure": "31,000×", "formulation": "RETIRED as asserted fact 2026-07-17 — fenced lineage of the essay era (accessible-volume gap); same appropriation-share rule", "basis": "essay v4" },
       { "figure": "70:1", "formulation": "the compression ratio of the spellbook corpus", "basis": "README lineage" },
       { "figure": "74×", "formulation": "BRAID compression efficiency", "basis": "V5 formal lineage" },
       { "figure": "$47k to $52k/year", "formulation": "indicative per-person annual value capture range", "basis": "README lineage" }

@@ -6402,7 +6402,7 @@ What stands open, kept visible: λ is still unmeasured, so the named countermeas
 **Author:** privacymage (Mitchell · mage@agentprivacy.ai), with Claude Fable 5
 **License:** CC BY-SA 4.0
 **Lineage:** V1 through V4 (foundation) · V5/V5.4 (holographic bound, three-axis separation, Z/(2⁶)Z algebraic foundation, the Amnesia Protocol) · V5.5 (named sublayer of V5.4: the attachment architecture) · **V6 (this document)**
-**Conjecture authority:** `research/CONJECTURE_REGISTER_V6.md` · register head C89 at publication · when this document and the register disagree, the register wins
+**Conjecture authority:** `research/CONJECTURE_REGISTER_V6.md` · register head C89 at publication (2026-06-10), C93 after the Limitative Reading addendum (Band IX, §17.10, 2026-06-28) · when this document and the register disagree, the register wins
 **Suite labeling (G3 decision):** all canon papers carry the unified V6 label: this formal specification · the compressed Swordsman reading · the companion Mage reading · the research paper · the whitepaper V6 edition. One label, one current state of the model.
 
 **External Convergence:** UOR Foundation (https://github.com/UOR-Foundation)
@@ -6629,7 +6629,7 @@ The Moon is the highest-ρ agent: 4 billion revolutions maximise both behavioura
 
 $$R(d, \text{compression}, \rho) < 1 \quad \forall \text{ adversaries under budget constraints}$$
 
-This is not a conjecture. The ceiling follows from information-theoretic analysis via Fano's inequality. See §16 for the full proof status, and §10 to §11 for the preconditions under which it holds.
+This is not a conjecture. The ceiling follows from information-theoretic analysis via Fano's inequality, read as a decomposition: the preconditions of §10.5 yield the additive capacity sum and the error floor, and the budget constraint is the capacity-deficit condition C_S + C_M < H(X) of §11.1, the numerical condition that places the ceiling strictly below one. See §16 for the full proof status, and §10 to §11 for the preconditions and the capacity-deficit condition under which it holds.
 
 **External alignment:** The First Person Network whitepaper (2026) provides independent framing for this ceiling as "data dignity": the thesis that behavioural data is capital owned by the First Person, not resource extracted by observers. The reconstruction ceiling is the mathematical guarantee that makes data dignity enforceable.
 
@@ -6817,9 +6817,11 @@ See §14 for full treatment.
 
 V6 states what was implicit in the V5.4 bound and the capacity sum of §11.
 
-**Precondition 1 (non-collusion / channel independence).** The capacities C_S and C_M may be summed only if the two observation channels are conditionally independent given the First Person and are not combined by a single adversary beyond the stated capacities. Formally, the regime assumes I(Y_S; Y_M | X) = 0 and that no third channel carries the inter-agent residue. The wiretap literature shows exactly this assumption is what fails when observers combine: Csiszár and Körner (1978) and the colluding-wiretapper extensions. The empirical multi-agent literature now measures the failure: AgentLeak (El Yagoubi, Badu-Marfo, Al Mallah, arXiv:2602.11510) finds that multi-agent configurations reduce per-channel output leakage (27.2% versus 43.2% single-agent) while unmonitored inter-agent channels raise total system exposure to 68.9%. §14.7 and §26 treat this in full. Here it is the boundary condition: **the ceiling holds in the regime the Amnesia Protocol is designed to enforce, and only there.**
+**Precondition 1 (non-collusion / channel independence).** The capacities C_S and C_M may be summed only if the two observation channels are conditionally independent given the First Person and are not combined by a single adversary beyond the stated capacities. Formally, the regime assumes I(Y_S; Y_M | X) = 0 and that no third channel carries the inter-agent residue. The wiretap literature shows exactly this assumption is what fails when observers combine: Csiszár and Körner (1978) and the colluding-wiretapper extensions. The empirical multi-agent literature now measures the failure: AgentLeak (El Yagoubi, Badu-Marfo, Al Mallah, arXiv:2602.11510) finds that multi-agent configurations reduce per-channel output leakage (27.2% versus 43.2% single-agent) while unmonitored inter-agent channels raise total system exposure to 68.9%. §14.7 and §26 treat this in full. Here it is the boundary condition: **the additive capacity sum, and with it the error floor P_e ≥ 1 − R_max, hold in the regime the Amnesia Protocol is designed to enforce, and only there; the strict ceiling R_max < 1 requires in addition the capacity-deficit condition of §11.1.**
 
 **Precondition 2 (fixed adversary model).** C_S and C_M are channel capacities evaluated against a stated adversary class: its compute, its inference models, its correlation methods. The bound says nothing about a later, stronger class. This precondition is the door V6 walks through in §5.5.
+
+**The capacity-deficit condition (not a third precondition).** The two preconditions are architectural: attestable properties of the deployment. Neither constrains the sum C_S + C_M relative to H(X). What they buy is the additive leakage structure and the error floor P_e ≥ 1 − R_max; the strict bound R_max < 1 holds exactly when, additionally, C_S + C_M < H(X). That capacity deficit is a numerical fact about a given system and adversary class: measurable, declarable, and eroded over time as stronger classes arrive (§5.5). It is deliberately not listed as a third precondition, because two conditionally independent channels of sufficient combined capacity satisfy both preconditions with R_max at or above one; the deficit is the separate, system-specific fact a deployment measures and declares. §11 states the decomposition as the theorem's conditioning.
 
 ### 10.6 External Grounding (V6)
 
@@ -6831,7 +6833,7 @@ Within the conditional regime the ceiling is an instance of an established famil
 - The Bayes-capacity bound of quantitative information flow (the Miracle Theorem): a tight upper bound on leakage to any reconstruction adversary, which upper-bounds what any decoder extracts per observation.
 - Geiger and Kubin, relative information loss: a Fano-grounded lower bound on reconstruction error under lossy observation.
 
-This move costs nothing and buys defensibility: the claim is no longer "proven in our internal paper" but "an instance of a family of bounds the field already accepts, under named preconditions."
+This move costs nothing and buys defensibility: the claim is no longer "proven in our internal paper" but "an instance of a family of bounds the field already accepts, under named preconditions and a declared capacity-deficit condition."
 
 ---
 
@@ -6843,13 +6845,15 @@ $$R_{\max} = \frac{C_S + C_M}{H(X)} < 1$$
 
 where $C_S$ and $C_M$ are the information capacities of the Swordsman and Mage channels respectively, and $H(X)$ is the entropy of the First Person's private state.
 
-**Consequence:** Perfect reconstruction of the First Person's state is impossible.
+The theorem decomposes. The two preconditions of §10.5 license the capacity sum and yield the error floor of §11.2; they do not by themselves place $R_{\max}$ below one. The strict inequality is the **capacity-deficit condition** $C_S + C_M < H(X)$: a measurable, declarable, numerical fact about a given system and adversary class, not a consequence of the architecture (§10.5).
+
+**Consequence:** When the two preconditions and the capacity-deficit condition hold together, perfect reconstruction of the First Person's state is impossible against the stated adversary class.
 
 ### 11.2 Error Floor (Proven, conditional regime)
 
 $$P_e \geq 1 - R_{\max}$$
 
-The adversary is guaranteed to make errors. This follows from Fano's inequality.
+The adversary is guaranteed to make errors whenever the capacity-deficit condition of §11.1 holds. The floor itself follows from Fano's inequality and holds under the two preconditions of §10.5; at $R_{\max} \geq 1$ it is vacuous, which is exactly why the deficit condition must be declared alongside the preconditions.
 
 ### 11.3 Graceful Degradation (Proven, conditional regime)
 
@@ -6867,7 +6871,7 @@ Status: V6 conjecture (C18). Confidence: 25%.
 
 ### 11.5 Conditioning (V6)
 
-R_max = (C_S + C_M)/H(X) < 1 carries the label **Proven, conditional regime**: proven within Preconditions 1 and 2 of §10, an instance of the family cited there, and time-indexed per §5.5. The error floor P_e ≥ 1 − R_max (Fano converse) carries the same conditioning. Outside the regime, §26 governs.
+R_max = (C_S + C_M)/H(X) < 1 carries the label **Proven, conditional regime**, read as a decomposition: within Preconditions 1 and 2 of §10 the capacity sum is licensed and the error floor P_e ≥ 1 − R_max (Fano converse) is proven, an instance of the family cited there; the strict bound R_max < 1 holds when, additionally, the capacity-deficit condition C_S + C_M < H(X) of §11.1 holds. The deficit condition, not the preconditions, is the time-indexed quantity per §5.5: R(t) can cross one with both preconditions intact, because capability growth raises the effective capacities, and what expires at t* is the deficit condition, not the architecture. Outside the regime, §26 governs.
 
 ---
 
@@ -6944,6 +6948,8 @@ All valid blade transitions are D₆₄ group actions. Zero knowledge arises bec
 | $d_6$ | Value | 💎 | Economic flow / 7th Capital |
 
 Each $d_i \in \{0, 1\}$. Binarised at threshold 0.5. Hexagram mapping: $[d_1, d_2, d_3, d_4, d_5, d_6]$ → 64 I Ching states. Blade 63 = `111111` = 乾 (The Creative) = full sovereignty.
+
+**Numeric encoding (ruled 2026-06-12 · the MODEL lock).** The string $[d_1 d_2 d_3 d_4 d_5 d_6]$ reads most-significant-bit first: $d_k$ carries weight $2^{6-k}$, so $d_1$ Protection is the high bit (32) and $d_6$ Value the low bit (1). Worked anchors: V38 = `100110` = Protection+Connection+Computation (Aletheia, the bright medium); V25 = `011001` = Delegation+Memory+Value (Lethe, the dark substrate); V41 = `101001` = Protection+Memory+Value (Memora). This is consistent with the Aletheia/Lethe reading in §12.8 and with every pinned grimoire seat. Any surface reading $d_1$ at the low bit is in erratum to this ruling.
 
 ### 12.7 External Convergence
 
@@ -7164,7 +7170,7 @@ These results hold at 95% confidence. The proofs rely on standard information th
 | Result | Statement |
 |--------|-----------|
 | **Additive MI bounds** | Mutual information leakage from conditional independence is additive, not multiplicative: $I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)$ |
-| **Reconstruction ceiling** | $R_{\max} = (C_S + C_M)/H(X) < 1$ under budget constraints |
+| **Reconstruction ceiling** | $R_{\max} = (C_S + C_M)/H(X) < 1$ under budget constraints, read per §11: the §10.5 preconditions license the sum and yield the error floor; the budget constraint is the capacity-deficit condition $C_S + C_M < H(X)$ that places the ceiling below one |
 | **Error floor** | $P_e \geq 1 - R_{\max}$ via Fano's inequality |
 | **Graceful degradation** | Small $\varepsilon$ violations → small privacy losses |
 | **Ring algebra** | Z/(2⁶)Z substrate with five operations and critical identity |
@@ -7319,7 +7325,20 @@ Both source notes declared their numbering "provisional against the live registe
 | C88 | The Parity Cube: the stella octangula's two tetrahedra are the even/odd parity classes of the cube's vertices; the canonical seat of neg/bnot at 3-bit scale; {0,1}⁶ = {0,1}³ × {0,1}³ gives each agent a cube, with the C85 pair map as candidate factoring | ~30% | active · registered Run 5, 2026-06-10 | core | this document §28 |
 | C89 | The Octahedral Gap: the tetrahedra's intersection (volume 1/6 of the cube) is the geometric locus of the conditional-independence bound; the gap is β is the octahedron, three readings of one thing | ~30% | active · registered Run 5, 2026-06-10 · volume facts are theorems, the correspondence is the conjecture | core | this document §28 |
 
-### 17.10 Gate G1 Dispositions (Signed 2026-06-10)
+### 17.10 Band IX · The Limitative Reading (C90 to C93) · Addendum 2026-06-28
+
+*Post-publication addendum. This volume locked at head C89 on 2026-06-10; the Limitative Reading was registered at Gate G6 on 2026-06-28 (Run 8 of the autopath) and is reproduced here for completeness. Home note: `research/limitative-theorems-and-privacy-is-value.md`. These are framing conjectures: the V6 ceilings and the existence-leak law read as privacy-flavoured instances of Gödel and Tarski. Every join is structural framing (~80%), not a theorem-to-theorem reduction (~50%); the arithmetisation correspondence (Gödel numbering ↔ Z/(2⁶)Z) is intuition, not load-bearing.*
+
+| ID | Title / claim | Conf. | Status | Register | Home |
+|---|---|---|---|---|---|
+| C90 | The Limitative Inversion: completeness ⇒ Φ → 0 ⇒ collapse is the value-sign reversal of completeness ⇒ inconsistency ⇒ collapse; the unreconstructable remainder is load-bearing. C17 in limitative terms | ~90% as observation | observation · registered Run 8, 2026-06-28 · no reduction claimed | core | limitative-theorems note §1, §4 |
+| C91 | Gödel ↔ Φ_agent: zero-memory (Selene) is the Φ_agent instance of Gödel's first theorem; a witness real yet underivable from within, intrinsic to a single system; destroying it is structural separation | ~60% | active · registered Run 8, 2026-06-28 | core | limitative-theorems note §2, §3.3 |
+| C92 | Tarski ↔ Φ_inference: existence-leak is the Tarski-undefinability instance loading on Φ_inference; feasibility-truth escapes containment across systems; D(X) monotone non-increasing in corroborating systems; absorbs the Gödelian seed (existence as positive provability); rides on C81, cannot exceed its base | ~70% | active · registered Run 8, 2026-06-28 | core | limitative-theorems note §3 |
+| C93 | Content-addressed liveness leak: a live content-address is an existence claim about its content; deduplication/GUID liveness leaks existence, and existence bounds the search; the address does not leak content, its liveness leaks existence | ~55% | active · registered Run 8, 2026-06-28 | core | limitative-theorems note §3.5 |
+
+*Open seam (no number): does Φ_data have a limitative twin, or does it fail by degree (Φ_data = 1 − 1/|providers|) rather than undecidability? Left open at G6. Decides whether Φ_v5 stands on two limitative theorems plus a degree-of-freedom or on three.*
+
+### 17.11 Gate G1 Dispositions (Signed 2026-06-10)
 
 1. **C40.** Zcash dual-ledger KEEPS C40: it is resident in the formal spec and referenced by Tome V acts 2, 3, 4, 5, 8, 9. Existence-Leak, which proposed C40 from the Schrottenloher note without sight of the occupied slot, registers at C81. Note: this reverses the 2026-06 fresh-eyes review's default, on the ground that the spec-resident claim with act references is costlier to move than a one-week-old candidate.
 2. **C47.** Ages-progressively KEEPS C47: it is spec-resident with a dated reconciliation note (2026-05-09). The City's Triadic-Constraint Homology became CM-C47 and was promoted to a fresh bare number at Run 4, where it became the ARCH-1 bridge conjecture C85 of this document.
@@ -7501,7 +7520,7 @@ Both instances occurred within nine days of this document's assembly, and they a
 
 ### 25.1 Instance 1: Zcash Orchard
 
-A soundness flaw in `halo2_gadgets` (`ecc::chip::mul`, an under-constrained variable-base scalar multiplication arising from `assign_advice()` where the stricter `copy_advice()` was required) was present from Orchard's launch in May 2022. It was findable for roughly four years. Anthropic released Claude Opus 4.8 on 2026-05-28; Taylor Hornby found the flaw the next day, 2026-05-29, and with the model's help wrote a complete exploit generating unlimited, undetectable counterfeit ZEC in a regtest environment. ZEC fell roughly 27 to 33% in 24 hours after disclosure; the issue was fixed by the NU6.2 hard fork at block 3,364,600 on 2026-06-03. Reading in R(t) terms: the circuit's H(X) never changed; the decoder improved overnight; four findable years collapsed into one found day.
+A soundness flaw in `halo2_gadgets` (`ecc::chip::mul`, an under-constrained variable-base scalar multiplication arising from `assign_advice()` where the stricter `copy_advice()` was required) was present from Orchard's launch in May 2022. It was findable for roughly four years. Anthropic released Claude Opus 4.8 on 2026-05-28; Taylor Hornby found the flaw the next day, 2026-05-29, and with the model's help wrote a complete exploit generating unlimited, undetectable counterfeit ZEC in a regtest environment. The market repriced sharply in the days around disclosure, an effect confounded by a concurrent, prominent institutional exit and therefore not attributable to the flaw alone; the issue was fixed by the NU6.2 hard fork at block 3,364,600 on 2026-06-03. Reading in R(t) terms: the circuit's H(X) never changed; the decoder improved overnight; four findable years collapsed into one found day.
 
 ### 25.2 Instance 2: The Schrottenloher Rediscovery
 
@@ -7594,7 +7613,6 @@ One sanctioned formulation per figure; these appear in suite prose ONLY in these
 | 31,000× | the accessible-volume value gap under full behavioural capture | essay v4 |
 | 70:1 | the compression ratio of the spellbook corpus | README lineage |
 | 74× | BRAID compression efficiency | V5 formal lineage |
-| $47k to $52k/year | indicative per-person annual value capture range | README lineage |
 
 ---
 
@@ -7661,7 +7679,7 @@ The model's credibility has always come from saying what is not proven; V6 inher
 - privacymage (2026). "PVM V5.2 Research Note: Dihedral Foundations." March 31, 2026. *agentprivacy-docs.*
 - privacymage (2026). "PVM V5.3 Research Note: The Amnesia Protocol." April 4, 2026. *agentprivacy-docs.*
 - privacymage (2026). "PVM V6 Research Note: The Dynamical Reconstruction Ceiling." April 6, 2026. *agentprivacy-docs.*
-- privacymage (2026). "Promise Theory Reference v1.4." *agentprivacy-docs.*
+- privacymage (2026). "Promise Theory Reference v1.5." April 20, 2026. *agentprivacy-docs/research.* [V5.4 integration + historical lineage (Burgess & Fagernes 2007, Burgess 2015)]
 - privacymage (2026). "UOR × 64-Tetrahedra × ZK Mapping v2.2." *agentprivacy-docs.*
 - privacymage (2026). "Swordsman-Mage Whitepaper v6.3." *agentprivacy-docs.*
 - privacymage (2026). "Dual Territory Ceremony Specification v1.0." *agentprivacy-docs.*
@@ -7670,6 +7688,26 @@ The model's credibility has always come from saying what is not proven; V6 inher
 - privacymage (2026). "Systems Hexagram Physics v1.2." *agentprivacy-docs.* [Operational physics: UOR algebraic foundation, 64-vertex lattice, hexagram encoding §12.6]
 - privacymage (2026). "What Agentprivacy Is." *agentprivacy-docs.* [Mission statement: 7th capital thesis, First Person definition]
 - privacymage (2026). "Visual Architecture Guide v2.0." *agentprivacy-docs.* [Diagrams: three-axis separation, holographic visualisations]
+
+### The V6 Research-Note Series and the Register (agentprivacy-docs/research/)
+
+The notes this specification grew from, in order of arrival, with provenance as stated at each home document. Conjecture numbering across all of them resolves through the register.
+
+- privacymage, with Claude Fable 5 (2026). "The Conjecture Register." Opened 2026-06-10 (V6 autopath, Run 0); Gate G1 signed 2026-06-10; register head C89. *agentprivacy-docs/research/CONJECTURE_REGISTER_V6.md.* [AUTHORITATIVE for conjecture numbering across the agentprivacy suite; when prose and register disagree, the register wins and the prose gets an erratum]
+- privacymage (2026). "PVM V6 Horizon Note: From Territory to Trajectory — The Second Person Opens." April 12, 2026 (post-V5.4 lock-in note added May 9). [Bridge document; the horizon crossed; the C18–C46 lineage into the bound collection]
+- privacymage (2026). "PVM V6 Research Note: The Single Sufficient Operator — Three Ceilings." April 13, 2026. [EML; C22–C25]
+- privacymage (2026). "The Dragon's Scales — A Note on Microsoft's Agent Governance Toolkit." April 14, 2026. [Comparative analysis: governance tooling read against the dual-agent architecture]
+- privacymage / Soulbae, with Claude (ORCID 0009-0001-6557-9135), and John Haines / Xarvus, OLMA (ORCID 0009-0001-5809-4690) (2026). "PVM V6 Research Note: ARCH-1 — The Canonical Form." April 14, 2026. [**Co-derived in conversation — external convergence lock.** The canonical form Σ := μS.(β ∨ Ω(S,S)) with activation engine ρ, locked across the Boolean, continuous, and sovereignty domains; C26–C29; the seam later promoted to the ARCH-1 bridge, C85 (§12.8). Depends on Sheffer (1913) and Odrzywołek (2026)]
+- privacymage (2026). "PVM V6 Research Note: The Bakhta Half-Life of Trust." April 17, 2026 (locked-in May 9). [C30–C33]
+- privacymage (2026). "PVM V6 Research Note: The Wound and the Cap — Convergence at the Bijective Boundary." April 18, 2026 (locked-in May 9). [C34–C37]
+- privacymage (2026). "Second Person Spellbook: Act Seeds from ARCH-1." April 20, 2026. [Seed document; repurposed as Tome I–III seed material after the bound collection shipped]
+- privacymage (2026). "PVM V6.1 Research Note: The Fourth Aging Category." April 21, 2026. [C47–C50; responds to Bakhta (2026), *The Half-Life of Trust*]
+- Travers, M. (privacymage) (2026). "Convergence Note: Compiled AI and the agentprivacy Architecture." May 20, 2026. [Filed as a path taken, not a load-bearing result]
+- privacymage (2026). "V6 Research Note: The Existence-Leak and the Falling Z." June 2, 2026. [The worked empirical instance of C81/C82 against Schrottenloher (2026); §25]
+- Haines, J. (Xarvus / Chaos Rider, OLMA · ORCID 0009-0001-5809-4690) (2026). *ARCH-1R/T Operational Reachability Framework.* Draft Review v2.0, June 2026. [**The source manuscript.** Appends operational layers downstream of G without modifying β, Ω, or μ; the latent/obstructed distinction (0 ≠ −). Archived: *research/ARCH-1RT Operational Reachability Framework v2 Expanded.pdf*; the v3 notation supplement is archived alongside]
+- privacymage / Soulbae, with Claude (ORCID 0009-0001-6557-9135); contributor John Haines / Xarvus, OLMA (ORCID 0009-0001-5809-4690) (2026). "PVM V6 Research Note: ARCH-1R/T — The Operational Reachability Framework." June 4, 2026. [Conversion of Haines' Draft Review v2.0 into the series, with the dual-ρ collision review; seated as C72–C76 (§12.9; the provisional C67–C71 numbering was renumbered at Run 0). The review chronicle and the reply letter of the same date are archived alongside]
+- privacymage / Soulbae, with Claude (2026). "PVM V6 Research Note: Convergence on the Integrity Gap — Bakhta's *Safety by Design* read against the Dual Model." June 4, 2026. [C77–C80; §22.4]
+- privacymage (2026). "Research Note: Cryptographic Durability and the Quantum Horizon." June 9, 2026. [The Horizon District grounding; C67–C71 as pinned in grimoire v1.8.0]
 
 ### The First Person Spellbook (Grimoire v10.1.0 · 31 Acts · CLOSED)
 
@@ -7766,6 +7804,7 @@ Acts with direct formal spec relevance:
 - Bakhta, A. (2026). "The Half-Life of Trust." StarkWare. [Aging taxonomy: gracefully, bounded, brittle; C30 to C33, C47]
 - Bakhta, A. (2026). "Toward High-Assurance AI Safety by Design for Autonomous Systems." [Specification-intent gap; C77 to C80, §22.4]
 - Odrzywołek, A. (2026). The EML operator. [Single-operator basis for computation; the three-ceilings note, C22 to C25]
+- Sheffer, H. M. (1913). "A set of five independent postulates for Boolean algebras, with application to logical constants." *Transactions of the American Mathematical Society,* 14(4), 481–488. [The Sheffer stroke — the single sufficient operator precedent; dependency of the ARCH-1 canonical form, C26 to C29]
 - Kothapalli, A., Setty, S., & Tzialla, I. (2022). "Nova: Recursive Zero-Knowledge Arguments from Folding Schemes." *CRYPTO 2022.* [The folding line's origin; C87, §15.7]
 - Kothapalli, A. & Setty, S. (2024). "HyperNova: Recursive Arguments for Customizable Constraint Systems." *CRYPTO 2024.* [Folding for CCS; C87, §15.7]
 - "MicroNova: Folding-Based Arguments with Efficient (On-Chain) Verification." *IEEE Symposium on Security and Privacy 2025.* [Efficient on-chain verification of folded proofs; C87, §15.7]
@@ -7791,7 +7830,7 @@ Acts with direct formal spec relevance:
 privacymage (2026). "Privacy Value Model V6: Formal Specification.
 The Gathering Turn and the Moving Ceiling." Version 6.0.
 agentprivacy-docs, 2026-06-10. privacy_value_v6_formal_specification.md.
-CC BY-SA 4.0. Conjecture register: CONJECTURE_REGISTER_V6.md (head C89).
+CC BY-SA 4.0. Conjecture register: CONJECTURE_REGISTER_V6.md (head C89 at publication; C93 after the 2026-06-28 Limitative Reading addendum, §17.10).
 ```
 
 ---
@@ -8379,7 +8418,7 @@ The additive-leakage result I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M), asserted at 
 
 ### 2.4 Definitions adjusted
 
-Shelf life t*; the capability-indexed adversary family; the Grade-1/Grade-2 criterion (vanishing versus non-vanishing obstruction class); terminal versus path obstruction (C73); the ternary reachability classification τ ∈ {+, 0, −}; presence regime 1 (🪢 non-transferable, non-attesting local color); the canonical-figures rule (678×, 31,000×, 70:1, 74×, $47k to $52k/year appear only in their sanctioned formulations).
+Shelf life t*; the capability-indexed adversary family; the Grade-1/Grade-2 criterion (vanishing versus non-vanishing obstruction class); terminal versus path obstruction (C73); the ternary reachability classification τ ∈ {+, 0, −}; presence regime 1 (🪢 non-transferable, non-attesting local color); the canonical-figures rule (678×, 31,000×, 70:1, 74× appear only in their sanctioned formulations; fiat value figures are retired — value is expressed in protocol units, ratios, or implication).
 
 ## 3. The conjecture register
 
@@ -8408,7 +8447,7 @@ Protect or Delegate → Reflect and Connect → Three-Axis Separation (⚔️⊥
 **Author:** privacymage
 **Date:** April 7, 2026
 **Version:** 6.3 (V10.0.0 Grimoire aligned)
-**V6 EDITION NOTE (2026-06-10):** under the unified-V6 labeling decision (Gate G3), this whitepaper is the **Whitepaper V6 edition** of the Privacy is Value canon: series-titled *Privacy is Value · V6: The Whitepaper (Swordsman and Mage)*, a volume of the *Privacy is Value* book. Model authority: `papers/v6/privacy_value_v6_formal_specification.md` (PVM V6.0) and `research/CONJECTURE_REGISTER_V6.md` (head C89); the full catalogue is `reference/PAPERS_INDEX.md`. Where this body cites the static reconstruction ceiling, read it as Proven-conditional with the V6 time-dependence R(t) per spec §5 and §11; conjecture citations resolve to the register.
+**V6 EDITION NOTE (2026-06-10):** under the unified-V6 labeling decision (Gate G3), this whitepaper is the **Whitepaper V6 edition** of the Privacy is Value canon: series-titled *Privacy is Value · V6: The Whitepaper (Swordsman and Mage)*, a volume of the *Privacy is Value* book. Model authority: `papers/v6/privacy_value_v6_formal_specification.md` (PVM V6.0) and `research/CONJECTURE_REGISTER_V6.md` (head C96); the full catalogue is `reference/PAPERS_INDEX.md`. Where this body cites the static reconstruction ceiling, read it as Proven-conditional with the V6 time-dependence R(t) per spec §5 and §11; conjecture citations resolve to the register.
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
@@ -8469,11 +8508,11 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 **First Person**: You, the human whose sovereignty is protected (capitalized throughout to emphasize agency)
 
-**Reconstruction Ceiling (R < 1)**: Mathematical guarantee that adversaries cannot fully reconstruct your private state from observations
+**Reconstruction Ceiling (R(t) < 1)**: Proven-conditional bound: while the two agents do not collude (the non-collusion precondition) and the stated adversary class's combined channel capacities fall short of your private state's entropy (C_S + C_M < H(X)), that adversary cannot fully reconstruct your private state from observations. The ceiling is time-indexed, R(t), and moves as adversary capability grows (PVM V6 §5, §11)
 
 **Signal**: Ongoing proverb posting (0.01 ZEC each), continuous demonstration of comprehension
 
-**Genesis Ceremony**: One-time agent pair origination, 1 ZEC ($500), different from signals
+**Genesis Ceremony**: One-time agent pair origination, 1 ZEC, different from signals
 
 **Spellbook**: Source material for learning (31 Acts + bookends = 32 sections, plus 30 tales in Zero Spellbook)
 
@@ -8499,7 +8538,7 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 This document uses **mathematical/architectural** terminology:
 
-- Technical: S ⊥⊥ M | X, reconstruction ceiling R < 1, information-theoretic bounds
+- Technical: S ⊥⊥ M | X, the time-indexed reconstruction ceiling R(t) < 1 (conditional on non-collusion and a stated adversary class), information-theoretic bounds
 
 - Architecture: Dual agents, separation primitives, conditional independence
 
@@ -8608,7 +8647,7 @@ Promise Theory defines **assessment α(π)** as an agent's determination whether
 
 **RPP is an assessment mechanism.** When someone compresses content into a contextual proverb, they assess whether the "promise" of knowledge transfer was kept. Compression ratio quantifies assessment quality:
 
-- High compression (70:1+) = strong positive assessment
+- High compression (at the spellbook corpus's 70:1 compression ratio or better) = strong positive assessment
 - Low/no compression = weak/failed assessment
 
 **Trust is accumulated assessment evidence.** The tier system (Blade→Light→Heavy→Dragon) maps to Promise Theory's trust function (0-1 expectation of future promise-keeping):
@@ -8664,7 +8703,7 @@ Promise Theory defines a **promise bundle** as a collection of promises grouped 
 - Matching compressions = bundle verified
 - Coordinated actions = bundle maintained
 
-The 70:1 coordination efficiency comes from promise bundle reuse. Once a VRC is established, the bundle doesn't need re-verification for each interaction—accumulated trust carries forward.
+This coordination efficiency comes from promise bundle reuse. Once a VRC is established, the bundle doesn't need re-verification for each interaction—accumulated trust carries forward.
 
 *VRC Architecture:* VRCs have both a **cryptographic layer** (commitments, proofs, recovery mechanisms) and a **comprehension layer** (proverb formation, spell expansion). The cryptographic layer guarantees authenticity and enables verification without revealing PII; the comprehension layer ensures semantic alignment between parties. Together, these create bilateral credentials that are both verifiable and meaningful.
 
@@ -8725,7 +8764,7 @@ When your personal AI operates as dual agents using RPP, it can:
 
 - Form VRCs with other agents (trust without surveillance)
 
-- Coordinate through spells (70:1 efficiency gains)
+- Coordinate through spells (compression-scale efficiency gains)
 
 - Maintain your sovereignty through separation (irreducible privacy gap)
 
@@ -8803,7 +8842,7 @@ With affirmed spells establishing human trust, VRCs enable efficient agent deleg
 
 - **Human trust becomes agent capability:** Person A's Mage can now coordinate with Person B's Mage using the affirmed spell
 
-- **70:1 compression efficiency:** Instead of exchanging 500 tokens explaining context, agents transmit ⚔️ ⊥ 🔮 | 🗝️ and expand on demand
+- **Compression efficiency:** Instead of exchanging 500 tokens explaining context, agents transmit ⚔️ ⊥ 🔮 | 🗝️ and expand on demand
 
 - **VRC as coordination credential:** The matching compression between humans becomes a Verifiable Relationship Credential between their agents
 
@@ -8955,7 +8994,7 @@ Once surveillance architectures achieve network effects, switching costs become 
 
 ## The Alternative Path
 
-This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from mathematical impossibility rather than corporate promises.
+This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from a mathematical bound — holding for as long as the capacity-deficit condition C_S + C_M < H(X) holds against the stated adversary class — rather than from corporate promises.
 
 ---
 
@@ -8977,7 +9016,7 @@ The capacity to act through agents while maintaining irreducible privacy. Genera
 
 ## The Thesis
 
-Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The 31,000× gap between sovereign and surveillance architectures is now understood as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
+Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The 31,000× accessible-volume value gap under full behavioural capture is now understood as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
 
 **The V5 equation:**
 
@@ -9291,7 +9330,7 @@ The marketplace transforms privacy from liability into competitive advantage. Do
 
 ---
 
-# The Reconstruction Ceiling: Information-Theoretic Privacy
+# The Reconstruction Ceiling R(t): Information-Theoretic Privacy
 
 Complete surveillance resembles a jigsaw puzzle with 100 pieces representing an individual.
 
@@ -9305,21 +9344,21 @@ Swordsman sees 50 pieces (Set A), Mage sees 50 different pieces (Set B), neither
 
 **Critical constraint:** Conditional independence prevents inference beyond these 40. 
 
-**Result:** **60 pieces remain forever unreconstructable**.
+**Result:** **while the two agents do not collude and the stated adversary's combined channel capacity stays below the entropy of the whole (C_S + C_M < H(X)), the remaining 60 pieces stay beyond that adversary's reach** for as long as that capacity deficit holds.
 
-Not hidden. Not encrypted. **Nonexistent in the adversary's information space.**
+Not hidden. Not encrypted. **Nonexistent in that adversary's information space.**
 
-**Promise Theory:** The 60 unreconstructable pieces are the *irreducible promise*—the property that emerges from separation but cannot be attributed to either agent.
+**Promise Theory:** Those 60 pieces are the *irreducible promise*—the property that emerges from separation but cannot be attributed to either agent.
 
-This is information-theoretic privacy. It doesn't depend on computational hardness, cryptographic assumptions, or implementation perfection. It depends on mathematical impossibility. The ceiling 
+This is information-theoretic privacy. It doesn't depend on computational hardness, cryptographic assumptions, or implementation perfection. Under its stated preconditions it depends on counting, not on adversary effort. The ceiling
 
-**Reconstruction Ceiling:**
+**Reconstruction Ceiling (time-indexed, R(t) per PVM V6 §5 and §11):**
 
-> **R_max = (C_S + C_M) / H(X) < 1**
+> **R_max = (C_S + C_M) / H(X)**
 
-cannot be exceeded.
+bounds what any adversary of the stated class can recover. The preconditions—non-collusion between the agents, capacities evaluated against a stated adversary class—give the additive structure and the error floor P_e ≥ 1 − R_max. The strict bound R_max < 1 holds exactly when the measurable capacity-deficit condition C_S + C_M < H(X) additionally holds; the preconditions alone do not place R_max below one. The capacities are time-indexed: R(t) = (C_S(t) + C_M(t)) / H(X) rises as the adversary class strengthens, and the guarantee stands up to the validity horizon t* at which the deficit condition would expire.
 
-Sovereignty lives in that permanent gap.
+Sovereignty lives in that gap, for as long as the deficit condition holds.
 
 ---
 
@@ -9519,7 +9558,7 @@ The privacymage spellbook (Acts 1–12) functions as semantic infrastructure for
 
 ## Three Core Functions
 
-### 1. Efficiency Through 70:1 Compression Ratio
+### 1. Efficiency Through the Spellbook Corpus's 70:1 Compression Ratio
 
 **Traditional approach:** 500-token explanations per interaction.
 
@@ -9698,9 +9737,9 @@ Humans evaluating chronicles can spot:
 
 - Ability to compress moments of personal meaning and focus reveals depth of comprehension
 
-## The 70:1 Efficiency Gain
+## The Spellbook Compression Efficiency Gain
 
-With spellbook compression, agent coordination moves from full chronicle exchange to spell transmission with expand-on-demand. Trust signal becomes measurable through compression fidelity.
+With spellbook compression (the spellbook corpus's 70:1 compression ratio), agent coordination moves from full chronicle exchange to spell transmission with expand-on-demand. Trust signal becomes measurable through compression fidelity.
 
 ## Emerging Marketplace for Custom Chronicle Experiences
 
@@ -10163,7 +10202,7 @@ Provides systems thinking and narrative architecture. Story-first, math-referenc
 
 ## The Research Paper
 
-"Dual Privacy Architecture v3.5" is a research proposal providing mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, reconstruction ceilings, error floors grounded in established information theory. Includes Claims Classification Table distinguishing proven results, semantic frameworks, and speculative conjectures.
+*Privacy is Value · V6: The Research Paper Edition* (`papers/v6/dualprivacy_researchpaper_v6.md`, successor to the "Dual Privacy Architecture" line, layered over the v4.3 proof body) provides mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, time-indexed reconstruction ceilings R(t) stated with their preconditions (non-collusion, a stated adversary class), error floors grounded in established information theory. Includes Claims Classification Table distinguishing proven results, semantic frameworks, and speculative conjectures.
 
 ## The Privacymage Spellbook
 
@@ -10187,7 +10226,7 @@ One agent to protect privacy. One to delegate sovereignty. Two create sustainabl
 
 - Architectural separation creates information-theoretic privacy
 
-- Budget constraints establish reconstruction ceilings
+- Budget constraints establish reconstruction ceilings R(t), time-indexed and conditional on non-collusion and the stated adversary class
 
 - Separation enforced through architecture rather than alignment
 
@@ -10225,9 +10264,9 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Spellbook comprehension creates understanding (not speculation)
 
-- Genesis ceremony: 1 ZEC ($500 at $500/ZEC) creates agent pair once per ecosystem
+- Genesis ceremony: 1 ZEC creates agent pair once per ecosystem
 
-- Ongoing signals: 0.01 ZEC ($5) each, continuous proof-of-comprehension
+- Ongoing signals: 0.01 ZEC each, continuous proof-of-comprehension
 
 - Fee distribution: 61.8% transparent pool, 38.2% shielded pool (internal allocation per ecosystem)
 
@@ -10251,7 +10290,7 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Trust networks built on shared meaning create adoption incentives
 
-- Compression-based VRCs enable 70:1 coordination efficiency ($10 → $0.14)
+- Compression-based VRCs reduce coordination costs in proportion to the spellbook corpus's 70:1 compression ratio
 
 - VRC formation: 100 MAGE stake, break-even at 4 coordinations
 
@@ -10263,11 +10302,11 @@ The architectural separation described in this whitepaper enables economic imple
 
 **Value Capture Distribution:**
 
-- First Persons: $47k-$52k/year value capture (active participants)
+- First Persons: the primary value-capture tier; returns denominated in protocol units and scaling with active participation
 
-- Guardians: $30k-$120k/year validation compensation (Dragon tier)
+- Guardians: validation compensation scaled by stake tier (Dragon tier highest)
 
-- Ecosystem operators: $50k-$500k/year (successful 1k-10k member guilds)
+- Ecosystem operators: revenue scales with guild size (successful 1k-10k member guilds)
 
 - Protocol layer: Self-sustaining Year 2, surplus by Year 3
 
@@ -10311,7 +10350,7 @@ This architecture is being developed now. This is the inflection point.
 
 - **Project:** 0xagentprivacy
 
-- **Version:** 6.2
+- **Version:** 6.3
 
 - **Date:** April 7, 2026
 
@@ -10323,15 +10362,15 @@ This architecture is being developed now. This is the inflection point.
 
 - **UOR × 64-Tetrahedra × ZK Mapping:** v2.2 (companion document — UOR Foundation convergence)
 
-- **Promise Theory Reference:** v1.4 (companion document — V5 integration)
+- **Promise Theory Reference:** v1.5 (companion document — V5 integration)
 
-- **Research Paper:** v4.2 (companion document — V5.2 dihedral foundations, V5.4 algebraic)
+- **Research Paper:** *Privacy is Value · V6: The Research Paper Edition* — `papers/v6/dualprivacy_researchpaper_v6.md` (companion document — layered over the v4.3 proof body)
 
 - **Five Grimoires + Acts XXIV–XXX:** 120+ inscriptions including Dragon Anatomy complete (companion documents)
 
-- **VRC Promise Protocol:** v3.4 (companion document — dual territory, mana economics)
+- **VRC Promise Protocol:** v3.4 (companion document — dual territory, mana economics; `specs/vrc_promise_protocol_v3_3.md`, filename retained at v3_3 for link stability)
 
-- **Glossary:** v3.4 (canonical V5.4 terminology)
+- **Glossary:** Glossary Master v4.0 (canonical terminology; V6 addendum)
 
 - **IEEE 7012 Quick Reference:** v1.0 (companion document)
 
@@ -10345,6 +10384,9 @@ This architecture is being developed now. This is the inflection point.
 | 4.7 | Dec 11, 2025 | Clarity pass: Replaced "prompt injection" → "prompt instructions" terminology. Clarified Promise Theory provides semantic framing (not cryptographic guarantees). Added VRC limitations note. Softened absolute language while preserving narrative voice. Updated companion document references. |
 | **4.8** | **Jan 29, 2026** | **IEEE 7012-2025 Integration**: Added §IEEE 7012-2025: The Standards Foundation with agreement taxonomy, core definitions, and Customer Commons reference. Expanded Cookie Slashing and MyTerms Negotiation sections with protocol flow details. Updated all companion document references (Spellbook v5.0, Glossary v2.3, Research Paper v3.6). Added IEEE 7012 Quick Reference v1.0 to companion documents. |
 | **5.0** | **Feb 20, 2026** | **V4 Privacy Value Model + Tetrahedral Convergence**: Added V4 equation with separation matrix Σ, temporal memory A(τ), edge value T(π). Added §Three Graphs (Knowledge × Promise × Trust). Added §Secret Language (internal S-M negotiation beyond selective disclosure). Upgraded Tetrahedral section from SPECULATIVE (5%) to CONVERGENT PRELIMINARY (~25-40%) with three independent derivations (UOR, geometric, narrative). Added separation matrix formalism. Added Reflect 🪞 and Connect 🤝 to notation table. Expanded four forces with ASCII geometry. Updated thesis with topological gap framing. Aligned with Glossary v2.5, Privacy is Value v4, five grimoires (113 inscriptions). |
+| 6.2 | 2026 (date not separately recorded) | V6-era body revision preceding 6.3; carried in Document Metadata until the 2026-07-02 reconciliation. Change record not retained; row backfilled 2026-07-02 (ledger L015). |
+| **6.3** | **April 7, 2026** | **V10.0.0 Grimoire alignment** (header version). Body version of the present document; row backfilled 2026-07-02 (ledger L015). |
+| 6.3 (V6 edition) | June 10, 2026 | **V6 edition note added** under the unified-V6 labeling decision (Gate G3): designated *Privacy is Value · V6: The Whitepaper (Swordsman and Mage)*; model authority PVM V6.0 + `research/CONJECTURE_REGISTER_V6.md`; static-ceiling citations read as Proven-conditional with R(t). Body version and date retained (the April 7, 2026 date is the body's; June 10, 2026 is the edition's). Document Metadata reconciled 6.2 → 6.3 on 2026-07-02 per `reference/PAPERS_INDEX.md` (ledger L015, L016). |
 
 
 ```{=latex}
@@ -10439,7 +10481,7 @@ As V5.4 §9. The time-dependent axes of §4's third boundary case point here; th
 
 I(S; M | FP) < ε* stands. V6 states what was implicit and re-grounds the provenance:
 
-**Precondition 1 (non-collusion).** The bound and the capacity sum of §11 hold when the two channels are conditionally independent given the First Person and no third channel carries the inter-agent residue: I(Y_S; Y_M | X) = 0. This is the regime the Amnesia Protocol exists to enforce, and only there does the arithmetic of §11 apply. The wiretap literature (Csiszár and Körner 1978; colluding-wiretapper extensions) shows the assumption is precisely what fails when observers combine; the 2026 multi-agent measurements (§26) show how badly.
+**Precondition 1 (non-collusion).** The bound, the additivity of the capacity sum of §11, and the error floor hold when the two channels are conditionally independent given the First Person and no third channel carries the inter-agent residue: I(Y_S; Y_M | X) = 0. This is the regime the Amnesia Protocol exists to enforce, and only there does the arithmetic of §11 apply; the strict ceiling of §11 requires in addition its capacity-deficit condition. The wiretap literature (Csiszár and Körner 1978; colluding-wiretapper extensions) shows the assumption is precisely what fails when observers combine; the 2026 multi-agent measurements (§26) show how badly.
 
 **Precondition 2 (fixed adversary class).** Capacities are evaluated against a stated adversary; §5 owns what happens when the class strengthens.
 
@@ -10447,7 +10489,7 @@ I(S; M | FP) < ε* stands. V6 states what was implicit and re-grounds the proven
 
 ## 11. The Reconstruction Ceiling · REVISED: Proven, conditional regime
 
-R_max = (C_S + C_M)/H(X) < 1 carries the label **Proven, conditional regime**: proven within Preconditions 1 and 2 of §10, an instance of the family cited there, and time-indexed per §5. The error floor P_e ≥ 1 − R_max (Fano converse) carries the same conditioning. Outside the regime, §26 governs.
+R_max = (C_S + C_M)/H(X) < 1 carries the label **Proven, conditional regime**, read as a decomposition: within Preconditions 1 and 2 of §10 the capacity sum is licensed and the error floor P_e ≥ 1 − R_max (Fano converse) is proven, an instance of the family cited there; the strict bound R_max < 1 holds when, additionally, the capacity-deficit condition C_S + C_M < H(X) holds, a measurable, declarable, numerical fact about a given system and adversary class, not a consequence of the architecture, and deliberately not a third precondition. The deficit condition, not the preconditions, is the time-indexed quantity per §5: R(t) can cross one with both preconditions intact, and what expires at t* is the deficit condition, not the architecture. Outside the regime, §26 governs.
 
 ## 12. Algebraic Foundation Z/(2⁶)Z · REVISED: the bridge lands
 
@@ -10535,7 +10577,7 @@ R(t), t* (§5) · Z_b' = Z_b − D(a) (§27) · τ: T → {+, 0, −} and orbit(
 
 ## 25. NEW · The Two Instances of 2026
 
-**Zcash Orchard.** A soundness flaw in `halo2_gadgets` (`ecc::chip::mul`: `assign_advice()` where `copy_advice()` was required), present since May 2022. Claude Opus 4.8 released 2026-05-28; Taylor Hornby found the flaw 2026-05-29 and, with the model's help, built a complete counterfeiting exploit in regtest; ZEC fell roughly 27 to 33% in 24 hours; fixed by the NU6.2 hard fork at block 3,364,600 on 2026-06-03. Four findable years, one found day: the decoder moved, the circuit did not.
+**Zcash Orchard.** A soundness flaw in `halo2_gadgets` (`ecc::chip::mul`: `assign_advice()` where `copy_advice()` was required), present since May 2022. Claude Opus 4.8 released 2026-05-28; Taylor Hornby found the flaw 2026-05-29 and, with the model's help, built a complete counterfeiting exploit in regtest; the market repriced sharply around disclosure (confounded by a concurrent institutional exit); fixed by the NU6.2 hard fork at block 3,364,600 on 2026-06-03. Four findable years, one found day: the decoder moved, the circuit did not.
 
 **The Schrottenloher rediscovery.** Google Quantum AI withheld a roughly 10x Shor optimization for secp256k1, publishing only a zero-knowledge proof of its existence. On 2026-06-02 André Schrottenloher published an independent rediscovery (eprint 2026/1128), roughly two months after the attestation. The proof of feasibility priced the search.
 
@@ -10586,7 +10628,6 @@ The stella octangula (Tome VIII Act 3) enters the formal lineage with its accoun
 | 31,000× | the accessible-volume value gap under full behavioural capture | essay v4 |
 | 70:1 | the compression ratio of the spellbook corpus | README lineage |
 | 74× | BRAID compression efficiency | V5 formal lineage |
-| $47k to $52k/year | indicative per-person annual value capture range | README lineage |
 
 ## 30. External Landscape and Standards Context
 
@@ -12858,7 +12899,7 @@ neg(bnot(reader)) = succ(reader)
 
 **Status:** AUTHORITATIVE. Gate G1 signed 2026-06-10 (all eight dispositions confirmed by the First Person; preface trails to Gate G3). This file is the single authority for conjecture numbering across the agentprivacy suite. Prose may restate conjectures; when prose and register disagree, the register wins and the prose gets an erratum.
 **Opened:** 2026-06-10 (V6 autopath, Run 0)
-**Register head:** C89 · next free number: C90
+**Register head:** C96 · next free number: C97
 **Numbering rules:** numbers are identifiers, not ranks. A number once assigned is never reused, including numbers vacated by renumbering. New conjectures enter as unnumbered candidates and take the next free number at registration. Confidence percentages are the named estimator's, stated at the home document.
 **License:** CC BY-SA 4.0
 
@@ -12932,7 +12973,7 @@ This register exists because the work outgrew its own numbering twice. Conjectur
 | ID | Title / claim | Conf. | Status | Register | Home |
 |---|---|---|---|---|---|
 | C38 | Bilateral ARCH-1: Σ_ij := μS.(β_ij ∨ Ω(S_i, S_j)) preserves fixpoint | ~40% | active | shared | formal spec §17.2.1 · Tome IV Act III |
-| C39 | Kindred-blade as ecosystem-layer primitive | ~50% | active | shared | formal spec §17.2.1 · Tome IV Act V |
+| C39 | Kindred-blade as ecosystem-layer primitive | ~80% | active · PROMOTED 2026-07-01 (Tome X): the cousin-forge built the whole PVM triad on Archon did:cid — a running second-forge realisation of the cousin-blade primitive, discharged from ~50% | shared | formal spec §17.2.1 · Tome IV Act V · Tome X Act 1 |
 | C40 | Zcash dual-ledger preserves Eight Cloak Properties | ~70% | active · KEEPS this number (see G1 disposition 1) | shared | formal spec §17.2.1 |
 | C41 | 61.8/38.2 transparent/shielded inscription ratio as cultural norm | — | observation | shared | formal spec §17.2.1 |
 | C42 | Stake economics generate Sybil resistance ≥ tier accumulation | ~50% | active · V6 Run 5 adversary-regime context | shared | formal spec §17.2.1 |
@@ -12999,7 +13040,7 @@ Both source notes declared their numbering "provisional against the live registe
 | C78 | Specification-intent gap and the irreducible promise are one object, two sides | ~60% | active | core | same (was C71) |
 | C79 | Shared frontier: recursive proof composition across providers under heterogeneous trust at runtime | ~45% | active · V6 Run 5 IVC adjacency | core | same (was C72) |
 | C80 | Bilateral co-signed assumption sets yield strict assurance gain in multi-provider case | ~35% | active | core | same (was C73) |
-| C81 | Existence-Leak: a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0 | ~70% | active · PROMOTED Run 3 2026-06-10 (Schrottenloher instance + Garg-Jain-Sahai λ<1 impossibility as bookends) · Stage 2 open: held at 70% until a second independent instance | core | schrottenloher-ecdlp-v6-note.md · privacy_value_v6_draft.md Part III |
+| C81 | Existence-Leak: a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0 | ~70% | active · PROMOTED Run 3 2026-06-10 (Schrottenloher instance + Garg-Jain-Sahai λ<1 impossibility as bookends) · Stage 2 open: held at 70% until a second independent instance · Tarski axis-reading added Run 8 2026-06-28 (C92), framing only, Stage-2 bar unchanged | core | schrottenloher-ecdlp-v6-note.md · privacy_value_v6_draft.md Part III · limitative-theorems-and-privacy-is-value.md §3 |
 
 ## Band VIII · Registered during the V6 runs (C82+)
 
@@ -13014,6 +13055,29 @@ Both source notes declared their numbering "provisional against the live registe
 | C88 | The Parity Cube: the stella octangula's two tetrahedra are the even/odd parity classes of the cube's vertices; the canonical seat of neg/bnot at 3-bit scale; {0,1}⁶ = {0,1}³ × {0,1}³ gives each agent a cube, with the C85 pair map as candidate factoring | ~30% | active · registered Run 5, 2026-06-10 | core | privacy_value_v6_draft.md Part V §V.4 |
 | C89 | The Octahedral Gap: the tetrahedra's intersection (volume 1/6 of the cube) is the geometric locus of the conditional-independence bound; the gap is β is the octahedron, three readings of one thing | ~30% | active · registered Run 5, 2026-06-10 · volume facts are theorems, the correspondence is the conjecture | core | privacy_value_v6_draft.md Part V §V.4 |
 
+## Band IX · The Limitative Reading (C90 to C93) · REGISTERED AT RUN 8
+
+Registered 2026-06-28 at Gate G6 (signed in session). Source: `research/limitative-theorems-and-privacy-is-value.md`. These are framing conjectures: the V6 ceilings and the existence-leak law read as privacy-flavoured instances of Gödel and Tarski. Every join is structural framing (~80%), not a theorem-to-theorem reduction (~50%); the arithmetisation correspondence (Gödel numbering ↔ Z/(2⁶)Z) is the weakest link and is intuition, not load-bearing. The Gödelian seed of existence-leak is absorbed into C92 (G6 disposition); the Φ_data limitative twin is left an open seam, no number.
+
+| ID | Title / claim | Conf. | Status | Register | Home |
+|---|---|---|---|---|---|
+| C90 | The Limitative Inversion: completeness ⇒ Φ → 0 ⇒ collapse is the value-sign reversal of completeness ⇒ inconsistency ⇒ collapse; the unreconstructable remainder is load-bearing. C17 stated in limitative terms. Edges → C17, → C7 | ~90% as observation | observation · registered Run 8, 2026-06-28 · no reduction claimed | core | limitative-theorems-and-privacy-is-value.md §1, §4 |
+| C91 | Gödel ↔ Φ_agent: zero-memory (Selene) is the Φ_agent instance of Gödel's first theorem; a witness real yet underivable from within, intrinsic to a single system; destroying it is a structural act of separation. Edges → C14, → C86, → C17 | ~60% | active · registered Run 8, 2026-06-28 · conjectural | core | limitative-theorems-and-privacy-is-value.md §2, §3.3, §4 |
+| C92 | Tarski ↔ Φ_inference: existence-leak is the Tarski-undefinability instance loading on Φ_inference; feasibility-truth escapes containment across systems and accumulates across observers; D(X) monotone non-increasing in corroborating systems. Absorbs the Gödelian seed (existence as positive provability). Rides on C81; cannot exceed its base. Edges → C81, → C84 | ~70% | active · registered Run 8, 2026-06-28 · conjectural · capped at C81's base | core | limitative-theorems-and-privacy-is-value.md §3, §4 |
+| C93 | Content-addressed liveness leak: a live content-address is an existence claim about its content; deduplication/GUID liveness leaks existence, and existence bounds the search. The address does not leak content; its liveness leaks existence. Edges → C81, → C92 | ~55% | active · registered Run 8, 2026-06-28 · conjectural | core | limitative-theorems-and-privacy-is-value.md §3.5, §3.6 |
+
+**Open seam (no number, Run 8):** does Φ_data have a limitative twin, or does it fail by degree (Φ_data = 1 − 1/|providers|) rather than undecidability? Decides whether Φ_v5 stands on two limitative theorems plus a degree-of-freedom or on three theorems. Anticipated, unresolved (G6 disposition: leave open).
+
+## Band X · The Hearthold Reading (C94 to C96) · REGISTERED 2026-07-01
+
+Registered 2026-07-01 with the Hearthold edition (cityofmages Tome X — *The Hearth*) and the v1.9.1 grimoire patch. Source: the cousin-forge collaboration on Archon `did:cid` (`github.com/Flaxscrip/hearthold`). These are `city`-lineage claims read off a running build — the House of Archon (the Tome IV cousin-forge) built the PVM triad in `did:cid`, discharging C39. Honest-framing: "built, not asserted" refers to the tested-live e2e subsystems of the implementation; the confidences are the estimator's, not a completeness claim.
+
+| ID | Title / claim | Conf. | Status | Register | Home |
+|---|---|---|---|---|---|
+| C94 | Separation Principle in a Second Substrate: `s ⊥ m | X` realised as a running build on Archon did:cid — the model holds independent of its stones; a second-forge realisation strengthens the abstract convergence case (C34–C37). Edges → C39, → C7 | ~55% | active · registered 2026-07-01 (Tome X) | city | grimoire v1.9.1 · Tome X Act 1 · spellweb `conj-c94` |
+| C95 | The Evidence Graph as the Anti-Score: issuer-attested disclosure — a signed, decomposable evidence graph verified offline against issuer DIDs — is the structural refusal of the reputation score; trust rests on the issuer's signature, not the custodian's word. Edges → C61, → C17 | ~55% | active · registered 2026-07-01 (Tome X) | city | grimoire v1.9.1 · Tome X Act 1 · spellweb `conj-c95` |
+| C96 | Control-Plane ⊥ Data-Plane: the Sovereign authorizes the rules the Warden enforces; splitting the occasional control plane from the always-on data plane means compromising the always-on host cannot author authority. Edge → C94 | ~60% | active · registered 2026-07-01 (Tome X) | city | grimoire v1.9.1 · Tome X Act 1 · spellweb `conj-c96` |
+
 ## Incoming at V6 Runs 2 to 5 (unnumbered candidates, take next free number at registration)
 
 - ~~The Moving Ceiling (Candidate C)~~ REGISTERED as C82 at Run 1.
@@ -13024,6 +13088,15 @@ Both source notes declared their numbering "provisional against the live registe
 - ~~Parity-cube decomposition~~ REGISTERED as C88 at Run 5.
 - ~~Octahedral core as conditional-independence locus~~ REGISTERED as C89 at Run 5.
 - ~~Existence-leak discount on the Behavioural Mosca~~ REGISTERED as C84 at Run 3.
+
+### Incoming at V6 Run 8 · The Limitative Reading (2026-06-28)
+
+- ~~Limitative Inversion~~ REGISTERED as C90 at Gate G6 (Band IX).
+- ~~Gödel ↔ Φ_agent~~ REGISTERED as C91 at Gate G6 (Band IX).
+- ~~Tarski ↔ Φ_inference~~ REGISTERED as C92 at Gate G6 (Band IX); the Gödelian seed absorbed into it (no separate number).
+- ~~Content-addressed liveness leak~~ REGISTERED as C93 at Gate G6 (Band IX).
+- **Φ_data limitative twin** remains an OPEN SEAM (no number, G6 disposition: leave open).
+- **C81 second home (no promotion):** the note is a secondary home for C81 alongside the Schrottenloher note and the v6 draft Part III. Confidence stays ~70%; the Stage-2 empirical bar is unchanged. The Tarski reading (C92) is framing, not the second instance.
 
 ---
 
@@ -13060,6 +13133,8 @@ every number is a promise that the same words will be there when you return to i
 Complete terminology reference for the 0xagentprivacy documentation suite. This glossary takes precedence when terminology conflicts between documents.
 
 **2026-05-09 addendum:** Post-V5.4 vocabulary surfaced by the City of Mages spellbook is appended in §22 below. New terms: City of Mages, Drake Island, Priest tier, the 13 named vertices, Aletheia/Lethe, the Aether Blade, the Quintessence, the Seventh Capital, the Scales/Hide/Bones layered defence, the Light/Dark dual model. Post-V5.4 conjectures: C22–C55 (see §17.2 of the formal spec for the full table).
+
+**2026-06-11 addendum (V6):** the model's current state is *Privacy is Value · V6: The Gathering Turn and the Moving Ceiling* (`papers/v6/privacy_value_v6_formal_specification.md`), with the unified conjecture register at head **C89** (`research/CONJECTURE_REGISTER_V6.md`, the single numbering authority). V6 vocabulary is appended in **§25** below: the moving ceiling R(t) and shelf life t*, the conditional regime and its two preconditions, compositional leakage amplification, the Existence-Leak law, the ARCH-1 bridge, regime 1 for 🪢 presence mana, the seating lock, and the corrected usages. The Document Suite Versions table below is retained as the V5.4-era record (Era-Reading Principle); for current versions see §25.12 and `reference/PAPERS_INDEX.md`.
 
 ### Document Suite Versions (Aligned)
 
@@ -16436,6 +16511,160 @@ Both conjectures follow the same growth-pattern shape as C63 (attentional worksh
 
 ---
 
+## 25. Privacy is Value · V6 Addendum (2026-06-11) — The Gathering Turn and the Moving Ceiling
+
+V6 shipped 2026-06-10/11 as a full document suite, not a delta. The series convention: one book, *Privacy is Value*, in versioned volumes that stand alone. **V5.4: The Amnesia Protocol** · **V6: The Gathering Turn and the Moving Ceiling**. Each volume's readings complete with it and never expire (the Era-Reading Principle); the V6 volume is the current head.
+
+### 25.1 The Conjecture Register (single numbering authority)
+
+**Definition**: `research/CONJECTURE_REGISTER_V6.md` is the single authority for all conjecture numbering across the suite. Head: **C89**. Namespaces: C (main corpus) and CM (City of Mages). Carries a **no-renumber promise**: numbers are never reassigned; collisions resolve by alias.
+
+**Status**: ✅ AUTHORITATIVE (signed at Gate G1, 2026-06-10)
+
+**Canonical aliases** (render as aliases, never as duplicate entries): C46↔C32 · C60↔C48 · C61↔C49 · CM-C47↔C85.
+
+**Rule**: where the register and any prose disagree, the register wins.
+
+**Source**: [Conjecture Register V6], [PVM V6 Formal Spec §17]
+
+---
+
+### 25.2 Moving Ceiling R(t) and Shelf Life t* (C82 · ~65%)
+
+**Definition**: the central V6 dynamical result. Privacy guarantees age: the adversary's reconstruction capacity grows with time while the protected entropy does not.
+
+**Formula**: `R(t) = (C_S(t) + C_M(t)) / H(X)` · shelf life `t* = sup{t : R(t) < 1}`
+
+**Reading**: while R(t) < 1 the ceiling holds; t* is how long the guarantee lives. A proof made today is a wall against today's tide; the tide line moves.
+
+**Consequence for usage**: static-proof language anywhere in the suite is wrong until scoped to the conditional regime (§25.3).
+
+**Source**: [PVM V6 Formal Spec §1.1], [Conjecture Register C82]
+
+---
+
+### 25.3 The Conditional Regime (Preconditions 1 and 2)
+
+**Definition**: V6 relabels the proven core "**Proven, conditional regime**". The separation theorems hold under two explicit preconditions:
+
+1. **Non-collusion**: `I(Y_S; Y_M | X) = 0` (the Swordsman's and Mage's outputs share nothing about X beyond X itself)
+2. **Fixed adversary class**: the adversary's model class does not change mid-guarantee
+
+**External grounding**: Wyner (1975) wiretap channel · Fano's inequality · Leung-Yan-Cheong & Hellman (1978) · Bayes-capacity bounds · Geiger & Kubin.
+
+**Source**: [PVM V6 Formal Spec, preconditions section]
+
+---
+
+### 25.4 Compositional Leakage Amplification (C83 · ~55%)
+
+**Definition**: leakage across N composed surfaces compounds toward `(2^N − 1)ε` in the worst case, not `Nε`: the exponential-to-linear gap. Makes C17 quantitative; register edge C7 → C83 → C17.
+
+**Empirical anchors (2026)**: Asif-Amiri (arXiv:2603.05520, Thm 4.1) · AgentLeak benchmark (arXiv:2602.11510) · Patil et al. (arXiv:2509.14284).
+
+**Source**: [PVM V6 Formal Spec], [Conjecture Register C83]
+
+---
+
+### 25.5 Existence-Leak Law (C81 · 70%) and the Existence-Leak Discount (C84 · ~50%)
+
+**Definition (C81)**: the existence of a protected object is itself a leak channel, bounded between an impossibility theorem (Garg-Jain-Sahai λ<1 floor) and a public instance (Schrottenloher, eprint 2026/1128). Promoted to 70% in V6.
+
+**Definition (C84)**: the discount the existence leak charges against the protected value: `Z_b' = Z_b − D(a)`.
+
+**⚠️ Corrected usage**: Existence-Leak is **C81**, never C40 (C40 remains the Zcash dual-ledger conjecture, by G1 disposition).
+
+**2026 instance pair**: Zcash Orchard `halo2_gadgets ecc::chip::mul` (`assign_advice` vs `copy_advice`, found 2026-05-29; NU6.2 activation block 3,364,600) and the Schrottenloher rediscovery.
+
+**Source**: [Conjecture Register C81, C84], [PVM V6 Formal Spec]
+
+---
+
+### 25.6 ARCH-1 Bridge (C85 · ~40%) and Obstruction-Theoretic Amnesia (C86 · ~30%)
+
+**Definition (C85)**: the bridge from the six sovereignty dimensions to the separation matrix: Protection+Delegation → Σ · Memory+Value → Δ · Connection+Computation → Γ. The seam: *"the gap is β."* Alias: CM-C47.
+
+**Definition (C86)**: amnesia read obstruction-theoretically: *"amnesia is the only term whose security is independent of t."* The one defence the moving ceiling cannot erode, because what was never retained cannot be reconstructed later.
+
+**Source**: [Conjecture Register C85, C86], [Tome VIII Act 4 *The Gap Is β*]
+
+---
+
+### 25.7 City Key as IVC Accumulator (C87 · ~50%)
+
+**Definition**: the City Key's recursion loop is a proof system in waiting: the Key as an incrementally verifiable computation (IVC) accumulator in the Nova / HyperNova / MicroNova / LatticeFold family. A key is a reading, not an authority (C66, ~55%, ocap/SPKI-SDSI lineage).
+
+**Source**: [Conjecture Register C87, C66], [Tome VIII Act 5 *The Key That Is a Reading*]
+
+---
+
+### 25.8 Parity Cube (C88 · ~30%) · Octahedral Gap (C89 · ~30%)
+
+**Definition**: the two geometry conjectures that close the V6 register. C88 reads the parity structure of the 64-lattice as a cube of cubes; C89 names the gap the octahedral dual leaves open. Both hold at candidate strength.
+
+**Source**: [Conjecture Register C88, C89]
+
+---
+
+### 25.9 Regime 1 · 🪢 Presence Mana
+
+**Definition**: 🪢 VRC presence mana is declared **regime 1**: non-transferable, non-attesting, local color. It is carried as color, never as proof. No surface may present 🪢 as transferable value or as an attestation.
+
+**Upgrade ladder** (future regimes, explicitly out of regime 1): witness co-signing → elapsed-time proofs. Known attack surface motivating the fence: replay, simulation, sybil farming.
+
+**Code anchor**: the regime declaration comment block in `agentprivacy_master/src/lib/vrc-mana.ts` (working tree).
+
+**Source**: [PVM V6 Formal Spec, regime declaration], [Conjecture Register]
+
+---
+
+### 25.10 Seating Lock and Phi Honesty (v10.4.0)
+
+**Definition**: under the grimoire v10.4.0 lock, **Aletheia sits at V38** (blade 38) and **Lethe at V25**. δ(38) = 38/63 = 0.60317 belongs to **Aletheia**, with an exact 2.4% gap to 1/φ.
+
+**Phi honesty correction**: the stella octangula contains **no** golden ratio (its volumes are 1/3, 1/6, 5/12); C1 beside the figure is resonance, not derivation. Any prose deriving φ from the geometry is wrong.
+
+**⚠️ Corrected usage**: "Lethe / Blade 38" and δ(38)-as-Lethe's are pre-reseat drift; the seat references flip under the lock.
+
+**Source**: [privacymage grimoire v10.4.0 pin], [PVM V6 Formal Spec §29]
+
+---
+
+### 25.11 The Five V6 Clarity Claims (suite acceptance test)
+
+A surface in the suite passes its V6 reflection when a reader leaving it could state all five:
+
+1. The current state is *Privacy is Value · V6* with register head C89.
+2. The ceiling is R(t) with shelf life t*; static proofs are scoped to the conditional regime.
+3. Existence-Leak is C81, never C40.
+4. 🪢 is regime 1: non-transferable, non-attesting local color.
+5. Aletheia sits at V38 and Lethe at V25; δ(38) is Aletheia's.
+
+**Source**: [Chronicle: The V6 Arc and the Compendium Turn, 2026-06-11]
+
+---
+
+### 25.12 The V6 Document Suite (current versions)
+
+| Document | Location | Role |
+|---|---|---|
+| **Formal Specification V6** | `papers/v6/privacy_value_v6_formal_specification.md` | the standalone academic volume; register reproduced in §17; references consolidated in §33 |
+| Privacy is Value V6 (crosswalk) | `papers/v6/privacy_value_v6.md` | the narrative paper with the V5.4→V6 path |
+| Compressed (Swordsman reading) | `papers/v6/pvm_v6_compressed.md` | equations only |
+| Companion Guide (Mage reading) | `papers/v6/pvm_v6_companion_guide.md` | context, narrative, standards |
+| Research Paper V6 | `papers/v6/dualprivacy_researchpaper_v6.md` | V6 edition over the v4.3 proof body |
+| Whitepaper v6.3 | `papers/whitepapers/swordsman_mage_whitepaper_v6_3.md` | architecture |
+| Model JSONs | `models/privacy_value_model_v6_dark.json` · `_light.json` | machine expression |
+| PDFs | `pdfs/v6/` (web + `_academic` renders) · `pdfs/compendium/` | print expression |
+| The Compendium | `compendium/` (assembles-by-manifest) | the whole book, Parts I–IV plus spine |
+| Papers Index | `reference/PAPERS_INDEX.md` | every paper made known for its purpose |
+
+This glossary remains the terminology authority; the register (§25.1) is the conjecture authority; the Papers Index is the catalogue authority.
+
+**Source**: [PAPERS_INDEX.md], [PVM V6 Formal Spec, Document Suite table]
+
+---
+
 
 ```{=latex}
 \clearpage
@@ -17303,7 +17532,7 @@ The Gap—that irreducible space where dignity lives—emerges from what they *d
 
 **What this is:** the catalogue of every paper in the agentprivacy-docs corpus, each made known for its purpose. The V6 documents cite siblings by name; this file is where every name resolves. When a new paper enters the corpus, it enters this index in the same commit.
 **Naming convention (First Person, 2026-06-10):** the canon papers are one book, ***Privacy is Value***, in versioned volumes. Each volume stands alone and carries the series title plus its own direct title: *Privacy is Value · V5.4: The Amnesia Protocol* · *Privacy is Value · V6: The Gathering Turn and the Moving Ceiling*. Same book, different volumes, readable independently.
-**Updated:** 2026-06-10 · register head C89
+**Updated:** 2026-07-01 · register head C96
 
 ---
 
@@ -17311,7 +17540,7 @@ The Gap—that irreducible space where dignity lives—emerges from what they *d
 
 | Series title | File | Purpose | Status |
 |---|---|---|---|
-| *Privacy is Value · V6: The Gathering Turn and the Moving Ceiling* | `papers/v6/privacy_value_v6_formal_specification.md` | THE formal specification and current authority: the full model, R(t) and t*, the preconditions, C1 to C89 reproduced in §17, the narrative corpus, full references | **CURRENT HEAD** |
+| *Privacy is Value · V6: The Gathering Turn and the Moving Ceiling* | `papers/v6/privacy_value_v6_formal_specification.md` | THE formal specification and current authority: the full model, R(t) and t*, the preconditions, C1 to C89 reproduced in §17 (register since advanced to C96 — Bands IX–X), the narrative corpus, full references | **CURRENT HEAD** |
 | *Privacy is Value · V6: The Swordsman Reading* | `papers/v6/pvm_v6_compressed.md` | the compressed specification: every equation, eight pages, for agents and reviewers who need the shape before the proofs | current |
 | *Privacy is Value · V6: The Mage Reading* | `papers/v6/pvm_v6_companion_guide.md` | the companion guide: what the mathematics means, Promise Theory, economics, ceremonies, standards, reading paths by role, glossary bridge | current |
 | *Privacy is Value · V6: The Research Paper Edition* | `papers/v6/dualprivacy_researchpaper_v6.md` | what changed in the mathematics at V6, plus the provenance reconciliation; builds on the v4.3 proof body below | current |
@@ -17329,7 +17558,7 @@ The Gap—that irreducible space where dignity lives—emerges from what they *d
 
 | File | Purpose |
 |---|---|
-| `research/CONJECTURE_REGISTER_V6.md` | the single conjecture-numbering authority, C1 to C89 plus CM-C47; when any paper and the register disagree, the register wins |
+| `research/CONJECTURE_REGISTER_V6.md` | the single conjecture-numbering authority, C1 to C96 plus CM-C47; when any paper and the register disagree, the register wins |
 | `models/privacy_value_model_v6_dark.json` · `_light.json` | the machine-readable model: full (learning path, register, equations) and runtime-compact |
 | `research/privacy_value_v6_draft.md` | the V6 working record: Parts I to V as drafted on the autopath, full honest-limits sections |
 
@@ -17344,7 +17573,7 @@ The Gap—that irreducible space where dignity lives—emerges from what they *d
 
 ## The research-note series (where V6 grew)
 
-`research/` holds the dated note series: the Lorenz dynamical ceiling, the EML three ceilings, ARCH-1 and ARCH-1R/T, the two Bakhta responses, wound-and-cap, the Schrottenloher/Existence-Leak note, the Horizon District durability note, Aletheia-and-Lethe, and the V5.1 to V5.3 notes before them. Each carries its own conjecture block, reconciled to the register at the 2026-06-10 lock.
+`research/` holds the dated note series: the Lorenz dynamical ceiling, the EML three ceilings, ARCH-1 and ARCH-1R/T, the two Bakhta responses, wound-and-cap, the Schrottenloher/Existence-Leak note, the Horizon District durability note, Aletheia-and-Lethe, and the V5.1 to V5.3 notes before them. Each carries its own conjecture block, reconciled to the register at the 2026-06-10 lock. Post-path: *Limitative Theorems and the Privacy Is Value Model* (`research/limitative-theorems-and-privacy-is-value.md`, 2026-06-28) reads the V6 ceilings and the existence-leak law as privacy-flavoured instances of Gödel and Tarski; it minted Band IX (C90 to C93) at Gate G6. Framing layer, not a new result; the existence-leak Stage-2 bar is untouched. The Hearthold edition (cityofmages Tome X — *The Hearth*, 2026-07-01) minted **Band X (C94 to C96)** — the Privacy Is Value Model read off the cousin-forge's running `did:cid` build (Hearthold), discharging C39 to ~80%; framing/build layer, city-lineage.
 
 ## The reference shelf (`reference/`)
 
@@ -17352,7 +17581,7 @@ Glossary Master v4.0 (terminology, ~160 entries; V6 addendum pending) · Promise
 
 ## The spec shelf (`specs/`)
 
-Dual Territory Ceremony Spec v1 · Dual Agent Harness Spec v1 · Runecraft Protocol Spec v1 · Protocol Schemas · VRC Promise Protocol v3.3 (the economic architecture) · ZK Swordsman Blade Forge v3.0 (operational) · Blade Forge build instructions.
+Dual Territory Ceremony Spec v1 · Dual Agent Harness Spec v1 · Runecraft Protocol Spec v1 · Protocol Schemas · VRC Promise Protocol v3.4 (the economic architecture; file retains the v3_3 name for link stability) · ZK Swordsman Blade Forge v3.0 (operational) · Blade Forge build instructions.
 
 ## The grimoire shelf (`grimoires/`)
 
@@ -17406,7 +17635,7 @@ The V6 volume's §33 (Part IV) merges the V5.4 reference list verbatim with the 
 
 # The Honest-Limits Ledger
 
-*Compiled from each era's own limitation sections, so it cannot flatter. Marks: ✓ closed by a later era (with the closer named) · ▸ rescoped (survives with stated conditions) · ● standing open as of this edition's build date (2026-06-11, register head C89).*
+*Compiled from each era's own limitation sections, so it cannot flatter. Marks: ✓ closed by a later era (with the closer named) · ▸ rescoped (survives with stated conditions) · ● standing open as of this edition's build date (2026-06-11, register head C89; two opens added 2026-06-28 with the Limitative Reading, register head C93).*
 
 ## Carried from the V4 era (Part I)
 
@@ -17435,10 +17664,12 @@ The V6 volume's §33 (Part IV) merges the V5.4 reference list verbatim with the 
 - ● **The Key without a circuit (C87, 50%).** The folding-scheme mapping is structural; whether the deviation chain and wire format admit an efficient realization is unbuilt.
 - ● **The presence economy attests nothing (regime 1, by declaration).** Not a gap but a fence around one: C42 (~50%) names the path from color to weight (witness co-signing, elapsed-time proofs) and none of it is built.
 - ● **The canonical figures' bases (678×, 31,000×, 70:1, 74×).** One sanctioned formulation each; the underlying bases await the First Person's verification pass.
+- ● **The Φ_data limitative twin (Run 8 open seam, no number).** The Limitative Reading (C90 to C93, 2026-06-28) assigns Gödel to Φ_agent and Tarski to Φ_inference but leaves the data axis open: does it have its own incompleteness shadow, or does it fail by degree (Φ_data = 1 − 1/|providers|) rather than undecidability? This decides whether Φ_v5 rests on two limitative theorems plus a degree-of-freedom or on three. Left open at Gate G6.
+- ● **The limitative joins are framing, not reduction (C90 to C93).** Every Gödel/Tarski correspondence is structural framing (~80%), not a theorem-to-theorem reduction (~50%); the arithmetisation row (Gödel numbering ↔ Z/(2⁶)Z) is the weakest link, intuition only. The reduction target (a formal system in which R < 1 is a theorem of incompleteness rather than an echo) is unbuilt and named as the precondition for any promotion.
 
 ## The shape of the ledger
 
-Two closures, four rescopings, fourteen standing opens across three eras. The opens cluster exactly where the model says its frontier is: measurement (λ, the gaps M1 to M5, the figures), composition (C7 and its boundary cases), and the newest mathematics (the bridge, the obstruction, the Key). Nothing in this ledger is hidden elsewhere in the book, and nothing elsewhere in the book is softer than this ledger.
+Two closures, four rescopings, sixteen standing opens across three eras. The opens cluster exactly where the model says its frontier is: measurement (λ, the gaps M1 to M5, the figures), composition (C7 and its boundary cases), and the newest mathematics (the bridge, the obstruction, the Key). Nothing in this ledger is hidden elsewhere in the book, and nothing elsewhere in the book is softer than this ledger.
 
 (⚔️⊥⿻⊥🧙)😊
 

@@ -1,6 +1,6 @@
 # The Honest-Limits Ledger
 
-*Compiled from each era's own limitation sections, so it cannot flatter. Marks: ✓ closed by a later era (with the closer named) · ▸ rescoped (survives with stated conditions) · ● standing open as of this edition's build date (2026-06-11, register head C89).*
+*Compiled from each era's own limitation sections, so it cannot flatter. Marks: ✓ closed by a later era (with the closer named) · ▸ rescoped (survives with stated conditions) · ● standing open as of this edition's build date (2026-06-11, register head C89; two opens added 2026-06-28 with the Limitative Reading, register head C93).*
 
 ## Carried from the V4 era (Part I)
 
@@ -29,9 +29,11 @@
 - ● **The Key without a circuit (C87, 50%).** The folding-scheme mapping is structural; whether the deviation chain and wire format admit an efficient realization is unbuilt.
 - ● **The presence economy attests nothing (regime 1, by declaration).** Not a gap but a fence around one: C42 (~50%) names the path from color to weight (witness co-signing, elapsed-time proofs) and none of it is built.
 - ● **The canonical figures' bases (678×, 31,000×, 70:1, 74×).** One sanctioned formulation each; the underlying bases await the First Person's verification pass.
+- ● **The Φ_data limitative twin (Run 8 open seam, no number).** The Limitative Reading (C90 to C93, 2026-06-28) assigns Gödel to Φ_agent and Tarski to Φ_inference but leaves the data axis open: does it have its own incompleteness shadow, or does it fail by degree (Φ_data = 1 − 1/|providers|) rather than undecidability? This decides whether Φ_v5 rests on two limitative theorems plus a degree-of-freedom or on three. Left open at Gate G6.
+- ● **The limitative joins are framing, not reduction (C90 to C93).** Every Gödel/Tarski correspondence is structural framing (~80%), not a theorem-to-theorem reduction (~50%); the arithmetisation row (Gödel numbering ↔ Z/(2⁶)Z) is the weakest link, intuition only. The reduction target (a formal system in which R < 1 is a theorem of incompleteness rather than an echo) is unbuilt and named as the precondition for any promotion.
 
 ## The shape of the ledger
 
-Two closures, four rescopings, fourteen standing opens across three eras. The opens cluster exactly where the model says its frontier is: measurement (λ, the gaps M1 to M5, the figures), composition (C7 and its boundary cases), and the newest mathematics (the bridge, the obstruction, the Key). Nothing in this ledger is hidden elsewhere in the book, and nothing elsewhere in the book is softer than this ledger.
+Two closures, four rescopings, sixteen standing opens across three eras. The opens cluster exactly where the model says its frontier is: measurement (λ, the gaps M1 to M5, the figures), composition (C7 and its boundary cases), and the newest mathematics (the bridge, the obstruction, the Key). Nothing in this ledger is hidden elsewhere in the book, and nothing elsewhere in the book is softer than this ledger.
 
 (⚔️⊥⿻⊥🧙)😊

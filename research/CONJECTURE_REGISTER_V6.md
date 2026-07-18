@@ -2,7 +2,7 @@
 
 **Status:** AUTHORITATIVE. Gate G1 signed 2026-06-10 (all eight dispositions confirmed by the First Person; preface trails to Gate G3). This file is the single authority for conjecture numbering across the agentprivacy suite. Prose may restate conjectures; when prose and register disagree, the register wins and the prose gets an erratum.
 **Opened:** 2026-06-10 (V6 autopath, Run 0)
-**Register head:** C89 · next free number: C90
+**Register head:** C97 · next free number: C98
 **Numbering rules:** numbers are identifiers, not ranks. A number once assigned is never reused, including numbers vacated by renumbering. New conjectures enter as unnumbered candidates and take the next free number at registration. Confidence percentages are the named estimator's, stated at the home document.
 **License:** CC BY-SA 4.0
 
@@ -76,7 +76,7 @@ This register exists because the work outgrew its own numbering twice. Conjectur
 | ID | Title / claim | Conf. | Status | Register | Home |
 |---|---|---|---|---|---|
 | C38 | Bilateral ARCH-1: Σ_ij := μS.(β_ij ∨ Ω(S_i, S_j)) preserves fixpoint | ~40% | active | shared | formal spec §17.2.1 · Tome IV Act III |
-| C39 | Kindred-blade as ecosystem-layer primitive | ~50% | active | shared | formal spec §17.2.1 · Tome IV Act V |
+| C39 | Kindred-blade as ecosystem-layer primitive | ~80% | active · PROMOTED 2026-07-01 (Tome X): the cousin-forge built the whole PVM triad on Archon did:cid — a running second-forge realisation of the cousin-blade primitive, discharged from ~50% | shared | formal spec §17.2.1 · Tome IV Act V · Tome X Act 1 |
 | C40 | Zcash dual-ledger preserves Eight Cloak Properties | ~70% | active · KEEPS this number (see G1 disposition 1) | shared | formal spec §17.2.1 |
 | C41 | 61.8/38.2 transparent/shielded inscription ratio as cultural norm | — | observation | shared | formal spec §17.2.1 |
 | C42 | Stake economics generate Sybil resistance ≥ tier accumulation | ~50% | active · V6 Run 5 adversary-regime context | shared | formal spec §17.2.1 |
@@ -98,7 +98,7 @@ This register exists because the work outgrew its own numbering twice. Conjectur
 | C52 | Aether = Quintessence = the Gap | open | occupied · never reassign | shared | aether-blade-ceremony-circuit.md |
 | C53 | Every bnot-pair on the lattice has a mythological reading | ~70% | occupied · never reassign | shared | aletheia-and-lethe.md |
 | C54 | Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ | ~40% | occupied · never reassign · follows the number (Aletheia at 38 keeps disclosure-φ, 2026-06-09 lock) | shared | aletheia-and-lethe.md |
-| C55 | Privacy is the seventh kind of capital, foundationally | architectural | occupied · never reassign | shared | poems/tide-orbit-selene.md |
+| C55 | Privacy is the seventh kind of capital, foundationally; its character is land-based RENTIER capital (data as soil): it yields rent by position, not value by aggregation; its worth is the appropriation share the consent interface sets; its exposure erodes on the adversary's background-information clock (C82); and it is leased, never conveyed, structural inalienability by non-reconstruction being the ownability mechanism. The five capital predicates survive; COMPOUNDING is scoped to reputational fertility only (a conjecture) and never to raw records. (Character ruled by First Person 2026-07-15 (soil, L140), register-synced 2026-07-17 (L149); the multiples 678x/31,000x are RETIRED as asserted facts suite-wide, surviving only as fenced lineage, same ruling.) | architectural | occupied · never reassign · character re-typed 2026-07-17 | shared | poems/tide-orbit-selene.md; research/pvm-v6-soil-and-the-programme-runtime-evolutions.md |
 
 ## Band V · City register continuation (C56 to C66)
 
@@ -143,13 +143,13 @@ Both source notes declared their numbering "provisional against the live registe
 | C78 | Specification-intent gap and the irreducible promise are one object, two sides | ~60% | active | core | same (was C71) |
 | C79 | Shared frontier: recursive proof composition across providers under heterogeneous trust at runtime | ~45% | active · V6 Run 5 IVC adjacency | core | same (was C72) |
 | C80 | Bilateral co-signed assumption sets yield strict assurance gain in multi-provider case | ~35% | active | core | same (was C73) |
-| C81 | Existence-Leak: a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0 | ~70% | active · PROMOTED Run 3 2026-06-10 (Schrottenloher instance + Garg-Jain-Sahai λ<1 impossibility as bookends) · Stage 2 open: held at 70% until a second independent instance | core | schrottenloher-ecdlp-v6-note.md · privacy_value_v6_draft.md Part III |
+| C81 | Existence-Leak: a ZK proof of feasibility leaks an upper bound on reconstruction difficulty; I(feasibility; method) > 0 | ~70% | active · PROMOTED Run 3 2026-06-10 (Schrottenloher instance + Garg-Jain-Sahai λ<1 impossibility as bookends) · Stage 2 open: held at 70% until a second independent instance · Tarski axis-reading added Run 8 2026-06-28 (C92), framing only, Stage-2 bar unchanged | core | schrottenloher-ecdlp-v6-note.md · privacy_value_v6_draft.md Part III · limitative-theorems-and-privacy-is-value.md §3 |
 
 ## Band VIII · Registered during the V6 runs (C82+)
 
 | ID | Title / claim | Conf. | Status | Register | Home |
 |---|---|---|---|---|---|
-| C82 | The Moving Ceiling: frontier capability growth raises C_S(t) + C_M(t) against fixed archives without raising H(X); R(t) drifts upward and every static reconstruction guarantee has a finite shelf life t* | ~65% | active · registered Run 1, 2026-06-10 | core | privacy_value_v6_draft.md Part I §I.3 |
+| C82 | The Moving Ceiling: adversary informational capability grows against fixed archives: the linkage corpus and side priors accumulate along calendar time, shrinking H(X \| B_t) while nothing is added to the archive and no action of the subject is involved; R_inf(t) drifts upward on a schedule and every static reconstruction guarantee has a finite shelf life t*. Frontier-model releases enter only informationally (better extraction of linkage from existing corpora), never as compute against the information-theoretic guarantee, which is compute-saturated. (Re-worded by First-Person ruling 2026-07-17, ledger L149; erosion form proven conditional in WP-07 Def 3.9 + Cor 5.4b, L145; the conjectural content is the RATE. Pre-ruling wording, retired: "frontier capability growth raises C_S(t) + C_M(t)".) | ~65% | active · registered Run 1, 2026-06-10 · re-typed 2026-07-17 | core | privacy_value_v6_draft.md Part I §I.3; research/pvm-v6-soil-and-the-programme-runtime-evolutions.md |
 | C83 | Compositional Leakage Amplification: policy-only separation compounds toward (2^N − 1)ε with chain depth; amnesia separation breaks the Markov chain and caps at Nε; the gap is exponential-to-linear | ~55% | active · registered Run 2, 2026-06-10 · edge C7 → C83 → C17 | core | privacy_value_v6_draft.md Part II §II.3 |
 | C84 | Existence-Leak Discount: every public feasibility attestation discounts the Behavioural Mosca horizon, Z_b' = Z_b − D(a); migration deadlines tighten on attestation, independent of any actual attack | ~50% | active · registered Run 3, 2026-06-10 · edges C81 → C84 → C49, C84 → C82 | core | privacy_value_v6_draft.md Part III §III.3 |
 | C85 | Triadic-Constraint Homology (the ARCH-1 bridge, promoted from CM-C47): the three Φ axes and the lattice's Datum·Stratum·Spectrum are one triadic primitive; candidate pair map Protection+Delegation→Σ, Memory+Value→Δ, Connection+Computation→Γ; the gap is β | ~40% | active · registered Run 4, 2026-06-10 · CM-C47 becomes alias · two named predictions (bnot-pairs invert all axes; stratum-3 is the no-dominant-axis seat) | core | privacy_value_v6_draft.md Part IV §IV.2 |
@@ -157,6 +157,35 @@ Both source notes declared their numbering "provisional against the live registe
 | C87 | The Key Accumulates: the City Key trust recursion admits an IVC realization (Key = accumulator, trust tasks = step circuits, Charge = folding step, V63 = attested invariant); LatticeFold makes the substrate post-quantum-hedged | ~50% | active · registered Run 5, 2026-06-10 · architectural claim, no circuit exists | core | privacy_value_v6_draft.md Part V §V.2 |
 | C88 | The Parity Cube: the stella octangula's two tetrahedra are the even/odd parity classes of the cube's vertices; the canonical seat of neg/bnot at 3-bit scale; {0,1}⁶ = {0,1}³ × {0,1}³ gives each agent a cube, with the C85 pair map as candidate factoring | ~30% | active · registered Run 5, 2026-06-10 | core | privacy_value_v6_draft.md Part V §V.4 |
 | C89 | The Octahedral Gap: the tetrahedra's intersection (volume 1/6 of the cube) is the geometric locus of the conditional-independence bound; the gap is β is the octahedron, three readings of one thing | ~30% | active · registered Run 5, 2026-06-10 · volume facts are theorems, the correspondence is the conjecture | core | privacy_value_v6_draft.md Part V §V.4 |
+
+## Band IX · The Limitative Reading (C90 to C93) · REGISTERED AT RUN 8
+
+Registered 2026-06-28 at Gate G6 (signed in session). Source: `research/limitative-theorems-and-privacy-is-value.md`. These are framing conjectures: the V6 ceilings and the existence-leak law read as privacy-flavoured instances of Gödel and Tarski. Every join is structural framing (~80%), not a theorem-to-theorem reduction (~50%); the arithmetisation correspondence (Gödel numbering ↔ Z/(2⁶)Z) is the weakest link and is intuition, not load-bearing. The Gödelian seed of existence-leak is absorbed into C92 (G6 disposition); the Φ_data limitative twin is left an open seam, no number.
+
+| ID | Title / claim | Conf. | Status | Register | Home |
+|---|---|---|---|---|---|
+| C90 | The Limitative Inversion: completeness ⇒ Φ → 0 ⇒ collapse is the value-sign reversal of completeness ⇒ inconsistency ⇒ collapse; the unreconstructable remainder is load-bearing. C17 stated in limitative terms. Edges → C17, → C7 | ~90% as observation | observation · registered Run 8, 2026-06-28 · no reduction claimed | core | limitative-theorems-and-privacy-is-value.md §1, §4 |
+| C91 | Gödel ↔ Φ_agent: zero-memory (Selene) is the Φ_agent instance of Gödel's first theorem; a witness real yet underivable from within, intrinsic to a single system; destroying it is a structural act of separation. Edges → C14, → C86, → C17 | ~60% | active · registered Run 8, 2026-06-28 · conjectural | core | limitative-theorems-and-privacy-is-value.md §2, §3.3, §4 |
+| C92 | Tarski ↔ Φ_inference: existence-leak is the Tarski-undefinability instance loading on Φ_inference; feasibility-truth escapes containment across systems and accumulates across observers; D(X) monotone non-increasing in corroborating systems. Absorbs the Gödelian seed (existence as positive provability). Rides on C81; cannot exceed its base. Edges → C81, → C84 | ~70% | active · registered Run 8, 2026-06-28 · conjectural · capped at C81's base | core | limitative-theorems-and-privacy-is-value.md §3, §4 |
+| C93 | Content-addressed liveness leak: a live content-address is an existence claim about its content; deduplication/GUID liveness leaks existence, and existence bounds the search. The address does not leak content; its liveness leaks existence. Edges → C81, → C92 | ~55% | active · registered Run 8, 2026-06-28 · conjectural | core | limitative-theorems-and-privacy-is-value.md §3.5, §3.6 |
+
+**Open seam (no number, Run 8):** does Φ_data have a limitative twin, or does it fail by degree (Φ_data = 1 − 1/|providers|) rather than undecidability? Decides whether Φ_v5 stands on two limitative theorems plus a degree-of-freedom or on three theorems. Anticipated, unresolved (G6 disposition: leave open).
+
+## Band X · The Hearthold Reading (C94 to C96) · REGISTERED 2026-07-01
+
+Registered 2026-07-01 with the Hearthold edition (cityofmages Tome X — *The Hearth*) and the v1.9.1 grimoire patch. Source: the cousin-forge collaboration on Archon `did:cid` (`github.com/Flaxscrip/hearthold`). These are `city`-lineage claims read off a running build — the House of Archon (the Tome IV cousin-forge) built the PVM triad in `did:cid`, discharging C39. Honest-framing: "built, not asserted" refers to the tested-live e2e subsystems of the implementation; the confidences are the estimator's, not a completeness claim.
+
+| ID | Title / claim | Conf. | Status | Register | Home |
+|---|---|---|---|---|---|
+| C94 | Separation Principle in a Second Substrate: `s ⊥ m | X` realised as a running build on Archon did:cid — the model holds independent of its stones; a second-forge realisation strengthens the abstract convergence case (C34–C37). Edges → C39, → C7 | ~55% | active · registered 2026-07-01 (Tome X) | city | grimoire v1.9.1 · Tome X Act 1 · spellweb `conj-c94` |
+| C95 | The Evidence Graph as the Anti-Score: issuer-attested disclosure — a signed, decomposable evidence graph verified offline against issuer DIDs — is the structural refusal of the reputation score; trust rests on the issuer's signature, not the custodian's word. Edges → C61, → C17 | ~55% | active · registered 2026-07-01 (Tome X) | city | grimoire v1.9.1 · Tome X Act 1 · spellweb `conj-c95` |
+| C96 | Control-Plane ⊥ Data-Plane: the Sovereign authorizes the rules the Warden enforces; splitting the occasional control plane from the always-on data plane means compromising the always-on host cannot author authority. Edge → C94 | ~60% | active · registered 2026-07-01 (Tome X) | city | grimoire v1.9.1 · Tome X Act 1 · spellweb `conj-c96` |
+
+## Band XI · The Soil Reading (C97) · REGISTERED 2026-07-17
+
+| ID | Title / claim | Conf. | Status | Register | Home |
+|---|---|---|---|---|---|
+| C97 | Structural Inalienability by Non-Reconstruction (the C55 ↔ C82 bridge): a scoped disclosure does not alienate the underlying stock, because the observing side cannot reconstruct the record from what it receives; the security guarantee IS the ownability mechanism (lease the harvest, not the land), and the ownership is durable exactly for the term the erosion clock permits. The non-reconstruction FORM is proven conditional (WP-07 Thm 5.1 + Cor 5.4b, under ER-1..ER-5 and the informed deficit); the conjectural content is the economic reading, that non-reconstruction suffices for the stock to function as inalienable capital in a market (priced in WP-14 §2 as the propertisation answer). Falsifier: a market in which scoped, non-reconstructing disclosures are nonetheless priced and traded as full alienation of the stock. | architectural (form proven-conditional; economic reading conjectural) | active · registered 2026-07-17 by First-Person assignment (L150) · edges C97 → C55, C97 → C82 | core | research/pvm-v6-soil-and-the-programme-runtime-evolutions.md (evolution 4); weis_seventh_capital.md §2 |
 
 ## Incoming at V6 Runs 2 to 5 (unnumbered candidates, take next free number at registration)
 
@@ -168,6 +197,15 @@ Both source notes declared their numbering "provisional against the live registe
 - ~~Parity-cube decomposition~~ REGISTERED as C88 at Run 5.
 - ~~Octahedral core as conditional-independence locus~~ REGISTERED as C89 at Run 5.
 - ~~Existence-leak discount on the Behavioural Mosca~~ REGISTERED as C84 at Run 3.
+
+### Incoming at V6 Run 8 · The Limitative Reading (2026-06-28)
+
+- ~~Limitative Inversion~~ REGISTERED as C90 at Gate G6 (Band IX).
+- ~~Gödel ↔ Φ_agent~~ REGISTERED as C91 at Gate G6 (Band IX).
+- ~~Tarski ↔ Φ_inference~~ REGISTERED as C92 at Gate G6 (Band IX); the Gödelian seed absorbed into it (no separate number).
+- ~~Content-addressed liveness leak~~ REGISTERED as C93 at Gate G6 (Band IX).
+- **Φ_data limitative twin** remains an OPEN SEAM (no number, G6 disposition: leave open).
+- **C81 second home (no promotion):** the note is a secondary home for C81 alongside the Schrottenloher note and the v6 draft Part III. Confidence stays ~70%; the Stage-2 empirical bar is unchanged. The Tarski reading (C92) is framing, not the second instance.
 
 ---
 

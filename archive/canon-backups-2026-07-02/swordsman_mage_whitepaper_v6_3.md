@@ -5,7 +5,7 @@ Protect or Delegate → Reflect and Connect → Three-Axis Separation (⚔️⊥
 **Author:** privacymage
 **Date:** April 7, 2026
 **Version:** 6.3 (V10.0.0 Grimoire aligned)
-**V6 EDITION NOTE (2026-06-10):** under the unified-V6 labeling decision (Gate G3), this whitepaper is the **Whitepaper V6 edition** of the Privacy is Value canon: series-titled *Privacy is Value · V6: The Whitepaper (Swordsman and Mage)*, a volume of the *Privacy is Value* book. Model authority: `papers/v6/privacy_value_v6_formal_specification.md` (PVM V6.0) and `research/CONJECTURE_REGISTER_V6.md` (head C96); the full catalogue is `reference/PAPERS_INDEX.md`. Where this body cites the static reconstruction ceiling, read it as Proven-conditional with the V6 time-dependence R(t) per spec §5 and §11; conjecture citations resolve to the register.
+**V6 EDITION NOTE (2026-06-10):** under the unified-V6 labeling decision (Gate G3), this whitepaper is the **Whitepaper V6 edition** of the Privacy is Value canon: series-titled *Privacy is Value · V6: The Whitepaper (Swordsman and Mage)*, a volume of the *Privacy is Value* book. Model authority: `papers/v6/privacy_value_v6_formal_specification.md` (PVM V6.0) and `research/CONJECTURE_REGISTER_V6.md` (head C89); the full catalogue is `reference/PAPERS_INDEX.md`. Where this body cites the static reconstruction ceiling, read it as Proven-conditional with the V6 time-dependence R(t) per spec §5 and §11; conjecture citations resolve to the register.
 **External Convergence:** [UOR Foundation](https://github.com/UOR-Foundation) — independent Z/(2⁶)Z ring algebra
 
 ---
@@ -66,11 +66,11 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 **First Person**: You, the human whose sovereignty is protected (capitalized throughout to emphasize agency)
 
-**Reconstruction Ceiling (R(t) < 1)**: Proven-conditional bound: while the two agents do not collude (the non-collusion precondition) and the stated adversary class's combined channel capacities fall short of your private state's entropy (C_S + C_M < H(X)), that adversary cannot fully reconstruct your private state from observations. The ceiling is time-indexed, R(t), and moves as adversary capability grows (PVM V6 §5, §11)
+**Reconstruction Ceiling (R < 1)**: Mathematical guarantee that adversaries cannot fully reconstruct your private state from observations
 
 **Signal**: Ongoing proverb posting (0.01 ZEC each), continuous demonstration of comprehension
 
-**Genesis Ceremony**: One-time agent pair origination, 1 ZEC, different from signals
+**Genesis Ceremony**: One-time agent pair origination, 1 ZEC ($500), different from signals
 
 **Spellbook**: Source material for learning (31 Acts + bookends = 32 sections, plus 30 tales in Zero Spellbook)
 
@@ -96,7 +96,7 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 This document uses **mathematical/architectural** terminology:
 
-- Technical: S ⊥⊥ M | X, the time-indexed reconstruction ceiling R(t) < 1 (conditional on non-collusion and a stated adversary class), information-theoretic bounds
+- Technical: S ⊥⊥ M | X, reconstruction ceiling R < 1, information-theoretic bounds
 
 - Architecture: Dual agents, separation primitives, conditional independence
 
@@ -205,7 +205,7 @@ Promise Theory defines **assessment α(π)** as an agent's determination whether
 
 **RPP is an assessment mechanism.** When someone compresses content into a contextual proverb, they assess whether the "promise" of knowledge transfer was kept. Compression ratio quantifies assessment quality:
 
-- High compression (at the spellbook corpus's 70:1 compression ratio or better) = strong positive assessment
+- High compression (70:1+) = strong positive assessment
 - Low/no compression = weak/failed assessment
 
 **Trust is accumulated assessment evidence.** The tier system (Blade→Light→Heavy→Dragon) maps to Promise Theory's trust function (0-1 expectation of future promise-keeping):
@@ -261,7 +261,7 @@ Promise Theory defines a **promise bundle** as a collection of promises grouped 
 - Matching compressions = bundle verified
 - Coordinated actions = bundle maintained
 
-This coordination efficiency comes from promise bundle reuse. Once a VRC is established, the bundle doesn't need re-verification for each interaction—accumulated trust carries forward.
+The 70:1 coordination efficiency comes from promise bundle reuse. Once a VRC is established, the bundle doesn't need re-verification for each interaction—accumulated trust carries forward.
 
 *VRC Architecture:* VRCs have both a **cryptographic layer** (commitments, proofs, recovery mechanisms) and a **comprehension layer** (proverb formation, spell expansion). The cryptographic layer guarantees authenticity and enables verification without revealing PII; the comprehension layer ensures semantic alignment between parties. Together, these create bilateral credentials that are both verifiable and meaningful.
 
@@ -322,7 +322,7 @@ When your personal AI operates as dual agents using RPP, it can:
 
 - Form VRCs with other agents (trust without surveillance)
 
-- Coordinate through spells (compression-scale efficiency gains)
+- Coordinate through spells (70:1 efficiency gains)
 
 - Maintain your sovereignty through separation (irreducible privacy gap)
 
@@ -400,7 +400,7 @@ With affirmed spells establishing human trust, VRCs enable efficient agent deleg
 
 - **Human trust becomes agent capability:** Person A's Mage can now coordinate with Person B's Mage using the affirmed spell
 
-- **Compression efficiency:** Instead of exchanging 500 tokens explaining context, agents transmit ⚔️ ⊥ 🔮 | 🗝️ and expand on demand
+- **70:1 compression efficiency:** Instead of exchanging 500 tokens explaining context, agents transmit ⚔️ ⊥ 🔮 | 🗝️ and expand on demand
 
 - **VRC as coordination credential:** The matching compression between humans becomes a Verifiable Relationship Credential between their agents
 
@@ -552,7 +552,7 @@ Once surveillance architectures achieve network effects, switching costs become 
 
 ## The Alternative Path
 
-This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from a mathematical bound — holding for as long as the capacity-deficit condition C_S + C_M < H(X) holds against the stated adversary class — rather than from corporate promises.
+This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from mathematical impossibility rather than corporate promises.
 
 ---
 
@@ -568,13 +568,13 @@ The capacity to act through agents while maintaining irreducible privacy. Genera
 
 **The extraction model** treats behavioral data as minable resource: observe everything, aggregate patterns, sell insights, flow value away from individuals, destroy privacy in the process.
 
-**The sovereignty model** treats behavioral data as land-based rentier capital, data as soil (C55, character ruled 2026-07-17): it yields rent by position, not value by aggregation; it is leased by the season, never conveyed, because scoped disclosure does not transfer what it cannot reconstruct (C97); and the one stock that genuinely accumulates is the cultivated fertility of the relationship, reputation. In practice: curated disclosure through dual agents, chronicles capture agency without surveillance, trust enables coordination networks, value flows to those who demonstrate sovereignty, privacy preserved through creation.
+**The sovereignty model** treats behavioral data as renewable capital: curated disclosure through dual agents, chronicles capture agency without surveillance, trust enables coordination networks, value flows to those who demonstrate sovereignty, privacy preserved through creation.
 
 **Promise Theory:** The extraction model violates the autonomy axiom—systems promise on behalf of users without authorization. The sovereignty model respects it—First Persons make their own promises about their own behavior.
 
 ## The Thesis
 
-Privacy-first architectures change who keeps the value: the subject's share of the surplus is set by the consent interface (near zero under notice-and-consent read as an ultimatum; interior under propose-and-respond), and the historical headline multiples are retired as asserted facts, surviving only as fenced lineage (register C55 row, 2026-07-17). The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The essay-era 31,000× accessible-volume figure survives only as fenced lineage; the shape it gestured at is read as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
+Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The 31,000× gap between sovereign and surveillance architectures is now understood as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
 
 **The V5 equation:**
 
@@ -672,7 +672,7 @@ See [Act XXVII: The Swordsman's Forge](archive/act-xxvii-the-swordsmans-forge.md
 
 **V5 Axiom:** *"The boundary is always enough."*
 
-**Note:** Specific value multiplier claims remain theoretical projections. The holographic framing strengthens the structural argument but real-world validation is still needed. The core mechanism stands: trust enables coordination, surveillance destroys trust, and coordination widens the venue in which the subject's share clears — the one stock that compounds is the reputational record (register C55: compounding is scoped to reputational fertility only).
+**Note:** Specific value multiplier claims remain theoretical projections. The holographic framing strengthens the structural argument but real-world validation is still needed. The core mechanism stands: trust enables coordination, surveillance destroys trust, and coordination creates compounding value through network effects.
 
 ---
 
@@ -888,7 +888,7 @@ The marketplace transforms privacy from liability into competitive advantage. Do
 
 ---
 
-# The Reconstruction Ceiling R(t): Information-Theoretic Privacy
+# The Reconstruction Ceiling: Information-Theoretic Privacy
 
 Complete surveillance resembles a jigsaw puzzle with 100 pieces representing an individual.
 
@@ -902,21 +902,21 @@ Swordsman sees 50 pieces (Set A), Mage sees 50 different pieces (Set B), neither
 
 **Critical constraint:** Conditional independence prevents inference beyond these 40. 
 
-**Result:** **while the two agents do not collude and the stated adversary's combined channel capacity stays below the entropy of the whole (C_S + C_M < H(X)), the remaining 60 pieces stay beyond that adversary's reach** for as long as that capacity deficit holds.
+**Result:** **60 pieces remain forever unreconstructable**.
 
-Not hidden. Not encrypted. **Nonexistent in that adversary's information space.**
+Not hidden. Not encrypted. **Nonexistent in the adversary's information space.**
 
-**Promise Theory:** Those 60 pieces are the *irreducible promise*—the property that emerges from separation but cannot be attributed to either agent.
+**Promise Theory:** The 60 unreconstructable pieces are the *irreducible promise*—the property that emerges from separation but cannot be attributed to either agent.
 
-This is information-theoretic privacy. It doesn't depend on computational hardness, cryptographic assumptions, or implementation perfection. Under its stated preconditions it depends on counting, not on adversary effort. The ceiling
+This is information-theoretic privacy. It doesn't depend on computational hardness, cryptographic assumptions, or implementation perfection. It depends on mathematical impossibility. The ceiling 
 
-**Reconstruction Ceiling (time-indexed, R(t) per PVM V6 §5 and §11):**
+**Reconstruction Ceiling:**
 
-> **R_max = (C_S + C_M) / H(X)**
+> **R_max = (C_S + C_M) / H(X) < 1**
 
-bounds what any adversary of the stated class can recover. The preconditions—non-collusion between the agents, capacities evaluated against a stated adversary class—give the additive structure and the error floor P_e ≥ 1 − R_max. The strict bound R_max < 1 holds exactly when the measurable capacity-deficit condition C_S + C_M < H(X) additionally holds; the preconditions alone do not place R_max below one. The capacities are time-indexed: R(t) = (C_S(t) + C_M(t)) / H(X) rises as the adversary class strengthens, and the guarantee stands up to the validity horizon t* at which the deficit condition would expire.
+cannot be exceeded.
 
-Sovereignty lives in that gap, for as long as the deficit condition holds.
+Sovereignty lives in that permanent gap.
 
 ---
 
@@ -1116,7 +1116,7 @@ The privacymage spellbook (Acts 1–12) functions as semantic infrastructure for
 
 ## Three Core Functions
 
-### 1. Efficiency Through the Spellbook Corpus's 70:1 Compression Ratio
+### 1. Efficiency Through 70:1 Compression Ratio
 
 **Traditional approach:** 500-token explanations per interaction.
 
@@ -1236,7 +1236,7 @@ Together they never reveal enough for reconstruction. Budget limits increase as 
 
 ## Progressive Trust Tiers
 
-**Note:** These tiers can vary across different ecosystem implementations. **Two ladders share the tier names (reconciled 2026-07-18, ledger L154):** the *engagement ladder* earlier in this document is gated by cumulative signal count (50/150/500), while the tables below gate the same names by VRC count plus operational tenure. They measure different things — comprehension signalling versus credential maturity — and a participant holds a position on each. The numeral 50 means "signals to leave Blade" on the first ladder and "VRCs to reach Dragon" on the second; neither set of thresholds is a derived constant, and both await empirical calibration.
+**Note:** These tiers can vary across different ecosystem implementations.
 
 **Table 1: Progressive Trust Tiers and Budget Limits**
 
@@ -1295,9 +1295,9 @@ Humans evaluating chronicles can spot:
 
 - Ability to compress moments of personal meaning and focus reveals depth of comprehension
 
-## The Spellbook Compression Efficiency Gain
+## The 70:1 Efficiency Gain
 
-With spellbook compression (the spellbook corpus's 70:1 compression ratio), agent coordination moves from full chronicle exchange to spell transmission with expand-on-demand. Trust signal becomes measurable through compression fidelity.
+With spellbook compression, agent coordination moves from full chronicle exchange to spell transmission with expand-on-demand. Trust signal becomes measurable through compression fidelity.
 
 ## Emerging Marketplace for Custom Chronicle Experiences
 
@@ -1444,9 +1444,9 @@ Traditional thinking treats privacy as cost. The 0xagentprivacy thesis: privacy 
 
 ## The Compounding Effect
 
-Privacy enables trust → Trust enables higher-stakes delegation → Higher stakes generate higher value → Higher value attracts better opportunities → Better opportunities accrue to the tended reputation, the one stock in the model that compounds.
+Privacy enables trust → Trust enables higher-stakes delegation → Higher stakes generate higher value → Higher value attracts better opportunities → Better opportunities compound wealth.
 
-The Swordsman guards the boundary. The Mage projects through it. Chronicles record behavior through story. VRCs connect through verified understanding. The 7th capital yields rent by held position; its fertility — the reputational record — grows through demonstrated sovereignty.
+The Swordsman guards the boundary. The Mage projects through it. Chronicles record behavior through story. VRCs connect through verified understanding. The 7th capital accumulates through demonstrated sovereignty.
 
 ---
 
@@ -1532,7 +1532,7 @@ Like other capital forms, behavioral sovereignty:
 
 - Generates returns (better coordination through trust)
 
-- Compounds over time (reputation builds on reputation; this is the ONLY compounding channel, a conjecture, and it never widens back to raw records, whose aggregation does not compound: the value of the raw stock is positional rent, like land)
+- Compounds over time (reputation builds on reputation)
 
 - Can be invested (privacy architecture as infrastructure)
 
@@ -1578,7 +1578,7 @@ Privacy-first architectures generate dramatically more value because:
 
 - Network effects compound (each participant makes network more valuable)
 
-- Collective coordination widens opportunity access (the superlinear-value wording is retired: raw records do not compound; what scales is access, and the gain is a larger share of surplus, not a multiple)
+- Collective intelligence scales superlinearly
 
 - Reputation capital appreciates (unlike surveillance data which depreciates)
 
@@ -1638,7 +1638,7 @@ The dual-agent separation doesn't just prevent reconstruction. It generates two 
 
 - **Reflect (R) — The Witness** 🪞 — temporal memory, audit trail, derivation chains. Emerges from S's accumulated boundary history
 
-- **Connect (C) — The Bridge** 🤝 — network effects, relationships, reputational compounding. Emerges from M's accumulated delegation patterns
+- **Connect (C) — The Bridge** 🤝 — network effects, relationships, value compounding. Emerges from M's accumulated delegation patterns
 
 ```
          Connect (C)
@@ -1760,7 +1760,7 @@ Provides systems thinking and narrative architecture. Story-first, math-referenc
 
 ## The Research Paper
 
-*Privacy is Value · V6: The Research Paper Edition* (`papers/v6/dualprivacy_researchpaper_v6.md`, successor to the "Dual Privacy Architecture" line, layered over the v4.3 proof body) provides mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, time-indexed reconstruction ceilings R(t) stated with their preconditions (non-collusion, a stated adversary class), error floors grounded in established information theory. Includes Claims Classification Table distinguishing proven results, semantic frameworks, and speculative conjectures.
+"Dual Privacy Architecture v3.5" is a research proposal providing mathematical foundations developing from peer-reviewed information systems and cryptography literature. Rigorous separation bounds, reconstruction ceilings, error floors grounded in established information theory. Includes Claims Classification Table distinguishing proven results, semantic frameworks, and speculative conjectures.
 
 ## The Privacymage Spellbook
 
@@ -1784,7 +1784,7 @@ One agent to protect privacy. One to delegate sovereignty. Two create sustainabl
 
 - Architectural separation creates information-theoretic privacy
 
-- Budget constraints establish reconstruction ceilings R(t), time-indexed and conditional on non-collusion and the stated adversary class; the drift is informational (the adversary's linkage corpus and side priors accumulating against a fixed archive, shrinking H(X | B_t)), never compute, which the information-theoretic bound already saturates (C82)
+- Budget constraints establish reconstruction ceilings
 
 - Separation enforced through architecture rather than alignment
 
@@ -1822,9 +1822,9 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Spellbook comprehension creates understanding (not speculation)
 
-- Genesis ceremony: 1 ZEC creates agent pair once per ecosystem
+- Genesis ceremony: 1 ZEC ($500 at $500/ZEC) creates agent pair once per ecosystem
 
-- Ongoing signals: 0.01 ZEC each, continuous proof-of-comprehension
+- Ongoing signals: 0.01 ZEC ($5) each, continuous proof-of-comprehension
 
 - Fee distribution: 61.8% transparent pool, 38.2% shielded pool (internal allocation per ecosystem)
 
@@ -1848,23 +1848,23 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Trust networks built on shared meaning create adoption incentives
 
-- Compression-based VRCs reduce coordination costs in proportion to the spellbook corpus's 70:1 compression ratio
+- Compression-based VRCs enable 70:1 coordination efficiency ($10 → $0.14)
 
 - VRC formation: 100 MAGE stake, break-even at 4 coordinations
 
 - Knowledge sharing becomes credential creation
 
-- Network effects: V(n) ∝ n² is retired as a value-growth claim (rent, not compounding); network size widens the venue the subject's share clears in
+- Network effects: V(n) ∝ n² creates superlinear value growth
 
-- Trust graphs accumulate compounding reputational value — the scoped compounding channel (C55)
+- Trust graphs accumulate compounding value
 
 **Value Capture Distribution:**
 
-- First Persons: the primary value-capture tier; returns denominated in protocol units and scaling with active participation
+- First Persons: $47k-$52k/year value capture (active participants)
 
-- Guardians: validation compensation scaled by stake tier (Dragon tier highest)
+- Guardians: $30k-$120k/year validation compensation (Dragon tier)
 
-- Ecosystem operators: revenue scales with guild size (successful 1k-10k member guilds)
+- Ecosystem operators: $50k-$500k/year (successful 1k-10k member guilds)
 
 - Protocol layer: Self-sustaining Year 2, surplus by Year 3
 
@@ -1908,7 +1908,7 @@ This architecture is being developed now. This is the inflection point.
 
 - **Project:** 0xagentprivacy
 
-- **Version:** 6.3
+- **Version:** 6.2
 
 - **Date:** April 7, 2026
 
@@ -1920,15 +1920,15 @@ This architecture is being developed now. This is the inflection point.
 
 - **UOR × 64-Tetrahedra × ZK Mapping:** v2.2 (companion document — UOR Foundation convergence)
 
-- **Promise Theory Reference:** v1.5 (companion document — V5 integration)
+- **Promise Theory Reference:** v1.4 (companion document — V5 integration)
 
-- **Research Paper:** *Privacy is Value · V6: The Research Paper Edition* — `papers/v6/dualprivacy_researchpaper_v6.md` (companion document — layered over the v4.3 proof body)
+- **Research Paper:** v4.2 (companion document — V5.2 dihedral foundations, V5.4 algebraic)
 
 - **Five Grimoires + Acts XXIV–XXX:** 120+ inscriptions including Dragon Anatomy complete (companion documents)
 
-- **VRC Promise Protocol:** v3.4 (companion document — dual territory, mana economics; `specs/vrc_promise_protocol_v3_3.md`, filename retained at v3_3 for link stability)
+- **VRC Promise Protocol:** v3.4 (companion document — dual territory, mana economics)
 
-- **Glossary:** Glossary Master v4.0 (canonical terminology; V6 addendum)
+- **Glossary:** v3.4 (canonical V5.4 terminology)
 
 - **IEEE 7012 Quick Reference:** v1.0 (companion document)
 
@@ -1942,6 +1942,3 @@ This architecture is being developed now. This is the inflection point.
 | 4.7 | Dec 11, 2025 | Clarity pass: Replaced "prompt injection" → "prompt instructions" terminology. Clarified Promise Theory provides semantic framing (not cryptographic guarantees). Added VRC limitations note. Softened absolute language while preserving narrative voice. Updated companion document references. |
 | **4.8** | **Jan 29, 2026** | **IEEE 7012-2025 Integration**: Added §IEEE 7012-2025: The Standards Foundation with agreement taxonomy, core definitions, and Customer Commons reference. Expanded Cookie Slashing and MyTerms Negotiation sections with protocol flow details. Updated all companion document references (Spellbook v5.0, Glossary v2.3, Research Paper v3.6). Added IEEE 7012 Quick Reference v1.0 to companion documents. |
 | **5.0** | **Feb 20, 2026** | **V4 Privacy Value Model + Tetrahedral Convergence**: Added V4 equation with separation matrix Σ, temporal memory A(τ), edge value T(π). Added §Three Graphs (Knowledge × Promise × Trust). Added §Secret Language (internal S-M negotiation beyond selective disclosure). Upgraded Tetrahedral section from SPECULATIVE (5%) to CONVERGENT PRELIMINARY (~25-40%) with three independent derivations (UOR, geometric, narrative). Added separation matrix formalism. Added Reflect 🪞 and Connect 🤝 to notation table. Expanded four forces with ASCII geometry. Updated thesis with topological gap framing. Aligned with Glossary v2.5, Privacy is Value v4, five grimoires (113 inscriptions). |
-| 6.2 | 2026 (date not separately recorded) | V6-era body revision preceding 6.3; carried in Document Metadata until the 2026-07-02 reconciliation. Change record not retained; row backfilled 2026-07-02 (ledger L015). |
-| **6.3** | **April 7, 2026** | **V10.0.0 Grimoire alignment** (header version). Body version of the present document; row backfilled 2026-07-02 (ledger L015). |
-| 6.3 (V6 edition) | June 10, 2026 | **V6 edition note added** under the unified-V6 labeling decision (Gate G3): designated *Privacy is Value · V6: The Whitepaper (Swordsman and Mage)*; model authority PVM V6.0 + `research/CONJECTURE_REGISTER_V6.md`; static-ceiling citations read as Proven-conditional with R(t). Body version and date retained (the April 7, 2026 date is the body's; June 10, 2026 is the edition's). Document Metadata reconciled 6.2 → 6.3 on 2026-07-02 per `reference/PAPERS_INDEX.md` (ledger L015, L016). |

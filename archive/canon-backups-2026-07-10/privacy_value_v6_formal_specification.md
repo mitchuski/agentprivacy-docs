@@ -237,11 +237,11 @@ $$R(d, \text{compression}, \rho) < 1 \quad \forall \text{ adversaries under budg
 
 This is not a conjecture. The ceiling follows from information-theoretic analysis via Fano's inequality, read as a decomposition: the preconditions of §10.5 yield the additive capacity sum and the error floor, and the budget constraint is the capacity-deficit condition C_S + C_M < H(X) of §11.1, the numerical condition that places the ceiling strictly below one. See §16 for the full proof status, and §10 to §11 for the preconditions and the capacity-deficit condition under which it holds.
 
-**External alignment:** The First Person Network whitepaper (2026) provides independent framing for this ceiling as "data dignity": the thesis that behavioural data is capital owned by the First Person, not resource extracted by observers. Structural inalienability by non-reconstruction is registered as conjecture C97 (2026-07-17): scoped disclosure does not alienate the stock, because the observing side cannot reconstruct the record from it; the guarantee IS the ownability, durable for the term the erosion clock permits. The reconstruction ceiling is the mathematical guarantee that makes data dignity enforceable.
+**External alignment:** The First Person Network whitepaper (2026) provides independent framing for this ceiling as "data dignity": the thesis that behavioural data is capital owned by the First Person, not resource extracted by observers. The reconstruction ceiling is the mathematical guarantee that makes data dignity enforceable.
 
 ### 5.5 The Moving Ceiling R(t) (V6)
 
-V5.4 treated reconstruction difficulty as static. 2026 has now produced two public demonstrations that the quantity moves (§25). The numerator of the ceiling is a property of the adversary's informational position, and that position improves: the linkage corpus and side priors accumulate along calendar time against archives that never change (C82, re-typed 2026-07-17). The denominator is a property of the person, and the person does not change to match. V6 therefore restates the governing quantity as a function of time.
+V5.4 treated reconstruction difficulty as static. 2026 has now produced two public demonstrations that the quantity moves (§25). The numerator of the ceiling is a property of the adversary's models, and the adversary's models improve. The denominator is a property of the person, and the person does not change to match. V6 therefore restates the governing quantity as a function of time.
 
 **Definition (V6).** Let H(X) be the source entropy of the First Person's private state over the horizon of interest. Let C_S(t) and C_M(t) be the effective capacities of the two observation channels evaluated against the strongest adversary class available at time t. The reconstruction ceiling is
 
@@ -251,7 +251,7 @@ and the V5.4 guarantee becomes a **shelf life**:
 
 > t* = sup { t : R(t) < 1 }
 
-**The mechanism is the decoder, not the data.** Observations already emitted do not change after emission. What changes is what can be extracted from them: the decoder's accumulating background (linkage corpora, side priors) raises the effective capacity of a channel whose physical recordings are fixed, shrinking the residual uncertainty H(X | B_t) while nothing is added to the archive. Frontier models enter only informationally, as better extraction of linkage from existing corpora, never as compute against the information-theoretic bound, which is compute-saturated. H(X) is fixed by the person. Therefore R(t) is non-decreasing under capability growth, and a separation architecture adequate at t₀ can be inadequate at T > t₀ with no new disclosure by the subject. This is the reconstruct-later threat (C48; City-register restatement C60) given its exact mechanism: the archive sits still while the ceiling rises to meet it.
+**The mechanism is the decoder, not the data.** Observations already emitted do not change after emission. What changes is what can be extracted from them: better inference models raise the effective capacity of a channel whose physical recordings are fixed. H(X) is fixed by the person. Therefore R(t) is non-decreasing under capability growth, and a separation architecture adequate at t₀ can be inadequate at T > t₀ with no new disclosure by the subject. This is the reconstruct-later threat (C48; City-register restatement C60) given its exact mechanism: the archive sits still while the ceiling rises to meet it.
 
 **Conjecture C82 (The Moving Ceiling).** Registered at V6 Run 1, taking the next free number per the G1-signed register. Statement: frontier AI capability growth raises the effective adversary capacities C_S(t) + C_M(t) against fixed behavioural archives without raising H(X), so R(t) drifts upward and every static reconstruction guarantee has a finite shelf life t*; the drift rate is coupled to frontier model capability, not to any action of the subject. Confidence: ~65% (estimator: privacymage with Claude Fable 5, 2026-06-10; mechanism strongly evidenced at n=2 public instances, functional form of the drift unparameterized). Worked instances in §25.
 
@@ -425,7 +425,7 @@ V6 states what was implicit in the V5.4 bound and the capacity sum of §11.
 
 **Precondition 1 (non-collusion / channel independence).** The capacities C_S and C_M may be summed only if the two observation channels are conditionally independent given the First Person and are not combined by a single adversary beyond the stated capacities. Formally, the regime assumes I(Y_S; Y_M | X) = 0 and that no third channel carries the inter-agent residue. The wiretap literature shows exactly this assumption is what fails when observers combine: Csiszár and Körner (1978) and the colluding-wiretapper extensions. The empirical multi-agent literature now measures the failure: AgentLeak (El Yagoubi, Badu-Marfo, Al Mallah, arXiv:2602.11510) finds that multi-agent configurations reduce per-channel output leakage (27.2% versus 43.2% single-agent) while unmonitored inter-agent channels raise total system exposure to 68.9%. §14.7 and §26 treat this in full. Here it is the boundary condition: **the additive capacity sum, and with it the error floor P_e ≥ 1 − R_max, hold in the regime the Amnesia Protocol is designed to enforce, and only there; the strict ceiling R_max < 1 requires in addition the capacity-deficit condition of §11.1.**
 
-**Precondition 2 (fixed adversary model).** C_S and C_M are channel capacities evaluated against a stated adversary class: its background information (linkage corpora and side priors), its inference models, its correlation methods. Compute is deliberately not on the list: the guarantee is information-theoretic and already holds against unbounded computation; what erodes it is what the adversary knows, not what it can calculate (C82, re-typed 2026-07-17; the proven form is the companion theory paper's erosion corollary, the floor falling through H(X | B_t)). The bound says nothing about a later, stronger class. This precondition is the door V6 walks through in §5.5.
+**Precondition 2 (fixed adversary model).** C_S and C_M are channel capacities evaluated against a stated adversary class: its compute, its inference models, its correlation methods. The bound says nothing about a later, stronger class. This precondition is the door V6 walks through in §5.5.
 
 **The capacity-deficit condition (not a third precondition).** The two preconditions are architectural: attestable properties of the deployment. Neither constrains the sum C_S + C_M relative to H(X). What they buy is the additive leakage structure and the error floor P_e ≥ 1 − R_max; the strict bound R_max < 1 holds exactly when, additionally, C_S + C_M < H(X). That capacity deficit is a numerical fact about a given system and adversary class: measurable, declarable, and eroded over time as stronger classes arrive (§5.5). It is deliberately not listed as a third precondition, because two conditionally independent channels of sufficient combined capacity satisfy both preconditions with R_max at or above one; the deficit is the separate, system-specific fact a deployment measures and declares. §11 states the decomposition as the theorem's conditioning.
 
@@ -438,7 +438,6 @@ Within the conditional regime the ceiling is an instance of an established famil
 - Leung-Yan-Cheong and Hellman (1978): secrecy capacity as a difference of channel capacities in the Gaussian wiretap channel, the closest classical analogue of capacity-budgeted reconstruction.
 - The Bayes-capacity bound of quantitative information flow (the Miracle Theorem): a tight upper bound on leakage to any reconstruction adversary, which upper-bounds what any decoder extracts per observation.
 - Geiger and Kubin, relative information loss: a Fano-grounded lower bound on reconstruction error under lossy observation.
-- Nyquist (1928), maximum signalling rate, and the Nyquist–Shannon sampling theorem (Shannon 1949): a signal band-limited to bandwidth B is determined by, and only by, samples taken at rate ≥ 2B; below that rate distinct signals alias to identical samples and no decoder, at any capacity or compute, can separate them. This is the rate-limited counterpart of the capacity deficit — a second, orthogonal reconstruction bound the field already accepts. See §11.6.
 
 This move costs nothing and buys defensibility: the claim is no longer "proven in our internal paper" but "an instance of a family of bounds the field already accepts, under named preconditions and a declared capacity-deficit condition."
 
@@ -479,22 +478,6 @@ Status: V6 conjecture (C18). Confidence: 25%.
 ### 11.5 Conditioning (V6)
 
 R_max = (C_S + C_M)/H(X) < 1 carries the label **Proven, conditional regime**, read as a decomposition: within Preconditions 1 and 2 of §10 the capacity sum is licensed and the error floor P_e ≥ 1 − R_max (Fano converse) is proven, an instance of the family cited there; the strict bound R_max < 1 holds when, additionally, the capacity-deficit condition C_S + C_M < H(X) of §11.1 holds. The deficit condition, not the preconditions, is the time-indexed quantity per §5.5: R(t) can cross one with both preconditions intact, because capability growth raises the effective capacities, and what expires at t* is the deficit condition, not the architecture. Outside the regime, §26 governs.
-
-### 11.6 Sampling Reconstruction Ceiling (Proven — the Nyquist bound)
-
-A second proven bound, independent of the capacity deficit, binds when observation is rate-limited rather than capacity-limited. Model the observable component of the sovereignty path π(t) as a signal of effective bandwidth B — the highest rate at which the First Person's private state carries independent structure — and let f_obs be the effective rate at which an adversary samples that signal across the two channels.
-
-**Theorem (Nyquist–Shannon sampling).** If f_obs ≥ 2B the band-limited component is exactly recoverable from the samples; if f_obs < 2B the signal is aliased: a continuum of distinct paths π produces identical observation sequences, and no decoder — at any capacity or compute — can tell them apart.
-
-$$f_{obs} < 2B \;\Rightarrow\; \text{aliasing} \;\Rightarrow\; \text{the sub-sampled band of } \pi(t) \text{ is unrecoverable}$$
-
-This is Nyquist's 1928 signalling-rate law, proven as a sampling theorem by Shannon (1949): the same author as §11.1, one axis over. Where §11.1 bounds reconstruction by **how many bits** the channels carry (capacity vs. entropy) and §11.4 bounds it by **dynamics** (Lyapunov divergence), the sampling ceiling bounds it by **cadence** (observation rate vs. signal bandwidth). The three are independent: an adversary may hold ample capacity and still alias, may sample fast enough and still be starved of bits, may satisfy both and still lose the path to λ > 0.
-
-**Consequence for the architecture.** Separation lowers the per-channel effective sampling rate: each of the Swordsman and Mage observes only its authorised slice of X, so neither channel alone reaches 2B on the components the other governs, and the non-collusion precondition (§10.5, Precondition 1) is exactly what forbids stitching two sub-Nyquist streams into one supra-Nyquist stream. Aliasing is not a lossy approximation but a hard ambiguity: unlike the graceful degradation of §11.3, sub-Nyquist observation loses the band *categorically*.
-
-**Relation to the moving ceiling (§5.5).** This is the one term of the ceiling that does **not** move with adversary capability. The reconstruct-later threat raises the effective capacity C_S(t) + C_M(t) extractable from fixed recordings, because the bits were present all along and only a stronger decoder reaches them. Aliasing has no such reserve: the information was never sampled, so no future decoder recovers it. The moving ceiling cannot retroactively raise the sampling rate of an archive already recorded at f_obs < 2B — what was aliased at emission stays aliased.
-
-Status: **Proven** (sampling theorem, external family §10.6). The bound is unconditional on decoder power; its binding requires only that the adversary's effective observation rate fall below twice the signal bandwidth — a per-deployment measurable, the rate-limited analogue of the capacity-deficit condition of §11.1.
 
 ---
 
@@ -693,7 +676,7 @@ which in the uniform case is (2^N − 1)ε. The proof runs on the chain rule for
 
 **The measurement.** AgentLeak (El Yagoubi, Badu-Marfo and Al Mallah, Polytechnique Montréal, arXiv:2602.11510; 1,000 scenarios, 4,979 traces across GPT-4o, GPT-4o-mini, Claude 3.5 Sonnet, Mistral Large, Llama 3.3 70B) measures the failure in deployed-style systems: multi-agent configurations reduce per-channel output leakage to 27.2% versus 43.2% single-agent, while unmonitored inter-agent channels leak at 68.8%, raising total system exposure to 68.9%. Output-only audits miss 41.7% of violations.
 
-**What this does and does not contradict.** §16 asserts the additive leakage bound, I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M), at 95% confidence. The compounding bound does not contradict the additive bound in the model's own regime: when the channels are conditionally independent given X and nothing carries the inter-agent residue, which is Precondition 1 of §10.5, the joint leakage satisfies I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M) − I(Y_S; Y_M), hence is at most the sum, with equality if and only if the two outputs are also marginally independent (I(Y_S; Y_M) = 0); every ceiling and floor statement uses only the at-most direction, which the redundancy term only tightens. The compounding bound describes what happens OUTSIDE that regime: when agents pass outputs to one another (sequential composition), each hop conditions the next, the chain rule compounds, and the per-agent budgets multiply out to (2^N − 1)ε. The two results are one theorem family on two sides of one architectural line. The line is whether the inter-agent channel exists.
+**What this does and does not contradict.** §16 asserts additive leakage, I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M), at 95% confidence. The compounding bound does not contradict the additive claim in the model's own regime: additivity holds exactly when the channels are conditionally independent given X and nothing carries the inter-agent residue, which is Precondition 1 of §10.5. The compounding bound describes what happens OUTSIDE that regime: when agents pass outputs to one another (sequential composition), each hop conditions the next, the chain rule compounds, and the per-agent budgets multiply out to (2^N − 1)ε. The two results are one theorem family on two sides of one architectural line. The line is whether the inter-agent channel exists.
 
 **C17 made quantitative, and conjecture C83.** V5.4's C17 (amnesia-enforced separation is tighter than policy-enforced, 60%) was qualitative. The compounding literature supplies the missing arithmetic. Policy separation leaves the inter-agent channel in place and asks it to behave. The sequential bound then applies: worst-case leakage (2^N − 1)ε in chain depth N. Amnesia separation removes the channel structurally: each agent's budget stands alone, conditioning cannot accumulate, and total leakage is bounded by the sum of independent budgets, Nε. The gap between the two regimes is the gap between exponential and linear in N, and at N = 2 (the dual-agent case) it is already the difference between 3ε and 2ε; at N = 5 it is 31ε versus 5ε.
 
@@ -792,16 +775,15 @@ These results hold at 95% confidence. The proofs rely on standard information th
 
 | Result | Statement |
 |--------|-----------|
-| **Additive MI bounds** | Under conditional independence (Precondition 1), mutual information leakage is at most additive, not multiplicative: $I(X; Y_S, Y_M) \leq I(X; Y_S) + I(X; Y_M)$, with equality iff additionally $I(Y_S; Y_M) = 0$ |
+| **Additive MI bounds** | Mutual information leakage from conditional independence is additive, not multiplicative: $I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M)$ |
 | **Reconstruction ceiling** | $R_{\max} = (C_S + C_M)/H(X) < 1$ under budget constraints, read per §11: the §10.5 preconditions license the sum and yield the error floor; the budget constraint is the capacity-deficit condition $C_S + C_M < H(X)$ that places the ceiling below one |
 | **Error floor** | $P_e \geq 1 - R_{\max}$ via Fano's inequality |
-| **Sampling ceiling (Nyquist)** | $f_{obs} < 2B \Rightarrow$ aliasing: the sub-sampled band of $\pi(t)$ is unrecoverable by any decoder (Nyquist–Shannon sampling theorem, §11.6). Orthogonal to the capacity ceiling and, unlike it, does not erode under §5.5 — a fixed archive aliased at emission stays aliased |
 | **Graceful degradation** | Small $\varepsilon$ violations → small privacy losses |
 | **Ring algebra** | Z/(2⁶)Z substrate with five operations and critical identity |
 | **Two-extension autonomy** | Separate processes enforce the separation bound at OS level |
 | **DOM-free measurement** | Pretext layoutNextLine() as privacy primitive (no getBoundingClientRect fingerprinting) |
 
-**Scoped, not lowered (V6).** The results stand with their conditioning stated: in the Precondition-1 regime (no inter-agent channel) the joint leakage satisfies I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M) − I(Y_S; Y_M), hence is at most the sum of the marginal leakages, with equality if and only if the two outputs are also marginally independent (I(Y_S; Y_M) = 0); the 95% label applies to the at-most bound there and nowhere else. The compounding results of §26 describe the complement of the regime and are absorbed as the model's own argument.
+**Scoped, not lowered (V6).** The results stand with their conditioning stated: additive leakage I(X; Y_S, Y_M) = I(X; Y_S) + I(X; Y_M) holds exactly in the Precondition-1 regime (no inter-agent channel); the 95% label applies there and nowhere else. The compounding results of §26 describe the complement of the regime and are absorbed as the model's own argument.
 
 ---
 
@@ -889,7 +871,7 @@ The register file `research/CONJECTURE_REGISTER_V6.md` is the living authority f
 | C52 | Aether = Quintessence = the Gap | open | occupied · never reassign | shared | aether-blade-ceremony-circuit.md |
 | C53 | Every bnot-pair on the lattice has a mythological reading | ~70% | occupied · never reassign | shared | aletheia-and-lethe.md |
 | C54 | Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ | ~40% | occupied · never reassign · follows the number (Aletheia at 38 keeps disclosure-φ, 2026-06-09 lock) | shared | aletheia-and-lethe.md |
-| C55 | Privacy is the seventh kind of capital, foundationally; character: land-based RENTIER capital (data as soil) per the 2026-07-17 register re-type: rent by position, value as the interface-set appropriation share, erosion on the C82 clock, leased never conveyed (C97); compounding scoped to reputational fertility only | architectural | occupied · never reassign · character re-typed 2026-07-17 | shared | poems/tide-orbit-selene.md · CONJECTURE_REGISTER_V6.md (authoritative row) |
+| C55 | Privacy is the seventh kind of capital, foundationally | architectural | occupied · never reassign | shared | poems/tide-orbit-selene.md |
 
 ### 17.6 Band V · City Register Continuation (C56 to C66)
 
@@ -940,7 +922,7 @@ Both source notes declared their numbering "provisional against the live registe
 
 | ID | Title / claim | Conf. | Status | Register | Home |
 |---|---|---|---|---|---|
-| C82 | The Moving Ceiling: adversary informational capability grows against fixed archives (linkage corpus + side priors accumulate along calendar time, shrinking H(X \| B_t)); R_inf(t) drifts upward on a schedule and every static reconstruction guarantee has a finite shelf life t*; frontier releases enter only informationally, never as compute (compute-saturated). Re-typed 2026-07-17 per the register, which wins | ~65% | active · registered Run 1, 2026-06-10 | core | this document §5.5 |
+| C82 | The Moving Ceiling: frontier capability growth raises C_S(t) + C_M(t) against fixed archives without raising H(X); R(t) drifts upward and every static reconstruction guarantee has a finite shelf life t* | ~65% | active · registered Run 1, 2026-06-10 | core | this document §5.5 |
 | C83 | Compositional Leakage Amplification: policy-only separation compounds toward (2^N − 1)ε with chain depth; amnesia separation breaks the Markov chain and caps at Nε; the gap is exponential-to-linear | ~55% | active · registered Run 2, 2026-06-10 · edge C7 → C83 → C17 | core | this document §14.7 |
 | C84 | Existence-Leak Discount: every public feasibility attestation discounts the Behavioural Mosca horizon, Z_b' = Z_b − D(a); migration deadlines tighten on attestation, independent of any actual attack | ~50% | active · registered Run 3, 2026-06-10 · edges C81 → C84 → C49, C84 → C82 | core | this document §27 |
 | C85 | Triadic-Constraint Homology (the ARCH-1 bridge, promoted from CM-C47): the three Φ axes and the lattice's Datum·Stratum·Spectrum are one triadic primitive; candidate pair map Protection+Delegation→Σ, Memory+Value→Δ, Connection+Computation→Γ; the gap is β | ~40% | active · registered Run 4, 2026-06-10 · CM-C47 becomes alias · two named predictions (bnot-pairs invert all axes; stratum-3 is the no-dominant-axis seat) | core | this document §12.8 |
@@ -1229,7 +1211,7 @@ The corpus's sharpest convergence-within-corpus item is arithmetic. Aletheia (V3
 
 ## 30. Canonical Figures
 
-One sanctioned formulation per figure; these appear in suite prose ONLY in these forms. RETIRED AS ASSERTED FACTS (First-Person ruling 2026-07-17, register C55 row): the 678x and 31,000x multiples are lineage of the essay era, never current measured facts; value is the appropriation share the consent interface sets. The table below licenses the fenced lineage FORM only, not assertion.
+One sanctioned formulation per figure; these appear in suite prose ONLY in these forms.
 
 | Figure | Canonical formulation | Basis document |
 |---|---|---|
@@ -1369,8 +1351,6 @@ Acts with direct formal spec relevance:
 ### External References · Information Theory
 
 - Shannon, C. E. (1948). "A Mathematical Theory of Communication." *Bell System Technical Journal,* 27(3), 379–423. [Foundation: mutual information, entropy, channel capacity]
-- Nyquist, H. (1928). "Certain Topics in Telegraph Transmission Theory." *Transactions of the AIEE,* 47(2), 617–644. [Foundation: maximum signalling rate — the sampling/aliasing bound Shannon (1949) later proved as the sampling theorem; §10.6, §11.6]
-- Shannon, C. E. (1949). "Communication in the Presence of Noise." *Proceedings of the IRE,* 37(1), 10–21. [The sampling theorem proof; the rate-limited reconstruction ceiling, §11.6]
 - Fano, R. M. (1961). *Transmission of Information: A Statistical Theory of Communication.* MIT Press. [Foundation: Fano's inequality, the error floor theorem, §11.2]
 - Cover, T. M. & Thomas, J. A. (2006). *Elements of Information Theory.* (2nd ed.) Wiley. [Foundation: all MI bounds, conditional independence, additive decomposition]
 

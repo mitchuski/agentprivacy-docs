@@ -180,9 +180,13 @@ Three scope fences, to keep the promotion honest:
 2. **Not a deniability result.** The law does not say provers should hide that they can prove. It says planners must price the attestations of others into Z_b. It is read from the defender's chair.
 3. **Not yet a behavioural result.** Both bookends are cryptographic. The transfer to behavioural capability claims (a published model card claiming re-identification performance, a benchmark on reconstruction from sparse traces) is the conjectured part, and it is exactly what a second instance should test.
 
+The Tarski reading of this law, and its content-addressed concretisation (deduplication / GUID liveness as an existence-leak surface), are developed post-path in `research/limitative-theorems-and-privacy-is-value.md` (Run 8, registered C92 and C93 at Gate G6, 2026-06-28). That note loads existence-leak onto the inference axis and reads it as the Tarski-undefinability instance: feasibility-truth escapes containment across systems. It strengthens the framing of C81; it does not move its confidence.
+
 ## III.5 Stage 2, stated
 
 C81 stops at 70% and C84 at 50% until a second independent instance arrives. What would count: a capability claim outside cryptography whose public attestation (not whose method publication) preceded independent rediscovery on a timescale clearly shorter than the prior search baseline. A synthetic-data reconstruction benchmark followed by independent replication against real traces would be the cleanest behavioural instance. What would not count: rediscovery following method publication (that is ordinary diffusion), or coincident discovery without an attestation in between (that is ordinary parallel progress).
+
+The Run 8 Tarski reading (C92) is framing, not an instance: a theoretical reframing of why the leak is structural does not satisfy this bar. The n=1 ceiling stands; the second instance must still be empirical.
 
 ## III.6 Honest limits of Part III
 

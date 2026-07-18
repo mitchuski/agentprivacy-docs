@@ -70,7 +70,7 @@ This whitepaper uses precise mathematical and architectural language. For reader
 
 **Signal**: Ongoing proverb posting (0.01 ZEC each), continuous demonstration of comprehension
 
-**Genesis Ceremony**: One-time agent pair origination, 1 ZEC, different from signals
+**Genesis Ceremony**: One-time agent pair origination, 1 ZEC ($500), different from signals
 
 **Spellbook**: Source material for learning (31 Acts + bookends = 32 sections, plus 30 tales in Zero Spellbook)
 
@@ -552,7 +552,7 @@ Once surveillance architectures achieve network effects, switching costs become 
 
 ## The Alternative Path
 
-This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from a mathematical bound — holding for as long as the capacity-deficit condition C_S + C_M < H(X) holds against the stated adversary class — rather than from corporate promises.
+This whitepaper describes that alternative: dual-agent architecture where separation is enforced through structure rather than policy, where privacy emerges from mathematical impossibility rather than corporate promises.
 
 ---
 
@@ -568,13 +568,13 @@ The capacity to act through agents while maintaining irreducible privacy. Genera
 
 **The extraction model** treats behavioral data as minable resource: observe everything, aggregate patterns, sell insights, flow value away from individuals, destroy privacy in the process.
 
-**The sovereignty model** treats behavioral data as land-based rentier capital, data as soil (C55, character ruled 2026-07-17): it yields rent by position, not value by aggregation; it is leased by the season, never conveyed, because scoped disclosure does not transfer what it cannot reconstruct (C97); and the one stock that genuinely accumulates is the cultivated fertility of the relationship, reputation. In practice: curated disclosure through dual agents, chronicles capture agency without surveillance, trust enables coordination networks, value flows to those who demonstrate sovereignty, privacy preserved through creation.
+**The sovereignty model** treats behavioral data as renewable capital: curated disclosure through dual agents, chronicles capture agency without surveillance, trust enables coordination networks, value flows to those who demonstrate sovereignty, privacy preserved through creation.
 
 **Promise Theory:** The extraction model violates the autonomy axiom—systems promise on behalf of users without authorization. The sovereignty model respects it—First Persons make their own promises about their own behavior.
 
 ## The Thesis
 
-Privacy-first architectures change who keeps the value: the subject's share of the surplus is set by the consent interface (near zero under notice-and-consent read as an ultimatum; interior under propose-and-respond), and the historical headline multiples are retired as asserted facts, surviving only as fenced lineage (register C55 row, 2026-07-17). The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The essay-era 31,000× accessible-volume figure survives only as fenced lineage; the shape it gestured at is read as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
+Privacy-first architectures may generate significantly more value than surveillance alternatives through multiplicative trust effects. The Privacy Value Model (see Privacy is Value v5) formalises this through a **holographic field equation** where each term is a gating condition — any zero collapses total value. The 31,000× accessible-volume value gap under full behavioural capture is now understood as **boundary expressiveness**: sovereignty architectures have expressive boundaries; surveillance has constrained boundaries. The 96-edge torus surface encodes the 64-vertex bulk — the holographic bound.
 
 **The V5 equation:**
 
@@ -672,7 +672,7 @@ See [Act XXVII: The Swordsman's Forge](archive/act-xxvii-the-swordsmans-forge.md
 
 **V5 Axiom:** *"The boundary is always enough."*
 
-**Note:** Specific value multiplier claims remain theoretical projections. The holographic framing strengthens the structural argument but real-world validation is still needed. The core mechanism stands: trust enables coordination, surveillance destroys trust, and coordination widens the venue in which the subject's share clears — the one stock that compounds is the reputational record (register C55: compounding is scoped to reputational fertility only).
+**Note:** Specific value multiplier claims remain theoretical projections. The holographic framing strengthens the structural argument but real-world validation is still needed. The core mechanism stands: trust enables coordination, surveillance destroys trust, and coordination creates compounding value through network effects.
 
 ---
 
@@ -1236,7 +1236,7 @@ Together they never reveal enough for reconstruction. Budget limits increase as 
 
 ## Progressive Trust Tiers
 
-**Note:** These tiers can vary across different ecosystem implementations. **Two ladders share the tier names (reconciled 2026-07-18, ledger L154):** the *engagement ladder* earlier in this document is gated by cumulative signal count (50/150/500), while the tables below gate the same names by VRC count plus operational tenure. They measure different things — comprehension signalling versus credential maturity — and a participant holds a position on each. The numeral 50 means "signals to leave Blade" on the first ladder and "VRCs to reach Dragon" on the second; neither set of thresholds is a derived constant, and both await empirical calibration.
+**Note:** These tiers can vary across different ecosystem implementations.
 
 **Table 1: Progressive Trust Tiers and Budget Limits**
 
@@ -1444,9 +1444,9 @@ Traditional thinking treats privacy as cost. The 0xagentprivacy thesis: privacy 
 
 ## The Compounding Effect
 
-Privacy enables trust → Trust enables higher-stakes delegation → Higher stakes generate higher value → Higher value attracts better opportunities → Better opportunities accrue to the tended reputation, the one stock in the model that compounds.
+Privacy enables trust → Trust enables higher-stakes delegation → Higher stakes generate higher value → Higher value attracts better opportunities → Better opportunities compound wealth.
 
-The Swordsman guards the boundary. The Mage projects through it. Chronicles record behavior through story. VRCs connect through verified understanding. The 7th capital yields rent by held position; its fertility — the reputational record — grows through demonstrated sovereignty.
+The Swordsman guards the boundary. The Mage projects through it. Chronicles record behavior through story. VRCs connect through verified understanding. The 7th capital accumulates through demonstrated sovereignty.
 
 ---
 
@@ -1532,7 +1532,7 @@ Like other capital forms, behavioral sovereignty:
 
 - Generates returns (better coordination through trust)
 
-- Compounds over time (reputation builds on reputation; this is the ONLY compounding channel, a conjecture, and it never widens back to raw records, whose aggregation does not compound: the value of the raw stock is positional rent, like land)
+- Compounds over time (reputation builds on reputation)
 
 - Can be invested (privacy architecture as infrastructure)
 
@@ -1578,7 +1578,7 @@ Privacy-first architectures generate dramatically more value because:
 
 - Network effects compound (each participant makes network more valuable)
 
-- Collective coordination widens opportunity access (the superlinear-value wording is retired: raw records do not compound; what scales is access, and the gain is a larger share of surplus, not a multiple)
+- Collective intelligence scales superlinearly
 
 - Reputation capital appreciates (unlike surveillance data which depreciates)
 
@@ -1638,7 +1638,7 @@ The dual-agent separation doesn't just prevent reconstruction. It generates two 
 
 - **Reflect (R) — The Witness** 🪞 — temporal memory, audit trail, derivation chains. Emerges from S's accumulated boundary history
 
-- **Connect (C) — The Bridge** 🤝 — network effects, relationships, reputational compounding. Emerges from M's accumulated delegation patterns
+- **Connect (C) — The Bridge** 🤝 — network effects, relationships, value compounding. Emerges from M's accumulated delegation patterns
 
 ```
          Connect (C)
@@ -1784,7 +1784,7 @@ One agent to protect privacy. One to delegate sovereignty. Two create sustainabl
 
 - Architectural separation creates information-theoretic privacy
 
-- Budget constraints establish reconstruction ceilings R(t), time-indexed and conditional on non-collusion and the stated adversary class; the drift is informational (the adversary's linkage corpus and side priors accumulating against a fixed archive, shrinking H(X | B_t)), never compute, which the information-theoretic bound already saturates (C82)
+- Budget constraints establish reconstruction ceilings R(t), time-indexed and conditional on non-collusion and the stated adversary class
 
 - Separation enforced through architecture rather than alignment
 
@@ -1822,9 +1822,9 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Spellbook comprehension creates understanding (not speculation)
 
-- Genesis ceremony: 1 ZEC creates agent pair once per ecosystem
+- Genesis ceremony: 1 ZEC ($500 at $500/ZEC) creates agent pair once per ecosystem
 
-- Ongoing signals: 0.01 ZEC each, continuous proof-of-comprehension
+- Ongoing signals: 0.01 ZEC ($5) each, continuous proof-of-comprehension
 
 - Fee distribution: 61.8% transparent pool, 38.2% shielded pool (internal allocation per ecosystem)
 
@@ -1848,23 +1848,23 @@ The architectural separation described in this whitepaper enables economic imple
 
 - Trust networks built on shared meaning create adoption incentives
 
-- Compression-based VRCs reduce coordination costs in proportion to the spellbook corpus's 70:1 compression ratio
+- Compression-based VRCs reduce coordination costs in proportion to the spellbook corpus's 70:1 compression ratio (indicative: $10 → $0.14)
 
 - VRC formation: 100 MAGE stake, break-even at 4 coordinations
 
 - Knowledge sharing becomes credential creation
 
-- Network effects: V(n) ∝ n² is retired as a value-growth claim (rent, not compounding); network size widens the venue the subject's share clears in
+- Network effects: V(n) ∝ n² creates superlinear value growth
 
-- Trust graphs accumulate compounding reputational value — the scoped compounding channel (C55)
+- Trust graphs accumulate compounding value
 
 **Value Capture Distribution:**
 
-- First Persons: the primary value-capture tier; returns denominated in protocol units and scaling with active participation
+- First Persons: $47k-$52k/year indicative value capture range (active participants)
 
-- Guardians: validation compensation scaled by stake tier (Dragon tier highest)
+- Guardians: $30k-$120k/year validation compensation (Dragon tier)
 
-- Ecosystem operators: revenue scales with guild size (successful 1k-10k member guilds)
+- Ecosystem operators: $50k-$500k/year (successful 1k-10k member guilds)
 
 - Protocol layer: Self-sustaining Year 2, surplus by Year 3
 
@@ -1926,9 +1926,9 @@ This architecture is being developed now. This is the inflection point.
 
 - **Five Grimoires + Acts XXIV–XXX:** 120+ inscriptions including Dragon Anatomy complete (companion documents)
 
-- **VRC Promise Protocol:** v3.4 (companion document — dual territory, mana economics; `specs/vrc_promise_protocol_v3_3.md`, filename retained at v3_3 for link stability)
+- **VRC Promise Protocol:** v3.3 (companion document — dual territory, mana economics; `specs/vrc_promise_protocol_v3_3.md`)
 
-- **Glossary:** Glossary Master v4.0 (canonical terminology; V6 addendum)
+- **Glossary:** v3.4 (canonical V5.4 terminology)
 
 - **IEEE 7012 Quick Reference:** v1.0 (companion document)
 
