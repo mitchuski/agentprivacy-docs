@@ -34,8 +34,11 @@ The architecture integrates the **Sovereign Agent** (delegate 🧙) and **Sovere
 |-----------|----------|---------|--------|
 | **Swordsman** ⚔️ | [spellweb.ai](https://spellweb.ai) | Topology, navigation, blade forging, hexagram computation | ✅ Operational |
 | **Mage** 🧙 | [agentprivacy.ai](https://agentprivacy.ai) | Story, explanation, training, spell learning | ✅ Operational |
+| **Librarian** 🗃️ | [guide.agentprivacy.ai](https://guide.agentprivacy.ai) | The federated *Guide to Agent Privacy* — a forkable wiki reading-surface over this corpus; concept atoms fork from these docs with lineage | 🚧 In build |
 
 The ZK Swordsman Blade Forge is not theoretical — it runs. Visitors to spellweb.ai can mark constellations, evoke blades, and forge proofs on the 64-vertex lattice in real-time. The theory and code arrived the same day.
+
+The **Guide** at guide.agentprivacy.ai is the Librarian's *Wikis* made public — a Ward-Cunningham Federated Wiki that recomposes this corpus into a forkable field of concept atoms beneath a short newcomer spine. Pages fork from these docs and from spellweb.ai; the journal carries the lineage, so provenance travels with every copy. Built on the `wikis/` skill category (the Librarian's git-less onboarding layer). *The Archivist 📚 seals the corpus; the Librarian 🗃️ forks it forward.*
 
 ---
 
@@ -224,7 +227,7 @@ AI agents need to know about you to act effectively on your behalf. But that kno
 
 - **70:1 compression efficiency** through VRC coordination
 - **O(n²) network effects** from relationship formation
-- **$47k-52k/year** value capture for active participants
+- **Per-person value capture** for active participants, denominated in protocol units (fiat estimates retired)
 - **Self-sustaining** by Year 3 through signal revenue
 
 ---

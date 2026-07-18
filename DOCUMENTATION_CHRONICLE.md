@@ -1323,8 +1323,18 @@ series subsection, and Sheffer verified present in the output.
 `b8ada5f7e68a494a0c73bd71d94498857a5cb5018cb2b12f75139ceff9633898` ·
 235,081 bytes · 59 pp). Supersedes the 2026-06-11 pin
 (`bafkreiftqgrl…hslia`, which remains resolvable as the pre-references
-revision). The /model resources entry and the /archive door on
-agentprivacy.ai now point at the new CID.
+revision).
+
+**RE-PINNED again same day (the encoding ruling):**
+`https://sync.agentprivacy.ai/ipfs/bafkreigy4idzvutvowr7n4oqgkw35357xeozdgz53pcvet5g6pi6fnfxqi`
+— the edition carrying §12.6's *Numeric encoding* paragraph (d₁ Protection =
+the high bit; the MODEL lock unified across the suite 2026-06-12). Verified
+byte-identical against the rebuilt
+`privacy_value_v6_formal_specification_academic.pdf` (sha256
+`d8e2079ad27575a3f6f1d032adbeefbfb91d919b3ddbc5524fa6f3d1e2b4b782` · 236,024
+bytes · 59 pp). This is the citation anchor; the morning pins remain
+resolvable as lineage. The /model resources entry and the /archive door on
+agentprivacy.ai point here.
 
 ---
 
