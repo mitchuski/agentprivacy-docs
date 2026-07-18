@@ -6,3 +6,7 @@ provcount.txt
 papers/Programme/pipeline/reader/
 papers/Programme/pipeline/tracker/
 papers/Programme/blog/reader/
+
+# --- runtime junk ---
+.server.log
+__pycache__/
