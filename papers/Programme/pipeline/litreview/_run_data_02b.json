@@ -1,0 +1,338 @@
+{
+  "dp": [
+    {
+      "paper_id": "Mironov 2017 â€” Renyi Differential Privacy (CSF)",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "privacy_loss_epsilon",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Ilya Mironov, \"RÃ©nyi Differential Privacy,\" 2017 IEEE 30th Computer Security Foundations Symposium (CSF), Santa Barbara, CA, 2017, pp. 263â€“275.",
+      "doi_or_url": "10.1109/CSF.2017.11 (arXiv:1702.07476)",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "RDP runs on the query/release-composition clock â€” it is a RÃ©nyi-divergence accounting relaxation that tracks privacy-loss epsilon depleting across composed mechanisms against a fixed worst-case adversary, and never indexes a fixed release's residual to adversary capability growing over calendar time, so it does not cover the R(t) drift clause."
+    },
+    {
+      "paper_id": "dwork-rothblum-2016-CDP + bun-steinke-2016-zCDP",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "privacy_loss_epsilon",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Dwork, C. & Rothblum, G. N. \"Concentrated Differential Privacy.\" arXiv:1603.01887 (2016). Bun, M. & Steinke, T. \"Concentrated Differential Privacy: Simplifications, Extensions, and Lower Bounds.\" TCC 2016, LNCS 9985, pp. 635-658 (arXiv:1605.02065).",
+      "doi_or_url": "https://arxiv.org/abs/1603.01887 ; https://doi.org/10.1007/978-3-662-53641-4_24 (arXiv:1605.02065)",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "Both bound the privacy-loss random variable (subgaussian mean for CDP, Renyi divergence for zCDP) to get sharper COMPOSITION accounting across many queries/releases against a FIXED worst-case hypothesis-testing adversary â€” it is a tighter fixed-adversary accounting on a release-composition clock, with no index to adversary capability growing over calendar time against a fixed release, so it does not touch the R(t) drift clause."
+    },
+    {
+      "paper_id": "Dwork-Rothblum-Vadhan-2010-Boosting-and-Differential-Privacy-FOCS",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "privacy_loss_epsilon",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Cynthia Dwork, Guy N. Rothblum, Salil Vadhan, \"Boosting and Differential Privacy,\" Proc. 51st Annual IEEE Symposium on Foundations of Computer Science (FOCS 2010), pp. 51-60.",
+      "doi_or_url": "https://doi.org/10.1109/FOCS.2010.12",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "This paper's advanced composition theorem runs on a query/release-composition clock â€” cumulative privacy loss Îµ degrades as ~âˆškÂ·Îµ over k composed releases against a static worst-case adversary â€” so its \"time\" is added releases, not a fixed archive facing an adversary who improves over calendar time; it does not cover the R(t) drift clause."
+    },
+    {
+      "paper_id": "Kairouz, Oh, Viswanath â€” \"The Composition Theorem for Differential Privacy\" â€” ICML 2015",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "privacy_loss_epsilon",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Peter Kairouz, Sewoong Oh, Pramod Viswanath. \"The Composition Theorem for Differential Privacy.\" Proceedings of the 32nd International Conference on Machine Learning (ICML 2015), PMLR vol. 37, pp. 1376-1385. Extended version: IEEE Transactions on Information Theory, 63(6):4037-4049, 2017. arXiv:1311.0776.",
+      "doi_or_url": "https://proceedings.mlr.press/v37/kairouz15.html (arXiv: https://arxiv.org/abs/1311.0776)",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "Runs on the query/release-composition clock â€” epsilon degrades tightly as more mechanisms are composed against a static worst-case hypothesis-testing adversary â€” so it is optimal fixed-adversary accounting over releases, not R(t) drift where a fixed release loses ground to an adversary improving over calendar time."
+    },
+    {
+      "paper_id": "dwork-naor-pitassi-rothblum-continual-observation-STOC2010 (+ Chan-Shi-Song continual counters 2011)",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "continual_release_stream",
+      "object_bounded": "privacy_loss_epsilon",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "C. Dwork, M. Naor, T. Pitassi, G. N. Rothblum, \"Differential Privacy under Continual Observation,\" STOC 2010, pp. 715-724; T-H. H. Chan, E. Shi, D. Song, \"Private and Continual Release of Statistics,\" ICALP 2010 / ACM TISSEC 14(3):26, 2011 (binary-tree counter).",
+      "doi_or_url": "10.1145/1806689.1806787 (DNPR); 10.1145/2043621.2043626 (Chan-Shi-Song)",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "It runs on a continual-release-stream composition clock â€” epsilon depletes and error grows polylog(T) as MORE releases arrive against a FIXED worst-case adversary â€” which is the inverse of R(t)'s fixed-release / calendar-time adversary-capability-growth clock, so it does not cover the drift."
+    },
+    {
+      "paper_id": "dong-roth-su-gaussian-differential-privacy-fdp-2019-2022",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "membership",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Jinshuo Dong, Aaron Roth, Weijie J. Su, \"Gaussian Differential Privacy,\" Journal of the Royal Statistical Society: Series B (Statistical Methodology), 84(1):3-37, 2022 (arXiv:1905.02383, 2019).",
+      "doi_or_url": "https://doi.org/10.1111/rssb.12454",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "f-DP/GDP refines the ADVERSARY'S TEST (a Neyman-Pearson hypothesis-testing trade-off function between type-I/type-II errors) and the ACCOUNTING (a composition CLT converging to Gaussian DP), but its clock is release/query composition against a fixed optimal-tester adversary, not adversary capability growing over calendar time against a fixed release, so it does not touch the R(t) drift clause."
+    },
+    {
+      "paper_id": "vadhan-wang-2021-concurrent-composition-dp",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "privacy_loss_epsilon",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Salil Vadhan and Tianhao Wang, \"Concurrent Composition of Differential Privacy,\" Theory of Cryptography Conference (TCC) 2021, LNCS vol. 13043, Springer, pp. 582-604. (Line of work extended by Vadhan & Zhang, \"Concurrent Composition Theorems for Differential Privacy,\" STOC 2023.)",
+      "doi_or_url": "https://doi.org/10.1007/978-3-030-90453-1_20 (eprint: https://eprint.iacr.org/2021/1196 ; arXiv: https://arxiv.org/abs/2105.14427)",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "It runs on a query/release-composition clock â€” epsilon budget depletes as an adaptive analyst interleaves queries across concurrently running interactive mechanisms against a fixed worst-case adversary â€” not a calendar-time clock where a fixed release degrades because the adversary's capability grows, so it does not touch the R(t) drift clause."
+    },
+    {
+      "paper_id": "dinur_nissim_2003",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "reconstruction_of_record",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "n/a",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "I. Dinur and K. Nissim, \"Revealing Information while Preserving Privacy,\" Proceedings of the 22nd ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems (PODS), San Diego, CA, June 2003, pp. 202-210.",
+      "doi_or_url": "https://doi.org/10.1145/773153.773173",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "This foundational reconstruction result runs on a query-count/perturbation-magnitude clock (noise must be Omega(sqrt(n)) as the NUMBER of noisy subset-sum queries against a FIXED database grows) with a fixed worst-case reconstruction adversary, so it is a query/release-composition clock, not the R(t) calendar-time adversary-capability-growth clock against a fixed release."
+    },
+    {
+      "paper_id": "balle_cherubin_hayes_2022_informed_adversaries",
+      "models_adversary": "worst_case_fixed_capability",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "reconstruction_of_record",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Borja Balle, Giovanni Cherubin, Jamie Hayes. \"Reconstructing Training Data with Informed Adversaries.\" 2022 IEEE Symposium on Security and Privacy (S&P), pp. 1138-1156.",
+      "doi_or_url": "https://doi.org/10.1109/SP46214.2022.9833677 (arXiv:2201.04845)",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "Runs on a DP composition / fixed worst-case informed-adversary clock: it bounds reconstruction of a held-out record against the strongest static adversary for a fixed release, with no indexing to adversary capability growing over calendar time, so it does not cover the R(t) drift clause."
+    },
+    {
+      "paper_id": "arXiv:2405.01716 (ATTAXONOMY) + arXiv:2507.08158 (Unified Adversary-Aware DP Bounds)",
+      "models_adversary": "capability_class_fixed",
+      "temporal_clock": "query_or_release_composition",
+      "object_bounded": "reconstruction_of_record",
+      "prices_or_values": "neither",
+      "held_stock_or_per_use": "per_query_or_per_release",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Cummings, R., Hod, S., Sarathy, J., & Swanberg, M. (2024). ATTAXONOMY: Unpacking Differential Privacy Guarantees Against Practical Adversaries. arXiv:2405.01716. Companion: Swanberg, M., Annamalai, M.S.M.S., Hayes, J., Balle, B., & Smith, A. (2025). A Unified Framework for Adversary-Aware Differential Privacy Bounds. arXiv:2507.08158.",
+      "doi_or_url": "https://arxiv.org/abs/2405.01716 ; https://arxiv.org/abs/2507.08158",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "These works refine WHICH fixed adversary class the DP guarantee is calibrated against (realistic/distributional-uncertainty adversaries, unified across membership/attribute/reconstruction) and run on a query/release-composition accounting clock â€” they hold the adversary's capability class fixed and never index the guarantee to adversary capability GROWING over calendar time against a fixed archive, so the R(t) drift clause is untouched."
+    },
+    {
+      "paper_id": "arXiv:2203.09118 â€” \"Time and the Value of Data\" (Valavi, Hestness, Ardalani, Iansiti)",
+      "models_adversary": "none",
+      "temporal_clock": "endogenous_relevance_decay",
+      "object_bounded": "value_or_price",
+      "prices_or_values": "values_no_market",
+      "held_stock_or_per_use": "held_stock",
+      "covers_Rt_drift": "does_not_cover",
+      "citation": "Ehsan Valavi, Joel Hestness, Newsha Ardalani, Marco Iansiti, \"Time and the Value of Data,\" Harvard Business School Working Paper 21-016 / arXiv:2203.09118, 2022. Empirical anchor: 100MB of text after seven years is worth ~50MB of current data for next-word prediction; models an exponential relevance-decay discount e^(-ct) on accumulated data stock.",
+      "doi_or_url": "https://arxiv.org/abs/2203.09118",
+      "provenance_confidence": "verified_from_search",
+      "one_line_why": "This work runs on an ENDOGENOUS-RELEVANCE-DECAY clock â€” a held data stock loses predictive value as the world drifts and old data stops describing the present â€” which is the OPPOSITE polarity to R(t) drift (no adversary, value falls rather than reconstruction risk rising against a fixed release), so it does not cover the R(t) clause."
+    }
+  ],
+  "dp_drift_coverage": {
+    "fully": 0,
+    "partially": 0,
+    "none": 11
+  },
+  "verdicts": [
+    {
+      "id": "CTR-LR-02b-i",
+      "verdict": {
+        "claim_id": "CTR-LR-02b-i",
+        "verdict": "PARTIAL",
+        "rationale": "The literal contrast holds: DP composition is unambiguously a query/release (k-axis) clock with the adversary held fixed or at sup_C â€” advanced/optimal/continual-observation composition, RDP, zCDP, GDP/f-DP all move along k with dC=0, and continual observation's T counts arriving releases (opposite polarity to a frozen release). R(t) is a genuinely different clock: single frozen release (k=1), residual rising as adversary capability C(t) climbs with the calendar. No collapse candidate runs R(t)'s clock: Age-Dependent DP (2209.01466) is a data-staleness clock of INVERTED polarity (risk falls); Cao temporal-correlation DP rises on the k-axis (accumulating correlated releases, adversary fixed); gradual-release is analyst-driven k-motion; HNDL is the real calendar-adversary clock but cryptographic, indexing no DP residual. So it does NOT collapse. BUT \"categorically distinct\" overreaches on exact-clock grounds. (1) Computational DP does not evaluate sup over all C â€” it fixes a poly-bounded class at a security parameter, and its well-known informal caveat is exactly that a fixed release's guarantee erodes as adversary compute grows over calendar time: R(t)'s mechanism, merely unformalized. This also defeats the prover's \"decisive structural fact\" (DP always sup_C, erasing C) as a universal â€” cDP and adversary-aware bounds keep C alive. (2) Adversary-aware DP (ATTAXONOMY / 2507.08158) already carries C as an explicit static parameter; a calendar-indexed C(t) is a one-step, non-foreclosed bridge. The prover's own reasoning equates \"no strand entry takes that step\" with \"categorically distinct,\" conflating contingent current-literature absence (the delegator's D2 scope-bounded non-discovery) with an in-principle categorical barrier â€” the precise slip. The distinction is real but current-formalization-contingent, not categorical.",
+        "survives_as": "DP composition and the information-theoretic DP family (RDP/zCDP/GDP/f-DP, advanced/optimal/continual-observation composition) provably run a query/release clock â€” free variable k, adversary held at worst-case sup_C â€” and therefore cannot express a fixed release's reconstruction residual rising with adversary capability over calendar time; R(t) is a distinct clock (free variable calendar-time t through a growing adversary C(t), single frozen release k=1), and no DP work in the searched corpus formalizes it. This distinctness is contingent-on-current-formalization, not categorical-in-principle: computational DP already recognizes (informally) that a fixed release's guarantee erodes as adversary compute grows over calendar time â€” the same mechanism, unformalized â€” and adversary-aware DP bounds (ATTAXONOMY / 2507.08158) already carry adversary capability C as an explicit static parameter, so a calendar-indexed C(t) is a natural, non-foreclosed bridge rather than a mathematical impossibility.",
+        "confidence": "moderate-high"
+      },
+      "refute": {
+        "claim_id": "CTR-LR-02b-i",
+        "collapsing_prior_art": [
+          {
+            "citation": "Farokhi, \"Age-Dependent Differential Privacy\" (arXiv:2209.01466, IEEE Trans. IT 2023)",
+            "clock_it_runs": "endogenous data-age / temporal-correlation decay: epsilon is a function of calendar time for a FIXED release, but polarity is INVERTED (epsilon -> 0 as data ages, reconstruction risk FALLS toward chance) and the driver is staleness of an evolving stochastic process, not adversary-capability growth",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "Cao, Yoshikawa, Xiao, Xiong, \"Quantifying Differential Privacy in Continuous Data Release under Temporal Correlations\" (arXiv:1711.11436, ICDE/TKDE 2017-2019)",
+            "clock_it_runs": "continual-release-stream + temporal-correlation clock: backward/forward privacy leakage RISES, but because MORE correlated releases (times 1..t-1, t+1..) accumulate against a fixed worst-case adversary, not because a single fixed release faces a stronger adversary over calendar time",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "Mironov, Pandey, Reingold, Vadhan, \"Computational Differential Privacy\" (CRYPTO 2009)",
+            "clock_it_runs": "fixed polynomially-bounded adversary class on a query/release composition clock; secondary sources note cDP guarantees 'erode' as compute advances over time, but this is an informal caveat -- cDP fixes the adversary at a security parameter and never indexes the guarantee to capability GROWING over calendar time against a fixed release",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "Harvest-Now-Decrypt-Later literature (e.g. arXiv:2603.01091 'On the Practical Feasibility of HNDL'; Fed FEDS 2025093)",
+            "clock_it_runs": "genuine calendar-time adversary-capability clock against a FIXED archive (quantum capability grows over calendar time, fixed harvested ciphertext eventually falls) -- confirms the clock exists, but it is cryptographic confidentiality, indexes no DP reconstruction-residual guarantee",
+            "how_close": "tangential"
+          },
+          {
+            "citation": "Koufogiannis, Han, Pappas, \"Gradual Release of Sensitive Data under Differential Privacy\" (arXiv:1504.00429, 2015)",
+            "clock_it_runs": "analyst-driven release/composition clock: epsilon is deliberately RELAXED across successive releases of the same data by the data holder, not a fixed release losing ground to an adversary improving over calendar time",
+            "how_close": "tangential"
+          }
+        ],
+        "strongest_collapse": "Age-Dependent DP (arXiv:2209.01466) is the strongest attempt because it is the one DP work that formalizes epsilon as an explicit function of calendar time for a fixed release. It nonetheless fails to collapse CTR-LR-02b-i on two independent axes: (1) POLARITY is inverted -- its epsilon decays to zero and attack success converges to 50% chance as data ages, i.e. reconstruction risk FALLS, whereas R(t)'s residual RISES; and (2) DRIVER is endogenous data staleness / temporal-correlation decay of an evolving process, categorically the 'Time and the Value of Data' clock already in the strand, with NO adversary and NO capability-growth term. It therefore sits on the opposite-polarity endogenous-decay clock, not the calendar-adversary clock. The closest true calendar-adversary clock found (HNDL) confirms the mechanism is real but lives in cryptography, not DP, and indexes no DP guarantee -- so it cannot collapse a DP-vs-DP distinctness claim either.",
+        "absence_note": "not_found_in_corpus(0, \"DP refinements that index a privacy/reconstruction guarantee to adversary CAPABILITY GROWTH over CALENDAR time against a FIXED release\"). Across the DP-refinements strand and web hunt (Renyi/f-DP/GDP/zCDP/CDP, advanced/concurrent/continual-observation composition, computational DP, temporal-correlation DP, age-dependent DP, gradual-release DP, informed-adversary and ATTAXONOMY adversary-class work), every DP guarantee runs on either (a) a query/release-composition clock with a fixed-capability adversary, or (b) an endogenous data-age/temporal-correlation clock -- the latter of INVERTED polarity to R(t). No DP work parameterizes a fixed release's residual by a growing adversary over calendar time. The only genuine calendar-adversary clock located (harvest-now-decrypt-later) is cryptographic, not DP. Per D2, this absence is reported as scope-bounded non-discovery, NOT as evidence of novelty; the calendar-adversary clock demonstrably exists in the crypto/PQC literature, so the distinctness rests on transplanting it into a DP reconstruction-residual object, which the searched corpus neither does nor forecloses."
+      }
+    },
+    {
+      "id": "CTR-LR-02b-ii",
+      "verdict": {
+        "claim_id": "CTR-LR-02b-ii",
+        "verdict": "HOLDS",
+        "rationale": "Every DP refinement in the strand runs one of three clocks, none of which is the R(t) clock (a fixed release whose residual risk rises because adversary capability grows over calendar time): (1) composition/query-accounting clock with a fixed worst-case adversary (RDP, zCDP/CDP, advanced/optimal/concurrent composition, f-DP/GDP, Dinur-Nissim); (2) release-stream clock indexed by T outputs published, of inverted polarity, with a fixed adversary (continual-observation DP; and the delegator's strongest candidate, Cao's Temporal Privacy Leakage / ConTPL / CSDP, whose TPLâ†’TÂ·epsilon growth is driven by more correlated releases against a fixed Markov-model adversary, not a fixed release aging); (3) a static adversary-class/prior parameter with no time variable (adversary-aware 2507.08158, ATTAXONOMY, informed adversaries) â€” the closest to indexing capability, but it enters as a fixed per-attack prior, refining which fixed class the supremum ranges over rather than running a clock on it. The genuinely wall-clock members (Age-Dependent DP, Temporally-Discounted DP, CSDP aging term, and Valavi) run the OPPOSITE polarity: the guarantee strengthens as data ages via endogenous relevance decay. Everlasting privacy is the anti-thesis â€” it supplies a fixed guarantee that survives a future unbounded adversary. The prover's structural argument (DP quantifies over the adversary as a supremum and is robust to arbitrary auxiliary knowledge/unbounded compute, so it cannot index to capability growth) is sound and, critically, exact for this strand because every enumerated member is information-theoretic. The two axes R(t) requires â€” adversary capability as the indexed variable AND a calendar clock on it against a fixed release â€” never co-occur. Hard-marker caveat: the \"architecturally incapable\" claim is airtight only for information-theoretic DP; computational DP / crypto harvest-now-decrypt-later could in principle carry a capability-growth clock, but that is a separate literature already excluded from scope, so it does not touch the strand-scoped sub-claim.",
+        "survives_as": "Within the enumerated DP-refinements strand â€” all information-theoretic (RDP, zCDP/CDP, advanced/optimal/concurrent composition, continual-observation DP, f-DP/GDP, adversary-aware accounting) plus the time-aware DP families (temporal-correlation TPL/ConTPL/CSDP, age-dependent, temporally-discounted, everlasting) â€” no work indexes a fixed release's residual reconstruction/inference risk to adversary-CAPABILITY growth over calendar time. Each runs one of three non-R(t) clocks: (1) composition/query accounting with a fixed worst-case adversary, (2) release-stream length T of inverted polarity with a fixed adversary, or (3) a static adversary prior/baseline-success parameter with no time variable. The temporally-structured members (incl. Cao's TPL) run the stream clock against a fixed adversary; the wall-clock members (age-dependent, temporally-discounted) run relevance/age decay of the OPPOSITE polarity (guarantee strengthens as data ages). The structural reason is exact for this strand: every member is information-theoretic and robust to arbitrary auxiliary knowledge and unbounded compute, so adversary capability enters only as a supremum, never a calendar index. Out-of-scope caveat: computational DP and the crypto harvest-now-decrypt-later framing could in principle carry a capability-growth clock, but they are a different literature already excluded and do not formally index epsilon to calendar time.",
+        "confidence": "high"
+      },
+      "refute": {
+        "claim_id": "CTR-LR-02b-ii",
+        "collapsing_prior_art": [
+          {
+            "citation": "Cao, Yang; Yoshikawa, Masatoshi; Xiao, Yonghui; Xiong, Li â€” \"Quantifying Differential Privacy under Temporal Correlations\" (ICDE 2017 / arXiv:1610.07543) and its journal extension \"Quantifying DP in Continuous Data Release under Temporal Correlations\" (TKDE, arXiv:1711.11436)",
+            "clock_it_runs": "continual-release stream / temporal-correlation clock â€” Temporal Privacy Leakage TPL = BPL + FPL, where BPL at time t accrues from releases 1..t-1 and FPL from releases t+1..T; leakage grows from epsilon toward T*epsilon as MORE correlated releases enter the stream, not against a fixed release",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "Cao, Yang et al. â€” \"ConTPL: Controlling Temporal Privacy Leakage in Differentially Private Continuous Data Release\" (VLDB 2018, PMC6697134)",
+            "clock_it_runs": "same continual-release-stream clock as Cao 2017; a controller that caps accumulating stream leakage across successive releases against a fixed Markov-correlation-aware adversary",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "\"Correlated-Sequence Differential Privacy (CSDP)\" (arXiv:2511.18025)",
+            "clock_it_runs": "release-stream / cross-sequence correlation clock â€” bounds extra leakage from joint temporal + cross-sequence links as sequential releases arrive; adversary capability (knowledge of the correlation-matrix couplings) is fixed, and it even includes a data-aging term that REDUCES sensitivity with age",
+            "how_close": "tangential"
+          },
+          {
+            "citation": "\"Age-Dependent Differential Privacy\" (arXiv:2209.01466)",
+            "clock_it_runs": "endogenous relevance/age-decay clock, OPPOSITE polarity â€” epsilon(t) is a decreasing function of data age with epsilon(t)->0 as t->infinity, so the guarantee STRENGTHENS over calendar time because stale data is less sensitive; no adversary-capability growth",
+            "how_close": "tangential"
+          },
+          {
+            "citation": "\"Temporally Discounted Differential Privacy for Evolving Datasets on an Infinite Horizon\" (arXiv:1908.03995)",
+            "clock_it_runs": "temporal-discounting clock, OPPOSITE polarity â€” discounts the weight of privacy loss over the infinite horizon (older/farther leakage matters less), a relevance-discount rather than an adversary that grows against a fixed release",
+            "how_close": "tangential"
+          },
+          {
+            "citation": "Everlasting-privacy-for-DP line (e.g. certified-randomness uplift, arXiv:2503.19759; and the repeated-collection everlasting-DP motivation)",
+            "clock_it_runs": "repeated-collection composition clock â€” motivates a FIXED unconditional guarantee that survives a future unbounded adversary; the temporal structure it fights is deterioration under many repeated reports (~sqrt(#reports)), not a fixed release facing capability growth over calendar time",
+            "how_close": "tangential"
+          }
+        ],
+        "strongest_collapse": "None collapses the sub-claim. The strongest candidate is Cao et al.'s Temporal Privacy Leakage line (Quantifying DP under Temporal Correlations / ConTPL): it is the only DP refinement I found with a genuine, non-composition temporal object (BPL/FPL that grows toward T*epsilon). But its clock is still the continual-release STREAM â€” leakage rises because MORE temporally correlated releases are emitted over t=1..T, exploited by an adversary whose capability (knowledge of the fixed Markov correlation model) is held constant. That is exactly the continual-observation family's release clock with a correlation refinement, i.e. what the strand already labels 'clock=continual_release_stream, adversary=worst_case_fixed_capability.' It does NOT index a single FIXED, already-published release's residual reconstruction risk to an adversary whose CAPABILITY GROWS over calendar time. The other temporally-labeled refinements (Age-Dependent DP, Temporally Discounted DP, CSDP's aging term) run the opposite polarity â€” an endogenous relevance/age decay where epsilon(t)->0 and the guarantee strengthens as data ages â€” matching the Valavi 'Time and the Value of Data' pole already in the strand, not R(t) drift. So the two failure modes the delegator flagged are both realized: the temporally-structured DP works run the release/stream clock, and the ones whose risk 'moves' with wall-clock time move it DOWNWARD via relevance decay, never upward via adversary-capability growth against a fixed release.",
+        "absence_note": "not_found_in_corpus(n=6 candidate DP refinements examined beyond the 12 already in the strand, scope = DP-refinements literature reachable via WebSearch July 2026: Renyi/zCDP/CDP, advanced/optimal/concurrent composition, continual-observation DP, f-DP/GDP, adversary-aware/ATTAXONOMY accounting, plus the time-aware DP families surfaced here â€” temporal-correlation DP (Cao/ConTPL/CSDP), Age-Dependent DP, Temporally Discounted DP, everlasting-privacy DP). No work in this scope indexes a fixed release's guarantee to adversary capability growing over calendar time; the temporally-structured ones run the release/stream-composition clock (fixed adversary) and the wall-clock ones run relevance/age decay of the opposite polarity. Per D2 this absence is reported as not-found, NOT as evidence of novelty â€” the calendar-adversary clock may exist outside this DP-refinements slice (e.g. crypto 'harvest-now-decrypt-later'/long-term-security framing, or policy motivations such as the US Census citing growth in computational power) but those are informal motivations or a different (cryptographic) literature, not a DP refinement that formally indexes epsilon to calendar-time adversary-capability growth; a wider corpus pull would be needed to move this from not-found to confirmed-absent."
+      }
+    },
+    {
+      "id": "CTR-LR-02b-iii",
+      "verdict": {
+        "claim_id": "CTR-LR-02b-iii",
+        "verdict": "PARTIAL",
+        "rationale": "The empty-intersection is genuinely unoccupied and the clock distinction is exact: no surveyed DP member runs a calendar-time adversary-CAPABILITY clock against a FIXED release with risk rising. Every near-miss fails on the clock precisely. Age-Dependent DP (2209.01466) time-indexes a fixed record but on the record's own AGING clock with INVERTED polarity (risk falls). Cao et al. / correlated-sequence DP make risk rise, but on an added-observations continual-RELEASE clock (the inverse of a frozen release). Composition/RDP/zCDP/f-DP/concurrent/continual-observation all clock ADDED queries/releases against a static adversary. Unified adversary-aware bounds (2507.08158) parametrize capability but hold the CLASS FIXED at a static level â€” a class parameter is not an integral along wall-clock t. Mosca/HNDL owns the calendar-capability clock verbatim but only over crypto break-time on a computational secret, the excluded clock. Axis C (inalienable subject-owned capital) is absent strand-wide (all price 'neither'). So no member co-occupies two of the three axes; the joint cell is empty â€” NOT a collapse. It is not a clean HOLDS because the prover lists 'compute' inside axis-B capability while axis A is information-theoretic (inert to compute) and orthodox DP already saturates the unbounded-compute adversary: under the compute reading R(t) has nothing to index, so emptiness there is vacuity, not novelty. The clock is coherent and non-vacuous ONLY under the informational reading â€” accumulating auxiliary/linkage/side-prior corpus over calendar time raising a frozen archive's residual. That reading is what axis A forces; committing to it narrows the defensible claim.",
+        "survives_as": "Over the DP-refinements/DP-markets strand (~40 works surveyed), the joint cell C = A x B x C is empty and no member co-occupies even two of its three axes, where A = an information-theoretic per-subject reconstruction bound on a FIXED (non-growing) archive; B = a Mosca-STRUCTURED calendar-time clock along which the adversary's AUXILIARY/INFORMATIONAL capability (linkage corpus, side priors, informedness â€” NOT computational power, which axis A renders inert and which unbounded-adversary DP already saturates) grows, so the frozen archive's per-subject reconstruction residual rises monotonically with t though nothing is re-released â€” explicitly neither a crypto break-time nor a DP composition/continual-release budget; and C = the residual held and priced as inalienable subject-owned CAPITAL (a stock) rather than a per-query privacy-loss FLOW. The clock distinction is real and exact against every surveyed clock; the contribution survives as novelty only in this narrower, informational-capability form.",
+        "confidence": "high"
+      },
+      "refute": {
+        "claim_id": "CTR-LR-02b-iii",
+        "collapsing_prior_art": [
+          {
+            "citation": "Zhang, Ni, et al. â€” Age-Dependent Differential Privacy (arXiv:2209.01466 / IEEE Trans. Info. Theory 2023)",
+            "clock_it_runs": "data-staleness / freshness decay clock: a per-time privacy budget epsilon(t) that DECAYS toward zero as a record ages, so a fixed record becomes LESS of a privacy concern over time",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "Cao, Yoshikawa, Xiao, Xiong â€” Quantifying Differential Privacy under Temporal Correlations (arXiv:1610.07543) + Continuous Data Release version (arXiv:1711.11436)",
+            "clock_it_runs": "continual-release / temporal-correlation clock: event-level privacy loss GROWS over time because an adversary exploits correlations across a STREAM of successive releases â€” i.e. more releases, the continual-observation family, not a fixed release",
+            "how_close": "adjacent"
+          },
+          {
+            "citation": "Correlated-Sequence Differential Privacy (arXiv:2511.18025)",
+            "clock_it_runs": "continual/correlated-release clock: privacy degrades across a sequence of correlated releases against a fixed adversary; same continual-observation polarity as Cao et al.",
+            "how_close": "tangential"
+          },
+          {
+            "citation": "Mironov / Mosca's Inequality + Harvest-Now-Decrypt-Later corpus (Mosca 2018 IEEE S&P; HNDL surveys arXiv:2603.01091, MDPI 6/4/100)",
+            "clock_it_runs": "the calendar-time adversary-capability clock ITSELF (X+Y>Z), but bound to a CRYPTO break-time (Q-day) over ciphertext confidentiality â€” never attached to a DP release, an information-theoretic reconstruction bound, or a released-statistics object",
+            "how_close": "tangential"
+          },
+          {
+            "citation": "Balle, Cherubin, Hayes â€” Reconstructing Training Data with Informed Adversaries (2022); 'From Mean to Extreme' (arXiv:2402.12861); DP-SGD reconstruction bounds (arXiv:2302.07225)",
+            "clock_it_runs": "fixed-worst-case-adversary reconstruction bound on a query/composition clock for a fixed release â€” no calendar-time capability-growth index",
+            "how_close": "tangential"
+          }
+        ],
+        "strongest_collapse": "Nothing collapses the conjunction. The single nearest work is Age-Dependent DP (arXiv:2209.01466): it is the only DP refinement that time-indexes a fixed-record guarantee to a calendar-style clock, epsilon(t). But it fails the sub-claim on two decisive axes: (1) POLARITY is inverted â€” its risk FALLS as data ages (staleness decay, the same opposite-polarity failure as the 'Time and the Value of Data' item already in the strand), whereas R(t) requires risk RISING against a fixed archive; and (2) CLOCK TYPE is wrong â€” its clock is the data's own stochastic aging, not adversary CAPABILITY growing over calendar time. The temporal-correlation family (Cao et al.; Correlated-Sequence DP) does make loss rise over time, but on a continual-RELEASE / more-observations clock â€” the inverse of a fixed release â€” so it is already collapsed into the continual-observation item, not a calendar-adversary clock. The Mosca/HNDL corpus owns the calendar-time capability clock verbatim, but exclusively over crypto break-time (a clock the sub-claim explicitly excludes) and never over a DP reconstruction object. No surveyed work indexes a fixed-release, information-theoretic per-subject reconstruction bound to a Mosca-style adversary-capability clock, and none prices the residue as inalienable subject capital â€” the DP-refinement literature prices neither.",
+        "absence_note": "not_found_in_corpus(n=~40 works surveyed across DP-refinements, temporal/age/correlation DP, DP reconstruction bounds, and Mosca/HNDL; scope = arXiv + venue proceedings via WebSearch, July 2026, US-region, no paywalled-DB access). No DP work runs the calendar-adversary clock (adversary capability growing over calendar time against a FIXED release, risk rising) on a fixed release. A structural caution against reading this as novelty (per D2): standard DP is DEFINED to hold against a computationally UNBOUNDED adversary, so within the orthodox information-theoretic DP model epsilon for a fixed release does not drift with calendar-time compute growth â€” there is, by construction, nothing to index, which is a plausible reason the clock is empty rather than evidence the framing is new. The residue-as-inalienable-capital pricing clause is absent from every DP-markets/refinement work surveyed (all price 'neither'), but absence here is non-occupancy, not established novelty; verifying novelty requires the prover's positive construction, which this seat does not see."
+      }
+    }
+  ],
+  "resolution": {
+    "lm2_verdict": "distinction_holds_but_phrasing_wrong",
+    "what_dp_does": "Adaptive, RÃ©nyi, concentrated, Gaussian and composition DP do model an adversary: the guarantee is calibrated against a worst-case adversary of unbounded computation and arbitrary auxiliary knowledge, entering as a supremum (Mironov, 2017; Bun and Steinke, 2016; Dong, Roth and Su, 2022). They also carry a genuine temporal axis: privacy loss epsilon is accounted as it accumulates across composed mechanisms on a query/release-composition clock (Kairouz, Oh and Viswanath, 2015; Dwork, Rothblum and Vadhan, 2010), and continual-observation DP tracks a stream of T published outputs (Dwork, Naor, Pitassi and Rothblum, 2010). Adversary-aware refinements go further and parametrise which fixed adversary class the guarantee is calibrated against (Cummings et al., 2024; Swanberg et al., 2025).",
+    "what_dp_does_not_do": "None of these index a fixed, never-re-queried archive's per-subject reconstruction residual to the adversary's informational capability (accumulating linkage corpus, side priors, informedness) growing along a calendar clock while nothing is re-released. Their temporal axis is added queries or releases (k, or stream-length T) against a held-fixed worst-case adversary, which is the inverse polarity to a frozen release aging, and where DP does run a wall clock (age-dependent and temporally-discounted DP; Valavi et al., 2022) the guarantee strengthens as data ages through relevance decay. Adversary capability therefore enters only as a static supremum or a fixed class parameter, never as a variable integrated along calendar time; the one caveat is that this exactness is proven for information-theoretic DP, with computational DP a separate, out-of-scope literature.",
+    "replacement_sentences": {
+      "s1_fix": "The differential-privacy budget is not adversary-independent; it is calibrated against a worst-case adversary of unbounded computation and arbitrary auxiliary knowledge, which enters the guarantee as a supremum (Mironov, 2017; Bun and Steinke, 2016; Dong, Roth and Su, 2022). What that literature holds fixed is not the adversary but the clock: privacy loss is accounted along a query/release-composition axis, with epsilon degrading as mechanisms are composed (Kairouz, Oh and Viswanath, 2015; Dwork, Rothblum and Vadhan, 2010) or as a stream of T outputs is published under continual observation (Dwork, Naor, Pitassi and Rothblum, 2010), the adversary's capability being held at that worst-case supremum throughout. [Placement: replaces the S1 sentence that currently characterises the DP-markets budget as 'static, adversary-independent', i.e. the positioning sentence that opens the DP-refinements comparison.]",
+      "s2_fix": "R(t) runs a different clock. It indexes a single fixed release, never re-queried, whose per-subject reconstruction residual rises as the adversary's informational capability, namely its accumulating linkage corpus and side priors rather than its computational power (which differential privacy already saturates), grows along calendar time. No work in the surveyed DP-refinements strand runs this clock: composition and its RÃ©nyi, concentrated, Gaussian and continual-observation refinements all move along added queries or releases against a fixed worst-case adversary, and the wall-clock DP families, being age-dependent and temporally-discounted DP together with the data-value decay of Valavi et al. (2022), run relevance decay of the opposite polarity in which the guarantee strengthens as data ages. We state this as a clock distinction and not a categorical barrier: adversary-aware DP already carries adversary capability as an explicit static parameter (Cummings et al., 2024; Swanberg et al., 2025) and computational DP already informally recognises that a fixed release erodes as adversary compute grows, so a calendar-indexed capability clock is a natural but as-yet-unformalised extension rather than a mathematical impossibility. [Placement: replaces the S2 sentence that restates 'static, adversary-independent' as the ground for the R(t) distinction, i.e. the contrast sentence that asserts R(t)'s novelty against the strand.]"
+    },
+    "new_citations_needed": [
+      {
+        "token": "Mironov, 2017",
+        "full_reference_guess": "Ilya Mironov, \"RÃ©nyi Differential Privacy,\" 2017 IEEE 30th Computer Security Foundations Symposium (CSF), Santa Barbara, CA, 2017, pp. 263-275. DOI 10.1109/CSF.2017.11 (arXiv:1702.07476)."
+      },
+      {
+        "token": "Bun and Steinke, 2016",
+        "full_reference_guess": "Mark Bun and Thomas Steinke, \"Concentrated Differential Privacy: Simplifications, Extensions, and Lower Bounds,\" Theory of Cryptography Conference (TCC) 2016, LNCS 9985, pp. 635-658 (arXiv:1605.02065)."
+      },
+      {
+        "token": "Dwork and Rothblum, 2016",
+        "full_reference_guess": "Cynthia Dwork and Guy N. Rothblum, \"Concentrated Differential Privacy,\" arXiv:1603.01887, 2016."
+      },
+      {
+        "token": "Dong, Roth and Su, 2022",
+        "full_reference_guess": "Jinshuo Dong, Aaron Roth and Weijie J. Su, \"Gaussian Differential Privacy,\" Journal of the Royal Statistical Society: Series B, 84(1):3-37, 2022 (arXiv:1905.02383). DOI 10.1111/rssb.12454."
+      },
+      {
+        "token": "Kairouz, Oh and Viswanath, 2015",
+        "full_reference_guess": "Peter Kairouz, Sewoong Oh and Pramod Viswanath, \"The Composition Theorem for Differential Privacy,\" Proc. 32nd International Conference on Machine Learning (ICML 2015), PMLR 37, pp. 1376-1385 (arXiv:1311.0776; extended version IEEE Trans. Inf. Theory 63(6):4037-4049, 2017)."
+      },
+      {
+        "token": "Dwork, Rothblum and Vadhan, 2010",
+        "full_reference_guess": "Cynthia Dwork, Guy N. Rothblum and Salil Vadhan, \"Boosting and Differential Privacy,\" Proc. 51st Annual IEEE Symposium on Foundations of Computer Science (FOCS 2010), pp. 51-60. DOI 10.1109/FOCS.2010.12."
+      },
+      {
+        "token": "Dwork, Naor, Pitassi and Rothblum, 2010",
+        "full_reference_guess": "Cynthia Dwork, Moni Naor, Toniann Pitassi and Guy N. Rothblum, \"Differential Privacy under Continual Observation,\" Proc. 42nd ACM Symposium on Theory of Computing (STOC 2010), pp. 715-724. DOI 10.1145/1806689.1806787."
+      },
+      {
+        "token": "Cummings et al., 2024",
+        "full_reference_guess": "Rachel Cummings, Shlomi Hod, Jayshree Sarathy and Marika Swanberg, \"ATTAXONOMY: Unpacking Differential Privacy Guarantees Against Practical Adversaries,\" arXiv:2405.01716, 2024."
+      },
+      {
+        "token": "Swanberg et al., 2025",
+        "full_reference_guess": "Marika Swanberg, Meenatchi Sundaram Muthu Selva Annamalai, Jamie Hayes, Borja Balle and Adam Smith, \"A Unified Framework for Adversary-Aware Differential Privacy Bounds,\" arXiv:2507.08158, 2025."
+      },
+      {
+        "token": "Valavi et al., 2022",
+        "full_reference_guess": "Ehsan Valavi, Joel Hestness, Newsha Ardalani and Marco Iansiti, \"Time and the Value of Data,\" Harvard Business School Working Paper 21-016 / arXiv:2203.09118, 2022."
+      }
+    ],
+    "residual_after_stress": "The R(t) residue survives the LM2 stress test, but sharpened and narrowed rather than left at its LR-02 form. Honest confidence: ~85% (essentially steady on the empty-cell fact, downgraded on its reach). The high-confidence, scope-bounded part is that within the surveyed DP-refinements strand no work indexes a fixed archive's per-subject reconstruction residual to adversary-capability growth along calendar time (CTR-LR-02b-ii/iii, high). What the stress test removes is the overreach: the claim can no longer be stated as 'categorically distinct' or grounded on 'static, adversary-independent' DP. The surviving form is (i) a CLOCK distinction (query/release-composition vs calendar-time adversary capability), (ii) restricted to the INFORMATIONAL-capability reading (accumulating linkage/side-prior corpus, not compute, which orthodox DP saturates), and (iii) explicitly current-formalization-contingent, since adversary-aware DP already carries capability as a static parameter and computational DP already gestures at the same erosion. Publishable as sharpened novelty in that narrowed informational form; not as an in-principle impossibility result.",
+    "one_para_for_ledger": "LM2 resolved as distinction_holds_but_phrasing_wrong. The DP referee is right that adaptive/RÃ©nyi/concentrated/Gaussian/composition/continual-observation DP model adversaries (a worst-case, unbounded-compute, arbitrary-auxiliary-knowledge adversary entering as a supremum) and carry a temporal axis (privacy loss accounted along query/release composition, or a stream of T releases under continual observation), and adversary-aware DP even parametrises the fixed adversary class; so 'static, adversary-independent' is a genuine mischaracterisation and must be replaced. But the R(t) distinction does not collapse (adjudicated CTR-LR-02b-i PARTIAL, -ii HOLDS, -iii PARTIAL): every strand member runs one of three non-R(t) clocks (composition/query accounting against a fixed worst-case adversary; release-stream length T of inverted polarity; or a static adversary-class parameter with no time variable), and the wall-clock DP families (age-dependent, temporally-discounted, Valavi et al. 2022) run relevance decay of the OPPOSITE polarity in which the guarantee strengthens as data ages. The residue is re-stated as a CLOCK distinction (query/release-composition vs calendar-time adversary capability) and narrowed to the informational-capability reading forced by CTR-LR-02b-iii (accumulating linkage/side priors, not compute, which DP already saturates). Two honesty constraints are carried into the prose: the distinction is current-formalization-contingent, not categorical (computational DP and adversary-aware bounds are non-foreclosed bridges), and every negative claim is scoped to the surveyed DP-refinements strand per D2. S1/S2 drop-in replacements written engaging Mironov 2017, Bun-Steinke 2016, Dong-Roth-Su 2022, Kairouz-Oh-Viswanath 2015, Dwork-Rothblum-Vadhan 2010, Dwork-Naor-Pitassi-Rothblum 2010, Cummings et al. 2024, Swanberg et al. 2025 and Valavi et al. 2022 by author-year. Residual after stress: ~85%, sharper but narrower than the 86% LR-02 figure."
+  }
+}

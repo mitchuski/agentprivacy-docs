@@ -1,0 +1,49 @@
+% !TEX TS-program = xelatex
+% ============================================================================
+% main.tex · general preprint scaffold (IACR eprint / arXiv ready)
+% V6 research programme · templates/submission/preprint/
+%
+% Compile (from this directory):
+%   xelatex -interaction=nonstopmode main.tex
+%   bibtex  main
+%   xelatex -interaction=nonstopmode main.tex
+%   xelatex -interaction=nonstopmode main.tex
+%
+% Retargeting to a venue: replace \documentclass and drop preamble.tex in
+% favour of the venue class (see ../venues/README.md); the sections/ files
+% and ../references/pv_v6.bib carry over unchanged.
+% ============================================================================
+\documentclass[11pt]{article}
+\input{preamble}
+
+\title{\todo{Paper title (work package WP-NN)}}
+
+\ifanonymous
+  \author{Anonymous submission}
+\else
+  \author{\todo{Author list and affiliations}}
+\fi
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_model_preliminaries}
+\input{sections/04_theorems}
+\input{sections/05_evaluation}
+\input{sections/06_threats_to_validity}
+\input{sections/07_conclusion}
+
+% \nocite{*} forces every entry in the canonical .bib into the bibliography,
+% which exercises the file end to end. REMOVE IT in a real paper: cite only
+% what the text uses.
+\nocite{*}
+
+\bibliographystyle{alpha}
+\bibliography{../references/pv_v6}
+
+\end{document}

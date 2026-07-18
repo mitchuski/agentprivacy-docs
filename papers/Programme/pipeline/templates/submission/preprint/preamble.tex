@@ -1,0 +1,54 @@
+% ============================================================================
+% preamble.tex · shared preamble for the preprint scaffold
+% Toolchain: xelatex (MiKTeX), matching build/build_v6_academic_pdfs.py
+% (documentclass=article, 11pt, geometry margin=25mm, linkcolor black,
+% urlcolor blue). Keep this file venue-neutral; venue classes replace it.
+% ============================================================================
+
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+
+% ---------------------------------------------------------------------------
+% Anonymization toggle. Submission versions of anonymized venues set
+% \anonymoustrue; the preprint (IACR eprint / arXiv) sets \anonymousfalse.
+% ---------------------------------------------------------------------------
+\newif\ifanonymous
+\anonymousfalse
+
+% ---------------------------------------------------------------------------
+% Theorem environments. Conjectures are permitted at this tier only as
+% formally stated conjectures carrying an explicit proof obligation; state
+% the obligation in the body of the conjecture environment. No confidence
+% percentages anywhere in the document.
+% ---------------------------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% ---------------------------------------------------------------------------
+% Notation macros. Extend here, not inline, so notation stays uniform
+% across sections and across paper work packages.
+% ---------------------------------------------------------------------------
+\newcommand{\Ent}{H}                      % Shannon entropy H(X)
+\newcommand{\MI}{I}                       % mutual information I(X;Y)
+\newcommand{\E}{\mathbb{E}}               % expectation
+\newcommand{\Prob}{\Pr}                   % probability
+\newcommand{\R}{\mathbb{R}}               % reals
+\newcommand{\eps}{\varepsilon}
+\newcommand{\given}{\,\middle|\,}
+\newcommand{\todo}[1]{\textbf{[TODO: #1]}} % remove before submission

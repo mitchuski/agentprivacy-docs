@@ -1,0 +1,51 @@
+# manifest.yaml · V6 Rehydration Pipeline · writable by A0 only
+pipeline: v6-rehydration
+version: 2
+register_head: C93            # bumped 2026-07-02 from C89 per live register surface (atlas); A9 verifies each run
+gates: [P0-extraction-fidelity, P1-genre, P2-citation, P3-consistency, P4-completion-read]
+rules:
+  max_standards_in_flight: 2
+  branch_convention: wp-NN-shortname
+  ledger: reviews/critiques_ledger.md   # append-only, any role
+  p4_owner: first-person                # non-delegable
+
+extractions:
+  E1: {name: amnesia-gap,        path: extractions/E1-amnesia-gap.md,        status: pending, owner: A1, sources: [spec§10, spec§11, spec§14, spec§16, spec§26, whitepaper-PT]}
+  E2: {name: moving-ceiling,     path: extractions/E2-moving-ceiling.md,     status: drafted, owner: A1, sources: [spec§5, spec§25, spec§27, WP-00-record]}
+  E3: {name: rpp-primitive,      path: extractions/E3-rpp-primitive.md,      status: pending, owner: A1, sources: [whitepaper-RPP, whitepaper-inscriptions, whitepaper-tiers, understanding-as-key]}
+  E4: {name: seventh-capital,    path: extractions/E4-seventh-capital.md,    status: pending, owner: A1, sources: [whitepaper-7th-capital, v4-economics, v5-economics, essay-basis-docs]}
+  E5: {name: algebraic-home,     path: extractions/E5-algebraic-home.md,     status: pending, owner: A1, sources: [spec§8, spec§12, spec§28, v5.4§12, UOR-convergence], risk: highest}
+  E6: {name: promise-governance, path: extractions/E6-promise-governance.md, status: pending, owner: A1, sources: [whitepaper-PT, PT-reference, C77-C80-note]}
+  E7: {name: identity-vrc,       path: extractions/E7-identity-vrc.md,       status: pending, owner: A1, sources: [whitepaper-stack, spec§19, dtg-36-posts, did-cid-convergence]}
+  E8: {name: ceremony-governance,path: extractions/E8-ceremony-governance.md,status: pending, owner: A1, sources: [game-of-42-canon, clc2026-abstract]}
+  E9: {name: proving-substrate,  path: extractions/E9-proving-substrate.md,  status: pending, owner: A1, sources: [spec§15, spec§27, C81-C84, folding-citations]}
+
+artifacts:
+  WP-00: {name: verified-instance-record, tier: internal, thrust: T1, extraction: null, status: done, gate: P2, path: reviews/critiques_ledger.md, note: canon-level corrections filed}
+  WP-01: {name: moving-ceiling-essay,     tier: P, thrust: T1, extraction: E2, chain: [A4, A7], status: draft-v3, gate: P0, due: 2026-07, path: rehydrations/public/the_moving_ceiling.md}
+  WP-02: {name: policy-brief,             tier: S, thrust: T3, extraction: E1, chain: [A2, A8, A5-regulator], status: pending, gate: null, due: 2026-08-01, path: rehydrations/policy/enforceable_by_architecture.md, hard_deadline: true}
+  WP-03: {name: whitepaper-grant-edition, tier: G, thrust: all, extraction: [E1, E2], chain: [A9-first, A2, A7, A5-assessor], status: pending, gate: null, due: 2026-07, path: rehydrations/grants/grant_edition.md, blocker: A9-hygiene-pass}
+  WP-04: {name: moving-ceiling-sok,       tier: A, thrust: T1, extraction: E2, chain: [A2, A3, A4, A5-pc], status: pending, gate: null, due: 2026-09, path: rehydrations/academic/moving_ceiling_sok.md, venue: HotPETs-or-FC-workshop}
+  WP-05: {name: zcg-proposal,             tier: G, thrust: T1, extraction: [E1], chain: [A2, A7, A5-assessor], status: pending, gate: null, due: 2026-09, path: rehydrations/grants/zcg_proposal.md, depends: [WP-03, WP-08-design]}
+  WP-06: {name: ieee7012-note,            tier: S, thrust: T2, extraction: [E7], chain: [A2, A8], status: pending, gate: null, due: 2026-09, path: rehydrations/standards/ieee7012_implementation_note.md}
+  WP-07: {name: paper-one-theory,         tier: A, thrust: T1, extraction: E1, chain: [A3, A5-crypto-pc], status: pending, gate: null, due: 2026-11, path: rehydrations/academic/linear_cap_paper.md, venue: PoPETs, note: verify-cycle-deadline}
+  WP-08: {name: paper-one-benchmark,      tier: A, thrust: T1, extraction: E1, chain: [A6, A4, A5-pc], status: pending, gate: null, due: 2026-11, path: rehydrations/academic/amnesia_benchmark/, prereg_required: true}
+  WP-09: {name: bgin-discussion-paper,    tier: S, thrust: T1, extraction: E1, chain: [A2, A8], status: pending, gate: null, due: 2026-11, path: rehydrations/standards/bgin_separation_of_duties.md, note: feeds-block-15}
+  WP-10: {name: developer-edition,        tier: D, thrust: T2, extraction: [E1, E3], chain: [A2, A7-light], status: pending, gate: null, due: 2026-10, path: rehydrations/developer/dev_edition.md}
+  WP-11: {name: rpp-adversarial-paper,    tier: A, thrust: T2, extraction: E3, chain: [A10-first, A6, A3, A5-pc], status: pending, gate: null, due: 2027-Q2, path: rehydrations/academic/rpp_adversarial.md, venue: SOUPS-or-FC, prereg_required: true}
+  WP-11a: {name: rpp-prior-art,           tier: internal, thrust: T2, extraction: E3, chain: [A10], status: pending, gate: null, due: 2026-Q4, path: rehydrations/academic/WP-11a_prior_art.md, note: novelty-established-before-asserted}
+  WP-12: {name: existence-leak-hunt,      tier: internal, thrust: T1, extraction: E9, chain: [A10], status: ongoing, gate: null, due: rolling, path: reviews/critiques_ledger.md}
+  WP-13: {name: suite-consistency-audit,  tier: internal, thrust: all, extraction: null, chain: [A9], status: ongoing, gate: null, due: weekly, path: reviews/critiques_ledger.md}
+  WP-14: {name: weis-seventh-capital,     tier: A, thrust: T3, extraction: E4, chain: [A12, A2, A5-economist], status: pending, gate: null, due: 2027-02, path: rehydrations/academic/weis_seventh_capital.md, venue: WEIS-2027, note: A13-verify-cfp}
+  WP-15: {name: mydata-talk-paper,        tier: P, thrust: T3, extraction: E4, chain: [A12, A7], status: pending, gate: null, due: next-cfp, path: rehydrations/public/mydata_paper.md}
+  WP-16: {name: lean-mechanisation,       tier: A, thrust: T1, extraction: [E1, E5], chain: [A11, A3], status: pending, gate: null, due: 2027, path: rehydrations/academic/lean/, venue: CPP-or-ITP}
+  WP-17: {name: lattice-workshop-note,    tier: A, thrust: T1, extraction: E5, chain: [A3, A5-pc], status: parked, gate: null, due: after-C85-or-WP16, path: rehydrations/academic/lattice_note.md, risk: highest}
+  WP-18: {name: applied-pt-paper,         tier: A, thrust: T1, extraction: E6, chain: [A2, A3, A5-pc], status: pending, gate: null, due: 2027-Q1, path: rehydrations/academic/applied_pt.md}
+  WP-19: {name: rwot-paper,               tier: A, thrust: T2, extraction: [E7, E3], chain: [A2, live-coauthoring], status: pending, gate: null, due: next-rwot, path: rehydrations/academic/rwot_vrc.md}
+  WP-20: {name: toip-dtg-profile,         tier: S, thrust: T2, extraction: E7, chain: [A13, A8], status: pending, gate: null, due: next-dtg-cycle, path: rehydrations/standards/toip_dtg_profile.md}
+  WP-21: {name: metagov-governance-paper, tier: A, thrust: T3, extraction: E8, chain: [A2, A7], status: pending, gate: null, due: 2027-Q1, path: rehydrations/academic/ceremony_governance.md}
+  WP-22: {name: zkproof-note,             tier: S, thrust: T1, extraction: [E9, E2], chain: [A13, A8, A4], status: pending, gate: null, due: next-workshop-call, path: rehydrations/standards/zkproof_existence_leak.md}
+  WP-23: {name: dif-trusted-agents-item,  tier: S, thrust: T2, extraction: [E1, E7], chain: [A13, A8], status: pending, gate: null, due: after-WP07-preprint, path: rehydrations/standards/dif_amnesia_profile.md}
+  WP-24: {name: phd-registration-package, tier: internal, thrust: all, extraction: null, chain: [A0, A13], status: pending, gate: null, due: 2026-Q4, path: programme/phd_package/}
+  WP-25: {name: city-moving-ceiling-tale, tier: P, thrust: canon-facing, extraction: E2, chain: [A7-city-voice], status: draft-v2, gate: P0, due: 2026-07, path: rehydrations/public/the_uncarved_date.md, note: publish-days-after-WP-01}
+  WP-26: {name: funding-applications,     tier: G, thrust: programme, extraction: null, chain: [A0, A7, A5-assessor], status: pending, gate: null, due: rolling-from-aug, path: rehydrations/grants/, targets: [ZCG, NGI-cascade, FFDW]}

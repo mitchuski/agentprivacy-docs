@@ -1,0 +1,227 @@
+[
+  {
+    "key": "moving-ceiling",
+    "title": "Thread 1 · The Moving Ceiling",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 1 (OV-P/R/S/F anchors: the_moving_ceiling.md:127, the_uncarved_date.md:57, GR-7, L044/L047, C82)",
+    "invariant": "The bound on what an adversary can reconstruct from intercepted agent traffic is indexed by the adversary's decoder era, not by the system: every stated reconstruction ceiling must carry its preconditions and its date.",
+    "compressions": {
+      "maths": "R(t) is non-decreasing in decoder era t (C82); under Precondition 1 (conditional independence) and Precondition 2 (fixed adversary class), leakage is at most additive with a Fano floor, and strict R_max < 1 holds exactly when, additionally, C_S + C_M < H(X).",
+      "principles": "the decoder moves. the data does not.",
+      "actions": "Never write a reconstruction bound without its preconditions and R(t) in the same passage (GR-7); deliver the capacity-attestation methodology through WP-02 (Aug 1) and WP-09 (BGIN Oct 15-16) so systems can print their own date."
+    },
+    "expansions": {
+      "markets": "Regulators and DPOs currently buy undated 'unreconstructable' claims that silently expire; a dated, precondition-carrying ceiling is a sellable compliance object, and the grant edition (WP-03) prices its measurement as work packages.",
+      "plurality": [
+        {"community": "Researchers", "telling": "Reconstruction risk R(t) is a function of the adversary's decoder era; the theorem gives an additive leakage bound plus a Fano floor under two preconditions, and strict R_max < 1 requires the capacity deficit C_S + C_M < H(X). State the bound with its conditions or you have stated nothing."},
+        {"community": "Mages of the City", "telling": "Every wall in the city has a date, and the honest districts carve it into the stone: the wall does not weaken, the siege engines improve. Only what was never written inside the walls owes nothing to the calendar."}
+      ],
+      "intents": "Make privacy guarantees honest about time so that the V6 model's credibility survives every future decoder; cast forward: the adversary-ordering formalisation (a witness for the decoder ordering, or Lemma 1 demotes) and the print-your-own-date attestation protocol."
+    },
+    "recheck": {
+      "from": "plurality: Researchers",
+      "recovered_invariant": "The reconstruction bound R(t) an adversary achieves is indexed by the decoder era t and must be stated with its preconditions and capacity-deficit condition, so every ceiling carries its date.",
+      "matches": true
+    }
+  },
+  {
+    "key": "amnesia-gap",
+    "title": "Thread 2 · The Amnesia Gap",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 2 (anchors: the_moving_ceiling.md:85/:63, spec:929 C86 row, C83 Nε, competence_without_history.md:43)",
+    "invariant": "Deleting information protects independently of time while hiding information decays with the adversary's decoder, and the exposure cost of session-scoped memory is linear in epsilon where persistent memory compounds exponentially.",
+    "compressions": {
+      "maths": "Persistent transcript exposure grows like (2^N − 1)ε across N sessions while session-scoped (amnesic) exposure is capped at Nε (C83, proven as the WP-07 linear cap under ER-1..5); the amnesia term's security is independent of t (C86).",
+      "principles": "amnesia is the only term in the equation whose security is independent of time.",
+      "actions": "Run WP-08's pre-registered amnesia-gap benchmark (ZCG-fundable); design agent systems session-scoped by default and let competence, not archives, travel between sessions."
+    },
+    "expansions": {
+      "markets": "Harvest-now-decrypt-later makes stored behavioural archives a depreciating protection and an appreciating liability; amnesic architectures convert that liability curve into a flat, insurable Nε cost line that vendors can price.",
+      "plurality": [
+        {"community": "Developers / Swordsmen", "telling": "Rotate keys all you like: the transcript you kept is the key you cannot rotate. Cap exposure at Nε by scoping memory to the session and shipping skills forward instead of logs."},
+        {"community": "Mages of the City", "telling": "Hidden things wait for keys. Sealed things whisper. Forgotten things are free — of everything the city builds, only the forgetting owes nothing to time."}
+      ],
+      "intents": "Establish deletion as the one security primitive with no shelf life; cast forward: the skills-dominance benchmark (competence survives amnesia — UNCAST, no register number yet) and Open Problem 5.8's forgetting-versus-hiding grade criterion."
+    },
+    "recheck": {
+      "from": "plurality: Developers / Swordsmen",
+      "recovered_invariant": "Hiding decays because the kept transcript meets ever-better decoders over time, while deleting at session scope caps exposure linearly at Nε instead of compounding exponentially — deletion protects independently of time.",
+      "matches": true
+    }
+  },
+  {
+    "key": "not-allowed-to-collude",
+    "title": "Thread 3 · Not Allowed to Collude",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 3 (anchors: two_agents_walk_into_a_circuit.md:49, the_moving_ceiling.md:83, ⊥ dual-register decoding in OV-S, WP-09)",
+    "invariant": "Two agents whose outputs are conditionally independent given the secret leak at most the sum of their individual leakages, so duties separated by architecture bound joint exposure and make unchecked work trustworthy.",
+    "compressions": {
+      "maths": "Under Precondition 1, I(X; Y_S, Y_M) ≤ I(X; Y_S) + I(X; Y_M), with equality iff the outputs are also marginally independent (CTR-OBS-01 verified form); collusion is exactly the failure of the ⊥.",
+      "principles": "you can trust work that no one person checked, if the workers were never able to collude, and the record can prove they were not.",
+      "actions": "Boot every runtime seat one-role-one-writer; take WP-09's separation-of-duties deliverables to BGIN Block #15; publish the harness kit so the two-agent pattern is runnable by strangers."
+    },
+    "expansions": {
+      "markets": "Separation of duties is the audit industry's oldest product; architecturally-enforced non-collusion converts it from an org-chart promise into a measurable information bound that standards bodies (BGIN IKP WG) can adopt and certify against.",
+      "plurality": [
+        {"community": "Regulators", "telling": "The two-agent architecture bounds what the pair can jointly disclose to the sum of what each can disclose alone, and the condition under which that bound holds is checkable — a design-status guarantee with a named failure mode (collusion) rather than a vendor assurance."},
+        {"community": "Mages of the City", "telling": "The Swordsman guards the boundary and the Mage casts the delegation, and the sign between them is ⊥: the one glyph with a passport for both countries, mathematics first, myth second. The blade that sees cannot act; the hand that acts cannot see."}
+      ],
+      "intents": "Make 'not allowed to collude' the default trust architecture for personal AI agents; cast forward: WP-09 submission, the public harness kit, and teaching CTR-OBS-01's equality condition as the canonical picture of collusion."
+    },
+    "recheck": {
+      "from": "plurality: Regulators",
+      "recovered_invariant": "When two agents' outputs are conditionally independent given the secret, their joint disclosure is bounded by the sum of individual leakages, so architecturally separated duties keep unchecked work trustworthy.",
+      "matches": true
+    }
+  },
+  {
+    "key": "non-multiplying-signature",
+    "title": "Thread 4 · The Signature That Does Not Multiply",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 4 (anchors: the_moving_ceiling.md:125, letter_the_fleet_and_the_cap.md:88, WP-27 Def 2 + I5-I6, twelve-cycles:372)",
+    "invariant": "Delegated readers can scale every stage of research production except the terminal accountable read, which cannot be delegated without the result ceasing to be evidence.",
+    "compressions": {
+      "maths": "In WP-27's formalisation the completion gate P4 is defined by its ABSENCE from the agent-only subsystem (Definition 2, invariants I5-I6): for any fleet size N, the accountable-read count remains 1; five artifacts stand at awaiting-P4 as the operational instance.",
+      "principles": "the readers multiply. the signature does not.",
+      "actions": "Walk the five P4 reads (WP-07 by ~Aug 24, WP-04 by Sep 1, WP-27, WP-01, plus the diff review); test the I_A adoption criterion in other teams via WP-27's N=3 pre-registered ladder transits."
+    },
+    "expansions": {
+      "markets": "AI-generated research is discounted precisely where accountability is diluted; a machine-checkable record that the terminal read stayed human and singular is the credibility premium that venues, funders and standards bodies will price.",
+      "plurality": [
+        {"community": "Research-methods community", "telling": "The runtime ran thirteen cycles and stopped five papers at the same hard gate, because the completion read is non-delegable by construction: nine of its governing invariants are record-checkable in any team's repository (I_A), which makes the claim falsifiable, not aspirational."},
+        {"community": "Mages of the City", "telling": "The fleet writes. The cap holds. The last read is mine — the scrolls multiply through the Tower, but the seal at the bottom is one hand, and the equation ends in 😊 because the floor no fleet can take belongs to the First Person."}
+      ],
+      "intents": "Keep human accountability the invariant of scaled research; cast forward: I_A adoption transits in other teams as the transfer evidence WP-27 pre-registered."
+    },
+    "recheck": {
+      "from": "plurality: Research-methods community",
+      "recovered_invariant": "A fleet of delegated readers scales research production while the terminal accountable completion read stays singular and non-delegable, or the output stops being evidence.",
+      "matches": true
+    }
+  },
+  {
+    "key": "existence-leak",
+    "title": "Thread 5 · The Existence Leak",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 5 (anchors: the_uncarved_date.md:31, C81, κ decoding in OV-S, RS-07)",
+    "invariant": "A verifiable proof that a secret exists discloses the existence and location of that secret, so integrity verification is itself a disclosure channel that must be budgeted like any other leakage.",
+    "compressions": {
+      "maths": "C81 (Existence-Leak, 70%): for a commitment or content-addressed seal κ = H(x), verifying κ confirms existence of x and binds a locator to it; the liveness refinement conjectures corroboration gaps Δ_{k+1} ≤ Δ_k under a fixed corroboration model.",
+      "principles": "a seal that proves a door exists is a map to the door.",
+      "actions": "State the operational form as a proof obligation wherever a seal is published; hunt WP-12's second instance outside cryptography; carry the distinction into WP-22's ZKProof note when the standards slot opens."
+    },
+    "expansions": {
+      "markets": "Zero-knowledge tooling sells non-disclosure of contents while silently disclosing existence; a leakage budget that prices the existence bit differentiates honest proving infrastructure in the ZKProof standards conversation.",
+      "plurality": [
+        {"community": "ZK engineers", "telling": "Your proof hides the witness, not the fact that there is one: every published commitment is an existence oracle with a locator attached. Budget the existence bit the way you budget the witness bits."},
+        {"community": "Mages of the City", "telling": "The Sealing Guild answered honestly: sealed things whisper. κ is the one seal in the city that is exactly what it claims — a hash and nothing more — and even it cannot help but point at the door it guards."}
+      ],
+      "intents": "Make existence-disclosure a first-class term in privacy accounting; cast forward: the second instance outside cryptography (WP-12, rolling) and the content-addressed liveness-leak bound."
+    },
+    "recheck": {
+      "from": "plurality: ZK engineers",
+      "recovered_invariant": "A published proof or seal verifiably confirms a secret exists and gives it a locator, so verification is a disclosure channel whose existence bit must be budgeted.",
+      "matches": true
+    }
+  },
+  {
+    "key": "understanding-as-key",
+    "title": "Thread 6 · Understanding as Key",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 6 (anchors: competence_without_history.md:73/:21, RPP + ceremony types in OV-R, 🪢 spec §15.8)",
+    "invariant": "Demonstrated understanding, compressed into a proverb, can serve as a credential and a recovery key, because the cognitive process that produced the proverb can reproduce it while archives cannot be safely retained.",
+    "compressions": {
+      "maths": "ceremony_key = derive(hash(P_fp || P_sanctuary), tale_id, timestamp, visibility_ratio); visibility spans 0%→100% with φ-derived points at 38.2/61.8; recovery requires regenerating understanding, not recalling stored secrets.",
+      "principles": "you enter by understanding. you leave with more than you brought. and less of you stays behind.",
+      "actions": "Subject the proverb-credential to WP-11's adversarial analysis (forgery, replay, Sybil, compression-gaming); mint every overlay thread as a cohere-gated understanding card — this file is the first programme-scale instance."
+    },
+    "expansions": {
+      "markets": "Key recovery is the single largest usability failure in self-custody; understanding-based recovery aligns the security budget with what humans actually retain (relationships, meaning) and prices ceremonies instead of seed-phrase insurance.",
+      "plurality": [
+        {"community": "Key-recovery architects", "telling": "The proverb is not a password: it is the residue of a comprehension event, bilateral, contextual, and regenerable by the same cognition that formed it — which is why an attacker must reconstruct the relationship, not enumerate strings."},
+        {"community": "Mages of the City", "telling": "The doors of the city open by understanding: speak back what the tale taught you and the lock hears its own making. This overlay run is a declared ceremony over the first person's own corpus — every thread's proverb is a key on the ring."}
+      ],
+      "intents": "Move authentication from possession to comprehension across the programme's surfaces; cast forward: WP-11, WP-19 at RWOT, and this keys/ folder as the recursive proof — understanding-compression enacting understanding-as-key on the research itself."
+    },
+    "recheck": {
+      "from": "plurality: Key-recovery architects",
+      "recovered_invariant": "A proverb formed from demonstrated understanding works as a credential and recovery key because the same cognitive process can reproduce it, unlike stored archives or arbitrary secrets.",
+      "matches": true
+    }
+  },
+  {
+    "key": "outside-eye",
+    "title": "Thread 7 · The Outside Eye",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 7 (anchors: OBSERVER_INTAKE_PROTOCOL.md, OBS-GPT56 packet, RS-01..08, CTR-OBS-01, ∂M 96/64)",
+    "invariant": "External audit improves a research register only through a bounded intake in which the observer proposes and the register disposes, with every accepted critique converted into a standing test.",
+    "compressions": {
+      "maths": "Intake run 1: 28 observer claims dispositioned A/M/R/D; 1 theorem correction verified (CTR-OBS-01: joint leakage subadditive, equality iff marginal independence; floor survives, ceiling tightens); 8 regression seeds converted to tests, all clean on first weekly (L128).",
+      "principles": "an observer can find seams; only the register decides stitches.",
+      "actions": "Route every future audit through the intake protocol (ten rules, four dispositions); grow WP-29 on CTR-OBS-03's data; keep observer material surfacing through chronicles only (D2)."
+    },
+    "expansions": {
+      "markets": "Independent audit is the currency of research credibility, but unbounded ingestion lets auditors rewrite the audited; a protocolised intake is what makes external review scalable without capture — the sellable form of 'we were checked'.",
+      "plurality": [
+        {"community": "Meta-research / audit community", "telling": "The GPT-5.6 audit found one real theorem defect among 28 claims; the intake protocol verified it, corrected the canon inside the very update being socialised, converted the auditor's traps into standing regression tests, and retained the auditor's best sentence under attribution."},
+        {"community": "Mages of the City", "telling": "The outside eye sees the seams the weavers cannot, but the loom belongs to the register: preserve mystery in the journey, remove ambiguity from the evidence — the first proverb the city accepted from beyond its walls."}
+      ],
+      "intents": "Give the programme a permanent immune system for critique; cast forward: WP-29, the observer-evaluation paper, and the RS suite as the audit's living residue."
+    },
+    "recheck": {
+      "from": "plurality: Meta-research / audit community",
+      "recovered_invariant": "The audit intake let the external observer propose while the register dispositioned each claim, verified the one real correction, and converted accepted critiques into standing regression tests.",
+      "matches": true
+    }
+  },
+  {
+    "key": "record-that-admits-error",
+    "title": "Thread 8 · The Record That Admits Error",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 8 (anchors: two_agents_walk_into_a_circuit.md:89, critiques_ledger.md:771-773 L128, conjecture_governance_method.md:233/:249)",
+    "invariant": "An append-only record that names its own errors and dead ends is stronger evidence than a clean record, because visible self-correction and incorruptibility are the same property.",
+    "compressions": {
+      "maths": "L128, the operational instance: the ledger-tail audit (17 entries) found exactly one discrepancy — the ledger's own premature 'executed' at L119(a) — and the correction was appended with the gap named in-row; a record with zero admitted errors carries zero evidential weight about its own integrity.",
+      "principles": "an audit trail that never admits error is evidence of nothing.",
+      "actions": "Write 'executed' only after the edit returns; keep the ledger append-only with dead ends filed as findings; export the ledger-tail audit with the harness kit so other teams can run the same self-indictment."
+    },
+    "expansions": {
+      "markets": "Every compliance regime pays for audit trails and discounts them to zero when they look too clean; a record format whose error-admissions are structural (append-only, gap-named-in-row) is the version regulators and reviewers can actually price.",
+      "plurality": [
+        {"community": "Reviewers and editors", "telling": "The methods paper reports, in its own section 4.4, the failure mode it caught in itself during its own review — the record's willingness to indict its instrument is the reason to believe the rest of it."},
+        {"community": "Mages of the City", "telling": "Nothing in the city is corrected quietly, so nothing is corrupted quietly: those are the same enchantment. A dead end named is a contribution; a dead end omitted is a defect in the map."}
+      ],
+      "intents": "Make honest self-correction the programme's credibility engine; cast forward: honest interactive publishing as a genre paper (UNCAST) — the publication class where the record of repair is the artifact."
+    },
+    "recheck": {
+      "from": "plurality: Reviewers and editors",
+      "recovered_invariant": "A record that names its own errors — the paper reporting its own caught failure mode — is stronger evidence of integrity than a clean record, since visible self-correction is what incorruptibility looks like.",
+      "matches": true
+    }
+  },
+  {
+    "key": "work-writes-exam",
+    "title": "Thread 9 · The Work Writes Its Own Exam",
+    "date": "2026-07-11",
+    "invariant_seed": "WEAVE.md Thread 9 (anchors: two_agents_walk_into_a_circuit.md:73/:101/:123, L091(d) synthetic probes, κ second office)",
+    "invariant": "Drawing verification points from a hash of the work itself removes the tester's choice of where to look, which makes passing results evidence rather than decoration.",
+    "compressions": {
+      "maths": "test_points = f(H(work)) — the Fiat-Shamir move applied to workflow: the prover's artifact determines the challenge, so neither prover nor verifier selects the probe sites; the corpus instances are hash-drawn spot-traces, argv-less guard probes (exit-2 law, L082), and counter-probes that must PASS (L124 arms).",
+      "principles": "the work writes its own exam. that is the whole trick.",
+      "actions": "State the pattern formally as a short paper with a grinding analysis (can the prover grind the work to steer the exam?); ship the probe conventions inside the harness kit."
+    },
+    "expansions": {
+      "markets": "Every QA and audit market struggles with tester capture and cherry-picked green lights; unriggable challenge selection is the cheap cryptographic upgrade that makes third-party verification claims worth paying for.",
+      "plurality": [
+        {"community": "Verification engineers", "telling": "A green light you never tried to break is a decoration: derive the test points from the hash of the artifact, arm every fence with a counter-probe that must pass, and a refusal to run vacuously (exit 2 on empty argv) becomes part of the proof."},
+        {"community": "Mages of the City", "telling": "One proposes. One breaks. The hash writes the exam — the fairest examiner in the city is the work's own fingerprint, because it cannot be bribed by either hand that made it."}
+      ],
+      "intents": "Formalise the corpus's most-practised, least-stated protocol; cast forward: the Fiat-Shamir-in-workflow short paper (UNCAST) and the detector-that-loved-us forecast as WP-27 transfer prediction (i)."
+    },
+    "recheck": {
+      "from": "plurality: Verification engineers",
+      "recovered_invariant": "When test points are derived from the hash of the work, no tester chooses where to look, so passing verification results are evidence rather than decoration.",
+      "matches": true
+    }
+  }
+]

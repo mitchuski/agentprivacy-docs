@@ -1,0 +1,370 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BRAMGR{\etalchar{+}}26}
+
+\bibitem[AA26]{asif2026infotheoretic}
+Sadia Asif and Mohammad~Mohammadi Amiri.
+\newblock Information-theoretic privacy control for sequential multi-agent
+  {LLM} systems.
+\newblock arXiv preprint arXiv:2603.05520, 2026.
+
+\bibitem[ACM{\etalchar{+}}20]{alvim2020science}
+M{\'a}rio~S. Alvim, Konstantinos Chatzikokolakis, Annabelle McIver, Carroll
+  Morgan, Catuscia Palamidessi, and Geoffrey Smith.
+\newblock {\em The Science of Quantitative Information Flow}.
+\newblock Springer, 2020.
+
+\bibitem[ACPS12]{alvim2012measuring}
+M{\'a}rio~S. Alvim, Konstantinos Chatzikokolakis, Catuscia Palamidessi, and
+  Geoffrey Smith.
+\newblock Measuring information leakage using generalized gain functions.
+\newblock In {\em Proceedings of the 25th IEEE Computer Security Foundations
+  Symposium (CSF)}, pages 265--279. IEEE, 2012.
+
+\bibitem[ADR02]{aumann2002everlasting}
+Yonatan Aumann, Yan~Zong Ding, and Michael~O. Rabin.
+\newblock Everlasting security in the bounded storage model.
+\newblock {\em IEEE Transactions on Information Theory}, 48(6):1668--1680,
+  2002.
+
+\bibitem[Bar20]{barker2020keymgmt}
+Elaine Barker.
+\newblock Recommendation for key management: Part 1 -- general.
+\newblock NIST Special Publication 800-57 Part 1, Revision 5, National
+  Institute of Standards and Technology, 2020.
+
+\bibitem[BB19]{bergstra2019promise}
+Jan~A. Bergstra and Mark Burgess.
+\newblock {\em Promise Theory: Principles and Applications}.
+\newblock Independently published, 2nd edition, 2019.
+\newblock ISBN 978-1696578554.
+
+\bibitem[BBR{\etalchar{+}}18]{belghazi2018mine}
+Mohamed~Ishmael Belghazi, Aristide Baratin, Sai Rajeswar, Sherjil Ozair, Yoshua
+  Bengio, Aaron Courville, and R.~Devon Hjelm.
+\newblock Mutual information neural estimation.
+\newblock In {\em Proceedings of the 35th International Conference on Machine
+  Learning (ICML)}, volume~80 of {\em Proceedings of Machine Learning
+  Research}, pages 531--540. PMLR, 2018.
+
+\bibitem[{Blo}26]{blocksec2026zcash}
+{BlockSec}.
+\newblock Zcash orchard soundness bug analysis.
+\newblock BlockSec blog, 2026.
+\newblock Published 2026-06-10.
+
+\bibitem[BRAMGR{\etalchar{+}}26]{blancoromero2026hndl}
+Javier Blanco-Romero, Florina Almenares~Mendoza, Carlos Garc{\'i}a~Rubio,
+  Celeste Campo, and Daniel D{\'i}az~S{\'a}nchez.
+\newblock On the practical feasibility of harvest-now, decrypt-later attacks.
+\newblock arXiv preprint arXiv:2603.01091, 2026.
+
+\bibitem[BZG{\etalchar{+}}26]{babbush2026securing}
+Ryan Babbush, Adam Zalcman, Craig Gidney, Michael Broughton, Tanuj Khattar,
+  Hartmut Neven, Thiago Bergamaschi, Justin Drake, and Dan Boneh.
+\newblock Securing elliptic curve cryptocurrencies against quantum
+  vulnerabilities: Resource estimates and mitigations.
+\newblock arXiv preprint arXiv:2603.28846, 2026.
+\newblock Also Cryptology ePrint Archive, Paper 2026/625.
+
+\bibitem[CFS25]{chevignard2025reducing}
+Cl{\'e}mence Chevignard, Pierre-Alain Fouque, and Andr{\'e} Schrottenloher.
+\newblock Reducing the number of qubits in quantum factoring.
+\newblock In {\em Advances in Cryptology -- CRYPTO 2025}, Lecture Notes in
+  Computer Science, pages 384--415. Springer, 2025.
+
+\bibitem[CK78]{csiszar1978broadcast}
+Imre Csisz{\'a}r and J{\'a}nos K{\"o}rner.
+\newblock Broadcast channels with confidential messages.
+\newblock {\em IEEE Transactions on Information Theory}, 24(3):339--348, 1978.
+
+\bibitem[{CRY}26]{cryptoisac2026economics}
+{CRYPTO ISAC}.
+\newblock The zcash orchard bug and the new economics of vulnerability
+  discovery.
+\newblock cryptoisac.org, 2026.
+
+\bibitem[CSS11]{chan2011continual}
+T.-H.~Hubert Chan, Elaine Shi, and Dawn Song.
+\newblock Private and continual release of statistics.
+\newblock {\em ACM Transactions on Information and System Security},
+  14(3):26:1--26:24, 2011.
+
+\bibitem[CT06]{cover2006elements}
+Thomas~M. Cover and Joy~A. Thomas.
+\newblock {\em Elements of Information Theory}.
+\newblock Wiley-Interscience, Hoboken, NJ, 2nd edition, 2006.
+
+\bibitem[DDDF25]{dallairedemers2025brace}
+Pierre-Luc Dallaire-Demers, William Doyle, and Timothy Foo.
+\newblock Brace for impact: {ECDLP} challenges for quantum cryptanalysis.
+\newblock arXiv preprint arXiv:2508.14011, 2025.
+
+\bibitem[dMHVB13]{demontjoye2013unique}
+Yves-Alexandre de~Montjoye, C{\'e}sar~A. Hidalgo, Michel Verleysen, and
+  Vincent~D. Blondel.
+\newblock Unique in the crowd: The privacy bounds of human mobility.
+\newblock {\em Scientific Reports}, 3:1376, 2013.
+
+\bibitem[DNPR10]{dwork2010continual}
+Cynthia Dwork, Moni Naor, Toniann Pitassi, and Guy~N. Rothblum.
+\newblock Differential privacy under continual observation.
+\newblock In {\em Proceedings of the 42nd ACM Symposium on Theory of Computing
+  (STOC)}, pages 715--724. ACM, 2010.
+
+\bibitem[DR14]{dwork2014algorithmic}
+Cynthia Dwork and Aaron Roth.
+\newblock The algorithmic foundations of differential privacy.
+\newblock {\em Foundations and Trends in Theoretical Computer Science},
+  9(3--4):211--407, 2014.
+
+\bibitem[{Eig}26]{ecdsafail2026challenge}
+{Eigen Labs}.
+\newblock {ECDSA}.fail: can you break {ECDSA}?
+\newblock Open challenge and leaderboard, 2026.
+
+\bibitem[ESPC18]{erlich2018identity}
+Yaniv Erlich, Tal Shor, Itsik Pe'er, and Shai Carmi.
+\newblock Identity inference of genomic data using long-range familial
+  searches.
+\newblock {\em Science}, 362(6415):690--694, 2018.
+
+\bibitem[{Eur}16]{eu2016gdpr}
+{European Parliament and Council of the European Union}.
+\newblock Regulation ({EU}) 2016/679 on the protection of natural persons with
+  regard to the processing of personal data and on the free movement of such
+  data ({G}eneral {D}ata {P}rotection {R}egulation).
+\newblock Official Journal of the European Union, L 119, 4 May 2016, 2016.
+
+\bibitem[{Eur}24]{eu2024aiact}
+{European Parliament and Council of the European Union}.
+\newblock Regulation ({EU}) 2024/1689 laying down harmonised rules on
+  artificial intelligence ({A}rtificial {I}ntelligence {A}ct).
+\newblock Official Journal of the European Union, L series, 12 July 2024, 2024.
+
+\bibitem[EYBMAM26]{elyagoubi2026agentleak}
+Faouzi El~Yagoubi, Godwin Badu-Marfo, and Ranwa Al~Mallah.
+\newblock {AgentLeak}: A benchmark for internal-channel privacy leakage in
+  multi-agent {LLM} systems.
+\newblock arXiv preprint arXiv:2602.11510, 2026.
+
+\bibitem[Fan61]{fano1961transmission}
+Robert~M. Fano.
+\newblock {\em Transmission of Information: A Statistical Theory of
+  Communication}.
+\newblock MIT Press, Cambridge, MA, 1961.
+
+\bibitem[GE21]{gidney2021factor}
+Craig Gidney and Martin Eker{\aa}.
+\newblock How to factor 2048 bit {RSA} integers in 8 hours using 20 million
+  noisy qubits.
+\newblock {\em Quantum}, 5:433, 2021.
+\newblock arXiv:1905.09749.
+
+\bibitem[Gid25]{gidney2025million}
+Craig Gidney.
+\newblock How to factor 2048 bit {RSA} integers with less than a million noisy
+  qubits.
+\newblock arXiv preprint arXiv:2505.15917, 2025.
+
+\bibitem[Gid26]{gidney2026french}
+Craig Gidney.
+\newblock The {F}rench have the quantum circuits.
+\newblock Blog post, algassert.com, 2026.
+\newblock Published 2026-06-01.
+
+\bibitem[GJS11]{garg2011leakage}
+Sanjam Garg, Abhishek Jain, and Amit Sahai.
+\newblock Leakage-resilient zero knowledge.
+\newblock In {\em Advances in Cryptology -- CRYPTO 2011}, volume 6841 of {\em
+  Lecture Notes in Computer Science}, pages 297--315. Springer, 2011.
+
+\bibitem[GLEG08]{gopala2008secrecy}
+Praveen~Kumar Gopala, Lifeng Lai, and Hesham El~Gamal.
+\newblock On the secrecy capacity of fading channels.
+\newblock {\em IEEE Transactions on Information Theory}, 54(10):4687--4698,
+  2008.
+
+\bibitem[GMG{\etalchar{+}}13]{gymrek2013identifying}
+Melissa Gymrek, Amy~L. McGuire, David Golan, Eran Halperin, and Yaniv Erlich.
+\newblock Identifying personal genomes by surname inference.
+\newblock {\em Science}, 339(6117):321--324, 2013.
+
+\bibitem[Gol04]{goldreich2004foundations}
+Oded Goldreich.
+\newblock {\em Foundations of Cryptography, Volume 2: Basic Applications}.
+\newblock Cambridge University Press, Cambridge, 2004.
+
+\bibitem[Gro16]{groth2016size}
+Jens Groth.
+\newblock On the size of pairing-based non-interactive arguments.
+\newblock In {\em Advances in Cryptology -- EUROCRYPT 2016}, volume 9666 of
+  {\em Lecture Notes in Computer Science}, pages 305--326. Springer, 2016.
+
+\bibitem[GWC19]{gabizon2019plonk}
+Ariel Gabizon, Zachary~J. Williamson, and Oana Ciobotaru.
+\newblock {PLONK}: Permutations over {L}agrange-bases for oecumenical
+  noninteractive arguments of knowledge.
+\newblock Cryptology ePrint Archive, Paper 2019/953, 2019.
+
+\bibitem[HMMP23]{haines2023sok}
+Thomas Haines, Rafieh Mosaheb, Johannes M{\"u}ller, and Ivan Pryvalov.
+\newblock {SoK}: Secure e-voting with everlasting privacy.
+\newblock {\em Proceedings on Privacy Enhancing Technologies},
+  2023(1):279--293, 2023.
+
+\bibitem[HPSP10]{harnik2010side}
+Danny Harnik, Benny Pinkas, and Alexandra Shulman-Peleg.
+\newblock Side channels in cloud services: Deduplication in cloud storage.
+\newblock {\em IEEE Security \& Privacy}, 8(6):40--47, 2010.
+
+\bibitem[{IEE}25]{ieee2025p7012}
+{IEEE}.
+\newblock {IEEE} standard for machine readable personal privacy terms.
+\newblock IEEE Std 7012-2025, IEEE Standards Association, 2025.
+
+\bibitem[JRSS23]{jain2023price}
+Palak Jain, Sofya Raskhodnikova, Satchit Sivakumar, and Adam Smith.
+\newblock The price of differential privacy under continual observation.
+\newblock In {\em Proceedings of the 40th International Conference on Machine
+  Learning (ICML)}, volume 202 of {\em Proceedings of Machine Learning
+  Research}, pages 14654--14678. PMLR, 2023.
+
+\bibitem[KBBA25]{kagai2025harvest}
+Francis Kagai, Philip Branch, Jason But, and Rebecca Allen.
+\newblock Harvest-now, decrypt-later: A temporal cybersecurity risk in the
+  quantum transition.
+\newblock {\em Telecom}, 6(4):100, 2025.
+
+\bibitem[KSG04]{kraskov2004estimating}
+Alexander Kraskov, Harald St{\"o}gbauer, and Peter Grassberger.
+\newblock Estimating mutual information.
+\newblock {\em Physical Review E}, 69(6):066138, 2004.
+
+\bibitem[KST22]{kothapalli2022nova}
+Abhiram Kothapalli, Srinath Setty, and Ioanna Tzialla.
+\newblock Nova: Recursive zero-knowledge arguments from folding schemes.
+\newblock In {\em Advances in Cryptology -- CRYPTO 2022}, volume 13510 of {\em
+  Lecture Notes in Computer Science}, pages 359--388. Springer, 2022.
+
+\bibitem[Lit23]{litinski2023compute}
+Daniel Litinski.
+\newblock How to compute a 256-bit elliptic curve private key with only 50
+  million {T}offoli gates.
+\newblock arXiv preprint arXiv:2306.08585, 2023.
+
+\bibitem[LYCH78]{leungyancheong1978gaussian}
+Sik~K. Leung-Yan-Cheong and Martin~E. Hellman.
+\newblock The {G}aussian wire-tap channel.
+\newblock {\em IEEE Transactions on Information Theory}, 24(4):451--456, 1978.
+
+\bibitem[Mil87]{millen1987covert}
+Jonathan~K. Millen.
+\newblock Covert channel capacity.
+\newblock In {\em Proceedings of the 1987 IEEE Symposium on Security and
+  Privacy}, pages 60--66. IEEE, 1987.
+
+\bibitem[MN06]{moran2006receipt}
+Tal Moran and Moni Naor.
+\newblock Receipt-free universally-verifiable voting with everlasting privacy.
+\newblock In {\em Advances in Cryptology -- CRYPTO 2006}, volume 4117 of {\em
+  Lecture Notes in Computer Science}, pages 373--392. Springer, 2006.
+
+\bibitem[Mos18]{mosca2018cybersecurity}
+Michele Mosca.
+\newblock Cybersecurity in an era with quantum computers: Will we be ready?
+\newblock {\em IEEE Security \& Privacy}, 16(5):38--41, 2018.
+
+\bibitem[MP24]{moscapiani2024timeline}
+Michele Mosca and Marco Piani.
+\newblock Quantum threat timeline report 2024.
+\newblock Technical report, Global Risk Institute / evolutionQ Inc., 2024.
+
+\bibitem[MP25]{moscapiani2025timeline}
+Michele Mosca and Marco Piani.
+\newblock Quantum threat timeline report 2025.
+\newblock Technical report, Global Risk Institute / evolutionQ Inc., 2025.
+\newblock GRI publication page posted 2026-03-09.
+
+\bibitem[MR25]{mascelli2025harvest}
+Jillian Mascelli and Megan Rodden.
+\newblock ``{H}arvest now decrypt later'': Examining post-quantum cryptography
+  and the data privacy risks for distributed ledger networks.
+\newblock Finance and Economics Discussion Series 2025-093, Board of Governors
+  of the Federal Reserve System, 2025.
+
+\bibitem[NHS{\etalchar{+}}24]{naether2024agility}
+Christian N{\"a}ther, Daniel Herzinger, Jan-Philipp Stegh{\"o}fer, Stefan-Lukas
+  Gazdag, Eduard Hirsch, and Daniel Loebenberger.
+\newblock Toward a common understanding of cryptographic agility -- a
+  systematic review.
+\newblock arXiv preprint arXiv:2411.08781, 2024.
+
+\bibitem[NS08]{narayanan2008robust}
+Arvind Narayanan and Vitaly Shmatikov.
+\newblock Robust de-anonymization of large sparse datasets.
+\newblock In {\em Proceedings of the 2008 IEEE Symposium on Security and
+  Privacy}, pages 111--125. IEEE, 2008.
+
+\bibitem[PSEB25]{patil2025composition}
+Vaidehi Patil, Elias Stengel-Eskin, and Mohit Bansal.
+\newblock The sum leaks more than its parts: Compositional privacy risks and
+  mitigations in multi-agent collaboration.
+\newblock arXiv preprint arXiv:2509.14284, 2025.
+
+\bibitem[RHdM19]{rocher2019estimating}
+Luc Rocher, Julien~M. Hendrickx, and Yves-Alexandre de~Montjoye.
+\newblock Estimating the success of re-identifications in incomplete datasets
+  using generative models.
+\newblock {\em Nature Communications}, 10:3069, 2019.
+
+\bibitem[RNSL17]{roetteler2017quantum}
+Martin Roetteler, Michael Naehrig, Krysta~M. Svore, and Kristin Lauter.
+\newblock Quantum resource estimates for computing elliptic curve discrete
+  logarithms.
+\newblock In {\em Advances in Cryptology -- ASIACRYPT 2017}, volume 10625 of
+  {\em Lecture Notes in Computer Science}, pages 241--270. Springer, 2017.
+
+\bibitem[Sch26]{schrottenloher2026optimized}
+Andr{\'e} Schrottenloher.
+\newblock Optimized point addition circuits for elliptic curve discrete
+  logarithms.
+\newblock Cryptology ePrint Archive, Paper 2026/1128, 2026.
+\newblock Also arXiv:2606.02235.
+
+\bibitem[Sha48]{shannon1948mathematical}
+Claude~E. Shannon.
+\newblock A mathematical theory of communication.
+\newblock {\em Bell System Technical Journal}, 27(3--4):379--423, 623--656,
+  1948.
+
+\bibitem[SM03]{sabelfeld2003language}
+Andrei Sabelfeld and Andrew~C. Myers.
+\newblock Language-based information-flow security.
+\newblock {\em IEEE Journal on Selected Areas in Communications}, 21(1):5--19,
+  2003.
+
+\bibitem[Unr18]{unruh2018everlasting}
+Dominique Unruh.
+\newblock Everlasting multi-party computation.
+\newblock {\em Journal of Cryptology}, 31(4):965--1011, 2018.
+\newblock Conference version in CRYPTO 2013.
+
+\bibitem[VBC{\etalchar{+}}15]{vigil2015integrity}
+Mart{\'i}n Augusto~Gagliotti Vigil, Johannes Buchmann, Daniel Cabarcas,
+  Christian Weinert, and Alexander Wiesmaier.
+\newblock Integrity, authenticity, non-repudiation, and proof of existence for
+  long-term archiving: A survey.
+\newblock {\em Computers \& Security}, 50:16--32, 2015.
+
+\bibitem[Wyn75]{wyner1975wiretap}
+Aaron~D. Wyner.
+\newblock The wire-tap channel.
+\newblock {\em Bell System Technical Journal}, 54(8):1355--1387, 1975.
+
+\bibitem[{Zca}26]{zfnd2026zebra}
+{Zcash Foundation}.
+\newblock Zebra 4.5.3 and 5.0.0: Emergency soft fork and {NU6.2} activation.
+\newblock Zcash Foundation blog, 2026.
+\newblock Published 2026-06-03.
+
+\end{thebibliography}
