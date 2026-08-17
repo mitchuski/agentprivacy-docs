@@ -1,0 +1,2076 @@
+{
+ "sweeps": [
+  {
+   "items": [
+    {
+     "citation": "Ruwimal Y. Pathiraja, Jerome P. Reiter, \"Setting the Privacy Budget in Differential Privacy by Bounding Adversaries' Odds of Learning Sensitive Information\", arXiv preprint",
+     "year": "2026",
+     "url": "https://arxiv.org/abs/2607.04004",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Directly attacks the adversary-relative leg: epsilon is set by bounding a specified adversary's posterior odds, making the DP budget adversary-relative rather than adversary-independent. But the bound is static (no time drift), there is no capital/inalienability framing, and no observer-subject value-gap or rent decomposition — the joint quadruple is untouched."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Shows a two-step translation from an adversary-level posterior bound to a mechanism parameter (epsilon), which is the same two-level Phi-vs-R direction of travel, though it is a calibration recipe, not a governance-facing assessment unit."
+      }
+     ]
+    },
+    {
+     "citation": "Alireza Fallah, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Optimal and Differentially Private Data Acquisition: Central and Local Mechanisms\", Operations Research 72(3):1105-1123 (also ACM EC'22)",
+     "year": "2024",
+     "url": "https://arxiv.org/abs/2201.03968",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "covering",
+       "why": "The strongest recent instance of the named DP-markets covering strand: Bayesian-optimal payment for data quantified by heterogeneous privacy costs in DP units, in both central and local models. It prices a static, adversary-independent epsilon — exactly the broader claim already conceded — so it sharpens rather than defeats the joint quadruple, but WP-14 must cite and distinguish it as the current state of that strand."
+      }
+     ]
+    },
+    {
+     "citation": "Diptangshu Sen, Jingyan Wang, Juba Ziani, \"Equilibria of Data Marketplaces with Privacy-Aware Sellers under Endogenous Privacy Costs\", arXiv preprint",
+     "year": "2024",
+     "url": "https://arxiv.org/abs/2402.08826",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Makes the subject's privacy cost endogenous to how much of their data is purchased — a context-dependent (hence quasi-adversary-relative) privacy cost inside a market equilibrium. No reconstruction bound, no time drift, no inalienability; the exposure varies with market state, not with an adversary's accumulating background information."
+      }
+     ]
+    },
+    {
+     "citation": "Michael Khavkin, Eran Toch, \"Valuation of Differential Privacy Budget in Data Trade: A Conjoint Analysis\", Privacy Symposium 2023, Springer LNCS (978-3-031-31971-6)",
+     "year": "2023",
+     "url": "https://link.springer.com/chapter/10.1007/978-3-031-31971-6_7",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Empirically ties subjects' asked compensation (WTA) to the formal DP parameter epsilon via conjoint analysis — a measured valuation of a formal privacy metric, including retention-period sensitivity that gestures at time. The metric is still static epsilon, elicited preference rather than a structural bound, and no capital or rent framing."
+      },
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Provides the kind of WTA-floor measurement, indexed to a formal guarantee, that the one-share-function claim must reproduce as one of its two evaluations; it explains the floor cognitively/preferentially, the opposite of the structural venue-exclusion reading."
+      }
+     ]
+    },
+    {
+     "citation": "NIST, \"Guidelines for Evaluating Differential Privacy Guarantees\" (SP 800-226, final)",
+     "year": "2025",
+     "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-226.pdf",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "covering",
+       "why": "A governance-facing instrument that takes the DP guarantee itself as the unit of evaluation — the closest institutional embodiment of assessing a mechanism property rather than per-subject outcomes. It does not hold the property two-level-distinct from a per-subject reconstruction bound R it gates, nor is it a valuation instrument, but it is a strong covering threat to any claim that 'assessing the guarantee, not the data' is itself new."
+      }
+     ]
+    },
+    {
+     "citation": "Maryam Farboodi, Laura Veldkamp, \"A Model of the Data Economy\", NBER Working Paper 28427 (and Veldkamp, \"Valuing Data as an Asset\")",
+     "year": "2021 (wp); asset-valuation line updated through 2025",
+     "url": "https://www.nber.org/system/files/working_papers/w28427/w28427.pdf",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "covering",
+       "why": "Data as a capital asset whose depreciation rate is set by informational obsolescence (Bayes/Kalman precision decay against a drifting state) — a durability term for data-as-capital driven by information dynamics, which is the broader shape of the substituted-clock claim. Crucially it is firm-owned forecast data depreciating by state drift, not a subject-owned asset whose durability is set by adversary background-information accumulation via a reconstruction bound; the Mosca-style inequality substitution is absent. WP-14 must distinguish its clock from theirs explicitly."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Establishes data-as-capital with time-varying value in mainstream macro/finance, but from the observer side with no privacy metric, no inalienability, and no rent decomposition of the observer-subject gap."
+      }
+     ]
+    },
+    {
+     "citation": "Alessandro Acquisti, \"The Economics of Privacy at a Crossroads\", in Goldfarb & Tucker (eds.), The Economics of Privacy, NBER / University of Chicago Press",
+     "year": "2024",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898619",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "supporting",
+       "why": "Canonical survey restating the measured WTA/WTP asymmetry and the failure of consent markets; supports the premise that the floor is real and unresolved, while offering behavioural (not structural venue-exclusion) explanations — the position WP-14 argues against."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Argues property-rights/market solutions may not resolve privacy even with low transaction costs — supports the motivation for a structurally different (inalienable, adversary-relative) pricing object rather than covering it."
+      }
+     ]
+    },
+    {
+     "citation": "Neil Richards, Woodrow Hartzog, Jordan Francis, \"Privacy's Autonomy Thicket: Disentangling Choice, Consent, and Control\" (forthcoming law review article)",
+     "year": "2025",
+     "url": "https://www.private-law-theory.org/2025/12/04/richards-hartzog-and-francis-privacys-autonomy-thicket-disentangling-choice-consent-and-control/",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Extends the named Richards-Hartzog adhesion-contract lineage: consent legally authorizes use while conferring no power to negotiate terms — the qualitative version of exclusion from the clearing venue. It stays legal/normative; no SPE share function, no proposer-identity parameterization, no h_X."
+      }
+     ]
+    },
+    {
+     "citation": "IEEE 7012-2025 Standard for Machine Readable Personal Privacy Terms (MyTerms); Doc Searls / ProjectVRM, \"Protocols for MyTerms\"",
+     "year": "2025",
+     "url": "https://projectvrm.org/2025/09/06/protocols-for-myterms/",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "supporting",
+       "why": "The proposer-inversion instrument itself (individual as first party proffering terms; service agrees as second party), now a published standard with active protocol work. All found treatments are advocacy/engineering; none casts it as a proposer permutation carrying a structural share parameter h_X to an interior SPE share — leaving that formalization open for WP-14."
+      }
+     ]
+    },
+    {
+     "citation": "Nielsen, Lev-Aretz et al., \"Privacy Agents in the Field\", WEIS 2026 accepted paper",
+     "year": "2026",
+     "url": "https://weis2026.econinfosec.org/accepted-papers/",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "WEIS 2026 empirical work on privacy agents negotiating on users' behalf — the same venue-and-agent channel MyTerms occupies; if it measures outcome shares when the proposer role shifts to a user-side agent, it is field evidence adjacent to the proposer-permutation claim. Details thin (no PDF listed); worth pulling the final paper before WEIS 2027 submission."
+      }
+     ]
+    },
+    {
+     "citation": "Dirk Bergemann, Alessandro Bonatti, \"Data, Competition, and Digital Platforms\", American Economic Review 114(8):2553-2595",
+     "year": "2024",
+     "url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20230478",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Newest Bergemann-Bonatti platform-data work: the platform's data value operates through match/steering power — i.e., rents from market position rather than from raw records — which is directionally the same re-specification WP-14 makes, derived from the observer side. It does not run the directed internal falsifier (flat returns-to-scale defeating the wage remedy) and has no reconstruction-bound or IEEE 7012 frame."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Provides a rigorous observer-side account of where data value accrues (platform position), useful as the covering benchmark the market-position-rent decomposition must differ from."
+      }
+     ]
+    },
+    {
+     "citation": "Roxana Mihet, Orlando Gomes, Kumar Rishabh, \"Data Risk, Firm Growth and Innovation\", WEIS 2024 (UT Dallas)",
+     "year": "2024",
+     "url": "https://weis.utdallas.edu/program",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "WEIS-lineage treatment of data as a risky firm asset whose value interacts with breach/exposure risk over time — an economics-of-security clock on data value, but firm-owned and breach-driven, not a subject-owned durability term set by adversary background-information accumulation."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Normalizes data-as-capital with risk-adjusted valuation inside the WEIS community — the venue WP-14 targets — without any subject-side or privacy-metric pricing."
+      }
+     ]
+    },
+    {
+     "citation": "\"On the Practical Feasibility of Harvest-Now, Decrypt-Later Attacks\", arXiv preprint",
+     "year": "2026",
+     "url": "https://arxiv.org/html/2603.01091v1",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Extends the named Mosca/HNDL covering art with an economic feasibility analysis (storage-cost collapse as the driver of harvesting) — an economics term attached to the shelf-life inequality. The clock remains cryptographic break-time; no substitution of an information-theoretic reconstruction bound, and no subject-owned capital valuation."
+      }
+     ]
+    },
+    {
+     "citation": "\"The Economics of AI Training Data: A Research Agenda\", arXiv preprint",
+     "year": "2025",
+     "url": "https://arxiv.org/pdf/2510.24990",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Recent agenda piece consolidating scaling-law evidence of diminishing marginal value of additional records (power-law exponents ~0.3-0.5) and flagging marginal-value estimation as unsolved — the empirical substrate of the Bajari-style flat-returns premise. It does not turn that evidence into a directed falsifier of the data-as-labour wage remedy, nor re-specify the redistributive object as venue-access rent."
+      }
+     ]
+    },
+    {
+     "citation": "Haoyi Zhang, Tianyi Zhu, \"Neither Consent nor Property: A Policy Lab for Data Law\", arXiv preprint (rev. 2026)",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2510.26727",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Independently rejects both consent and property/wage framings of personal-data redistribution via agent-based welfare simulation, landing on downstream liability instead of venue-access rent — a competing re-specification of the redistributive object that WP-14's falsifier-driven rent answer must be positioned against."
+      },
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Its rejection of property/consent frames overlaps the claim that the subject's floor is structural rather than fixable by better consent, though with a liability remedy rather than a proposer permutation."
+      }
+     ]
+    }
+   ],
+   "scope_note": "Searched 2026-08-17 via WebSearch (12 distinct queries) plus verification WebFetches. Covered: WEIS 2024 programme (weis.utdallas.edu/program — fetched, full paper list read), WEIS 2025 Tokyo (programme host kmlabcw.iis.u-tokyo.ac.jp unreachable — TLS certificate mismatch; titles recovered only via search snippets: nothing on privacy pricing/valuation surfaced beyond regulation/stolen-data-supply and privacy-spillover papers), WEIS 2026 accepted-papers page (fetched — four privacy-relevant papers, one listed with high relevance), the DP-markets/mechanism-design strand (arXiv, Operations Research, ACM EC), Acquisti/NBER economics-of-privacy lineage (SSRN/NBER), data-as-capital macro-finance (Farboodi-Veldkamp, BEA/SNA-2025 capitalization line), data-as-labour critique literature, WTA/WTP privacy-gap empirics, IEEE 7012/MyTerms, harvest-now-decrypt-later/Mosca economics, and DP governance/auditing (NIST SP 800-226). Not reachable: WEIS 2025 full programme page; WEIS 2026 'Privacy Agents in the Field' has no public PDF yet. Negative findings that matter for the residual claims: no paper found pricing a time-drifting, adversary-relative reconstruction bound as inalienable subject-owned capital (CTR-LR-02's joint quadruple stands — nearest new threats are Pathiraja-Reiter's adversary-relative epsilon and Sen-Wang-Ziani's endogenous privacy costs, each covering one leg); no game-theoretic unification of the WTA/WTP floor with IEEE 7012 as one SPE share function (CTR-LR-03 stands); no directed flat-returns falsifier of data-as-labour (CTR-LR-04 stands, but Zhang-Zhu is a competing re-specification); NIST SP 800-226 is a genuine new covering threat to the broader move behind CTR-LR-01; no Mosca-inequality substitution with an information-theoretic reconstruction clock in any valuation (CTR-LR-05 stands, with Farboodi-Veldkamp the clock to distinguish). Older items (Khavkin-Toch 2023, Farboodi-Veldkamp) included only as covering/near-covering threats not already in the known-art lists."
+  },
+  {
+   "items": [
+    {
+     "citation": "Lijun Bo, Weiqiang Chang — Privacy Data Pricing: A Stackelberg Game Approach — arXiv preprint (econ/cs.GT)",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2512.18296",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Newest entry in the DP-markets pricing strand (Ghosh-Roth lineage): market maker sets price function, buyer selects query precision under a DP constraint, closed-form optimal variance/price. Prices a static, adversary-independent noise/accuracy budget — no drift, no adversary-relativity, no inalienability or rent decomposition — but it is the current state of the named covering strand and must be cited/distinguished."
+      }
+     ]
+    },
+    {
+     "citation": "Saurab Chhachhi, Fei Teng — Wasserstein Markets for Differentially-Private Data — arXiv preprint",
+     "year": "2024",
+     "url": "https://arxiv.org/abs/2412.02609",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Endogenizes the DP guarantee inside the valuation itself (Wasserstein-distance value metric + incentive-compatible procurement), so privacy level and price are co-determined by the market rather than fixed exogenously. Closer than classic static-epsilon pricing, but the guarantee is still adversary-independent and time-static, and there is no subject-owned-capital or rent framing."
+      }
+     ]
+    },
+    {
+     "citation": "Sayan Biswas, Mark Dras, Pedro Faustini, Natasha Fernandes, Annabelle McIver, Catuscia Palamidessi, Parastoo Sadeghi — Bayes' capacity as a measure for reconstruction attacks in federated learning — arXiv preprint (cs.LG/cs.CR)",
+     "year": "2024",
+     "url": "https://arxiv.org/abs/2406.13569",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Uses a single QIF quantity (Bayes' capacity / Sibson MI of order infinity) as a tight upper bound on DP-SGD reconstruction leakage and as the unit for comparing defense mechanisms — i.e., a mechanism-level property used to bound a per-subject reconstruction quantity. It stops short of a two-level governance/assessment separation (Phi gating R) and has no valuation-instrument framing, but it is the closest recent technical instantiation of that bridge."
+      },
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Supplies exactly the QIF-sense reconstruction bound the claim proposes to substitute into a Mosca-style shelf-life inequality; no time/clock or asset-valuation component here, so it is the ingredient, not the substitution."
+      }
+     ]
+    },
+    {
+     "citation": "Anneliese Riess, Kristian Schwethelm, Johannes Kaiser, Tamara T. Mueller, Julia A. Schnabel, Daniel Rueckert, Alexander Ziller — From Mean to Extreme: Formal Differential Privacy Bounds on the Success of Real-World Data Reconstruction Attacks (orig. Bounding Reconstruction Attack Success of Adversaries Without Data Priors) — arXiv preprint (cs.LG/cs.CR)",
+     "year": "2024 (v2 2025)",
+     "url": "https://arxiv.org/abs/2402.12861",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Gives closed-form reconstruction-success bounds arranged as a 'risk corridor' between two explicit threat models (identification-with-candidate-set vs from-scratch/no-prior adversary) — i.e., reconstruction risk explicitly parameterized by adversary class. This is adversary-relative R in the technical sense, but purely as a privacy result: no pricing, no drift over time, no capital/rent economics."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "supporting",
+       "why": "Demonstrates the DP-parameter-to-reconstruction-bound translation that a Phi-gates-R assessment instrument would rely on."
+      }
+     ]
+    },
+    {
+     "citation": "Sayan Biswas, Mark Dras, Pedro Faustini, Natasha Fernandes, Annabelle McIver, Catuscia Palamidessi, Parastoo Sadeghi — Comparing privacy notions for protection against reconstruction attacks in machine learning — arXiv preprint (cs.CR)",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2502.04045",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Makes the reconstruction threat (via Renyi-DP theory and Bayes' capacity) the common unit over which heterogeneous mechanism-level privacy guarantees ((eps,delta)-DP vs metric privacy) are compared — a comparison/assessment methodology whose unit is a reconstruction bound. Adjacent to positioning Phi/R as THE assessment unit for a governance or valuation instrument, though entirely non-economic."
+      }
+     ]
+    },
+    {
+     "citation": "Meng Zhang, Ermin Wei, Randall Berry, Jianwei Huang — Age-Dependent Differential Privacy — arXiv preprint / IEEE Transactions on Information Theory",
+     "year": "2022",
+     "url": "https://arxiv.org/abs/2209.01466",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Pre-window but a strong named threat to the 'time-drifting' leg not in the known-art list: formalizes a privacy guarantee that is an explicit function of data age (staleness itself supplies privacy), connecting it to classical DP. Drift direction is opposite (aging protects, vs background accumulation eroding R(t)) and there is no pricing/capital layer, but any claim to first time-indexed privacy quantity must distinguish it."
+      },
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "A time-indexed privacy-risk quantity is the same mathematical object class as the substituted shelf-life clock; here it degrades utility bounds, not asset value, and has no Mosca-style inequality."
+      }
+     ]
+    },
+    {
+     "citation": "Joydeep Chandra — CHRONOS: Temporally-Aware Multi-Agent Coordination for Evolving Data Marketplaces — arXiv preprint",
+     "year": "2026",
+     "url": "https://arxiv.org/abs/2605.23887",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "A data marketplace where valuation is explicitly time-drifting (changepoint-conditioned Shapley revaluation, neural-ODE decay of index structures) and privacy budgets are consumed/coordinated across time. Joins drift + privacy budget + pricing in one system — but the privacy object is still a DP budget, not an adversary-relative reconstruction bound, and there is no inalienability or rent-decomposition economics."
+      },
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "supporting",
+       "why": "Engineering evidence that data value decay over time is being operationalized in marketplaces, supporting the premise that a durability term belongs in data valuation."
+      }
+     ]
+    },
+    {
+     "citation": "Jiadong Gu — Data Trade and Consumer Privacy — arXiv preprint (econ.TH)",
+     "year": "2024 (v3 2026)",
+     "url": "https://arxiv.org/abs/2406.12457",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Formal mechanism-design result that the consumer's realized privacy/surplus is governed by the intermediary's bargaining power — reducing that power protects privacy without welfare loss. This is a market-position/bargaining-power determinant of the subject's share, close in spirit to s = h_X venue-exclusion, but derived in a screening model, not as a preference-free SPE share function of proposer identity, and with no WTA/WTP or IEEE 7012 mapping."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "supporting",
+       "why": "Shows the effective remedy is repositioning market power rather than restricting data flows — consonant with re-specifying the redistributive object as clearing-position rent, not a wage."
+      }
+     ]
+    },
+    {
+     "citation": "Alireza Fallah, Michael I. Jordan, Ali Makhdoumi, Azarakhsh Malekian — On Three-Layer Data Markets — arXiv preprint (cs.GT/econ.TH)",
+     "year": "2024 (v4 2025)",
+     "url": "https://arxiv.org/abs/2402.09697",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Equilibrium analysis of user-platform-buyer markets where users are paid in services (not money) for noisily shared data, and — key structural result — more platform competition benefits buyers, not users. Formalizes the subject's floor share as a consequence of market structure/position rather than preferences, adjacent to the venue-exclusion parameter reading; no ultimatum-game unification and no proposer-inversion remedy."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Bergemann-Bonatti-family data-market economics in which raising the 'wage' is not the operative lever; the users' outcome is set by platform/venue structure — adjacent to the rent re-specification, though without the flat-returns falsifier."
+      }
+     ]
+    },
+    {
+     "citation": "Nicholas Vincent, Matthew Prewitt, Hanlin Li — Collective Bargaining in the Information Economy Can Address AI-Driven Power Concentration — arXiv preprint (cs.CY)",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2506.10272",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Current flagship statement of the data-union/collective-bargaining programme (trusted data intermediaries, guilds/syndicates, data-valuation tooling for negotiation). It is the position CTR-LR-04's internal falsifier targets; notably it does NOT engage the flat returns-to-scale objection to marginal-product wage logic, so it threatens the claim only as the adjacent programme, not as prior art for the falsifier itself."
+      }
+     ]
+    },
+    {
+     "citation": "Haoyi Zhang, Tianyi Zhu — Neither Consent nor Property: A Policy Lab for Data Law — arXiv preprint (cs.CY/econ)",
+     "year": "2025 (v3 2026)",
+     "url": "https://arxiv.org/abs/2510.26727",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Agent-based simulation finding that property-rule mechanisms (informed consent) fail to maximize welfare, proposing liability reallocation to the downstream buyer (least-cost-avoider). Competes with the IEEE 7012 proposer-inversion as the remedy story for the same defect (adhesion-consent floor), but via liability rules rather than a proposer permutation in a bargaining game."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Documents the consent/property/inalienability design space in current data-law economics, useful for situating the structural-inalienability leg."
+      }
+     ]
+    },
+    {
+     "citation": "Johannes Kaiser, Alexander Ziller, Eleni Triantafillou, Daniel Rueckert, Georgios Kaissis — Your Privacy Depends on Others: Collusion Vulnerabilities in Individual Differential Privacy — arXiv preprint (cs.CR), accepted at IEEE SaTML",
+     "year": "2026",
+     "url": "https://arxiv.org/abs/2601.12922",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Shows an individual's realized privacy risk under per-user DP budgets depends on other contributors' choices and adversary strategy (62% successful targeting by manipulating others' budgets), with a repaired contract giving hard bounds on excess vulnerability. Directly supports the premise that a static, adversary-independent owned epsilon is not a stable per-subject quantity — motivating an adversary-relative R — without itself doing any pricing."
+      }
+     ]
+    },
+    {
+     "citation": "Luigi D. C. Soares, Mario S. Alvim, Natasha Fernandes — A new measure for dynamic leakage based on quantitative information flow — arXiv preprint (cs.CR)",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2510.20922",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Extends the Smith-QIF covering strand to run-specific (dynamic) leakage with the adversary's belief explicitly separated from the baseline secret distribution — an adversary-relative, realized-run leakage measure satisfying axioms and compatible with static QIF. Strengthens the QIF toolbox the Phi/R separation builds on; no governance-instrument or economic layer."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Belief-indexed, per-run leakage is a formal precedent for adversary-relativity in the leakage quantity itself (though not priced or time-drifting)."
+      }
+     ]
+    },
+    {
+     "citation": "Jillian Mascelli, Megan Rodden — \"Harvest Now Decrypt Later\": Examining Post-Quantum Cryptography and the Data Privacy Risks for Distributed Ledger Networks — Federal Reserve FEDS Working Paper 2025-093 (also SSRN 5956313)",
+     "year": "2025",
+     "url": "https://www.federalreserve.gov/econres/feds/files/2025093pap.pdf",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "A central-bank economics venue treating HNDL as a data-privacy risk with financial-system consequences — the Mosca-style shelf-life logic entering economic policy analysis. The clock is still the cryptographic break-time (CRQC arrival), not an information-theoretic reconstruction bound, and there is no subject-owned capital-asset valuation; must be cited when claiming the substitution is new."
+      }
+     ]
+    },
+    {
+     "citation": "Javier Blanco-Romero, Florina Almenares Mendoza, Carlos Garcia Rubio, Celeste Campo, Daniel Diaz Sanchez — On the Practical Feasibility of Harvest-Now, Decrypt-Later Attacks — arXiv preprint",
+     "year": "2026",
+     "url": "https://arxiv.org/abs/2603.01091",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Explicitly reframes HNDL as an economic problem — archiving intercepted traffic is economically trivial, so the defensive question becomes the adversary's decryption cost — with protocol-level cost levers. Economizes the Mosca setting but keeps the cryptographic clock and adversary-cost side; no reconstruction-bound substitution and no data-as-capital durability term."
+      }
+     ]
+    }
+   ],
+   "scope_note": "Searched via WebSearch (10 distinct queries, US-index) across arXiv-focused queries covering: reconstruction attacks/bounds in data valuation and pricing; pricing epsilon / DP data markets; quantitative information flow applied to economics and markets; adversary-dependent and time-varying privacy metrics; data-as-labor / collective bargaining / data unions; WTA-WTP privacy bargaining; data depreciation and shelf-life; data-market surveys with formal privacy; personal-data-as-capital/inalienability; Bayes capacity / g-leakage economics; and harvest-now-decrypt-later economics. Verified 13 of 14 items by fetching their arXiv abstract pages directly (authors/dates/claims confirmed); the Federal Reserve FEDS 2025-093 item is medium-confidence because the PDF body would not parse — its existence, title, and authors (Mascelli, Rodden) were confirmed via the FEDS PDF link, an SSRN listing, and a RePEc entry seen in search results. Not reachable/excluded: a ResearchGate-only paper \"Harvest Now, Decrypt Later: A Time-Dependent Threat Model and Migration Framework for PQC\" (no arXiv/DOI copy found — worth a manual follow-up since it formalizes a time-dependent HNDL risk model directly relevant to CTR-LR-05); a 2026 CHI paper on ultimatum-style privacy valuation (ACM DL, paywalled, not independently verified); and arXiv 2604.12737 \"Evaluating Differential Privacy Against ...\" (title truncated in results, not fetched). No item found covering any of the five joint claims in full: the closest pressure points are Bo-Chang 2025 and Chhachhi-Teng 2024 on the pricing strand (CTR-LR-02), Riess et al. threat-model-parameterized reconstruction corridors (adversary-relativity leg), Age-Dependent DP (time-indexed guarantee leg), and the Biswas et al. pair for the QIF-reconstruction assessment unit (CTR-LR-01)."
+  },
+  {
+   "items": [
+    {
+     "citation": "Woodrow Hartzog & Daniel J. Solove, \"Privacy as Contract?\", Harvard Journal of Law & Technology vol. 39 (forthcoming 2025/2026), SSRN working paper",
+     "year": "2025",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6081773",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "The most current legal-scholarship treatment of consent interfaces as (failed) contracts: argues contract law is too oblivious to power disparities and infected with bogus consent to govern privacy. It is a normative/doctrinal argument, not a formal SPE/ultimatum model, and it concludes AGAINST contractual ordering — so it must be distinguished from the claim that the WTA/WTP floor and the MyTerms remedy are two evaluations of one preference-free equilibrium share function. It threatens the framing by denying that any contract-form remedy (including proposer inversion) rebalances power."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Its power-disparity and anti-individual-control arguments overlap the structural-inalienability leg of the seventh-capital claim, but without any pricing, R(t) bound, or rent decomposition."
+      }
+     ]
+    },
+    {
+     "citation": "Neil M. Richards, Woodrow Hartzog & Jordan Francis, \"Privacy's Autonomy Thicket: Disentangling Choice, Consent, and Control\", George Washington Journal of Law & Technology (forthcoming 2026); noted at Private Law Theory blog",
+     "year": "2025",
+     "url": "https://www.private-law-theory.org/2025/12/04/richards-hartzog-and-francis-privacys-autonomy-thicket-disentangling-choice-consent-and-control/",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Successor to the already-named Richards-Hartzog adhesion-contract reading: disentangles choice/consent/control and diagnoses why subject-side 'control' remedies fail. No game-theoretic share function and no proposer-identity parameter, but it is the freshest statement of the cognitive/autonomy account of the consent floor that the structural venue-exclusion account (s = h_X) must be contrasted with."
+      }
+     ]
+    },
+    {
+     "citation": "IEEE Standards Association, \"IEEE 7012-2025 — IEEE Standard for Machine Readable Personal Privacy Terms\" (published January 2026)",
+     "year": "2026",
+     "url": "https://ieeexplore.ieee.org/document/11360682",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "supporting",
+       "why": "The standard itself — now published, no longer a draft (P7012). It operationalizes the proposer inversion (subject proffers terms as first party) but contains no economic model of why that inversion moves the subject share off the ultimatum floor. Confirms the remedy exists as a ratified artifact; the SPE-share-function reading of it remains unclaimed. WP-14 must cite the 2025 published version, not P7012 drafts."
+      }
+     ]
+    },
+    {
+     "citation": "Doc Searls / Customer Commons, \"MyTerms\" (weblog hub for IEEE 7012, first-party proffering, agent-mediated agreements, Intention Economy framing)",
+     "year": "2025",
+     "url": "https://doc.searls.com/myterms/",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "supporting",
+       "why": "Canonical advocacy source for the proposer permutation: individuals proffer standard-form terms from a neutral roster and companies become second parties, explicitly framed as reversing the power asymmetry of notice-and-consent. Rhetorical/architectural, with zero formal bargaining analysis — supports the premise that proposer identity is the lever while leaving the equilibrium formalization open."
+      }
+     ]
+    },
+    {
+     "citation": "Ignacio N. Cofone, \"Beyond Data Ownership\", 43 Cardozo Law Review (2021/2022), SSRN 3564480",
+     "year": "2021",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3564480",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Strongest single legal-scholarship statement of the propertization-vs-inalienability debate not in the known-art list: shows property approaches magnify asymmetric information, asymmetric bargaining power, and inferred-data leakage, and maps data rights onto the Calabresi-Melamed property/liability/inalienability grid. Directly relevant to the 'structural inalienability' leg — the seventh-capital claim of inalienable subject-owned DURABLE CAPITAL must show why it evades Cofone's objections to propertization while still being a capital asset."
+      },
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Its bargaining-power critique of consent-based transfer is the doctrinal version of the ultimatum-floor observation, without the game structure."
+      }
+     ]
+    },
+    {
+     "citation": "Lijun Bo & Weiqiang Chang, \"Privacy Data Pricing: A Stackelberg Game Approach\", arXiv:2512.18296",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2512.18296",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Recent extension of the DP-markets strand the claim already names as covering art: unifies DP mechanisms with Stackelberg leader-follower pricing, closed-form equilibrium price and noise variance. Still prices a STATIC adversary-independent epsilon and gives the platform/market-maker the leader role — it does not touch drift, adversary-relativity, inalienability, or rent decomposition, but it shows the strand is actively moving toward game-theoretic pricing and must be cited as the 2025 frontier of the covering strand."
+      },
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Formalizes proposer/leader identity in a privacy-pricing game — the closest formal object to the proposer-permutation argument, though the subject is never the leader."
+      }
+     ]
+    },
+    {
+     "citation": "Lijun Bo et al., \"Dynamic Data Pricing: A Mean Field Stackelberg Game Approach\", arXiv:2512.21585",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2512.21585",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Adds TIME-VARYING dynamics to data pricing in a demand-driven market via mean-field Stackelberg games. The time dimension is demand-side (market dynamics), not an adversary-side background-information drift of a reconstruction bound — but a reviewer could read 'dynamic data pricing' as prior art for the time-drift leg, so it needs explicit distinguishing."
+      },
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Dynamic price paths for data products brush against the durability/depreciation term, from the market side rather than the information-accumulation side."
+      }
+     ]
+    },
+    {
+     "citation": "Borja Balle, Giovanni Cherubin & Jamie Hayes, \"Reconstructing Training Data with Informed Adversaries\", IEEE S&P 2022, arXiv:2201.04845",
+     "year": "2022",
+     "url": "https://arxiv.org/pdf/2201.04845",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "covering",
+       "why": "Strong covering threat to the ADVERSARY-RELATIVE leg not named in the known-art list: defines reconstruction robustness against an explicitly parameterized informed adversary and derives adversary-dependent bounds on reconstruction success (distinct from adversary-independent DP epsilon). It does not price the bound, hold it as subject-owned capital, model drift, or decompose a value gap — the JOINT quadruple survives — but 'adversary-relative reconstruction bound' alone is anticipated here and must be cited."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Its ReRo-style property is a candidate mechanism-level Phi distinct from per-record risk, foreshadowing the two-level Phi/R separation."
+      }
+     ]
+    },
+    {
+     "citation": "Shuaiqi Wang et al., \"Statistic Maximal Leakage\" (QIF-family operational privacy metric), arXiv:2411.18531",
+     "year": "2024",
+     "url": "https://arxiv.org/pdf/2411.18531",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "2024 continuation of the Smith/QIF covering strand the claim already names: an operational leakage measure tied to a specific secret/statistic, i.e. a quantity-level object. Confirms the QIF strand still produces single-level metrics — no one positions a governance-facing mechanism property as the assessment unit two levels above the per-subject bound — but it narrows the free ground for what counts as a novel leakage-adjacent object."
+      }
+     ]
+    },
+    {
+     "citation": "Sara Saeidian et al., \"Information Density Bounds for Privacy\" (unifying pointwise-maximal-leakage/reconstruction bounds), arXiv:2407.01167",
+     "year": "2024",
+     "url": "https://arxiv.org/pdf/2407.01167",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Unifies DP-family and information-density privacy guarantees and connects them to attack-success (reconstruction/inference) bounds — the technical bridge between a mechanism property and a per-subject bound that CTR-LR-01's Phi-gates-R structure relies on. It stays entirely inside information theory: no governance instrument, no assessment-unit claim."
+      },
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Provides the kind of information-theoretic bound that the claim substitutes for the cryptographic clock; citing it strengthens, but its existence means the substitution must be argued as the novelty, not the bound itself."
+      }
+     ]
+    },
+    {
+     "citation": "Laura Veldkamp, \"Valuing Data as an Asset\", Review of Finance 27(5) 2023 (Columbia Business School working version)",
+     "year": "2023",
+     "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/Valuing%20Data%20as%20an%20Asset.pdf",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "covering",
+       "why": "Covering threat to the broader 'data as durable capital with a depreciation term' move: treats data as a capital asset with depreciation and valuation formulas. Crucially it is FIRM-owned data and depreciation driven by economic obsolescence, not a subject-owned asset whose durability clock is set by adversarial background-information accumulation in a Mosca-style inequality — that substitution remains open, but any WP-14 reviewer will reach for Veldkamp first."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Establishes data-as-capital-class in mainstream finance, compressing the novelty space for 'seventh capital' to the subject-owned/inalienable/adversary-relative specifics."
+      }
+     ]
+    },
+    {
+     "citation": "NBER Working Paper 35266, \"The Missing Value of Data\" (aggregate data ~1.5% of GDP; endogenously determined data depreciation)",
+     "year": "2026",
+     "url": "https://www.nber.org/papers/w35266",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "2026 macro treatment where data is an asset whose depreciation is ENDOGENOUS — the nearest recent economics to a non-exogenous durability term for data capital. Depreciation is driven by forecast-quality decay, not by adversary background-information accumulation, and the asset-holder is the firm; still, 'endogenous data depreciation' is a phrase a reviewer could wield against the shelf-life novelty."
+      }
+     ]
+    },
+    {
+     "citation": "Dirk Bergemann & Alessandro Bonatti, \"Data, Competition, and Digital Platforms\", American Economic Review 114(8): 2553-95",
+     "year": "2024",
+     "url": "https://ideas.repec.org/a/aea/aecrev/v114y2024i8p2553-95.html",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "The 2024 successor to the already-named Bergemann-Bonatti-Gan 2022: models how platform data advantage distorts competition, with the value gap arising from the platform's market position. This is the closest published economics to a 'market-position rent' reading of the observer-to-subject gap — WP-14 must show its venue-exclusion decomposition differs from (or refines) this platform-competition rent, and that its data-externality account is not just super-additivity restated."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Offers a competing decomposition of why observers capture more value than subjects (data externality + competitive foreclosure), which the rent-decomposition leg must engage."
+      }
+     ]
+    },
+    {
+     "citation": "Lina Dencik, Jessica Brand & Sarah Murphy, \"What do data rights do for workers? A critical analysis of trade union engagement with the datafied workplace\", Transfer: European Review of Labour and Research",
+     "year": "2024",
+     "url": "https://journals.sagepub.com/doi/10.1177/10242589241267006",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "supporting",
+       "why": "Independent 2024 evidence that the data-rights/union remedy underdelivers: data rights are only meaningful under conditions of wider workplace democracy and can legitimize the extractive arrangement. This is a sociological internal critique of the data-as-labour programme; it converges with — but does not anticipate — the DIRECTED falsifier (flat returns-to-scale denying marginal product, remedy re-specified as venue-access rent). Cite as convergent support that the wage-frame remedy fails, from a different mechanism."
+      }
+     ]
+    },
+    {
+     "citation": "\"Reference Dependence and the Structure of the WTA/WTP Gap\" (post-Chapman-et-al. decomposition of the gap; loss-aversion vs cautious-utility accounts), arXiv:2607.27239",
+     "year": "2026",
+     "url": "https://arxiv.org/html/2607.27239",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "The live behavioural-economics frontier on WHY the WTA/WTP gap exists (reference dependence, cautious utility, decoupling of endowment effect from loss aversion, per Chapman et al. 2024 / Cerreia-Vioglio et al. 2024 cited within). This is the strongest current form of the COGNITIVE explanation of the floor; the claim that the privacy floor is structural (venue exclusion, s = h_X) rather than cognitive must confront this literature head-on, since it explains large gaps without any market-structure parameter."
+      }
+     ]
+    }
+   ],
+   "scope_note": "Prior-art scout run 2026-08-17 via 12 distinct WebSearch queries covering: (1) data propertization vs inalienability in law reviews/SSRN 2024-2026; (2) IEEE 7012 / MyTerms standards and bargaining power; (3) notice-and-consent as ultimatum/bargaining games and adhesion contracts; (4) Richards-Hartzog-Solove 2025-2026 output; (5) data-as-labour critiques and data unions; (6) DP/data-market pricing incl. Stackelberg strands; (7) data-as-asset depreciation economics; (8) QIF / reconstruction-bound / PIA governance metrics; (9) Bergemann-Bonatti 2024-2025; (10) Mosca inequality / harvest-now-decrypt-later shelf-life framing; (11) WTA/WTP gap explanations 2024-2026; (12) time-drifting re-identification risk. Reachable: SSRN abstract pages, arXiv, IEEE Xplore metadata, publisher/aggregator pages, ProjectVRM/Customer Commons, NBER, RePEc. Not done: full-text fetches of paywalled SSRN/HJOLT/Transfer papers — relevance judgments for those rest on abstracts/snippets seen in search results (provenance_confidence reflects this; 'medium' items had single-source or snippet-only corroboration, e.g. the private-law-theory blog notice for Autonomy Thicket, NBER w35266's 2026 dating, and the two arXiv numbers in the 26xx range whose author lists I could not fully confirm). No search surfaced any work combining the joint quadruple of CTR-LR-02, the SPE-share-function reading of MyTerms (CTR-LR-03), the directed flat-returns falsifier (CTR-LR-04), the Phi/R assessment-unit move (CTR-LR-01), or the Mosca-clock substitution into subject-owned valuation (CTR-LR-05); nearest threats per item above. Notable dogs that did not bark: no formal game-theoretic paper on IEEE 7012/MyTerms bargaining exists yet in indexed literature; no legal-scholarship item models consent as an ultimatum game explicitly."
+  },
+  {
+   "items": [
+    {
+     "citation": "Nicholas Vincent, Matthew Prewitt, Hanlin Li — Collective Bargaining in the Information Economy Can Address AI-Driven Power Concentration — arXiv preprint (position paper)",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2506.10272",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "The most current statement of the labour-cartel programme (collective bargaining toward fair compensation from AI builders); it is precisely the remedy the directed falsifier targets, and it does NOT engage flat-returns evidence — confirming the falsifier is unanswered, but also showing the programme is active 2025 art."
+      },
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Proposes intermediary structures that shift the proposer position (bargaining agents for data contributors) but with no SPE share function, no venue-exclusion parameter, and no preference-free formalism."
+      }
+     ]
+    },
+    {
+     "citation": "Patrick Mesana, Gilles Caporossi, Sebastien Gambs — Measuring the Hidden Cost of Data Valuation through Collective Disclosure — arXiv preprint",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2510.08869",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Formalizes the near-zero marginal-utility contributor problem inside a Data Union (contributors with minimal marginal value get no compensation) — a game-theoretic cousin of the flat-returns self-defeat argument, though it patches the wage frame rather than re-specifying the object as venue-access rent."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Prices collective disclosure via differential privacy budgets — again a static, adversary-independent epsilon clock, extending the named Ghosh-Roth/DP-markets covering strand into the data-union setting."
+      }
+     ]
+    },
+    {
+     "citation": "Hayete/collective authors (Fink et al. context) — Data Cooperatives: Democratic Models for Ethical Data Stewardship — arXiv preprint",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2504.10058",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Current canonical taxonomy of the data-cooperative/union/trust programme (member ownership, pooled bargaining, fair compensation); the redistributive object remains a wage/dividend share, not a clearing-position rent — the position the falsifier attacks."
+      }
+     ]
+    },
+    {
+     "citation": "Diane Coyle, Annabel Manley — What is the value of data? A review of empirical methods — Journal of Economic Surveys 39(2)",
+     "year": "2024",
+     "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12585",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Authoritative survey of data-value depreciation heterogeneity (real-time data depreciates fast, reference data barely) — the named data-value-depreciation covering strand, but with no adversary/background-information clock and no Mosca-style inequality."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "supporting",
+       "why": "Documents the wedge between firm-realized and subject-realized data value across empirical methods, consistent with a rent (not wage) reading of the observer-to-subject gap."
+      }
+     ]
+    },
+    {
+     "citation": "Dirk Bergemann, Alessandro Bonatti — Data, Competition, and Digital Platforms — arXiv / American Economic Review",
+     "year": "2024",
+     "url": "https://arxiv.org/pdf/2304.07653",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Models the platform's data advantage as a source of market power extracting surplus from both sides — the closest formal economics to a market-position-rent decomposition of the observer-to-subject gap, though without a reconstruction bound, drift, or inalienability structure."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Extends the named Bergemann-Bonatti adjacent strand; the redistributive analysis runs through competition/regulation of the venue, not a data wage — partially anticipating the venue-access re-specification."
+      }
+     ]
+    },
+    {
+     "citation": "Ehsan Valavi, Joel Hestness, Newsha Ardalani, Marco Iansiti — Time and the Value of Data — arXiv preprint (Harvard Business School WP)",
+     "year": "2022 (rev.)",
+     "url": "https://arxiv.org/pdf/2203.09118",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Strong covering-adjacent art for a time-decay durability term on data value: shows model-relevant data value declines with age (perishability), so a depreciation clock exists in the literature — but the clock is distribution drift, not adversary background-information accumulation, and it is a firm-side asset, not subject-owned capital."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "supporting",
+       "why": "Shows growing datasets of aging data can have flat-to-declining marginal value, reinforcing the flat-returns premise of the falsifier."
+      }
+     ]
+    },
+    {
+     "citation": "Federal Reserve Board staff (FEDS 2025-093) — Harvest Now, Decrypt Later: Examining Post-Quantum Cryptography and the Data Privacy Risks for Distributed Ledger Networks — FEDS Working Paper",
+     "year": "2025",
+     "url": "https://www.federalreserve.gov/econres/feds/harvest-now-decrypt-later-examining-post-quantum-cryptography-and-the-data-privacy-risks-for-distributed-ledger-networks.htm",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "An economics-institution treatment of HNDL shelf-life risk (data value vs break-time clock) — the named Mosca/HNDL covering strand carried into financial-data policy; still a cryptographic clock, not an information-theoretic reconstruction clock, and no capital-asset valuation of subject-owned data."
+      }
+     ]
+    },
+    {
+     "citation": "Georgios Kaissis et al. — From Mean to Extreme: Formal Differential Privacy Bounds on the Success of Real-World Data Reconstruction Attacks — arXiv preprint",
+     "year": "2024",
+     "url": "https://arxiv.org/pdf/2402.12861",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Derives formal bounds on real-world reconstruction success calibrated to adversary priors/side knowledge — adversary-relative reconstruction bounding exists in the DP literature; but the bound is not time-drifting, not held as subject-owned capital, and carries no economic rent decomposition."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Connects a mechanism-level DP guarantee to a per-record reconstruction risk — a two-level mechanism-property/per-subject-bound structure, though never positioned as the unit of a governance/valuation instrument."
+      }
+     ]
+    },
+    {
+     "citation": "SoK authors (NIST CRC winners) — SoK: Reconstruction Attacks on Synthetic Tabular Data (Insights from Winning the NIST CRC) — arXiv preprint",
+     "year": "2026",
+     "url": "https://arxiv.org/html/2606.08372",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Empirically demonstrates that realized reconstruction risk is adversary-relative (depends on attacker background knowledge and method, not just the mechanism's static budget) — evidence FOR the premise that a static adversary-independent budget misprices risk."
+      }
+     ]
+    },
+    {
+     "citation": "Lijun Bo et al. — Privacy Data Pricing: A Stackelberg Game Approach — arXiv preprint",
+     "year": "2025",
+     "url": "https://arxiv.org/abs/2512.18296",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "The current frontier of the DP-markets covering strand: unifies DP mechanisms with strategic pricing (Stackelberg), but still prices a static, adversary-independent epsilon — confirming the quadruple (drift + adversary-relativity + inalienability + rent decomposition) remains unoccupied as of late 2025."
+      }
+     ]
+    },
+    {
+     "citation": "(authors not captured) — Data Trade and Consumer Privacy — arXiv preprint",
+     "year": "2024",
+     "url": "https://arxiv.org/pdf/2406.12457",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "2024 theory of data trade with consumer privacy in the Bergemann-Bonatti tradition — models who captures data value in trade, adjacent to the rent-decomposition leg without the reconstruction-bound machinery."
+      },
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Data-trade models of this strand fix the platform as proposer; none treat proposer identity as the permuted argument of a single share function."
+      }
+     ]
+    },
+    {
+     "citation": "(large author team) — The Economics of AI Training Data: A Research Agenda — arXiv preprint",
+     "year": "2025",
+     "url": "https://arxiv.org/html/2510.24990",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Agenda paper on marginal value of training data and contributor compensation in the AI era; explicitly poses the returns-to-data-scale question the falsifier resolves, without drawing the self-defeat conclusion or the venue-rent re-specification."
+      }
+     ]
+    },
+    {
+     "citation": "Tesary Lin, Avner Strulov-Shlain — Choice Architecture, Privacy Valuations, and Selection Bias in Consumer Data — arXiv / NBER-style empirical paper",
+     "year": "2023 (rev. 2024)",
+     "url": "https://arxiv.org/pdf/2308.13496",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "The strongest recent empirical treatment of how elicitation/choice architecture shapes measured privacy valuations (the WTA/WTP floor) — it locates the floor in cognitive/architectural framing, the exact rival hypothesis to the structural venue-exclusion (s = h_X) reading; a reviewer will demand the paper distinguish structural from architectural drivers against this."
+      }
+     ]
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar — Too Much Data: Prices and Inefficiencies in Data Markets — American Economic Journal: Microeconomics 14(4)",
+     "year": "2022",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "covering",
+       "why": "Strong covering threat not on the known-art list: formally decomposes why subjects receive depressed prices for data — via the data externality (others' sharing leaks your information), a competing structural explanation of the observer-to-subject gap that must be distinguished from venue-exclusion rent; the correlation externality also implies an adversary-relative, accumulating background-information channel."
+      },
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "The externality mechanism (your privacy erodes as others' data accumulates) is economically the same clock as background-information accumulation, though never cast as a durability/shelf-life term on a subject-owned asset."
+      }
+     ]
+    },
+    {
+     "citation": "IEEE Standards Association (WG chaired by Doc Searls) — IEEE 7012-2025: Standard for Machine Readable Personal Privacy Terms (MyTerms), published January 2026; overview and standard hub",
+     "year": "2025/2026",
+     "url": "https://myterms.info/ieee7012-standards/",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "supporting",
+       "why": "Primary-source confirmation the standard is now PUBLISHED (7012-2025, out January 2026) and self-describes as 'a complete script flip' making the individual first party/proposer — direct support for the proposer-inversion leg; no source found casts it as an SPE share-function permutation, leaving that formalization to WP-14."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "supporting",
+       "why": "The published contract taxonomy (service-delivery-only, AI-training terms) instantiates venue-access terms rather than wages, consistent with the rent re-specification."
+      }
+     ]
+    },
+    {
+     "citation": "Nicholas Vincent, Hanlin Li, et al. — Data Leverage: A Framework for Empowering the Public in its Relationship with Technology Companies — FAccT 2021 (with active 2025-2026 successor work, e.g. Rest of World coverage of Mozilla data collectives)",
+     "year": "2021 (strand active through 2026)",
+     "url": "https://nickmvincent.com/static/data_leverage.pdf",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "The data-leverage framework is the operational arm of data-as-labour (strikes, withholding, conscious contribution); its efficacy analysis implicitly assumes positive marginal product of withheld records — exactly the premise the flat-returns falsifier denies — making it the sharpest live target of CTR-LR-04's self-defeat argument."
+      }
+     ]
+    }
+   ],
+   "scope_note": "Ten WebSearch queries (2026-08-17, US index) plus two arXiv verification fetches, covering: data-as-labour/collective bargaining, data unions/cooperatives/trusts, data monopsony, returns-to-scale of data, data-dividend critiques, DP/privacy pricing markets, reconstruction-attack bounds, WTA/WTP privacy valuation, data depreciation/shelf-life, HNDL/Mosca economics, and IEEE 7012/MyTerms status. Reachable: arXiv, AEA, Wiley (Coyle abstract), Federal Reserve, myterms.info, Doc Searls/ProjectVRM. Not deeply verified: full author lists for four arXiv items where search snippets omitted them (marked medium provenance); the Bergemann-Bonatti Annual Review of Economics 2024 piece was mentioned only in a search snippet without a directly seen URL, so the arXiv 2304.07653 version is cited instead. No dedicated 'data monopsony' economics paper was found for personal data specifically — the monopsony literature (Fisher 2025 gig-economy, Dallas Fed 2025 information-frictions) stays on labor markets; a UN DESA note on monopolistic tendencies of the data economy exists but is policy commentary, not priced theory, and was excluded. Nothing found occupying CTR-LR-02's joint quadruple, CTR-LR-03's single share-function formalization, or CTR-LR-05's substituted reconstruction clock; the two sharpest threats surfaced are Acemoglu et al.'s externality decomposition (rival explanation of the price floor, CTR-LR-02) and Lin/Strulov-Shlain's choice-architecture account of the WTA/WTP floor (rival cognitive explanation, CTR-LR-03)."
+  },
+  {
+   "items": [
+    {
+     "citation": "Jillian Mascelli, Megan Rodden — \"Harvest Now Decrypt Later\": Examining Post-Quantum Cryptography and the Data Privacy Risks for Distributed Ledger Networks — Federal Reserve Board, Finance and Economics Discussion Series 2025-093",
+     "year": "2025",
+     "url": "https://www.federalreserve.gov/econres/feds/harvest-now-decrypt-later-examining-post-quantum-cryptography-and-the-data-privacy-risks-for-distributed-ledger-networks.htm",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Strongest institutional crossover of the HNDL shelf-life clock into an economics/finance venue: argues data privacy of already-recorded ledger transactions remains exposed to a future quantum adversary even after PQC migration — i.e., a retrospective confidentiality horizon on recorded personal/financial data. The clock is still cryptographic (break time), not an information-theoretic reconstruction bound, and there is no subject-owned capital-asset valuation; but it is the closest published move of Mosca-style reasoning toward data-privacy economics."
+      }
+     ]
+    },
+    {
+     "citation": "Anonymous/arXiv authors — On the Practical Feasibility of Harvest-Now, Decrypt-Later Attacks — arXiv:2603.01091",
+     "year": "2026",
+     "url": "https://arxiv.org/html/2603.01091v1",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "supporting",
+       "why": "Empirical grounding for the harvest-clock premise (storage-cheap patient adversaries archiving ciphertext against a future capability). Purely cryptographic clock; no substitution of a reconstruction/QIF clock and no valuation term — supports rather than threatens the substitution claim."
+      }
+     ]
+    },
+    {
+     "citation": "Maryam Farboodi, Laura Veldkamp — A Model of the Data Economy — working paper (Columbia Business School), July 2024 version",
+     "year": "2024",
+     "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/DataGrowth_july2024.pdf",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Gives data-as-capital a formal depreciation rate: information precision decays via Bayes' law / Kalman filtering at a state-dependent rate. This is a rival durability term for data-as-capital — but the clock is statistical obsolescence of predictive relevance, not adversary background-information accumulation, and the asset is firm-owned. Closest mainstream-economics precedent for 'a durability term for data-as-capital'; must be distinguished explicitly."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Prices data as a distinct, dynamically depreciating capital stock — overlaps the 'time-drifting' and 'capital class' components of the quadruple, though with no adversary-relativity, no inalienability, and no rent decomposition."
+      }
+     ]
+    },
+    {
+     "citation": "Ankit Bhutani, Guillermo Ordonez, Laura Veldkamp — The Missing Value of Data — AEA 2026 conference paper",
+     "year": "2026",
+     "url": "https://www.aeaweb.org/conference/2026/program/paper/8EiyZHbi",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Continuation of the Veldkamp data-valuation/depreciation programme into 2026 (national-accounts-facing valuation of data with depreciation). Same distinction applies: depreciation is relevance-decay, not adversary-indexed durability, and ownership sits with the firm. Verified only via the AEA program page — fetch the paper before citing specifics."
+      }
+     ]
+    },
+    {
+     "citation": "Mohan et al. — Enterprise Data Valuation — A Targeted Literature Review — Journal of Economic Surveys",
+     "year": "2026",
+     "url": "https://onlinelibrary.wiley.com/doi/10.1111/joes.12705",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "supporting",
+       "why": "Survey documenting that valuation practice already treats databases as depreciating (data decay from creation) and sometimes appreciating (training-relevance growth) assets. Confirms durability terms exist in enterprise data valuation while none is adversary-indexed or subject-owned — useful as the literature-map foil for the substituted-clock claim."
+      }
+     ]
+    },
+    {
+     "citation": "Micah Altman, Alexandra Wood, David O'Brien, Salil Vadhan, Urs Gasser — Practical approaches to big data privacy over time — International Data Privacy Law 8(1)",
+     "year": "2018",
+     "url": "https://academic.oup.com/idpl/article/8/1/29/4930711",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "adjacent",
+       "why": "Older but a strong covering threat not in the named known-art list: argues explicitly that long-term data activities erode SDL/de-identification protections as auxiliary information accumulates, and that governance should be designed over the data lifetime — i.e., a protection horizon set by background-information accumulation. It stops short of a Mosca-form inequality and does no capital-asset valuation, but the conceptual substitution of 'auxiliary-info accumulation' for the durability clock is anticipated here in governance (not valuation) form."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "supporting",
+       "why": "Frames time-extended privacy risk as the object a governance instrument should assess, adjacent to the Phi/R assessment-unit framing though without the two-level mechanism-property/bound separation."
+      }
+     ]
+    },
+    {
+     "citation": "Kaissis, Hayes, Ziller, Rueckert (et al.) — Bounding data reconstruction attacks with the hypothesis testing interpretation of differential privacy — arXiv:2307.03928",
+     "year": "2023",
+     "url": "https://arxiv.org/abs/2307.03928",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Formalizes Reconstruction Robustness (ReRo) upper bounds on reconstruction-attack success, with the bound depending on the adversary's prior — an existing ADVERSARY-RELATIVE reconstruction bound. It is static, unpriced, and not held as subject-owned capital, so it covers only one leg of the quadruple; WP-14 must cite it as the source of the adversary-relative reconstruction-bound object."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Derives reconstruction bounds FROM the mechanism's DP property — a worked example of the two-level Phi-gates-R structure, though not positioned as a governance/assessment unit."
+      }
+     ]
+    },
+    {
+     "citation": "(authors per arXiv) — Bounding Reconstruction Attack Success of Adversaries Without Data Priors — arXiv:2402.12861",
+     "year": "2024",
+     "url": "https://arxiv.org/html/2402.12861",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Extends ReRo-style bounds to adversaries without informed data priors — sharpens the adversary-relativity axis (bounds differ by adversary knowledge class). Again static and non-economic; strengthens the case that adversary-relative reconstruction bounds are known art while their pricing/drift/inalienability remain open."
+      }
+     ]
+    },
+    {
+     "citation": "(authors per arXiv) — A Unified Framework for Adversary-Aware Differential Privacy Bounds — arXiv:2507.08158",
+     "year": "2025",
+     "url": "https://arxiv.org/pdf/2507.08158",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Recent unification of adversary-aware DP-style bounds — evidence that adversary-relativized privacy quantities are an active 2025 strand. No time drift, no pricing, no capital framing observed in results; verify contents before final citation."
+      },
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "An adversary-parameterized bound framework is a candidate rival for the R-side quantity that Phi gates; check whether it proposes any assessment/governance use."
+      }
+     ]
+    },
+    {
+     "citation": "(authors per arXiv) — Setting the Privacy Budget in Differential Privacy by Bounding Adversaries' Odds of Learning Sensitive Information — arXiv:2607.04004",
+     "year": "2026",
+     "url": "https://arxiv.org/abs/2607.04004",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-01",
+       "threat": "adjacent",
+       "why": "Practitioner-facing procedure that converts bounds on adversary posterior odds into the epsilon setting — i.e., an adversary-calibrated governance instrument for the mechanism parameter. Close to the Phi-as-assessment-unit move but single-level: it collapses the adversary bound into epsilon rather than holding a two-level Phi/R separation with Phi as the audited unit."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Confirms the mainstream frame remains a static adversary-calibrated budget, not a time-drifting priced bound."
+      }
+     ]
+    },
+    {
+     "citation": "(authors per arXiv) — Learning to Attack: Uncovering Privacy Risks in Sequential Data Releases — arXiv:2510.24807",
+     "year": "2025",
+     "url": "https://arxiv.org/html/2510.24807v1",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-05",
+       "threat": "supporting",
+       "why": "Empirical demonstration that adversary inference power grows across sequential data releases — direct evidence for the R(t) drift premise (background-information accumulation as the clock). Attack-side only; no valuation, no inequality, no governance term."
+      },
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Grounds the time-drifting component of R(t) empirically without pricing it."
+      }
+     ]
+    },
+    {
+     "citation": "Dirk Bergemann, Alessandro Bonatti — Data, Competition, and Digital Platforms — American Economic Review 114(8): 2553-2595",
+     "year": "2024",
+     "url": "https://www.aeaweb.org/articles?id=10.1257%2Faer.20230478",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "Models platform rents arising from the platform's position between consumers and sellers (control of match information and on/off-platform access) — the nearest formal economics precedent for decomposing the observer-to-subject value gap as MARKET-POSITION rent rather than super-additive aggregation. Does not price a reconstruction bound and has no drift/inalienability."
+      },
+      {
+       "ctr": "CTR-LR-04",
+       "threat": "adjacent",
+       "why": "Supplies the venue/clearing-position rent object that CTR-LR-04 re-specifies as the redistributive target after the data-as-labour falsifier; the falsifier chain itself (Bajari flat returns defeating the wage remedy) is not made here."
+      }
+     ]
+    },
+    {
+     "citation": "(authors per arXiv) — A Survey on Data Markets — arXiv:2411.07267",
+     "year": "2024",
+     "url": "https://arxiv.org/html/2411.07267",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "supporting",
+       "why": "Recent map of the data-market/privacy-compensation literature confirming the state of the art prices static DP epsilon or data quality, with compensation functions fixed in advance — no time-drifting, adversary-relative bound held as subject-owned durable capital. Useful for the related-work claim that the quadruple is unoccupied."
+      }
+     ]
+    },
+    {
+     "citation": "Lijun Bo et al. — Privacy Data Pricing: A Stackelberg Game Approach — arXiv:2512.18296",
+     "year": "2025",
+     "url": "https://arxiv.org/pdf/2512.18296",
+     "provenance_confidence": "high",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-02",
+       "threat": "adjacent",
+       "why": "2025 addition to the privacy-pricing strand beyond the named known art (Ghosh-Roth lineage): strategic pricing of privacy data in a Stackelberg game. From search context it appears to price a static privacy quantity; verify whether any dynamic/adversary-indexed element appears before final positioning."
+      }
+     ]
+    },
+    {
+     "citation": "Andrey Fradkin et al. — Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing — working paper",
+     "year": "2024",
+     "url": "https://andreyfradkin.com/assets/Privacy_Preferences_and_Dark_Patterns.pdf",
+     "provenance_confidence": "medium",
+     "relevance": [
+      {
+       "ctr": "CTR-LR-03",
+       "threat": "adjacent",
+       "why": "Recent empirical work on consent choice architecture and welfare under take-it-or-leave-it data-sharing designs — the empirical face of the ultimatum-floor phenomenon. It treats the floor behaviourally/architecturally, not as a structural venue-exclusion parameter in a subgame-perfect share function, and contains no proposer-inversion remedy; nothing surfaced in ten searches that unifies WTA/WTP and IEEE 7012 as one SPE share function of proposer identity, so CTR-LR-03 currently faces only adjacent art."
+      }
+     ]
+    }
+   ],
+   "scope_note": "Ten distinct WebSearch queries (US-only index) run 2026-08-17 covering: (1) Mosca inequality / HNDL economics and data shelf life; (2) privacy erosion via auxiliary-information accumulation and longitudinal re-identification; (3) data depreciation/decay in economic valuation; (4) adversary-dependent and time-varying privacy-budget pricing; (5) data-market mechanism design and epsilon pricing 2024-2026; (6) Bergemann-Bonatti data-economics strand; (7) reconstruction-robustness (ReRo) bound literature; (8) quantum threat to long-lived personal/genomic data; (9) Federal Reserve HNDL working paper verification; (10) ultimatum/adhesion-contract structure of consent and WTA/WTP. All URLs were seen directly in search results; no citation is invented. Not fetched/verified page-by-page: paper full texts (notably arXiv:2507.08158, arXiv:2512.18296, and the AEA 2026 Bhutani-Ordonez-Veldkamp program entry) — contents summarized from result snippets and flagged for verification. Fallah-Makhdoumi-Malekian-Ozdaglar (Operations Research 2024, optimal DP data acquisition) was described in a result summary but no resolvable URL appeared in results, so it is excluded per rules despite being a likely CTR-LR-02 adjacent item — worth a targeted follow-up. Key gaps found: no work located that (a) substitutes an information-theoretic reconstruction clock into a Mosca-form inequality, (b) prices a time-drifting adversary-relative reconstruction bound as subject-owned inalienable capital, or (c) unifies the WTA/WTP floor and IEEE 7012 proposer inversion in one SPE share function — the nearest threats are the Veldkamp depreciation line (rival clock: relevance decay), the ReRo line (existing adversary-relative reconstruction bounds, static and unpriced), and Altman et al. 2018 (auxiliary-accumulation horizon in governance form). IEEE 7012/MyTerms-specific economics literature was not separately searched."
+  }
+ ],
+ "refutations": [
+  {
+   "ctr": "CTR-LR-02",
+   "covering_candidates": [
+    {
+     "citation": "Tao Zhang, Quanyan Zhu, \"On the Differential Private Data Market: Endogenous Evolution, Dynamic Pricing, and Incentive Compatibility\", arXiv:2101.04357 (2021)",
+     "url": "https://arxiv.org/abs/2101.04357",
+     "year": "2021",
+     "how_it_covers": "Prices privacy loss that accumulates across periods via DP composition, with dynamically set per-period epsilon and compensation under IC/IR constraints. Defeats the claim's contrast 'time-drifting vs static budget' as a standalone novelty: a priced, time-evolving DP loss already exists. Still adversary-independent epsilon, transactional (alienable), no rent decomposition — quadruple untouched but the drift+pricing pair is anticipated.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Vincent Conitzer, Curtis R. Taylor, Liad Wagman, \"Hide and Seek: Costly Consumer Privacy in a Market with Repeat Purchases\", Marketing Science 31(2):277-292 (2012)",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2160895",
+     "year": "2012",
+     "how_it_covers": "Mainstream-economics precedent where the observer's knowledge of the subject accumulates over time through repeat interactions and the subject pays a price (costly anonymity) to reset it — a priced, observer-knowledge-drifting privacy model. Covers the intuition behind adversary-side accumulation driving privacy value over time, without a reconstruction bound, capital holding, or rent decomposition.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Lei Xu et al., \"Dynamic Privacy Pricing: A Multi-Armed Bandit Approach With Time-Variant Rewards\", IEEE Trans. Information Forensics and Security (2017)",
+     "url": "https://www.researchgate.net/publication/316236814_Dynamic_Privacy_Pricing_A_Multi-Armed_Bandit_Approach_With_Time-Variant_Rewards",
+     "year": "2017",
+     "how_it_covers": "Data-market pricing of privacy where valuations are explicitly time-variant and prices adapt online — prior art for 'dynamic privacy pricing' as a phrase and mechanism; drift is on valuations/rewards, not on an adversary-relative reconstruction bound.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Borja Balle, Giovanni Cherubin, Jamie Hayes, \"Reconstructing Training Data with Informed Adversaries\", IEEE S&P 2022, arXiv:2201.04845",
+     "url": "https://arxiv.org/abs/2201.04845",
+     "year": "2022",
+     "how_it_covers": "Origin of the adversary-parameterized reconstruction-robustness (ReRo) bound: adversary-relative reconstruction bounds as a formal object are known art (extended by Kaissis et al. arXiv:2307.03928 and arXiv:2402.12861). Unpriced, static, no capital/rent — covers the 'adversary-relative reconstruction bound' leg alone.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", AEJ: Microeconomics 14(4) (2022)",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "year": "2022",
+     "how_it_covers": "Formal competing decomposition of the depressed subject-side price via the data/correlation externality — an accumulating, other-subjects-relative information channel. The market-position-rent (venue-exclusion) decomposition must be shown non-reducible to this externality account.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Dirk Bergemann, Alessandro Bonatti, \"Data, Competition, and Digital Platforms\", American Economic Review 114(8):2553-2595 (2024)",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20230478",
+     "year": "2024",
+     "how_it_covers": "Nearest formal precedent for locating the observer-to-subject value gap in the platform's market position (control of match information and on/off-platform access) — the rent-decomposition leg is anticipated in spirit and must be differentiated in mechanism.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Maryam Farboodi, Laura Veldkamp, \"A Model of the Data Economy\", NBER WP 28427 / July 2024 version",
+     "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/DataGrowth_july2024.pdf",
+     "year": "2021-2024",
+     "how_it_covers": "Data as a distinct, durable, dynamically depreciating capital stock with Bayes-law (information-theoretic) drift — covers the 'time-drifting durable data-capital' pair from the observer side; no privacy metric, no inalienability, no rent decomposition.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Imanol Arrieta-Ibarra, Leonard Goff, Diego Jimenez-Hernandez, Jaron Lanier, E. Glen Weyl, \"Should We Treat Data as Labor? Moving Beyond 'Free'\", AEA Papers & Proceedings 108 (2018) (and Posner & Weyl, Radical Markets, 2018)",
+     "url": "https://www.aeaweb.org/conference/2018/preliminary/paper/2Y7N88na",
+     "year": "2018",
+     "how_it_covers": "Prices a subject-attached, non-transferable-in-stock factor (data-as-labor flow with dividends to subjects) — prior art for compensating subjects while the underlying source remains attached to the person, compressing the 'subject-owned, priced, non-alienated' framing; no reconstruction bound, no adversary model, no drift mechanics.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Ignacio N. Cofone, \"Beyond Data Ownership\", 43 Cardozo Law Review (2021)",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3564480",
+     "year": "2021",
+     "how_it_covers": "Maps data rights onto the Calabresi-Melamed property/liability/inalienability grid and argues propertization fails on asymmetric information and inferred-data leakage — the structural-inalienability leg is occupied conceptually; the claim must show why 'inalienable durable capital' evades these objections (alongside Malgieri & Custers, \"Pricing privacy – the right to know the value of your personal data\", CLSR 2018).",
+     "strength": "partial"
+    },
+    {
+     "citation": "Meng Zhang, Ermin Wei, Randall Berry, Jianwei Huang, \"Age-Dependent Differential Privacy\", IEEE Trans. Information Theory / arXiv:2209.01466 (2022)",
+     "url": "https://arxiv.org/abs/2209.01466",
+     "year": "2022",
+     "how_it_covers": "A formally time-indexed privacy guarantee (privacy as an explicit function of data age), alongside the continual-observation strand (Dwork et al. 2010; Cao et al. temporal privacy leakage arXiv:1711.11436; temporally discounted DP arXiv:1908.03995) — 'first time-indexed privacy quantity' is unavailable as a novelty basis; drift direction and absence of pricing are the only distinguishers.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Ruwimal Y. Pathiraja, Jerome P. Reiter, \"Setting the Privacy Budget in Differential Privacy by Bounding Adversaries' Odds of Learning Sensitive Information\", arXiv:2607.04004 (2026)",
+     "url": "https://arxiv.org/abs/2607.04004",
+     "year": "2026",
+     "how_it_covers": "Makes the operative privacy budget adversary-relative (calibrated to a specified adversary's posterior odds) — the adversary-relativity leg of the budget-setting step is now occupied in the DP mainstream; static and unpriced.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Joydeep Chandra, \"CHRONOS: Temporally-Aware Multi-Agent Coordination for Evolving Data Marketplaces\", arXiv:2605.23887 (2026)",
+     "url": "https://arxiv.org/abs/2605.23887",
+     "year": "2026",
+     "how_it_covers": "Joins time-drifting valuation and privacy-budget consumption in one marketplace system — with Bo et al. (arXiv:2512.18296, 2512.21585) shows the DP-markets strand actively adding dynamics and strategic pricing; privacy object remains a DP budget, no inalienability or rent decomposition.",
+     "strength": "partial"
+    }
+   ],
+   "absence_report": "not_found_in_scope(a single work jointly pricing an adversary-relative reconstruction bound that drifts over time via adversary background-information accumulation AND holding it as inalienable subject-owned durable capital AND decomposing the observer-to-subject value gap as market-position/venue-exclusion rent). Searched (8 distinct WebSearch queries beyond the sweep digest, plus targeted WebFetch of arXiv:2101.04357): privacy depreciation/decay pricing with adversary knowledge accumulation; data-as-labor/inalienable data rights pricing (Posner-Weyl lineage); dynamic anonymity pricing under repeat purchases (Conitzer-Taylor-Wagman lineage); adversary-dependent privacy pricing with time-varying risk and reconstruction bounds; information-rent/platform-intermediary decompositions of the personal-data value gap; inalienable-right and human-capital pricing analogies for personal data; continual-observation privacy-loss accumulation with compensation/budget-depletion pricing; and reconstruction-bound-priced data valuation 2025-2026. Every hit covers at most one leg or one pair (drift+pricing: Zhang-Zhu 2021, Xu et al. 2017, CHRONOS 2026; adversary-relativity+reconstruction: Balle et al. 2022 / ReRo line; drift+durable-capital: Farboodi-Veldkamp; inalienability+compensation: data-as-labor, Cofone, Malgieri-Custers; gap decomposition: Bergemann-Bonatti 2024, Acemoglu et al. 2022). Absence of a joint-quadruple hit is a scope-limited search result, not proof of novelty.",
+   "recommendation": "NARROWED"
+  },
+  {
+   "ctr": "CTR-LR-03",
+   "covering_candidates": [
+    {
+     "citation": "Sarah Rajtmajer, Anna Squicciarini et al., \"An Ultimatum Game Model for the Evolution of Privacy in Jointly Managed Content\", Decision and Game Theory for Security (GameSec), Springer LNCS",
+     "url": "https://link.springer.com/chapter/10.1007/978-3-319-68711-7_7",
+     "year": "2017",
+     "how_it_covers": "Prior art applying the ultimatum-game formalism inside the privacy domain (co-managed content negotiation). It does not touch WTA/WTP, venue exclusion, or proposer inversion, but it destroys any implicit claim to being the first ultimatum-game treatment of privacy; the residue must be stated as the specific WTA/WTP-plus-7012 identification, not as 'ultimatum model of privacy'.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Dale O. Stahl, \"Subgame Perfection in Ultimatum Bargaining Trees\" (Stahl–Rubinstein lineage: SPE shares as a function of the bargaining tree / who proposes)",
+     "url": "https://laits.utexas.edu/~stahl/experimental/ult_trees.pdf",
+     "year": "c. 2007",
+     "how_it_covers": "The formal engine of the claim — that the SPE share is a function of proposer identity / move order, and that permuting the proposer carries the responder from the floor to an interior share — is textbook Stahl/Rubinstein content, explicitly analyzed across bargaining-tree structures. The claim cannot own the share-function-of-proposer-identity mathematics; only the privacy-domain mapping is left.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Jiadong Gu, \"Data Trade and Consumer Privacy\", arXiv:2406.12457 (econ.TH)",
+     "url": "https://arxiv.org/abs/2406.12457",
+     "year": "2024 (v3 2026)",
+     "how_it_covers": "Formal result that the data subject's realized privacy/surplus is governed by the intermediary's bargaining power, and that reducing that power protects the subject — a structural market-position determinant of the subject share, covering the 'floor is structural not cognitive' thesis in a formal model, though via screening rather than an SPE share function of proposer identity.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Alireza Fallah, Michael I. Jordan, Ali Makhdoumi, Azarakhsh Malekian, \"On Three-Layer Data Markets\", arXiv:2402.09697",
+     "url": "https://arxiv.org/abs/2402.09697",
+     "year": "2024 (v4 2025)",
+     "how_it_covers": "Equilibrium analysis in which the subject's low share is a consequence of market structure/position (competition benefits buyers, not users) — independent formal cover for the structural (non-preferential) account of the subject's floor, without ultimatum unification or a proposer-inversion remedy.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Frederik Zuiderveen Borgesius et al., \"Tracking Walls, Take-It-Or-Leave-It Choices, the GDPR, and the ePrivacy Regulation\", European Data Protection Law Review (re-hosted arXiv:2510.25339)",
+     "url": "https://arxiv.org/pdf/2510.25339",
+     "year": "2017",
+     "how_it_covers": "Explicit legal-economic treatment of privacy consent as a take-it-or-leave-it offer with no negotiation venue — the qualitative structural reading of the floor (consent not freely given because the subject cannot counter-offer), predating and paralleling the Richards–Hartzog lineage; no SPE model, no share function, no h_X.",
+     "strength": "partial"
+    },
+    {
+     "citation": "\"Multi-Party Data Pricing for Complex Data Trading Markets: A Rubinstein Bargaining Approach\", arXiv:2502.16363",
+     "url": "https://arxiv.org/html/2502.16363",
+     "year": "2025",
+     "how_it_covers": "Applies alternating-offers (Rubinstein SPE) bargaining shares to data-market pricing — prior art for SPE share functions in data trade, though the data subject is not modeled as the venue-excluded party and there is no WTA/WTP or IEEE 7012 mapping.",
+     "strength": "weak"
+    },
+    {
+     "citation": "Lijun Bo & Weiqiang Chang, \"Privacy Data Pricing: A Stackelberg Game Approach\", arXiv:2512.18296",
+     "url": "https://arxiv.org/abs/2512.18296",
+     "year": "2025",
+     "how_it_covers": "Formalizes leader/proposer identity in a privacy-pricing game — closest formal object to proposer-identity parameterization; my role-reversal search confirmed no variant in this lineage makes the subject the leader, so the permutation leg remains open.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Tesary Lin & Avner Strulov-Shlain, \"Choice Architecture, Privacy Valuations, and Selection Bias in Consumer Data\"",
+     "url": "https://arxiv.org/pdf/2308.13496",
+     "year": "2023 (rev. 2024)",
+     "how_it_covers": "Strongest empirical statement of the rival cognitive/architectural account of the measured WTA/WTP floor; it covers the empirical-floor leg of the claim and forces the structural (s = h_X) reading to carry an explicit identification argument distinguishing venue exclusion from elicitation architecture.",
+     "strength": "partial"
+    },
+    {
+     "citation": "IEEE Standards Association, \"IEEE 7012-2025 — Standard for Machine Readable Personal Privacy Terms\" (published January 2026)",
+     "url": "https://ieeexplore.ieee.org/document/11360682",
+     "year": "2026",
+     "how_it_covers": "The proposer-inversion instrument exists as a ratified artifact self-described as making the individual first party; covers the remedy leg as engineering/advocacy fact, with no economic model of why the inversion moves the share — leaving only the formalization open.",
+     "strength": "partial"
+    }
+   ],
+   "absence_report": "not_found_in_scope(any published work casting the empirically measured privacy WTA/WTP floor and the IEEE 7012/MyTerms proposer inversion as two evaluations of ONE preference-free subgame-perfect-equilibrium share function of proposer identity, or writing the subject share as a structural venue-exclusion parameter s = h_X). Searched 2026-08-17, nine distinct web queries beyond the sweep digest: (1) ultimatum game + privacy WTA/WTP bargaining; (2) take-it-or-leave-it privacy consent + subgame perfect + data market subject share; (3) IEEE 7012/MyTerms + economics/game theory/bargaining-power/first-party; (4) privacy paradox WTA/WTP gap + structural bargaining-power (vs preference) explanations; (5) Rubinstein bargaining + personal data + outside option + proposer role; (6) data subjects as ultimatum responders / platform as proposer formal models; (7) ultimatum game analogies to privacy policies / adhesion contracts; (8) MyTerms/IEEE P7012 + ultimatum/bargaining/equilibrium (zero hits linking the standard to any game-theoretic analysis); (9) Stackelberg privacy pricing with user/consumer as leader (role reversal) — none found; the entire Stackelberg data-pricing lineage keeps the platform/collector as leader. Also searched missing-market/Coase structural accounts of the privacy valuation gap and consent-as-ultimatum law-review framings. Absence is reported as absence in this scope, not as proof of novelty.",
+   "recommendation": "NARROWED"
+  },
+  {
+   "ctr": "CTR-LR-04",
+   "covering_candidates": [
+    {
+     "citation": "Siavash Mohades & Maria Savona, \"Data Rent and Surplus Value in the Digital Economy\", LUISS LEAP / Maastricht / Sussex working paper (early-stage draft, do not cite), January 19, 2026",
+     "url": "https://leap.luiss.it/wp-content/uploads/2026/02/mohades_paper.pdf",
+     "year": "2026",
+     "how_it_covers": "Directly occupies the claim's re-specification leg: engages Posner-Weyl's data-as-labor by name, formally distinguishes differential vs absolute DATA RENT (adapted from Marx's ground rent) arising from monopolistic control of access, and states explicitly that \"the 'marginal product' that neoclassical theory attributes to data owners reflects not their productive contribution but their monopoly position\" and that \"data rent is not a payment for data's 'marginal product'\". That is the claim's conclusion — redistributive object = position rent, not a wage — published before WP-14. It reaches it via Marxian rent theory rather than the Bajari flat-returns falsifier, and its remedy is data sharing/commons rather than subject-side venue-access clearing position; no reconstruction bound or IEEE 7012.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Nicholas Vincent, Brent Hecht, Shilad Sen, \"'Data Strikes': Evaluating the Effectiveness of a New Form of Collective Action Against Technology Companies\", The Web Conference (WWW) 2019",
+     "url": "https://dl.acm.org/doi/10.1145/3308558.3313742",
+     "year": "2019",
+     "how_it_covers": "The closest prior art to RUNNING the falsifier: an internal, empirical application of diminishing returns-to-data to the data-labour lever itself, simulating data strikes on recommender systems and showing small withdrawals have limited effect precisely because marginal records add little. Same year and same empirical substrate as Bajari 2019. It stops short of the claim's conclusion — it concludes strikes need moderate scale (patching the programme) rather than declaring the wage remedy self-defeating and re-specifying the object as rent. Companion CDC paper (CSCW 2021, dl.acm.org/doi/10.1145/3449177) quantifies the same diminishing-returns constraint.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Salome Viljoen, \"A Relational Theory of Data Governance\", Yale Law Journal 131(2) (2021); popular version \"Data as Property?\", Phenomenal World (2020)",
+     "url": "https://yalelawjournal.org/feature/a-relational-theory-of-data-governance",
+     "year": "2021",
+     "how_it_covers": "Structurally isomorphic falsifier-plus-re-specification: argues the propertarian/data-as-labor \"market rate for personal data\" remedy is mis-specified because data's value is population-level and not reducible to individual contributions, and re-specifies the redistributive/governance object away from individual wages. Mechanism differs (relationality/sociality, not flat returns-to-scale evidence) and the landing differs (democratic collective governance, not venue-access rent), but the argumentative move — internal defeat of the wage frame forcing re-specification of the object — is prior art.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asu Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", American Economic Journal: Microeconomics 14(4): 218-256 (2022)",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "year": "2022",
+     "how_it_covers": "Formalizes why the price of an individual's marginal record is structurally depressed toward zero (data externalities / substitutability across correlated users), implying no bargaining-toward-marginal-product remedy can deliver meaningful individual compensation — the economic core of the self-defeat, derived from substitutability rather than flat returns-to-scale, with remedies in market regulation/shutdown rather than venue-rent redistribution.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Tim O'Reilly, Ilan Strauss, Mariana Mazzucato, \"Algorithmic attention rents: A theory of digital platform market power\", Data & Policy 6 (2024)",
+     "url": "https://www.cambridge.org/core/journals/data-and-policy/article/algorithmic-attention-rents-a-theory-of-digital-platform-market-power/D85FE41F6CF99FC57DDFB2B2B63491C5",
+     "year": "2024",
+     "how_it_covers": "Prior art for reading platform data value as RENT extracted from control of the allocation/matching venue (attention allocation position) rather than from productive contribution — the same clearing-position-rent object the claim re-specifies toward, without any engagement with the data-as-labour wage remedy or the flat-returns falsifier.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Jathan Sadowski, \"When data is capital: Datafication, accumulation, and extraction\", Big Data & Society 6(1) (2019)",
+     "url": "https://journals.sagepub.com/doi/10.1177/2053951718820549",
+     "year": "2019",
+     "how_it_covers": "Early explicit rejection of the labour/compensation framing in favour of data-as-capital and rent/extraction categories — establishing that the redistributive object in the data economy is appropriation via control, not underpaid labour. Qualitative; no returns-to-scale mechanism, no venue-clearing specificity.",
+     "strength": "weak"
+    },
+    {
+     "citation": "Bennett Cyphers & Adam Schwartz, \"Why Getting Paid for Your Data Is a Bad Deal\", Electronic Frontier Foundation (2020)",
+     "url": "https://www.eff.org/deeplinks/2020/10/why-getting-paid-your-data-bad-deal",
+     "year": "2020",
+     "how_it_covers": "Popular-form internal critique that data-dividend/wage schemes deliver near-zero individual payouts (value exists only in aggregation) and entrench the platform's position — the intuitive version of the self-defeat, without the Bajari evidence chain or a rent re-specification.",
+     "strength": "weak"
+    }
+   ],
+   "absence_report": "not_found_in_scope(9 web searches + full-text read of Mohades-Savona 2026 across: [\\\"data as labor\\\" critique diminishing returns/marginal value wage self-defeating], [Bajari returns-to-scale + data-as-labor/data-dividend critique], [data dividend criticism marginal value near zero], [Acemoglu Too Much Data substitutability + data unions], [Viljoen relational theory vs propertarian compensation], [Sadowski data-as-capital rent], [Savona data rents redistribution vs wages], [Vincent-Hecht data strikes diminishing returns], [Posner-Weyl marginal product critique], [self-defeating data-dividend + rent-instead phrasing]): no work was found that (a) deploys Bajari et al. 2019 flat returns-to-scale evidence AS a directed falsifier concluding the data-as-labour wage remedy self-defeats, AND (b) re-specifies the redistributive object as venue-access/clearing-position rent in the same chain, AND (c) does either inside a reconstruction-bound or IEEE 7012 frame. Absence of this composition is reported as search-scope absence, not as proof of novelty.",
+   "recommendation": "NARROWED"
+  },
+  {
+   "ctr": "CTR-LR-01",
+   "covering_candidates": [
+    {
+     "citation": "Kobbi Nissim, Aaron Bembenek, Alexandra Wood, Mark Bun, Marco Gaboardi, Urs Gasser, David R. O'Brien, Salil Vadhan, Thomas Steinke — Bridging the Gap between Computer Science and Legal Approaches to Privacy — Harvard Journal of Law & Technology 31(2)",
+     "url": "https://www.semanticscholar.org/paper/Bridging-the-Gap-between-Computer-Science-and-Legal-Nissim-Bembenek/22067befe017dc5760be667bf0ba9cf48b2ab650",
+     "year": "2018",
+     "how_it_covers": "A governance/compliance-assessment methodology whose two steps are exactly the two-level separation: (1) formalize the legal requirement as a per-subject adversary-inference bound (the R-level object), (2) prove the mechanism-level guarantee (DP, the Phi-level object) implies it. The assessment verdict (FERPA compliance) is conducted over Phi alone while the per-subject bound is held distinct as the gated requirement — a single work doing the two-level Phi/R separation AS the unit of a governance instrument.",
+     "strength": "strong"
+    },
+    {
+     "citation": "John M. Abowd, Ian M. Schmutte — An Economic Analysis of Privacy Protection and Statistical Accuracy as Social Choices — American Economic Review 109(1); arXiv:1808.06303",
+     "url": "https://arxiv.org/abs/1808.06303",
+     "year": "2019",
+     "how_it_covers": "A valuation instrument (marginal-cost-equals-marginal-benefit social choice) whose single choice unit is epsilon, the mechanism property, with epsilon's inferential-disclosure semantics (bound on adversary posterior odds about an individual) as the per-subject quantity it gates. Covers the 'Phi as the single unit of a valuation instrument' branch directly, in an economics venue with governance intent.",
+     "strength": "strong"
+    },
+    {
+     "citation": "NIST — Guidelines for Evaluating Differential Privacy Guarantees — NIST SP 800-226 (final)",
+     "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-226.pdf",
+     "year": "2025",
+     "how_it_covers": "An institutional, governance-facing assessment instrument whose unit of evaluation is the mechanism guarantee itself (including how to interpret what it bounds for individuals and how implementations can be independently checked) — the closest standards-body embodiment of 'assess Phi, not per-subject outcomes'.",
+     "strength": "strong"
+    },
+    {
+     "citation": "U.S. Census Bureau (Abowd et al.) — The modernization of statistical disclosure limitation at the U.S. Census Bureau (2020 DAS: DSEP committee sets the privacy-loss budget in response to the reconstruction attack)",
+     "url": "https://www.census.gov/content/dam/Census/library/working-papers/2020/adrm/The%20modernization%20of%20statistical%20disclosure%20limitation%20at%20the%20U.S.%20Census%20Bureau.pdf",
+     "year": "2020",
+     "how_it_covers": "A deployed governance process in which a per-subject reconstruction threat (the 2010 census reconstruction attack — the R-level event) is governed by deliberating and setting the mechanism property epsilon (the Phi-level unit) via a policy committee (DSEP/DRB). The assessment/decision unit is Phi; reconstruction risk is what it gates. Institutional practice of the exact composition, minus the word 'valuation'.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Cynthia Dwork, Nitin Kohli, Deirdre Mulligan — Differential Privacy in Practice: Expose your Epsilons! — Journal of Privacy and Confidentiality 9(2); plus the live OpenDP Differential Privacy Deployments Registry and NIST IR registry-governance report (2025)",
+     "url": "https://journalprivacyconfidentiality.org/index.php/jpc/article/view/689",
+     "year": "2019",
+     "how_it_covers": "Positions the mechanism property epsilon as the public, comparable, oversight-enabling governance unit across deployments (the Epsilon Registry), explicitly for accountability pressure — Phi as the single governance-facing assessment unit, now institutionally realized at registry.opendp.org.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Arpita Ghosh, Aaron Roth — Selling Privacy at Auction — EC 2011 / Games and Economic Behavior; arXiv:1011.1375",
+     "url": "https://arxiv.org/abs/1011.1375",
+     "year": "2011",
+     "how_it_covers": "A valuation/market instrument in which epsilon (the mechanism property) is literally the priced and procured unit, chosen from individuals' privacy valuations — covering 'Phi as the single unit of a valuation instrument', though the gated per-subject quantity is generic privacy loss rather than a named reconstruction bound.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Justin Hsu, Marco Gaboardi, Andreas Haeberlen, Sanjeev Khanna, Arjun Narayan, Benjamin C. Pierce, Aaron Roth — Differential Privacy: An Economic Method for Choosing Epsilon — CSF 2014; arXiv:1402.3329",
+     "url": "https://arxiv.org/abs/1402.3329",
+     "year": "2014",
+     "how_it_covers": "An economic instrument that converts per-participant expected harm (an adversary-relative, per-subject quantity) into the choice of the mechanism parameter epsilon — the Phi/R direction of travel embedded in a valuation procedure, though it collapses the two levels into a calibration rather than holding Phi as an audited standing unit.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Georgios Kaissis, Jamie Hayes, Alexander Ziller, Daniel Rueckert — Bounding data reconstruction attacks with the hypothesis testing interpretation of differential privacy — arXiv:2307.03928 (with Riess et al. arXiv:2402.12861 and Balle-Cherubin-Hayes IEEE S&P 2022 as siblings)",
+     "url": "https://arxiv.org/abs/2307.03928",
+     "year": "2023",
+     "how_it_covers": "Supplies the formal two-level structure the residue relies on: a mechanism-level DP property that provably gates a per-subject/per-record reconstruction bound. Not a governance or valuation instrument, but it removes any novelty in the Phi-gates-R separation itself.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Matthew Jagielski et al. lineage / (authors per arXiv) — A General Framework for Auditing Differentially Private Machine Learning — NeurIPS 2022; arXiv:2210.08643",
+     "url": "https://arxiv.org/pdf/2210.08643",
+     "year": "2022",
+     "how_it_covers": "The DP-auditing literature makes the mechanism property Phi empirically and independently verifiable — covering the 'independently verifiable' qualifier of the residue's Phi.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Ruwimal Y. Pathiraja, Jerome P. Reiter — Setting the Privacy Budget in Differential Privacy by Bounding Adversaries' Odds of Learning Sensitive Information — arXiv:2607.04004",
+     "url": "https://arxiv.org/abs/2607.04004",
+     "year": "2026",
+     "how_it_covers": "Practitioner-facing procedure translating an adversary-posterior bound (R-level) into the epsilon setting (Phi-level) — a governance-usable two-step bridge, though it collapses the levels into a calibration rather than keeping Phi as the standing audited unit.",
+     "strength": "partial"
+    }
+   ],
+   "absence_report": "not_found_in_scope(a single published instrument that simultaneously (i) names a time-drifting, adversary-relative per-subject RECONSTRUCTION bound R(t) as the gated quantity, (ii) holds an independently auditable mechanism property Phi two-level-distinct from it as the standing assessed unit, and (iii) is framed as a privacy VALUATION/pricing instrument for data-as-capital. Searched: economics-of-epsilon literature (Abowd-Schmutte AER 2019, Hsu et al. CSF 2014, Ghosh-Roth EC 2011, federated data-trading pricing), epsilon-governance/registry literature (Dwork-Kohli-Mulligan 2019, OpenDP Deployments Registry, NIST IR 2025), standards/PIA instruments (NIST SP 800-226, CSRC PIA definitions, PIA tool guides), legal-compliance formalizations (Nissim et al. Harvard JOLT 2018, Is Privacy Privacy? 2018), Census 2020 DAS governance and reconstruction-attack record, DP auditing frameworks (arXiv:2210.08643, 2506.16666, 2509.08704, 2602.17454), and the sweep-digest reconstruction-bound corpus (Balle 2022, Kaissis 2023, Riess 2024, Biswas 2024/2025, Saeidian 2024, Pathiraja-Reiter 2026). This absence is reported per D2 rules and is NOT evidence of novelty — each conjunct is individually covered and two conjuncts co-occur in single works (Nissim 2018: (ii)+(a PIA-analog); Abowd-Schmutte/Census: (iii)-adjacent+(reconstruction-motivated Phi governance)).)",
+   "recommendation": "COVERED"
+  },
+  {
+   "ctr": "CTR-LR-05",
+   "covering_candidates": [
+    {
+     "citation": "Micah Altman, Alexandra Wood, David O'Brien, Salil Vadhan, Urs Gasser, \"Practical approaches to big data privacy over time\", International Data Privacy Law 8(1)",
+     "url": "https://academic.oup.com/idpl/article/8/1/29/4930711",
+     "year": "2018",
+     "how_it_covers": "Anticipates the conceptual half of the substitution: protection afforded by SDL/de-identification has a finite horizon set by accumulating auxiliary (background) information, and governance should be designed over the data lifetime. This is 'background-information accumulation as the durability clock' in governance form — it lacks the Mosca-form inequality and any capital-asset valuation, but it strips the claim of 'first to make auxiliary-info accumulation the shelf-life clock'.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Luc Rocher, Julien M. Hendrickx, Yves-Alexandre de Montjoye, \"Estimating the success of re-identifications in incomplete datasets using generative models\", Nature Communications 10:3069",
+     "url": "https://www.nature.com/articles/s41467-019-10933-3",
+     "year": "2019",
+     "how_it_covers": "Formal, quantitative model of re-identification success showing anonymization is not future-proof as datasets accumulate — an operationalized, adversary-relative reconstruction-risk quantity that grows with available background data. Attack-side and governance-facing; no inequality, no valuation, but it is the standard citation a reviewer would raise against 'a finite, adversary-relative, drifting reconstruction bound' being new.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Chao Li, Daniel Yang Li, Gerome Miklau, Dan Suciu, \"A Theory of Pricing Private Data\", ICDT 2013 / arXiv:1208.5258 (with Ghosh-Roth 2011 auction lineage)",
+     "url": "https://arxiv.org/pdf/1208.5258",
+     "year": "2012",
+     "how_it_covers": "Covers the subject-owned valuation half in static form: data subjects are compensated in proportion to an information-theoretic privacy-loss quantity (differential-privacy leakage) — i.e., an information-theoretic bound already prices subject-owned data. No time clock and no Mosca-form inequality, but it blocks any reading of the claim as 'first to price subject-owned data by an information-theoretic bound'.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Justin Hsu, Marco Gaboardi, Andreas Haeberlen, Sanjeev Khanna, Arjun Narayan, Benjamin C. Pierce, Aaron Roth, \"Differential Privacy: An Economic Method for Choosing Epsilon\", IEEE CSF 2014 / arXiv:1402.3329",
+     "url": "https://arxiv.org/pdf/1402.3329",
+     "year": "2014",
+     "how_it_covers": "Bridges an information-theoretic privacy bound directly to economic compensation owed to data subjects for the risk they bear — the bound-to-subject-economics bridge, static in time. Reinforces that only the temporal/inequality composition, not the economics-of-the-bound, is residually open.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Lin William Cong, Danxia Xie, Longtian Zhang, \"Knowledge Accumulation, Privacy, and Growth in a Data Economy\", Management Science 68(9) / arXiv:2109.10028",
+     "url": "https://arxiv.org/abs/2109.10028",
+     "year": "2022",
+     "how_it_covers": "Consumer-generated (subject-side) data enters a capital/knowledge-accumulation growth model with an explicit privacy-infringement cost that evolves dynamically — subject-provided data as a dynamic factor with a time-path privacy cost. The privacy cost is a preference/externality term, not a reconstruction bound, and there is no shelf-life inequality; but it occupies the 'subject-side data capital with dynamic privacy cost' ground.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Laura Veldkamp, \"Valuing Data as an Asset\", Review of Finance 27(5); Maryam Farboodi, Laura Veldkamp, \"A Model of the Data Economy\" (NBER WP 28427; July 2024 version)",
+     "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/DataGrowth_july2024.pdf",
+     "year": "2021-2024",
+     "how_it_covers": "Covers the broader claim shape as the digest already flags: data as long-lived, depreciating capital with a formal, information-dynamics-driven depreciation rate (Bayes/Kalman precision decay). Firm-owned and obsolescence-clocked, not adversary-clocked or subject-owned — but it is the strongest covering art for 'a durability term for data-as-capital' as such.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", AEJ: Microeconomics 14(4)",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "year": "2022",
+     "how_it_covers": "The data externality — the informativeness of others' accumulated data erodes an individual's privacy and depresses the price of their data — is economically the same mechanism as 'background-information accumulation degrades the subject's asset'. Never cast as a shelf-life inequality or durability term, but it pre-occupies the economic content of adversary-side accumulation lowering subject-side data value.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Meng Zhang, Ermin Wei, Randall Berry, Jianwei Huang, \"Age-Dependent Differential Privacy\", IEEE Trans. Information Theory / arXiv:2209.01466",
+     "url": "https://arxiv.org/abs/2209.01466",
+     "year": "2022",
+     "how_it_covers": "A formally time-indexed information-theoretic privacy quantity (privacy risk as a function of data age) — the same mathematical object class as the substituted clock, applied to utility trade-offs rather than asset valuation and without a Mosca-form inequality.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Jillian Mascelli, Megan Rodden, \"Harvest Now Decrypt Later: Examining Post-Quantum Cryptography and the Data Privacy Risks for Distributed Ledger Networks\", Federal Reserve FEDS WP 2025-093",
+     "url": "https://www.federalreserve.gov/econres/feds/files/2025093pap.pdf",
+     "year": "2025",
+     "how_it_covers": "Closest published move of Mosca-style shelf-life reasoning into data-privacy economics (retrospective confidentiality horizon on recorded personal/financial data at an economics institution). Clock remains cryptographic break-time; no reconstruction-bound substitution, no subject-owned asset valuation.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Quantum Security Defence, \"Data Lifetime Encryption Decision Framework: Mosca Inequality Applied\" (practitioner framework)",
+     "url": "https://www.quantumsecuritydefence.com/insights/data-lifetime-encryption-decision-frame/",
+     "year": "2024-2025",
+     "how_it_covers": "Practitioner evidence that the Mosca inequality is already generalized into a data-lifetime decision framework over data classes — the inequality is treated as a portable template, weakening any claim that re-templating it is itself inventive; the clock stays cryptographic.",
+     "strength": "weak"
+    }
+   ],
+   "absence_report": "not_found_in_scope(8 WebSearch sweeps, 2026-08-17: (1) 'shelf life' + reconstruction attack + auxiliary information + time-horizon inequality; (2) Mosca-inequality analog for de-identification/anonymization lifetime under auxiliary-information accumulation; (3) privacy half-life / re-identification value-decay economics; (4) Dinur-Nissim reconstruction bound + economic valuation/pricing of personal data over time; (5) 'harvest now, re-identify/deanonymize later' for anonymized personal data; (6) 'privacy depreciation' as an economic asset model driven by adversary information accumulation; (7) Mosca theorem cross-cited with differential privacy/reconstruction/re-identification; (8) subject-owned inalienable data-as-capital valuation with adversary-indexed durability. No source was found that (a) writes a Mosca-FORM inequality (protection-lifetime + migration/exposure time vs clock) whose clock is an information-theoretic reconstruction bound (Dinur-Nissim/QIF) rather than cryptographic break-time, NOR (b) carries such a substituted clock into a valuation formula for a subject-owned capital asset. Absence of found art is reported as search outcome only, not as proof of novelty.)",
+   "recommendation": "NARROWED"
+  }
+ ],
+ "judge": {
+  "verdicts": [
+   {
+    "ctr": "CTR-LR-02",
+    "verdict": "NARROWED",
+    "residual_restatement": "Only the four-way JOINT composition survives: a PRICED R(t) that is simultaneously (i) adversary-relative in the reconstruction-robustness sense — the object itself belongs to Balle-Cherubin-Hayes 2022 / Kaissis 2023 / Riess 2024 and must be cited as source; (ii) drifting via adversary background-information accumulation, explicitly distinguished from DP-composition depletion (Zhang-Zhu 2021), valuation/reward drift (Xu 2017, CHRONOS 2026, Bo mean-field 2025), and aging-protects direction (Age-Dependent DP 2022); (iii) held as structurally inalienable subject-owned durable capital, answering Cofone's Calabresi-Melamed objections to propertization; and (iv) with the observer-to-subject gap decomposed as venue-exclusion/market-position rent shown NON-REDUCIBLE to Acemoglu et al.'s data-externality account and distinct in mechanism from Bergemann-Bonatti 2024's platform-position rent. No per-leg or per-pair first-ness (drift+pricing, adversary-relative budget, drifting durable capital, inalienable compensation) may be claimed anywhere in the paper.",
+    "confidence_label": "moderate-high",
+    "confidence_pct": 75,
+    "basis": "Five independent search scopes (~30 distinct queries) each found single-leg and pair coverage but no joint-quadruple hit; refuter fetched the closest pair-threat (arXiv:2101.04357) directly. Coverage of the legs is CONFIRMED by resolvable art (Zhang-Zhu, Balle, Farboodi-Veldkamp, Cofone, Acemoglu, Bergemann-Bonatti, Pathiraja-Reiter); absence of the joint composition is scope-limited, and two formal rival decompositions of the same gap (externality; platform rent) impose a real non-reducibility burden that keeps this below SURVIVES."
+   },
+   {
+    "ctr": "CTR-LR-03",
+    "verdict": "NARROWED",
+    "residual_restatement": "Survives only as the specific identification: the measured WTA/WTP floor and the IEEE 7012-2025 proposer inversion as TWO EVALUATIONS OF ONE preference-free subgame-perfect share function of proposer identity, with the subject share written as an explicit venue-exclusion parameter s = h_X. Stripped: any claim to first ultimatum-game treatment of privacy (Rajtmajer-Squicciarini 2017); the SPE-share-of-proposer mathematics (Stahl-Rubinstein, known art); and the structural-not-cognitive floor thesis AS SUCH, which is formally occupied by Gu 2024 (intermediary bargaining power) and Fallah et al. 2024 (competition benefits buyers not users) and qualitatively by Zuiderveen Borgesius 2017. Added burden: an explicit identification argument separating venue exclusion from the choice-architecture/reference-dependence rival (Lin & Strulov-Shlain 2023; arXiv:2607.27239; Fradkin), which explains large floors with no market-structure parameter. The 7012-as-permutation formalization itself remains unclaimed — no indexed work links MyTerms/7012 to any game-theoretic analysis, and no Stackelberg privacy-pricing variant makes the subject the leader.",
+    "confidence_label": "moderate-high",
+    "confidence_pct": 75,
+    "basis": "Two refuter/scout scopes ran 9-12 targeted queries including direct 7012+game-theory and role-reversal Stackelberg searches with zero hits (a meaningful dog-that-didn't-bark given the standard published January 2026); but the structural-floor component is independently formalized (Gu, Fallah) and the empirical floor has a strong live cognitive rival, so the residue is genuinely smaller than stated. Strongest surviving residue of the five."
+   },
+   {
+    "ctr": "CTR-LR-04",
+    "verdict": "NARROWED",
+    "residual_restatement": "The DESTINATION is occupied: 'the redistributive object is position rent, not a wage' is stated nearly verbatim in Mohades-Savona 2026 (marginal product attributed to data owners reflects monopoly position, via Marxian rent theory; early-stage draft — track to publication before relying on priority), and is convergently reached by Sadowski 2019, O'Reilly-Strauss-Mazzucato 2024 (attention rents), and Viljoen 2021, who runs the structurally isomorphic internal-defeat-then-respecify move. Acemoglu 2022 supplies a formal near-zero-marginal-price result and Vincent-Hecht-Sen 2019 ran the diminishing-returns substrate against data strikes but patched the programme. What survives: the specific DIRECTED falsifier route — Bajari et al. 2019 flat returns-to-scale deployed as an internal empirical defeat of the marginal-product wage logic, concluding self-defeat rather than patching — landing on venue-access/clearing-position rent INSIDE a reconstruction-bound / IEEE 7012 frame. The paper must position this route against three convergent-but-distinct falsifiers (Mohades-Savona: Marxian rent; Acemoglu: substitutability; Viljoen: relationality) and against the competing liability re-specification (Zhang-Zhu 2025).",
+    "confidence_label": "moderate",
+    "confidence_pct": 68,
+    "basis": "Refuter did a full-text read of the strong candidate plus 9 targeted queries; the conclusion-space is demonstrably crowded (one strong + four partial candidates), leaving only the argument-route composition. Confidence is moderate rather than high because Mohades-Savona is an unpublished draft whose final form could expand to cover more of the route, and because route-versus-destination distinctions are the kind reviewers discount."
+   },
+   {
+    "ctr": "CTR-LR-01",
+    "verdict": "COVERED",
+    "residual_restatement": "As stated — a governance-facing, independently verifiable mechanism property Phi, held two-level-distinct from the per-subject bound R it gates, as the SINGLE UNIT of a privacy assessment/valuation instrument — the move is anticipated: Nissim et al. 2018 conduct a compliance assessment over the mechanism guarantee while holding a per-subject adversary-inference bound as the gated requirement; Abowd-Schmutte 2019 make epsilon the single unit of a social-choice valuation instrument; Census DSEP practice governs a per-subject RECONSTRUCTION threat by deliberating and setting epsilon; NIST SP 800-226 and the Epsilon Registry (Dwork-Kohli-Mulligan 2019, OpenDP) institutionalize the mechanism property as the assessed, comparable unit; the DP-auditing literature (arXiv:2210.08643 line) supplies the independent-verifiability qualifier; Kaissis 2023 / Biswas 2024-2025 supply the Phi-gates-R formal bridge. What survives is not an independent claim: only the instantiation where R is WP-14's time-drifting adversary-relative R(t) and the instrument is a subject-side capital VALUATION — that sliver folds into CTR-LR-02/CTR-LR-05 and should be merged there, with CTR-LR-01 retired as a separate novelty claim and rewritten as positioning/related-work.",
+    "confidence_label": "high",
+    "confidence_pct": 82,
+    "basis": "Five strong candidates from independent institutional strands (legal formalization, economics, deployed census governance, standards, registry) jointly span the claimed composition, including reconstruction as the gated per-subject threat (Census 2020 DAS); the refuter itself recommended COVERED and its absence report concedes conjunct pairs co-occur in single works. The only uncovered triple is exactly the LR-02/LR-05 subject-matter, not the Phi/R assessment-unit move."
+   },
+   {
+    "ctr": "CTR-LR-05",
+    "verdict": "NARROWED",
+    "residual_restatement": "Stripped: 'first to make auxiliary/background-information accumulation the shelf-life clock' (Altman et al. 2018 do it in governance form; Rocher et al. 2019 quantitatively; Acemoglu 2022 economically via the correlation externality); 'a durability/depreciation term for data-as-capital' (Veldkamp 2023; Farboodi-Veldkamp; NBER w35266 endogenous depreciation; Coyle-Manley 2024; Valavi 2022); and 'Mosca-style shelf-life reasoning in economics venues' (Mascelli-Rodden FEDS 2025-093; arXiv:2603.01091). Survives as the two-part composition: (a) writing a Mosca-FORM inequality whose clock is an information-theoretic reconstruction bound (Dinur-Nissim / QIF / Bayes-capacity sense, e.g. arXiv:2406.13569) in place of cryptographic break-time, AND (b) carrying that substituted clock into a SUBJECT-OWNED capital-asset valuation — with the clock explicitly distinguished from Veldkamp-style relevance-decay on both axes (adversary-side accumulation vs statistical obsolescence; subject-owned vs firm-owned asset).",
+    "confidence_label": "moderate",
+    "confidence_pct": 72,
+    "basis": "Sixteen distinct queries across two scopes found the ingredient (QIF reconstruction bounds), the template (Mosca as portable practitioner framework), and the destination class (data-capital depreciation) separately but never the substitution or its valuation carriage; however Altman 2018 pre-empts the conceptual half and the practitioner generalization of Mosca weakens the inventiveness of re-templating, so only the formal composition survives. One flagged unresolved item (ResearchGate-only time-dependent HNDL framework) needs manual follow-up before submission."
+   }
+  ],
+  "headline": "1 COVERED, 4 NARROWED, 0 SURVIVES: LR-01's Phi/R assessment-unit move is anticipated outright (Nissim 2018, Abowd-Schmutte 2019, Census DSEP, NIST SP 800-226, Epsilon Registry) and should be retired into LR-02/LR-05; every other residue loses its per-leg firsts to named art and survives only as a joint composition — the priced adversary-relative drifting-capital quadruple (LR-02), the WTA-WTP/IEEE-7012 single-share-function identification (LR-03, strongest residue: no game-theoretic treatment of MyTerms exists anywhere), the Bajari-routed self-defeat falsifier landing on venue rent (LR-04, hardest-narrowed: Mohades-Savona 2026 already states the rent-not-wage conclusion by another route), and the Mosca-form reconstruction-clock substitution carried into subject-owned valuation (LR-05).",
+  "bibliography_additions": [
+   {
+    "citation": "Tao Zhang, Quanyan Zhu, \"On the Differential Private Data Market: Endogenous Evolution, Dynamic Pricing, and Incentive Compatibility\", arXiv:2101.04357",
+    "url": "https://arxiv.org/abs/2101.04357",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Vincent Conitzer, Curtis R. Taylor, Liad Wagman, \"Hide and Seek: Costly Consumer Privacy in a Market with Repeat Purchases\", Marketing Science 31(2):277-292",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2160895",
+    "year": "2012",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Lei Xu et al., \"Dynamic Privacy Pricing: A Multi-Armed Bandit Approach With Time-Variant Rewards\", IEEE Trans. Information Forensics and Security",
+    "url": "https://www.researchgate.net/publication/316236814_Dynamic_Privacy_Pricing_A_Multi-Armed_Bandit_Approach_With_Time-Variant_Rewards",
+    "year": "2017",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Borja Balle, Giovanni Cherubin, Jamie Hayes, \"Reconstructing Training Data with Informed Adversaries\", IEEE S&P 2022, arXiv:2201.04845",
+    "url": "https://arxiv.org/abs/2201.04845",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", AEJ: Microeconomics 14(4):218-256",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Dirk Bergemann, Alessandro Bonatti, \"Data, Competition, and Digital Platforms\", American Economic Review 114(8):2553-2595",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20230478",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Maryam Farboodi, Laura Veldkamp, \"A Model of the Data Economy\", NBER Working Paper 28427 (July 2024 version)",
+    "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/DataGrowth_july2024.pdf",
+    "year": "2021-2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Laura Veldkamp, \"Valuing Data as an Asset\", Review of Finance 27(5)",
+    "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/Valuing%20Data%20as%20an%20Asset.pdf",
+    "year": "2023",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Ignacio N. Cofone, \"Beyond Data Ownership\", 43 Cardozo Law Review",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3564480",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Meng Zhang, Ermin Wei, Randall Berry, Jianwei Huang, \"Age-Dependent Differential Privacy\", IEEE Trans. Information Theory, arXiv:2209.01466",
+    "url": "https://arxiv.org/abs/2209.01466",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Ruwimal Y. Pathiraja, Jerome P. Reiter, \"Setting the Privacy Budget in Differential Privacy by Bounding Adversaries' Odds of Learning Sensitive Information\", arXiv:2607.04004",
+    "url": "https://arxiv.org/abs/2607.04004",
+    "year": "2026",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Joydeep Chandra, \"CHRONOS: Temporally-Aware Multi-Agent Coordination for Evolving Data Marketplaces\", arXiv:2605.23887",
+    "url": "https://arxiv.org/abs/2605.23887",
+    "year": "2026",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Alireza Fallah, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Optimal and Differentially Private Data Acquisition: Central and Local Mechanisms\", Operations Research 72(3):1105-1123, arXiv:2201.03968",
+    "url": "https://arxiv.org/abs/2201.03968",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Diptangshu Sen, Jingyan Wang, Juba Ziani, \"Equilibria of Data Marketplaces with Privacy-Aware Sellers under Endogenous Privacy Costs\", arXiv:2402.08826",
+    "url": "https://arxiv.org/abs/2402.08826",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Michael Khavkin, Eran Toch, \"Valuation of Differential Privacy Budget in Data Trade: A Conjoint Analysis\", Privacy Symposium 2023, Springer LNCS",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-31971-6_7",
+    "year": "2023",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Johannes Kaiser, Alexander Ziller, Eleni Triantafillou, Daniel Rueckert, Georgios Kaissis, \"Your Privacy Depends on Others: Collusion Vulnerabilities in Individual Differential Privacy\", IEEE SaTML, arXiv:2601.12922",
+    "url": "https://arxiv.org/abs/2601.12922",
+    "year": "2026",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Lijun Bo, Weiqiang Chang, \"Privacy Data Pricing: A Stackelberg Game Approach\", arXiv:2512.18296",
+    "url": "https://arxiv.org/abs/2512.18296",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Lijun Bo et al., \"Dynamic Data Pricing: A Mean Field Stackelberg Game Approach\", arXiv:2512.21585",
+    "url": "https://arxiv.org/abs/2512.21585",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Saurab Chhachhi, Fei Teng, \"Wasserstein Markets for Differentially-Private Data\", arXiv:2412.02609",
+    "url": "https://arxiv.org/abs/2412.02609",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "\"A Survey on Data Markets\", arXiv:2411.07267",
+    "url": "https://arxiv.org/html/2411.07267",
+    "year": "2024",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Sarah Rajtmajer, Anna Squicciarini et al., \"An Ultimatum Game Model for the Evolution of Privacy in Jointly Managed Content\", GameSec 2017, Springer LNCS",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-319-68711-7_7",
+    "year": "2017",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Jiadong Gu, \"Data Trade and Consumer Privacy\", arXiv:2406.12457 (econ.TH)",
+    "url": "https://arxiv.org/abs/2406.12457",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Alireza Fallah, Michael I. Jordan, Ali Makhdoumi, Azarakhsh Malekian, \"On Three-Layer Data Markets\", arXiv:2402.09697",
+    "url": "https://arxiv.org/abs/2402.09697",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Frederik Zuiderveen Borgesius et al., \"Tracking Walls, Take-It-Or-Leave-It Choices, the GDPR, and the ePrivacy Regulation\", European Data Protection Law Review",
+    "url": "https://arxiv.org/pdf/2510.25339",
+    "year": "2017",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "\"Multi-Party Data Pricing for Complex Data Trading Markets: A Rubinstein Bargaining Approach\", arXiv:2502.16363",
+    "url": "https://arxiv.org/html/2502.16363",
+    "year": "2025",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Tesary Lin, Avner Strulov-Shlain, \"Choice Architecture, Privacy Valuations, and Selection Bias in Consumer Data\", arXiv:2308.13496",
+    "url": "https://arxiv.org/pdf/2308.13496",
+    "year": "2023",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "IEEE Standards Association, \"IEEE 7012-2025 — Standard for Machine Readable Personal Privacy Terms\" (published January 2026)",
+    "url": "https://ieeexplore.ieee.org/document/11360682",
+    "year": "2026",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Woodrow Hartzog, Daniel J. Solove, \"Privacy as Contract?\", Harvard Journal of Law & Technology 39 (forthcoming), SSRN 6081773",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6081773",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Neil M. Richards, Woodrow Hartzog, Jordan Francis, \"Privacy's Autonomy Thicket: Disentangling Choice, Consent, and Control\" (forthcoming)",
+    "url": "https://www.private-law-theory.org/2025/12/04/richards-hartzog-and-francis-privacys-autonomy-thicket-disentangling-choice-consent-and-control/",
+    "year": "2025",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Doc Searls / Customer Commons, \"MyTerms\" (IEEE 7012 first-party proffering hub)",
+    "url": "https://doc.searls.com/myterms/",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Nielsen, Lev-Aretz et al., \"Privacy Agents in the Field\", WEIS 2026 accepted paper (no public PDF yet — pull before WEIS 2027 submission)",
+    "url": "https://weis2026.econinfosec.org/accepted-papers/",
+    "year": "2026",
+    "provenance_confidence": "low"
+   },
+   {
+    "citation": "\"Reference Dependence and the Structure of the WTA/WTP Gap\", arXiv:2607.27239",
+    "url": "https://arxiv.org/html/2607.27239",
+    "year": "2026",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Andrey Fradkin et al., \"Designing Consent: Choice Architecture and Consumer Welfare in Data Sharing\", working paper",
+    "url": "https://andreyfradkin.com/assets/Privacy_Preferences_and_Dark_Patterns.pdf",
+    "year": "2024",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Alessandro Acquisti, \"The Economics of Privacy at a Crossroads\", in Goldfarb & Tucker (eds.), The Economics of Privacy, NBER/Univ. of Chicago Press",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4898619",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Siavash Mohades, Maria Savona, \"Data Rent and Surplus Value in the Digital Economy\", LUISS LEAP working paper (EARLY-STAGE DRAFT marked do-not-cite — track to publication; key LR-04 prior-art threat)",
+    "url": "https://leap.luiss.it/wp-content/uploads/2026/02/mohades_paper.pdf",
+    "year": "2026",
+    "provenance_confidence": "low"
+   },
+   {
+    "citation": "Nicholas Vincent, Brent Hecht, Shilad Sen, \"'Data Strikes': Evaluating the Effectiveness of a New Form of Collective Action Against Technology Companies\", WWW 2019",
+    "url": "https://dl.acm.org/doi/10.1145/3308558.3313742",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Salome Viljoen, \"A Relational Theory of Data Governance\", Yale Law Journal 131(2)",
+    "url": "https://yalelawjournal.org/feature/a-relational-theory-of-data-governance",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Tim O'Reilly, Ilan Strauss, Mariana Mazzucato, \"Algorithmic attention rents: A theory of digital platform market power\", Data & Policy 6",
+    "url": "https://www.cambridge.org/core/journals/data-and-policy/article/algorithmic-attention-rents-a-theory-of-digital-platform-market-power/D85FE41F6CF99FC57DDFB2B2B63491C5",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Jathan Sadowski, \"When data is capital: Datafication, accumulation, and extraction\", Big Data & Society 6(1)",
+    "url": "https://journals.sagepub.com/doi/10.1177/2053951718820549",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Bennett Cyphers, Adam Schwartz, \"Why Getting Paid for Your Data Is a Bad Deal\", Electronic Frontier Foundation",
+    "url": "https://www.eff.org/deeplinks/2020/10/why-getting-paid-your-data-bad-deal",
+    "year": "2020",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Nicholas Vincent, Matthew Prewitt, Hanlin Li, \"Collective Bargaining in the Information Economy Can Address AI-Driven Power Concentration\", arXiv:2506.10272",
+    "url": "https://arxiv.org/abs/2506.10272",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Patrick Mesana, Gilles Caporossi, Sebastien Gambs, \"Measuring the Hidden Cost of Data Valuation through Collective Disclosure\", arXiv:2510.08869",
+    "url": "https://arxiv.org/abs/2510.08869",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "\"Data Cooperatives: Democratic Models for Ethical Data Stewardship\", arXiv:2504.10058",
+    "url": "https://arxiv.org/abs/2504.10058",
+    "year": "2025",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Lina Dencik, Jessica Brand, Sarah Murphy, \"What do data rights do for workers? A critical analysis of trade union engagement with the datafied workplace\", Transfer: European Review of Labour and Research",
+    "url": "https://journals.sagepub.com/doi/10.1177/10242589241267006",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Nicholas Vincent, Hanlin Li et al., \"Data Leverage: A Framework for Empowering the Public in its Relationship with Technology Companies\", FAccT 2021",
+    "url": "https://nickmvincent.com/static/data_leverage.pdf",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "\"The Economics of AI Training Data: A Research Agenda\", arXiv:2510.24990",
+    "url": "https://arxiv.org/pdf/2510.24990",
+    "year": "2025",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Haoyi Zhang, Tianyi Zhu, \"Neither Consent nor Property: A Policy Lab for Data Law\", arXiv:2510.26727",
+    "url": "https://arxiv.org/abs/2510.26727",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Kobbi Nissim, Aaron Bembenek, Alexandra Wood, Mark Bun, Marco Gaboardi, Urs Gasser, David R. O'Brien, Salil Vadhan, Thomas Steinke, \"Bridging the Gap between Computer Science and Legal Approaches to Privacy\", Harvard Journal of Law & Technology 31(2)",
+    "url": "https://www.semanticscholar.org/paper/Bridging-the-Gap-between-Computer-Science-and-Legal-Nissim-Bembenek/22067befe017dc5760be667bf0ba9cf48b2ab650",
+    "year": "2018",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "John M. Abowd, Ian M. Schmutte, \"An Economic Analysis of Privacy Protection and Statistical Accuracy as Social Choices\", American Economic Review 109(1), arXiv:1808.06303",
+    "url": "https://arxiv.org/abs/1808.06303",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "NIST, \"Guidelines for Evaluating Differential Privacy Guarantees\", NIST SP 800-226 (final)",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-226.pdf",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "U.S. Census Bureau (Abowd et al.), \"The modernization of statistical disclosure limitation at the U.S. Census Bureau\", working paper",
+    "url": "https://www.census.gov/content/dam/Census/library/working-papers/2020/adrm/The%20modernization%20of%20statistical%20disclosure%20limitation%20at%20the%20U.S.%20Census%20Bureau.pdf",
+    "year": "2020",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Cynthia Dwork, Nitin Kohli, Deirdre Mulligan, \"Differential Privacy in Practice: Expose your Epsilons!\", Journal of Privacy and Confidentiality 9(2)",
+    "url": "https://journalprivacyconfidentiality.org/index.php/jpc/article/view/689",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Justin Hsu, Marco Gaboardi, Andreas Haeberlen, Sanjeev Khanna, Arjun Narayan, Benjamin C. Pierce, Aaron Roth, \"Differential Privacy: An Economic Method for Choosing Epsilon\", IEEE CSF 2014, arXiv:1402.3329",
+    "url": "https://arxiv.org/abs/1402.3329",
+    "year": "2014",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Georgios Kaissis, Jamie Hayes, Alexander Ziller, Daniel Rueckert, \"Bounding data reconstruction attacks with the hypothesis testing interpretation of differential privacy\", arXiv:2307.03928",
+    "url": "https://arxiv.org/abs/2307.03928",
+    "year": "2023",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Anneliese Riess, Kristian Schwethelm, Johannes Kaiser, Tamara T. Mueller, Julia A. Schnabel, Daniel Rueckert, Alexander Ziller, \"From Mean to Extreme: Formal Differential Privacy Bounds on the Success of Real-World Data Reconstruction Attacks\", arXiv:2402.12861",
+    "url": "https://arxiv.org/abs/2402.12861",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "\"A General Framework for Auditing Differentially Private Machine Learning\", NeurIPS 2022, arXiv:2210.08643",
+    "url": "https://arxiv.org/pdf/2210.08643",
+    "year": "2022",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Sayan Biswas, Mark Dras, Pedro Faustini, Natasha Fernandes, Annabelle McIver, Catuscia Palamidessi, Parastoo Sadeghi, \"Bayes' capacity as a measure for reconstruction attacks in federated learning\", arXiv:2406.13569",
+    "url": "https://arxiv.org/abs/2406.13569",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Sayan Biswas, Mark Dras, Pedro Faustini, Natasha Fernandes, Annabelle McIver, Catuscia Palamidessi, Parastoo Sadeghi, \"Comparing privacy notions for protection against reconstruction attacks in machine learning\", arXiv:2502.04045",
+    "url": "https://arxiv.org/abs/2502.04045",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Luigi D. C. Soares, Mario S. Alvim, Natasha Fernandes, \"A new measure for dynamic leakage based on quantitative information flow\", arXiv:2510.20922",
+    "url": "https://arxiv.org/abs/2510.20922",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Shuaiqi Wang et al., \"Statistic Maximal Leakage\", arXiv:2411.18531",
+    "url": "https://arxiv.org/pdf/2411.18531",
+    "year": "2024",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Sara Saeidian et al., \"Information Density Bounds for Privacy\", arXiv:2407.01167",
+    "url": "https://arxiv.org/pdf/2407.01167",
+    "year": "2024",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "\"A Unified Framework for Adversary-Aware Differential Privacy Bounds\", arXiv:2507.08158 (contents unverified — fetch before citing)",
+    "url": "https://arxiv.org/pdf/2507.08158",
+    "year": "2025",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Micah Altman, Alexandra Wood, David O'Brien, Salil Vadhan, Urs Gasser, \"Practical approaches to big data privacy over time\", International Data Privacy Law 8(1)",
+    "url": "https://academic.oup.com/idpl/article/8/1/29/4930711",
+    "year": "2018",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Luc Rocher, Julien M. Hendrickx, Yves-Alexandre de Montjoye, \"Estimating the success of re-identifications in incomplete datasets using generative models\", Nature Communications 10:3069",
+    "url": "https://www.nature.com/articles/s41467-019-10933-3",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Lin William Cong, Danxia Xie, Longtian Zhang, \"Knowledge Accumulation, Privacy, and Growth in a Data Economy\", Management Science 68(9), arXiv:2109.10028",
+    "url": "https://arxiv.org/abs/2109.10028",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Jillian Mascelli, Megan Rodden, \"'Harvest Now Decrypt Later': Examining Post-Quantum Cryptography and the Data Privacy Risks for Distributed Ledger Networks\", Federal Reserve FEDS WP 2025-093",
+    "url": "https://www.federalreserve.gov/econres/feds/files/2025093pap.pdf",
+    "year": "2025",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Javier Blanco-Romero, Florina Almenares Mendoza, Carlos Garcia Rubio, Celeste Campo, Daniel Diaz Sanchez, \"On the Practical Feasibility of Harvest-Now, Decrypt-Later Attacks\", arXiv:2603.01091",
+    "url": "https://arxiv.org/abs/2603.01091",
+    "year": "2026",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Ankit Bhutani, Guillermo Ordonez, Laura Veldkamp, \"The Missing Value of Data\", NBER WP 35266 / AEA 2026",
+    "url": "https://www.nber.org/papers/w35266",
+    "year": "2026",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Diane Coyle, Annabel Manley, \"What is the value of data? A review of empirical methods\", Journal of Economic Surveys 39(2)",
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12585",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Ehsan Valavi, Joel Hestness, Newsha Ardalani, Marco Iansiti, \"Time and the Value of Data\", HBS WP, arXiv:2203.09118",
+    "url": "https://arxiv.org/pdf/2203.09118",
+    "year": "2022",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Mohan et al., \"Enterprise Data Valuation — A Targeted Literature Review\", Journal of Economic Surveys",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/joes.12705",
+    "year": "2026",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "\"Learning to Attack: Uncovering Privacy Risks in Sequential Data Releases\", arXiv:2510.24807",
+    "url": "https://arxiv.org/html/2510.24807v1",
+    "year": "2025",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "\"SoK: Reconstruction Attacks on Synthetic Tabular Data (Insights from Winning the NIST CRC)\", arXiv:2606.08372",
+    "url": "https://arxiv.org/html/2606.08372",
+    "year": "2026",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Roxana Mihet, Orlando Gomes, Kumar Rishabh, \"Data Risk, Firm Growth and Innovation\", WEIS 2024",
+    "url": "https://weis.utdallas.edu/program",
+    "year": "2024",
+    "provenance_confidence": "medium"
+   }
+  ]
+ }
+}

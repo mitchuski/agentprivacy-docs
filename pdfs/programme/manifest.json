@@ -1,0 +1,152 @@
+[
+ {
+  "name": "WP-04_moving_ceiling_sok",
+  "title": "SoK: The Shelf Life of Privacy Guarantees",
+  "group": "paper",
+  "pages": "19",
+  "date": "2026-07-09",
+  "wp": "WP-04",
+  "venue": "HotPETs or FC workshop (FC workshops deadline 2026-09-01)",
+  "status": "draft-v4"
+ },
+ {
+  "name": "WP-07_linear_cap",
+  "title": "Sequential Composition of Leakage-Budgeted Agents: an Exponential-to-Linear Separation under Structural Context Erasure",
+  "group": "paper",
+  "pages": "20",
+  "date": "2026-07-07",
+  "wp": "WP-07",
+  "venue": "",
+  "status": "revision-draft-v3"
+ },
+ {
+  "name": "WP-11_rpp_adversarial",
+  "title": "Compelled Comprehension: Prompt Injection as a Cooperative Mechanism and a Two-Party Interleaved Construction for Relational Key Recovery",
+  "group": "paper",
+  "pages": "5",
+  "date": "2026-07-18",
+  "wp": "WP-11 (rpp-adversarial-paper)",
+  "venue": "SOUPS or Financial Cryptography (usable security / applied crypto)",
+  "status": "DRAFT v1"
+ },
+ {
+  "name": "WP-14_weis_seventh_capital",
+  "title": "Behavioural Data as Subject-Owned Capital: Five Predicates and the Architecture that Prices Them",
+  "group": "paper",
+  "pages": "26",
+  "date": "2026-07-16",
+  "wp": "WP-14",
+  "venue": "WEIS-2027",
+  "status": "draft-v4"
+ },
+ {
+  "name": "WP-27_conjecture_governance",
+  "title": "Conjecture Governance: an Operating Method for Agent-Generated Research, with a Non-Delegable Completion Gate",
+  "group": "paper",
+  "pages": "21",
+  "date": "2026-07-10",
+  "wp": "WP-27",
+  "venue": "meta-research / research-methods venue",
+  "status": "draft-v3"
+ },
+ {
+  "name": "WP-11_formalism",
+  "title": "WP-11 \u00b7 Formalism: the interleaved bilateral construction and its two properties",
+  "group": "support",
+  "pages": "7",
+  "date": "2026-07-18",
+  "wp": "WP-11 (rpp-adversarial-paper)",
+  "venue": "",
+  "status": "DRAFT v1 \u2014 definitions + one conditional reduction; every statement proved, cite"
+ },
+ {
+  "name": "WP-11_prereg",
+  "title": "WP-11 \u00b7 RPP adversarial analysis \u2014 experiment design & pre-registration (v1)",
+  "group": "support",
+  "pages": "4",
+  "date": "2026-07-18",
+  "wp": "WP-11 (rpp-adversarial-paper)",
+  "venue": "",
+  "status": "DESIGN v1 \u2014 PRE-REGISTRATION DRAFT, not yet committed"
+ },
+ {
+  "name": "WP-11a_prior_art",
+  "title": "WP-11a \u00b7 Prior-art scout for the RPP / proof-of-understanding primitive",
+  "group": "support",
+  "pages": "8",
+  "date": "2026-07-18",
+  "wp": "WP-11a (rpp-prior-art, supports WP-11 rpp-adversarial-paper)",
+  "venue": "",
+  "status": ""
+ },
+ {
+  "name": "WP-14a_weis_prior_art_map",
+  "title": "WEIS-specific prior-art map for the seventh-capital thesis",
+  "group": "support",
+  "pages": "7",
+  "date": "2026-07-14",
+  "wp": "WP-14",
+  "venue": "WEIS-2027",
+  "status": ""
+ },
+ {
+  "name": "WP-14_valuation_methodology_v2",
+  "title": "WEIS valuation methodology, v2: an empirically grounded bottom-up rebuild",
+  "group": "support",
+  "pages": "30",
+  "date": "2026-07-14",
+  "wp": "WP-14",
+  "venue": "WEIS-2027 (this note is the evidence substrate; the tier-A WEIS artifact stays fiat-free and consumes only the dimensionless outputs of Sections 3-4)",
+  "status": ""
+ },
+ {
+  "name": "PIPELINE_autoresearch_companion",
+  "title": "How These Documents Were Made: a Role-Separated Agent Pipeline with a Non-Delegable Completion Gate, and its Adversarial Autoresearch Loops",
+  "group": "companion",
+  "pages": "6",
+  "date": "2026-08-17",
+  "wp": "",
+  "venue": "",
+  "status": "draft-v1"
+ },
+ {
+  "name": "CHRONICLE_veliz_normative_strand",
+  "title": "2026-08-17 \u00b7 The normative strand enters the corpus: V\u00e9liz, market-inalienability, and the fourth objection",
+  "group": "companion",
+  "pages": "3",
+  "date": "",
+  "wp": "",
+  "venue": "",
+  "status": ""
+ },
+ {
+  "name": "LITREVIEW_run02",
+  "title": "WP-14 Literature Review \u2014 Adversarial Novelty Adjudication (Run 02)",
+  "group": "litreview",
+  "pages": "16",
+  "date": "2026-07-15",
+  "wp": "",
+  "venue": "",
+  "status": ""
+ },
+ {
+  "name": "LITREVIEW_run03",
+  "title": "WP-14 Literature Review \u2014 Residue Stress Sweep (Run 03)",
+  "group": "litreview",
+  "pages": "19",
+  "date": "2026-08-17",
+  "wp": "",
+  "venue": "",
+  "status": ""
+ },
+ {
+  "name": "LITREVIEW_run04",
+  "title": "WP-14 Literature Review \u2014 The Normative Strand (Run 04)",
+  "group": "litreview",
+  "pages": "14",
+  "date": "2026-08-17",
+  "wp": "",
+  "venue": "",
+  "status": ""
+ }
+]

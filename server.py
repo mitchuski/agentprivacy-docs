@@ -55,42 +55,52 @@ DOCUMENTS = [
 # Foundations announcements live in blog/. Each post carries its publish target
 # and its tier siblings (the same core told for other audiences), so the series
 # can be read in order AND synced to the right public surface.
+# Shape as of 2026-08-03: The Moving Ceiling is PUBLISHED (the anchor); the
+# rest of the series ships as three duos of companion posts, two at a time.
 # ---------------------------------------------------------------------------
 PROG = "papers/Programme/pipeline/rehydrations"
+CEILING_LIVE = "https://sync.soulbis.com/p/the-moving-ceiling"
 
 BLOG_SERIES = [
     {
-        "id": "moving-ceiling",
-        "arc": "Arc I · The Moving Ceiling (V6)",
-        "blurb": "The first V6 result — every static privacy guarantee has a shelf life. Read top to bottom.",
+        "id": "anchor",
+        "arc": "Published · The Moving Ceiling (the anchor)",
+        "blurb": "The first V6 result, live on sync.soulbis.com — every static privacy guarantee has a shelf life. Everything below rides it.",
         "posts": [
-            {"n": "1", "title": "The Moving Ceiling",
+            {"n": "★", "title": "The Moving Ceiling",
              "subtitle": "every static privacy guarantee has a shelf life · the first V6 result",
              "path": f"{PROG}/public/the_moving_ceiling.md",
-             "status": "post-ready", "target": "sync.soulbis.com",
+             "status": "published", "target": "sync.soulbis.com/p/the-moving-ceiling", "live": CEILING_LIVE,
              "siblings": [("academic", "SoK: The Shelf Life of Privacy Guarantees", f"{PROG}/academic/moving_ceiling_sok.md"),
                           ("policy", "Enforceable by Architecture", f"{PROG}/policy/enforceable_by_architecture.md")]},
-            {"n": "2", "title": "The Uncarved Date",
-             "subtitle": "a tale from the City of Mages · companion to The Moving Ceiling",
+        ],
+    },
+    {
+        "id": "duo-1",
+        "arc": "Duo 1 · Companions to the Ceiling (Arc I research letters)",
+        "blurb": "Two companion research letters published side by side: the tale that carries the ceiling's counsel, and the letter that opens the doors.",
+        "posts": [
+            {"n": "1a", "title": "The Uncarved Date",
+             "subtitle": "a tale from the City of Mages · first of the companion duo",
              "path": f"{PROG}/public/the_uncarved_date.md",
              "status": "post-ready", "target": "sync.soulbis.com", "siblings": []},
-            {"n": "3", "title": "Competence Without History",
-             "subtitle": "the gathering turn has doors: the atlas, the skills, the game, the wiki",
+            {"n": "1b", "title": "Competence Without History",
+             "subtitle": "the doors: the atlas, the skills, the game, the wiki · second of the companion duo",
              "path": f"{PROG}/public/competence_without_history.md",
              "status": "post-ready", "target": "sync.soulbis.com",
              "siblings": [("academic", "Sequential Composition: Exponential-to-Linear Separation", f"{PROG}/academic/linear_cap_paper.md")]},
         ],
     },
     {
-        "id": "foundations",
-        "arc": "Arc II · The Foundations",
-        "blurb": "Two announcements — the community and the runtime that made V6 possible.",
+        "id": "duo-2",
+        "arc": "Duo 2 · The Foundations",
+        "blurb": "Two announcements published side by side — the community and the runtime that made V6 possible.",
         "posts": [
-            {"n": "4", "title": "Founding the City of Mages",
+            {"n": "2a", "title": "Founding the City of Mages",
              "subtitle": "from WHAT to WHO · the second person opens · an announcement",
              "path": "blog/founding-the-city-of-mages.md",
              "status": "drafting", "target": "sync.soulbis.com", "siblings": []},
-            {"n": "5", "title": "The Dual Agent Harness",
+            {"n": "2b", "title": "The Dual Agent Harness",
              "subtitle": "one proposes, one breaks, the signature does not delegate · an announcement",
              "path": "blog/the-dual-agent-harness.md",
              "status": "drafting", "target": "sync.soulbis.com",
@@ -99,15 +109,15 @@ BLOG_SERIES = [
         ],
     },
     {
-        "id": "runtime-letters",
-        "arc": "Related · Runtime Letters (off-arc)",
-        "blurb": "Letters that narrate the harness's first runs. Optional, complementary reading.",
+        "id": "duo-3",
+        "arc": "Duo 3 · Runtime Letters (off-arc)",
+        "blurb": "Two letters published side by side, narrating the harness's first runs. Optional, complementary reading.",
         "posts": [
-            {"n": "—", "title": "Two Agents Walk Into a Circuit",
+            {"n": "3a", "title": "Two Agents Walk Into a Circuit",
              "subtitle": "one proposes, one breaks, neither writes the exam",
              "path": f"{PROG}/public/two_agents_walk_into_a_circuit.md",
              "status": "post-ready", "target": "sync.soulbis.com", "siblings": []},
-            {"n": "—", "title": "The Fleet and the Cap",
+            {"n": "3b", "title": "The Fleet and the Cap",
              "subtitle": "ten sessions, one rule, and the read that cannot be delegated",
              "path": f"{PROG}/public/letter_the_fleet_and_the_cap.md",
              "status": "post-ready", "target": "sync.soulbis.com", "siblings": []},
@@ -811,8 +821,10 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
             padding: 3px 9px; border-radius: 4px; font-size: 0.78em; font-weight: 600; margin: 0;
         }
         .status.ready { background: #2ecc71; color: #06210f; }
+        .status.published { background: #245a4c; color: #d6fff2; }
         .status.draft { background: #e0a35a; color: #2b1a06; }
         .status.todo  { background: #555; color: #ddd; }
+        .post-meta .target a { color: #6fd4b8; }
         .post-meta .target { color: #8a8a8a; font-size: 0.8em; }
         .post-meta .read {
             padding: 8px 16px; background: #7a5cff; color: #fff; text-decoration: none;
@@ -868,7 +880,7 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
             <span class="cad-label">Cadence — play with the spacing:</span>
             <span class="cad-group">gap between arcs {_gaplink(0)}{_gaplink(3)}{_gaplink(7)}{_gaplink(14)}{_gaplink(21)}</span>
             <span class="cad-group">step within arc {_steplink(1)}{_steplink(2)}{_steplink(3)}</span>
-            <span class="cad-note">The interval between the V6 math arc and the Foundations posts is the <strong>gap</strong>.</span>
+            <span class="cad-note">Each duo publishes as a pair: the <strong>step</strong> spaces the pair, the <strong>gap</strong> spaces the duos (counted from The Moving Ceiling, live now).</span>
         </div>
 """
         for arc in BLOG_SERIES:
@@ -880,15 +892,21 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
             for p in arc["posts"]:
                 exists = os.path.exists(p["path"])
                 day = schedule.get(p["path"], 0)
-                if today is not None:
+                if p["status"] == "published":
+                    when = "LIVE"
+                elif today is not None:
                     d = today + datetime.timedelta(days=day)
                     when = f'Day {day} · {d.strftime("%a %d %b")}'
                 else:
                     when = f'Day {day}'
                 href = '/' + urllib.parse.quote(p["path"].replace('\\', '/'))
                 st = p["status"]
-                st_cls = "ready" if st == "post-ready" else ("draft" if exists else "todo")
-                st_label = st if exists else "to write"
+                if st == "published":
+                    st_cls, st_label = "published", "published"
+                else:
+                    st_cls = "ready" if st == "post-ready" else ("draft" if exists else "todo")
+                    st_label = st if exists else "to write"
+                target = f'<a href="{p["live"]}">{p["target"]}</a>' if p.get("live") else p["target"]
                 read = f'<a class="read" href="{href}">Read →</a>' if exists else '<span class="read disabled">not written yet</span>'
                 sib = ""
                 if p["siblings"]:
@@ -908,7 +926,7 @@ class DocsHandler(http.server.SimpleHTTPRequestHandler):
                 <div class="post-meta">
                     <span class="when">{when}</span>
                     <span class="status {st_cls}">{st_label}</span>
-                    <span class="target">→ {p['target']}</span>
+                    <span class="target">→ {target}</span>
                     {read}
                 </div>
             </div>

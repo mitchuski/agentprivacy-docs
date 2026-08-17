@@ -376,11 +376,19 @@ information but only with explicit safeguards, because he took the naive version
 to fail; Purtova (2015) and Prins (2006) analysed the European commodification
 debate and its hazards; and the data-trust and data-cooperative strand (Delacroix
 and Lawrence 2019) proposed fiduciary intermediation as an alternative to
-individual ownership altogether. A referee who knows this literature will read
+individual ownership altogether. Cofone (2022) carries the critique to the
+present: ownership proposals collapse into consent-based transfer rules, magnify
+the consent pathologies they were meant to cure, and cannot reach inferred data
+at all; the reconstruction-bound unit answers that last failure directly, because
+R(t) prices what an observer can infer rather than what a subject transferred. A
+data-as-capital reading also exists in critical political economy, but there the
+capital is firm-held and extractive (Sadowski 2019); the position here relocates
+the stock to the subject, which is exactly the move the propertisation debate
+must vet. A referee who knows this literature will read
 subject-owned capital as a rebranding of propertisation unless the paper says
 what it adds. It adds two things, and both are structural rather than doctrinal.
 
-The literature levels three standing objections at propertisation, and we take
+The literature levels four standing objections at propertisation, and we take
 each in turn.
 
 *Objection (i): alienability defeats the protection.* A right the subject can
@@ -429,7 +437,19 @@ reproduce a platform's aggregation technology. Because it is positional rent,
 capturing it requires only pooling *bargaining position*, exactly the function of
 the subject-side aggregator, the mediator-of-individual-data, data-cooperative or
 data-trust instrument (Arrieta-Ibarra et al. 2018; Posner and Weyl 2018; Delacroix
-and Lawrence 2019).
+and Lawrence 2019). Two attributions keep this honest. The pooling form itself is
+anticipated inside the externality line, which proposes collective bargaining as
+the internalisation of the social-data externality (Bergemann and Wang 2021); what
+this paper contributes is the subject-side capital valuation the instrument
+operates on, not the instrument. And the formal externality lineage beyond
+Bergemann, Bonatti and Gan reinforces the diagnosis from three directions:
+informed consent still yields excessive collection under information externalities
+(Choi, Jeon and Kim 2019); correlation leakage depresses equilibrium data prices
+to the point where conditions exist under which closing the market improves
+welfare, a partial formal vindication of the ban position engaged under objection
+(iv) below (Acemoglu, Makhdoumi, Malekian and Ozdaglar 2022); and an
+intermediary's acquisition can harm consumers even when every individual sale is
+rational (Ichihashi 2021).
 
 *Objection (iii): distributional regressivity.* Under alienable propertisation the
 poor sell privacy cheaply and the wealthy retain it. The structural inalienability
@@ -445,16 +465,70 @@ architecture removes the specific regressive mechanism propertisation is charged
 with, forced alienation of the stock, not that it delivers a distributively just
 outcome.
 
+*Objection (iv): commodification is corrosive per se.* Distinct from the three
+objections above, the anti-commodification position holds that pricing personal
+data is wrong in itself, not merely hazardous in execution. Radin (1987) grounds
+market-inalienability in personhood: some goods are constitutive of persons, and
+marketing them degrades both the good and the holder. Roessler (2015) applies the
+moral-limits-of-markets analysis to personal data trade directly and concludes
+against tradability; Véliz (2020; 2024) states the live form of the position,
+that the trade in personal data should be banned outright; and the position has
+doctrinal expression, with EU data-protection scholarship arguing the fundamental
+right is at odds with data trade as such (Custers and Malgieri 2022) and the
+European regulator holding that personal data "cannot be considered as a
+commodity" (EDPS Opinion 4/2017). Satz (2010) supplies the test form through her
+noxious-markets criteria: weak agency on the selling side, vulnerability, and
+harmful externalities on third parties. We answer this objection differently from
+the first three, by partial vindication rather than rebuttal. On the stock, the
+architecture agrees with the pole: the underlying record is never marketed, and
+its inalienability is structural rather than a doctrinal rule a legislature could
+repeal, which is the permanence the pole demands. In the Calabresi and Melamed
+(1972) taxonomy the entitlement is protected by an inalienability rule, with the
+rule enforced by a reconstruction bound rather than by a court. What the
+architecture prices is scoped disclosure within the retained stock, and on Satz's
+own criteria the noxiousness of existing data markets traces to features the
+architecture removes: the seller's weak agency is the ultimatum floor of Section
+4, and the third-party externality is priced into the bound rather than scoped
+away, because R(t) is defined against the adversary's full inference capability,
+including inference from other subjects' data, the end-run around anonymity and
+consent that Barocas and Nissenbaum (2014) identify. What we do not answer is the
+corruption claim in its strong form, that any pricing of any privacy-adjacent
+quantity degrades the good (Anderson 1993; Sandel 2012). Against that position
+the paper's claim is only conditional: if a price is to exist at all, and the
+observed data economy prices behavioural data continuously without asking, then a
+bound-priced scoped disclosure within an inalienable stock is the pricing form
+that concedes most of what the objection defends.
+
+A related normative strand attacks not the pricing but the individualist unit of
+analysis: data relations create population-level interests that no individual
+holder can represent (Viljoen 2021), privacy interests attach to groups and
+profiles as well as to persons (Taylor, Floridi and van der Sloot 2017), and
+individually rational disclosure undersupplies privacy as a public good
+(Fairfield and Engel 2015). The answer here is also partial. The social-data
+externality is carried inside the bound rather than left outside the transaction,
+and the remedy instrument is collective by construction, but the framework
+remains subject-indexed, and a fully relational governance of the
+population-level interest is more than a per-subject valuation can claim; we
+state this as a limit in Section 6.
+
 Stated as the result of a search rather than as an assertion, the broad claims
 gathered here each have named prior owners, and were recorded as anticipated. That
 behavioural data can be owned was proposed and criticised long ago; that a
 disclosure system property can be priced as a market quantity is the
-differential-privacy-markets strand's (Ghosh and Roth 2011, and successors); that
-an intermediary captures the surplus as data aggregates is Bergemann, Bonatti and
-Gan's (2022); that an adversary-relative horizon shrinks a protection term is
-Mosca's (2018). What survived the search is the narrow conjunction that sits across
-them: the two objections that sank naive propertisation are answered by structure
-rather than doctrine, with structural inalienability of the reconstruction making
+differential-privacy-markets strand's (Ghosh and Roth 2011, and successors), and
+that strand also already joins a priced formal quantity to records the buyer
+never receives, with arbitrage-freeness in query pricing acting as a bound on
+what combined purchases can reconstruct (Li et al. 2013) and federated designs
+extending the join to subject-side retention of the raw records (Zheng et al.
+2021), so non-transfer alone is conceded as an established mechanism feature;
+that an intermediary captures the surplus as data aggregates is Bergemann,
+Bonatti and Gan's (2022); that an adversary-relative horizon shrinks a protection
+term is Mosca's (2018). What survived the search is the narrow conjunction that
+sits across them: the two objections that sank naive propertisation are answered
+by structure rather than doctrine, with the inalienability theorised as a
+property of the capital stock, an inalienability rule in the Calabresi and
+Melamed (1972) sense enforced by the reconstruction bound, rather than as a
+mechanism feature of a market design, making
 full alienation unavailable for the term R(t) permits, and the rent finding,
 sharpened by a directed falsifier of the labour remedy, making redistribution a
 pooling of bargaining position rather than an unattainable replication of scale.
@@ -975,6 +1049,16 @@ order-of-magnitude interval, and its rent attribution; the genuine data-value
 component $w_{\text{model}}$ is of order one and saturating; neither is
 point-identified, and the paper must not let either interval harden into a point.
 
+**The unit of analysis remains subject-indexed, and the relational critique is
+not fully answered.** The normative collective-privacy literature engaged in
+Section 2 (Viljoen 2021; Taylor, Floridi and van der Sloot 2017; Fairfield and
+Engel 2015) argues that data relations create population-level interests no
+individual holder can represent. The framework internalises the social-data
+externality into the per-subject bound and adopts a collective remedy instrument,
+but it does not provide governance of the population-level interest itself; a
+valuation conducted per subject cannot claim to. That gap is left standing as the
+strand's residual objection, not resolved.
+
 **The market-maturity gate is a proposal.** The functional form for $M(u,y)$ in
 Section 3 is this paper's own construction, chosen for its boundary behaviour,
 neither established in the source nor measured, with $\tau$ unestimated. It is
@@ -1233,6 +1317,76 @@ the two arXiv adversary-aware entries. -->
 - Valavi, E., Hestness, J., Ardalani, N., Iansiti, M. (2022). Time and the Value of
   Data. Harvard Business School WP 21-016 / arXiv:2203.09118. [data-value relevance
   decay; opposite-polarity wall clock, Section 2]
+
+<!-- Normative-strand references (litreview run 04, wf_23f4f7ad-527, 2026-08-17:
+the anti-commodification pole, the collective-privacy strand, the formal
+externality lineage, and the two NARROWED threat verdicts on the inalienability
+and externality-integration legs. A4 verifies each against its primary record
+before tier-A use; interleave alphabetically at submission. -->
+- Acemoglu, D., Makhdoumi, A., Malekian, A., Ozdaglar, A. (2022). Too Much Data:
+  Prices and Inefficiencies in Data Markets. *AEJ: Microeconomics* 14(4). [A4:
+  add; information-externality welfare; market-closure conditions, Section 2]
+- Anderson, E. (1993). *Value in Ethics and Economics*. Harvard University Press.
+  [A4: add; valuation spheres; strong corruption claim, Section 2 objection (iv)]
+- Barocas, S., Nissenbaum, H. (2014). Big Data's End Run around Anonymity and
+  Consent. In *Privacy, Big Data, and the Public Good*. Cambridge University
+  Press. [A4: add; inference end-run priced into the bound, Section 2]
+- Bergemann, D., Wang, Y. (2021). Data Externalities: Collective Bargaining over
+  Data. ACM FAccT 2021 tutorial. [A4: confirm citable form (tutorial); pooling
+  anticipated inside the externality line, Section 2 objection (ii)]
+- Calabresi, G., Melamed, A.D. (1972). Property Rules, Liability Rules, and
+  Inalienability: One View of the Cathedral. *Harvard Law Review* 85(6),
+  1089-1128. [A4: add; inalienability-rule taxonomy, Section 2]
+- Choi, J.P., Jeon, D.-S., Kim, B.-C. (2019). Privacy and personal data collection
+  with information externalities. *Journal of Public Economics* 173, 113-124.
+  [A4: add; excess collection under informed consent, Section 2 objection (ii)]
+- Cofone, I. (2022). Beyond Data Ownership. *Cardozo Law Review* 43(2). [A4:
+  confirm year 2021/2022; ownership collapses into consent-transfer rules;
+  inferred data unreachable by title, Section 2]
+- Custers, B., Malgieri, G. (2022). Priceless Data: Why the EU Fundamental Right
+  to Data Protection Is at Odds with Trade in Personal Data. *Computer Law and
+  Security Review* 45. [A4: add; doctrinal anti-commodification, Section 2
+  objection (iv)]
+- EDPS (2017). Opinion 4/2017 on the Proposal for a Directive on certain aspects
+  concerning contracts for the supply of digital content. European Data
+  Protection Supervisor, 14 March 2017. [A4: add; "cannot be considered as a
+  commodity", Section 2 objection (iv)]
+- Fairfield, J.A.T., Engel, C. (2015). Privacy as a Public Good. *Duke Law
+  Journal* 65(3), 385-457. [A4: add; underprovision of privacy as public good,
+  Section 2]
+- Ichihashi, S. (2021). The Economics of Data Externalities. *Journal of Economic
+  Theory* 196, 105316. [A4: add; intermediary acquisition harms under individually
+  rational sales, Section 2 objection (ii)]
+- Radin, M.J. (1987). Market-Inalienability. *Harvard Law Review* 100(8),
+  1849-1937. [A4: add; personhood ground of market-inalienability, Section 2
+  objection (iv)]
+- Roessler, B. (2015). Should Personal Data Be a Tradable Good? On the Moral
+  Limits of Markets in Privacy. In Roessler and Mokrosinska (eds.), *Social
+  Dimensions of Privacy*. Cambridge University Press, 141-161. [A4: add;
+  moral-limits analysis applied to personal data trade, Section 2 objection (iv)]
+- Sadowski, J. (2019). When Data Is Capital: Datafication, Accumulation, and
+  Extraction. *Big Data and Society* 6(1). [A4: add; firm-held data-as-capital
+  contrast, Section 2]
+- Sandel, M.J. (2012). *What Money Can't Buy: The Moral Limits of Markets*.
+  Farrar, Straus and Giroux. [A4: add; corruption objection, Section 2 objection
+  (iv)]
+- Satz, D. (2010). *Why Some Things Should Not Be for Sale: The Moral Limits of
+  Markets*. Oxford University Press. [A4: add; noxious-markets criteria, Section 2
+  objection (iv)]
+- Taylor, L., Floridi, L., van der Sloot, B. (eds.) (2017). *Group Privacy: New
+  Challenges of Data Technologies*. Springer. [A4: add; group privacy, Section 2]
+- Véliz, C. (2020). *Privacy Is Power: Why and How You Should Take Back Control of
+  Your Data*. Bantam Press. [A4: add; ban position, live form, Section 2 objection
+  (iv)]
+- Véliz, C. (2024). *The Ethics of Privacy and Surveillance*. Oxford University
+  Press. [A4: add; scholarly form of the position, Section 2 objection (iv)]
+- Viljoen, S. (2021). A Relational Theory of Data Governance. *Yale Law Journal*
+  131(2), 573-654. [A4: add; relational/population-level interests, Sections 2
+  and 6]
+- Zheng, S., Cao, Y., Yoshikawa, M., Li, H., Yan, Q. (2021). FL-Market: Trading
+  Private Models in Federated Learning. *IEEE BigData 2022* / arXiv:2106.04384.
+  [A4: confirm venue/year pairing; subject-side retention join conceded,
+  Section 2]
 
 <!-- External dollar-anchor sources (Meta 2023 Form 10-K per-user gross advertising
 flow; the online-advertising literature's targeting-attributable fraction) are

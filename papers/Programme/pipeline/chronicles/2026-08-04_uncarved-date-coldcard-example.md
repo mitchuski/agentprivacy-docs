@@ -1,0 +1,22 @@
+# 2026-08-04 · The Uncarved Date · Coldcard example added
+
+**Verdict:** One section added to `rehydrations/public/the_uncarved_date.md` (draft v3, tier P): "a date the world carved", a clearly-marked real-world postscript placed after "selene's line" and before the footer. First-Person-directed edit (Mitch, this session); no role card assigned; canon untouched; manifest untouched.
+
+**What was added.** The July 2026 Coldcard key-generation exploit as a live instance of the tale's thesis. Facts as reported: firmware 4.0.0 (March 2021, Mk3) skipped the hardware RNG and seeded key generation from non-secret chip data (serial number, clock registers); wallets signed sound held for five years; on 2026-07-31 ~594 BTC drained from ~500 single-sig wallets in ~25 minutes; third-wave totals ~1,367 BTC / ~$88.6M across 4,585 addresses (Galaxy Research via Decrypt). Mk4/Q/Mk5 reported unaffected per Coinkite.
+
+**Register note.** The user proposed the example as "harvest now, decrypt later". Strictly, HNDL names the stored-ciphertext/quantum threat; this exploit is weak-entropy key generation. The section keeps the *shape* (the chain vaults everything at emission; the reader arrives years later) without claiming the term, phrased as "harvest first, read later, the vault does the waiting". The claimed 72-bit entropy figure circulating in secondary reporting was NOT carried into the prose (primary reporting does not confirm bit counts); the text says only that the die was "softer" and seeded from non-secret values.
+
+**Reversals:** one, same day. The First Person ruled the tale should read as pure narrative. The factual section "a date the world carved" was REMOVED from `the_uncarved_date.md`; the event now lives there only as allegory (one passage appended to the Vaulting Guild argument: the coin-cities' five hundred strongboxes, no names, no dates). The factual telling moved to `competence_without_history.md` (opening, in R(t)/t\* terms, per the First Person's ask that the duo read closer to the Privacy is Value equation). The event is logged in the research lane at `research/2026-08-04_coldcard_moving_ceiling_note.md` with sources, the equation mapping, and the HNDL-shape caveat.
+
+**Sources (for the ledger, not cited in the tale's body):**
+- coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep
+- decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets
+
+**Second reversal, same day → draft v4.** The First Person ruled the post is a research letter, not a pure tale: narrative first, then a research surface. `the_uncarved_date.md` rebuilt as v4: tale intact (coin-cities allegory kept in the Vaulting Guild passage), followed by "the working" — the tale pinned to the register line by line: date = C82 (~65%, rate is the open part, WP-07 conditional erosion), whispering seal = C81 (~70%) + C84, Vaulters = C55 (soil, citing C82), coin-cities = the factual Coldcard telling with sources, three counsels = engineering / C18-C19 (λ, ~25%, Game of 42 as instrument) / C17 + C83 + C86, coincidence = the pipeline itself (agentic auto-research alluded to openly). Poem lines woven per First-Person direction, sourced from `poems/soil-dreams-harness-holds-ceiling-moves.md` (six proverbs) and the spellbook register; sync.soulbis tone. Letter's Coldcard paragraph condensed to a pointer (duo should not retell twice); one poem line added to its close.
+
+**V5 callbacks wired (First-Person selected 3 of 6 reviewed).** All in the working: (1) Coldcard paragraph → The Dragon Wakes (`/p/the-dragon-wakes-privacy-is-value`), the at-rest prophecy realized classically; (2) C82 paragraph → same letter, static R < 1 → moving R(t); (3) envoi line hyperlinked → Myth Between Math (`/p/myth-between-math`). URLs verified live 2026-08-04. Declined: Understanding-as-Key→letter, C97 register receipt, Part-5→Selene (would break tale purity; live `/p/the-amnesia-protocol` may be the poem, not the letter). Known issue for Mitch: the V5 posts' own internal `-part-N` slugs 404 on Substack.
+
+**Handoff.**
+- P4 remains the First Person's: Mitch reviews the new section at http://localhost:7000 (Blog Workshop → Duo 1 → The Uncarved Date) before any sync to sync.soulbis.com.
+- Companion post `competence_without_history.md` untouched this session.
+- Exploit totals are still moving (waves ongoing as of 2026-08-01 reporting); re-verify numbers at publish time.

@@ -1,0 +1,1515 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=27mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Cambria}
+  \setmonofont[]{Consolas}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Sequential Composition of Leakage-Budgeted Agents: an Exponential-to-Linear Separation under Structural Context Erasure},
+  pdfauthor={The Privacy-is-Value Research Programme},
+  colorlinks=true,
+  linkcolor={black},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Sequential Composition of Leakage-Budgeted Agents: an
+Exponential-to-Linear Separation under Structural Context Erasure}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{WP-07 · tier A · 2026-07-07 · status revision-draft-v3}
+\author{The Privacy-is-Value Research Programme}
+\date{2026-07-07}
+
+\begin{document}
+\maketitle
+
+\subsection{0. Abstract}\label{abstract}
+
+Multi-agent systems built from sequentially invoked language-model
+agents leak information about the sensitive contexts they process, and
+system-scale measurement locates the dominant share of that leakage in
+the channels between agents rather than in final outputs. We give an
+information-theoretic account of when per-agent leakage budgets compose
+and when they do not. In a model of N sequentially invoked agents with
+declared interfaces and explicit carried state, the best guarantee
+available under the budget discipline the empirical literature measures
+(marginal, output-only constraints) is geometric: the known (2\^{}N −
+1)ε bound for the adversary that observes only the final output is an
+upper bound, not an attained leakage, and we exhibit a two-agent
+composition in which every marginal budget is zero yet the adversary
+that observes the whole transcript recovers a context completely. We
+then prove a conditional linear cap: under five numbered engineering
+requirements (declared channels only, structural context erasure at
+every invocation boundary, fresh local randomness, context provenance,
+and conditional interface-inclusive budgets ε\_1, \ldots, ε\_N),
+transcript leakage about a source X satisfies I(T; X) ≤ Σ\_i ε\_i. Three
+necessity constructions show that the erasure requirement, the
+conditional budget form, and the provenance requirement are individually
+indispensable, and the cap is achieved, so it is tight. The
+exponential-to-linear comparison is a comparison of upper-bound
+guarantees under their stated budget semantics, not of attainable
+leakages, and the conditional budget at the same numerical level is the
+more demanding constraint; the unconditional separation is the
+zero-budget construction. The central result is a decomposition, not an
+unconditional ceiling. The structural requirements license additive
+budget accounting and a Fano error floor. A strict sub-unity bound on
+reconstruction additionally requires the declared capacity-deficit
+condition Σ\_i ε\_i(t) \textless{} H(X): a numerical fact about a
+specific system-adversary pair at a stated time, not a consequence of
+the architecture, and the component of any deployed guarantee that
+expires as adversary capability grows. Separately, against an informed
+adversary holding background side information B\_t that accumulates with
+calendar time under the Markov chain B\_t → X → T, the cap survives
+conditioning while the error floor erodes through the residual entropy
+H(X \textbar{} B\_t): the strict component's deficit condition becomes
+Σ\_i ε\_i \textless{} H(X \textbar{} B\_t), a second, genuinely
+time-varying expiry channel that requires no growth in what the
+transcript reveals (Corollary 5.4b).
+
+\subsection{1. Introduction}\label{introduction}
+
+Language-model agents are now deployed in pipelines: one agent's output
+becomes working material for the next, across invocations that may be
+separately built, separately budgeted, and separately audited.
+Measurement at system scale shows where such pipelines leak. In a recent
+benchmark across production LLMs, the channels between agents were
+observable in deployed frameworks and carried the dominant share of
+leakage about sensitive contexts, and audits that inspect only final
+outputs missed a substantial fraction of violations
+{[}elyagoubi2026agentleak{]} (exact figures are recorded at Definition
+3.6).
+
+The theory matches the measurement. Asif and Amiri prove that in a
+sequential pipeline satisfying their Markov structure, with mutually
+independent sensitive variables and a marginal per-agent budget I(O\_i;
+S\_i) ≤ ε\_i on each agent, leakage about the joint secrets at the final
+output is at most the geometric sum Σ\_i 2\^{}\{N−i\} ε\_i, that is
+(2\^{}N − 1)ε in the uniform case; that geometric sum is the guarantee
+the marginal discipline provides, an upper bound with no matching
+attainability construction known, and their measurements show mutual
+information rising with chain depth {[}asif2026infotheoretic{]};
+independent composition analysis reaches the same qualitative conclusion
+{[}patil2025composition{]}. Per-agent budget certification, in the form
+the current literature states it, does not compose: N certified agents
+are not a certified system.
+
+This paper asks what discipline restores linear accounting, and against
+which adversary. Two distinctions organise the answer. The first is the
+adversary. Bounds stated against the final output do not survive the
+passage to the adversary that observes the whole transcript, and the
+transcript adversary is the one the measurements say exists. Proposition
+4.3 exhibits a two-agent composition satisfying structural context
+erasure and zero marginal budgets, including interface-inclusive
+marginal budgets, in which the transcript adversary nevertheless
+recovers a context exactly; it is the formal counterpart of the measured
+dominance of inter-agent-channel leakage. The second is the form of the
+budget: what it ranges over (the public output alone, or everything the
+invocation emits including its forward interface) and whether it is
+conditioned on what the invocation received. Marginal budgets fail even
+at budget zero; conditioning on the received interface is what prices
+the correlation the marginal misses (Section 3.4).
+
+The main result is a conditional linear cap (Theorem 5.1): under five
+numbered engineering requirements (ER-1 declared channels only, ER-2
+structural context erasure, ER-3 fresh local randomness, ER-4 context
+provenance, ER-5 conditional interface-inclusive budgets), transcript
+leakage about the source is at most the sum of the declared budgets, Nε
+in the uniform case. Three of the five hypotheses are individually
+load-bearing, each with a necessity construction defeating the cap at
+declared budget zero. Dropping the conditional budget form while keeping
+erasure caps nothing (Proposition 4.3); dropping erasure while keeping
+zero budgets caps nothing (Proposition 5.5, a persistent-pad
+construction with total leakage at zero declared budget); dropping
+context provenance while keeping erasure and zero budgets caps nothing
+(Proposition 5.5b, in which the environment routes the source around the
+priced interface through context assembly). No necessity construction is
+offered for ER-1 or ER-3. By Theorem 5.1 the five are jointly
+sufficient, and Proposition 5.6 shows the cap is achieved. The
+exponential-to-linear separation is therefore a separation between
+disciplines, not mechanisms, and a comparison of upper-bound guarantees
+under stated budget semantics, not of attainable leakages (Remark 5.7).
+
+Throughout, the results are stated inside a decomposition discipline
+(Remark 3.4). The structural requirements license two things: additive
+budget accounting, and a Fano error floor for any estimator of the
+source from the transcript (Corollary 5.4). They do not by themselves
+place the leakage-to-entropy ratio below one. The strict claim that
+reconstruction is incomplete requires, in addition, the declared
+capacity-deficit condition Σ\_i ε\_i(t) \textless{} H(X), evaluated
+against a stated decoder class at a stated time t. That condition is a
+measurable numerical fact about a system-adversary pair, not a
+consequence of the architecture; it is the component that expires as
+decoder classes grow, and the paper never states the strict bound
+without it.
+
+Our contributions are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  A composition model for sequentially invoked agents in which carried
+  state is explicit and structural context erasure is a property of the
+  composition operator rather than a notational assumption (Definitions
+  3.5 to 3.8), together with a taxonomy of budget forms (marginal versus
+  conditional, output-only versus interface-inclusive) that the results
+  show to be the load-bearing distinctions (Section 3.4).
+\item
+  An account of the exponential regime: the amplification bound imported
+  with its hypotheses carried exactly (Theorem 4.1
+  {[}asif2026infotheoretic{]}), an in-model reproduction under the named
+  local hypotheses of no carried state, independent noise and bounded
+  contamination, the last formally incomparable to the source's
+  hypotheses (Proposition 4.2), and the observation that marginal
+  budgets do not bind the transcript adversary even at budget zero
+  (Proposition 4.3).
+\item
+  A conditional linear cap (Theorem 5.1): transcript leakage at most
+  Σ\_i ε\_i under ER-1 to ER-5, with necessity constructions for three
+  of the five hypotheses, the budget form, erasure and provenance
+  (Propositions 4.3, 5.5 and 5.5b), tightness (Proposition 5.6), and the
+  composed error floor with its declared, time-indexed deficit condition
+  (Corollary 5.4).
+\item
+  A framing discipline that separates what the architecture guarantees
+  (additivity and the floor) from what must be declared and expires (the
+  deficit), with the time-indexed budgets of ER-6 given precedent in the
+  fading-wiretap literature {[}gopala2008secrecy{]}, together with a
+  side-information corollary (Corollary 5.4b) separating ER-6's
+  certification clock, whose drift is epistemic, from the informed
+  adversary's erosion clock, the one time-varying quantity in the paper
+  whose drift is not a statement about certification.
+\item
+  A formally stated open problem (Open Problem 5.8) on the criterion
+  separating recoverable from unrecoverable erasure, carried with its
+  proof obligations and its unstarted first step named.
+\end{enumerate}
+
+Every result in this paper is conditional on the numbered requirements
+of Section 3.5, which are obligations on implementations, not facts
+about deployed systems; measurement indicates deployed frameworks
+routinely violate the first of them today {[}elyagoubi2026agentleak{]}.
+Whether a given system satisfies ER-1 to ER-5 is an empirical
+conformance question, testable per instance and answered here for no
+system. Section 6 states the threats to validity, including the
+commitment that measured results against these predictions are reported
+with the same prominence as confirmations.
+
+The paper is organised as follows. Section 2 positions the results
+against the wiretap, converse, multi-agent leakage, covert-channel,
+information-flow, differential-privacy and time-varying-capacity
+literatures. Section 3 gives the model, the budget taxonomy, and the
+engineering requirements. Section 4 treats the regime without erasure,
+including the imported amplification bound and the transcript-adversary
+construction. Section 5 proves the linear cap, its necessity and
+tightness results, and states the one open problem. Section 6 records
+threats to validity, and Section 7 concludes.
+
+\subsection{2. Related work}\label{related-work}
+
+\textbf{The wiretap lineage.} The objects this paper computes with are
+the classical ones. Wyner introduced the wiretap channel and
+equivocation at the adversary as the measure of secrecy
+{[}wyner1975wiretap{]}; Leung-Yan-Cheong and Hellman characterised the
+secrecy capacity of the Gaussian channel as a difference of capacities
+{[}leungyancheong1978gaussian{]}; Csiszár and Körner treated broadcast
+channels with confidential messages, the general single-eavesdropper
+form of the family {[}csiszar1978broadcast{]}. Section 3.2 states the
+two-agent base results as in-model instances of this family rather than
+as new results. The failure of additive accounting for colluding
+observers, by contrast, is elementary and needs no citation: joint
+information can exceed the sum of marginal informations, with the
+interaction identity in Theorem 3.1 locating the excess and Proposition
+5.5 exhibiting the extremal case at zero marginals, and requirement ER-1
+exists to exclude exactly this failure mode.
+
+\textbf{Fano and the source-coding converses.} The error floor is Fano's
+inequality {[}fano1961transmission{]} in its standard converse form
+{[}cover2006elements{]}, applied at the level of the composed transcript
+(Theorem 3.2, Corollary 5.4). We add only precision: the normalised form
+of the floor carries an alphabet-entropy hypothesis that informal
+statements frequently elide, and Theorem 3.2 states it.
+
+\textbf{Sequential multi-agent leakage.} The regime this paper addresses
+was opened by Asif and Amiri's information-theoretic treatment of agent
+pipelines: under their Markov structure, with mutually independent
+sensitive variables and marginal per-agent budgets, final-output leakage
+is bounded by the geometric sum, and their measurements show mutual
+information growing with chain depth {[}asif2026infotheoretic{]}. We
+import their Theorem 4.1 with citation, carrying its hypotheses exactly
+(Section 4). Our Proposition 4.2 closes the same doubling recursion
+inside our model under three named local hypotheses: no carried state,
+independent noise, and bounded contamination. The two hypothesis sets
+are formally incomparable, neither implying the other: their model
+constrains the secrets' joint law and the pipeline's Markov structure,
+ours prices the coupling between upstream flow and downstream contexts
+directly, and neither result claims the other's hypotheses. AgentLeak
+supplies the system-scale measurement: inter-agent channels are
+observable in deployed frameworks and carry the dominant share of
+leakage, which is what motivates stating our main results against the
+transcript adversary (Definition 3.6) {[}elyagoubi2026agentleak{]}.
+Patil, Stengel-Eskin and Bansal reach the same qualitative conclusion by
+composition analysis {[}patil2025composition{]}. Relative to this line,
+our contribution is not a sharper amplification bound; it is the
+characterisation of a discipline under which amplification collapses to
+additivity, with necessity constructions for both of the discipline's
+central hypotheses.
+
+\textbf{Covert channels.} ER-1 (declared channels only) is a
+covert-channel exclusion obligation, and its conformance audit is a
+channel inventory. The quantitative treatment of unintended channels as
+information channels goes back to Millen, who applied Shannon capacity
+to covert channels in secure systems {[}millen1987covert{]}. The
+necessity construction of Proposition 5.5 can be read in those terms:
+state carried across an invocation boundary is an unpriced channel, and
+the composition-level bound fails through it at zero declared budget.
+
+\textbf{Language-based information flow.} Static, language-level
+enforcement of noninterference-style properties is surveyed by Sabelfeld
+and Myers {[}sabelfeld2003language{]}. That programme certifies flows by
+analysing program text before execution. The setting here is
+complementary: the composed agents are opaque, no per-agent program
+analysis is assumed, and the requirements of Section 3.5 are
+architectural obligations on the composition, with budgets standing
+where typing judgements cannot reach; section 6 records which
+requirements are auditable by inspection and which require statistical
+estimation. Nothing here replaces language-based enforcement inside an
+agent; the results concern what composition preserves when per-agent
+internals are inaccessible.
+
+\textbf{Differential privacy composition.} Differential privacy is the
+reference discipline for budgets that compose: basic sequential
+composition is a theorem (the ε parameters add), advanced composition
+degrades sublinearly, and the reason composition holds with no
+architectural assumptions is that the guarantee is worst-case over
+neighbouring inputs and over adaptively chosen mechanisms
+{[}dwork2014algorithmic{]}. That worst-case quantification is the honest
+analogue of ER-5's conditioning on the received interface: both price
+the adversary's best use of what earlier stages expose. The results here
+can be read as identifying what that convenience costs to reproduce for
+mutual-information budgets over opaque agents: additivity is not
+automatic (Section 4 exhibits exponential amplification, and complete
+failure against the transcript adversary at zero budget), and it must be
+earned by architecture, namely erasure, conditioning, and provenance
+(Theorem 5.1). We make no claim that the budgets of ER-5 imply any
+differential-privacy guarantee; the two disciplines quantify over
+different adversaries and different neighbouring relations.
+
+\textbf{Time-varying capacity.} Evaluating secrecy against a varying
+channel state has precedent in the fading wiretap channel literature
+{[}gopala2008secrecy{]}. ER-6's time-indexed budgets and the expiring
+deficit of Corollary 5.4 follow that precedent at the system level:
+capacity against the strongest available decoder class is a function of
+time, and the strict component of any guarantee is dated. The
+side-information erosion of Corollary 5.4b is a different time
+dependence from the fading channel's: there the channel state varies
+while the source is fixed; here every channel and budget is fixed and
+what varies is the adversary's background knowledge of the source,
+entering through the conditional-entropy term of Fano's inequality
+{[}fano1961transmission; cover2006elements{]}.
+
+\subsection{3. Model and preliminaries}\label{model-and-preliminaries}
+
+\subsubsection{3.1 Notation}\label{notation}
+
+Random variables are uppercase, realisations lowercase, alphabets
+calligraphic. X is a source (the data subject's protected variable) over
+a finite alphabet 𝒳 with H(X) \textgreater{} 0. I(·;·) denotes mutual
+information, I(·;·\textbar·) conditional mutual information, H(·)
+Shannon entropy in bits. ``U ⊥ V'' abbreviates independence; ``U ⊥ V
+\textbar{} W'' conditional independence. For a sequence (A\_1, \ldots,
+A\_N) we write A\_\{1:i\} = (A\_1, \ldots, A\_i) and A\_\{\textless i\}
+= A\_\{1:i−1\}.
+
+All results in this paper are information-theoretic statements about a
+stated model under stated hypotheses. Every hypothesis is listed in
+section 3.5 as a numbered engineering requirement or stated locally in
+the result that uses it; no result transfers to a system in which the
+corresponding hypothesis fails, and section 5 exhibits explicit failure
+constructions.
+
+\subsubsection{3.2 The two-agent base
+architecture}\label{the-two-agent-base-architecture}
+
+Two agents observe the source through separate channels: a boundary
+agent S emitting Y\_S = E\_S(X, N\_S) and a delegation agent M emitting
+Y\_M = E\_M(X, N\_M), where N\_S, N\_M are independent local randomness
+sources. The architectural intent is that S enforces selective
+disclosure under a budget I(X; Y\_S) ≤ C\_S while M executes delegated
+capability under a budget I(X; Y\_M) ≤ C\_M, with no unmediated channel
+between the two.
+
+The following three results are standard; we state and prove them
+in-model because the composition theorems of sections 4 and 5 reduce to
+them at N = 2, and because their precise hypotheses are load-bearing.
+They are instances of an established family: wiretap equivocation
+{[}wyner1975wiretap{]}, secrecy capacity as a capacity difference
+{[}leungyancheong1978gaussian{]}, broadcast channels with confidential
+messages as the family's general single-eavesdropper form
+{[}csiszar1978broadcast{]}, and the source-coding and Fano converses
+{[}fano1961transmission; cover2006elements{]}. The failure of the
+additive form under collusion needs no citation: it is the elementary
+fact that joint information can exceed the sum of marginal informations,
+and the interaction identity in Theorem 3.1's proof locates the excess
+exactly.
+
+\textbf{Theorem 3.1 (additive bound under conditional independence).} If
+I(Y\_S; Y\_M \textbar{} X) = 0, then
+
+\begin{quote}
+I(X; Y\_S, Y\_M) ≤ I(X; Y\_S) + I(X; Y\_M),
+\end{quote}
+
+with equality if and only if additionally I(Y\_S; Y\_M) = 0.
+
+\emph{Proof.} By the chain rule, I(X; Y\_S, Y\_M) = I(X; Y\_S) + I(X;
+Y\_M \textbar{} Y\_S). The interaction identity I(X; Y\_M) − I(X; Y\_M
+\textbar{} Y\_S) = I(Y\_S; Y\_M) − I(Y\_S; Y\_M \textbar{} X) (both
+sides equal the co-information of the triple) gives, under I(Y\_S; Y\_M
+\textbar{} X) = 0,
+
+\begin{quote}
+I(X; Y\_M \textbar{} Y\_S) = I(X; Y\_M) − I(Y\_S; Y\_M) ≤ I(X; Y\_M),
+\end{quote}
+
+with equality exactly when I(Y\_S; Y\_M) = 0. ∎
+
+The bound is an inequality; conditional independence given X still
+permits marginal correlation of Y\_S and Y\_M through X itself, and that
+correlation only lowers the joint leakage relative to the sum. The
+inequality direction is all that any downstream guarantee uses.
+
+\textbf{Theorem 3.2 (Fano error floor).} Let \textbar 𝒳\textbar{} ≥ 3
+and let Y be any observation with I(X; Y) \textless{} ∞. For any
+estimator X̂(Y) taking values in 𝒳,
+
+\begin{quote}
+P\_e := Pr{[}X̂(Y) ≠ X{]} ≥ (H(X) − I(X; Y) − 1) /
+log(\textbar 𝒳\textbar{} − 1).
+\end{quote}
+
+If moreover H(X) ≥ log(\textbar 𝒳\textbar{} − 1) (in particular if X is
+uniform), then with R := I(X; Y)/H(X),
+
+\begin{quote}
+P\_e ≥ 1 − R − 1/H(X).
+\end{quote}
+
+\emph{Proof.} Fano's inequality {[}fano1961transmission;
+cover2006elements{]} gives H(X \textbar{} Y) ≤ h(P\_e) + P\_e
+log(\textbar 𝒳\textbar{} − 1) ≤ 1 + P\_e log(\textbar 𝒳\textbar{} − 1),
+where h is binary entropy. Rearranging and substituting H(X \textbar{}
+Y) = H(X) − I(X; Y) gives the first display. The second follows since
+(H(X) − I − 1)/log(\textbar 𝒳\textbar{} − 1) ≥ (H(X) − I − 1)/H(X) when
+H(X) ≥ log(\textbar 𝒳\textbar{} − 1) and H(X) − I − 1 ≥ 0; when H(X) − I
+− 1 \textless{} 0 the second display is vacuous and holds trivially. ∎
+
+We record a precision point: the normalised form 1 − R − 1/H(X) requires
+the stated alphabet-entropy hypothesis; for strongly non-uniform sources
+with H(X) \textless{} log(\textbar 𝒳\textbar{} − 1) only the first
+display applies. The log(\textbar 𝒳\textbar{} − 1) denominator
+additionally requires the estimator to range over 𝒳 itself; for
+estimators taking values in a strict superset of 𝒳 the denominator
+weakens to log \textbar 𝒳\textbar.
+
+\textbf{Theorem 3.3 (robustness to approximate separation).} If I(Y\_S;
+Y\_M \textbar{} X) ≤ ε, then I(X; Y\_S, Y\_M) ≤ I(X; Y\_S) + I(X; Y\_M)
++ ε.
+
+\emph{Proof.} As in Theorem 3.1, I(X; Y\_M \textbar{} Y\_S) = I(X; Y\_M)
+− I(Y\_S; Y\_M) + I(Y\_S; Y\_M \textbar{} X) ≤ I(X; Y\_M) + ε. ∎
+
+Failure of separation is therefore continuous: a violation of size ε
+costs at most ε additional bits of joint leakage.
+
+\textbf{Remark 3.4 (the decomposition; what the architecture does and
+does not buy).} Write R\_max = (C\_S + C\_M)/H(X). Theorems 3.1 and 3.2
+yield: under the separation requirement (ER-1 below) and against a
+stated adversary class (ER-6 below), leakage budgets add, and any
+estimator faces the error floor P\_e ≥ 1 − R\_max − 1/H(X)
+(uniform-source form). These structural requirements do \textbf{not} by
+themselves place R\_max below one: two conditionally independent
+channels of sufficient combined capacity satisfy every structural
+requirement with R\_max ≥ 1, at which point the floor is vacuous. The
+strict bound R\_max \textless{} 1 holds exactly when, additionally, the
+capacity-deficit condition
+
+\begin{quote}
+C\_S + C\_M \textless{} H(X)
+\end{quote}
+
+holds. The deficit condition is a measurable, declarable, numerical fact
+about a given system and adversary class; it is not a consequence of the
+architecture, and we deliberately do not list it among the structural
+requirements. It is also a time-indexed quantity: with capacities
+evaluated against the strongest decoder class available at time t, the
+governing ratio is R(t) = (C\_S(t) + C\_M(t))/H(X) with shelf life t* =
+sup\{t : R(t) \textless{} 1\}; R(t) can cross one with every structural
+requirement intact, and what expires at t* is the deficit condition, not
+the architecture. The supremum is not in general a first crossing: R(t)
+may cross one and return, in which case t* marks the last time the
+deficit condition holds, not the first time it fails. When C\_S(t) +
+C\_M(t) is non-decreasing in t (the regime of ER-6's growing decoder
+class, and the hypothesis under which Corollary 5.4 below states the
+composed shelf life), R(t) is non-decreasing, the supremum coincides
+with the first crossing, and the expiry reading is exact. Treating
+channel capacity as a time-indexed quantity has precedent in the study
+of fading wiretap channels, where secrecy capacity is defined against a
+varying channel state {[}gopala2008secrecy{]}. This decomposition
+(structural requirements license additivity and the floor; the declared
+deficit licenses the strict bound; the deficit expires) is the paper's
+framing discipline, and every bound below is stated within it. A second,
+distinct clock, whose drift is real rather than certificational, is
+treated at Corollary 5.4b: there the capacities and budgets are held
+fixed and what moves is the informed adversary's residual uncertainty
+H(X \textbar{} B\_t) about the source. The two clocks must not be
+conflated, and every time-indexed reconstruction statement downstream of
+this paper should name which one it runs on.
+
+\subsubsection{3.3 N-agent sequential
+composition}\label{n-agent-sequential-composition}
+
+We now generalise from two parallel observers to a chain of N
+sequentially invoked agents, the regime measured by the recent
+multi-agent leakage literature {[}asif2026infotheoretic;
+elyagoubi2026agentleak{]}.
+
+\textbf{Definition 3.5 (sequential composition).} A \emph{sequential
+composition of N agents} consists of invocations i = 1, \ldots, N where
+invocation i:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  receives an \emph{interface message} Z\_\{i−1\} from its predecessor
+  (Z\_0 := ⊥, a constant);
+\item
+  holds a \emph{sensitive context} S\_i and \emph{carried state}
+  ρ\_\{i−1\} (ρ\_0 := ⊥);
+\item
+  draws \emph{local randomness} N\_i;
+\item
+  emits a \emph{public output} O\_i, a \emph{forward interface} Z\_i,
+  and carried state ρ\_i via a measurable map
+\end{enumerate}
+
+\begin{quote}
+(O\_i, Z\_i, ρ\_i) = f\_i(Z\_\{i−1\}, ρ\_\{i−1\}, S\_i, N\_i).
+\end{quote}
+
+We write V\_i := (O\_i, Z\_i) for the invocation's total emission and T
+:= (V\_1, \ldots, V\_N) for the \emph{transcript}.
+
+\textbf{Definition 3.6 (adversary classes).} The \emph{final-output
+adversary} 𝔄\_out observes O\_N. The \emph{transcript adversary} 𝔄\_tr
+observes T. Clearly any bound against 𝔄\_tr implies the same bound
+against 𝔄\_out. Measurement at system scale shows the channels internal
+to T are observable in deployed systems and carry the dominant share of
+leakage (68.8 per cent of inter-agent channel traces leaking, against
+27.2 per cent per-channel output leakage, in a 4,979-trace benchmark
+across five production LLMs {[}elyagoubi2026agentleak{]}); we therefore
+treat 𝔄\_tr as the realistic passive adversary and state our main
+results against it.
+
+\textbf{Definition 3.7 (structural context erasure, as a composition
+property).} The composition is \emph{context-erasing at boundary i} if
+ρ\_i = ⊥: no state survives the invocation boundary except the declared
+forward interface. The composition has \emph{structural context erasure}
+if it is context-erasing at every boundary, in which case Definition 3.5
+reduces to
+
+\begin{quote}
+(O\_i, Z\_i) = f\_i(Z\_\{i−1\}, S\_i, N\_i).
+\end{quote}
+
+Consequently (interface sufficiency): for every i, conditional on (Z\_i,
+S\_\{i+1\}, N\_\{i+1\}), the emission V\_\{i+1\} is independent of the
+entire invocation-i history (Z\_\{i−1\}, S\_i, N\_i). The implication is
+one-way: retained state may be causally inert, so the conditional
+independence does not entail ρ\_i = ⊥, and erasure is defined by the
+structural condition, not by the independence it implies. Erasure is
+thus a \emph{reachability} property of the composition operator: no
+permitted continuation of the system can reconstruct the erased working
+context except through what the declared interface carries, and the
+information available downstream about the erased material is bounded
+through Z\_i by the data processing inequality.
+
+\textbf{Definition 3.8 (erasure grades).} Erasure at boundary i is
+\emph{Grade 1} (hiding) if there exists key material K in the system
+(any variable measurable with respect to the system's retained state,
+including operator-held state) such that the erased context is
+recoverable as a function of (Z\_i, K). It is \emph{Grade 2}
+(forgetting) if no such K exists in the closure of the system's
+permitted operations. Grade 1 withholds gluing data; Grade 2 destroys
+the witness. The closure of the system's permitted operations is left
+informal here, and no theorem below depends on the grade criterion
+(section 5.3 states this dependence-freedom explicitly). A candidate
+formal criterion separating the grades is posed as Open Problem 5.8; the
+definition above is operational and suffices for the theorems.
+
+\textbf{Definition 3.9 (background side information; the informed
+adversary).} A \emph{background side-information family} is a collection
+\{B\_t : t ≥ 0\} of random variables such that (i) for s ≤ t, B\_s is a
+measurable function of B\_t (the background only accumulates), and (ii)
+for every t the Markov chain B\_t → X → T holds, equivalently I(T; B\_t
+\textbar{} X) = 0. The \emph{informed transcript adversary} 𝔄\_tr(t)
+observes (T, B\_t). Hypothesis (ii) states that the background carries
+information about the source only through the world's dependence on the
+source (linkage corpora, auxiliary records, side priors), never through
+a tap on the system: for instance a background containing transcript
+material, or one correlated with the invocations' internal randomness,
+violates it, and no result below applies to such a background (section
+5.4); the displayed condition is exact. The index t is the same calendar
+time as ER-6's certification index: ``two clocks'' names two quantities
+drifting on one calendar, not two time axes. The family is a declared
+model of the adversary's accumulation, in the same sense that ER-6's
+decoder class is declared; nothing in this paper asserts what any actual
+adversary holds.
+
+\subsubsection{3.4 What the per-agent constraint must range
+over}\label{what-the-per-agent-constraint-must-range-over}
+
+The composition theorems below turn on two attributes of the
+per-invocation leakage constraint, and we fix vocabulary for them now. A
+budget is \emph{output-only} if it constrains O\_i alone, and
+\emph{interface-inclusive} if it constrains V\_i = (O\_i, Z\_i). A
+budget is \emph{marginal} if it is an unconditional mutual information,
+and \emph{conditional} if it conditions on the received interface
+Z\_\{i−1\}. Section 4 shows that marginal output-only budgets govern
+only the final-output adversary and place no nontrivial constraint on
+the transcript adversary, even at budget zero. Section 5 shows that
+conditional interface-inclusive budgets, combined with structural
+context erasure, yield the linear cap against the transcript adversary.
+
+\subsubsection{3.5 Engineering
+requirements}\label{engineering-requirements}
+
+Every hypothesis used by any result below is either one of the following
+numbered requirements or stated explicitly in the result itself (section
+4's marginal-regime results carry local hypotheses in place). Each
+requirement is an obligation on an implementation, not a fact about the
+world. The necessity constructions of sections 4 and 5 (Propositions
+4.3, 5.5 and 5.5b) show what fails when the conditional budget form
+(ER-5), erasure (ER-2) or provenance (ER-4) is dropped alone; no
+necessity construction is offered for ER-1 or ER-3, whose sufficiency is
+claimed only in conjunction with the rest.
+
+\begin{itemize}
+\item
+  \textbf{ER-1 (declared channels only; non-collusion).} No channel
+  connects one invocation to another except the declared components of
+  Definition 3.5: the interfaces \{Z\_i\} and the modelled carried state
+  \{ρ\_i\}. No undeclared side channel exists. ER-1 does not itself
+  constrain the carried state: the destruction of ρ\_i is ER-2's
+  obligation alone. Assembly of a downstream context from upstream
+  emissions is not a channel in this sense; it is the environment's
+  routing, governed by ER-4. At N = 2 (parallel form) this is I(Y\_S;
+  Y\_M \textbar{} X) = 0 together with the absence of any third channel
+  carrying the inter-agent residue. ER-1 is what the functional form of
+  Definition 3.5 encodes; a system with side channels is outside the
+  model. That the additive structure fails without ER-1 is elementary,
+  not a cited result: joint information exceeds the sum of marginals as
+  soon as the observations correlate beyond what the source explains,
+  with Theorem 3.3 pricing the excess and Proposition 5.5 exhibiting the
+  extremal case at zero marginal budgets; system-scale measurement shows
+  deployed multi-agent frameworks routinely violate ER-1 today
+  {[}elyagoubi2026agentleak{]}.
+\item
+  \textbf{ER-2 (structural context erasure).} ρ\_i = ⊥ at every boundary
+  (Definition 3.7): the platform destroys all invocation state except
+  the declared forward interface. This is a structural property of the
+  runtime (state destruction), not an instructed behaviour of the agent.
+\item
+  \textbf{ER-3 (fresh local randomness).} The local randomness sources
+  N\_1, \ldots, N\_N are mutually independent and jointly independent of
+  the source and contexts (X, W\_1, \ldots, W\_N), with W\_i as in ER-4.
+\item
+  \textbf{ER-4 (context provenance).} Each sensitive context is
+  assembled from the source, private freshness, and the received
+  interface only: S\_i = φ\_i(X, W\_i, Z\_\{i−1\}), where W\_1, \ldots,
+  W\_N are mutually independent and jointly independent of X and of
+  \{N\_j\}. In particular no downstream context is assembled from
+  upstream \emph{emissions} except through the declared (and therefore
+  budgeted) interface. Contamination routed through Z\_\{i−1\} is
+  permitted, because ER-5 prices it; contamination routed around Z is
+  excluded.
+\item
+  \textbf{ER-5 (conditional, interface-inclusive leakage budgets).} For
+  each invocation a declared budget ε\_i ≥ 0 with
+\end{itemize}
+
+\begin{quote}
+I(O\_i, Z\_i; X \textbar{} Z\_\{i−1\}) ≤ ε\_i.
+\end{quote}
+
+The budget covers everything the invocation emits, including the forward
+interface, and is conditioned on what the invocation received. It is a
+per-invocation, locally defined quantity: it depends only on the joint
+law of one invocation's input interface, emission, and the source.
+Certification of a declared bound on it is class-and-time-indexed per
+ER-6.
+
+\begin{itemize}
+\item
+  \textbf{ER-6 (stated adversary class, time-indexed).} All budgets and
+  capacities are evaluated against a stated decoder class at a stated
+  time t; every ε\_i is ε\_i(t), non-decreasing in t under growth of the
+  class. No bound in this paper says anything about a decoder class
+  stronger than the one declared. (The formalisation of the ordered
+  decoder-class family is developed in companion work on the
+  time-indexed ratio R(t); here it enters only through the indexing of
+  budgets.)
+
+  \emph{Semantics of the time index (certified bounds).} The quantities
+  the theorems consume are Shannon functionals of the joint law: I(O\_i,
+  Z\_i; X \textbar{} Z\_\{i−1\}) depends on no decoder class and does
+  not change as adversaries improve. The declared ε\_i(t) are certified
+  upper bounds on these fixed but unknown quantities: a conformance
+  audit at time t certifies ε\_i(t) using the estimation and attack
+  tooling of the decoder class available at t, and a certificate is only
+  as strong as the class that produced it. What is non-decreasing in t
+  is therefore the certified value, not the information: growth of the
+  class can expose leakage a weaker class missed, forcing the honest
+  certificate upward or its revocation, while the underlying mutual
+  information is constant. Theorem 5.1 and its corollaries hold with any
+  values that genuinely bound the Shannon quantities; every time-indexed
+  statement in this paper, in particular the expiry of Corollary 5.4, is
+  a statement about what the certification licenses at time t, not a
+  statement that information accrues to the transcript. The same reading
+  applies to the time-indexed capacities of Remark 3.4. This certified
+  clock is not the only time dependence a deployment faces: Corollary
+  5.4b treats the informed adversary whose background side information
+  grows with calendar time (Definition 3.9), a drift that is real rather
+  than certificational and that no conformance audit arrests.
+\item
+  \textbf{ER-7 (declared deficit for strict reconstruction claims).} Any
+  claim that reconstruction is strictly incomplete (error floor bounded
+  away from zero) requires, in addition to ER-1 to ER-6, the declared
+  numerical fact Σ\_i ε\_i(t) \textless{} H(X) (base case: C\_S + C\_M
+  \textless{} H(X)). This is a property of a system-adversary pair at a
+  time, never a consequence of ER-1 to ER-5, and it is the component
+  that expires as t grows (Remark 3.4).
+\end{itemize}
+
+\subsection{4. The sequential bound without
+erasure}\label{the-sequential-bound-without-erasure}
+
+This section treats the budget regime the empirical literature measures:
+chained agents under marginal output-only budgets. Throughout this
+section the composition model is Definition 3.5, the budget is the
+marginal output-only constraint I(O\_i; S\_i) ≤ ε\_i on each agent's
+leakage about its own context, and the secrets of interest are the
+per-agent contexts S\_\{1:N\}. Structural hypotheses are stated per
+result and are not uniform across the section: Theorem 4.1 is imported
+with its source's Markov structure; Proposition 4.2 assumes no carried
+state and independent noise (its hypotheses (i) and (ii) below);
+Proposition 4.3's construction satisfies structural context erasure
+outright. Carried state and contexts assembled from upstream outputs are
+permitted by the model but are excluded wherever a result's stated
+hypotheses exclude them.
+
+\textbf{Theorem 4.1 (sequential amplification; imported).} Consider a
+sequential pipeline of N agents satisfying the source's Markov structure
+(its Eq. (2): S\_\{i−1\} → (O\_\{i−1\}, D\_i, S\_i) → O\_i → O\_\{i+1\}
+→ ⋯ → O\_N for each i ∈ \{1, \ldots, N\}, where D\_i denotes the public
+or task-relevant inputs to agent i), and assume the sensitive variables
+S\_1, \ldots, S\_N are mutually independent. If each agent satisfies the
+local leakage constraint I(O\_i; S\_i) ≤ ε\_i, then the final output
+satisfies
+
+\begin{quote}
+I(O\_N; S\_1, \ldots, S\_N) ≤ Σ\_\{i=1\}\^{}\{N\} 2\^{}\{N−i\} ε\_i,
+\end{quote}
+
+and in the uniform case ε\_i = ε,
+
+\begin{quote}
+I(O\_N; S\_1, \ldots, S\_N) ≤ (2\^{}N − 1) ε.
+\end{quote}
+
+\emph{Provenance.} This is Theorem 4.1 of Asif and Amiri
+{[}asif2026infotheoretic{]}, proved there via the chain rule and the
+conditional data processing inequality; we import it with citation and
+do not re-derive it. The same authors report the empirical counterpart:
+average mutual information rising from 0.49 to 1.05 as chain depth grows
+from two to five agents (MedQA, LLaMA-7B). Composition analysis by
+Patil, Stengel-Eskin and Bansal reaches the same qualitative conclusion
+{[}patil2025composition{]}.
+
+\textbf{Proposition 4.2 (in-model reproduction under bounded
+contamination).} In the model of Definition 3.5 with O\_i = Z\_i (full
+passthrough) and per-agent constraint I(O\_i; S\_i) ≤ ε\_i, suppose
+additionally:
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\item
+  \emph{no carried state}: ρ\_i = ⊥ for every i, equivalently O\_i =
+  f\_i(O\_\{i−1\}, S\_i, N\_i); under full passthrough this is
+  structural context erasure (Definition 3.7);
+\item
+  \emph{independent noise}: N\_1, \ldots, N\_N are mutually independent
+  and jointly independent of (S\_1, \ldots, S\_N);
+\item
+  \emph{bounded contamination}: for every i,
+\end{enumerate}
+
+\begin{quote}
+I(O\_\{i−1\}; S\_i \textbar{} S\_\{1:i−1\}) ≤ I(O\_\{i−1\};
+S\_\{1:i−1\}).
+\end{quote}
+
+Then L\_i := I(O\_i; S\_\{1:i\}) satisfies the recursion L\_i ≤ 2
+L\_\{i−1\} + ε\_i, and hence L\_N ≤ Σ\_\{i=1\}\^{}\{N\} 2\^{}\{N−i\}
+ε\_i.
+
+\emph{Proof.} By the chain rule, L\_i = I(O\_i; S\_i) + I(O\_i;
+S\_\{1:i−1\} \textbar{} S\_i) ≤ ε\_i + I(O\_i; S\_\{1:i−1\} \textbar{}
+S\_i). By (i), O\_i = f\_i(O\_\{i−1\}, S\_i, N\_i), and inductively
+O\_\{i−1\} is a measurable function of (S\_\{1:i−1\}, N\_\{1:i−1\});
+hence by (ii), N\_i is independent of (S\_\{1:i\}, O\_\{i−1\}) jointly,
+and in particular N\_i ⊥ (S\_\{1:i−1\}, O\_\{i−1\}) \textbar{} S\_i.
+Given S\_i, the emission O\_i is therefore a measurable function of
+(O\_\{i−1\}, N\_i) with N\_i conditionally independent of (S\_\{1:i−1\},
+O\_\{i−1\}); hence S\_\{1:i−1\} → O\_\{i−1\} → O\_i is a Markov chain
+conditionally on S\_i, and the conditional data processing inequality
+gives I(O\_i; S\_\{1:i−1\} \textbar{} S\_i) ≤ I(O\_\{i−1\}; S\_\{1:i−1\}
+\textbar{} S\_i). Expanding,
+
+\begin{quote}
+I(O\_\{i−1\}; S\_\{1:i−1\} \textbar{} S\_i) = I(O\_\{i−1\};
+S\_\{1:i−1\}) + I(O\_\{i−1\}; S\_i \textbar{} S\_\{1:i−1\}) −
+I(O\_\{i−1\}; S\_i) ≤ L\_\{i−1\} + I(O\_\{i−1\}; S\_i \textbar{}
+S\_\{1:i−1\}) ≤ 2 L\_\{i−1\},
+\end{quote}
+
+using bounded contamination in the last step. The recursion L\_i ≤
+2L\_\{i−1\} + ε\_i with L\_0 = 0 solves to L\_N ≤ Σ\_i 2\^{}\{N−i\}
+ε\_i. ∎
+
+\emph{Scope note (binding).} Bounded contamination is \textbf{our}
+sufficient condition for closing the doubling recursion inside this
+model; it names the mechanism (the downstream context S\_i correlates
+with the upstream transcript at most as strongly as the upstream secrets
+do). Whether it coincides with the hypotheses of
+{[}asif2026infotheoretic{]} is a citation-resolution item; Theorem 4.1
+stands on its own citation and Proposition 4.2 on its own proof, and
+neither claims the other's hypotheses.
+
+The doubling term is genuinely a contamination term: when the downstream
+context is independent of the upstream flow given earlier secrets
+(I(O\_\{i−1\}; S\_i \textbar{} S\_\{1:i−1\}) = 0, the exogenous case),
+the same computation yields the additive recursion L\_i ≤ L\_\{i−1\} +
+ε\_i under the same no-carried-state hypothesis, \emph{for the
+final-output adversary}. Hypothesis (i) is load-bearing, not decorative:
+with carried state permitted, zero marginal budgets bound nothing even
+at the final output. (Take S\_1, S\_2 independent uniform bits;
+invocation 1 emits fresh junk O\_1 = U with U uniform and independent of
+the secrets, retaining ρ\_1 = S\_1; invocation 2 emits O\_2 = ρ\_1.
+Every marginal budget holds at ε = 0 and bounded contamination holds
+with both sides zero, yet I(O\_2; S\_1, S\_2) = H(S\_1).) The regimes
+are therefore three: with carried state, no function of the marginal
+budgets bounds leakage (here at the final output, and at transcript
+scale in Proposition 5.5); without carried state, under marginal budgets
+only, amplification up to the geometric sum (Proposition 4.2); under
+erasure with the conditional budgets of ER-5, the linear cap (Theorem
+5.1). The next proposition shows why the final-output adversary is the
+wrong one to design against even inside the middle regime.
+
+\textbf{Proposition 4.3 (marginal budgets do not bind the transcript
+adversary).} There is a two-agent sequential composition satisfying
+structural context erasure (ER-2), fresh randomness (ER-3), exogenous
+contexts, and \emph{zero} marginal budgets, in which the transcript
+adversary recovers a context completely:
+
+\begin{quote}
+I(O\_1; S\_1) = I(O\_2; S\_2) = 0, and moreover I(V\_1; S\_1) = I(V\_2;
+S\_2) = 0, yet I(O\_1, O\_2; S\_1, S\_2) = H(S\_2).
+\end{quote}
+
+\emph{Construction.} Let S\_1, S\_2 be independent uniform bits and N\_1
+a uniform bit independent of both. Agent 1 emits O\_1 = Z\_1 = S\_1 ⊕
+N\_1. Agent 2 emits O\_2 = Z\_1 ⊕ S\_2 (and Z\_2 = ⊥). Marginally, O\_1
+is uniform and independent of S\_1 (one-time pad), and O\_2 = S\_1 ⊕
+N\_1 ⊕ S\_2 is uniform and independent of S\_2; so every marginal budget
+is met at ε = 0, including the interface-inclusive marginal I(V\_i;
+S\_i) = 0. But O\_1 ⊕ O\_2 = S\_2: the transcript adversary reads S\_2
+exactly. Consistently with Theorem 4.1, the final output alone reveals
+nothing (I(O\_2; S\_1, S\_2) = 0). ∎
+
+Three consequences. First, a bound stated against the final output, such
+as Theorem 4.1, does not survive the passage to the transcript
+adversary, and the transcript adversary is the one system-scale
+measurement says exists {[}elyagoubi2026agentleak{]}. Second, the
+failure is not repaired by including the interface in a \emph{marginal}
+budget; the construction defeats that too. The load-bearing attribute is
+\emph{conditioning}: the conditional budget of ER-5 evaluates I(V\_2;
+S\_2 \textbar{} Z\_1) = H(S\_2) and prices the correlation the marginal
+misses. Third, the construction satisfies erasure: structural context
+erasure alone, without the conditional budget discipline, caps nothing.
+Erasure and budget form are separately necessary; section 5 shows they
+are jointly sufficient. These three facts make Proposition 4.3 the
+paper's unconditional separation: zero declared budget on one side
+against total recovery of a context on the other, with no attainability
+hypothesis on either side. The exponential-to-linear comparison of
+Remark 5.7 is, by contrast, a comparison of upper-bound guarantees under
+stated budget semantics (see the second fence there).
+
+\subsection{5. The linear cap under structural context
+erasure}\label{the-linear-cap-under-structural-context-erasure}
+
+\subsubsection{5.1 The cap}\label{the-cap}
+
+\textbf{Theorem 5.1 (linear cap).} Consider a sequential composition of
+N agents satisfying ER-1 (declared channels only), ER-2 (structural
+context erasure), ER-3 (fresh randomness), ER-4 (context provenance),
+and ER-5 (conditional interface-inclusive budgets ε\_1, \ldots, ε\_N).
+Then against the transcript adversary,
+
+\begin{quote}
+I(T; X) ≤ Σ\_\{i=1\}\^{}\{N\} ε\_i,
+\end{quote}
+
+and in the uniform case I(T; X) ≤ Nε.
+
+\emph{Proof.} Write V\_i = (O\_i, Z\_i) and T = (V\_1, \ldots, V\_N). By
+the chain rule,
+
+\begin{quote}
+I(T; X) = Σ\_\{i=1\}\^{}\{N\} I(V\_i; X \textbar{} V\_\{1:i−1\}).
+\end{quote}
+
+Fix i and set A := V\_\{1:i−1\}; note Z\_\{i−1\} is a coordinate of A
+(for i = 1, both are trivial).
+
+\emph{Step 1 (transcript measurability).} By ER-1, ER-2 and ER-4, each
+V\_j with j \textless{} i is a measurable function of (X, W\_\{1:j\},
+N\_\{1:j\}): inductively, V\_j = f\_j(Z\_\{j−1\}, φ\_j(X, W\_j,
+Z\_\{j−1\}), N\_j) and Z\_\{j−1\} is a coordinate of V\_\{j−1\}. Hence A
+is a measurable function of (X, W\_\{\textless i\}, N\_\{\textless i\}).
+
+\emph{Step 2 (fresh inputs are conditionally independent of the past).}
+By ER-3 and ER-4, (W\_i, N\_i) ⊥ (X, W\_\{\textless i\},
+N\_\{\textless i\}), hence by Step 1, (W\_i, N\_i) ⊥ (A, X) jointly.
+Since (X, Z\_\{i−1\}) is a measurable function of (A, X), it follows
+that (W\_i, N\_i) ⊥ A \textbar{} (X, Z\_\{i−1\}). Conditional on (X,
+Z\_\{i−1\}), the emission V\_i = f\_i(Z\_\{i−1\}, φ\_i(X, W\_i,
+Z\_\{i−1\}), N\_i) is a measurable function of (W\_i, N\_i) and the
+conditioned values, so by the data processing inequality
+
+\begin{quote}
+I(V\_i; A \textbar{} X, Z\_\{i−1\}) ≤ I(W\_i, N\_i; A \textbar{} X,
+Z\_\{i−1\}) = 0.
+\end{quote}
+
+\emph{Step 3 (exchange).} Expanding I(V\_i; (X, A) \textbar{}
+Z\_\{i−1\}) by the chain rule in both orders,
+
+\begin{quote}
+I(V\_i; X \textbar{} Z\_\{i−1\}) + I(V\_i; A \textbar{} X, Z\_\{i−1\}) =
+I(V\_i; A \textbar{} Z\_\{i−1\}) + I(V\_i; X \textbar{} A, Z\_\{i−1\}).
+\end{quote}
+
+Since Z\_\{i−1\} is a function of A, I(V\_i; X \textbar{} A, Z\_\{i−1\})
+= I(V\_i; X \textbar{} A). With Step 2 this gives
+
+\begin{quote}
+I(V\_i; X \textbar{} A) = I(V\_i; X \textbar{} Z\_\{i−1\}) − I(V\_i; A
+\textbar{} Z\_\{i−1\}) ≤ I(V\_i; X \textbar{} Z\_\{i−1\}) ≤ ε\_i,
+\end{quote}
+
+using ER-5. Summing over i completes the proof. ∎
+
+The proof isolates where each requirement acts. ER-2 (with ER-1) is what
+makes the received interface Z\_\{i−1\} a sufficient statistic of the
+past for invocation i, so that the conditional budget prices everything
+the invocation can correlate with; Step 2 is exactly the point that
+fails when carried state survives (Proposition 5.5). ER-4 is what
+prevents the environment from smuggling upstream emissions into
+downstream contexts around the priced interface. ER-5's conditioning is
+what Proposition 4.3 showed to be irreplaceable.
+
+\textbf{Corollary 5.2 (per-agent secrets variant).} Suppose instead of
+ER-4 the contexts S\_1, \ldots, S\_N are mutually independent and
+jointly independent of \{N\_j\} (exogenous per-agent secrets), and the
+budgets take the form I(V\_i; S\_i \textbar{} Z\_\{i−1\}) ≤ ε\_i. Then
+
+\begin{quote}
+I(T; S\_1, \ldots, S\_N) ≤ Σ\_\{i=1\}\^{}\{N\} ε\_i.
+\end{quote}
+
+\emph{Proof.} Apply Theorem 5.1 with X := (S\_1, \ldots, S\_N), φ\_i the
+i-th projection and W\_i trivial; its hypotheses hold. It remains to
+reduce the theorem's budget to the stated one:
+
+\begin{quote}
+I(V\_i; S\_\{1:N\} \textbar{} Z\_\{i−1\}) = I(V\_i; S\_i \textbar{}
+Z\_\{i−1\}) + I(V\_i; S\_\{≠i\} \textbar{} Z\_\{i−1\}, S\_i),
+\end{quote}
+
+and the second term vanishes: conditional on (Z\_\{i−1\}, S\_i), V\_i is
+a function of N\_i, while N\_i ⊥ (S\_\{1:N\}, N\_\{\textless i\})
+jointly and (Z\_\{i−1\}, S\_i, S\_\{≠i\}) are functions of that tuple,
+so N\_i ⊥ S\_\{≠i\} \textbar{} (Z\_\{i−1\}, S\_i). ∎
+
+\textbf{Example 5.3 (the two-agent base as an instance).} The parallel
+architecture of section 3.2 is the N = 2 composition with Z\_1 = ⊥ and
+S\_i = X: the budgets of ER-5 reduce to I(Y\_S; X) ≤ C\_S and I(Y\_M; X)
+≤ C\_M, and Theorem 5.1 returns I(Y\_S, Y\_M; X) ≤ C\_S + C\_M, the
+additive bound of Theorem 3.1 in budget form. The composition framework
+strictly generalises the base architecture.
+
+\textbf{Corollary 5.4 (composed error floor, and the deficit
+condition).} Under the hypotheses of Theorem 5.1 with
+\textbar 𝒳\textbar{} ≥ 3, any estimator X̂(T) of the source from the full
+transcript satisfies
+
+\begin{quote}
+P\_e ≥ (H(X) − Σ\_i ε\_i − 1) / log(\textbar 𝒳\textbar{} − 1),
+\end{quote}
+
+and, for H(X) ≥ log(\textbar 𝒳\textbar{} − 1), P\_e ≥ 1 − (Σ\_i ε\_i +
+1)/H(X). Per ER-7, the declared deficit Σ\_i ε\_i \textless{} H(X)
+licenses strict incompleteness: retaining the binary-entropy term in
+Fano's inequality, P\_e = 0 would force H(X \textbar{} T) = 0 and hence
+I(T; X) = H(X), contradicting Theorem 5.1 under the deficit; so Σ\_i
+ε\_i \textless{} H(X) already implies P\_e \textgreater{} 0. The
+displayed floor, which relaxes the binary-entropy term to one bit, is
+positive exactly under the stronger condition Σ\_i ε\_i \textless{} H(X)
+− 1; between the two thresholds the deficit still licenses P\_e
+\textgreater{} 0 while the displayed linear bound is vacuous. The
+deficit is a numerical fact about the system-adversary pair at the
+evaluation time t of ER-6, not a consequence of ER-1 to ER-5. With
+certified budgets ε\_i(t) non-decreasing in t, the composed shelf life
+is t*\_lin = sup\{t : Σ\_i ε\_i(t) \textless{} H(X)\}, and what expires
+at t*\_lin is the deficit, not the composition discipline: every
+structural requirement can hold while the floor decays to nothing. Per
+ER-6's certified-bound semantics, the expiry is a claim about the
+certification: at t*\_lin the certificates no longer witness a deficit,
+and the floor that decays is the certified floor; nothing here asserts
+that the transcript's information about the source has grown.
+
+\emph{Proof.} Theorem 5.1 and Theorem 3.2 with Y := T. ∎
+
+\textbf{Corollary 5.4b (informed-adversary floor; the erosion clock).}
+Under the hypotheses of Theorem 5.1 with \textbar 𝒳\textbar{} ≥ 3, let
+\{B\_t\} be a background side-information family (Definition 3.9). Then:
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  \emph{(the cap survives conditioning)} for every t,
+\end{enumerate}
+
+\begin{quote}
+I(T; X \textbar{} B\_t) = I(T; X) − I(T; B\_t) ≤ I(T; X) ≤ Σ\_i ε\_i;
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \emph{(the floor erodes through the residual entropy)} any estimator
+  X̂(T, B\_t) of the informed transcript adversary 𝔄\_tr(t), taking
+  values in 𝒳, satisfies
+\end{enumerate}
+
+\begin{quote}
+P\_e(t) ≥ (H(X \textbar{} B\_t) − Σ\_i ε\_i − 1) /
+log(\textbar 𝒳\textbar{} − 1),
+\end{quote}
+
+and, when H(X \textbar{} B\_t) ≥ log(\textbar 𝒳\textbar{} − 1), P\_e(t)
+≥ 1 − R\_inf(t) − 1/H(X \textbar{} B\_t), where R\_inf(t) := Σ\_i ε\_i /
+H(X \textbar{} B\_t);
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \emph{(monotonicity and expiry)} H(X \textbar{} B\_t) is
+  non-increasing in t. Strict incompleteness of reconstruction by the
+  informed adversary is licensed by the \emph{informed deficit
+  condition} Σ\_i ε\_i \textless{} H(X \textbar{} B\_t): retaining the
+  binary-entropy term in Fano's inequality exactly as at Corollary 5.4,
+  P\_e(t) = 0 would force I(T, B\_t; X) = H(X), while I(T, B\_t; X) =
+  I(B\_t; X) + I(T; X \textbar{} B\_t) \textless{} (H(X) − H(X
+  \textbar{} B\_t)) + H(X \textbar{} B\_t) = H(X) under the informed
+  deficit. With certified budgets ε\_i(t) non-decreasing (ER-6) and H(X
+  \textbar{} B\_t) non-increasing, the informed shelf life t*\_inf =
+  sup\{t : Σ\_i ε\_i(t) \textless{} H(X \textbar{} B\_t)\} coincides
+  with the first crossing.
+\end{enumerate}
+
+\emph{Proof.} (i) Expanding I(T; X, B\_t) by the chain rule in both
+orders, I(T; X) + I(T; B\_t \textbar{} X) = I(T; B\_t) + I(T; X
+\textbar{} B\_t); the second term on the left vanishes by Definition
+3.9(ii), and Theorem 5.1 bounds I(T; X). (ii) Theorem 3.2 with Y := (T,
+B\_t), using H(X) − I(X; T, B\_t) = H(X \textbar{} T, B\_t) = H(X
+\textbar{} B\_t) − I(T; X \textbar{} B\_t) ≥ H(X \textbar{} B\_t) − Σ\_i
+ε\_i by (i); the normalised form follows as at Theorem 3.2 with H(X
+\textbar{} B\_t) in place of H(X). (iii) For s ≤ t, B\_s is a measurable
+function of B\_t, so H(X \textbar{} B\_t) = H(X \textbar{} B\_t, B\_s) ≤
+H(X \textbar{} B\_s); the exact-Fano computation is displayed in the
+statement; a non-decreasing left-hand side against a non-increasing
+right-hand side makes the deficit set an interval whose supremum is the
+first exit. ∎
+
+The proof uses only Theorem 5.1's conclusion, so the corollary is
+portable to any composition carrying a certified transcript cap Σ\_i
+ε\_i, however obtained. Three readings fence the corollary. First, what
+erodes and what does not. The transcript's leakage about the source does
+not grow; by (i) its incremental value to the informed adversary, I(T; X
+\textbar{} B\_t) = I(T; X) − I(T; B\_t), is non-increasing in t, since
+I(T; B\_t) is non-decreasing by the data processing inequality along the
+accumulation. What erodes is the height of the floor, because the
+informed adversary's uncertainty about the source starts from H(X
+\textbar{} B\_t), not H(X). The protection does not leak more; it
+matters less. Second, the clock separation. ER-6's certified drift is
+epistemic: it records what an audit can license, and better estimation
+tooling can arrest or even reverse an over-conservative certificate. The
+drift here is real in the model's sense: what moves is the modelled
+quantity itself, not a certificate of a fixed quantity; the adversary's
+residual uncertainty does not rise, any fall in it is genuine, and no
+audit arrests it. A deployed guarantee therefore carries two dated
+components, a certified deficit against a declared decoder class
+(Corollary 5.4) and an informed deficit against a declared background
+family (this corollary), and the two expire independently. Third,
+vacuity at the far end. The normalised form's hypothesis H(X \textbar{}
+B\_t) ≥ log(\textbar 𝒳\textbar{} − 1) itself expires as the background
+accumulates, leaving only the unnormalised display; and past t*\_inf the
+floor is vacuous for every architecture satisfying every requirement,
+because the corollary bounds what the transcript adds to an informed
+adversary and cannot prevent the world from learning the source by other
+means.
+
+\subsubsection{5.2 Necessity and
+tightness}\label{necessity-and-tightness}
+
+\textbf{Proposition 5.5 (necessity of erasure).} Drop ER-2 only. Then no
+bound of the form I(T; X) ≤ g(Σ\_i ε\_i) with g(0) = 0 holds: there is a
+two-invocation composition with carried state, satisfying ER-1, ER-3,
+ER-4 and ER-5 with ε\_1 = ε\_2 = 0, in which I(T; X) = H(X).
+
+\emph{Construction.} Let X be uniform on \{0,1\}\^{}m and let the agent
+draw a persistent uniform pad ρ ∈ \{0,1\}\^{}m at first invocation (ρ ⊥
+X), retaining it as carried state. Invocation 1 emits V\_1 = O\_1 = X ⊕
+ρ with Z\_1 = ⊥; invocation 2 emits V\_2 = O\_2 = ρ. Both conditional
+budgets are zero: I(X ⊕ ρ; X \textbar{} ⊥) = 0 and I(ρ; X \textbar{} ⊥)
+= 0. Yet O\_1 ⊕ O\_2 = X, so I(T; X) = m = H(X), with m arbitrary. The
+proof of Theorem 5.1 fails exactly at Step 2: with ρ surviving the
+boundary, V\_2 is not conditionally independent of V\_1 given (X, Z\_1),
+and the correlation carried by ρ is priced by no budget. ∎
+
+Each emission is individually a one-time-pad ciphertext or a pad,
+individually independent of the source; jointly they determine it. The
+construction is the composition-level form of the classical observation
+that per-component independence does not bound joint information, and it
+identifies undestroyed cross-invocation state as an unpriced channel.
+Together with Proposition 4.3 (which showed the conditional budget
+necessary while erasure held), it shows ER-2 and ER-5 are individually
+necessary; the next proposition adds the third construction, for ER-4.
+
+\textbf{Proposition 5.5b (necessity of provenance).} Drop ER-4 only.
+Then no bound of the form I(T; X) ≤ g(Σ\_i ε\_i) with g(0) = 0 holds:
+there is a two-invocation composition satisfying ER-1, ER-2, ER-3 and
+ER-5 with ε\_1 = ε\_2 = 0, in which a downstream context is assembled
+from an upstream emission around the declared interface and I(T; X) =
+H(X).
+
+\emph{Construction.} Let X be uniform on \{0,1\}\^{}m. Invocation 1
+holds a trivial context (φ\_1 constant), draws N\_1 uniform on
+\{0,1\}\^{}m independent of X, and emits V\_1 = O\_1 = N\_1 with Z\_1 =
+⊥ and ρ\_1 = ⊥. The environment assembles the downstream context from
+the public upstream emission: S\_2 = X ⊕ O\_1, which violates ER-4
+(assembly from an emission other than through Z\_1). Invocation 2 emits
+V\_2 = O\_2 = S\_2 with Z\_2 = ⊥ and ρ\_2 = ⊥. Both conditional
+interface-inclusive budgets are zero: I(V\_1; X \textbar{} Z\_0) =
+I(N\_1; X) = 0 and I(V\_2; X \textbar{} Z\_1) = I(X ⊕ N\_1; X) = 0. Yet
+O\_1 ⊕ O\_2 = X, so I(T; X) = m = H(X). Erasure holds at every boundary
+and no undeclared channel connects the invocations; the leak travels
+entirely through the environment's context assembly, the route ER-4
+exists to exclude. The proof of Theorem 5.1 fails exactly at Step 2:
+V\_2 is not of the form f\_2(Z\_1, φ\_2(X, W\_2, Z\_1), N\_2), and its
+dependence on the upstream randomness N\_1 is priced by no conditional
+budget, since Z\_1 = ⊥ carries nothing to condition on. ∎
+
+Propositions 4.3, 5.5 and 5.5b are the paper's necessity constructions:
+the conditional form of the budget (ER-5), structural context erasure
+(ER-2), and context provenance (ER-4) are individually indispensable,
+each defeated at declared budget zero when dropped alone. No necessity
+construction is offered for ER-1 (declared channels) or ER-3 (fresh
+randomness); the results claim their sufficiency in conjunction with the
+rest, not their individual indispensability. By Theorem 5.1 the five
+together are sufficient.
+
+\textbf{Proposition 5.6 (tightness).} The cap of Theorem 5.1 is
+achieved: for X = (X\_1, \ldots, X\_N) with independent uniform bits,
+the composition O\_i = X\_i, Z\_i = ⊥ satisfies all hypotheses with ε\_i
+= 1 and I(T; X) = N = Σ\_i ε\_i. Hence Nε cannot be improved without
+further hypotheses.
+
+\textbf{Remark 5.7 (the exponential-to-linear separation, and what
+remains empirical).} Against the final-output adversary with marginal
+budgets and contaminated contexts, the available guarantee is the
+geometric sum Σ 2\^{}\{N−i\} ε\_i, i.e.~(2\^{}N − 1)ε uniformly (Theorem
+4.1); under the composition discipline ER-1 to ER-5 the guarantee
+against the transcript adversary is Nε (Theorem 5.1). At N = 2 the
+uniform comparison is 3ε against 2ε; at N = 5, 31ε against 5ε; the ratio
+(2\^{}N − 1)/N grows without bound. Three fences on interpreting the
+separation. First, it is a separation between \emph{disciplines}, not
+mechanisms: Proposition 4.3 shows erasure without conditional
+interface-inclusive budgets caps nothing, Proposition 5.5 shows budgets
+without erasure cap nothing, and Proposition 5.5b shows budgets with
+erasure but without provenance cap nothing; the linear regime requires
+the conjunction. Second, it is a comparison of \emph{guarantees}, not of
+attainable leakages, and its two ε parameters are not the same object.
+Both displays are upper bounds: no construction here or in the cited
+literature attains leakage of geometric order under marginal budgets,
+and the source's own depth measurements (Theorem 4.1's provenance note)
+do not exhibit geometric growth. Moreover the conditional
+interface-inclusive budget at level ε is the strictly more demanding
+constraint on an implementation than a marginal budget at the same
+numeral: Proposition 4.3's composition meets every marginal budget at
+zero while its conditional budget is I(V\_2; S\_2 \textbar{} Z\_1) =
+H(S\_2). The comparison is therefore between the best guarantees
+available under each stated budget semantics, not a like-for-like ratio
+of leakages; the unconditional separation this paper proves is
+Proposition 4.3, where zero declared budget coexists with total
+transcript recovery of a context. Third, the mathematical content is now
+exhausted by the conditional theorems: what remains open is empirical,
+namely whether any given deployed system satisfies ER-1 to ER-5. That is
+a conformance property of an implementation, testable per instance by
+channel inventory (ER-1), runtime state audit (ER-2, ER-3), provenance
+analysis (ER-4) and leakage measurement against the declared class
+(ER-5, ER-6); it is an engineering hypothesis about a system, never a
+theorem about all systems, and this paper proves nothing about
+implementations that have not been so audited.
+
+\subsubsection{5.3 The grade criterion, stated as an open
+problem}\label{the-grade-criterion-stated-as-an-open-problem}
+
+The theorems above use the operational grade distinction of Definition
+3.8 and never the deeper criterion. The deeper criterion is open, and we
+state it as an open problem with its proof obligations, because a
+positive resolution upgrades the \emph{time} status of Grade-2 erasure:
+a Grade-2-erased context leaves nothing archived for a stronger decoder
+class to revisit, making erasure the only mechanism in the model whose
+guarantee would carry no certification index (contrast Corollary 5.4,
+where the certified deficit expires, and Corollary 5.4b, whose erosion
+clock is unaffected either way; see the scope note below).
+
+\textbf{Open Problem 5.8 (obstruction-theoretic grade criterion).} There
+exists a formalisation of the N-invocation system in which the retained
+local views (the variables surviving each boundary) are sections of a
+presheaf of partial reconstructions over a suitable cover of the joint
+observation space, such that: (a) erasure at a boundary is Grade 2
+(Definition 3.8) if and only if the obstruction class to gluing the
+local sections into a global section witnessing the erased context is
+non-vanishing; and (b) erasure is Grade 1 if and only if the class
+vanishes and only the gluing data (key material) is withheld.
+
+\emph{Proof obligations.} (i) Construct the site: a cover and topology
+on which the candidate Čech class lives, for at least the two-agent
+instantiation. (ii) Prove the correspondence between
+recoverability-with-keys and vanishing of the class. (iii) Exhibit the
+class as a computable invariant in one non-trivial instance.
+
+\emph{The missing step, named.} Obligation (i) is unstarted: no
+candidate construction of the cover and topology has been written down;
+the sheaf-theoretic vocabulary is at present imported, not constructed.
+Nothing in sections 3 to 5 depends on this problem.
+
+\emph{Scope of the upgrade.} The time-status upgrade a positive
+resolution would license concerns the erasure guarantee itself: nothing
+archived remains for a stronger decoder class to revisit, so that
+guarantee carries no certification index. It does not arrest the erosion
+clock of Corollary 5.4b, which runs on background the adversary
+accumulates outside the system and is indifferent to every property of
+the composition, erasure included.
+
+\emph{Falsifier scope.} The statement is existentially quantified over
+formalisations and is therefore a research programme rather than a
+falsifiable conjecture: a failed candidate site refutes that candidate,
+not the existential. What is falsifiable is any fixed candidate
+criterion: once a site is fixed, any composition of retained views,
+under any future capability, that recovers Grade-2-erased material would
+exhibit a vanishing effective obstruction where the candidate criterion
+demanded a non-vanishing one, refuting that candidate. Obligation (i) is
+what converts the problem into a falsifiable conjecture, and it is
+unstarted; the label ``open problem'' rather than ``conjecture'' records
+exactly this.
+
+\subsubsection{5.4 Limits of the results}\label{limits-of-the-results}
+
+\emph{(Seeds section 6; A3 content, A2 may reframe prose.)}
+
+\begin{itemize}
+\tightlist
+\item
+  Every result is conditional on ER-1 to ER-5, which are obligations,
+  not observations. System-scale measurement of deployed multi-agent
+  frameworks shows ER-1 is routinely violated today
+  {[}elyagoubi2026agentleak{]}; a system that has not been audited
+  against the requirements inherits nothing from Theorem 5.1.
+\item
+  Nothing here bounds active adversaries, adversaries that corrupt an
+  agent, or side channels outside the declared interfaces (timing,
+  resource usage); the model is passive-observational.
+\item
+  The cap Nε is a leakage bound, not a reconstruction impossibility.
+  Strict incompleteness of reconstruction requires the declared deficit
+  of ER-7, which is time-indexed and expires (Corollary 5.4). No
+  sentence in this paper asserts a reconstruction ceiling without its
+  preconditions and its time index, and none should survive editing that
+  does.
+\item
+  Theorem 4.1 is imported, not re-derived; Proposition 4.2 closes the
+  same recursion in-model under local hypotheses (no carried state,
+  independent noise, bounded contamination) whose correspondence to the
+  source's hypotheses is a citation-resolution obligation.
+\item
+  The exponential-to-linear comparison is a comparison of upper-bound
+  guarantees under different budget semantics (Remark 5.7, second
+  fence); no attainability construction for the geometric regime is
+  exhibited or claimed. The unconditional separation is Proposition 4.3.
+\item
+  The budgets ε\_i(t) are certified upper bounds on fixed Shannon
+  quantities (ER-6); every expiry statement is a claim about the
+  certification, not about information accruing to the transcript
+  (Corollary 5.4).
+\item
+  The informed-adversary floor (Corollary 5.4b) is conditional on the
+  Markov hypothesis of Definition 3.9. A background corpus containing
+  transcript material violates it; conditioning on such a background can
+  increase leakage beyond the cap, and the corollary is then
+  inapplicable. The background family is a declared model, in the same
+  sense that ER-6's decoder class is declared, and the empirical
+  schedule of H(X \textbar{} B\_t) is not estimated here. Past t*\_inf
+  the floor is vacuous for every architecture: the corollary bounds what
+  the transcript adds to an informed adversary; it cannot prevent the
+  world from learning the source by other means.
+\item
+  The Fano floor's normalised form carries an alphabet-entropy
+  hypothesis (Theorem 3.2) frequently elided in informal statements.
+\item
+  Per the programme's reporting discipline, a measured result against
+  these predictions (for instance, a conformant system exhibiting
+  super-linear transcript leakage) would be reported with the same
+  prominence as a confirmation.
+\end{itemize}
+
+\subsection{6. Threats to validity}\label{threats-to-validity}
+
+\textbf{Conditionality and conformance.} Every result in this paper is
+conditional on ER-1 to ER-5, which are obligations on implementations,
+not observations about the world. System-scale measurement indicates
+that deployed multi-agent frameworks routinely violate ER-1 today
+{[}elyagoubi2026agentleak{]}. Conformance is testable per instance:
+channel inventory for ER-1, runtime state audit for ER-2 and ER-3,
+provenance analysis for ER-4, and leakage measurement against the
+declared decoder class for ER-5 and ER-6. The requirements are not
+equally auditable, and the ER-5 leg is the hard one. Conformance to ER-5
+requires estimating a conditional mutual information between an
+invocation's full emission and the source given the received interface,
+a notoriously hard statistical problem for high-dimensional text
+channels, and this paper specifies no estimator. Such estimation is
+feasible only against restricted decoder classes, so an ER-5 conformance
+verdict is always relative to the class whose estimation and attack
+tooling produced it. This is one reason ER-6 indexes budgets by decoder
+class and time: under its certified-bound semantics, a certificate for
+ε\_i(t) is only as strong as the class that produced it, and growth of
+the class can force the honest certificate upward. Conformance is an
+engineering hypothesis about a system, never a theorem about all
+systems; a system that has not been audited against the requirements
+inherits nothing from Theorem 5.1, and this paper asserts conformance
+for no deployed system.
+
+\textbf{Adversary model.} The model is passive-observational. Nothing
+here bounds active adversaries, adversaries that corrupt or replace an
+agent, or side channels outside the declared interfaces, including
+timing and resource usage. Extending the ER-1 inventory to physical side
+channels is an audit problem this paper does not solve.
+
+\textbf{Leakage versus reconstruction, and expiry.} The cap Σ\_i ε\_i is
+a leakage bound, not a reconstruction impossibility. The strict claim
+that reconstruction is incomplete additionally requires the declared
+capacity-deficit condition of ER-7, evaluated against the stated
+adversary class at a stated time, and that condition expires in the
+certified sense of ER-6: the certified budgets ε\_i(t) are
+non-decreasing as the decoder class grows, and the floor of Corollary
+5.4 decays to vacuity at the shelf life t*\_lin while every structural
+requirement remains intact. What expires is what the certification
+licenses at time t; the transcript's mutual information about the source
+is a fixed functional of the joint law, and nothing here asserts that it
+grows. No sentence in this paper asserts strict incompleteness of
+reconstruction without the deficit condition and its time index, and
+none should survive editing that does.
+
+\textbf{Two clocks, and the corpus model.} The expiry of the previous
+paragraph is certificational. Corollary 5.4b adds a second, real expiry:
+against an informed adversary whose background side information
+accumulates, the error floor erodes through H(X \textbar{} B\_t) with
+every certificate intact and no growth in what the transcript reveals.
+That result is conditional on the declared background family and its
+Markov hypothesis (Definition 3.9): whether any actual adversary's
+corpus satisfies the hypothesis, and how fast H(X \textbar{} B\_t)
+falls, are empirical questions this paper does not answer, symmetric to
+the conformance questions above. A deployed guarantee should declare its
+corpus model alongside its decoder class, and its two deficits expire
+independently.
+
+\textbf{Import fidelity.} Theorem 4.1 is imported on its citation and
+not re-derived; its hypotheses (the source's Markov structure and the
+mutual independence of the sensitive variables) are carried inside the
+imported statement. Proposition 4.2 is proved here under our own local
+hypotheses (no carried state, independent noise, and bounded
+contamination), and its named condition and the source's hypothesis set
+are formally incomparable: the source's hypotheses do not imply bounded
+contamination, and bounded contamination does not imply them. No result
+in Section 5 depends on that correspondence.
+
+\textbf{Statement precision.} The normalised form of the Fano floor
+requires the alphabet-entropy hypothesis of Theorem 3.2; for strongly
+non-uniform sources only the unnormalised display applies. The additive
+two-agent bound is an inequality with a stated equality condition, not
+an identity (Theorem 3.1).
+
+\textbf{Reporting commitment.} A measured result against these
+predictions, for instance a system audited as conformant to ER-1 to ER-5
+exhibiting super-linear transcript leakage, would falsify the
+conformance audit, the model's fit to that system, or the applicability
+of the theorem, and it would be reported with the same prominence as a
+confirmation.
+
+\subsection{7. Conclusion}\label{conclusion}
+
+We have given a composition model for sequentially invoked agents in
+which the two regimes of the recent multi-agent leakage literature are
+two sides of one architectural line. Without erasure and conditional
+interface-inclusive budgets, per-agent certification does not compose:
+the guarantee available on leakage about the joint secrets at the final
+output is only the geometric sum (Theorem 4.1, imported; an upper bound,
+with no attainability construction known), and against the transcript
+adversary marginal certification is vacuous even at budget zero
+(Proposition 4.3, the paper's unconditional separation). Under the five
+requirements ER-1 to ER-5, transcript leakage is capped by the sum of
+the declared budgets (Theorem 5.1); three of the five hypotheses are
+individually necessary (Propositions 4.3, 5.5 and 5.5b), and the cap is
+tight (Proposition 5.6). The exponential-to-linear comparison is a
+comparison of upper-bound guarantees under stated budget semantics, not
+of attainable leakages (Remark 5.7).
+
+The framing discipline carries as much weight as the mathematics. What
+the architecture guarantees is additive accounting and an error floor
+whose height depends on declared numbers. The strict claim that
+reconstruction is incomplete is licensed only by a declared
+capacity-deficit at a stated time against a stated decoder class, and
+that component expires. Corollary 5.4b adds the second clock: even with
+every certificate intact, the floor an informed adversary faces is
+non-increasing, eroding as background side information accumulates, on a
+drift no audit arrests. Guarantees for deployed systems should be stated
+in this decomposed form: structural properties audited, numerical
+conditions declared and dated, the decoder class and the background
+corpus model both named.
+
+Three items remain open. First, conformance: whether any given deployed
+system satisfies ER-1 to ER-5 is an empirical, per-instance question,
+and benchmark measurement of candidate conformant systems is future
+work. Second, the grade criterion: Open Problem 5.8 states a candidate
+formal separation between erasure that hides and erasure that forgets,
+with its proof obligations and its unstarted first step named; a
+positive resolution would upgrade the time status of the strongest
+erasure grade, since nothing archived would remain for a stronger
+decoder class to revisit. Third, the adversary model: active adversaries
+and physical side channels are outside the model, and the requirements'
+audit surface for them is undefined. The results are offered in the
+decomposed, conditional, dated form in which they are true.
+
+\subsection{References}\label{references}
+
+Cited by bib key against
+\texttt{templates/submission/references/pv\_v6.bib} (60 verified entries
+as of 2026-07-07). The two entries formerly proposed as UNVERIFIED were
+verified and added by A4 on 2026-07-07; the UNVERIFIED markers are
+removed at each use:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{gopala2008secrecy} (VERIFIED 2026-07-07, in bib): Gopala, P.
+  K., Lai, L. and El Gamal, H., ``On the Secrecy Capacity of Fading
+  Channels'', IEEE Transactions on Information Theory, 54(10), 2008,
+  pp.~4687-4698, doi 10.1109/TIT.2008.928990. Role:
+  time-varying-capacity precedent for the time-indexed budgets of ER-6
+  and Remark 3.4.
+\item
+  \texttt{patil2025composition} (VERIFIED 2026-07-07, in bib): Patil,
+  V., Stengel-Eskin, E. and Bansal, M., ``The Sum Leaks More Than Its
+  Parts: Compositional Privacy Risks and Mitigations in Multi-Agent
+  Collaboration'', arXiv:2509.14284. Role: independent
+  composition-analysis corroboration of Theorem 4.1's regime, per the
+  extraction record.
+\end{itemize}
+
+Verified keys used: \texttt{wyner1975wiretap},
+\texttt{leungyancheong1978gaussian}, \texttt{csiszar1978broadcast},
+\texttt{fano1961transmission}, \texttt{cover2006elements},
+\texttt{asif2026infotheoretic}, \texttt{elyagoubi2026agentleak},
+\texttt{gopala2008secrecy}, \texttt{patil2025composition},
+\texttt{millen1987covert} (section 2), \texttt{sabelfeld2003language}
+(section 2), \texttt{dwork2014algorithmic} (section 2).
+
+\end{document}

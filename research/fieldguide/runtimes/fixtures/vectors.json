@@ -1,0 +1,630 @@
+{
+  "spec": "arworld-meet-overlay conformance vectors",
+  "version": "0.1",
+  "generatedFrom": "runtimes/fixtures/generate.mjs (deterministic; no clock, no randomness)",
+  "clock": "2025-08-12T12:00:00.000Z",
+  "rejections": [
+    {
+      "id": "mt-01",
+      "layer": "meet",
+      "code": "offer-not-mine"
+    },
+    {
+      "id": "mt-02",
+      "layer": "meet",
+      "code": "self-edge-forbidden"
+    },
+    {
+      "id": "mt-03",
+      "layer": "meet",
+      "code": "unilateral-no-mutual-consent"
+    },
+    {
+      "id": "mt-04",
+      "layer": "meet",
+      "code": "meet-offer-expired"
+    },
+    {
+      "id": "mt-05",
+      "layer": "meet",
+      "code": "meet-offer-replayed"
+    },
+    {
+      "id": "mt-06",
+      "layer": "meet",
+      "code": "meet-not-colocated"
+    },
+    {
+      "id": "mt-07",
+      "layer": "meet",
+      "code": "link-commitment-forged"
+    },
+    {
+      "id": "mt-08",
+      "layer": "meet",
+      "code": "duplicate-link"
+    },
+    {
+      "id": "kn-01",
+      "layer": "knowledge",
+      "code": "missing-required-field"
+    },
+    {
+      "id": "kn-02",
+      "layer": "knowledge",
+      "code": "unknown-source"
+    },
+    {
+      "id": "kn-03",
+      "layer": "knowledge",
+      "code": "unknown-rite"
+    },
+    {
+      "id": "ov-01",
+      "layer": "overlay",
+      "code": "out-of-radius"
+    },
+    {
+      "id": "ov-02",
+      "layer": "overlay",
+      "code": "no-trust-edge"
+    },
+    {
+      "id": "ov-03",
+      "layer": "overlay",
+      "code": "below-freshness-horizon"
+    },
+    {
+      "id": "ov-04",
+      "layer": "overlay",
+      "code": "audience-capped-private"
+    },
+    {
+      "id": "ov-05",
+      "layer": "overlay",
+      "code": "over-overlay-cap"
+    },
+    {
+      "id": "st-01",
+      "layer": "story",
+      "code": "no-publication-consent"
+    },
+    {
+      "id": "st-02",
+      "layer": "story",
+      "code": "holon-ceiling-private"
+    },
+    {
+      "id": "st-03",
+      "layer": "story",
+      "code": "no-canonical-slug"
+    },
+    {
+      "id": "st-04",
+      "layer": "story",
+      "code": "already-forked"
+    },
+    {
+      "id": "en-01",
+      "layer": "encounter",
+      "code": "shared-quest-completion"
+    },
+    {
+      "id": "en-02",
+      "layer": "encounter",
+      "code": "steward-redeem"
+    }
+  ],
+  "projections": [
+    {
+      "id": "pj-full@public",
+      "audience": "public",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "markerStyle": "museum",
+        "trail": "london",
+        "questId": "q-1",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "holonId": "h1",
+        "witnessCount": 3
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "markerStyle",
+          "origin",
+          "placeKind",
+          "poiId",
+          "title"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=public\nlat=51.519000\nlon=-0.127000\nmarkerStyle=museum\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\ntitle=British Museum",
+        "digest": "c991291b69742974c53de6b68c59e32a9ff0f6e406e5ea3f329073f4c9d81d1f"
+      }
+    },
+    {
+      "id": "pj-full@link",
+      "audience": "link",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "markerStyle": "museum",
+        "trail": "london",
+        "questId": "q-1",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "holonId": "h1",
+        "witnessCount": 3
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "markerStyle",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "trail",
+          "wikiSlug",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=link\nlat=51.519400\nlon=-0.126900\nmarkerStyle=museum\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\ntrail=london\nwikiSlug=british-museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "22ed41303c2ea635c44e3ef5b1db9fc683647a4423ba8767bec55b6bd17ebef4"
+      }
+    },
+    {
+      "id": "pj-full@acquaintance",
+      "audience": "acquaintance",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "markerStyle": "museum",
+        "trail": "london",
+        "questId": "q-1",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "holonId": "h1",
+        "witnessCount": 3
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "markerStyle",
+          "note",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "trail",
+          "wikiSlug",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=acquaintance\nlat=51.519400\nlon=-0.126900\nmarkerStyle=museum\nnote=the reading room smells of dust\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\ntrail=london\nwikiSlug=british-museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "80f784c661b8026cd7c309e61a5482621ebb2d8741e5d9f04c8cd52706e0f1cd"
+      }
+    },
+    {
+      "id": "pj-quest@public",
+      "audience": "public",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "quest",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "questId": "murder-stones-3",
+        "questPinRole": "waystation",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b"
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "title"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=public\nlat=51.519000\nlon=-0.127000\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\ntitle=British Museum",
+        "digest": "3e4a88c69222af7d0d3ddbc919945e02f9674ea67f4dbbfb452cba4392fbdaac"
+      }
+    },
+    {
+      "id": "pj-quest@link",
+      "audience": "link",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "quest",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "questId": "murder-stones-3",
+        "questPinRole": "waystation",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b"
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "wikiSlug",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=link\nlat=51.519400\nlon=-0.126900\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\nwikiSlug=british-museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "79b743251b19dfc915b89bf1d92051170bcb48604a4318ee5a4e6a1d0dd90b61"
+      }
+    },
+    {
+      "id": "pj-quest@acquaintance",
+      "audience": "acquaintance",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "quest",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "questId": "murder-stones-3",
+        "questPinRole": "waystation",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b"
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "wikiSlug",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=link\nlat=51.519400\nlon=-0.126900\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\nwikiSlug=british-museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "79b743251b19dfc915b89bf1d92051170bcb48604a4318ee5a4e6a1d0dd90b61"
+      }
+    },
+    {
+      "id": "pj-deny@public",
+      "audience": "public",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "disclosure": {
+          "maxAudience": "acquaintance",
+          "deny": [
+            "wikiSlug"
+          ]
+        }
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "title"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=public\nlat=51.519000\nlon=-0.127000\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\ntitle=British Museum",
+        "digest": "3e4a88c69222af7d0d3ddbc919945e02f9674ea67f4dbbfb452cba4392fbdaac"
+      }
+    },
+    {
+      "id": "pj-deny@link",
+      "audience": "link",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "disclosure": {
+          "maxAudience": "acquaintance",
+          "deny": [
+            "wikiSlug"
+          ]
+        }
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=link\nlat=51.519400\nlon=-0.126900\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "7e61c47f7225aea7629d5336458ea94b6f581cf904ef6bcccd2614734a9045bc"
+      }
+    },
+    {
+      "id": "pj-deny@acquaintance",
+      "audience": "acquaintance",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "disclosure": {
+          "maxAudience": "acquaintance",
+          "deny": [
+            "wikiSlug"
+          ]
+        }
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "note",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=acquaintance\nlat=51.519400\nlon=-0.126900\nnote=the reading room smells of dust\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "ea0883329a995e0d8ff9c27e892de153dc76739c24d1bee96ee86884bdc5d878"
+      }
+    },
+    {
+      "id": "pj-private@public",
+      "audience": "public",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "disclosure": {
+          "maxAudience": "private"
+        }
+      },
+      "expect": {
+        "projected": false
+      }
+    },
+    {
+      "id": "pj-private@link",
+      "audience": "link",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "disclosure": {
+          "maxAudience": "private"
+        }
+      },
+      "expect": {
+        "projected": false
+      }
+    },
+    {
+      "id": "pj-private@acquaintance",
+      "audience": "acquaintance",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5194,
+        "lon": -0.1269,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b",
+        "disclosure": {
+          "maxAudience": "private"
+        }
+      },
+      "expect": {
+        "projected": false
+      }
+    },
+    {
+      "id": "pj-halfway@public",
+      "audience": "public",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5345,
+        "lon": -0.1015,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b"
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "title"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=public\nlat=51.535000\nlon=-0.101000\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\ntitle=British Museum",
+        "digest": "a4be47972d9df20d1792b4b513f747cad88a37733fa61aa64078e3064b62406c"
+      }
+    },
+    {
+      "id": "pj-halfway@link",
+      "audience": "link",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5345,
+        "lon": -0.1015,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b"
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "wikiSlug",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=link\nlat=51.534500\nlon=-0.101500\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\nwikiSlug=british-museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "77426e3eaaca427b7b156cc24aeea1edf4999daf135e1be2fffe86b8208da632"
+      }
+    },
+    {
+      "id": "pj-halfway@acquaintance",
+      "audience": "acquaintance",
+      "holon": {
+        "poiId": "london-british-museum",
+        "title": "British Museum",
+        "placeKind": "Museum",
+        "lat": 51.5345,
+        "lon": -0.1015,
+        "source": "city-discover",
+        "rite": "desk-witness",
+        "wikiSlug": "british-museum",
+        "note": "the reading room smells of dust",
+        "witnessedUtc": "2025-08-12T12:00:00.000Z",
+        "avatarId": "avatar-b"
+      },
+      "expect": {
+        "projected": true,
+        "fields": [
+          "audience",
+          "lat",
+          "lon",
+          "note",
+          "origin",
+          "placeKind",
+          "poiId",
+          "rite",
+          "title",
+          "wikiSlug",
+          "witnessedUtc"
+        ],
+        "canonical": "arworld/canonical/v0\naudience=acquaintance\nlat=51.534500\nlon=-0.101500\nnote=the reading room smells of dust\norigin=trust\nplaceKind=Museum\npoiId=london-british-museum\nrite=desk-witness\ntitle=British Museum\nwikiSlug=british-museum\nwitnessedUtc=2025-08-12T12:00:00.000Z",
+        "digest": "2c7e0f52ada1eb63db50327d217209bbcdd031b92d5c74b696a174ae1fca44d1"
+      }
+    }
+  ]
+}

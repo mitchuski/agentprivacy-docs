@@ -1,0 +1,931 @@
+{
+ "sweeps": [
+  {
+   "items": [
+    {
+     "citation": "Margaret Jane Radin, \"Market-Inalienability\", Harvard Law Review, Vol. 100, No. 8, pp. 1849-1937",
+     "year": "1987",
+     "url": "https://law.stanford.edu/publications/market-inalienability/",
+     "pole": "anti-commodification",
+     "role": "Canonical anti-commodification pole anchor: personhood theory of why some things must not be priced; WP-14 must distinguish its structural inalienability (observer cannot reconstruct the stock) from Radin's normative market-inalienability (the stock must not be sold)",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Guido Calabresi & A. Douglas Melamed, \"Property Rules, Liability Rules, and Inalienability: One View of the Cathedral\", Harvard Law Review, Vol. 85, No. 6, pp. 1089-1128",
+     "year": "1972",
+     "url": "https://www.amherst.edu/media/view/123372/original/CalabresiMelamed.PDF",
+     "pole": "other",
+     "role": "Formal entitlement-protection taxonomy that gives 'inalienability rules' their name; covering frame for the structural-inalienability leg — WP-14's claim is that data's inalienability is technological (reconstruction-bound), not a chosen third protection rule",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Debra Satz, Why Some Things Should Not Be for Sale: The Moral Limits of Markets, Oxford University Press",
+     "year": "2010",
+     "url": "https://www.cambridge.org/core/journals/business-ethics-quarterly/article/abs/why-some-things-should-not-be-for-sale-the-moral-limits-of-markets-by-debra-satz-oxford-university-press-2010/CB5DFF36B06B6AC6394ED5AE474C2CC5",
+     "pole": "anti-commodification",
+     "role": "'Noxious markets' criteria (weak agency, vulnerability, harmful outcomes for individuals/society) — the standard test WP-14 can apply to show scoped-disclosure markets avoid noxiousness precisely because the stock never transfers",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Michael J. Sandel, What Money Can't Buy: The Moral Limits of Markets, Farrar, Straus and Giroux",
+     "year": "2012",
+     "url": "https://www.bostonreview.net/forum/forum-sandel-markets-morals/keeping-markets-their-place/",
+     "pole": "anti-commodification",
+     "role": "Corruption/degradation objection to market expansion — the most-cited popular statement of the anti-commodification pole; engages the claim that pricing a good changes its character (relevant to whether pricing R(t)-scoped disclosure degrades privacy's meaning)",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Elizabeth Anderson, Value in Ethics and Economics, Harvard University Press",
+     "year": "1993",
+     "url": "https://www.thenation.com/article/archive/higher-bealism-moral-limits-markets/",
+     "pole": "anti-commodification",
+     "role": "Pluralist theory of valuation spheres ('corruption objections' beyond distributive justice) — philosophical backbone for arguments that personal data belongs to a non-market valuation sphere",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Beate Roessler, \"Should Personal Data Be a Tradable Good? On the Moral Limits of Markets in Privacy\", in Beate Roessler & Dorota Mokrosinska (eds.), Social Dimensions of Privacy: Interdisciplinary Perspectives, Cambridge University Press, pp. 141-161",
+     "year": "2015",
+     "url": "https://www.cambridge.org/core/books/abs/social-dimensions-of-privacy/should-personal-data-be-a-tradable-good-on-the-moral-limits-of-markets-in-privacy/70E432C61AB2D92B79076CAEC40E5F75",
+     "pole": "anti-commodification",
+     "role": "The direct bridge: moral-limits-of-markets analysis applied specifically to personal data trade — closest prior statement of the 'data should not be tradable' thesis, the exact position WP-14's related-work section currently lacks",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz, Privacy Is Power: Why and How You Should Take Back Control of Your Data, Bantam Press / Transworld (UK), Melville House (US)",
+     "year": "2020",
+     "url": "https://www.penguin.co.uk/books/442343/privacy-is-power-by-carissa-veliz/9780552177719",
+     "pole": "anti-commodification",
+     "role": "Contemporary flagship of the pole: personal data as 'toxic asset', calls for an outright ban on the trade in personal data and on personalized advertising — the strongest live 'data should not be for sale at all' position WP-14 must answer",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Louise Wilsdon, review of \"Carissa Véliz, Privacy Is Power: Why and How You Should Take Back Control of Your Data\", International Data Privacy Law, Vol. 12, No. 3, pp. 255-257",
+     "year": "2022",
+     "url": "https://academic.oup.com/idpl/article/12/3/255/6545822",
+     "pole": "anti-commodification",
+     "role": "Reception of Véliz in data-protection law scholarship — evidence the trade-ban position has crossed from popular philosophy into the legal literature WEIS reviewers read",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Bart Custers & Gianclaudio Malgieri, \"Priceless Data: Why the EU Fundamental Right to Data Protection Is at Odds with Trade in Personal Data\", Computer Law & Security Review, Vol. 45",
+     "year": "2022",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0267364922000309",
+     "pole": "anti-commodification",
+     "role": "Legal-doctrinal twin of the pole: EU fundamental-rights inalienability disqualifies personal data as commodity — WP-14 can show its structural inalienability is compatible with (indeed explains) this doctrine while still permitting priced scoped disclosure",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "European Data Protection Supervisor, Opinion 4/2017 on the Proposal for a Directive on certain aspects concerning contracts for the supply of digital content (14 March 2017)",
+     "year": "2017",
+     "url": "https://www.edps.europa.eu/sites/default/files/publication/17-03-14_opinion_digital_content_en.pdf",
+     "pole": "anti-commodification",
+     "role": "Policy anchor: official EU position that 'personal data ... cannot be considered as a commodity' and rejection of data-as-counter-performance — the regulatory expression of the anti-commodification pole",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Ignacio Cofone, \"Beyond Data Ownership\", Cardozo Law Review, Vol. 43, No. 2",
+     "year": "2022",
+     "url": "https://www.cardozolawreview.com/beyond-data-ownership/",
+     "pole": "propertisation",
+     "role": "Modern Calabresi-Melamed-style entitlement analysis of data: shows data-ownership proposals are really consent-based transfer rules and self-defeating; updates the Laudon/Samuelson/Schwartz propertisation-critique line to 2022 and sits directly adjacent to WP-14's inalienability leg",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Salomé Viljoen, \"A Relational Theory of Data Governance\", Yale Law Journal, Vol. 131, No. 2, pp. 573-654",
+     "year": "2021",
+     "url": "https://www.yalelawjournal.org/pdf/131.2_Viljoen_1n12myx5.pdf",
+     "pole": "externality-normative",
+     "role": "Flagship normative collective-privacy work: data relations create supra-individual interests requiring democratic governance; direct counterpoint to WP-14's subject-held capital-class framing that the paper must engage (its pooling/cooperative remedy is a partial answer)",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Joshua A.T. Fairfield & Christoph Engel, \"Privacy as a Public Good\", Duke Law Journal, Vol. 65, No. 3",
+     "year": "2015",
+     "url": "https://dlj.law.duke.edu/article/privacy-as-a-public-good-fairfield-vol65-iss3/",
+     "pole": "externality-normative",
+     "role": "Normative/welfare-economic twin of the Bergemann-Bonatti-Gan social-data externality: individually rational disclosure underproduces the public good of privacy — supports WP-14's market-position-rent and pooling-remedy legs",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Omri Ben-Shahar, \"Data Pollution\", Journal of Legal Analysis, Vol. 11, pp. 104-159",
+     "year": "2019",
+     "url": "https://academic.oup.com/jla/article/doi/10.1093/jla/laz005/5578488",
+     "pole": "externality-normative",
+     "role": "External-harm reframing of the data economy (pollution, not privacy): remedy is emissions-style regulation/taxation rather than markets — a foil WP-14 must distinguish from its priced-scoped-disclosure-plus-externality-rent account",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Jathan Sadowski, \"When Data Is Capital: Datafication, Accumulation, and Extraction\", Big Data & Society, Vol. 6, No. 1",
+     "year": "2019",
+     "url": "https://journals.sagepub.com/doi/10.1177/2053951718820549",
+     "pole": "other",
+     "role": "Data-as-capital precedent from critical political economy (extraction without consent or compensation): WP-14's 'distinct capital class held by the data subject' must be distinguished from Sadowski's firm-held extractive data capital",
+     "provenance_confidence": "high"
+    }
+   ],
+   "scope_note": "Scout run 2026-08-17: 10 WebSearch queries + 4 WebFetch verifications, all citations resolved against a live URL. Coverage: (a) the theory canon — Radin 1987, Calabresi-Melamed 1972, Satz 2010, Sandel 2012, Anderson 1993; (b) direct application of anti-commodification/inalienability to personal data — Roessler 2015 (the single closest prior statement of the 'data should not be tradable' thesis), Véliz 2020 + its 2022 IDPL reception, Custers-Malgieri 2022, EDPS Opinion 4/2017, Cofone 2022; (c) normative collective-privacy/externality work absent from the current related-work section — Viljoen 2021, Fairfield-Engel 2015, Ben-Shahar 2019; (d) one capital-framing precedent (Sadowski 2019) that WP-14's capital-class claim must disambiguate against. Positioning takeaway: the anti-commodification pole's strongest live opponents (Véliz's trade ban; Custers-Malgieri's fundamental-rights inalienability) are actually partially ANSWERED by WP-14's structural-inalienability move — scoped disclosure never alienates the stock, so pricing disclosure does not commodify the person — and Roessler 2015 is the piece to cite as the pole's most careful statement. Viljoen 2021 is the highest-priority gap on the collective side. Known limits: Sandel and Anderson URLs are review-essay/forum pages, not publisher pages (provenance medium); page numbers for Fairfield-Engel omitted (unverified); one 2024 candidate (Bilić & Žitko, European Journal of Communication 39(5) 426-437, verified) was cut to stay within 15 items — retrievable at https://journals.sagepub.com/doi/10.1177/02673231241267128 if a fourth propertisation-critique slot opens. No dedicated 2023-2026 philosophy-journal article arguing full data-market prohibition beyond Véliz surfaced in these searches; if one exists it is the remaining blind spot."
+  },
+  {
+   "items": [
+    {
+     "citation": "Carissa Véliz, Privacy Is Power: Why and How You Should Take Back Control of Your Data, Bantam Press (Transworld/Penguin Random House), 2020; paperback Corgi 2021, ISBN 978-1787634046 / pb 9780552177719; Economist Book of the Year 2020",
+     "year": "2020",
+     "url": "https://www.penguin.co.uk/books/442343/privacy-is-power-by-carissa-veliz/9780552177719",
+     "role": "anti-commodification pole anchor: canonical statement that trade in personal data should be banned outright (data as 'toxic asset', vote-selling analogy) — the position WP-14 must engage against its structural-inalienability claim",
+     "pole": "anti-commodification",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz, The Ethics of Privacy and Surveillance, Oxford University Press (Oxford Philosophical Monographs), 2024, 256 pp., ISBN 9780198870173, published 18 Jan 2024",
+     "year": "2024",
+     "url": "https://global.oup.com/academic/product/the-ethics-of-privacy-and-surveillance-9780198870173",
+     "role": "anti-commodification pole anchor (academic monograph form): her rigorous hybrid account of the right to privacy underwriting the ban position; the scholarly citation WP-14 should use rather than the trade book alone",
+     "pole": "anti-commodification",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz, \"The Internet and Privacy\", in David Edmonds (ed.), Ethics and the Contemporary World, Routledge, 2019",
+     "year": "2019",
+     "url": "https://philpapers.org/archive/VLITIA.pdf",
+     "role": "earliest academic-chapter statement of her data-economy critique; useful as the 2019 anchor of the corpus",
+     "pole": "anti-commodification",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Carissa Véliz, \"Not the doctor's business: Privacy, personal responsibility and data rights in medical settings\", Bioethics 34(7): 712-718, 2020",
+     "year": "2020",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32060936/",
+     "role": "medical-privacy corpus item: argues data collection beyond strict treatment necessity is impermissible — a data-minimisation norm WP-14 can read as a normative twin of scoped disclosure within a retained stock",
+     "pole": "other",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz, \"Privacy and digital ethics after the pandemic\", Nature Electronics 4: 10-11, 2021",
+     "year": "2021",
+     "url": "https://www.nature.com/articles/s41928-020-00536-y",
+     "role": "corpus item placing her governance agenda (minimum international standards on privacy/AI) in a technical venue; shows the ban position addressed to the engineering-economics audience WEIS shares",
+     "pole": "anti-commodification",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz (ed.), Oxford Handbook of Digital Ethics, Oxford University Press, print 2024 (chapters online from 2021), ISBN 9780198857815",
+     "year": "2024",
+     "url": "https://global.oup.com/academic/product/oxford-handbook-of-digital-ethics-9780198857815",
+     "role": "corpus item: her editorial position at the centre of normative digital-ethics work; the handbook is the standing survey venue for the normative collective-privacy literature WP-14 currently omits",
+     "pole": "other",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Siân Brooke & Carissa Véliz, \"Views on Privacy. A Survey\" (part of the project Data, Privacy & the Individual, Center for the Governance of Change, IE University), 2020; n=1,107 (MTurk/Qualtrics), incl. module on acceptability of monetising privacy",
+     "year": "2020",
+     "url": "https://zenodo.org/records/3731102",
+     "role": "empirical leg of the anti-commodification pole: survey evidence on unwillingness to sell personal data — WP-14 can cite it as behavioural support for treating the stock as non-marketed while pricing only scoped disclosure",
+     "pole": "anti-commodification",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz, Data, Privacy & the Individual (final report), Center for the Governance of Change, IE University, Madrid, 2020",
+     "year": "2020",
+     "url": "https://www.ie.edu/cgc/research/data-privacy-individual/",
+     "role": "corpus item: policy-facing synthesis (seven papers + survey + recommendations) of her privacy/differential-privacy programme; bridges her normative position to the DP-markets literature WP-14 already engages",
+     "pole": "anti-commodification",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Louise Wilsdon, review of Carissa Véliz, Privacy Is Power, International Data Privacy Law 12(3): 255-257, 2022 (doi:10.1093/idpl/ipac007)",
+     "year": "2022",
+     "url": "https://academic.oup.com/idpl/article/12/3/255/6545822",
+     "role": "reception of Véliz in a law journal: broadly sympathetic but flags overstated tech-capability claims and an underdeveloped cost-benefit analysis of the ban — the law-side foothold for WP-14's pricing-not-banning rejoinder",
+     "pole": "other",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Lauritz Munch & Jakob Mainz, review of Carissa Véliz, The Ethics of Privacy and Surveillance (OUP 2024), Journal of Moral Philosophy (forthcoming per PhilPapers listing)",
+     "year": "2024",
+     "url": "https://philpapers.org/rec/MUNCVT",
+     "role": "philosophical reception: engages her novel account of privacy critically; the pair's control-vs-access work is the standing philosophical counterparty to her framework",
+     "pole": "other",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Saloni Kumar, \"Review of Véliz's The Ethics of Privacy and Surveillance\", Surveillance & Society 22(3), 2024 (doi:10.24908/ss.v22i3.17817)",
+     "year": "2024",
+     "url": "https://ojs.library.queensu.ca/index.php/surveillance-and-society/article/view/17817",
+     "role": "reception from surveillance studies, explicitly contrasting Véliz's ethical analysis with prior economic/political analyses — evidence the anti-commodification pole positions itself against economics framings like WP-14's",
+     "pole": "other",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Abdul Abdulrahim & Michael Famoroti, \"A Noxious Market for Personal Data\", NeurIPS 2019 Workshop on Machine Learning for the Developing World (arXiv:2001.00457)",
+     "year": "2019",
+     "url": "https://arxiv.org/abs/2001.00457",
+     "role": "anti-commodification pole beyond Véliz: applies Satz/Sandel noxious-markets theory to personal-data property rights — shows the pole has a market-design-facing articulation WP-14 can answer directly",
+     "pole": "anti-commodification",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Joshua A.T. Fairfield & Christoph Engel, \"Privacy as a Public Good\", Duke Law Journal 65(3): 385-457, 2015",
+     "year": "2015",
+     "url": "https://dlj.law.duke.edu/article/privacy-as-a-public-good-fairfield-vol65-iss3/",
+     "role": "collective-externality normative twin (law-and-economics): careless individual disclosure imposes negative externalities on others, so individually rational behaviour undersupplies privacy — the normative counterpart to WP-14's social-data externality leg",
+     "pole": "externality-normative",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Salomé Viljoen, \"A Relational Theory of Data Governance\", Yale Law Journal 131(2): 573-654, 2021",
+     "year": "2021",
+     "url": "https://www.yalelawjournal.org/feature/a-relational-theory-of-data-governance",
+     "role": "normative collective-privacy anchor: data relations create supraindividual interests that neither propertarian nor dignitarian individual rights can represent, arguing for democratic/collective governance — the strongest current statement WP-14's related-work gap names; also sharpens the case for pooled-bargaining remedies over data wages",
+     "pole": "externality-normative",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian & Asu Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", American Economic Journal: Microeconomics 14(4): 218-256, 2022",
+     "year": "2022",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "role": "formal externality precedent: data externalities depress prices and produce excessive sharing that competition does not fix, with mediated-sharing remedies — the economics-side result that partially vindicates Véliz-style restriction while supporting WP-14's pooling/mediation remedy over both bans and data wages",
+     "pole": "externality-formal",
+     "provenance_confidence": "high"
+    }
+   ],
+   "scope_note": "Scout run 2026-08-17, 13 distinct web searches plus targeted fetches. Véliz corpus verified from publisher pages, PhilPapers/PhilArchive, PubMed, Nature, and Zenodo: Privacy Is Power (Bantam Press/Transworld 2020, Corgi pb 2021, Economist Book of the Year), The Ethics of Privacy and Surveillance (OUP, Oxford Philosophical Monographs, Jan 2024, ISBN 9780198870173), Oxford Handbook of Digital Ethics (ed., OUP print 2024), plus the 2019 Routledge chapter, Bioethics 2020 medical-privacy paper, Nature Electronics 2021 comment, and the IE University Data, Privacy & the Individual project (incl. Brooke & Véliz survey with a monetising-privacy module). Her ban-the-data-trade thesis (vote-selling analogy; data as toxic asset like asbestos) is stated in the books and interviews rather than in a single dedicated journal article on data markets; no standalone Véliz paper specifically critiquing data-as-labour/data dividends surfaced in resolvable form — her critique of paying for data is embedded in Privacy Is Power ch. 5 and interviews (HBR IdeaCast 'Should We End the Data Economy?', Cambridge Think interview), so WP-14 should cite the books for that claim. Reception found is philosophy/law reviews (Wilsdon IDPL 2022; Munch & Mainz JMP; Kumar Surveillance & Society 2024) — sympathetic-but-critical; NO substantive economics or law-and-economics rebuttal directly disputing her ban was located under these searches, which is itself a positioning opportunity: WP-14 can be the first WEIS-side formal engagement, using Acemoglu et al. 2022 (externality-formal) and Fairfield-Engel 2015 / Viljoen 2021 (externality-normative) as the bridge showing the anti-commodification conclusion (stock never sold) is delivered structurally by R(t)-priced scoped disclosure without banning the disclosure market. Caveats: Munch & Mainz review venue is 'forthcoming, Journal of Moral Philosophy' per PhilPapers (medium confidence); the Edmonds/Routledge chapter details are from the PhilPapers archive PDF header (medium confidence); Handbook chapters were online from 2021, print 2024."
+  },
+  {
+   "items": [
+    {
+     "citation": "Linnet Taylor, Luciano Floridi, Bart van der Sloot (eds.), Group Privacy: New Challenges of Data Technologies, Philosophical Studies Series, Springer",
+     "year": "2017",
+     "url": "https://link.springer.com/book/10.1007/978-3-319-46608-8",
+     "pole": "externality-normative",
+     "role": "Normative collective-privacy anchor: the canonical statement that privacy interests attach to groups/profiles, not only individuals. WP-14 needs it because R(t) is adversary-relative reconstruction of a SUBJECT — the group-privacy critique asks whose stock the collectively-inferable profile belongs to; engaging it lets the paper show the social-data externality (Bergemann-Bonatti-Gan) is its economic shadow and that pooling remedies answer the group, not just the individual.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Solon Barocas and Helen Nissenbaum, \"Big Data's End Run around Anonymity and Consent,\" in Lane, Stodden, Bender, Nissenbaum (eds.), Privacy, Big Data, and the Public Good: Frameworks for Engagement, Cambridge University Press, pp. 44-75",
+     "year": "2014",
+     "url": "https://www.cambridge.org/core/books/abs/privacy-big-data-and-the-public-good/big-datas-end-run-around-anonymity-and-consent/0BAA038A4550C729DAA24DFC7D69946C",
+     "pole": "externality-normative",
+     "role": "Covering threat to the inalienability leg: argues inference from others' data does an end-run around anonymity AND consent, so scoped disclosure cannot contain what observers learn. WP-14 must answer it directly — its reply is that R(t) already prices exactly this adversary-relative inference, and structural inalienability is defined against the reconstruction bound, not against naive consent scoping.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Omri Ben-Shahar, \"Data Pollution,\" Journal of Legal Analysis, Vol. 11, pp. 104-159",
+     "year": "2019",
+     "url": "https://academic.oup.com/jla/article/doi/10.1093/jla/laz005/5578488",
+     "pole": "externality-normative",
+     "role": "Externality-normative pole anchor in law-and-economics: reframes data harms as external/public (pollution), arguing privacy-as-private-entitlement misses the point — a direct challenge to any subject-held-capital pricing frame. WP-14 should position R(t)-pricing-with-pooled-bargaining as internalising the very externality Ben-Shahar says private ordering cannot reach.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Mark MacCarthy, \"New Directions in Privacy: Disclosure, Unfairness and Externalities,\" I/S: A Journal of Law and Policy for the Information Society, Vol. 6, No. 3 (SSRN abstract 3093301)",
+     "year": "2011",
+     "url": "https://www.ssrn.com/abstract=3093301",
+     "pole": "externality-normative",
+     "role": "Earliest sustained policy statement of privacy externalities (one person's disclosure reveals others), concluding individual choice/notice frameworks fail and an unfairness standard must replace them — the normative predecessor WP-14 cites before the formal Choi-Jeon-Kim/Acemoglu line; its anti-choice conclusion is the position the pooling-bargaining remedy must outperform.",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Jay Pil Choi, Doh-Shin Jeon, Byung-Cheol Kim, \"Privacy and personal data collection with information externalities,\" Journal of Public Economics, Vol. 173, pp. 113-124",
+     "year": "2019",
+     "url": "https://ideas.repec.org/a/eee/pubeco/v173y2019icp113-124.html",
+     "pole": "externality-formal",
+     "role": "Formal externality anchor: even with full-information consent, information externalities plus coordination failure produce excess collection versus social optimum. WP-14 uses it as the equilibrium mechanism behind the observer-to-subject value gap and as formal justification that the remedy must be a coordination device (data cooperative) rather than per-subject pricing alone.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets,\" American Economic Journal: Microeconomics, Vol. 14, No. 4, pp. 218-256",
+     "year": "2022",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "pole": "externality-formal",
+     "role": "Core formal result WP-14 must engage: data externalities depress the equilibrium price of data (leaked correlation lowers each subject's reservation value), and platform competition does not fix it. Directly supports the PVM claim that the observer-subject gap is market-position rent, not super-additive aggregation, and that a bargaining-position remedy (pooling) beats a data wage; also the covering threat that markets in data may be welfare-negative outright.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Shota Ichihashi, \"The Economics of Data Externalities,\" Journal of Economic Theory, Vol. 196, article 105316",
+     "year": "2021",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022053121001332",
+     "pole": "externality-formal",
+     "role": "Formal bridge between Choi-Jeon-Kim and market design: firm exploits data externalities to lower the cost of buying data via information design. Precedent for treating what is purchased as scoped/designed disclosure rather than the underlying stock — the closest formal cousin to PVM's scoped-disclosure-within-retained-stock object of pricing.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Carissa Véliz, Privacy Is Power: Why and How You Should Take Back Control of Your Data, Bantam Press / Transworld",
+     "year": "2020",
+     "url": "https://www.penguin.co.uk/books/442343/privacy-is-power-by-carissa-veliz/9780552177719",
+     "pole": "anti-commodification",
+     "role": "Anti-commodification pole anchor: argues personal data is a toxic asset and the trade in it should be banned outright (votes analogy), while separately endorsing fiduciary duties. WP-14's answer: structural inalienability concedes Veliz's core intuition (the stock is never for sale, cannot be transferred even in principle) while showing scoped-disclosure pricing under R(t) is not a data market of the kind she prohibits.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Louise Wilsdon, review of Carissa Véliz, Privacy Is Power, International Data Privacy Law, Vol. 12, No. 3, pp. 255-257",
+     "year": "2022",
+     "url": "https://academic.oup.com/idpl/article/12/3/255/6545822",
+     "pole": "anti-commodification",
+     "role": "Reception of Véliz in the data-protection-law literature: documents that the ban-the-trade position has been received sympathetically (not as fringe) by privacy-law scholarship — evidence WP-14 needs that the anti-commodification pole is a live position its related-work section cannot omit.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Beate Roessler, \"Should personal data be a tradable good? On the moral limits of markets in privacy,\" in Roessler and Mokrosinska (eds.), Social Dimensions of Privacy: Interdisciplinary Perspectives, Cambridge University Press, pp. 141-161",
+     "year": "2015",
+     "url": "https://www.cambridge.org/core/books/abs/social-dimensions-of-privacy/should-personal-data-be-a-tradable-good-on-the-moral-limits-of-markets-in-privacy/70E432C61AB2D92B79076CAEC40E5F75",
+     "pole": "anti-commodification",
+     "role": "The philosophical statement of the anti-commodification pole pre-Véliz: applies moral-limits-of-markets reasoning (Satz/Sandel lineage) to personal data specifically, and sits in the same volume as the social-dimensions/collective-privacy turn. The cleanest single citation for 'data should not be a tradable good' as a scholarly position.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Margaret Jane Radin, \"Market-Inalienability,\" Harvard Law Review, Vol. 100, No. 8, pp. 1849-1937",
+     "year": "1987",
+     "url": "https://people.brandeis.edu/~teuber/Radin-Market-Inalienability.pdf",
+     "pole": "anti-commodification",
+     "role": "Foundational theory of market-inalienability (things that may be shared but not sold), explicitly rejecting both universal commodification and market abolition — the exact middle position WP-14 occupies. Also the root of Schwartz 2004's hybrid inalienability already in the paper; citing Radin lets WP-14 claim its structural (by-construction) inalienability as a stronger, technical descendant of her normative category.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Joshua A. T. Fairfield and Christoph Engel, \"Privacy as a Public Good,\" Duke Law Journal, Vol. 65, No. 3, pp. 385-457",
+     "year": "2015",
+     "url": "https://dlj.law.duke.edu/article/privacy-as-a-public-good-fairfield-vol65-iss3/",
+     "pole": "externality-normative",
+     "role": "Collective-externality normative twin of the formal line: privacy as an economics-textbook public good, with the remedy framed as empowering GROUPS to protect privacy collectively — the closest legal-scholarship precedent for WP-14's pooling-bargaining-position (cooperative) remedy, and a bridge between the group-privacy philosophers and the J.PubEcon formalists.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Jathan Sadowski, \"When data is capital: Datafication, accumulation, and extraction,\" Big Data & Society, Vol. 6, No. 1",
+     "year": "2019",
+     "url": "https://journals.sagepub.com/doi/full/10.1177/2053951718820549",
+     "pole": "other",
+     "role": "Critical political-economy statement of data AS capital (accumulated, extracted without consent or compensation) — the nearest existing 'data is a capital class' claim, but held by the platform, not the subject. WP-14 should cite it to mark the contrast: PVM relocates the capital stock to the data subject and makes it structurally inalienable, answering Sadowski's extraction critique rather than repeating the propertisation move he attacks.",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Rui Sun, \"The Privacy Externality of Disclosing Correlated Data,\" arXiv:2606.15947 [econ.TH], preprint",
+     "year": "2026",
+     "url": "https://arxiv.org/abs/2606.15947",
+     "pole": "externality-formal",
+     "role": "2026 successor joining privacy externalities to pricing and mechanism design: disclosure about one customer moves the seller's beliefs and prices for correlated non-customers, and incentive-compatible mechanisms with consent dominate both data minimization and laissez-faire. Directly adjacent to R(t)'s adversary-relative correlated-inference pricing; preprint, so cite as working paper.",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Jiadong Gu, \"Data Trade and Consumer Privacy,\" arXiv:2406.12457 [econ.TH], preprint (v3 revised Jan 2026)",
+     "year": "2024",
+     "url": "https://arxiv.org/abs/2406.12457",
+     "pole": "externality-formal",
+     "role": "2024-26 successor whose policy result is WP-14's remedy thesis in formal dress: banning data trade harms welfare, but reducing the intermediary's bargaining power protects privacy without welfare loss — i.e., the fix is bargaining position, not prohibition and not a wage. The cleanest recent formal citation for pooling-bargaining over data-wage or ban; preprint status, verify journal placement before camera-ready.",
+     "provenance_confidence": "medium"
+    }
+   ],
+   "scope_note": "Scout run 2026-08-17 for WP-14 (WEIS 2027) related-work gap: anti-commodification pole and collective/group-privacy + privacy-externality literature, normative and formal. 10 distinct web searches plus per-item verification fetches (Cambridge chapter page, two arXiv abstracts, OUP review page). All 15 citations were seen at the listed URL; venue/page details verified against publisher or repository pages except MacCarthy (venue I/S Journal from SSRN listing, marked medium) and the two arXiv items (preprints, journal status unverified, marked medium). Coverage: anti-commodification anchor + philosophical predecessor + reception (Véliz / Roessler / Wilsdon / Radin / Abdulrahim-Famoroti was cut at the 15-item cap in favor of Radin); normative collective (Taylor-Floridi-van der Sloot, Barocas-Nissenbaum, Ben-Shahar, MacCarthy, Fairfield-Engel); formal externality line (Choi-Jeon-Kim 2019, Acemoglu et al. 2022, Ichihashi 2021) and 2024-2026 successors joining externalities to pricing/mechanism/bargaining design (Sun 2026, Gu 2024/26); Sadowski 2019 included as the rival data-as-capital claim. Not covered (known adjacent, deliberately excluded as already engaged in the draft or out of scope): Bergemann-Bonatti-Gan 2022, Delacroix-Lawrence, DP-markets line, propertisation and labour legs. One near-miss worth a follow-up if space allows: Abdulrahim and Famoroti, \"A Noxious Market for Personal Data\" (NeurIPS 2019 ML4D workshop, arXiv:2001.00457), which applies Satz/Sandel noxious-markets directly against data property rights."
+  },
+  {
+   "items": [
+    {
+     "citation": "Carissa Véliz, Privacy Is Power: Why and How You Should Take Back Control of Your Data, Bantam Press/Transworld (2020)",
+     "year": "2020",
+     "url": "https://www.goodreads.com/book/show/51781479-privacy-is-power",
+     "pole": "anti-commodification",
+     "role": "anti-commodification pole anchor: argues for an outright ban on personal-data trades and a fiduciary-style duty to use held data only in the subject's interest; WP-14 must answer why pricing R(t)-scoped disclosure is not the commodification Véliz bans — the structural-inalienability claim is the natural reply",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Louise Wilsdon, review of Carissa Véliz, Privacy Is Power, International Data Privacy Law, Vol. 12, No. 3, pp. 255–257 (2022)",
+     "year": "2022",
+     "url": "https://academic.oup.com/idpl/article/12/3/255/6545822",
+     "pole": "anti-commodification",
+     "role": "reception of Véliz in a data-protection law venue; evidences that the ban-the-data-economy position is treated as a live scholarly pole, not a popular-press outlier",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Abdul Abdulrahim and Michael Famoroti, A Noxious Market for Personal Data, arXiv:2001.00457 (2020)",
+     "year": "2020",
+     "url": "https://arxiv.org/abs/2001.00457",
+     "pole": "anti-commodification",
+     "role": "applies Satz/Sandel noxious-markets theory to personal-data property rights; the philosophical anti-commodification objection stated as an economics-adjacent argument — WP-14 can cite it as the moral-limits-of-markets wing and note the objection targets alienating sale, which the PVM construction excludes",
+     "provenance_confidence": "medium"
+    },
+    {
+     "citation": "Bart Custers and Gianclaudio Malgieri, Priceless data: why the EU fundamental right to data protection is at odds with trade in personal data, Computer Law & Security Review, Vol. 45 (2022)",
+     "year": "2022",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4329245",
+     "pole": "anti-commodification",
+     "role": "covering threat to the inalienability leg from the legal side: GDPR/Charter rights are non-waivable, so any 'payment in data' remains revocable at will — WP-14's scoped-disclosure pricing must show it is compatible with (indeed isomorphic to) this non-waivability rather than in tension with it",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Ignacio N. Cofone, Beyond Data Ownership, Cardozo Law Review, Vol. 43 (2021)",
+     "year": "2021",
+     "url": "https://larc.cardozo.yu.edu/clr/vol43/iss2/4/",
+     "pole": "propertisation",
+     "role": "strongest recent propertisation critique missing from the related-work set (post-Schwartz/Purtova): ownership magnifies consent pathologies, leaves out inferred data, and creates moral hazard; WP-14's answer is that R(t) prices inferred/reconstructable content directly, which the property frame cannot",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Salomé Viljoen, A Relational Theory of Data Governance, Yale Law Journal, Vol. 131, No. 2, pp. 573–654 (2021)",
+     "year": "2021",
+     "url": "https://yalelawjournal.org/feature/a-relational-theory-of-data-governance",
+     "pole": "externality-normative",
+     "role": "collective-privacy normative anchor: data production creates population-level (supraindividual) interests that individualist rights — propertarian or dignitarian — cannot adjudicate; the normative twin of Bergemann-Bonatti-Gan's social-data externality and the strongest challenge to any subject-held-capital framing, which WP-14 partially absorbs via the pooling/cooperative remedy",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Omri Ben-Shahar, Data Pollution, Journal of Legal Analysis, Vol. 11, pp. 104–159 (2019)",
+     "year": "2019",
+     "url": "https://academic.oup.com/jla/article/doi/10.1093/jla/laz005/5578488",
+     "pole": "externality-normative",
+     "role": "reframes data harms as external/environmental rather than internal to the subject-collector dyad, implying Pigouvian instruments over pricing-to-subjects; a covering threat to the whole compensation frame that WP-14 should distinguish from its market-position-rent account",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, and Asuman Ozdaglar, Too Much Data: Prices and Inefficiencies in Data Markets, American Economic Journal: Microeconomics, Vol. 14, No. 4, pp. 218–256 (2022)",
+     "year": "2022",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "pole": "externality-formal",
+     "role": "formal externality result closest to the anti-commodification conclusion: information leakage across correlated users depresses data prices, causes excessive sharing, and yields conditions under which SHUTTING DOWN the data market is welfare-improving, plus a mediated-sharing scheme — the formal bridge between the ban pole and WP-14's pooled-bargaining remedy",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Jay Pil Choi, Doh-Shin Jeon, and Byung-Cheol Kim, Privacy and personal data collection with information externalities, Journal of Public Economics, Vol. 173, pp. 113–124 (2019)",
+     "year": "2019",
+     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3115049",
+     "pole": "externality-formal",
+     "role": "formal precedent that fully informed consent still produces excessive privacy loss via information externalities and coordination failure; supports WP-14's claim that the observer-subject value gap is structural (inference about non-sharers) rather than an aggregation premium, and motivates collective instruments",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Guido Calabresi and A. Douglas Melamed, Property Rules, Liability Rules, and Inalienability: One View of the Cathedral, Harvard Law Review, Vol. 85, No. 6, pp. 1089–1128 (1972)",
+     "year": "1972",
+     "url": "https://www.amherst.edu/media/view/123372/original/CalabresiMelamed.PDF",
+     "pole": "other",
+     "role": "foundational entitlement taxonomy (property / liability / inalienability rules) that the data-pricing literature keeps re-deploying; lets WP-14 name its own construction precisely — an inalienability rule on the stock combined with a price mechanism on scoped disclosure, a cell Calabresi-Melamed's grid does not natively contain",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Jeffrey Ritter and Anna Mayer, Regulating Data as Property: A New Construct for Moving Forward, Duke Law & Technology Review, Vol. 16, p. 220 (2018)",
+     "year": "2018",
+     "url": "https://dltr.law.duke.edu/2018/03/06/regulating-data-as-property-a-new-construct-for-moving-forward/",
+     "pole": "propertisation",
+     "role": "licensing-not-ownership precedent from the pro-market side: ownership attaches at creation via technological controls, with downstream rights exercised by license rather than transfer; a legal-construct analogue of pricing use within a retained stock, against which WP-14's structural (not merely contractual) inalienability can be contrasted",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "João Marinotti, Data Types, Data Doubts & Data Trusts, New York University Law Review, Vol. 97, p. 146 (2022)",
+     "year": "2022",
+     "url": "https://www.nyulawreview.org/wp-content/uploads/2022/10/NYULawReview-Volume-97-Marinotti.pdf",
+     "pole": "fiduciary",
+     "role": "covering threat to trust/fiduciary constructions: data's contested legal type undermines the property res that a data trust needs; complements Delacroix-Lawrence by showing WP-14's cooperative remedy must pool BARGAINING POSITION over disclosure rights (which exist) rather than corpus title (which may not)",
+     "provenance_confidence": "high"
+    },
+    {
+     "citation": "Charles I. Jones and Christopher Tonetti, Nonrivalry and the Economics of Data, American Economic Review, Vol. 110, No. 9, pp. 2819–2858 (2020)",
+     "year": "2020",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20191330",
+     "pole": "externality-formal",
+     "role": "formal precedent for pricing use of a stock the subject retains: data's nonrivalry means consumers can sell USE broadly while keeping the underlying record, and consumer-held rights approach the social optimum — the closest general-equilibrium analogue to WP-14's 'scoped disclosure within a retained stock' pricing, though it lacks the adversary-relative reconstruction bound",
+     "provenance_confidence": "high"
+    }
+   ],
+   "scope_note": "Ten distinct WebSearch queries plus targeted WebFetch verification (2026-08-17). Every citation's author/title/venue/year was confirmed against a page actually retrieved (publisher, SSRN, arXiv, AEA, or journal site); the Ritter-Mayer author names and the Véliz-review author were individually verified by fetch after a search-summary discrepancy. Coverage: (a) anti-commodification pole (Véliz ban position + its IDPL reception + Satz/Sandel noxious-markets application); (b) GDPR non-waivability economics (Custers-Malgieri); (c) inalienability-rule framing (Calabresi-Melamed original, plus Cofone as the modern anti-property synthesis); (d) licensing-not-ownership and trust constructions (Ritter-Mayer; Marinotti on data trusts); (e) collective/normative privacy (Viljoen; Ben-Shahar); (f) formal externality results including a shutdown-the-market welfare condition (Acemoglu et al.) and consented-yet-excessive collection (Choi-Jeon-Kim); (g) nonrivalry-based use-pricing of a retained stock (Jones-Tonetti). Gap found, useful for positioning: no paper located that formally prices disclosure UNDER an explicit inalienability constraint on the stock — the legal literature asserts inalienability without a price mechanism, and the formal literature prices data without structural inalienability; WP-14 can credibly claim that cell. Data-dignity critiques surfaced were mostly blog/essay-grade (FPF, Berkman-Klein Medium); the academically citable anti-data-wage arguments are carried here by Véliz, Cofone, and the externality papers, so no blog items were included. Items already engaged by the paper (Arrieta-Ibarra, Posner-Weyl, Schwartz, Delacroix-Lawrence, Ghosh-Roth, Bergemann-Bonatti-Gan) were deliberately excluded."
+  }
+ ],
+ "refutations": [
+  {
+   "target": "The inalienability leg of CTR-LR-02: PVM is first to price a formal privacy quantity (an adversary-relative reconstruction bound) while holding the underlying data stock STRUCTURALLY inalienable, so that what is priced is scoped disclosure within a retained stock.",
+   "covering_candidates": [
+    {
+     "citation": "Chao Li, Daniel Yang Li, Gerome Miklau & Dan Suciu, \"A Theory of Pricing Private Data\", ICDT 2013 / ACM Transactions on Database Systems 39(4) 2014 / CACM 60(12) 2017",
+     "url": "https://arxiv.org/abs/1208.5258",
+     "year": "2013",
+     "how_it_covers": "Prices noisy aggregate query answers as a function of accuracy while the buyer can never obtain the raw records by construction; owner micro-payments are tied to a formal DP-based privacy-loss quantity, and arbitrage-freeness is exactly a bound on what a buyer can reconstruct by combining purchased disclosures. This is pricing scoped disclosure within a stock the buyer never receives — the priced+non-transferred join, a decade before WP-14. Narrowing residue: the stock is alienated to a trusted broker (not subject-held), the bound is worst-case DP (not adversary-relative or time-drifting), and non-transfer is a mechanism feature, never theorized as inalienability or a capital class.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Shuyuan Zheng, Yang Cao, Masatoshi Yoshikawa, Huizhong Li & Qiang Yan, \"FL-Market: Trading Private Models in Federated Learning\", IEEE BigData 2022 (arXiv:2106.04384, 2021)",
+     "url": "https://arxiv.org/abs/2106.04384",
+     "year": "2021",
+     "how_it_covers": "Structural (architectural) inalienability plus priced formal privacy quantity in one mechanism: raw data never leaves the data owners (federated learning), owners locally perturb gradients under local differential privacy, and the perturbation/privacy level is what the auction prices. The subject retains the stock by construction; only scoped, formally-bounded disclosure is sold. Residue for WP-14: LDP epsilon is a worst-case, adversary-agnostic bound, not an adversary-relative time-drifting R(t); no capital-class or rent analysis.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Guocheng Liao et al. (personalized-DP pricing line), \"Pricing Private Data with Personalized Differential Privacy and Partial Arbitrage Freeness\", arXiv:2105.01651",
+     "url": "https://arxiv.org/abs/2105.01651",
+     "year": "2021",
+     "how_it_covers": "Extends the Li-Miklau-Suciu construction to per-subject (personalized) privacy levels — each owner prices her own formal privacy loss while the buyer still receives only perturbed answers. Evidence the priced-formal-quantity-with-non-transferred-records design is a developed literature, not a single paper. Same residue: worst-case DP, broker-held stock, no inalienability theorization.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Charles I. Jones & Christopher Tonetti, \"Nonrivalry and the Economics of Data\", American Economic Review 110(9): 2819-2858",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20191330",
+     "year": "2020",
+     "how_it_covers": "General-equilibrium precedent for pricing USE of a stock the consumer retains: nonrivalry means consumers sell use broadly while keeping the record, and consumer-held rights approach the social optimum. Covers the 'priced flow from a retained stock' economic form and the subject-held allocation, but has no formal privacy quantity and no reconstruction bound — retention is assumed, not enforced structurally.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Shota Ichihashi, \"The Economics of Data Externalities\", Journal of Economic Theory 196: 105316",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022053121001332",
+     "year": "2021",
+     "how_it_covers": "Formal precedent for the purchased object being designed/scoped disclosure rather than the underlying stock (information design over what the firm learns). Covers the scoped-disclosure-as-priced-object leg; does not hold the stock inalienable and has no reconstruction bound.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Bart Custers & Gianclaudio Malgieri, \"Priceless Data: Why the EU Fundamental Right to Data Protection Is at Odds with Trade in Personal Data\", Computer Law & Security Review 45",
+     "url": "https://www.sciencedirect.com/science/article/pii/S0267364922000309",
+     "year": "2022",
+     "how_it_covers": "Covers the inalienable/non-waivable leg from the legal side (GDPR/Charter rights cannot be alienated; any data-as-counter-performance stays revocable), i.e., a non-waivable stock coexisting with data transactions — but supplies no pricing metric, so it covers only one half of the join.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Ocean Protocol, \"Compute-to-Data: Buy & Sell Private Data While Preserving Privacy\" (deployed architecture + whitepaper documentation)",
+     "url": "https://oceanprotocol.com/learn/compute-to-data",
+     "year": "2020",
+     "how_it_covers": "Deployed architectural precedent for priced access where 'the data never leaves the premises' — the stock is retained by construction and only computation results are sold. Covers structural retention + pricing, but there is no formal privacy quantity or reconstruction bound doing the pricing work (an output could in principle leak the stock).",
+     "strength": "weak"
+    },
+    {
+     "citation": "Margaret Jane Radin, \"Market-Inalienability\", Harvard Law Review 100(8): 1849-1937",
+     "url": "https://people.brandeis.edu/~teuber/Radin-Market-Inalienability.pdf",
+     "year": "1987",
+     "how_it_covers": "Owns the conceptual category the leg's novelty claim sits inside: things that may be shared but not sold, with markets permitted at the periphery — exactly WP-14's middle position, stated normatively. No pricing metric, so it covers the frame, not the join; but it means WP-14 cannot claim the shared-not-sold structure itself, only its technical realization.",
+     "strength": "partial"
+    }
+   ],
+   "absence_report": "not_found_in_scope(adversary-relative OR time-drifting reconstruction bound as the priced quantity; inalienability theorized as a property of a subject-held capital stock rather than as a mechanism feature or legal rule). Searched beyond the digest: (1) DP-market pricing with arbitrage-free privacy-loss compensation (Li-Li-Miklau-Suciu lineage and successors); (2) data-never-leaves marketplaces pricing DP budgets under federated architectures (FL-Market, Dealer/DP-Dealer, federated data trading, Stackelberg privacy pricing); (3) usufruct/licensing constructions joined to pricing in privacy economics; (4) human-capital inalienability ('rented not sold') applied to personal data pricing; (5) market designs declaring ownership inalienable while trading usage rights with DP compensation; (6) data-trust/data-cooperative priced access with privacy budgets. No source was found that (a) prices a bound defined relative to a specific adversary's inference capability that drifts over time, (b) frames buyer-side non-reconstructability as structural inalienability of the stock, or (c) combines a formal pricing metric with the Calabresi-Melamed/Radin inalienability category. The legal literature (Custers-Malgieri, EDPS, Radin, Cofone) holds the stock inalienable with no pricing metric; the DP-market literature prices a formal quantity with the records non-transferred but treats that as mechanism design, with the stock typically alienated to a trusted broker (FL-Market is the exception on broker-alienation but uses worst-case LDP). CAVEAT: the session-wide WebSearch cap (200) was reached after 4 of my searches beyond the digest ran; two planned probes (selling-privacy auctions framed around retention; identifiability/reconstruction-risk pricing) could not execute as searches and were partially substituted by WebFetch verification of the top candidates (arXiv:1208.5258, arXiv:2106.04384, arXiv:2111.15415, Li14Theory_TODS PDF).",
+   "recommendation": "NARROWED"
+  },
+  {
+   "target": "The externality integration: PVM carrying the social-data externality / collective nature of privacy (formal: Bergemann-Bonatti-Gan 2022; normative: Veliz, group privacy) into a subject-side capital valuation with a venue-exclusion rent decomposition. Threat test: prior work already joining the normative collective-privacy position with formal externality pricing inside a data-valuation or compensation instrument.",
+   "covering_candidates": [
+    {
+     "citation": "Eduardo C. Garrido-Merchan, \"Intersectional Data and the Social Cost of Digital Extraction: A Pigouvian Surcharge\", arXiv:2601.08574 [cs.CY], preprint (2026)",
+     "url": "https://arxiv.org/abs/2601.08574",
+     "year": "2026",
+     "how_it_covers": "The closest single instantiation of the threat test as stated: a Pigouvian surcharge on data extraction priced formally (monetised mutual-information / entropy reduction over joint intersectional identity distributions), explicitly framed as internalising a group-level privacy externality, with regulators calibrating the surcharge to 'embed normative judgments directly into market design' and the mechanism described as 'a redistributive institutional shield for vulnerable groups'. This literally joins a group-privacy normative concern with formal externality pricing inside a compensation-adjacent instrument (Pigouvian data tax with restitution possibility to affected subjects or collective funds). It does NOT cover the subject-side capital-class framing, the R(t) reconstruction bound, structural inalienability, or the venue-exclusion rent decomposition, and it is an unrefereed preprint from Jan 2026.",
+     "strength": "strong"
+    },
+    {
+     "citation": "Eduardo C. Garrido-Merchan, \"An Information-Theoretic Intersectional Data Valuation Theory\", arXiv:2507.14742, preprint (2025)",
+     "url": "https://arxiv.org/abs/2507.14742",
+     "year": "2025",
+     "how_it_covers": "The valuation-theory half of the same programme: formal (mutual-information) data valuation defined at the level of intersectional/group identities, explicitly naming a 'privacy externality' (firms profit from profiling while users bear hidden social risk and discrimination costs) and positioning value with data subjects / vulnerable groups via a Pigouvian-style surcharge. Together with 2601.08574 this pair is prior art for 'externality-adjusted data valuation grounded in a collective/group privacy concern'. Gaps: no engagement with the Veliz/Taylor-Floridi normative canon is visible in the abstract, no capital-stock or rent decomposition, no inalienability construction, preprint status.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Alireza Fallah, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Optimal and Differentially Private Data Acquisition: Central and Local Mechanisms\", Operations Research, Vol. 72, No. 3 (2024); also EC'22",
+     "url": "https://pubsonline.informs.org/doi/10.1287/opre.2022.0014",
+     "year": "2024",
+     "how_it_covers": "Refereed prior art for 'externality-adjusted data prices' inside a compensation instrument: a data-acquisition mechanism that pays privacy-conscious users for two distinct privacy losses — the local loss from their own disclosure and the central loss imposed via the platform's released estimate (i.e., the collectively-generated leakage) — so payments are explicitly adjusted for a privacy externality channel. Purely formal: no normative collective-privacy engagement, no capital framing, no rent decomposition.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian, Asuman Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", American Economic Journal: Microeconomics, Vol. 14, No. 4, pp. 218-256 (2022)",
+     "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+     "year": "2022",
+     "how_it_covers": "Already in the digest but decisive for the formal leg of the threat: shows correlation-leakage externalities depress equilibrium data prices and proposes a mediated data-sharing scheme — a compensation instrument whose transfers are adjusted for the externality — plus conditions under which shutting the market is welfare-improving (partially vindicating the ban pole formally). Covers 'externality-adjusted data prices' but not the normative-collective join, the subject-held capital class, or the venue-exclusion/externality rent decomposition.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Dirk Bergemann and Yixin Wang, \"Data Externalities: Collective Bargaining over Data\", ACM FAccT 2021 tutorial (2021)",
+     "url": "https://bridges.eaamo.org/events/facct-21/slides/collective_bargaining_over_data.pdf",
+     "year": "2021",
+     "how_it_covers": "Evidence that the formal anchor's own author already joined externality pricing to the collective-bargaining/cooperative remedy ('internalizing the externality by creating a firm, community, cooperative') — i.e., WP-14's pooling remedy is anticipated inside the Bergemann line itself, not an integration WP-14 adds. Weak as covering art because it is tutorial slides, not an archival paper, and carries no normative collective-privacy engagement.",
+     "strength": "weak"
+    },
+    {
+     "citation": "Joshua A. T. Fairfield and Christoph Engel, \"Privacy as a Public Good\", Duke Law Journal, Vol. 65, No. 3, pp. 385-457 (2015)",
+     "url": "https://dlj.law.duke.edu/article/privacy-as-a-public-good-fairfield-vol65-iss3/",
+     "year": "2015",
+     "how_it_covers": "Covers the normative-collective-to-economics bridge half of the integration: privacy as a public good undersupplied by individually rational disclosure, with group-empowerment remedies. It joins the collective-privacy position to welfare economics but stops short of any pricing/valuation instrument, so it covers the join in argument-space, not in instrument-space.",
+     "strength": "partial"
+    },
+    {
+     "citation": "Omri Ben-Shahar, \"Data Pollution\", Journal of Legal Analysis, Vol. 11, pp. 104-159 (2019)",
+     "url": "https://academic.oup.com/jla/article/doi/10.1093/jla/laz005/5578488",
+     "year": "2019",
+     "how_it_covers": "Prior art for Pigouvian data taxation motivated by external/collective harm — but deliberately WITHOUT subject compensation (revenue treated as public, emissions-style), and explicitly against the private-entitlement valuation frame. It covers the 'Pigouvian data tax' branch of the threat test while inverting the subject-compensation half, so it functions as a foil rather than coverage of the target integration.",
+     "strength": "weak"
+    },
+    {
+     "citation": "Thomas Asikis, Johannes Klinglmayr, Dirk Helbing, Evangelos Pournaras, \"Collective Privacy Recovery: Data-sharing Coordination via Decentralized Artificial Intelligence\" (arXiv:2301.05995; published PNAS Nexus 2024)",
+     "url": "https://arxiv.org/abs/2301.05995",
+     "year": "2024",
+     "how_it_covers": "Operationalises collective privacy as a coordination object with explicit privacy valuations/costs over group data-sharing levels — a computational instrument treating privacy as collectively recoverable. Adjacent to the pooling remedy and to collective privacy valuation, but it is a coordination mechanism, not an externality-priced valuation or compensation instrument, and does not engage the normative canon.",
+     "strength": "weak"
+    }
+   ],
+   "absence_report": "not_found_in_scope(single work joining the normative collective-privacy canon (Veliz, Taylor/Floridi group privacy, Viljoen) with formal externality pricing (Bergemann-Bonatti-Gan / Acemoglu / Choi-Jeon-Kim line) inside a SUBJECT-SIDE capital valuation, and not_found_in_scope(any prior decomposition of the observer-to-subject value gap into venue-exclusion rent plus social-data externality within a subject-held, structurally inalienable stock)). Searched (6 WebSearch queries beyond the digest, plus 2 targeted arXiv fetches, session search budget then exhausted): (1) Pigouvian tax + data externality + subject compensation; (2) data cooperative collective bargaining formal externality compensation models; (3) Bergemann/Wang collective bargaining over data; (4) Fallah-Makhdoumi-Malekian-Ozdaglar data-acquisition payment mechanisms; (5) privacy-externality compensation mechanism design crossed with group/collective privacy valuation; (6) data-dividend externality valuation critiques and (7) collective-consent/data-trust/data-union formal pricing models. The searches surfaced a 2025-26 preprint pair (Garrido-Merchan) that instantiates 'Pigouvian data tax with group-redistributive compensation grounded in a group-level privacy externality' — the nearest hit to the threat test as literally worded — and refereed formal work (Fallah et al. 2024; Acemoglu et al. 2022) covering externality-adjusted payments to subjects. No found work performs the triple join (normative collective privacy + formal externality pricing + subject-side capital valuation), and none contains a venue-exclusion rent decomposition or ties externality pricing to a reconstruction-bound/structural-inalienability construction. Not searched due to budget exhaustion: direct citation-graph checks of who cites both Veliz/Taylor-Floridi AND Bergemann-Bonatti-Gan; non-English literature; SSRN-only law-and-economics working papers post-2024.",
+   "recommendation": "NARROWED"
+  }
+ ],
+ "judge": {
+  "headline": "Both novelty legs NARROWED: DP-market pricing (Li-Li-Miklau-Suciu 2013; FL-Market 2021) already owns the priced-formal-quantity-with-non-transferred-records join, and the Bergemann line itself (Bergemann-Wang 2021) anticipates the pooling remedy — WP-14's defensible claims are (a) an adversary-relative, time-drifting reconstruction bound R(t) as the priced quantity within a subject-held stock whose inalienability is theorized as a capital-class property rather than a mechanism feature, and (b) the venue-exclusion + social-data-externality decomposition of the observer-subject gap; related work needs a fourth standing objection (anti-commodification, anchored Radin 1987 + Véliz 2020/2024, which PVM partially vindicates structurally) plus a Viljoen/group-privacy collective sentence.",
+  "positioning_map": [
+   {
+    "pole": "anti-commodification",
+    "anchors": "Radin 1987 (Market-Inalienability); Roessler 2015 (closest data-specific statement); Véliz 2020 (Privacy Is Power) and Véliz 2024 (The Ethics of Privacy and Surveillance, OUP); Satz 2010 (noxious markets); Custers & Malgieri 2022 and EDPS Opinion 4/2017 (legal-doctrinal twin); Abdulrahim & Famoroti 2019 (noxious-markets applied to data)",
+    "claim": "Personal data belongs to a non-market valuation sphere: pricing it is corrosive per se, trade in it should be banned outright (Véliz: data as toxic asset, vote-selling analogy), and EU fundamental-rights doctrine makes the underlying right non-waivable regardless of consent or payment.",
+    "pvm_relation": "PARTIALLY VINDICATES — with Véliz placed precisely. PVM structurally vindicates two of her claims: (1) inalienability of the stock — under R(t)-scoped disclosure the observer can never reconstruct the underlying record and the quality stake is non-transferable by construction, so the sale Véliz wants legally banned is impossible in PVM's construction, a stronger result than a prohibition; this also explains rather than contradicts Custers-Malgieri/EDPS non-waivability. (2) Collective stakes — her claim that one person's data betrays others is carried formally as the social-data externality (Bergemann-Bonatti-Gan 2022) inside the rent decomposition. PVM REJECTS her third claim, that nothing should therefore be priced: scoped disclosure within the retained stock is legitimately priced; Satz's noxious-market criteria fail to bite precisely because the stock never transfers; and formally, prohibition is dominated by bargaining-position remedies (Gu 2024; Acemoglu et al. 2022's market-shutdown result holds only under conditions, partially vindicating the ban pole without generalizing it). Radin is the frame-owner: her shared-not-sold, markets-at-the-periphery middle position is exactly the position PVM occupies — WP-14 can claim only its technical realization, not the structure itself."
+   },
+   {
+    "pole": "propertisation (and its critics)",
+    "anchors": "Already engaged: Laudon 1996, Samuelson 2000, Schwartz 2004, Purtova 2015, Prins 2006. New: Cofone 2022 (Beyond Data Ownership), Ritter & Mayer 2018 (licensing-not-ownership), Calabresi & Melamed 1972 (entitlement-rule taxonomy)",
+    "claim": "Assign transferable property rights in personal data (pro side); critics: ownership magnifies consent pathologies, cannot reach inferred data, is self-defeating, and data lacks a coherent legal res.",
+    "pvm_relation": "AGREES with the critics and goes further: transferable title is the wrong object because value sits in reconstructable/inferred content, which R(t) prices directly and property title cannot reach (answering Cofone's strongest point). Against Ritter-Mayer, PVM's retention is structural (reconstruction-bounded), not contractual licensing. Against Calabresi-Melamed, PVM's construction occupies a cell the taxonomy lacks natively: an inalienability rule on the stock combined with a price mechanism on scoped flow, where the inalienability is technological rather than a chosen legal rule."
+   },
+   {
+    "pole": "data-as-labour",
+    "anchors": "Arrieta-Ibarra et al. 2018; Posner & Weyl 2018",
+    "claim": "Data is undercompensated labour; the observer-subject value gap is unpaid wages; remedy is a data wage negotiated by data unions.",
+    "pvm_relation": "DISAGREES on the diagnosis: the gap is market-position rent (venue exclusion + social-data externality per Bergemann-Bonatti-Gan 2022), not unpaid marginal product, so a data wage misprices the problem. PARTIALLY AGREES on the institutional form: unions-as-pooling survives, but as a bargaining-position instrument over scoped disclosure, not a wage claim over an alienated product."
+   },
+   {
+    "pole": "fiduciary intermediation",
+    "anchors": "Delacroix & Lawrence 2019 (already engaged); Marinotti 2022 (data trusts lack a coherent property res)",
+    "claim": "Data subjects should act through intermediaries bound by duties of loyalty (trusts, cooperatives) rather than transacting bilaterally.",
+    "pvm_relation": "AGREES as the remedy instrument — PVM's remedy IS pooled bargaining via cooperative/fiduciary structures. Marinotti's res critique is absorbed rather than resisted: because the stock is structurally inalienable, PVM's cooperatives pool disclosure rights and bargaining position (which exist) rather than corpus title (which may not), answering the strongest objection to trust constructions."
+   },
+   {
+    "pole": "formal externality economics",
+    "anchors": "Bergemann-Bonatti-Gan 2022 (already engaged); Acemoglu et al. 2022 (Too Much Data); Choi-Jeon-Kim 2019; Ichihashi 2021; Jones & Tonetti 2020; Fallah et al. 2024; Gu 2024 and Sun 2026 (preprints); Bergemann & Wang 2021 (tutorial)",
+    "claim": "Correlated-inference externalities depress equilibrium data prices and produce excessive collection even under informed consent; the traded object is designed/scoped disclosure; nonrivalry supports selling use of a retained stock; remedies are mediation, bargaining-power reduction, or (under conditions) market shutdown.",
+    "pvm_relation": "AGREES AND BUILDS ON: this line supplies the externality half of PVM's rent decomposition and the formal case that the gap is structural rather than super-additive aggregation. Two attribution duties: Jones-Tonetti already gives the priced-use-of-retained-stock economic form (retention assumed, not enforced — PVM enforces it via R(t)); and Bergemann-Wang 2021 shows the pooling/cooperative remedy is anticipated inside the Bergemann line itself, so WP-14's contribution is the subject-side valuation carrying that remedy, not the remedy."
+   },
+   {
+    "pole": "normative collective privacy",
+    "anchors": "Viljoen 2021 (relational data governance — highest-priority gap); Taylor, Floridi & van der Sloot 2017 (group privacy); Fairfield & Engel 2015 (privacy as public good); Barocas & Nissenbaum 2014 (inference end-run); Ben-Shahar 2019 (data pollution); MacCarthy 2011 (earliest externality policy statement)",
+    "claim": "Privacy interests are supra-individual: data relations create population-level interests that individualist frameworks (propertarian or dignitarian) cannot represent; individual choice/consent fails; remedies are democratic governance, group empowerment, or Pigouvian regulation without subject compensation.",
+    "pvm_relation": "PARTIALLY VINDICATES: PVM concedes the supra-individual interest is real and identifies the social-data externality as its economic shadow, with pooling answering the group rather than only the individual — this meets Viljoen and Fairfield-Engel halfway. DISAGREES with Viljoen's implication that subject-indexed valuation is per se inadequate (R(t) is subject-indexed while the remedy is collective), with Ben-Shahar's no-subject-compensation Pigouvian frame (a foil, since PVM routes the externality's value back to subjects), and answers Barocas-Nissenbaum's end-run directly: R(t) is defined against adversary inference, so leakage through others' data is priced rather than scoped away."
+   },
+   {
+    "pole": "data-as-capital (critical political economy)",
+    "anchors": "Sadowski 2019 (When Data Is Capital)",
+    "claim": "Data already functions as a capital class — but accumulated by firms through extraction, without consent or compensation.",
+    "pvm_relation": "DISAMBIGUATES: PVM's 'distinct capital class' must be marked off from Sadowski's firm-held extractive capital in one sentence — PVM relocates the stock to the data subject and makes it structurally inalienable, answering the extraction critique rather than repeating the propertisation move Sadowski attacks."
+   }
+  ],
+  "threat_verdicts": [
+   {
+    "target": "Inalienability leg of CTR-LR-02: PVM as first to price a formal privacy quantity while holding the underlying stock structurally inalienable, pricing scoped disclosure within a retained stock.",
+    "verdict": "NARROWED",
+    "restatement": "PVM is the first to price an ADVERSARY-RELATIVE, TIME-DRIFTING reconstruction bound R(t) as the disclosure price within a SUBJECT-HELD stock, and the first to theorize buyer-side non-reconstructability as structural inalienability of a capital stock — joining the Calabresi-Melamed/Radin inalienability category to a formal pricing metric — rather than treating non-transfer as a mechanism feature (DP-markets), a broker-held architecture (Li et al.), a worst-case adversary-agnostic budget (FL-Market's LDP), or an assumed retention (Jones-Tonetti). The broad wording ('first to price a formal privacy quantity with the stock non-transferred') is NOT defensible and must be dropped: Li-Li-Miklau-Suciu 2013 priced DP-based privacy loss with buyers structurally unable to obtain raw records (arbitrage-freeness IS a reconstruction bound on combined purchases), and FL-Market 2021 adds subject-side structural retention with a priced LDP level.",
+    "confidence_label": "high",
+    "confidence_pct": 85,
+    "basis": "Refuter did its coverage duty: two strong candidates verified by fetch (arXiv:1208.5258, arXiv:2106.04384), six search families probed beyond the digest, and a precise absence report — no source prices an adversary-relative or drifting bound, and legal (Custers-Malgieri, Radin) vs formal (DP-markets) literatures each hold exactly one half of the join, a gap the sweeps independently confirmed ('no paper prices disclosure UNDER an explicit inalienability constraint on the stock'). Confidence capped below 90 because the session search budget expired before two planned probes (retention-framed selling-privacy auctions; identifiability/reconstruction-risk pricing), so the residue rests on a competent but not exhaustive absence."
+   },
+   {
+    "target": "Externality integration: carrying the social-data externality / collective privacy (formal: Bergemann-Bonatti-Gan; normative: Véliz, group privacy) into a subject-side capital valuation with a venue-exclusion rent decomposition.",
+    "verdict": "NARROWED",
+    "restatement": "PVM's defensible claim is the TRIPLE JOIN plus the decomposition: engaging the normative collective-privacy canon (Véliz, Taylor-Floridi, Viljoen) and formal externality pricing inside a subject-side capital valuation, with the observer-subject gap decomposed into venue-exclusion rent plus social-data externality within a structurally inalienable subject-held stock. Every PAIRWISE join is taken and must be conceded: Garrido-Merchán 2025/26 (preprints) join group-privacy normative concern to Pigouvian externality pricing with redistributive compensation; Fallah et al. 2024 (refereed) pay subjects for both local and collectively-imposed privacy losses; Acemoglu et al. 2022 build an externality-adjusted mediated compensation scheme; Fairfield-Engel 2015 join collective privacy to welfare economics in argument-space. Separately, the pooling/cooperative remedy must be re-attributed: Bergemann-Wang 2021 anticipates it inside the formal anchor's own line, so WP-14 contributes the valuation that carries the remedy, not the remedy.",
+    "confidence_label": "medium-high",
+    "confidence_pct": 75,
+    "basis": "No found work performs the triple join or contains a venue-exclusion decomposition, and the nearest hit (Garrido-Merchán) lacks the capital-class framing, R(t), inalienability, and engagement with the normative canon — and is an unrefereed 2026 preprint. Confidence held to 75 because the refuter's own not-searched list is material: no citation-graph check of works citing both Véliz/Taylor-Floridi AND Bergemann-Bonatti-Gan, no post-2024 SSRN law-and-economics sweep, no non-English literature — exactly where a triple-join candidate would live. The Bergemann-Wang re-attribution duty stands regardless of any further search."
+   }
+  ],
+  "bibliography_additions": [
+   {
+    "citation": "Margaret Jane Radin, \"Market-Inalienability\", Harvard Law Review 100(8): 1849-1937 (1987)",
+    "url": "https://people.brandeis.edu/~teuber/Radin-Market-Inalienability.pdf",
+    "year": "1987",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Guido Calabresi & A. Douglas Melamed, \"Property Rules, Liability Rules, and Inalienability: One View of the Cathedral\", Harvard Law Review 85(6): 1089-1128 (1972)",
+    "url": "https://www.amherst.edu/media/view/123372/original/CalabresiMelamed.PDF",
+    "year": "1972",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Debra Satz, Why Some Things Should Not Be for Sale: The Moral Limits of Markets, Oxford University Press (2010)",
+    "url": "https://www.cambridge.org/core/journals/business-ethics-quarterly/article/abs/why-some-things-should-not-be-for-sale-the-moral-limits-of-markets-by-debra-satz-oxford-university-press-2010/CB5DFF36B06B6AC6394ED5AE474C2CC5",
+    "year": "2010",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Beate Roessler, \"Should Personal Data Be a Tradable Good? On the Moral Limits of Markets in Privacy\", in Roessler & Mokrosinska (eds.), Social Dimensions of Privacy, Cambridge University Press, pp. 141-161 (2015)",
+    "url": "https://www.cambridge.org/core/books/abs/social-dimensions-of-privacy/should-personal-data-be-a-tradable-good-on-the-moral-limits-of-markets-in-privacy/70E432C61AB2D92B79076CAEC40E5F75",
+    "year": "2015",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Carissa Véliz, Privacy Is Power: Why and How You Should Take Back Control of Your Data, Bantam Press/Transworld (2020)",
+    "url": "https://www.penguin.co.uk/books/442343/privacy-is-power-by-carissa-veliz/9780552177719",
+    "year": "2020",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Carissa Véliz, The Ethics of Privacy and Surveillance, Oxford University Press, Oxford Philosophical Monographs (2024)",
+    "url": "https://global.oup.com/academic/product/the-ethics-of-privacy-and-surveillance-9780198870173",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Bart Custers & Gianclaudio Malgieri, \"Priceless Data: Why the EU Fundamental Right to Data Protection Is at Odds with Trade in Personal Data\", Computer Law & Security Review 45 (2022)",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0267364922000309",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "European Data Protection Supervisor, Opinion 4/2017 on the Proposal for a Directive on certain aspects concerning contracts for the supply of digital content (14 March 2017)",
+    "url": "https://www.edps.europa.eu/sites/default/files/publication/17-03-14_opinion_digital_content_en.pdf",
+    "year": "2017",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Ignacio N. Cofone, \"Beyond Data Ownership\", Cardozo Law Review 43(2) (2022)",
+    "url": "https://larc.cardozo.yu.edu/clr/vol43/iss2/4/",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Salomé Viljoen, \"A Relational Theory of Data Governance\", Yale Law Journal 131(2): 573-654 (2021)",
+    "url": "https://www.yalelawjournal.org/feature/a-relational-theory-of-data-governance",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Linnet Taylor, Luciano Floridi & Bart van der Sloot (eds.), Group Privacy: New Challenges of Data Technologies, Springer (2017)",
+    "url": "https://link.springer.com/book/10.1007/978-3-319-46608-8",
+    "year": "2017",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Joshua A. T. Fairfield & Christoph Engel, \"Privacy as a Public Good\", Duke Law Journal 65(3): 385-457 (2015)",
+    "url": "https://dlj.law.duke.edu/article/privacy-as-a-public-good-fairfield-vol65-iss3/",
+    "year": "2015",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Solon Barocas & Helen Nissenbaum, \"Big Data's End Run around Anonymity and Consent\", in Lane et al. (eds.), Privacy, Big Data, and the Public Good, Cambridge University Press, pp. 44-75 (2014)",
+    "url": "https://www.cambridge.org/core/books/abs/privacy-big-data-and-the-public-good/big-datas-end-run-around-anonymity-and-consent/0BAA038A4550C729DAA24DFC7D69946C",
+    "year": "2014",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Omri Ben-Shahar, \"Data Pollution\", Journal of Legal Analysis 11: 104-159 (2019)",
+    "url": "https://academic.oup.com/jla/article/doi/10.1093/jla/laz005/5578488",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Mark MacCarthy, \"New Directions in Privacy: Disclosure, Unfairness and Externalities\", I/S: A Journal of Law and Policy for the Information Society 6(3) (2011)",
+    "url": "https://www.ssrn.com/abstract=3093301",
+    "year": "2011",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Jay Pil Choi, Doh-Shin Jeon & Byung-Cheol Kim, \"Privacy and personal data collection with information externalities\", Journal of Public Economics 173: 113-124 (2019)",
+    "url": "https://ideas.repec.org/a/eee/pubeco/v173y2019icp113-124.html",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Shota Ichihashi, \"The Economics of Data Externalities\", Journal of Economic Theory 196: 105316 (2021)",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022053121001332",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Daron Acemoglu, Ali Makhdoumi, Azarakhsh Malekian & Asuman Ozdaglar, \"Too Much Data: Prices and Inefficiencies in Data Markets\", American Economic Journal: Microeconomics 14(4): 218-256 (2022)",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/mic.20200200",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Charles I. Jones & Christopher Tonetti, \"Nonrivalry and the Economics of Data\", American Economic Review 110(9): 2819-2858 (2020)",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20191330",
+    "year": "2020",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Chao Li, Daniel Yang Li, Gerome Miklau & Dan Suciu, \"A Theory of Pricing Private Data\", ICDT 2013 / ACM TODS 39(4) (2014)",
+    "url": "https://arxiv.org/abs/1208.5258",
+    "year": "2013",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Shuyuan Zheng, Yang Cao, Masatoshi Yoshikawa, Huizhong Li & Qiang Yan, \"FL-Market: Trading Private Models in Federated Learning\", IEEE BigData 2022 (arXiv:2106.04384)",
+    "url": "https://arxiv.org/abs/2106.04384",
+    "year": "2021",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Guocheng Liao et al., \"Pricing Private Data with Personalized Differential Privacy and Partial Arbitrage Freeness\", arXiv:2105.01651 (2021)",
+    "url": "https://arxiv.org/abs/2105.01651",
+    "year": "2021",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Alireza Fallah, Ali Makhdoumi, Azarakhsh Malekian & Asuman Ozdaglar, \"Optimal and Differentially Private Data Acquisition: Central and Local Mechanisms\", Operations Research 72(3) (2024)",
+    "url": "https://pubsonline.informs.org/doi/10.1287/opre.2022.0014",
+    "year": "2024",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Jiadong Gu, \"Data Trade and Consumer Privacy\", arXiv:2406.12457 [econ.TH], preprint, v3 Jan 2026",
+    "url": "https://arxiv.org/abs/2406.12457",
+    "year": "2024",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Rui Sun, \"The Privacy Externality of Disclosing Correlated Data\", arXiv:2606.15947 [econ.TH], preprint (2026)",
+    "url": "https://arxiv.org/abs/2606.15947",
+    "year": "2026",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Jathan Sadowski, \"When Data Is Capital: Datafication, Accumulation, and Extraction\", Big Data & Society 6(1) (2019)",
+    "url": "https://journals.sagepub.com/doi/10.1177/2053951718820549",
+    "year": "2019",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "João Marinotti, \"Data Types, Data Doubts & Data Trusts\", New York University Law Review 97: 146 (2022)",
+    "url": "https://www.nyulawreview.org/wp-content/uploads/2022/10/NYULawReview-Volume-97-Marinotti.pdf",
+    "year": "2022",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Jeffrey Ritter & Anna Mayer, \"Regulating Data as Property: A New Construct for Moving Forward\", Duke Law & Technology Review 16: 220 (2018)",
+    "url": "https://dltr.law.duke.edu/2018/03/06/regulating-data-as-property-a-new-construct-for-moving-forward/",
+    "year": "2018",
+    "provenance_confidence": "high"
+   },
+   {
+    "citation": "Abdul Abdulrahim & Michael Famoroti, \"A Noxious Market for Personal Data\", NeurIPS 2019 ML4D Workshop (arXiv:2001.00457)",
+    "url": "https://arxiv.org/abs/2001.00457",
+    "year": "2019",
+    "provenance_confidence": "medium"
+   },
+   {
+    "citation": "Dirk Bergemann & Yixin Wang, \"Data Externalities: Collective Bargaining over Data\", ACM FAccT 2021 tutorial slides (2021)",
+    "url": "https://bridges.eaamo.org/events/facct-21/slides/collective_bargaining_over_data.pdf",
+    "year": "2021",
+    "provenance_confidence": "low"
+   },
+   {
+    "citation": "Eduardo C. Garrido-Merchán, \"Intersectional Data and the Social Cost of Digital Extraction: A Pigouvian Surcharge\", arXiv:2601.08574 [cs.CY], preprint (2026)",
+    "url": "https://arxiv.org/abs/2601.08574",
+    "year": "2026",
+    "provenance_confidence": "low"
+   }
+  ],
+  "citation_recommendations": [
+   {
+    "paper": "WP-14",
+    "where": "Related work, propertisation subsection — NEW fourth standing objection paragraph (the main site)",
+    "what": "State the objection the section currently omits: commodification of personal data is corrosive per se — pricing it degrades the person and the good regardless of transaction design (Radin's personhood account; Roessler's data-specific moral-limits argument; Véliz's live ban position, citing the 2024 OUP monograph as the scholarly form alongside the 2020 book; Satz's noxious-market criteria as the operational test; Custers-Malgieri and EDPS 4/2017 as its legal-doctrinal expression). Then PVM's reply: structural inalienability CONCEDES the objection's core — the stock is never for sale and cannot be transferred even in principle, realizing Radin's shared-not-sold category technically and explaining EU non-waivability doctrine rather than conflicting with it — while rejecting the ban conclusion, because what is priced is scoped disclosure within a retained stock, and Satz's noxious-market criteria (weak agency, harmful outcomes) fail to bite when the record never transfers.",
+    "citations": "Radin 1987; Roessler 2015; Véliz 2020; Véliz 2024; Satz 2010; Custers & Malgieri 2022; EDPS Opinion 4/2017; (optionally Abdulrahim & Famoroti 2019 as the market-design-facing articulation)"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Same subsection, closing collective-privacy sentence(s)",
+    "what": "Acknowledge the normative collective-privacy position: data relations create supra-individual, population-level interests that individualist frameworks cannot represent (Viljoen), privacy interests attach to groups and profiles (Taylor-Floridi-van der Sloot), and individually rational disclosure undersupplies privacy as a public good (Fairfield-Engel). PVM's response: the social-data externality (Bergemann-Bonatti-Gan) is the economic shadow of exactly this claim, and the pooling remedy answers the group, not only the individual — so PVM absorbs the collective critique into the rent decomposition rather than opposing it.",
+    "citations": "Viljoen 2021; Taylor, Floridi & van der Sloot 2017; Fairfield & Engel 2015"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Contributions / novelty statement of the inalienability claim (and wherever CTR-LR-02's leg is asserted)",
+    "what": "MANDATORY narrowing per threat verdict 1: concede that pricing a formal privacy quantity while the buyer never receives the records is an established DP-markets design — Li et al. price DP-based privacy loss with arbitrage-freeness acting as a reconstruction bound on combined purchases; FL-Market adds subject-side structural retention with a priced LDP level; Liao et al. show the design line is developed; Jones-Tonetti give the priced-use-of-retained-stock form in general equilibrium (retention assumed). Restate WP-14's novelty as: (a) the priced quantity is an adversary-relative, time-drifting reconstruction bound R(t), not a worst-case adversary-agnostic budget; (b) the stock is subject-held, not broker-held; (c) non-reconstructability is theorized as structural inalienability of a capital stock — joining the Calabresi-Melamed/Radin inalienability category to a formal pricing metric, a cell neither the legal nor the DP-markets literature occupies.",
+    "citations": "Li, Li, Miklau & Suciu 2013/2014; Zheng et al. (FL-Market) 2021; Liao et al. 2021; Jones & Tonetti 2020; Calabresi & Melamed 1972; Radin 1987"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Related work, propertisation-critique lineage (updating the Laudon/Samuelson/Schwartz/Purtova line)",
+    "what": "Add the modern critique: Cofone shows ownership proposals collapse into consent-based transfer rules, magnify consent pathologies, and cannot reach inferred data — PVM's answer is that R(t) prices reconstructable/inferred content directly, which property title cannot. Ritter-Mayer's licensing-not-ownership construct is the pro-market cousin of retention, but contractual where PVM's is structural.",
+    "citations": "Cofone 2022; Ritter & Mayer 2018"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Wherever scoped disclosure / consent scoping is defended against leakage objections",
+    "what": "Engage the end-run objection head-on: inference from others' data circumvents both anonymity and consent, so naive scoping cannot contain what observers learn. PVM's reply is that R(t) is defined against the adversary's inference capability, so leakage-through-others is priced into the bound rather than scoped away — the objection is a design input, not a refutation.",
+    "citations": "Barocas & Nissenbaum 2014"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Rent-decomposition / externality section",
+    "what": "Ground the market-position-rent diagnosis in the formal lineage: informed consent still yields excessive collection via information externalities (Choi-Jeon-Kim); correlation leakage depresses equilibrium prices and yields conditions where shutting the market improves welfare — partially vindicating the ban pole formally (Acemoglu et al.); firms exploit externalities via designed disclosure (Ichihashi); refereed precedent exists for externality-adjusted payments to subjects covering both local and collectively-imposed losses (Fallah et al.). Gu's result — reducing intermediary bargaining power protects privacy without the welfare loss of prohibition — is the remedy thesis in formal dress (cite as working paper; verify placement before camera-ready). Distinguish Ben-Shahar's Pigouvian no-subject-compensation frame as a foil: PVM internalises the same externality but routes value to subjects via pooled bargaining. Optionally add a defensive footnote distinguishing the Garrido-Merchán Pigouvian group-privacy surcharge preprint (nearest recent instantiation; lacks capital class, R(t), inalienability, rent decomposition).",
+    "citations": "Choi, Jeon & Kim 2019; Acemoglu et al. 2022; Ichihashi 2021; Fallah et al. 2024; Gu 2024; Ben-Shahar 2019; (footnote: Garrido-Merchán 2026, arXiv:2601.08574)"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Remedy section (pooling / cooperative-fiduciary instruments)",
+    "what": "Honest attribution per threat verdict 2: the pooling/collective-bargaining remedy is anticipated within the Bergemann line itself (internalizing the externality by forming a cooperative), so WP-14's contribution is the subject-side capital valuation that the remedy operates on, not the remedy form. Marinotti's res critique then does positive work: because the stock is structurally inalienable, PVM's cooperatives pool disclosure rights and bargaining position (which exist) rather than corpus title (which may not) — answering the standing objection to data-trust constructions that Delacroix-Lawrence leave open.",
+    "citations": "Bergemann & Wang 2021 (FAccT tutorial); Marinotti 2022; Fairfield & Engel 2015"
+   },
+   {
+    "paper": "WP-14",
+    "where": "Capital-class definition (where 'distinct capital class held by the data subject' is introduced)",
+    "what": "One-sentence disambiguation: the data-as-capital reading exists in critical political economy, but there the capital is firm-held and extractive; PVM relocates the stock to the subject and makes it structurally inalienable, answering the extraction critique rather than repeating the propertisation move it attacks.",
+    "citations": "Sadowski 2019"
+   },
+   {
+    "paper": "WP-04",
+    "where": "Motivation / introduction (single motivating cite, per budget)",
+    "what": "Motivate the shelf-life framing: static anonymity and consent guarantees are end-run by inference as background data accumulates — the canonical statement that a privacy guarantee's effective strength is a function of the evolving external data environment, which is exactly the erosion WP-04 formalizes.",
+    "citations": "Barocas & Nissenbaum 2014"
+   },
+   {
+    "paper": "WP-07",
+    "where": "Related work on composition of purchased/authorized disclosures (only genuinely warranted addition)",
+    "what": "Cite arbitrage-freeness in DP query pricing as the mechanism-design ancestor of WP-07's problem: the constraint that a buyer combining multiple purchased disclosures cannot reconstruct more than was paid for is a composition bound over sequential disclosures; WP-07 generalizes from worst-case static DP budgets to leakage-budgeted agents composing under background accumulation. No other sweep item is genuinely warranted for WP-07.",
+    "citations": "Li, Li, Miklau & Suciu 2013/2014"
+   }
+  ]
+ }
+}

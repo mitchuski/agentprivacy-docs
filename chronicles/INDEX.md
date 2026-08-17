@@ -4,6 +4,23 @@
 
 ---
 
+## 2026-08 · Field Guide × Trust Graph
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-08-17_release_manifest_field_guide_wave.md](2026-08-17_release_manifest_field_guide_wave.md) | 2026-08-17 | **RELEASE MANIFEST — the Field Guide convergence wave** (`convergence-2026-08-17`) — the single cross-repo handoff: per-repo inventory + push order (field_guide_privacymage git-init decision → cred-spec lab X11 → master → cityofmages Act 10 binding → spellweb → docs), verification ALL GREEN 124/124 re-run on the home machine with byte-identical vectors.json (pack determinism held macOS→Windows), known-pending list. Work from this file alone to push |
+| [2026-08-17_field_guide_convergence_merge.md](2026-08-17_field_guide_convergence_merge.md) | 2026-08-17 | **The Field Guide convergence merge** — the field-machine work (`field_guide_privacymage`: Max's ARWorld handoff answered by a counter-spec of 8 suites / 124 properties; the Gap survives phone-to-phone; the game is a *conformant pairwise* DTG deployment and the lab's personhood-gated formation runtime had never exercised that construction) merged into the corpus: fieldguide.localhost seated as the guide federation's 13th site (23pp + assets workbench, audited clean), the Field Guide weave added to spellweb (9 nodes / 17 edges, atlas 811 nodes), Tome IX Act 10 PROPOSED (unbound), master chronicle in agentprivacy_master. Suites not yet re-run on the home machine; nothing sent to Max; nothing pushed |
+
+---
+
+## 2026-08 · DTG ZKP — Ceremony & Registry
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-08-12_ceremony_trust_task_registry_live.md](2026-08-12_ceremony_trust_task_registry_live.md) | 2026-08-12 | **Ceremony as trust task; verification registry live** — X10 rules *agents orchestrate entropy, never are it* (context window = §19 observer); public registry at mitchuski.github.io/dtgwg-zkp-mage (lab 18 suites / 178 properties green); setup-artifact determinism refuted empirically before publication (circuit digests required / setup chain advisory); pseudonymous seat-7f enacts admission⊥identity on the public table; RAHP #8 asks the lab's question in prose (finding 5 = the ZKP TF's charter). Companion records in spellweb + cityofmages + agentprivacy_master (chronicles 4–5 of the arc) |
+
+---
+
 ## 2026-07 · DTG Trust-Graph Coherence
 
 | Chronicle | Date | Summary |
