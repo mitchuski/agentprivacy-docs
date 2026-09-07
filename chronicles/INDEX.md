@@ -4,6 +4,33 @@
 
 ---
 
+## 2026-09 · agentprivacy labs
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-09-05_the_city_reads_the_key.md](2026-09-05_the_city_reads_the_key.md) | 2026-09-05 | **The City reads the key** — mages.city founded as a local twin (68 acceptance rows): a simple front, the Hall wiki and districts, the Portal for first contact, the Exchange (packets at three disclosure levels, grants that lapse, receipts as counts, Knowledge × Promise → Trust on request), the Community Security Agent feeding it through its own sensitivity gate, the Namekeeper (DNS write access earned on the trust graph in four rungs, dry-run), and the City Key reader (Merkle conformance vector holds; real exported keys re-derive). Twelve rulings; nothing committed or deployed. Inversion: asked for as a place to write, built as a place that reads. |
+| [2026-09-05_the_keeper_builds_a_trust_agent.md](2026-09-05_the_keeper_builds_a_trust_agent.md) | 2026-09-05 | **The keeper builds a trust agent** — an agentic runtime stood up the first pieces of the City's VTA on the keeper's machine: OpenVTC's VTI (DTGWG reference impl, Gore + Turk) cloned, Rust to 1.98, three builds / three Windows facts (OpenSSL via vcpkg; Spectre libs left to the keeper; the four operator tools built and on PATH); a stand-up reader with six decisions and their costs, autosaving the keeper's choices into the repo; the three-layer reading city = agent · world = community · earth = network; all four domains still at GoDaddy at the registries; the mnemonic, the system install, the zones and the commits refused. |
+| [2026-09-05_the_lab_opens_its_door.md](2026-09-05_the_lab_opens_its_door.md) | 2026-09-05 | **The lab opens its door** — `agentprivacy labs` built as a five-door static site for agentprivacy.org (deploy · services · research · concepts · fund) in the soulbis × agentprivacy mix; copy projected from the 1 September provider brief and public READMEs; the research page expresses the V6 programme's three thrusts and pipeline shape with no paper linked; funding **reserved** (consultancy + grants open; Ethereum privacy pool, Zcash rail and a public leaderboard in build, no address); purpose named by the First Person: *toward an agentprivacy foundation, an open-source agentic cybersecurity ecosystem* — a phrase the corpus did not yet carry. Domain parked at GoDaddy; nothing committed or deployed. |
+
+---
+
+## 2026-09 · DTG ZKP — the ZK Book
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-09-05_kg_to_vta_first_releases.md](2026-09-05_kg_to_vta_first_releases.md) | 2026-09-05 | **The agent walks the guide, and the Swordsman signs beside the key** — pages carry a six-bit posture item (fork-carried; bit canon held on five surfaces); the star chart seats by it and names lattice moves; per-page PSI elements for 2,207 pages; 682/726 spellweb nodes bridged to guide pages by slug; agentprivacy-mcp read tools over the bake (search as an ordered walk · derive · evolve · render), κ-equal by test for a constellation and a walk; the missing Rungs plan written; Rung 1 built: the Swordsman as a second process, fixed policy, ledger, signs the VTA record BESIDE the key (κ rule unchanged) = what a VTA publishes, filling the mages.city resident proofs slot exactly; evolved_since(t) the first predicate; nothing committed. Companions: master (`the-agent-walks-the-guide`, unsigned) + spellweb DREAM (second dream) + agentprivacy-mcp DREAM |
+| [2026-09-05_zk_book_fold_flock_tale_32.md](2026-09-05_zk_book_fold_flock_tale_32.md) | 2026-09-05 | **The ZK Book fold, and the Flock names a face** — the DTG ZKP recipe book named the ZK Book (Spec-Up-T; records chapter with Glenn Gore’s ADR-001 first + 31-row crosswalk; Primer adapted from the Zero Knowledge Spellbook’s Technical Bridges only; Stacks chapter incl. Flock; proverb-gated push rite; staged for the upstream repo, nothing committed); Flock re-seated from a colliding “Tale 31” to **Zero Tale 32** naming vertex ⟨1,0,1,1,1,1⟩ (Blade 61 / V47; 23 + 38 = 61, 61/38 ≈ φ; pure-Delegation complement opens a pair; 16 named, 48 wait); the frontier-tale attachment method written down (master docs); grimoire v10.4.2 patch proposed; spellweb node + edges staged. Companions: master (`the-book-takes-a-name`, unsigned) + dtgwg-zkp-mage reflection + spellweb DREAM |
+
+---
+
+## 2026-08 · BGIN IKP
+
+| Chronicle | Date | Summary |
+|-----------|------|---------|
+| [2026-08-27_bgin_ikp_knowledge_base_dream_cycle.md](2026-08-27_bgin_ikp_knowledge_base_dream_cycle.md) | 2026-08-27 | **BGIN IKP knowledge base founded by dream cycle** — machine-wide inventory → 23 canonical copies + first local archive of ADR-001 *Community-Anchored Proof* synced into `~/BGIN_IKP` (7 themed dirs + `SOURCES.md` provenance manifest); 28 Aug call agenda seated (PQC locked as focus, GDC26 corrected to 1–3 Sep); version rulings (liveness v0.4 current, as-circulated WF convergence note canonical of 6); zero BGIN↔DTG directory cross-mentions measured — the co-chair lanes touch only through documents; secrets fenced, nothing pushed. Companions: master (`the-hall-gathers-its-papers`, unsigned) + BGIN_IKP reflection + spellweb/cityofmages DREAMs |
+
+---
+
 ## 2026-08 · Field Guide × Trust Graph
 
 | Chronicle | Date | Summary |

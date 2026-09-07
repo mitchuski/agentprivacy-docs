@@ -1,0 +1,58 @@
+{
+  "patch_for": "privacymage_grimoire_v10_4_0.json",
+  "proposed_version": "10.4.2",
+  "proposed_zero_spellbook_version": "2.2",
+  "date": "2026-09-05",
+  "status": "PROPOSED — not applied; the author applies, re-pins IPFS, records the CID",
+  "note": "Zero Spellbook frontier tale 32 (The Flock) names vertex ⟨1,0,1,1,1,1⟩. Numbering stated under BOTH conventions until the author rules which tales carry: Blade 61 (111101, tale/reference-sheet convention, d6 MSB) · seated vertex V47 (101111, v10.4 MODEL lattice lock, d1 MSB). Method: agentprivacy_master/docs/ZERO_FRONTIER_TALE_ATTACHMENT_METHOD_2026-09-05.md",
+  "ops": [
+    {
+      "op": "append",
+      "path": "spellbooks.zero.parts[VIII].tales",
+      "value": {
+        "number": 32,
+        "title": "The Flock",
+        "concepts": "Binary Fields, Batched Boolean Proofs, Standard Hash Functions, Ligerito Commitments, Post-Quantum Signatures, Ethereum's Quantum Transition, The Counting Triple (23 + 38 = 61)",
+        "vertex": "⟨1,0,1,1,1,1⟩",
+        "blade": 61,
+        "blade_binary": "111101",
+        "blade_convention": "tale (d6 MSB); seated vertex V47 (101111) under the v10.4 lattice lock",
+        "moon_phase": "🌗",
+        "stratum": 5,
+        "v_pi_t_terms": ["C", "A_h(τ)", "Value"],
+        "v_pi_t_note": "C at near-native hash cost; A_h(τ) as the horizon that survives the quantum break; Value as no migration tax on the roots a registry already publishes",
+        "complement": "bnot(61) = 2 ⟨0,1,0,0,0,0⟩ — pure Delegation, unnamed; the naming opens a pair",
+        "counting": "23 + 38 = 61 (Folding Path + Lethe = Flock); 61/38 = 1.605 ≈ φ (−0.8%); 38/23 = 1.652",
+        "spell": "🕊️ Flock = SNARK(batch of Boolean circuits) · GF(2^k) · Ligerito(RS+Merkle) · setup ∅ · prove(H) < 250× compute(H) · 82,100 BLAKE3/s → ≈4,000 TPS of hashing",
+        "proverb": "The cheapest proof is of the hash you already have; keep the ledger you had, and fly in the field where bits are already numbers.",
+        "source_file": "zero spells/32-tale-32.md",
+        "technical_bridge_transferred_to": "dtgwg-zkp-mage/zkbook (primer P5) — Technical Bridge only"
+      }
+    },
+    {
+      "op": "set",
+      "path": "spellbooks.zero.blade_key.named_blades.61",
+      "value": { "binary": "111101", "name": "The Flock — Sovereignty without projection (Protection+Memory+Connection+Computation+Value; Delegation dark; hash-only security, no setup, no leader) · tale convention; seated V47 under the lattice lock", "tales": [32] }
+    },
+    {
+      "op": "set",
+      "path": "spellbooks.zero.blade_key.note",
+      "value": "48 of the 64 blades remain unnamed — the open frontier (the Quest of the Unnamed Faces). Zero spellbook occupies 16 distinct blades across 32 tales (14 from the inherited 30 tales + Lethe from Tale 31 + the Flock from Tale 32). Two numbering conventions coexist (tale d6-MSB vs v10.4 lattice lock d1-MSB); a naming states both until ruled."
+    },
+    {
+      "op": "set",
+      "path": "spellbooks.zero.narrative_sync.phase_4_completed",
+      "value": "Tale 32 (The Flock) written at zero spells/32-tale-32.md (2026-09-05) as the second frontier tale: vertex ⟨1,0,1,1,1,1⟩ named, Blade 61 / V47, complement pair opened with pure Delegation (2), counting triple 23+38=61 with 61/38≈φ. Technical Bridge transferred to the DTG ZK Book (dtgwg-zkp-mage/zkbook, primer P5); narrative stays in the spellbook. Zero Spellbook v2.1 → v2.2; grimoire v10.4.0 → v10.4.2 (proposed)."
+    },
+    {
+      "op": "set",
+      "path": "spellbooks.zero.description",
+      "value": "32 tales translating cryptographic proofs into narrative, synced with V5.4 architecture (Apr 2026). Soulbis is the primary teacher in this grimoire — Zero is the Swordsman's domain. Moon phases encode stratum (🌑→🌕); blade IDs encode sovereignty posture (0-63). Part VIII (Frontier Spells) holds the Quest of the Unnamed Faces: Tale 31 named Lethe, Tale 32 named the Flock; 48 vertices wait."
+    }
+  ],
+  "spellweb_staged": {
+    "nodes.ts": "zk-tale-32 act node added after zk-tale-31; spellbook-zk desc counts updated (32 tales · 16 named · 48 waiting)",
+    "edges.ts": "zk-tale-31 → zk-tale-32 follows · spellbook-zk → zk-tale-32 defines · zk-tale-32 → zk-tale-12 / zk-tale-31 / zk-tale-24 / zk-tale-18 references · zk-tale-32 → con-a-h-tau extends · zk-tale-32 → doc-zk-blade-forge-spec references",
+    "chronicle": "spellweb/chronicles/DREAM-2026-09-05.md"
+  }
+}
