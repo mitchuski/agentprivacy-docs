@@ -28,12 +28,12 @@ This register exists because the work outgrew its own numbering twice. Conjectur
 
 | ID | Title / claim | Conf. | Status | Register | Home |
 |---|---|---|---|---|---|
-| C1 | Golden ratio φ is optimal S/M (protect:project) ratio | open | open | core | formal spec §17.1 |
+| C1 | Golden ratio φ is optimal S/M (protect:project) ratio | open | challenged · 2026-10-25: refuted as worded for the stated Φ (min(1,(S/M)/φ) is flat for S/M ≥ φ); restated as a threshold, modelling choice (F2) | core | formal spec §17.1 |
 | C2 | A(τ) should be logarithmic | open | open | core | formal spec §17.1 |
 | C3 | Edge value is additive | — | challenged (path integral replaces) | core | formal spec §17.3 |
-| C4 | 96 vs 64 discrepancy | — | resolved (holographic + algebraic) | core | formal spec §17.3 |
+| C4 | 96 vs 64 discrepancy | — | challenged · reopened 2026-10-25: no stated graph on Z/64 has 96 edges (192/64/32/94/95, Lean-checked); 96 is the UOR Atlas vertex count, imported (F6); was resolved (holographic + algebraic) | core | formal spec §17.3 |
 | C5 | ~3,000× ZKP reduction | — | resolved (strengthened by BRAID + holographic bound) | core | formal spec §17.3 |
-| C6 | P^1.5 ↔ 96/64 is structural | 35% | convergent | core | formal spec §17.1 |
+| C6 | P^1.5 ↔ 96/64 is structural | 35% → open | open · 2026-10-25: convergence withdrawn with C4's algebraic row (F6); was convergent | core | formal spec §17.1 |
 | C7 | Three-axis separation is multiplicative | 30% | active · V6 falsification frontier | core | formal spec §17.1 |
 | C8 | BRAID compression reduces R_max | 45% | active | core | formal spec §17.1 |
 | C9 | Holographic boundary sufficiency | 25% | active | core | formal spec §17.1 |
@@ -41,7 +41,7 @@ This register exists because the work outgrew its own numbering twice. Conjectur
 | C11 | Behavioural density ρ amplifies privacy, indicates maturity | 55% | active | core | formal spec §17.1 |
 | C12 | Hexagram encoding is structurally resonant | 60% | active | core | formal spec §17.1 |
 | C13 | Bilateral witness as quantum-resistant primitive | 65% | active | core | formal spec §17.1 |
-| C14 | Φ_agent ≅ D₂ₙ dihedral isomorphism | 75% | active | core | formal spec §17.1 |
+| C14 | Φ_agent ≅ D₂ₙ dihedral isomorphism | 75% | challenged 2026-10-25 (F7): the determinant reading Φ_agent = det ρ(D₂ₙ) is refuted (det ρ(g) ≠ 0 for every representation; V6 §18 item 6 fires); the group core ⟨neg,bnot⟩ ≅ D₆₄, order 128, transitive on Z/64, is a theorem with a Lean receipt (not a conjecture; no new number) | core | formal spec §17.1 |
 | C15 | T_∫(π) ≅ UOR resolution pipeline | 65% | active | core | formal spec §17.1 |
 | C16 | Topological trust invariants via Betti numbers | 25% | active | core | formal spec §17.1 |
 | C17 | Amnesia-enforced separation tighter than policy-enforced | 60% | active · made quantitative at V6 Run 2 | core | formal spec §17.1 |
@@ -97,7 +97,7 @@ This register exists because the work outgrew its own numbering twice. Conjectur
 | C51 | The ⿻ remains max-betweenness across trust-graph evolutions | open | occupied · never reassign | shared | CHRONICLE_V5_4_BETWEENNESS_SELENE |
 | C52 | Aether = Quintessence = the Gap | open | occupied · never reassign | shared | aether-blade-ceremony-circuit.md |
 | C53 | Every bnot-pair on the lattice has a mythological reading | ~70% | occupied · never reassign | shared | aletheia-and-lethe.md |
-| C54 | Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ | ~40% | occupied · never reassign · follows the number (Aletheia at 38 keeps disclosure-φ, 2026-06-09 lock) | shared | aletheia-and-lethe.md |
+| C54 | Phi-Adjacency: bnot-pair disclosure ratios cluster near 1/φ | ~40% | challenged 2026-10-25 (F9): nearest b/63 to 1/φ is 39 (0.6190), not 38; the ±3% windows hold 6 of 64 vertices (9.4% base rate), one data point · occupied · never reassign · follows the number (Aletheia at 38 keeps disclosure-φ, 2026-06-09 lock) | shared | aletheia-and-lethe.md |
 | C55 | Privacy is the seventh kind of capital, foundationally; its character is land-based RENTIER capital (data as soil): it yields rent by position, not value by aggregation; its worth is the appropriation share the consent interface sets; its exposure erodes on the adversary's background-information clock (C82); and it is leased, never conveyed, structural inalienability by non-reconstruction being the ownability mechanism. The five capital predicates survive; COMPOUNDING is scoped to reputational fertility only (a conjecture) and never to raw records. (Character ruled by First Person 2026-07-15 (soil, L140), register-synced 2026-07-17 (L149); the multiples 678x/31,000x are RETIRED as asserted facts suite-wide, surviving only as fenced lineage, same ruling.) | architectural | occupied · never reassign · character re-typed 2026-07-17 | shared | poems/tide-orbit-selene.md; research/pvm-v6-soil-and-the-programme-runtime-evolutions.md |
 
 ## Band V · City register continuation (C56 to C66)

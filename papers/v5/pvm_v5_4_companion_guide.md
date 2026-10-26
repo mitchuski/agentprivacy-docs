@@ -299,6 +299,8 @@ Published at sync.soulbis.com.
 
 **Formal Spec reference:** §17
 
+> **Erratum 2026-10-25 (F2, [V7 formal audit](../../../agentprivacy-docs/research/2026-10-25_v7_formal_audit.md)).** In Φ(Σ) = min(1, (S/M)/φ) · det Σ the factor min(1, (S/M)/φ) is flat for S/M ≥ φ, so φ is a saturation threshold, not an optimum. C1 as worded ("φ is optimal") is challenged: refuted for the stated formula and restated as a threshold, a modelling choice. An optimum at φ would need a new Φ that peaks there, declared as such. The text below is kept as stated.
+
 | Conjecture | Plain Language | Why It Matters |
 |------------|---------------|----------------|
 | **C1** (φ optimal) | Nature's ratio applies to agent balance | Not arbitrary architecture — structurally optimal |

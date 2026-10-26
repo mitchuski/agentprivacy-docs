@@ -1293,6 +1293,8 @@ Three independently derived frameworks converge on a 2⁶ = 64 vertex structure:
 - Content-addressing: UOR canonical form ↔ ZK verification ↔ deterministic vertex assignment
 - Path as witness: UOR derivation chains ↔ ZK witness ↔ narrative traversal
 
+> **Erratum 2026-10-25 (F6, [V7 formal audit](../../../agentprivacy-docs/research/2026-10-25_v7_formal_audit.md)).** No stated graph on the 64 vertices has 96 edges: the hypercube Q₆ has 192, the succ cycle 64, the complement pairs 32, succ ∪ complement 94 and succ ∪ neg 95 (Lean receipts in formal_mage). The 96 is imported from the UOR Atlas, where it counts vertices. C4 is reopened (challenged) and C6 is open. A boundary of dimension n encoding a volume of dimension n+1 does not fit edges over vertices. The text below is kept as stated.
+
 **Known discrepancy:** UOR generates 96 edges via successor function; the 6D hypercube has 192 directed edges (6 × 64 / 2 × 2). This may indicate UOR encodes a subset of adjacency relationships or uses a different edge-generation rule. Resolution required.
 
 **Implications if confirmed:** Content-addressed ZK verification on a constrained compute space with toroidal boundary conditions. Potential ~3,000× constraint reduction for sovereignty-class proofs (requires formal circuit analysis to validate).
@@ -1413,6 +1415,8 @@ Then the optimal ratio C_M/C_S → φ ≈ 1.618.
 **Current Status**: Pure conjecture. No proof exists. No data exists. This is a mathematical hypothesis awaiting investigation.
 
 **V4 Context**: The golden ratio now appears within the duality function Φ(Σ) = min(1.0, (S/M) / φ) · det(Σ), where it governs the balance term while det(Σ) governs the volume term. This does not constitute derivation — φ remains conjectured, not derived from the lattice geometry. However, its embedding in the matrix formalism provides a clearer target for validation: if φ is wrong, only the balance component of Φ(Σ) is affected; the volume component (det(Σ)) is independent of the ratio conjecture.
+
+> **Erratum 2026-10-25 (F2, [V7 formal audit](../../../agentprivacy-docs/research/2026-10-25_v7_formal_audit.md)).** In Φ(Σ) = min(1, (S/M)/φ) · det Σ the factor min(1, (S/M)/φ) is flat for S/M ≥ φ, so φ is a saturation threshold, not an optimum. C1 as worded ("φ is optimal") is challenged: refuted for the stated formula and restated as a threshold, a modelling choice. An optimum at φ would need a new Φ that peaks there, declared as such. The text below is kept as stated.
 
 **Promise Theory Perspective**: If the golden ratio emerges, it would represent an optimal *valency allocation* between protection and delegation promises—the balance at which the superagent maximizes its total promise-keeping capability.
 
@@ -1610,6 +1614,8 @@ The V4 Privacy Value Model introduces terms that inherit the proven guarantees o
 **Separation Matrix (Σ):** Generalises the proven scalar separation to four forces. The matrix formalism is mathematically sound, but measurement methods for the emergent forces (Reflect, Connect) don't yet exist. Without measurement, det(Σ) cannot be computed for real systems. The determinant may not be the correct aggregation — trace, minimum eigenvalue, or other matrix norms might better capture "architectural volume."
 
 **Temporal Memory A(τ):** The logarithmic form is chosen by analogy with trust dynamics and information-theoretic diminishing returns, not derived from first principles. The verifiable integrity measure h(τ) presupposes ZKP verification infrastructure that doesn't yet exist at scale.
+
+> **Erratum 2026-10-25 (F4, [V7 formal audit](../../../agentprivacy-docs/research/2026-10-25_v7_formal_audit.md)).** Every edge of the hypercube Q₆ flips one bit and so changes the stratum by exactly one: the lattice has no lateral edges, and every vertex has degree 6. A lateral move is a two-step composite through stratum k ± 1, weighted as such. The text below is kept as stated.
 
 **Edge Value T(π):** The most uncertain term. No markets for sovereignty traversal exist. The functional forms f(e) and g(n_e) are structurally motivated (capability activation > lateral movement, first traversal > repetition) but entirely unvalidated. This term could prove either the most important or the most wrong.
 

@@ -46,6 +46,8 @@ V(π, t) = P^1.5 · C · Q · S ·
 dV/dt = ∇_∂M · J_∂M + S(x) - D(x)
 ```
 
+> **Erratum 2026-10-25 (F6, [V7 formal audit](../../../agentprivacy-docs/research/2026-10-25_v7_formal_audit.md)).** No stated graph on the 64 vertices has 96 edges: the hypercube Q₆ has 192, the succ cycle 64, the complement pairs 32, succ ∪ complement 94 and succ ∪ neg 95 (Lean receipts in formal_mage). The 96 is imported from the UOR Atlas, where it counts vertices. C4 is reopened (challenged) and C6 is open. A boundary of dimension n encoding a volume of dimension n+1 does not fit edges over vertices. The text below is kept as stated.
+
 Where ∇_∂M indicates divergence computed on the holographic boundary ∂M (96 edges), which encodes flow on the bulk M (64 vertices).
 
 **Spell notation:**

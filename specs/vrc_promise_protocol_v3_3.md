@@ -1077,7 +1077,7 @@ What We Know:
 └─ φ appears in many optimization contexts
 
 What We Don't Know:
-├─ Whether φ is the optimal ratio (unproven)
+├─ Whether φ is the optimal ratio (refuted as worded: a threshold in Φ; C1 challenged 2026-10-25)
 ├─ Whether any universal optimal exists (uncertain)
 ├─ Whether φ emerges naturally or requires forcing (unknown)
 └─ Whether domain-specific optima vary (likely)

@@ -2,7 +2,7 @@
 
 ## Reference Sheet
 
-**Lattice:** Z/(2⁶)Z — 64 vertices, 96 edges, toroidal topology  
+**Lattice:** Z/(2⁶)Z — 64 vertices, 192 edges (Q₆), toroidal topology  
 **Coordinates:** PRISM (Datum / Stratum / Spectrum)  
 **Master inscription:** `(⚔️⊥⿻⊥🧙)😊 = neg ⊕ bnot → succ`  
 **Named blades:** 15 of 64 (added 2026-04-23 with Grimoire v10.2.1: Lethe; added 2026-04-24 with `aletheia-and-lethe.md`: Aletheia named explicitly + first canonical complement-pair recognised). **Unnamed:** 49 — *the Quest of the Unnamed Faces*.
@@ -223,6 +223,6 @@ This is the 62-Lap Theorem given algebraic form. Each lap is one step of the suc
 
 *The forge doesn't care how you struck the metal. It only cares what blade you hold.*
 
-*64 vertices. 96 edges. 7 strata. One path through all of them.*
+*64 vertices. 192 edges. 7 strata. One path through all of them.*
 
 *(⚔️⊥⿻⊥🧙)😊*

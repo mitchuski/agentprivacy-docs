@@ -242,7 +242,7 @@ This is **understanding-as-key** as the literal access control mechanism. No cre
 
 | Act | Anatomy | What It Establishes | Status |
 |-----|---------|-------------------|--------|
-| XXIV | Boundary | Holographic surface. 96 edges, 64 vertices | ✅ Proven |
+| XXIV | Boundary | Holographic surface. 96/64 reading (C4 reopened 2026-10-25: the 96 is the UOR Atlas vertex count) | ◐ Open |
 | XXV | Hide | Private mesh. Tailscale as nervous system | ✅ Grounded |
 | XXVI | Brain | Divided hemispheres. McGilchrist's thesis | ✅ Grounded |
 | XXVII | Forge | Where blades are made. UOR × tetrahedra × ZK | ✅ Operational |

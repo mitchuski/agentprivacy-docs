@@ -318,6 +318,8 @@ The Moon has shallow resolution depth (one simple operation: reflect) but maximu
 
 ## 8. The Holographic Bound
 
+> **Erratum 2026-10-25 (F6, V7 formal audit, published with V7; receipts sealed under κ `sha256:d4d42f9e333323b20d5b649525cbe28f8885fa2cb0cdd10943a04cac3793b9da`).** No stated graph on the 64 vertices has 96 edges: the hypercube Q₆ has 192, the succ cycle 64, the complement pairs 32, succ ∪ complement 94 and succ ∪ neg 95 (Lean receipts under the κ root above). The "algebraic" row of §8.3 is withdrawn, so the three derivations are one: the 96 is imported from the UOR Atlas, where it counts vertices. C4 is reopened (challenged) and C6 is open. A boundary of dimension n encoding a volume of dimension n+1 does not fit edges over vertices. The text below is kept as V6 stated it.
+
 ### 8.1 Structure
 
 $$\partial M: \text{96 edges encoding 64 vertices, toroidal topology}$$
@@ -458,6 +460,8 @@ The theorem decomposes. The two preconditions of §10.5 license the capacity sum
 
 ### 11.2 Error Floor (Proven, conditional regime)
 
+> **Erratum 2026-10-25 (F8, V7 formal audit, published with V7; receipts sealed under κ `sha256:d4d42f9e333323b20d5b649525cbe28f8885fa2cb0cdd10943a04cac3793b9da`).** P_e ≥ 1 − R_max is not a general bound: a uniform bit with no observation has R = 0 and optimal error 1/2. The finite form is P_e ≥ max{0, (H(X|E) − B − 1)/log₂(m − 1)} for alphabet size m ≥ 3 (binary-entropy form for m = 2), and under H(X) ≥ log₂(|𝒳| − 1) it gives P_e ≥ 1 − R − 1/H(X) (Papers III and IV). 1 − R is the large-alphabet uniform limit. V7 §3 carries the corrected statement; §11.5 and §16 below are read with it.
+
 $$P_e \geq 1 - R_{\max}$$
 
 The adversary is guaranteed to make errors whenever the capacity-deficit condition of §11.1 holds. The floor itself follows from Fano's inequality and holds under the two preconditions of §10.5; at $R_{\max} \geq 1$ it is vacuous, which is exactly why the deficit condition must be declared alongside the preconditions.
@@ -481,6 +485,8 @@ Status: V6 conjecture (C18). Confidence: 25%.
 R_max = (C_S + C_M)/H(X) < 1 carries the label **Proven, conditional regime**, read as a decomposition: within Preconditions 1 and 2 of §10 the capacity sum is licensed and the error floor P_e ≥ 1 − R_max (Fano converse) is proven, an instance of the family cited there; the strict bound R_max < 1 holds when, additionally, the capacity-deficit condition C_S + C_M < H(X) of §11.1 holds. The deficit condition, not the preconditions, is the time-indexed quantity per §5.5: R(t) can cross one with both preconditions intact, because capability growth raises the effective capacities, and what expires at t* is the deficit condition, not the architecture. Outside the regime, §26 governs.
 
 ### 11.6 Sampling Reconstruction Ceiling (Proven — the Nyquist bound)
+
+> **Erratum 2026-10-25 (F10, V7 formal audit, published with V7; receipts sealed under κ `sha256:d4d42f9e333323b20d5b649525cbe28f8885fa2cb0cdd10943a04cac3793b9da`).** The sampling theorem is a statement about a signal class: within paths band-limited to B, samples below 2B do not determine the path. It is not unconditional on the decoder: an observer with a stronger prior (sparsity, finite alphabet, a dynamical model) recovers from sub-Nyquist samples (compressed sensing: Candès, Romberg and Tao 2006; Donoho 2006). The bound is a consequence conditional on a declared signal class, and because background knowledge supplies priors it has an erosion clock (V7 §5). "Unconditional" and "does not erode" below are withdrawn.
 
 A second proven bound, independent of the capacity deficit, binds when observation is rate-limited rather than capacity-limited. Model the observable component of the sovereignty path π(t) as a signal of effective bandwidth B — the highest rate at which the First Person's private state carries independent structure — and let f_obs be the effective rate at which an adversary samples that signal across the two channels.
 
@@ -550,6 +556,8 @@ Two blades at the same stratum (tier) can have different sovereignty postures if
 | Dragon | 5–6 | 7 | Full sovereignty / mathematical closure |
 
 ### 12.5 Dihedral Group D₆₄
+
+> **Erratum 2026-10-25 (F7, V7 formal audit, published with V7; receipts sealed under κ `sha256:d4d42f9e333323b20d5b649525cbe28f8885fa2cb0cdd10943a04cac3793b9da`).** The presentation, the order 128 and transitivity on Z/64 are machine-checked (Lean 4; receipts under the κ root above). "Infinite witnesses" is false: for every start and target vertex exactly two group elements carry one to the other. Each generator alone is an involution with orbits of size at most 2. A representation's determinant is never zero, so Φ_agent is not det ρ(D₂ₙ); the breaking condition of §18 item 6 fires for that reading. C14 is challenged: the determinant reading is refuted and the group isomorphism is a theorem.
 
 $$D_{64} = \langle \text{neg}, \text{bnot} \mid \text{neg}^2 = \text{bnot}^2 = 1,\; (\text{neg} \circ \text{bnot})^{64} = 1 \rangle$$
 
@@ -787,6 +795,8 @@ The City Key's status claim ("a portable projection of lattice-standing that gra
 ---
 
 ## 16. Proven Results
+
+> **Erratum 2026-10-25 (F8, F10, V7 formal audit, published with V7; receipts sealed under κ `sha256:d4d42f9e333323b20d5b649525cbe28f8885fa2cb0cdd10943a04cac3793b9da`).** Two rows below are narrowed: "Error floor" holds in the finite Fano form of the §11.2 erratum, not as 1 − R_max; "Sampling ceiling" holds against a declared band-limited signal class and erodes as the observer's prior grows (§11.6 erratum). "Ring algebra" now has machine-checked receipts (neg∘bnot = succ, strata, the dihedral group).
 
 These results hold at 95% confidence. The proofs rely on standard information theory and are documented in Research Paper v4.2.
 
